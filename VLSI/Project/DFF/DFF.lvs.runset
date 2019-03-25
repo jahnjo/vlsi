@@ -1,0 +1,11 @@
+*lvsRulesFile: /home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/rule_deck/LVS
+*lvsRunDir: /home/local/RAMS/egrvlsi07/VLSI/Project/DFF/DFF.cal
+*lvsLayoutPaths: DFF.calibre.gds
+*lvsLayoutPrimary: DFF
+*lvsLayoutGetFromViewer: 1
+*lvsResultsFile: DFF.lvs.results
+*lvsSummaryFile: DFF.lvs.summary
+*cmnApplyTemplates: 0
+*lvsSourceGetFromViewer: 1
+*lvsSourcePath: DFF.calibre.src.net
+*lvsSourcePrimary: DFF

@@ -1,0 +1,9 @@
+DFF 1000
+ERC PATHCHK GROUND && ! POWER
+0 0 0 Mar 20 13:28:39 2019                                      
+ERC PATHCHK POWER && ! GROUND
+0 0 0 Mar 20 13:28:39 2019                                      
+ERC PATHCHK ! POWER && ! GROUND
+0 0 0 Mar 20 13:28:39 2019                                      
+ERC PATHCHK ! LABELED
+0 0 0 Mar 20 13:28:39 2019                                      

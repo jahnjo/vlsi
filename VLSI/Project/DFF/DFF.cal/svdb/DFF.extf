@@ -1,0 +1,11 @@
+# Automagically generated file: Please do not edit!
+lvs_ExtfVersion 3
+lvs_ExtRunTimes 1553103054 1553103054
+lvs_ExtOutFile RUNDIR /home/local/RAMS/egrvlsi07/VLSI/Project/DFF/DFF.cal
+lvs_ExtOutFile RULES_FILE /home/local/RAMS/egrvlsi07/VLSI/Project/DFF/DFF.cal/_PEX_
+lvs_ExtInfoExtSummary {0 0 0 0 0 0 0 0 0 0 0}
+lvs_ExtInfoErcSummary {0 0 0 0 0 0 0 0 0 0 0}
+lvs_ExtInfoDfmSummary {0}
+lvs_ExtOutFile LAYOUT_NETLIST svdb/DFF.sp
+lvs_ExtOutFile EXTRACTION_REPORT DFF.lvs.report.ext
+lvs_ExtOutFile SOFTCHK_DATABASE svdb/DFF.softchk

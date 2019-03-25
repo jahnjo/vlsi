@@ -1,0 +1,135 @@
+vasim -cmd /home/local/RAMS/egrvlsi07/egre/VLSI/Project/DFF/DFF.cal/DFF.cir -lib /home/local/RAMS/egrvlsi07/egre/VLSI/Project/DFF/work -ms -multisource_delay max
+# ** Note: (vasim - 3800) Running Questa ADMS 12.1 patch1 Fri Sep  7 07:23:32 GMT 2012
+# +   on egr-vlsi-06 Linux x86_64(3.10.0-514.26.2.el7.x86_64) #1 SMP Tue Jul 4 15:04:05 UTC 2017
+# ELDO 12.1 patch1 (64 bits) Thu Sep  6 14:32:26 GMT 2012
+# EZwave 12.1 patch1 Wed Jun 20 13:28:31 GMT 2012
+# Copyright 1988 Mentor Graphics Corporation
+# All Rights Reserved
+# THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY
+# INFORMATION WHICH ARE THE PROPERTY OF MENTOR
+# GRAPHICS CORPORATION OR ITS LICENSORS AND IS
+# SUBJECT TO LICENSE TERMS.
+#  ---------------
+# | Load starting |
+#  ---------------
+# Loading "/opt/mentor/ams_12_1/libs/std.standard"
+# ModelSim for Questa-64 Version 10.1c 2012.07
+# Reading /opt/mentor/ams_12_1/questasim/v10.1c/tcl/vsim/pref.tcl 
+# Loading /opt/mentor/ams_12_1/libs/MS/OS/aol/libVLA2D_64.so
+# Loading "/opt/mentor/ams_12_1/libs/ieee.math_real"
+# Loading "/opt/mentor/ams_12_1/libs/DISCIPLINES.physical_constants"
+# Loading "/opt/mentor/ams_12_1/libs/DISCIPLINES.electromagnetic_system"
+# Load done
+do DFF.do
+#  ----------------------------
+# | Analog Data pre-processing |
+#  ----------------------------
+# ** Warning: (eldo - 1615)  In file "./DFF.cal/DFF.cir" line 3:
+# +   COMMAND ".TRAN": TPRINT can not be <= 0.0.
+# +   It is set to TSTOP/20.0 = 5.000e-11 s.
+# ** Warning: (eldo - 400)  In file "./DFF.cal/DFF.cir" line 3:
+# +   .TRAN: TSTART > TSTOP: TSTART set to 0
+# ** Warning: (eldo - 107)   NODE "VSS": Less than two connections.
+# Analog data pre-processing done
+# -----------| Summary on Analog Data |-----------
+# Analog kernel and ELDO devices memory space allocated (MB):    463
+# 875 devices
+# 437 nodes
+# 2 input signals
+# ** Note: Extra devices and nodes might be created during simulation (access resistors, internal nodes...).
+# ** Note: Extra Memory might be allocated during simulation.
+# ----------- Summary done -----------
+# ** Warning: (eldo - 117)   NODE "VSS": Not connected to any power supply.
+# ** Warning: (eldo - 108)   NODE "N_D_M3_G": This node is a floating gate.
+# +   List of MOS devices connected to that node follows:
+# +   --> M3
+# ** Warning: (eldo - 108)   NODE "N_CLK_M8_G": This node is a floating gate.
+# +   List of MOS devices connected to that node follows:
+# +   --> M8
+# ** Warning: (eldo - 108)   NODE "N_CLK_M11_G": This node is a floating gate.
+# +   List of MOS devices connected to that node follows:
+# +   --> M11
+# ** Warning: (eldo - 29)   Such messages will not be displayed in future. Set .option MSGNODE = 0 to receive all such warnings.
+# ** Warning: (eldo - 118)   NODE "X_PM_DFF_D.85": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "D": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_DFF_D.54": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_DFF_D.50": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_DFF_D.46": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_DFF_D.43": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "N_D_C_169_N": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "N_D_C_174_N": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_DFF_D.36": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "N_D_C_168_N": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_DFF_D.34": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "N_D_C_167_N": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "N_D_C_178_N": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_DFF_D.30": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_DFF_D.29": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_DFF_D.28": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_DFF_D.26": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_DFF_D.25": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_DFF_D.24": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_DFF_D.23": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "N_D_C_177_N": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_DFF_D.7": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "N_D_C_179_N": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_DFF_D.5": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_DFF_CLK.95": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_DFF_CLK.87": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "N_CLK_C_203_N": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "CLK": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_DFF_CLK.57": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_DFF_CLK.52": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_DFF_CLK.47": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_DFF_CLK.44": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_DFF_CLK.42": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "N_CLK_C_189_N": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_DFF_CLK.40": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "N_CLK_C_188_N": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_DFF_CLK.38": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_DFF_CLK.37": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_DFF_CLK.36": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_DFF_CLK.35": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_DFF_CLK.34": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_DFF_CLK.29": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_DFF_CLK.26": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_DFF_CLK.25": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_DFF_CLK.24": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "N_CLK_C_204_N": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "N_CLK_C_201_N": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "N_CLK_C_199_N": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_DFF_CLK.17": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "N_CLK_C_187_N": No DC path to ground.
+#  -----------------------------
+# | Quiescent Point computation |
+#  -----------------------------
+# Analog DC computation starting
+# Analog DC computation done
+# Digital computation at time 0 ps starting
+# Digital computation at time 0 ps done
+# Quiescent point done
+#  -----------------------------
+# | Transient analysis starting |
+#  -----------------------------
+# Eldo analog kernel simulation effective options:
+#   VNTOL  = 1.000000e-06
+#   RELTOL = 7.500000e-04
+#   HMIN   = 1.000000e-03 ns
+#   HMAX will be set later during simulation and may vary
+#   EPS    = 1.000000e-03
+# Starting analog time is 0.000000 ns
+# Simulation time for "run -all" is 1.000000 ns
+# Transient analysis done
+#    Global cpu Time 0h 0mn 10s 820ms 
+#    Global Elapsed Time 0h 1mn 9s 
+# -----------| Simulation Information |-----------
+# Analog kernel and ELDO devices memory size allocated (MB):  465.7
+# 915 devices
+# 477 nodes
+# 19813 MOS or BIP model calls
+# 35059 steps computed
+# ----------- Simulation Information done -----------
+# --- Simulation stopped at time 35 us
+# Newton iteration            :  1.382099
+# Total of transactions       :  1
+# Total of events             :  1

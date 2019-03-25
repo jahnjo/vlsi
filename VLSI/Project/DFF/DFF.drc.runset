@@ -1,0 +1,7 @@
+*drcRulesFile: /home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/rule_deck/DRC
+*drcRunDir: /home/local/RAMS/egrvlsi07/VLSI/Project/DFF/DFF.cal
+*drcLayoutPaths: DFF.calibre.gds
+*drcLayoutPrimary: DFF
+*drcLayoutGetFromViewer: 1
+*drcResultsFile: DFF.drc.results
+*drcSummaryFile: DFF.drc.summary

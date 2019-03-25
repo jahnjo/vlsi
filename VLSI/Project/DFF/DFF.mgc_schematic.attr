@@ -1,0 +1,13 @@
+A 5 u mgc_schematic 5c913ab17a68.03.7f.00.00.01.00.10.17 10 2 1 0
+V v 8 1 5c9153906221.03.7f.00.00.01.00.10.17
+F o 0 ""
+V v 9 1 5c91577a64b7.03.7f.00.00.01.00.31.3c
+F o 0 ""
+V v 10 1 5c915bdca6c9.03.7f.00.00.01.00.35.03
+F o 0 ""
+O 10
+R cspuv 0 "$VLSI/Project/DFF/DFF/sheet1" 9 mgc_sheet 5c915bdca6b2.03.7f.00.00.01.00.35.03 5c913ab17b3c.03.7f.00.00.01.00.10.17
+O 9
+R cspuv 0 "$VLSI/Project/DFF/DFF/sheet1" 8 mgc_sheet 5c91577a64a1.03.7f.00.00.01.00.31.3c 5c913ab17b3c.03.7f.00.00.01.00.10.17
+O 8
+R cspuv 0 "$VLSI/Project/DFF/DFF/sheet1" 7 mgc_sheet 5c9153906208.03.7f.00.00.01.00.10.17 5c913ab17b3c.03.7f.00.00.01.00.10.17

@@ -1,0 +1,7 @@
+MGC_LOCATION_MAP_3
+
+$VLSI -t LIBRARY
+..
+
+
+INCLUDE /home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/mgc_tech_location_map -s $GENERIC13

@@ -1,0 +1,33 @@
+START report: Tue Mar 19 16:15:03 2019 
+** Warning: (eldo - 46)  In file "/home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/models/lib.eldo" line 6767:
++   Double definition for parameter ISA
++   Previous definition was in file "/home/local/RAMS/egrvlsi07/VLSI/Project/DFF/default/DFF_default.cir" line 22
+** Warning: (eldo - 46)  In file "/home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/models/lib.eldo" line 6767:
++   Double definition for parameter BFA
++   Previous definition was in file "/home/local/RAMS/egrvlsi07/VLSI/Project/DFF/default/DFF_default.cir" line 22
+** Warning: (eldo - 46)  In file "/home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/models/lib.eldo" line 6767:
++   Double definition for parameter NFA
++   Previous definition was in file "/home/local/RAMS/egrvlsi07/VLSI/Project/DFF/default/DFF_default.cir" line 22
+** Warning: (eldo - 46)  In file "/home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/models/lib.eldo" line 6767:
++   Double definition for parameter RBA
++   Previous definition was in file "/home/local/RAMS/egrvlsi07/VLSI/Project/DFF/default/DFF_default.cir" line 22
+** Warning: (eldo - 46)  In file "/home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/models/lib.eldo" line 6767:
++   Double definition for parameter REA
++   Previous definition was in file "/home/local/RAMS/egrvlsi07/VLSI/Project/DFF/default/DFF_default.cir" line 22
+** Warning: (eldo - 46)  In file "/home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/models/lib.eldo" line 6767:
++   Double definition for parameter RCA
++   Previous definition was in file "/home/local/RAMS/egrvlsi07/VLSI/Project/DFF/default/DFF_default.cir" line 22
+** Warning: (eldo - 46)  In file "/home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/models/lib.eldo" line 6767:
++   Double definition for parameter RBMA
++   Previous definition was in file "/home/local/RAMS/egrvlsi07/VLSI/Project/DFF/default/DFF_default.cir" line 22
+** Warning: (eldo - 46)  In file "/home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/models/lib.eldo" line 6767:
++   Double definition for parameter CJEA
++   Previous definition was in file "/home/local/RAMS/egrvlsi07/VLSI/Project/DFF/default/DFF_default.cir" line 22
+** Warning: (eldo - 46)  In file "/home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/models/lib.eldo" line 6767:
++   Double definition for parameter CJCA
++   Previous definition was in file "/home/local/RAMS/egrvlsi07/VLSI/Project/DFF/default/DFF_default.cir" line 22
+** Warning: (eldo - 1615)  In file "/home/local/RAMS/egrvlsi07/VLSI/Project/DFF/default/DFF_default.cir" line 12:
++   COMMAND ".TRAN": TPRINT can not be <= 0.0.
++   It is set to TSTOP/20.0 = 5.000e-09 s.
+** Warning: (eldo - 346)  COMMAND ".PROBE": node Q_BAR undeclared.
+** Warning: (eldo - 109)  NODE "N$76": This bulk node is not biased. 

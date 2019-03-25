@@ -1,0 +1,8 @@
+//OK 
+//NUMBER_OF_HEADER_LINES: 6
+//VERSION: 1
+//TOKEN_DELIMITER: "
+//TOKEN_SEPARATOR: " "
+//FORMAT: "time" "calibre version" "command line"
+"Wed Mar 20 13:30:54 2019 " "v2012.2_36.25" "-xrc -pdb -rcc -turbo 1 /home/local/RAMS/egrvlsi07/VLSI/Project/DFF/DFF.cal/_PEX_"
+"Wed Mar 20 13:30:55 2019 " "v2012.2_36.25" "-xrc -fmt -all /home/local/RAMS/egrvlsi07/VLSI/Project/DFF/DFF.cal/_PEX_"

@@ -1,0 +1,8 @@
+A 5 u mgc_project 5c913a2f06ff.03.7f.00.00.01.00.0d.c6 1 1 2 0
+V v 1 1 5c913a2f06ff.03.7f.00.00.01.01.0d.c6
+F o 0 ""
+O 1
+R csduv 0 "$GENERIC13" 1 mgc_tech_lib 488e22b542cf.03.93.22.28.e1.01.11.a3 488e22b542cf.03.93.22.28.e1.00.11.a3
+P "creating_tool" "design manager"
+R csduv 1 "$GENERIC13/configurations/generic13" 8 mgc_tech_config 4e5c0e61c027.03.93.22.a2.e9.00.4b.e9 4aef3b078c3e.03.93.22.28.e1.00.3e.d4
+P "creating_tool" "design manager"

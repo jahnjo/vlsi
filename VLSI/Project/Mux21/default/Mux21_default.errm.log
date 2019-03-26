@@ -1,4 +1,4 @@
-START report: Tue Mar 26 16:41:01 2019 
+START report: Tue Mar 26 17:04:21 2019 
 ** Warning: (eldo - 46)  In file "/home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/models/lib.eldo" line 6767:
 +   Double definition for parameter ISA
 +   Previous definition was in file "/home/local/RAMS/egrvlsi07/egre/vlsi/VLSI/Project/Mux21/default/Mux21_default.cir" line 22
@@ -29,3 +29,7 @@ START report: Tue Mar 26 16:41:01 2019
 ** Warning: (eldo - 1615)  In file "/home/local/RAMS/egrvlsi07/egre/vlsi/VLSI/Project/Mux21/default/Mux21_default.cir" line 12:
 +   COMMAND ".TRAN": TPRINT can not be <= 0.0.
 +   It is set to TSTOP/20.0 = 5.000e-09 s.
+** Warning: (eldo - 109)  NODE "N$55": This bulk node is not biased. 
+** Warning: (eldo - 109)  NODE "N$56": This bulk node is not biased. 
+** Warning: (eldo - 109)  NODE "N$57": This bulk node is not biased. 
+** Warning: (eldo - 109)  NODE "N$62": This bulk node is not biased. 

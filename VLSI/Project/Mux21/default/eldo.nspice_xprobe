@@ -4,8 +4,8 @@
 version 1.0
 
 Globals
-   ground GROUND
    VDD VDD
+   ground GROUND
 End Globals
 
 Cell NMOS
@@ -27,16 +27,17 @@ Cell #top#
    Pin A A
    Pin B B
    Pin S S
-   Net N$45 N$45
+   Net N$56 N$56
+   Net N$62 N$62
+   Net N$57 N$57
+   Net N$55 N$55
    Net N$46 N$46
    Net S S
-   Net Y Y
    Net B B
    Net A A
-   Global ground GROUND
+   Net Y Y
    Global VDD VDD
-   Inst M8 M8 NMOS
-   Inst M7 M7 PMOS
+   Global ground GROUND
    Inst M6 M6 NMOS
    Inst M3 M3 PMOS
    Inst M5 M5 NMOS

@@ -4,18 +4,18 @@
 version 1.0
 
 Globals
-   ground GROUND
    VDD VDD
+   ground GROUND
 End Globals
 
-Cell NMOS
+Cell PMOS
    Pin D D
    Pin G G
    Pin S S
    Pin B B
 End Cell
 
-Cell PMOS
+Cell NMOS
    Pin D D
    Pin G G
    Pin S S
@@ -28,34 +28,40 @@ Cell #top#
    Pin A A
    Pin B B
    Pin Cin CIN
+   Net N$205 N$205
+   Net N$201 N$201
+   Net N$197 N$197
+   Net N$193 N$193
+   Net N$210 N$210
+   Net N$167 N$167
+   Net N$165 N$165
+   Net N$159 N$159
+   Net N$157 N$157
+   Net N$145 N$145
    Net N$7 N$7
    Net N$47 N$47
-   Net N$61 N$61
-   Net N$59 N$59
-   Net N$55 N$55
-   Net N$53 N$53
    Net N$37 N$37
-   Net N$17 N$17
    Net N$19 N$19
    Net N$10 N$10
    Net N$14 N$14
-   Net A A
-   Net B B
-   Net Cin CIN
    Net S S
+   Net B B
+   Net A A
+   Net Cin CIN
    Net Cout COUT
-   Global ground GROUND
    Global VDD VDD
-   Inst M24 M24 NMOS
-   Inst M23 M23 NMOS
-   Inst M22 M22 NMOS
-   Inst M21 M21 NMOS
+   Global ground GROUND
+   Inst M25 M25 PMOS
    Inst M20 M20 NMOS
    Inst M19 M19 NMOS
    Inst M18 M18 NMOS
    Inst M17 M17 PMOS
    Inst M16 M16 PMOS
    Inst M15 M15 PMOS
+   Inst M24 M24 NMOS
+   Inst M23 M23 NMOS
+   Inst M22 M22 NMOS
+   Inst M21 M21 NMOS
    Inst M14 M14 PMOS
    Inst M13 M13 PMOS
    Inst M12 M12 PMOS
@@ -70,5 +76,8 @@ Cell #top#
    Inst M3 M3 NMOS
    Inst M2 M2 PMOS
    Inst M1 M1 NMOS
+   Inst M28 M28 NMOS
+   Inst M27 M27 PMOS
+   Inst M26 M26 NMOS
 End Cell
 

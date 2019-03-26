@@ -1,0 +1,6 @@
+A 5 u Eddm_ba_mgr 5c9a8c8d1ae6.03.7f.00.00.01.00.15.aa 1 2 1 0
+V v 1 1 5c9a8c8d1ae6.03.7f.00.00.01.01.15.aa
+F f 1 "default.ba_1"
+O 1
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R cspuv 0 "$VLSI/Project/Mux21/default" 1 Eddm_design_viewpoint 5c9a8c8d18e6.03.7f.00.00.01.01.15.aa 5c9a8c8d18e6.03.7f.00.00.01.00.15.aa

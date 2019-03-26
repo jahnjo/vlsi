@@ -1,0 +1,31 @@
+A 5 u mgc_sheet 5c9a832964d0.03.7f.00.00.01.00.1d.00 3 2 3 0
+V v 1 4 5c9a832964d0.03.7f.00.00.01.01.1d.00
+F f 1 "sheet1.ssht_1"
+F f 1 "sheet1.sgfx_1"
+F o 0 
+F o 0 
+V v 2 4 5c9a8337846c.03.7f.00.00.01.00.1d.00
+F f 2 "sheet1.ssht_2"
+F f 2 "sheet1.sgfx_2"
+F o 0 
+F o 0 
+V v 3 4 5c9a8337b212.03.7f.00.00.01.00.1d.00
+F f 3 "sheet1.ssht_3"
+F f 3 "sheet1.sgfx_3"
+F o 0 
+F o 0 
+O 3
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R csduv 0 "$VLSI/Project/Mux21/mux21" 1 mgc_schematic 5c9a8329642d.03.7f.00.00.01.01.1d.00 5c9a8329642d.03.7f.00.00.01.00.1d.00
+R csduv 1 "$GENERIC13/symbols/nmos/part" 33 Eddm_part 4f3c52ec7414.03.93.22.28.e1.00.55.af 488e22b57232.03.93.22.28.e1.0a.11.a3
+R csduv 2 "$GENERIC13/symbols/nmos/nmos" 41 mgc_symbol 4f3c52ec7400.03.93.22.28.e1.00.55.af 488e22b57232.03.93.22.28.e1.0b.11.a3
+O 2
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R csduv 0 "$VLSI/Project/Mux21/mux21" 1 mgc_schematic 5c9a8329642d.03.7f.00.00.01.01.1d.00 5c9a8329642d.03.7f.00.00.01.00.1d.00
+R csduv 1 "$GENERIC13/symbols/nmos/part" 33 Eddm_part 4f3c52ec7414.03.93.22.28.e1.00.55.af 488e22b57232.03.93.22.28.e1.0a.11.a3
+R csduv 2 "$GENERIC13/symbols/nmos/nmos" 41 mgc_symbol 4f3c52ec7400.03.93.22.28.e1.00.55.af 488e22b57232.03.93.22.28.e1.0b.11.a3
+O 1
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R csduv 0 "$VLSI/Project/Mux21/mux21" 1 mgc_schematic 5c9a8329642d.03.7f.00.00.01.01.1d.00 5c9a8329642d.03.7f.00.00.01.00.1d.00
+R csduv 1 "$GENERIC13/symbols/nmos/part" 33 Eddm_part 4f3c52ec7414.03.93.22.28.e1.00.55.af 488e22b57232.03.93.22.28.e1.0a.11.a3
+R csduv 2 "$GENERIC13/symbols/nmos/nmos" 41 mgc_symbol 4f3c52ec7400.03.93.22.28.e1.00.55.af 488e22b57232.03.93.22.28.e1.0b.11.a3

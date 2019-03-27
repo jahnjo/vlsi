@@ -49,7 +49,7 @@ $$set_sim_value("sim_simulation_selected_scenario_type",@spice);
 $$set_sim_value("meas_vector_sm",[]);
 
 // Waveforms
-$$set_sim_value("last_wdbs_opened",[["Mux21_default", "/home/local/RAMS/egrvlsi07/egre/vlsi/VLSI/Project/Mux21/default/Mux21_default.wdb"]]);
+$$set_sim_value("last_wdbs_opened",[["Mux21_default", "/home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/Mux21/default/Mux21_default.wdb"]]);
 $$set_sim_value("probes_pre_2008_2_imported",@true);
 $$set_sim_value("sim_forces",[]);
 $$set_sim_value("sim_plots_vector",[]);
@@ -349,7 +349,7 @@ $$set_sim_value("vsim_netlist_run_viewer_flag",0);
 
 // Netlister Options
 $$set_sim_value("sim_eldonet_check",@false);
-$$set_sim_value("sim_eldonet_timestamp",1553634264);
+$$set_sim_value("sim_eldonet_timestamp",1553707505);
 $$set_sim_value("sim_netlist_run_viewer_flag",1);
 $$set_sim_value("sim_netlist_uptodate_check_flag",@yes);
 $$set_sim_value("sim_netlister_additional_globals","");

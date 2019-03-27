@@ -1,9 +1,18 @@
-// Registration file '/home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/symbols/nmos/@ncf.dir/nmos.ncf' closed.
-// Registration file '/opt/mentor/pyxis/v10.1_1_linux_x86_64/pyxis_home/mgc_icstd_lib/global.ncf' closed.
-// Registration file '/home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/symbols/pmos/@ncf.dir/pmos.ncf' closed.
-// Parsing file '/opt/mentor/pyxis/v10.1_1_linux_x86_64/pyxis_home/mgc_icstd_lib/global.ncf' succeeded.
-// Registration file '/opt/mentor/pyxis/v10.1_1_linux_x86_64/pyxis_home/mgc_icstd_lib/global.ncf' closed.
-//  Invocation args:  -check -upper -eldo -o /home/local/RAMS/egrvlsi07/egre/vlsi/VLSI/Project/Mux21/default/Mux21_default.spi -log /home/local/RAMS/egrvlsi07/egre/vlsi/VLSI/Project/Mux21/default/default.netlist_transcript -quiet $VLSI/Project/Mux21/default
+
+//  Pyxis Netlister  v10.1_1.0  Thu Jun 14 12:16:17 PDT 2012
+//
+//             Copyright Mentor Graphics Corporation 1982
+//
+//                      All Rights Reserved.
+//
+//    THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+//      WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR
+//           ITS LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+//
+//  Mentor Graphics software executing under x86_64 Linux.
+//
+
+//  Invocation args:  -force /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/Mux21/default
 
 // **** Reading <$VLSI/Project/Mux21/default> for ELDO netlist ****
 
@@ -24,3 +33,6 @@ Number of cells: 3
 Number of primitive instances: 6
 
 Done...
+// Registration file '/home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/symbols/nmos/@ncf.dir/nmos.ncf' closed.
+// Registration file '/opt/mentor/pyxis/v10.1_1_linux_x86_64/pyxis_home/mgc_icstd_lib/global.ncf' closed.
+// Registration file '/home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/symbols/pmos/@ncf.dir/pmos.ncf' closed.

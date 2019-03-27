@@ -1,13 +1,13 @@
-A 5 u mgc_schematic 5c9a8329642d.03.7f.00.00.01.00.1d.00 10 2 1 0
-V v 8 1 5c9a919c1ab0.03.7f.00.00.01.00.28.82
-F o 0 ""
-V v 9 1 5c9a93a52c69.03.7f.00.00.01.00.28.82
-F o 0 ""
+A 5 u mgc_schematic 5c9a8329642d.03.7f.00.00.01.00.1d.00 12 2 1 0
 V v 10 1 5c9a93c256d7.03.7f.00.00.01.00.28.82
 F o 0 ""
+V v 11 1 5c9bb1e84667.03.7f.00.00.01.00.5d.5e
+F o 0 ""
+V v 12 1 5c9bb4dfb77f.03.7f.00.00.01.00.5d.5e
+F o 0 ""
+O 12
+R cspuv 0 "$VLSI/Project/Mux21/mux21/sheet1" 11 mgc_sheet 5c9bb4dfb765.03.7f.00.00.01.00.5d.5e 5c9a832964d0.03.7f.00.00.01.00.1d.00
+O 11
+R cspuv 0 "$VLSI/Project/Mux21/mux21/sheet1" 10 mgc_sheet 5c9bb1e8463e.03.7f.00.00.01.00.5d.5e 5c9a832964d0.03.7f.00.00.01.00.1d.00
 O 10
 R cspuv 0 "$VLSI/Project/Mux21/mux21/sheet1" 9 mgc_sheet 5c9a93c256c2.03.7f.00.00.01.00.28.82 5c9a832964d0.03.7f.00.00.01.00.1d.00
-O 9
-R cspuv 0 "$VLSI/Project/Mux21/mux21/sheet1" 8 mgc_sheet 5c9a93a52c48.03.7f.00.00.01.00.28.82 5c9a832964d0.03.7f.00.00.01.00.1d.00
-O 8
-R cspuv 0 "$VLSI/Project/Mux21/mux21/sheet1" 7 mgc_sheet 5c9a919c1a95.03.7f.00.00.01.00.28.82 5c9a832964d0.03.7f.00.00.01.00.1d.00

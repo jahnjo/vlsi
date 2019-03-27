@@ -1,0 +1,61 @@
+A 5 u Eddm_design_viewpoint 5c9bd366bdad.03.7f.00.00.01.00.0d.4e 5 2 41 0
+V v 3 4 5c9bd6cb4c36.03.7f.00.00.01.00.0d.4e
+F f 3 "default.dvpt_3"
+F o 0 ""
+F o 0 ""
+F o 0 ""
+V v 4 4 5c9bd7f99530.03.7f.00.00.01.00.0d.4e
+F f 4 "default.dvpt_4"
+F o 0 ""
+F o 0 ""
+F o 0 ""
+V v 5 4 5c9bda136aee.03.7f.00.00.01.00.32.0c
+F f 5 "default.dvpt_5"
+F o 0 ""
+F o 0 ""
+F o 0 ""
+O 5
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R cspuv 0 "$VLSI/Project/DFFen/part" 1 Eddm_part 5c9badbb8aae.03.7f.00.00.01.01.4e.07 5c9badbb8aae.03.7f.00.00.01.00.4e.07
+R cspuv 1 "$VLSI/Project/DFFen/DFFen" 5 mgc_schematic 5c9bd7f99122.03.7f.00.00.01.00.0d.4e 5c9bada97d8e.03.7f.00.00.01.00.4e.07
+R cspuv 2 "$VLSI/Project/DFFen/default" 1 Eddm_ba_mgr 5c9bd366be98.03.7f.00.00.01.01.0d.4e 5c9bd366be98.03.7f.00.00.01.00.0d.4e
+R cspuv 3 "$VLSI/Project/DFF/part" 6 Eddm_part 5c915bea2a1b.03.7f.00.00.01.00.35.03 5c9142ab6087.03.7f.00.00.01.00.10.17
+R cspuv 4 "$VLSI/Project/Mux21/part" 2 Eddm_part 5c9bb6d87a8a.03.7f.00.00.01.00.67.7e 5c9a8336c0c3.03.7f.00.00.01.00.1d.00
+R cspuv 5 "$VLSI/Project/DFF/DFF" 10 mgc_schematic 5c915bdca6c9.03.7f.00.00.01.00.35.03 5c913ab17a68.03.7f.00.00.01.00.10.17
+R cspuv 6 "$VLSI/Project/DFF/DFF" 1 mgc_symbol 5c915be4e6eb.03.7f.00.00.01.01.35.03 5c915be4e6eb.03.7f.00.00.01.00.35.03
+R cspuv 7 "$VLSI/Project/Mux21/mux21" 13 mgc_schematic 5c9bb5b92434.03.7f.00.00.01.00.5d.5e 5c9a8329642d.03.7f.00.00.01.00.1d.00
+R cspuv 8 "$VLSI/Project/Mux21/Mux21" 2 mgc_symbol 5c9bb7036273.03.7f.00.00.01.00.67.7e 5c9bb655bf6b.03.7f.00.00.01.00.67.7e
+R cspuv 13 "$GENERIC13/symbols/nmos/part" 33 Eddm_part 4f3c52ec7414.03.93.22.28.e1.00.55.af 488e22b57232.03.93.22.28.e1.0a.11.a3
+R cspuv 14 "$GENERIC13/symbols/pmos/part" 24 Eddm_part 4f3c5315ac7a.03.93.22.28.e1.00.55.af 488e22b57236.03.93.22.28.e1.03.11.a3
+R cspuv 15 "$GENERIC13/symbols/pmos/pmos" 27 mgc_symbol 4f3c5315ac6d.03.93.22.28.e1.00.55.af 488e22b57236.03.93.22.28.e1.02.11.a3
+R cspuv 16 "$GENERIC13/symbols/nmos/nmos" 41 mgc_symbol 4f3c52ec7400.03.93.22.28.e1.00.55.af 488e22b57232.03.93.22.28.e1.0b.11.a3
+O 4
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R cspuv 0 "$VLSI/Project/DFFen/part" 1 Eddm_part 5c9badbb8aae.03.7f.00.00.01.01.4e.07 5c9badbb8aae.03.7f.00.00.01.00.4e.07
+R cspuv 1 "$VLSI/Project/DFFen/DFFen" 5 mgc_schematic 5c9bd7f99122.03.7f.00.00.01.00.0d.4e 5c9bada97d8e.03.7f.00.00.01.00.4e.07
+R cspuv 2 "$VLSI/Project/DFFen/default" 1 Eddm_ba_mgr 5c9bd366be98.03.7f.00.00.01.01.0d.4e 5c9bd366be98.03.7f.00.00.01.00.0d.4e
+R cspuv 3 "$VLSI/Project/DFF/part" 6 Eddm_part 5c915bea2a1b.03.7f.00.00.01.00.35.03 5c9142ab6087.03.7f.00.00.01.00.10.17
+R cspuv 4 "$VLSI/Project/Mux21/part" 2 Eddm_part 5c9bb6d87a8a.03.7f.00.00.01.00.67.7e 5c9a8336c0c3.03.7f.00.00.01.00.1d.00
+R cspuv 5 "$VLSI/Project/DFF/DFF" 10 mgc_schematic 5c915bdca6c9.03.7f.00.00.01.00.35.03 5c913ab17a68.03.7f.00.00.01.00.10.17
+R cspuv 6 "$VLSI/Project/DFF/DFF" 1 mgc_symbol 5c915be4e6eb.03.7f.00.00.01.01.35.03 5c915be4e6eb.03.7f.00.00.01.00.35.03
+R cspuv 7 "$VLSI/Project/Mux21/mux21" 13 mgc_schematic 5c9bb5b92434.03.7f.00.00.01.00.5d.5e 5c9a8329642d.03.7f.00.00.01.00.1d.00
+R cspuv 8 "$VLSI/Project/Mux21/Mux21" 2 mgc_symbol 5c9bb7036273.03.7f.00.00.01.00.67.7e 5c9bb655bf6b.03.7f.00.00.01.00.67.7e
+R cspuv 13 "$GENERIC13/symbols/nmos/part" 33 Eddm_part 4f3c52ec7414.03.93.22.28.e1.00.55.af 488e22b57232.03.93.22.28.e1.0a.11.a3
+R cspuv 14 "$GENERIC13/symbols/pmos/part" 24 Eddm_part 4f3c5315ac7a.03.93.22.28.e1.00.55.af 488e22b57236.03.93.22.28.e1.03.11.a3
+R cspuv 15 "$GENERIC13/symbols/pmos/pmos" 27 mgc_symbol 4f3c5315ac6d.03.93.22.28.e1.00.55.af 488e22b57236.03.93.22.28.e1.02.11.a3
+R cspuv 16 "$GENERIC13/symbols/nmos/nmos" 41 mgc_symbol 4f3c52ec7400.03.93.22.28.e1.00.55.af 488e22b57232.03.93.22.28.e1.0b.11.a3
+O 3
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R cspuv 0 "$VLSI/Project/DFFen/part" 1 Eddm_part 5c9badbb8aae.03.7f.00.00.01.01.4e.07 5c9badbb8aae.03.7f.00.00.01.00.4e.07
+R cspuv 1 "$VLSI/Project/DFFen/DFFen" 4 mgc_schematic 5c9bd6cb4701.03.7f.00.00.01.00.0d.4e 5c9bada97d8e.03.7f.00.00.01.00.4e.07
+R cspuv 2 "$VLSI/Project/DFFen/default" 1 Eddm_ba_mgr 5c9bd366be98.03.7f.00.00.01.01.0d.4e 5c9bd366be98.03.7f.00.00.01.00.0d.4e
+R cspuv 3 "$VLSI/Project/DFF/part" 6 Eddm_part 5c915bea2a1b.03.7f.00.00.01.00.35.03 5c9142ab6087.03.7f.00.00.01.00.10.17
+R cspuv 4 "$VLSI/Project/Mux21/part" 2 Eddm_part 5c9bb6d87a8a.03.7f.00.00.01.00.67.7e 5c9a8336c0c3.03.7f.00.00.01.00.1d.00
+R cspuv 5 "$VLSI/Project/DFF/DFF" 10 mgc_schematic 5c915bdca6c9.03.7f.00.00.01.00.35.03 5c913ab17a68.03.7f.00.00.01.00.10.17
+R cspuv 6 "$VLSI/Project/DFF/DFF" 1 mgc_symbol 5c915be4e6eb.03.7f.00.00.01.01.35.03 5c915be4e6eb.03.7f.00.00.01.00.35.03
+R cspuv 7 "$VLSI/Project/Mux21/mux21" 13 mgc_schematic 5c9bb5b92434.03.7f.00.00.01.00.5d.5e 5c9a8329642d.03.7f.00.00.01.00.1d.00
+R cspuv 8 "$VLSI/Project/Mux21/Mux21" 2 mgc_symbol 5c9bb7036273.03.7f.00.00.01.00.67.7e 5c9bb655bf6b.03.7f.00.00.01.00.67.7e
+R cspuv 13 "$GENERIC13/symbols/nmos/part" 33 Eddm_part 4f3c52ec7414.03.93.22.28.e1.00.55.af 488e22b57232.03.93.22.28.e1.0a.11.a3
+R cspuv 14 "$GENERIC13/symbols/pmos/part" 24 Eddm_part 4f3c5315ac7a.03.93.22.28.e1.00.55.af 488e22b57236.03.93.22.28.e1.03.11.a3
+R cspuv 15 "$GENERIC13/symbols/pmos/pmos" 27 mgc_symbol 4f3c5315ac6d.03.93.22.28.e1.00.55.af 488e22b57236.03.93.22.28.e1.02.11.a3
+R cspuv 16 "$GENERIC13/symbols/nmos/nmos" 41 mgc_symbol 4f3c52ec7400.03.93.22.28.e1.00.55.af 488e22b57232.03.93.22.28.e1.0b.11.a3

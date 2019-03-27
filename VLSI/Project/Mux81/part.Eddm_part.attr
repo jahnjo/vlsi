@@ -1,0 +1,6 @@
+A 5 u Eddm_part 5c9bae189a3e.03.7f.00.00.01.00.52.a1 1 2 1 0
+V v 1 1 5c9bae189a3e.03.7f.00.00.01.01.52.a1
+F f 1 "part.part_1"
+O 1
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R csduv 0 "$VLSI/Project/Mux81/Mux81" 1 mgc_schematic 5c9badfaf392.03.7f.00.00.01.01.52.a1 5c9badfaf392.03.7f.00.00.01.00.52.a1

@@ -1,0 +1,9 @@
+A 5 u mgc_sheet 5c9bb0213e38.03.7f.00.00.01.00.57.f5 1 2 1 0
+V v 1 4 5c9bb0213e38.03.7f.00.00.01.01.57.f5
+F f 1 "sheet1.ssht_1"
+F f 1 "sheet1.sgfx_1"
+F o 0 
+F o 0 
+O 1
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R csduv 0 "$VLSI/Project/and/and" 1 mgc_schematic 5c9bb0213d9b.03.7f.00.00.01.01.57.f5 5c9bb0213d9b.03.7f.00.00.01.00.57.f5

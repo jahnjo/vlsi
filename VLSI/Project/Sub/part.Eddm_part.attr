@@ -1,0 +1,6 @@
+A 5 u Eddm_part 5c9bb000663c.03.7f.00.00.01.00.55.c1 1 2 1 0
+V v 1 1 5c9bb000663c.03.7f.00.00.01.01.55.c1
+F f 1 "part.part_1"
+O 1
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R csduv 0 "$VLSI/Project/Sub/Sub" 1 mgc_schematic 5c9baff8cfe7.03.7f.00.00.01.01.55.c1 5c9baff8cfe7.03.7f.00.00.01.00.55.c1

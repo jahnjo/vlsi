@@ -1,0 +1,11 @@
+A 5 u mgc_symbol 5c9bb655bf6b.03.7f.00.00.01.00.67.7e 2 2 1 0
+V v 1 2 5c9bb655bf6b.03.7f.00.00.01.01.67.7e
+F f 1 "Mux21.smbl_1"
+F o 0 
+V v 2 2 5c9bb7036273.03.7f.00.00.01.00.67.7e
+F f 2 "Mux21.smbl_2"
+F o 0 
+O 2
+R csduv 0 "$VLSI/Project/Mux21/part" 2 Eddm_part 5c9bb6d87a8a.03.7f.00.00.01.00.67.7e 5c9a8336c0c3.03.7f.00.00.01.00.1d.00
+O 1
+R csduv 0 "$VLSI/Project/Mux21/part" 2 Eddm_part 5c9bb6d87a8a.03.7f.00.00.01.00.67.7e 5c9a8336c0c3.03.7f.00.00.01.00.1d.00

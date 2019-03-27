@@ -1,0 +1,15 @@
+A 5 u Eddm_design_viewpoint 5c9bb72e8abe.03.7f.00.00.01.00.68.00 1 2 7 0
+V v 1 4 5c9bb72e8abe.03.7f.00.00.01.01.68.00
+F f 1 "Mux21_SDL_Flat.dvpt_1"
+F o 0 
+F o 0 
+F o 0 
+O 1
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R cspuv 0 "$VLSI/Project/Mux21/part" 2 Eddm_part 5c9bb6d87a8a.03.7f.00.00.01.00.67.7e 5c9a8336c0c3.03.7f.00.00.01.00.1d.00
+R cspuv 1 "$VLSI/Project/Mux21/mux21" 13 mgc_schematic 5c9bb5b92434.03.7f.00.00.01.00.5d.5e 5c9a8329642d.03.7f.00.00.01.00.1d.00
+R cspuv 2 "$VLSI/Project/Mux21/Mux21" 1 mgc_symbol 5c9bb655bf6b.03.7f.00.00.01.01.67.7e 5c9bb655bf6b.03.7f.00.00.01.00.67.7e
+R cspuv 3 "$GENERIC13/symbols/nmos/part" 33 Eddm_part 4f3c52ec7414.03.93.22.28.e1.00.55.af 488e22b57232.03.93.22.28.e1.0a.11.a3
+R cspuv 4 "$GENERIC13/symbols/pmos/part" 24 Eddm_part 4f3c5315ac7a.03.93.22.28.e1.00.55.af 488e22b57236.03.93.22.28.e1.03.11.a3
+R cspuv 5 "$GENERIC13/symbols/pmos/pmos" 27 mgc_symbol 4f3c5315ac6d.03.93.22.28.e1.00.55.af 488e22b57236.03.93.22.28.e1.02.11.a3
+R cspuv 6 "$GENERIC13/symbols/nmos/nmos" 41 mgc_symbol 4f3c52ec7400.03.93.22.28.e1.00.55.af 488e22b57232.03.93.22.28.e1.0b.11.a3

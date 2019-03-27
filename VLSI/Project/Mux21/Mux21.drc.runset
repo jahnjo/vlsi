@@ -1,0 +1,7 @@
+*drcRulesFile: /home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/rule_deck/DRC
+*drcRunDir: /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/Mux21/Mux21.cal
+*drcLayoutPaths: Mux21.calibre.gds
+*drcLayoutPrimary: Mux21
+*drcLayoutGetFromViewer: 1
+*drcResultsFile: Mux21.drc.results
+*drcSummaryFile: Mux21.drc.summary

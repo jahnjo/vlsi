@@ -1,0 +1,11 @@
+*lvsRulesFile: /home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/rule_deck/LVS
+*lvsRunDir: /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/Mux21/Mux21.cal
+*lvsLayoutPaths: Mux21.calibre.gds
+*lvsLayoutPrimary: Mux21
+*lvsLayoutGetFromViewer: 1
+*lvsResultsFile: Mux21.lvs.results
+*lvsSummaryFile: Mux21.lvs.summary
+*cmnApplyTemplates: 0
+*lvsSourceGetFromViewer: 1
+*lvsSourcePath: Mux21.calibre.src.net
+*lvsSourcePrimary: Mux21

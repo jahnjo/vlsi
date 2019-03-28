@@ -1,0 +1,39 @@
+* SPICE NETLIST
+***************************************
+
+.SUBCKT mimcap_g13 plus minus
+.ENDS
+***************************************
+.SUBCKT spiral_inductor_lvs pos neg
+.ENDS
+***************************************
+.SUBCKT DFFen VDD Q D ground En CLK
+** N=17 EP=6 IP=0 FDC=26
+M0 3 6 Q ground nmos L=1.3e-07 W=6e-07 $X=-625 $Y=53705 $D=19
+M1 D En 3 ground nmos L=1.3e-07 W=6e-07 $X=-115 $Y=53705 $D=19
+M2 6 En ground ground nmos L=1.3e-07 W=6e-07 $X=1365 $Y=53705 $D=19
+M3 ground 11 Q ground nmos L=1.3e-07 W=6e-07 $X=2900 $Y=53705 $D=19
+M4 7 10 ground ground nmos L=1.3e-07 W=6e-07 $X=3410 $Y=53705 $D=19
+M5 8 15 7 ground nmos L=1.3e-07 W=6e-07 $X=3920 $Y=53705 $D=19
+M6 ground 3 8 ground nmos L=1.3e-07 W=6e-07 $X=4230 $Y=53705 $D=19
+M7 9 14 ground ground nmos L=1.3e-07 W=6e-07 $X=4740 $Y=53705 $D=19
+M8 10 15 9 ground nmos L=1.3e-07 W=6e-07 $X=5050 $Y=53705 $D=19
+M9 ground 7 10 ground nmos L=1.3e-07 W=6e-07 $X=5560 $Y=53705 $D=19
+M10 11 Q ground ground nmos L=1.3e-07 W=6e-07 $X=6070 $Y=53705 $D=19
+M11 12 CLK 11 ground nmos L=1.3e-07 W=6e-07 $X=7550 $Y=53705 $D=19
+M12 ground 10 12 ground nmos L=1.3e-07 W=6e-07 $X=7860 $Y=53705 $D=19
+M13 13 7 ground ground nmos L=1.3e-07 W=6e-07 $X=8370 $Y=53705 $D=19
+M14 Q CLK 13 ground nmos L=1.3e-07 W=6e-07 $X=8680 $Y=53705 $D=19
+M15 ground 3 14 ground nmos L=1.3e-07 W=6e-07 $X=10160 $Y=53705 $D=19
+M16 15 CLK ground ground nmos L=1.3e-07 W=6e-07 $X=10670 $Y=53705 $D=19
+M17 3 En Q VDD pmos L=1.3e-07 W=1.35e-06 $X=-635 $Y=67295 $D=25
+M18 D 6 3 VDD pmos L=1.3e-07 W=1.35e-06 $X=-125 $Y=67295 $D=25
+M19 6 En VDD VDD pmos L=1.3e-07 W=1.35e-06 $X=1355 $Y=67295 $D=25
+M20 VDD 3 14 VDD pmos L=1.3e-07 W=6e-07 $X=4560 $Y=68045 $D=25
+M21 15 CLK VDD VDD pmos L=1.3e-07 W=6e-07 $X=5070 $Y=68045 $D=25
+M22 VDD 7 10 VDD pmos L=1.3e-07 W=6e-07 $X=6550 $Y=68045 $D=25
+M23 7 10 VDD VDD pmos L=1.3e-07 W=6e-07 $X=7060 $Y=68045 $D=25
+M24 VDD 11 Q VDD pmos L=1.3e-07 W=6e-07 $X=8540 $Y=68045 $D=25
+M25 11 Q VDD VDD pmos L=1.3e-07 W=6e-07 $X=9050 $Y=68045 $D=25
+.ENDS
+***************************************

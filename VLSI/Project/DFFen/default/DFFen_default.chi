@@ -1,27 +1,27 @@
-  Run on egr-vlsi-24 (Linux 3.10.0-514.26.2.el7.x86_64)
+  Run on egr-vlsi-17 (Linux 3.10.0-514.26.2.el7.x86_64)
 
 
 ***** SYSTEM INFORMATION ...
 
-*** User  : egrvlsi07@egr-vlsi-24
+*** User  : egrvlsi07@egr-vlsi-17
 *** OS    : \S [VCO = aol]
 *** CPU   :
-    Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+    Intel(R) Xeon(R) CPU E5-2603 0 @ 1.80GHz
     Number of physical processors     : 1
-    Hyper-Threading Technology        : enabled
-    Number of cpu cores               : 6
-    Number of logical processors      : 12
-*** Freq  : 1999.921MHz
-*** Cache : 15360 KB
-*** MEM   : 16353912 kB
-*** Date  : Wed Mar 27 16:19:35 2019
+    Hyper-Threading Technology        : disabled
+    Number of cpu cores               : 4
+    Number of logical processors      : 4
+*** Freq  : 1799.929MHz
+*** Cache : 10240 KB
+*** MEM   : 16386688 kB
+*** Date  : Thu Mar 28 15:21:55 2019
 
 /opt/mentor/ams_12_1/aol/bin/eldo_64.exe -i /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/DFFen/default/DFFen_default.cir -o /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/DFFen/default/DFFen_default.chi -nocou -gwl jwdb -64b -outname DFFen_default 
 
 
 ***** PRE-PROCESSING ...
 
-1*******27-Mar-19 *******  ELDO 12.1 patch1 (64 bits)  (v7.7_1.1)  *******16:19:35******
+1*******28-Mar-19 *******  ELDO 12.1 patch1 (64 bits)  (v7.7_1.1)  *******15:21:55******
 
 0* Component: $VLSI/Project/DFFen  Viewpoint: default
 
@@ -35,7 +35,7 @@
     4  .CONNECT GROUND 0
     5  
     6  
-    7  * ELDO netlist generated with ICnet by 'egrvlsi07' on Wed Mar 27 2019 at 16:19:34
+    7  * ELDO netlist generated with ICnet by 'egrvlsi07' on Thu Mar 28 2019 at 15:21:55
     8  
     9  *
    10  * Globals.
@@ -6898,13 +6898,13 @@ Total number of elements simulated  30
 
 Eldo VERSION : ELDO 12.1 patch1 (64 bits) Thu Sep  6 14:32:26 GMT 2012
 
-*** DATE: 27-Mar-2019 16:19:35
+*** DATE: 28-Mar-2019 15:21:56
 
 *** TITLE: * Component: $VLSI/Project/DFFen  Viewpoint: default
 
 TEMPERATURE : 27.000000 degrees C
 
-1***************27-Mar-2019 ***********************  ELDO 12.1 patch1 (64 bits)  (v7.7_1.1)  ***********************16:19:35*****************
+1***************28-Mar-2019 ***********************  ELDO 12.1 patch1 (64 bits)  (v7.7_1.1)  ***********************15:21:56*****************
 
 0* Component: $VLSI/Project/DFFen  Viewpo
 0****                 MODELS PARAMETERS                                    TEMPERATURE =   27.000 DEG C
@@ -7391,7 +7391,7 @@ unit6 represents 1/degK^2
 
 
 
-1***************27-Mar-2019 ***********************  ELDO 12.1 patch1 (64 bits)  (v7.7_1.1)  ***********************16:19:35*****************
+1***************28-Mar-2019 ***********************  ELDO 12.1 patch1 (64 bits)  (v7.7_1.1)  ***********************15:21:56*****************
 
 0* Component: $VLSI/Project/DFFen  Viewpoint: default
 0****                 OPTION SUMMARY                                        TEMPERATURE =   27.000 DEG C
@@ -7467,7 +7467,7 @@ DC:5 iterations FOR DC analysis
 
 
 
-1***************27-Mar-2019 ***********************  ELDO 12.1 patch1 (64 bits)  (v7.7_1.1)  ***********************16:19:35*****************
+1***************28-Mar-2019 ***********************  ELDO 12.1 patch1 (64 bits)  (v7.7_1.1)  ***********************15:21:56*****************
 
 0* Component: $VLSI/Project/DFFen  Viewpoint: default
 0****                 INITIAL TRANSIENT SOLUTION                           TEMPERATURE =   27.000 DEG C
@@ -7513,48 +7513,48 @@ Eldo NEWTON: VNTOL=1.000000e-06 RELTOL=7.500000e-04
 
 ................................................
 Simulation progress                : 10% (t = 51.0000 N)
-Elapsed CPU time                   :  0h  0mn  0s  50   ( 0h  0mn  0s  50)
-CPU Usage                          :  86%               ( 86%)
+Elapsed CPU time                   :  0h  0mn  0s  70   ( 0h  0mn  0s  70)
+CPU Usage                          : 100%               (100%)
 ................................................
 Simulation progress                : 20% (t = 105.0000 N)
-Elapsed CPU time                   :  0h  0mn  0s  70   ( 0h  0mn  0s 120)
+Elapsed CPU time                   :  0h  0mn  0s  70   ( 0h  0mn  0s 140)
 CPU Usage                          : 100%               (100%)
 ................................................
 Simulation progress                : 30% (t = 151.0000 N)
-Elapsed CPU time                   :  0h  0mn  0s  60   ( 0h  0mn  0s 180)
-CPU Usage                          :  98%               ( 99%)
+Elapsed CPU time                   :  0h  0mn  0s  60   ( 0h  0mn  0s 200)
+CPU Usage                          :  89%               ( 99%)
 ................................................
 Simulation progress                : 40% (t = 200.0000 N)
-Elapsed CPU time                   :  0h  0mn  0s  10   ( 0h  0mn  0s 190)
-CPU Usage                          :  62%               ( 96%)
+Elapsed CPU time                   :  0h  0mn  0s  20   ( 0h  0mn  0s 220)
+CPU Usage                          : 100%               (100%)
 ................................................
 Simulation progress                : 50% (t = 250.3705 N)
-Elapsed CPU time                   :  0h  0mn  0s  40   ( 0h  0mn  0s 230)
-CPU Usage                          : 100%               ( 98%)
+Elapsed CPU time                   :  0h  0mn  0s  40   ( 0h  0mn  0s 260)
+CPU Usage                          : 100%               (100%)
 ................................................
 Simulation progress                : 60% (t = 301.0000 N)
-Elapsed CPU time                   :  0h  0mn  0s  60   ( 0h  0mn  0s 290)
-CPU Usage                          :  96%               ( 98%)
+Elapsed CPU time                   :  0h  0mn  0s  70   ( 0h  0mn  0s 330)
+CPU Usage                          : 100%               (100%)
 ................................................
 Simulation progress                : 70% (t = 351.0000 N)
-Elapsed CPU time                   :  0h  0mn  0s  60   ( 0h  0mn  0s 350)
-CPU Usage                          : 100%               ( 99%)
+Elapsed CPU time                   :  0h  0mn  0s  60   ( 0h  0mn  0s 390)
+CPU Usage                          :  98%               (100%)
 ................................................
 Simulation progress                : 80% (t = 403.7315 N)
-Elapsed CPU time                   :  0h  0mn  0s  10   ( 0h  0mn  0s 360)
-CPU Usage                          :  66%               ( 98%)
+Elapsed CPU time                   :  0h  0mn  0s  10   ( 0h  0mn  0s 400)
+CPU Usage                          :  62%               ( 98%)
 ................................................
 Simulation progress                : 90% (t = 451.0000 N)
-Elapsed CPU time                   :  0h  0mn  0s  20   ( 0h  0mn  0s 380)
-CPU Usage                          : 100%               ( 98%)
+Elapsed CPU time                   :  0h  0mn  0s  30   ( 0h  0mn  0s 430)
+CPU Usage                          : 100%               (100%)
 ................................................
 Simulation progress                : 100% (t = 500.0000 N)
-Elapsed CPU time                   :  0h  0mn  0s  70   ( 0h  0mn  0s 450)
-CPU Usage                          :  94%               ( 97%)
+Elapsed CPU time                   :  0h  0mn  0s  80   ( 0h  0mn  0s 510)
+CPU Usage                          :  98%               (100%)
 
 
 
-1***************27-Mar-2019 ***********************  ELDO 12.1 patch1 (64 bits)  (v7.7_1.1)  ***********************16:19:35*****************
+1***************28-Mar-2019 ***********************  ELDO 12.1 patch1 (64 bits)  (v7.7_1.1)  ***********************15:21:56*****************
 
 0* Component: $VLSI/Project/DFFen  Viewpoint: default
 0****                 ACCOUNTING INFORMATION                                TEMPERATURE =   27.000 DEG C
@@ -7594,18 +7594,18 @@ Number of rejected time steps       97
 Evaluation of active devices        56747
 Memory size (MB)                    246.5
 
-***>CPU TIME 0s 450ms <***
+***>CPU TIME 0s 510ms <***
 
 ***>MESSAGE SUMMARY: 10 warnings
 
-***>GLOBAL CPU TIME 0s 580ms <***
+***>GLOBAL CPU TIME 0s 630ms <***
 
 
-***>GLOBAL ELAPSED TIME 1s <***
+***>GLOBAL ELAPSED TIME 2s <***
 
 
-  Job started at 27-Mar-2019 16:19:35
-  Job end at     27-Mar-2019 16:19:36
+  Job started at 28-Mar-2019 15:21:55
+  Job end at     28-Mar-2019 15:21:57
 
-  Run on egr-vlsi-24 (Linux 3.10.0-514.26.2.el7.x86_64)
+  Run on egr-vlsi-17 (Linux 3.10.0-514.26.2.el7.x86_64)
 

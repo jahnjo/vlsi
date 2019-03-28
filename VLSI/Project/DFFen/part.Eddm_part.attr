@@ -1,6 +1,12 @@
-A 5 u Eddm_part 5c9badbb8aae.03.7f.00.00.01.00.4e.07 1 2 1 0
+A 5 u Eddm_part 5c9badbb8aae.03.7f.00.00.01.00.4e.07 2 2 2 0
 V v 1 1 5c9badbb8aae.03.7f.00.00.01.01.4e.07
 F f 1 "part.part_1"
+V v 2 1 5c9d2381092c.03.7f.00.00.01.00.28.34
+F f 2 "part.part_2"
+O 2
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R csduv 0 "$VLSI/Project/DFFen/DFFen" 1 mgc_schematic 5c9bada97d8f.03.7f.00.00.01.00.4e.07 5c9bada97d8e.03.7f.00.00.01.00.4e.07
+R csduv 1 "$VLSI/Project/DFFen/DFFen" 1 mgc_symbol 5c9d229c1b27.03.7f.00.00.01.00.28.34 5c9d229c1b26.03.7f.00.00.01.00.28.34
 O 1
 P "eddm__stream_to_use" "eddm__propl_dstream"
 R csduv 0 "$VLSI/Project/DFFen/DFFen" 1 mgc_schematic 5c9bada97d8f.03.7f.00.00.01.00.4e.07 5c9bada97d8e.03.7f.00.00.01.00.4e.07

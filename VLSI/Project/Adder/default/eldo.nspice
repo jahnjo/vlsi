@@ -1,4 +1,4 @@
-* ELDO netlist generated with ICnet by 'egrvlsi07' on Tue Mar 26 2019 at 17:13:44
+* ELDO netlist generated with ICnet by 'egrvlsi07' on Thu Mar 28 2019 at 17:38:06
 
 *
 * Globals.
@@ -8,12 +8,6 @@
 *
 * MAIN CELL: Component pathname : $VLSI/Project/Adder
 *
-        M25 COUT N$210 VDD N$193 pmos w=2u l=0.13u m=1 as=0.68p ad=0.68p
-+  ps=2.68u pd=2.68u
-        M20 N$167 A GROUND GROUND nmos w=2u l=0.13u m=1 as=0.68p ad=0.68p
-+  ps=2.68u pd=2.68u
-        M19 N$165 B N$167 GROUND nmos w=2u l=0.13u m=1 as=0.68p ad=0.68p
-+  ps=2.68u pd=2.68u
         M18 N$145 CIN N$165 GROUND nmos w=2u l=0.13u m=1 as=0.68p ad=0.68p
 +  ps=2.68u pd=2.68u
         M17 N$145 CIN N$159 VDD pmos w=2u l=0.13u m=1 as=0.68p ad=0.68p
@@ -58,11 +52,17 @@
 +  pd=2.68u
         M1 N$14 A GROUND GROUND nmos w=2u l=0.13u m=1 as=0.68p ad=0.68p
 +  ps=2.68u pd=2.68u
-        M28 S N$145 GROUND N$205 nmos w=2u l=0.13u m=1 as=0.68p ad=0.68p
+        M28 S N$145 GROUND GROUND nmos w=2u l=0.13u m=1 as=0.68p ad=0.68p
 +  ps=2.68u pd=2.68u
-        M27 S N$145 VDD N$201 pmos w=2u l=0.13u m=1 as=0.68p ad=0.68p ps=2.68u
+        M27 S N$145 VDD VDD pmos w=2u l=0.13u m=1 as=0.68p ad=0.68p ps=2.68u
 +  pd=2.68u
-        M26 COUT N$210 GROUND N$197 nmos w=2u l=0.13u m=1 as=0.68p ad=0.68p
+        M26 COUT N$210 GROUND GROUND nmos w=2u l=0.13u m=1 as=0.68p ad=0.68p
++  ps=2.68u pd=2.68u
+        M25 COUT N$210 VDD VDD pmos w=2u l=0.13u m=1 as=0.68p ad=0.68p ps=2.68u
++  pd=2.68u
+        M20 N$167 A GROUND GROUND nmos w=2u l=0.13u m=1 as=0.68p ad=0.68p
++  ps=2.68u pd=2.68u
+        M19 N$165 B N$167 GROUND nmos w=2u l=0.13u m=1 as=0.68p ad=0.68p
 +  ps=2.68u pd=2.68u
 *
 .end

@@ -1,6 +1,3 @@
-// Registration file '/home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/symbols/nmos/@ncf.dir/nmos.ncf' closed.
-// Registration file '/opt/mentor/pyxis/v10.1_1_linux_x86_64/pyxis_home/mgc_icstd_lib/global.ncf' closed.
-// Registration file '/home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/symbols/pmos/@ncf.dir/pmos.ncf' closed.
 //  Invocation args:  -check -upper -eldo -o /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/Adder/default/Adder_default.spi -log /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/Adder/default/default.netlist_transcript -quiet $VLSI/Project/Adder/default
 
 // **** Reading <$VLSI/Project/Adder/default> for ELDO netlist ****
@@ -10,11 +7,9 @@
 // Parsing file '/home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/symbols/nmos/@ncf.dir/nmos.ncf' succeeded.
 // Parsing file '/opt/mentor/pyxis/v10.1_1_linux_x86_64/pyxis_home/mgc_icstd_lib/global.ncf' succeeded.
 // Parsing file '/home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/symbols/pmos/@ncf.dir/pmos.ncf' succeeded.
-// NOTE: There is no part interface for the top level schematic.  The external nets in the schematic
-//       are being scanned to create the pin names for the top level subckt.
 Processing [$VLSI/Project/Adder] [Adder/Adder] [mirror] (NCF entry line: 17 file: $NCF_GLOBAL)
-Primitive [$GENERIC13/symbols/pmos] [pmos/pmos] [ELDOSPICE=M] (NCF entry line: 19 file: $GENERIC13/symbols/pmos/@ncf.dir/pmos.ncf)
 Primitive [$GENERIC13/symbols/nmos] [nmos/nmos] [ELDOSPICE=M] (NCF entry line: 19 file: $GENERIC13/symbols/nmos/@ncf.dir/nmos.ncf)
+Primitive [$GENERIC13/symbols/pmos] [pmos/pmos] [ELDOSPICE=M] (NCF entry line: 19 file: $GENERIC13/symbols/pmos/@ncf.dir/pmos.ncf)
 
 **** Writing <$VLSI/Project/Adder/default> netlist for ELDO ****
 

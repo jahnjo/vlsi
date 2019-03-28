@@ -1,6 +1,13 @@
-A 5 u Eddm_part 5c9a8c88d9cf.03.7f.00.00.01.00.16.c8 1 2 1 0
+A 5 u Eddm_part 5c9a8c88d9cf.03.7f.00.00.01.00.16.c8 2 2 2 0
 V v 1 1 5c9a8c88d9cf.03.7f.00.00.01.01.16.c8
 F f 1 "part.part_1"
+V v 2 1 5c9d21e0a8b8.03.7f.00.00.01.00.25.6e
+F f 2 "part.part_2"
+O 2
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R csduv 0 "$VLSI/Project/Adder/mirror" 1 mgc_schematic 5c9a800a2e74.03.7f.00.00.01.01.16.c8 5c9a800a2e74.03.7f.00.00.01.00.16.c8
+P "eddm__refer_state" "eddm__refer_floating"
+R csduv 1 "$VLSI/Project/Adder/Adder" 1 mgc_symbol 5c9d21dbd8aa.03.7f.00.00.01.01.25.6e 5c9d21dbd8aa.03.7f.00.00.01.00.25.6e
 O 1
 P "eddm__stream_to_use" "eddm__propl_dstream"
 R csduv 0 "$VLSI/Project/Adder/mirror" 1 mgc_schematic 5c9a800a2e74.03.7f.00.00.01.01.16.c8 5c9a800a2e74.03.7f.00.00.01.00.16.c8

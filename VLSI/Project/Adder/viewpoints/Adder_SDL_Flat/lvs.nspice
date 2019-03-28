@@ -1,0 +1,42 @@
+* LVS netlist generated with ICnet by 'egrvlsi07' on Thu Mar 28 2019 at 17:36:30
+
+*
+* Globals.
+*
+.global VDD ground
+
+*
+* Component pathname : $VLSI/Project/Adder
+*
+.subckt Adder  Cout S A B Cin
+
+        M18 N$145 Cin N$165 ground nmos l=0.13u w=2u m=1
+        M17 N$145 Cin N$159 VDD pmos l=0.13u w=2u m=1
+        M16 N$159 B N$157 VDD pmos l=0.13u w=2u m=1
+        M15 N$157 A VDD VDD pmos l=0.13u w=2u m=1
+        M24 N$47 Cin ground ground nmos l=0.13u w=2u m=1
+        M23 N$47 B ground ground nmos l=0.13u w=2u m=1
+        M22 N$47 A ground ground nmos l=0.13u w=2u m=1
+        M21 N$145 N$210 N$47 ground nmos l=0.13u w=2u m=1
+        M14 N$145 N$210 N$37 VDD pmos l=0.13u w=2u m=1
+        M13 N$37 Cin VDD VDD pmos l=0.13u w=2u m=1
+        M12 N$37 B VDD VDD pmos l=0.13u w=2u m=1
+        M11 N$37 A VDD VDD pmos l=0.13u w=2u m=1
+        M10 N$7 B VDD VDD pmos l=0.13u w=2u m=1
+        M9 N$10 B VDD VDD pmos l=0.13u w=2u m=1
+        M8 N$10 A VDD VDD pmos l=0.13u w=2u m=1
+        M7 N$210 A N$7 VDD pmos l=0.13u w=2u m=1
+        M6 N$210 A N$19 ground nmos l=0.13u w=2u m=1
+        M5 N$210 Cin N$14 ground nmos l=0.13u w=2u m=1
+        M4 N$19 B ground ground nmos l=0.13u w=2u m=1
+        M3 N$14 B ground ground nmos l=0.13u w=2u m=1
+        M2 N$210 Cin N$10 VDD pmos l=0.13u w=2u m=1
+        M1 N$14 A ground ground nmos l=0.13u w=2u m=1
+        M28 S N$145 ground ground nmos l=0.13u w=2u m=1
+        M27 S N$145 VDD VDD pmos l=0.13u w=2u m=1
+        M26 Cout N$210 ground ground nmos l=0.13u w=2u m=1
+        M25 Cout N$210 VDD VDD pmos l=0.13u w=2u m=1
+        M20 N$167 A ground ground nmos l=0.13u w=2u m=1
+        M19 N$165 B N$167 ground nmos l=0.13u w=2u m=1
+.ends Adder
+

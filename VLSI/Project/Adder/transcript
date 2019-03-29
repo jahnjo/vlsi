@@ -1,0 +1,217 @@
+vasim -cmd /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/Adder/mirror.cal/mirror.cir -lib /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/Adder/work -ms -multisource_delay max
+# ** Note: (vasim - 3800) Running Questa ADMS 12.1 patch1 Fri Sep  7 07:23:32 GMT 2012
+# +   on egr-vlsi-25 Linux x86_64(3.10.0-514.26.2.el7.x86_64) #1 SMP Tue Jul 4 15:04:05 UTC 2017
+# ELDO 12.1 patch1 (64 bits) Thu Sep  6 14:32:26 GMT 2012
+# EZwave 12.1 patch1 Wed Jun 20 13:28:31 GMT 2012
+# Copyright 1988 Mentor Graphics Corporation
+# All Rights Reserved
+# THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY
+# INFORMATION WHICH ARE THE PROPERTY OF MENTOR
+# GRAPHICS CORPORATION OR ITS LICENSORS AND IS
+# SUBJECT TO LICENSE TERMS.
+#  ---------------
+# | Load starting |
+#  ---------------
+# Loading "/opt/mentor/ams_12_1/libs/std.standard"
+# ModelSim for Questa-64 Version 10.1c 2012.07
+# Reading /opt/mentor/ams_12_1/questasim/v10.1c/tcl/vsim/pref.tcl 
+# Loading /opt/mentor/ams_12_1/libs/MS/OS/aol/libVLA2D_64.so
+# Loading "/opt/mentor/ams_12_1/libs/ieee.math_real"
+# Loading "/opt/mentor/ams_12_1/libs/DISCIPLINES.physical_constants"
+# Loading "/opt/mentor/ams_12_1/libs/DISCIPLINES.electromagnetic_system"
+# Load done
+do adder.do
+#  ----------------------------
+# | Analog Data pre-processing |
+#  ----------------------------
+# ** Warning: (eldo - 1615)  In file "./mirror.cal/mirror.cir" line 3:
+# +   COMMAND ".TRAN": TPRINT can not be <= 0.0.
+# +   It is set to TSTOP/20.0 = 5.000e-11 s.
+# ** Warning: (eldo - 400)  In file "./mirror.cal/mirror.cir" line 3:
+# +   .TRAN: TSTART > TSTOP: TSTART set to 0
+# ** Warning: (eldo - 107)   NODE "VSS": Less than two connections.
+# Analog data pre-processing done
+# -----------| Summary on Analog Data |-----------
+# Analog kernel and ELDO devices memory space allocated (MB):    501
+# 1185 devices
+# 580 nodes
+# 2 input signals
+# ** Note: Extra devices and nodes might be created during simulation (access resistors, internal nodes...).
+# ** Note: Extra Memory might be allocated during simulation.
+# ----------- Summary done -----------
+# ** Warning: (eldo - 117)   NODE "VSS": Not connected to any power supply.
+# ** Warning: (eldo - 108)   NODE "N_CIN_M0_G": This node is a floating gate.
+# +   List of MOS devices connected to that node follows:
+# +   --> M0
+# ** Warning: (eldo - 108)   NODE "N_B_M1_G": This node is a floating gate.
+# +   List of MOS devices connected to that node follows:
+# +   --> M1
+# ** Warning: (eldo - 108)   NODE "N_A_M2_G": This node is a floating gate.
+# +   List of MOS devices connected to that node follows:
+# +   --> M2
+# ** Warning: (eldo - 29)   Such messages will not be displayed in future. Set .option MSGNODE = 0 to receive all such warnings.
+# ** Warning: (eldo - 118)   NODE "X_PM_MIRROR_CIN.142": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "CIN": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_MIRROR_CIN.98": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_MIRROR_CIN.93": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_MIRROR_CIN.89": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_MIRROR_CIN.85": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_MIRROR_CIN.80": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_MIRROR_CIN.77": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "N_CIN_C_193_N": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_MIRROR_CIN.75": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "N_CIN_C_166_N": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_MIRROR_CIN.73": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "N_CIN_C_197_P": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_MIRROR_CIN.71": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "N_CIN_C_165_N": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_MIRROR_CIN.69": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_MIRROR_CIN.68": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_MIRROR_CIN.67": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_MIRROR_CIN.66": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_MIRROR_CIN.64": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_MIRROR_CIN.62": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_MIRROR_CIN.58": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "N_CIN_C_170_N": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_MIRROR_CIN.51": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "N_CIN_C_164_N": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "N_CIN_C_189_N": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "N_CIN_C_169_N": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_MIRROR_CIN.37": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "N_CIN_C_188_N": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "N_CIN_C_162_N": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_MIRROR_CIN.26": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_MIRROR_CIN.25": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_MIRROR_CIN.15": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_MIRROR_CIN.14": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_MIRROR_CIN.13": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "N_CIN_C_182_N": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_MIRROR_CIN.9": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_MIRROR_CIN.7": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_MIRROR_B.167": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "B": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_MIRROR_B.118": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_MIRROR_B.113": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_MIRROR_B.109": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_MIRROR_B.105": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_MIRROR_B.100": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_MIRROR_B.97": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "N_B_C_225_N": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_MIRROR_B.95": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "N_B_C_224_N": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_MIRROR_B.93": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "N_B_C_211_N": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_MIRROR_B.91": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "N_B_C_223_N": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_MIRROR_B.87": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "N_B_C_210_N": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_MIRROR_B.83": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_MIRROR_B.81": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_MIRROR_B.80": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "N_B_C_218_N": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_MIRROR_B.77": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_MIRROR_B.76": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_MIRROR_B.75": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_MIRROR_B.74": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_MIRROR_B.73": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_MIRROR_B.71": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_MIRROR_B.67": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_MIRROR_B.64": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_MIRROR_B.63": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_MIRROR_B.61": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_MIRROR_B.57": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "N_B_C_207_N": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "N_B_C_242_P": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "N_B_C_229_N": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "N_B_C_241_P": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "N_B_C_228_N": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_MIRROR_B.20": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_MIRROR_B.18": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_MIRROR_B.17": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_MIRROR_B.8": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "N_A_C_282_N": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "A": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_MIRROR_A.140": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_MIRROR_A.136": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_MIRROR_A.131": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_MIRROR_A.126": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_MIRROR_A.121": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_MIRROR_A.116": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_MIRROR_A.112": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_MIRROR_A.107": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_MIRROR_A.102": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_MIRROR_A.99": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_MIRROR_A.98": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_MIRROR_A.97": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "N_A_C_248_N": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_MIRROR_A.95": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "N_A_C_247_N": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_MIRROR_A.93": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "N_A_C_268_N": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_MIRROR_A.91": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_MIRROR_A.90": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_MIRROR_A.89": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_MIRROR_A.88": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_MIRROR_A.87": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_MIRROR_A.86": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_MIRROR_A.85": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_MIRROR_A.84": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_MIRROR_A.83": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_MIRROR_A.82": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "N_A_C_263_N": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_MIRROR_A.76": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_MIRROR_A.74": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_MIRROR_A.71": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_MIRROR_A.69": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_MIRROR_A.66": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_MIRROR_A.65": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "N_A_C_255_N": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_MIRROR_A.61": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_MIRROR_A.60": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_MIRROR_A.51": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "N_A_C_261_N": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_MIRROR_A.47": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "N_A_C_277_N": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "N_A_C_246_N": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_MIRROR_A.39": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_MIRROR_A.38": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "N_A_C_260_N": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_MIRROR_A.27": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_MIRROR_A.24": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_MIRROR_A.19": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_MIRROR_A.16": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "N_A_C_267_N": No DC path to ground.
+# ** Warning: (eldo - 118)   NODE "X_PM_MIRROR_A.6": No DC path to ground.
+#  -----------------------------
+# | Quiescent Point computation |
+#  -----------------------------
+# Analog DC computation starting
+# Analog DC computation done
+# Digital computation at time 0 ps starting
+# Digital computation at time 0 ps done
+# Quiescent point done
+#  -----------------------------
+# | Transient analysis starting |
+#  -----------------------------
+# Eldo analog kernel simulation effective options:
+#   VNTOL  = 1.000000e-06
+#   RELTOL = 7.500000e-04
+#   HMIN   = 1.000000e-03 ns
+#   HMAX will be set later during simulation and may vary
+#   EPS    = 1.000000e-03
+# Starting analog time is 0.000000 ns
+# Simulation time for "run -all" is 1.000000 ns
+# Transient analysis done
+#    Global cpu Time 0h 0mn 6s 780ms 
+#    Global Elapsed Time 0h 4mn 28s 
+# -----------| Simulation Information |-----------
+# Analog kernel and ELDO devices memory size allocated (MB):  502.2
+# 1241 devices
+# 636 nodes
+# 12827 MOS or BIP model calls
+# 20044 steps computed
+# ----------- Simulation Information done -----------
+# --- Simulation stopped at time 20 us
+# Newton iteration            :  1.798493
+# Total of transactions       :  1
+# Total of events             :  1

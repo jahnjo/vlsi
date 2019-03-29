@@ -1,0 +1,11 @@
+START report: Fri Mar 29 14:31:24 2019 
+** Note: (vasim - 3800) Running Questa ADMS 12.1 patch1 Fri Sep  7 07:23:32 GMT 2012
++   on egr-vlsi-25 Linux x86_64(3.10.0-514.26.2.el7.x86_64) #1 SMP Tue Jul 4 15:04:05 UTC 2017
+Loading "/opt/mentor/ams_12_1/libs/std.standard"
+Loading "/opt/mentor/ams_12_1/libs/ieee.math_real"
+Loading "/opt/mentor/ams_12_1/libs/DISCIPLINES.physical_constants"
+Loading "/opt/mentor/ams_12_1/libs/DISCIPLINES.electromagnetic_system"
+Load done
+** Warning: (eldo - 1615)  In file "./mirror.cal/mirror.cir" line 3:
++   COMMAND ".TRAN": TPRINT can not be <= 0.0.
++   It is set to TSTOP/20.0 = 5.000e-11 s.

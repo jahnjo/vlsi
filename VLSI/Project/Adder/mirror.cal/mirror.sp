@@ -1,0 +1,59 @@
+*  Spice netlist mirror.pex.netlist transformed for AMS-Sim
+*    additions
+
+.LIB $MGC_DESIGN_KIT/models/lib.eldo TT
+
+Vvdd VDD 0 2.5
+Vgnd ground 0 0
+
+*  Here begins the original spice file
+
+* File: mirror.pex.netlist
+* Created: Fri Mar 29 14:20:09 2019
+* Program "Calibre xRC"
+* Version "v2012.2_36.25"
+* 
+.global VDD VSS 
+.include "mirror.pex.netlist.pex"
+* 
+* A	A
+* B	B
+* CIN	CIN
+* S	S
+* COUT	COUT
+* GROUND	GROUND
+* VDD	VDD
+M0 3 N_CIN_M0_g N_2_M0_s N_GROUND_M0_b NMOS L=1.3e-07 W=2e-06
+M1 4 N_B_M1_g 3 N_GROUND_M0_b NMOS L=1.3e-07 W=2e-06
+M2 N_GROUND_M2_d N_A_M2_g 4 N_GROUND_M0_b NMOS L=1.3e-07 W=2e-06
+M3 N_COUT_M3_d N_10_M3_g N_GROUND_M2_d N_GROUND_M0_b NMOS L=1.3e-07 W=2e-06
+M4 N_GROUND_M4_d N_2_M4_g N_S_M4_s N_GROUND_M0_b NMOS L=1.3e-07 W=2e-06
+M5 N_8_M5_d N_CIN_M5_g N_GROUND_M4_d N_GROUND_M0_b NMOS L=1.3e-07 W=2e-06
+M6 N_GROUND_M6_d N_B_M6_g N_8_M5_d N_GROUND_M0_b NMOS L=1.3e-07 W=2e-06
+M7 N_8_M7_d N_A_M7_g N_GROUND_M6_d N_GROUND_M0_b NMOS L=1.3e-07 W=2e-06
+M8 N_2_M8_d N_10_M8_g N_8_M7_d N_GROUND_M0_b NMOS L=1.3e-07 W=2e-06
+M9 N_9_M9_d N_B_M9_g N_GROUND_M9_s N_GROUND_M0_b NMOS L=1.3e-07 W=2e-06
+M10 N_10_M10_d N_CIN_M10_g N_9_M9_d N_GROUND_M0_b NMOS L=1.3e-07 W=2e-06
+M11 11 N_A_M11_g N_10_M10_d N_GROUND_M0_b NMOS L=1.3e-07 W=2e-06
+M12 N_GROUND_M12_d N_B_M12_g 11 N_GROUND_M0_b NMOS L=1.3e-07 W=2e-06
+M13 N_9_M13_d N_A_M13_g N_GROUND_M12_d N_GROUND_M0_b NMOS L=1.3e-07 W=2e-06
+M14 N_10_M14_d N_CIN_M14_g N_12_M14_s N_VDD_M14_b PMOS L=1.3e-07 W=2e-06
+M15 13 N_A_M15_g N_10_M14_d N_VDD_M14_b PMOS L=1.3e-07 W=2e-06
+M16 N_VDD_M16_d N_B_M16_g 13 N_VDD_M14_b PMOS L=1.3e-07 W=2e-06
+M17 N_12_M17_d N_B_M17_g N_VDD_M16_d N_VDD_M14_b PMOS L=1.3e-07 W=2e-06
+M18 N_VDD_M18_d N_A_M18_g N_12_M17_d N_VDD_M14_b PMOS L=1.3e-07 W=2e-06
+M19 14 N_A_M19_g N_VDD_M18_d N_VDD_M14_b PMOS L=1.3e-07 W=2e-06
+M20 15 N_B_M20_g 14 N_VDD_M14_b PMOS L=1.3e-07 W=2e-06
+M21 N_2_M21_d N_CIN_M21_g 15 N_VDD_M14_b PMOS L=1.3e-07 W=2e-06
+M22 N_16_M22_d N_10_M22_g N_2_M21_d N_VDD_M14_b PMOS L=1.3e-07 W=2e-06
+M23 N_VDD_M23_d N_10_M23_g N_COUT_M23_s N_VDD_M14_b PMOS L=1.3e-07 W=2e-06
+M24 N_16_M24_d N_A_M24_g N_VDD_M23_d N_VDD_M14_b PMOS L=1.3e-07 W=2e-06
+M25 N_VDD_M25_d N_B_M25_g N_16_M24_d N_VDD_M14_b PMOS L=1.3e-07 W=2e-06
+M26 N_16_M26_d N_CIN_M26_g N_VDD_M25_d N_VDD_M14_b PMOS L=1.3e-07 W=2e-06
+M27 N_S_M27_d N_2_M27_g N_VDD_M27_s N_VDD_M14_b PMOS L=1.3e-07 W=2e-06
+*
+.include "mirror.pex.netlist.MIRROR.pxi"
+*
+.End
+*
+*

@@ -1,0 +1,11 @@
+*lvsRulesFile: /home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/rule_deck/LVS
+*lvsRunDir: /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/or/or.cal
+*lvsLayoutPaths: or.calibre.gds
+*lvsLayoutPrimary: or
+*lvsLayoutGetFromViewer: 1
+*lvsResultsFile: or.lvs.results
+*lvsSummaryFile: or.lvs.summary
+*cmnApplyTemplates: 0
+*lvsSourceGetFromViewer: 1
+*lvsSourcePath: or.calibre.src.net
+*lvsSourcePrimary: or

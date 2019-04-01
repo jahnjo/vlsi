@@ -1,0 +1,19 @@
+* SPICE NETLIST
+***************************************
+
+.SUBCKT mimcap_g13 plus minus
+.ENDS
+***************************************
+.SUBCKT spiral_inductor_lvs pos neg
+.ENDS
+***************************************
+.SUBCKT or VDD ground Y B A
+** N=7 EP=5 IP=0 FDC=6
+M0 3 B ground ground nmos L=1.3e-07 W=6e-07 $X=24920 $Y=86275 $D=19
+M1 ground A 3 ground nmos L=1.3e-07 W=6e-07 $X=25430 $Y=86275 $D=19
+M2 Y 3 ground ground nmos L=1.3e-07 W=6e-07 $X=25940 $Y=86275 $D=19
+M3 VDD 3 Y VDD pmos L=1.3e-07 W=1.35e-06 $X=25000 $Y=98515 $D=25
+M4 5 A VDD VDD pmos L=1.3e-07 W=2.7e-06 $X=25540 $Y=98515 $D=25
+M5 3 B 5 VDD pmos L=1.3e-07 W=2.7e-06 $X=25850 $Y=98515 $D=25
+.ENDS
+***************************************

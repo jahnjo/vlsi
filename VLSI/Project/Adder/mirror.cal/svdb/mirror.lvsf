@@ -6,4 +6,4 @@ lvs_LvsComparisonSummary {3 0 0 0}
 lvs_LvsOutFile LVS_REPORT lvs.report
 lvs_LvsOutFile SOURCE_NETLIST /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/Adder/mirror.cal/mirror.calibre.src.net
 lvs_LvsOutFile RULES_FILE /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/Adder/mirror.cal/_LVS_
-lvs_LvsRunTimes 1553808991 1553808991
+lvs_LvsRunTimes 1554139955 1554139955

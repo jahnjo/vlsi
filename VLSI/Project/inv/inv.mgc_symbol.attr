@@ -1,0 +1,6 @@
+A 5 u mgc_symbol 5ca245fc94af.03.7f.00.00.01.00.13.3f 1 2 1 0
+V v 1 2 5ca245fc94b0.03.7f.00.00.01.00.13.3f
+F f 1 "inv.smbl_1"
+F o 0 
+O 1
+R csduv 0 "$VLSI/Project/inv/part" 2 Eddm_part 5ca2460c53dc.03.7f.00.00.01.00.13.3f 5ca243a6c6cb.03.7f.00.00.01.00.10.8e

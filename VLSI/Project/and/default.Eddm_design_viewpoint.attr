@@ -1,0 +1,43 @@
+A 5 u Eddm_design_viewpoint 5ca24e1643ef.03.7f.00.00.01.00.2b.f9 6 2 47 0
+V v 4 4 5ca2519abbed.03.7f.00.00.01.00.2b.f9
+F f 4 "default.dvpt_4"
+F o 0 ""
+F o 0 ""
+F o 0 ""
+V v 5 4 5ca25215dffe.03.7f.00.00.01.00.2b.f9
+F f 5 "default.dvpt_5"
+F o 0 ""
+F o 0 ""
+F o 0 ""
+V v 6 4 5ca25577d4a0.03.7f.00.00.01.00.4e.16
+F f 6 "default.dvpt_6"
+F o 0 ""
+F o 0 ""
+F o 0 ""
+O 6
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R cspuv 0 "$VLSI/Project/and/part" 1 Eddm_part 5c9bb0259227.03.7f.00.00.01.01.57.f5 5c9bb0259227.03.7f.00.00.01.00.57.f5
+R cspuv 1 "$VLSI/Project/and/and" 6 mgc_schematic 5ca25215d72a.03.7f.00.00.01.00.2b.f9 5c9bb0213d9b.03.7f.00.00.01.00.57.f5
+R cspuv 2 "$VLSI/Project/and/default" 1 Eddm_ba_mgr 5ca24e1644d9.03.7f.00.00.01.01.2b.f9 5ca24e1644d9.03.7f.00.00.01.00.2b.f9
+R cspuv 3 "$GENERIC13/symbols/nmos/part" 33 Eddm_part 4f3c52ec7414.03.93.22.28.e1.00.55.af 488e22b57232.03.93.22.28.e1.0a.11.a3
+R cspuv 4 "$GENERIC13/symbols/pmos/part" 24 Eddm_part 4f3c5315ac7a.03.93.22.28.e1.00.55.af 488e22b57236.03.93.22.28.e1.03.11.a3
+R cspuv 5 "$GENERIC13/symbols/nmos/nmos" 41 mgc_symbol 4f3c52ec7400.03.93.22.28.e1.00.55.af 488e22b57232.03.93.22.28.e1.0b.11.a3
+R cspuv 6 "$GENERIC13/symbols/pmos/pmos" 27 mgc_symbol 4f3c5315ac6d.03.93.22.28.e1.00.55.af 488e22b57236.03.93.22.28.e1.02.11.a3
+O 5
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R cspuv 0 "$VLSI/Project/and/part" 1 Eddm_part 5c9bb0259227.03.7f.00.00.01.01.57.f5 5c9bb0259227.03.7f.00.00.01.00.57.f5
+R cspuv 1 "$VLSI/Project/and/and" 6 mgc_schematic 5ca25215d72a.03.7f.00.00.01.00.2b.f9 5c9bb0213d9b.03.7f.00.00.01.00.57.f5
+R cspuv 2 "$VLSI/Project/and/default" 1 Eddm_ba_mgr 5ca24e1644d9.03.7f.00.00.01.01.2b.f9 5ca24e1644d9.03.7f.00.00.01.00.2b.f9
+R cspuv 3 "$GENERIC13/symbols/nmos/part" 33 Eddm_part 4f3c52ec7414.03.93.22.28.e1.00.55.af 488e22b57232.03.93.22.28.e1.0a.11.a3
+R cspuv 4 "$GENERIC13/symbols/pmos/part" 24 Eddm_part 4f3c5315ac7a.03.93.22.28.e1.00.55.af 488e22b57236.03.93.22.28.e1.03.11.a3
+R cspuv 5 "$GENERIC13/symbols/nmos/nmos" 41 mgc_symbol 4f3c52ec7400.03.93.22.28.e1.00.55.af 488e22b57232.03.93.22.28.e1.0b.11.a3
+R cspuv 6 "$GENERIC13/symbols/pmos/pmos" 27 mgc_symbol 4f3c5315ac6d.03.93.22.28.e1.00.55.af 488e22b57236.03.93.22.28.e1.02.11.a3
+O 4
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R cspuv 0 "$VLSI/Project/and/part" 1 Eddm_part 5c9bb0259227.03.7f.00.00.01.01.57.f5 5c9bb0259227.03.7f.00.00.01.00.57.f5
+R cspuv 1 "$VLSI/Project/and/and" 5 mgc_schematic 5ca2519ab4fd.03.7f.00.00.01.00.2b.f9 5c9bb0213d9b.03.7f.00.00.01.00.57.f5
+R cspuv 2 "$VLSI/Project/and/default" 1 Eddm_ba_mgr 5ca24e1644d9.03.7f.00.00.01.01.2b.f9 5ca24e1644d9.03.7f.00.00.01.00.2b.f9
+R cspuv 3 "$GENERIC13/symbols/nmos/part" 33 Eddm_part 4f3c52ec7414.03.93.22.28.e1.00.55.af 488e22b57232.03.93.22.28.e1.0a.11.a3
+R cspuv 4 "$GENERIC13/symbols/pmos/part" 24 Eddm_part 4f3c5315ac7a.03.93.22.28.e1.00.55.af 488e22b57236.03.93.22.28.e1.03.11.a3
+R cspuv 5 "$GENERIC13/symbols/nmos/nmos" 41 mgc_symbol 4f3c52ec7400.03.93.22.28.e1.00.55.af 488e22b57232.03.93.22.28.e1.0b.11.a3
+R cspuv 6 "$GENERIC13/symbols/pmos/pmos" 27 mgc_symbol 4f3c5315ac6d.03.93.22.28.e1.00.55.af 488e22b57236.03.93.22.28.e1.02.11.a3

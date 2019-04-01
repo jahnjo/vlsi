@@ -1,0 +1,6 @@
+A 5 u Eddm_ba_mgr 5ca24e1644d9.03.7f.00.00.01.00.2b.f9 1 2 1 0
+V v 1 1 5ca24e1644d9.03.7f.00.00.01.01.2b.f9
+F f 1 "default.ba_1"
+O 1
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R cspuv 0 "$VLSI/Project/and/default" 1 Eddm_design_viewpoint 5ca24e1643f0.03.7f.00.00.01.00.2b.f9 5ca24e1643ef.03.7f.00.00.01.00.2b.f9

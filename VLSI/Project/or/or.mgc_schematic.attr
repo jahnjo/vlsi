@@ -1,10 +1,13 @@
-A 5 u mgc_schematic 5c9bb0379e21.03.7f.00.00.01.00.5a.1e 2 2 1 0
-V v 1 1 5c9bb0379e21.03.7f.00.00.01.01.5a.1e
-F o 0 ""
+A 5 u mgc_schematic 5c9bb0379e21.03.7f.00.00.01.00.5a.1e 4 2 1 0
 V v 2 1 5c9bb03ee7a2.03.7f.00.00.01.00.5a.1e
 F o 0 ""
+V v 3 1 5ca253a05d20.03.7f.00.00.01.00.42.fc
+F o 0 ""
+V v 4 1 5ca254b7f37e.03.7f.00.00.01.00.42.fc
+F o 0 ""
+O 4
+R cspuv 0 "$VLSI/Project/or/or/sheet1" 3 mgc_sheet 5ca254b7f35e.03.7f.00.00.01.00.42.fc 5c9bb0379ec1.03.7f.00.00.01.00.5a.1e
+O 3
+R cspuv 0 "$VLSI/Project/or/or/sheet1" 2 mgc_sheet 5ca253a05cff.03.7f.00.00.01.00.42.fc 5c9bb0379ec1.03.7f.00.00.01.00.5a.1e
 O 2
 R cspuv 0 "$VLSI/Project/or/or/sheet1" 1 mgc_sheet 5c9bb0379ec1.03.7f.00.00.01.01.5a.1e 5c9bb0379ec1.03.7f.00.00.01.00.5a.1e
-O 1
-R cspuv 0 "$VLSI/Project/or/or/sheet1" 1 mgc_sheet 5c9bb0379ec1.03.7f.00.00.01.01.5a.1e 5c9bb0379ec1.03.7f.00.00.01.00.5a.1e
-P "eddm__refer_state" "eddm__refer_floating"

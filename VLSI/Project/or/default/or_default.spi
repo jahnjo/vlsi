@@ -1,0 +1,30 @@
+*
+* .CONNECT statements
+*
+.CONNECT GROUND 0
+
+
+* ELDO netlist generated with ICnet by 'egrvlsi07' on Mon Apr  1 2019 at 14:13:15
+
+*
+* Globals.
+*
+.global GROUND VDD
+
+*
+* MAIN CELL: Component pathname : $VLSI/Project/or
+*
+        M6 Y N$22 GROUND GROUND nmos w=0.6u l=0.13u m=1 as=0.204p ad=0.204p
++  ps=1.28u pd=1.28u
+        M5 Y N$22 VDD VDD pmos w=1.35u l=0.13u m=1 as=0.459p ad=0.459p ps=2.03u
++  pd=2.03u
+        M4 N$22 A GROUND GROUND nmos w=0.6u l=0.13u m=1 as=0.204p ad=0.204p
++  ps=1.28u pd=1.28u
+        M3 N$22 B GROUND GROUND nmos w=0.6u l=0.13u m=1 as=0.204p ad=0.204p
++  ps=1.28u pd=1.28u
+        M2 N$22 B N$13 VDD pmos w=2.7u l=0.13u m=1 as=0.918p ad=0.918p ps=3.38u
++  pd=3.38u
+        M1 N$13 A VDD VDD pmos w=2.7u l=0.13u m=1 as=0.918p ad=0.918p ps=3.38u
++  pd=3.38u
+*
+.end

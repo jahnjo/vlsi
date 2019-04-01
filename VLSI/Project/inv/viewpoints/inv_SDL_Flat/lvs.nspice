@@ -1,0 +1,16 @@
+* LVS netlist generated with ICnet by 'egrvlsi07' on Mon Apr  1 2019 at 13:29:54
+
+*
+* Globals.
+*
+.global VDD ground
+
+*
+* Component pathname : $VLSI/Project/inv
+*
+.subckt inv  OUT IN
+
+        M2 OUT IN VDD VDD pmos l=0.13u w=1.35u m=1
+        M1 OUT IN ground ground nmos l=0.13u w=0.6u m=1
+.ends inv
+

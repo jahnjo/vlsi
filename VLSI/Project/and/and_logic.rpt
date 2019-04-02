@@ -1,0 +1,20 @@
+ Logic loading report
+ ====================
+
+ Top level Layout cell : and
+ Eddm Logic source : $VLSI/Project/and/default
+
+
+*** Existing cell $VLSI/Project/and/and
+
+
+IGNORED CELLS
+=============
+Following primitive cells are ignored since they are not found
+in library(working directory) and @nocreate_prim option is used.
+Resync of library may be required.
+
+
+       Schematic instance name                   Physical cell name
+       -------------------------                 --------------------
+      /M1                                        $mos

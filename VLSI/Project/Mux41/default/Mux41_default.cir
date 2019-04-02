@@ -1,0 +1,25 @@
+* Component: $VLSI/Project/Mux41  Viewpoint: default
+.INCLUDE $VLSI/Project/Mux41/default/Mux41_default.spi
+.INCLUDE $GENERIC13/models/include_all
+.OPTION NOASCII
+.OPTION MODWL
+.OPTION ENGNOT
+.OPTION AEX
+
+* --- Singles
+
+* - Analysis Setup - Trans
+.TRAN 0 100N
+
+* --- Params
+.TEMP 27
+
+* --- Libsetup
+.LIB key=MOS $GENERIC13/models/lib.eldo TT
+.LIB key=MOS_33 $GENERIC13/models/lib.eldo TT_33
+.LIB key=MOS_lvt $GENERIC13/models/lib.eldo TT_lvt
+.LIB key=MOS_hvt $GENERIC13/models/lib.eldo TT_hvt
+.LIB key=BIP $GENERIC13/models/lib.eldo TT_BIP
+.LIB key=BIP_NPN $GENERIC13/models/lib.eldo TT_BIP_NPN
+.LIB key=RES $GENERIC13/models/lib.eldo TT_RES
+

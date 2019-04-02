@@ -4,76 +4,76 @@
 version 1.0
 
 Globals
-   VDD VDD
-   ground GROUND
+   VDD vdd
+   ground ground
 End Globals
 
-Cell NMOS
-   Pin D D
-   Pin G G
-   Pin S S
-   Pin B B
+Cell nmos
+   Pin D d
+   Pin G g
+   Pin S s
+   Pin B b
 End Cell
 
-Cell PMOS
-   Pin D D
-   Pin G G
-   Pin S S
-   Pin B B
+Cell pmos
+   Pin D d
+   Pin G g
+   Pin S s
+   Pin B b
 End Cell
 
 Cell #top#
-   Pin Cout COUT
-   Pin S S
-   Pin A A
-   Pin B B
-   Pin Cin CIN
-   Net N$210 N$210
-   Net N$167 N$167
-   Net N$165 N$165
-   Net N$159 N$159
-   Net N$157 N$157
-   Net N$145 N$145
-   Net N$7 N$7
-   Net N$47 N$47
-   Net N$37 N$37
-   Net N$19 N$19
-   Net N$10 N$10
-   Net N$14 N$14
-   Net A A
-   Net B B
-   Net Cin CIN
-   Net S S
-   Net Cout COUT
-   Global VDD VDD
-   Global ground GROUND
-   Inst M18 M18 NMOS
-   Inst M17 M17 PMOS
-   Inst M16 M16 PMOS
-   Inst M15 M15 PMOS
-   Inst M24 M24 NMOS
-   Inst M23 M23 NMOS
-   Inst M22 M22 NMOS
-   Inst M21 M21 NMOS
-   Inst M14 M14 PMOS
-   Inst M13 M13 PMOS
-   Inst M12 M12 PMOS
-   Inst M11 M11 PMOS
-   Inst M10 M10 PMOS
-   Inst M9 M9 PMOS
-   Inst M8 M8 PMOS
-   Inst M7 M7 PMOS
-   Inst M6 M6 NMOS
-   Inst M5 M5 NMOS
-   Inst M4 M4 NMOS
-   Inst M3 M3 NMOS
-   Inst M2 M2 PMOS
-   Inst M1 M1 NMOS
-   Inst M28 M28 NMOS
-   Inst M27 M27 PMOS
-   Inst M26 M26 NMOS
-   Inst M25 M25 PMOS
-   Inst M20 M20 NMOS
-   Inst M19 M19 NMOS
+   Pin Cout cout
+   Pin S s
+   Pin A a
+   Pin B b
+   Pin Cin cin
+   Net N$210 n$210
+   Net N$167 n$167
+   Net N$165 n$165
+   Net N$159 n$159
+   Net N$157 n$157
+   Net N$145 n$145
+   Net N$7 n$7
+   Net N$47 n$47
+   Net N$37 n$37
+   Net N$19 n$19
+   Net N$10 n$10
+   Net N$14 n$14
+   Net A a
+   Net B b
+   Net Cin cin
+   Net S s
+   Net Cout cout
+   Global VDD vdd
+   Global ground ground
+   Inst M18 m18 nmos
+   Inst M17 m17 pmos
+   Inst M16 m16 pmos
+   Inst M15 m15 pmos
+   Inst M24 m24 nmos
+   Inst M23 m23 nmos
+   Inst M22 m22 nmos
+   Inst M21 m21 nmos
+   Inst M14 m14 pmos
+   Inst M13 m13 pmos
+   Inst M12 m12 pmos
+   Inst M11 m11 pmos
+   Inst M10 m10 pmos
+   Inst M9 m9 pmos
+   Inst M8 m8 pmos
+   Inst M7 m7 pmos
+   Inst M6 m6 nmos
+   Inst M5 m5 nmos
+   Inst M4 m4 nmos
+   Inst M3 m3 nmos
+   Inst M2 m2 pmos
+   Inst M1 m1 nmos
+   Inst M28 m28 nmos
+   Inst M27 m27 pmos
+   Inst M26 m26 nmos
+   Inst M25 m25 pmos
+   Inst M20 m20 nmos
+   Inst M19 m19 nmos
 End Cell
 

@@ -3,7 +3,7 @@
 ==================================================================================
 === CALIBRE::ERC-H SUMMARY REPORT
 ===
-Execution Date/Time:          Tue Apr  2 16:18:10 2019
+Execution Date/Time:          Tue Apr  2 17:22:13 2019
 Calibre Version:              v2012.2_36.25    Mon Jul 2 12:15:31 PDT 2012
 Rule File Pathname:           /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/Mux81/Mux81.cal/_LVS_
 Rule File Title:              
@@ -41,7 +41,7 @@ Layer 34 contains unmapped objects and is the source layer of LAYER MAP == 34 DA
 --- ORIGINAL LAYER STATISTICS
 ---
 LAYER RHDMY ..... TOTAL Original Geometry Count = 0   (0)
-LAYER POLYG ..... TOTAL Original Geometry Count = 30  (210)
+LAYER POLYG ..... TOTAL Original Geometry Count = 32  (224)
 LAYER RPO ....... TOTAL Original Geometry Count = 0   (0)
 LAYER RODMY ..... TOTAL Original Geometry Count = 0   (0)
 LAYER OD ........ TOTAL Original Geometry Count = 6   (42)
@@ -71,10 +71,10 @@ LAYER DUM2 ...... TOTAL Original Geometry Count = 0   (0)
 LAYER M2 ........ TOTAL Original Geometry Count = 14  (98)
 LAYER M2SLOT .... TOTAL Original Geometry Count = 0   (0)
 LAYER DUM3 ...... TOTAL Original Geometry Count = 0   (0)
-LAYER M3 ........ TOTAL Original Geometry Count = 49  (97)
+LAYER M3 ........ TOTAL Original Geometry Count = 54  (102)
 LAYER M3SLOT .... TOTAL Original Geometry Count = 0   (0)
 LAYER DUM4 ...... TOTAL Original Geometry Count = 0   (0)
-LAYER M4 ........ TOTAL Original Geometry Count = 38  (38)
+LAYER M4 ........ TOTAL Original Geometry Count = 33  (33)
 LAYER M4SLOT .... TOTAL Original Geometry Count = 0   (0)
 LAYER DUM5 ...... TOTAL Original Geometry Count = 0   (0)
 LAYER M5 ........ TOTAL Original Geometry Count = 0   (0)
@@ -104,7 +104,7 @@ LAYER PNP3DMY ... TOTAL Original Geometry Count = 0   (0)
 LAYER var_lvs ... TOTAL Original Geometry Count = 0   (0)
 LAYER VIA1 ...... TOTAL Original Geometry Count = 6   (42)
 LAYER VIA2 ...... TOTAL Original Geometry Count = 4   (28)
-LAYER VIA3 ...... TOTAL Original Geometry Count = 20  (20)
+LAYER VIA3 ...... TOTAL Original Geometry Count = 18  (18)
 LAYER VIA4 ...... TOTAL Original Geometry Count = 0   (0)
 LAYER VIA5 ...... TOTAL Original Geometry Count = 0   (0)
 LAYER VIA6 ...... TOTAL Original Geometry Count = 0   (0)
@@ -125,7 +125,7 @@ LAYER VIA6 ...... TOTAL Original Geometry Count = 0   (0)
 ---
 TOTAL CPU Time:                              0
 TOTAL REAL Time:                             0
-TOTAL Original Layer Geometries:             327 (1683)
+TOTAL Original Layer Geometries:             327 (1695)
 TOTAL ERC PATHCHK Operations Executed:       4
 TOTAL ERC PATHCHK POLYGON Results Generated: 228 (228)
 TOTAL ERC PATHCHK NET Results Generated:     6

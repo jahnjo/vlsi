@@ -1,6 +1,6 @@
 # Automagically generated file: Please do not edit!
 lvs_ExtfVersion 3
-lvs_ExtRunTimes 1554236290 1554236291
+lvs_ExtRunTimes 1554240133 1554240134
 lvs_ExtOutFile RUNDIR /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/Mux81/Mux81.cal
 lvs_ExtOutFile RULES_FILE /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/Mux81/Mux81.cal/_LVS_
 lvs_ExtInfoExtSummary {0 0 0 0 0 0 0 0 0 0 0}

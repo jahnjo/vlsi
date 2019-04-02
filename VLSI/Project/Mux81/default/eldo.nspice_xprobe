@@ -61,18 +61,18 @@ Cell #top#
    Net N$13 N$13
    Net N$9 N$9
    Net N$5 N$5
-   Net IN0 IN0
-   Net IN1 IN1
-   Net IN2 IN2
-   Net IN3 IN3
-   Net S0 S0
-   Net IN4 IN4
-   Net IN5 IN5
-   Net IN6 IN6
-   Net IN7 IN7
    Net S1 S1
+   Net IN7 IN7
+   Net IN6 IN6
    Net S2 S2
+   Net IN5 IN5
+   Net IN4 IN4
+   Net S0 S0
+   Net IN3 IN3
+   Net IN2 IN2
    Net OUT1 OUT1
+   Net IN1 IN1
+   Net IN0 IN0
    Inst MUX217 X_MUX217 MUX21
    Inst MUX216 X_MUX216 MUX21
    Inst MUX215 X_MUX215 MUX21

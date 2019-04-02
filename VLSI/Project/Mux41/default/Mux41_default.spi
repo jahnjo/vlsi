@@ -1,0 +1,40 @@
+*
+* .CONNECT statements
+*
+.CONNECT GROUND 0
+
+
+* ELDO netlist generated with ICnet by 'egrvlsi07' on Tue Apr  2 2019 at 17:49:04
+
+*
+* Globals.
+*
+.global GROUND VDD
+
+*
+* Component pathname : $VLSI/Project/Mux21
+*
+.subckt MUX21  Y A B S
+
+        M6 Y N$46 A GROUND nmos w=0.6u l=0.13u m=1 as=0.204p ad=0.204p ps=1.28u
++  pd=1.28u
+        M3 Y S A VDD pmos w=1.35u l=0.13u m=1 as=0.459p ad=0.459p ps=2.03u
++  pd=2.03u
+        M5 Y S B GROUND nmos w=0.6u l=0.13u m=1 as=0.204p ad=0.204p ps=1.28u
++  pd=1.28u
+        M4 Y N$46 B VDD pmos w=1.35u l=0.13u m=1 as=0.459p ad=0.459p ps=2.03u
++  pd=2.03u
+        M2 N$46 S VDD VDD pmos w=1.35u l=0.13u m=1 as=0.459p ad=0.459p ps=2.03u
++  pd=2.03u
+        M1 N$46 S GROUND GROUND nmos w=0.6u l=0.13u m=1 as=0.204p ad=0.204p
++  ps=1.28u pd=1.28u
+.ends MUX21
+
+*
+* MAIN CELL: Component pathname : $VLSI/Project/Mux41
+*
+        X_MUX213 OUT1 N$2 N$4 S1 MUX21
+        X_MUX212 N$4 IN2 IN3 S0 MUX21
+        X_MUX211 N$2 IN0 IN1 S0 MUX21
+*
+.end

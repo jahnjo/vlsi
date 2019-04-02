@@ -1,14 +1,10 @@
-A 5 u mgc_schematic 5c9baddd0be6.03.7f.00.00.01.00.50.6b 3 2 1 0
-V v 1 1 5c9baddd0be7.03.7f.00.00.01.00.50.6b
+A 5 u mgc_schematic 5ca3d6c6b80b.03.7f.00.00.01.00.7d.55 2 2 1 0
+V v 1 1 5ca3d6c6b80b.03.7f.00.00.01.01.7d.55
 F o 0 ""
-V v 2 1 5c9bade1b3a9.03.7f.00.00.01.00.50.6b
+V v 2 1 5ca3d7664808.03.7f.00.00.01.00.7d.55
 F o 0 ""
-V v 3 1 5ca3c2628c26.03.7f.00.00.01.00.22.d7
-F o 0 ""
-O 3
-R cspuv 0 "$VLSI/Project/Mux41/Mux41/sheet1" 2 mgc_sheet 5ca3c2628bf5.03.7f.00.00.01.00.22.d7 5c9baddd0c8a.03.7f.00.00.01.00.50.6b
 O 2
-R cspuv 0 "$VLSI/Project/Mux41/Mux41/sheet1" 1 mgc_sheet 5c9baddd0c8a.03.7f.00.00.01.01.50.6b 5c9baddd0c8a.03.7f.00.00.01.00.50.6b
+R cspuv 0 "$VLSI/Project/Mux41/Mux41/sheet1" 1 mgc_sheet 5ca3d6c6b8df.03.7f.00.00.01.01.7d.55 5ca3d6c6b8df.03.7f.00.00.01.00.7d.55
 O 1
-R cspuv 0 "$VLSI/Project/Mux41/Mux41/sheet1" 1 mgc_sheet 5c9baddd0c8a.03.7f.00.00.01.01.50.6b 5c9baddd0c8a.03.7f.00.00.01.00.50.6b
+R cspuv 0 "$VLSI/Project/Mux41/Mux41/sheet1" 1 mgc_sheet 5ca3d6c6b8df.03.7f.00.00.01.01.7d.55 5ca3d6c6b8df.03.7f.00.00.01.00.7d.55
 P "eddm__refer_state" "eddm__refer_floating"

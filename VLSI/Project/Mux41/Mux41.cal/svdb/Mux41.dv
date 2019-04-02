@@ -1,0 +1,6 @@
+# CALIBRE-LVS DISCREPANCY VIEWER TCL FILE 
+# FILE: svdb/Mux41.dv
+dv_start matched
+dv_cell {Mux41} {Mux41} matched
+dv_obj_count -transformed_nets {13 13} -transformed_inst {11 11} -transformed_port {9 9}
+dv_end

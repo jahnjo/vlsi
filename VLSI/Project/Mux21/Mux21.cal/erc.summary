@@ -3,7 +3,7 @@
 ==================================================================================
 === CALIBRE::ERC-H SUMMARY REPORT
 ===
-Execution Date/Time:          Wed Mar 27 15:24:59 2019
+Execution Date/Time:          Tue Apr  2 16:39:12 2019
 Calibre Version:              v2012.2_36.25    Mon Jul 2 12:15:31 PDT 2012
 Rule File Pathname:           /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/Mux21/Mux21.cal/_LVS_
 Rule File Title:              
@@ -39,7 +39,7 @@ Layer 33 contains unmapped objects and is the source layer of LAYER MAP == 33 DA
 --- ORIGINAL LAYER STATISTICS
 ---
 LAYER RHDMY ..... TOTAL Original Geometry Count = 0   (0)
-LAYER POLYG ..... TOTAL Original Geometry Count = 30  (30)
+LAYER POLYG ..... TOTAL Original Geometry Count = 32  (32)
 LAYER RPO ....... TOTAL Original Geometry Count = 0   (0)
 LAYER RODMY ..... TOTAL Original Geometry Count = 0   (0)
 LAYER OD ........ TOTAL Original Geometry Count = 6   (6)
@@ -121,5 +121,5 @@ LAYER VIA6 ...... TOTAL Original Geometry Count = 0   (0)
 ---
 TOTAL CPU Time:                              0
 TOTAL REAL Time:                             0
-TOTAL Original Layer Geometries:             226 (226)
+TOTAL Original Layer Geometries:             228 (228)
 TOTAL ERC PATHCHK Operations Executed:       4

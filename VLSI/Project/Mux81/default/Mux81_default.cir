@@ -1,0 +1,53 @@
+* Component: $VLSI/Project/Mux81  Viewpoint: default
+.INCLUDE $VLSI/Project/Mux81/default/Mux81_default.spi
+.INCLUDE $GENERIC13/models/include_all
+.OPTION NOASCII
+.OPTION MODWL
+.OPTION ENGNOT
+.OPTION AEX
+
+* --- Singles
+
+* - Analysis Setup - Trans
+.TRAN 0 500N
+
+* --- Waveform Outputs
+.PROBE TRAN V(IN0)
+.PROBE TRAN V(IN1)
+.PROBE TRAN V(IN2)
+.PROBE TRAN V(IN3)
+.PROBE TRAN V(IN4)
+.PROBE TRAN V(IN5)
+.PROBE TRAN V(IN6)
+.PROBE TRAN V(IN7)
+.PROBE TRAN V(S0)
+.PROBE TRAN V(S1)
+.PROBE TRAN V(S2)
+.PROBE TRAN V(OUT1)
+
+* --- Params
+.TEMP 27
+
+* --- Forces
+VFORCE__IN0 IN0 GROUND PULSE (0v 2.5v 0 1n 1n 25n 500n)
+VFORCE__IN1 IN1 GROUND PULSE (0v 2.5v 25n 1n 1n 25n 500n)
+VFORCE__IN1_1 IN2 GROUND PULSE (0v 2.5v 50n 1n 1n 25n 500n)
+VFORCE__IN1_2 IN3 GROUND PULSE (0v 2.5v 75n 1n 1n 25n 500n)
+VFORCE__IN1_3 IN4 GROUND PULSE (0v 2.5v 100n 1n 1n 25n 500n)
+VFORCE__IN1_4 IN5 GROUND PULSE (0v 2.5v 125n 1n 1n 25n 500n)
+VFORCE__IN1_5 IN6 GROUND PULSE (0v 2.5v 150n 1n 1n 25n 500n)
+VFORCE__IN1_6 IN7 GROUND PULSE (0v 2.5v 175n 1n 1n 25n 500n)
+VFORCE__IN1_7 S0 GROUND PULSE (0v 2.5v 25n 1n 1n 25n 50n)
+VFORCE__IN1_8 S1 GROUND PULSE (0v 2.5v 50n 1n 1n 50n 100n)
+VFORCE__IN1_9 S2 GROUND PULSE (0v 2.5v 100n 1n 1n 100n 200n)
+VFORCE__IN1_10 VDD GROUND dc 2.5v
+
+* --- Libsetup
+.LIB key=MOS $GENERIC13/models/lib.eldo TT
+.LIB key=MOS_33 $GENERIC13/models/lib.eldo TT_33
+.LIB key=MOS_lvt $GENERIC13/models/lib.eldo TT_lvt
+.LIB key=MOS_hvt $GENERIC13/models/lib.eldo TT_hvt
+.LIB key=BIP $GENERIC13/models/lib.eldo TT_BIP
+.LIB key=BIP_NPN $GENERIC13/models/lib.eldo TT_BIP_NPN
+.LIB key=RES $GENERIC13/models/lib.eldo TT_RES
+

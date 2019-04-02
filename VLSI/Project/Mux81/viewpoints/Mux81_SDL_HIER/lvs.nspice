@@ -1,0 +1,34 @@
+* LVS netlist generated with ICnet by 'egrvlsi07' on Tue Apr  2 2019 at 16:18:09
+
+*
+* Globals.
+*
+.global ground VDD
+
+*
+* Component pathname : $VLSI/Project/Mux21
+*
+.subckt Mux21  Y A B S
+
+        M6 Y N$46 A ground nmos l=0.13u w=0.6u m=1
+        M3 Y S A VDD pmos l=0.13u w=1.35u m=1
+        M5 Y S B ground nmos l=0.13u w=0.6u m=1
+        M4 Y N$46 B VDD pmos l=0.13u w=1.35u m=1
+        M2 N$46 S VDD VDD pmos l=0.13u w=1.35u m=1
+        M1 N$46 S ground ground nmos l=0.13u w=0.6u m=1
+.ends Mux21
+
+*
+* Component pathname : $VLSI/Project/Mux81
+*
+.subckt Mux81  OUT1 IN0 IN1 IN2 IN3 IN4 IN5 IN6 IN7 S0 S1 S2
+
+        X_MUX217 OUT1 N$13 N$25 S2 Mux21
+        X_MUX216 N$25 N$17 N$21 S1 Mux21
+        X_MUX215 N$21 IN6 IN7 S0 Mux21
+        X_MUX214 N$17 IN4 IN5 S0 Mux21
+        X_MUX213 N$13 N$5 N$9 S1 Mux21
+        X_MUX212 N$9 IN2 IN3 S0 Mux21
+        X_MUX211 N$5 IN0 IN1 S0 Mux21
+.ends Mux81
+

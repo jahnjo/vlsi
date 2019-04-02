@@ -1,0 +1,6 @@
+A 5 u mgc_symbol 5ca3bafb99a5.03.7f.00.00.01.00.10.df 1 2 1 0
+V v 1 2 5ca3bafb99a5.03.7f.00.00.01.01.10.df
+F f 1 "Mux81.smbl_1"
+F o 0 
+O 1
+R csduv 0 "$VLSI/Project/Mux81/part" 2 Eddm_part 5ca3bb4e71f0.03.7f.00.00.01.00.10.df 5c9bae189a3e.03.7f.00.00.01.00.52.a1

@@ -1,9 +1,9 @@
 Mux21 1000
 ERC PATHCHK GROUND && ! POWER
-0 0 0 Mar 27 15:24:59 2019                                      
+0 0 0 Apr  2 16:39:12 2019                                      
 ERC PATHCHK POWER && ! GROUND
-0 0 0 Mar 27 15:24:59 2019                                      
+0 0 0 Apr  2 16:39:12 2019                                      
 ERC PATHCHK ! POWER && ! GROUND
-0 0 0 Mar 27 15:24:59 2019                                      
+0 0 0 Apr  2 16:39:12 2019                                      
 ERC PATHCHK ! LABELED
-0 0 0 Mar 27 15:24:59 2019                                      
+0 0 0 Apr  2 16:39:12 2019                                      

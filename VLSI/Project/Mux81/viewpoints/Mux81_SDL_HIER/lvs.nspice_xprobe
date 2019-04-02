@@ -1,0 +1,84 @@
+# This file provides name mapping information for all objects
+# on the schematic design.  It provides a mapping for each
+# object between its name on the schematic and its name in the netlist.
+version 1.0
+
+Globals
+   ground ground
+   VDD VDD
+End Globals
+
+Cell nmos
+   Pin D D
+   Pin G G
+   Pin S S
+   Pin B B
+End Cell
+
+Cell pmos
+   Pin D D
+   Pin G G
+   Pin S S
+   Pin B B
+End Cell
+
+Cell Mux21
+   Pin Y Y
+   Pin A A
+   Pin B B
+   Pin S S
+   Net N$46 N$46
+   Net A A
+   Net Y Y
+   Net B B
+   Net S S
+   Global ground ground
+   Global VDD VDD
+   Inst M6 M6 nmos
+   Inst M3 M3 pmos
+   Inst M5 M5 nmos
+   Inst M4 M4 pmos
+   Inst M2 M2 pmos
+   Inst M1 M1 nmos
+End Cell
+
+Cell #top#
+   Pin OUT1 OUT1
+   Pin IN0 IN0
+   Pin IN1 IN1
+   Pin IN2 IN2
+   Pin IN3 IN3
+   Pin IN4 IN4
+   Pin IN5 IN5
+   Pin IN6 IN6
+   Pin IN7 IN7
+   Pin S0 S0
+   Pin S1 S1
+   Pin S2 S2
+   Net N$25 N$25
+   Net N$21 N$21
+   Net N$17 N$17
+   Net N$13 N$13
+   Net N$9 N$9
+   Net N$5 N$5
+   Net S1 S1
+   Net IN7 IN7
+   Net IN6 IN6
+   Net S2 S2
+   Net IN5 IN5
+   Net IN4 IN4
+   Net S0 S0
+   Net IN3 IN3
+   Net IN2 IN2
+   Net OUT1 OUT1
+   Net IN1 IN1
+   Net IN0 IN0
+   Inst MUX217 X_MUX217 Mux21
+   Inst MUX216 X_MUX216 Mux21
+   Inst MUX215 X_MUX215 Mux21
+   Inst MUX214 X_MUX214 Mux21
+   Inst MUX213 X_MUX213 Mux21
+   Inst MUX212 X_MUX212 Mux21
+   Inst MUX211 X_MUX211 Mux21
+End Cell
+

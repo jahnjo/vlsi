@@ -6,4 +6,4 @@ lvs_LvsComparisonSummary {3 0 0 0}
 lvs_LvsOutFile LVS_REPORT lvs.report
 lvs_LvsOutFile SOURCE_NETLIST /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/Mux81/Mux81.cal/Mux81.calibre.src.net
 lvs_LvsOutFile RULES_FILE /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/Mux81/Mux81.cal/_LVS_
-lvs_LvsRunTimes 1554240134 1554240134
+lvs_LvsRunTimes 1554313312 1554313312

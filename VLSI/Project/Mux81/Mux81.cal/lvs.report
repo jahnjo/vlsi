@@ -15,7 +15,7 @@ REPORT FILE NAME:         lvs.report
 LAYOUT NAME:              /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/Mux81/Mux81.cal/lay.net ('Mux81')
 SOURCE NAME:              /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/Mux81/Mux81.cal/Mux81.calibre.src.net ('Mux81')
 RULE FILE:                /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/Mux81/Mux81.cal/_LVS_
-CREATION TIME:            Tue Apr  2 17:22:14 2019
+CREATION TIME:            Wed Apr  3 13:41:52 2019
 CURRENT DIRECTORY:        /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/Mux81/Mux81.cal
 USER NAME:                egrvlsi07
 CALIBRE VERSION:          v2012.2_36.25    Mon Jul 2 12:15:31 PDT 2012

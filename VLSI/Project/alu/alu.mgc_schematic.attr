@@ -1,0 +1,10 @@
+A 5 u mgc_schematic 5ca4e60b9287.03.7f.00.00.01.00.7c.12 2 2 1 0
+V v 1 1 5ca4e60b9287.03.7f.00.00.01.01.7c.12
+F o 0 ""
+V v 2 1 5ca4e613064e.03.7f.00.00.01.00.7c.12
+F o 0 ""
+O 2
+R cspuv 0 "$VLSI/Project/alu/alu/sheet1" 1 mgc_sheet 5ca4e60b9356.03.7f.00.00.01.01.7c.12 5ca4e60b9356.03.7f.00.00.01.00.7c.12
+O 1
+R cspuv 0 "$VLSI/Project/alu/alu/sheet1" 1 mgc_sheet 5ca4e60b9356.03.7f.00.00.01.01.7c.12 5ca4e60b9356.03.7f.00.00.01.00.7c.12
+P "eddm__refer_state" "eddm__refer_floating"

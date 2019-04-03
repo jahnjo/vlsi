@@ -1,0 +1,17 @@
+A 5 u mgc_sheet 5ca4e6604d30.03.7f.00.00.01.00.03.fd 2 2 1 0
+V v 1 4 5ca4e6604d30.03.7f.00.00.01.01.03.fd
+F f 1 "sheet1.ssht_1"
+F f 1 "sheet1.sgfx_1"
+F o 0 
+F o 0 
+V v 2 4 5ca4e664af31.03.7f.00.00.01.00.03.fd
+F f 2 "sheet1.ssht_2"
+F f 2 "sheet1.sgfx_2"
+F o 0 
+F o 0 
+O 2
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R csduv 0 "$VLSI/Project/control/control" 1 mgc_schematic 5ca4e6604c4a.03.7f.00.00.01.01.03.fd 5ca4e6604c4a.03.7f.00.00.01.00.03.fd
+O 1
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R csduv 0 "$VLSI/Project/control/control" 1 mgc_schematic 5ca4e6604c4a.03.7f.00.00.01.01.03.fd 5ca4e6604c4a.03.7f.00.00.01.00.03.fd

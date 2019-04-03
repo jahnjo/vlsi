@@ -1,0 +1,9 @@
+A 5 u mgc_sheet 5ca4e629ca34.03.7f.00.00.01.00.7e.3b 1 2 1 0
+V v 1 4 5ca4e629ca34.03.7f.00.00.01.01.7e.3b
+F f 1 "sheet1.ssht_1"
+F f 1 "sheet1.sgfx_1"
+F o 0 
+F o 0 
+O 1
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R csduv 0 "$VLSI/Project/reg/reg" 1 mgc_schematic 5ca4e629c961.03.7f.00.00.01.01.7e.3b 5ca4e629c961.03.7f.00.00.01.00.7e.3b

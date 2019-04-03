@@ -1,0 +1,6 @@
+A 5 u Eddm_part 5ca4e6130482.03.7f.00.00.01.00.7c.12 1 2 1 0
+V v 1 1 5ca4e6130482.03.7f.00.00.01.01.7c.12
+F f 1 "part.part_1"
+O 1
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R csduv 0 "$VLSI/Project/alu/alu" 1 mgc_schematic 5ca4e60b9287.03.7f.00.00.01.01.7c.12 5ca4e60b9287.03.7f.00.00.01.00.7c.12

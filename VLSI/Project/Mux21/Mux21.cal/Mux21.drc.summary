@@ -3,7 +3,7 @@
 ==================================================================================
 === CALIBRE::DRC-H SUMMARY REPORT
 ===
-Execution Date/Time:       Tue Apr  2 16:38:24 2019
+Execution Date/Time:       Wed Apr  3 13:09:52 2019
 Calibre Version:           v2012.2_36.25    Mon Jul 2 12:15:31 PDT 2012
 Rule File Pathname:        /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/Mux21/Mux21.cal/_DRC_
 Rule File Title:           
@@ -81,7 +81,7 @@ LAYER DNWELLi .... TOTAL Original Geometry Count = 0   (0)
 LAYER OD2i ....... TOTAL Original Geometry Count = 0   (0)
 LAYER DPO ........ TOTAL Original Geometry Count = 0   (0)
 LAYER PIMPi ...... TOTAL Original Geometry Count = 3   (3)
-LAYER CONTi ...... TOTAL Original Geometry Count = 106 (109)
+LAYER CONTi ...... TOTAL Original Geometry Count = 122 (125)
 LAYER VIA12i ..... TOTAL Original Geometry Count = 1   (6)
 LAYER VIA23i ..... TOTAL Original Geometry Count = 1   (4)
 LAYER VIA34i ..... TOTAL Original Geometry Count = 0   (0)
@@ -512,6 +512,6 @@ CELL Mux21 ............. TOTAL Result Count = 5 (5)
 ---
 TOTAL CPU Time:                  0
 TOTAL REAL Time:                 0
-TOTAL Original Layer Geometries: 195 (228)
+TOTAL Original Layer Geometries: 211 (244)
 TOTAL DRC RuleChecks Executed:   386
 TOTAL DRC Results Generated:     5 (5)

@@ -3,7 +3,7 @@
 ==================================================================================
 === CALIBRE::ERC-H SUMMARY REPORT
 ===
-Execution Date/Time:          Tue Apr  2 16:39:12 2019
+Execution Date/Time:          Wed Apr  3 13:10:54 2019
 Calibre Version:              v2012.2_36.25    Mon Jul 2 12:15:31 PDT 2012
 Rule File Pathname:           /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/Mux21/Mux21.cal/_LVS_
 Rule File Title:              
@@ -54,7 +54,7 @@ LAYER VTH_N ..... TOTAL Original Geometry Count = 0   (0)
 LAYER DNW ....... TOTAL Original Geometry Count = 0   (0)
 LAYER PSUB2 ..... TOTAL Original Geometry Count = 0   (0)
 LAYER RFDUMMY ... TOTAL Original Geometry Count = 0   (0)
-LAYER CONT ...... TOTAL Original Geometry Count = 109 (109)
+LAYER CONT ...... TOTAL Original Geometry Count = 125 (125)
 LAYER VARDMY .... TOTAL Original Geometry Count = 0   (0)
 LAYER PP ........ TOTAL Original Geometry Count = 3   (3)
 LAYER VTL_P ..... TOTAL Original Geometry Count = 0   (0)
@@ -121,5 +121,5 @@ LAYER VIA6 ...... TOTAL Original Geometry Count = 0   (0)
 ---
 TOTAL CPU Time:                              0
 TOTAL REAL Time:                             0
-TOTAL Original Layer Geometries:             228 (228)
+TOTAL Original Layer Geometries:             244 (244)
 TOTAL ERC PATHCHK Operations Executed:       4

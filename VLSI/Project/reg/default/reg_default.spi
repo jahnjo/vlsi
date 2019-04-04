@@ -1,0 +1,146 @@
+*
+* .CONNECT statements
+*
+.CONNECT GROUND 0
+
+
+* ELDO netlist generated with ICnet by 'egrvlsi07' on Thu Apr  4 2019 at 16:28:50
+
+*
+* Globals.
+*
+.global VDD GROUND
+
+*
+* Component pathname : $VLSI/Project/Mux21
+*
+.subckt MUX21  Y A B S
+
+        M6 Y N$46 A GROUND nmos w=0.6u l=0.13u m=1 as=0.204p ad=0.204p ps=1.28u
++  pd=1.28u
+        M3 Y S A VDD pmos w=1.35u l=0.13u m=1 as=0.459p ad=0.459p ps=2.03u
++  pd=2.03u
+        M5 Y S B GROUND nmos w=0.6u l=0.13u m=1 as=0.204p ad=0.204p ps=1.28u
++  pd=1.28u
+        M4 Y N$46 B VDD pmos w=1.35u l=0.13u m=1 as=0.459p ad=0.459p ps=2.03u
++  pd=2.03u
+        M2 N$46 S VDD VDD pmos w=1.35u l=0.13u m=1 as=0.459p ad=0.459p ps=2.03u
++  pd=2.03u
+        M1 N$46 S GROUND GROUND nmos w=0.6u l=0.13u m=1 as=0.204p ad=0.204p
++  ps=1.28u pd=1.28u
+.ends MUX21
+
+*
+* Component pathname : $VLSI/Project/Mux81
+*
+.subckt MUX81  OUT1 IN0 IN1 IN2 IN3 IN4 IN5 IN6 IN7 S0 S1 S2
+
+        X_MUX217 OUT1 N$13 N$25 S2 MUX21
+        X_MUX216 N$25 N$17 N$21 S1 MUX21
+        X_MUX215 N$21 IN6 IN7 S0 MUX21
+        X_MUX214 N$17 IN4 IN5 S0 MUX21
+        X_MUX213 N$13 N$5 N$9 S1 MUX21
+        X_MUX212 N$9 IN2 IN3 S0 MUX21
+        X_MUX211 N$5 IN0 IN1 S0 MUX21
+.ends MUX81
+
+*
+* Component pathname : $VLSI/Project/and
+*
+.subckt AND  Y A B
+
+        M6 Y N$54 GROUND GROUND nmos w=0.6u l=0.13u m=1 as=0.204p ad=0.204p
++  ps=1.28u pd=1.28u
+        M5 Y N$54 VDD VDD pmos w=1.35u l=0.13u m=1 as=0.459p ad=0.459p ps=2.03u
++  pd=2.03u
+        M4 N$54 B VDD VDD pmos w=1.35u l=0.13u m=1 as=0.459p ad=0.459p ps=2.03u
++  pd=2.03u
+        M3 N$54 A VDD VDD pmos w=1.35u l=0.13u m=1 as=0.459p ad=0.459p ps=2.03u
++  pd=2.03u
+        M2 N$29 B GROUND GROUND nmos w=1.2u l=0.13u m=1 as=0.408p ad=0.408p
++  ps=1.88u pd=1.88u
+        M1 N$54 A N$29 GROUND nmos w=1.2u l=0.13u m=1 as=0.408p ad=0.408p
++  ps=1.88u pd=1.88u
+.ends AND
+
+*
+* Component pathname : $VLSI/Project/DFF
+*
+.subckt DFF  Q CLK D
+
+        M20 N$101 Q VDD VDD pmos w=0.6u l=0.13u m=1 as=0.204p ad=0.204p
++  ps=1.28u pd=1.28u
+        M19 Q N$101 VDD VDD pmos w=0.6u l=0.13u m=1 as=0.204p ad=0.204p
++  ps=1.28u pd=1.28u
+        M18 N$84 N$82 VDD VDD pmos w=0.6u l=0.13u m=1 as=0.204p ad=0.204p
++  ps=1.28u pd=1.28u
+        M17 N$82 N$84 VDD VDD pmos w=0.6u l=0.13u m=1 as=0.204p ad=0.204p
++  ps=1.28u pd=1.28u
+        M16 N$70 D VDD VDD pmos w=0.6u l=0.13u m=1 as=0.204p ad=0.204p ps=1.28u
++  pd=1.28u
+        M15 N$65 CLK VDD VDD pmos w=0.6u l=0.13u m=1 as=0.204p ad=0.204p
++  ps=1.28u pd=1.28u
+        M14 Q CLK N$93 GROUND nmos w=0.6u l=0.13u m=1 as=0.204p ad=0.204p
++  ps=1.28u pd=1.28u
+        M13 N$101 CLK N$40 GROUND nmos w=0.6u l=0.13u m=1 as=0.204p ad=0.204p
++  ps=1.28u pd=1.28u
+        M12 N$82 N$65 N$88 GROUND nmos w=0.6u l=0.13u m=1 as=0.204p ad=0.204p
++  ps=1.28u pd=1.28u
+        M11 N$84 N$65 N$67 GROUND nmos w=0.6u l=0.13u m=1 as=0.204p ad=0.204p
++  ps=1.28u pd=1.28u
+        M10 N$40 N$84 GROUND GROUND nmos w=0.6u l=0.13u m=1 as=0.204p ad=0.204p
++  ps=1.28u pd=1.28u
+        M9 Q N$101 GROUND GROUND nmos w=0.6u l=0.13u m=1 as=0.204p ad=0.204p
++  ps=1.28u pd=1.28u
+        M8 N$101 Q GROUND GROUND nmos w=0.6u l=0.13u m=1 as=0.204p ad=0.204p
++  ps=1.28u pd=1.28u
+        M7 N$93 N$82 GROUND GROUND nmos w=0.6u l=0.13u m=1 as=0.204p ad=0.204p
++  ps=1.28u pd=1.28u
+        M6 N$88 D GROUND GROUND nmos w=0.6u l=0.13u m=1 as=0.204p ad=0.204p
++  ps=1.28u pd=1.28u
+        M5 N$84 N$82 GROUND GROUND nmos w=0.6u l=0.13u m=1 as=0.204p ad=0.204p
++  ps=1.28u pd=1.28u
+        M4 N$82 N$84 GROUND GROUND nmos w=0.6u l=0.13u m=1 as=0.204p ad=0.204p
++  ps=1.28u pd=1.28u
+        M3 N$67 N$70 GROUND GROUND nmos w=0.6u l=0.13u m=1 as=0.204p ad=0.204p
++  ps=1.28u pd=1.28u
+        M2 N$70 D GROUND GROUND nmos w=0.6u l=0.13u m=1 as=0.204p ad=0.204p
++  ps=1.28u pd=1.28u
+        M1 N$65 CLK GROUND GROUND nmos w=0.6u l=0.13u m=1 as=0.204p ad=0.204p
++  ps=1.28u pd=1.28u
+.ends DFF
+
+*
+* Component pathname : $VLSI/Project/DFFen
+*
+.subckt DFFEN  Q CLK D EN
+
+        X_ENABLE_MUX N$5 Q D EN MUX21
+        X_DFF Q CLK N$5 DFF
+.ends DFFEN
+
+*
+* MAIN CELL: Component pathname : $VLSI/Project/reg
+*
+        X_MUX812 BUSB N$100 N$101 N$102 N$103 N$104 N$105 N$106 N$107 RS0
++ RS1 RS2 MUX81
+        X_MUX811 BUSA N$100 N$101 N$102 N$103 N$104 N$105 N$106 N$107 RT0
++ RT1 RT2 MUX81
+        X_AND8 N$78 DEC7 REG_W AND
+        X_AND7 N$76 DEC6 REG_W AND
+        X_AND6 N$74 DEC5 REG_W AND
+        X_AND5 N$72 DEC4 REG_W AND
+        X_AND4 N$70 DEC3 REG_W AND
+        X_AND3 N$68 DEC2 REG_W AND
+        X_AND2 N$66 DEC1 REG_W AND
+        X_AND1 N$64 DEC0 REG_W AND
+        X_DFFEN8 N$107 CLK BUSW N$78 DFFEN
+        X_DFFEN7 N$106 CLK BUSW N$76 DFFEN
+        X_DFFEN6 N$105 CLK BUSW N$74 DFFEN
+        X_DFFEN5 N$104 CLK BUSW N$72 DFFEN
+        X_DFFEN4 N$103 CLK BUSW N$70 DFFEN
+        X_DFFEN3 N$102 CLK BUSW N$68 DFFEN
+        X_DFFEN2 N$101 CLK BUSW N$66 DFFEN
+        X_DFFEN1 N$100 CLK BUSW N$64 DFFEN
+*
+.end

@@ -1,10 +1,15 @@
-A 5 u Eddm_part 5c9bade1b1fe.03.7f.00.00.01.00.50.6b 4 2 3 0
-V v 2 1 5ca3d6b20bfd.03.7f.00.00.01.00.7b.21
-F f 2 "part.part_2"
+A 5 u Eddm_part 5c9bade1b1fe.03.7f.00.00.01.00.50.6b 5 2 3 0
 V v 3 1 5ca3d7664630.03.7f.00.00.01.00.7d.55
 F f 3 "part.part_3"
 V v 4 1 5ca3d9681fed.03.7f.00.00.01.00.0b.1b
 F f 4 "part.part_4"
+V v 5 1 5ca6569eb0a8.03.7f.00.00.01.00.1c.b5
+F f 5 "part.part_5"
+O 5
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R csduv 1 "$VLSI/Project/Mux41/Mux41" 1 mgc_schematic 5ca3d6c6b80b.03.7f.00.00.01.01.7d.55 5ca3d6c6b80b.03.7f.00.00.01.00.7d.55
+P "eddm__refer_state" "eddm__refer_floating"
+R csduv 2 "$VLSI/Project/Mux41/Mux41" 2 mgc_symbol 5ca6569eb099.03.7f.00.00.01.00.1c.b5 5ca3d95761dd.03.7f.00.00.01.00.0b.1b
 O 4
 P "eddm__stream_to_use" "eddm__propl_dstream"
 R csduv 1 "$VLSI/Project/Mux41/Mux41" 1 mgc_schematic 5ca3d6c6b80b.03.7f.00.00.01.01.7d.55 5ca3d6c6b80b.03.7f.00.00.01.00.7d.55
@@ -14,5 +19,3 @@ O 3
 P "eddm__stream_to_use" "eddm__propl_dstream"
 R csduv 1 "$VLSI/Project/Mux41/Mux41" 1 mgc_schematic 5ca3d6c6b80b.03.7f.00.00.01.01.7d.55 5ca3d6c6b80b.03.7f.00.00.01.00.7d.55
 P "eddm__refer_state" "eddm__refer_floating"
-O 2
-P "eddm__stream_to_use" "eddm__propl_dstream"

@@ -3,7 +3,7 @@
 ==================================================================================
 === CALIBRE::DRC-H SUMMARY REPORT
 ===
-Execution Date/Time:       Tue Apr  2 18:19:11 2019
+Execution Date/Time:       Thu Apr  4 13:09:56 2019
 Calibre Version:           v2012.2_36.25    Mon Jul 2 12:15:31 PDT 2012
 Rule File Pathname:        /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/Mux41/Mux41.cal/_DRC_
 Rule File Title:           
@@ -83,7 +83,7 @@ LAYER DNWELLi .... TOTAL Original Geometry Count = 0   (0)
 LAYER OD2i ....... TOTAL Original Geometry Count = 0   (0)
 LAYER DPO ........ TOTAL Original Geometry Count = 0   (0)
 LAYER PIMPi ...... TOTAL Original Geometry Count = 3   (9)
-LAYER CONTi ...... TOTAL Original Geometry Count = 106 (327)
+LAYER CONTi ...... TOTAL Original Geometry Count = 122 (375)
 LAYER VIA12i ..... TOTAL Original Geometry Count = 1   (18)
 LAYER VIA23i ..... TOTAL Original Geometry Count = 1   (12)
 LAYER VIA34i ..... TOTAL Original Geometry Count = 1   (8)
@@ -122,7 +122,7 @@ RULECHECK G.3 .................... TOTAL Result Count = 0 (0)
 RULECHECK NW.W.1 ................. TOTAL Result Count = 0 (0)
 RULECHECK NW.W.2 ................. TOTAL Result Count = 0 (0)
 RULECHECK NW.S.1 ................. TOTAL Result Count = 0 (0)
-RULECHECK NW.S.2 ................. TOTAL Result Count = 2 (2)
+RULECHECK NW.S.2 ................. TOTAL Result Count = 0 (0)
 RULECHECK NW.S.3 ................. TOTAL Result Count = 0 (0)
 RULECHECK NW.A.1 ................. TOTAL Result Count = 0 (0)
 RULECHECK NW.A.2 ................. TOTAL Result Count = 0 (0)
@@ -506,15 +506,14 @@ RULECHECK AM.R.3.MD .............. TOTAL Result Count = 0 (0)
 ----------------------------------------------------------------------------------
 --- RULECHECK RESULTS STATISTICS (BY CELL)
 ---
-CELL Mux41 ............. TOTAL Result Count = 11 (11)
-    RULECHECK NW.S.2 ... TOTAL Result Count = 2  (2)
-    RULECHECK PO.R.2 ... TOTAL Result Count = 1  (1)
-    RULECHECK M4.A.1 ... TOTAL Result Count = 8  (8)
+CELL Mux41 ............. TOTAL Result Count = 9 (9)
+    RULECHECK PO.R.2 ... TOTAL Result Count = 1 (1)
+    RULECHECK M4.A.1 ... TOTAL Result Count = 8 (8)
 ----------------------------------------------------------------------------------
 --- SUMMARY
 ---
 TOTAL CPU Time:                  0
 TOTAL REAL Time:                 0
-TOTAL Original Layer Geometries: 216 (726)
+TOTAL Original Layer Geometries: 232 (774)
 TOTAL DRC RuleChecks Executed:   386
-TOTAL DRC Results Generated:     11 (11)
+TOTAL DRC Results Generated:     9 (9)

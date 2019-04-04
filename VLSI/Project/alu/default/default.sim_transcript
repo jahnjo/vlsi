@@ -1,0 +1,244 @@
+
+Running eldo on egr-vlsi-07
+with Eldo libraries :
+/opt/mentor/ams_12_1/aol/lib/libeldoudm_64.so
+/opt/mentor/ams_12_1/aol/lib/libeldomos1_64.so
+/opt/mentor/ams_12_1/aol/lib/libeldoekv_64.so
+/opt/mentor/ams_12_1/aol/lib/libeldomosp9_64.so
+/opt/mentor/ams_12_1/aol/lib/libeldocsem_64.so
+/opt/mentor/ams_12_1/aol/lib/libeldomos2_64.so
+/opt/mentor/ams_12_1/aol/lib/libeldomos3_64.so
+/opt/mentor/ams_12_1/aol/lib/libeldobip_64.so
+/opt/mentor/ams_12_1/aol/lib/libeldodio_64.so
+/opt/mentor/ams_12_1/aol/lib/libeldojfet_64.so
+/opt/mentor/ams_12_1/aol/lib/libeldosoi_64.so
+/opt/mentor/ams_12_1/aol/lib/libeldomos4_64.so
+/opt/mentor/ams_12_1/aol/lib/libeldoasitft_64.so
+/opt/mentor/ams_12_1/aol/lib/libeldohisim_64.so
+/opt/mentor/ams_12_1/aol/lib/libeldospmod_64.so
+/opt/mentor/ams_12_1/aol/lib/libeldopsp_64.so
+/opt/mentor/ams_12_1/aol/lib/libeldomosvar_64.so
+/opt/mentor/ams_12_1/aol/lib/libeldomoto_64.so
+/opt/mentor/ams_12_1/aol/lib/libeldost_64.so
+/opt/mentor/ams_12_1/aol/lib/libeldobnr_64.so
+/opt/mentor/ams_12_1/aol/lib/libeldorockw_64.so
+/opt/mentor/ams_12_1/aol/lib/libeldopubhicum_64.so
+/opt/mentor/ams_12_1/aol/lib/libeldotftsh_64.so
+/opt/mentor/ams_12_1/aol/lib/libeldobta_64.so
+/opt/mentor/ams_12_1/aol/lib/libeldofas_64.so
+/opt/mentor/ams_12_1/aol/lib/libeldofascm_64.so
+/opt/mentor/ams_12_1/aol/lib/libeldosdsim_64.so
+/opt/mentor/ams_12_1/aol/lib/libeldowire_64.so
+/opt/mentor/ams_12_1/aol/lib/libogr_64.so loaded.
+
+
+
+Copyright 1988 Mentor Graphics Corporation
+All Rights Reserved
+
+THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY
+INFORMATION WHICH ARE THE PROPERTY OF MENTOR
+GRAPHICS CORPORATION OR ITS LICENSORS AND IS
+SUBJECT TO LICENSE TERMS.
+
+
+
+***** SYSTEM INFORMATION ...
+
+*** User  : egrvlsi07@egr-vlsi-07
+*** OS    : \S [VCO = aol]
+*** CPU   :
+    Intel(R) Xeon(R) CPU E5-2603 0 @ 1.80GHz
+    Number of physical processors     : 1
+    Hyper-Threading Technology        : disabled
+    Number of cpu cores               : 4
+    Number of logical processors      : 4
+*** Freq  : 1799.929MHz
+*** Cache : 10240 KB
+*** MEM   : 16386688 kB
+*** Date  : Thu Apr  4 15:46:08 2019
+
+
+***** PRE-PROCESSING ...
+
+
+***** ANALYSIS ....
+
+Warning 46: In file "/home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/models/lib.eldo" line 6767:
++   Double definition for parameter ISA
++   Previous definition was in file "/home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/models/lib.eldo" line 8
+Warning 46: In file "/home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/models/lib.eldo" line 6767:
++   Double definition for parameter BFA
++   Previous definition was in file "/home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/models/lib.eldo" line 8
+Warning 46: In file "/home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/models/lib.eldo" line 6767:
++   Double definition for parameter NFA
++   Previous definition was in file "/home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/models/lib.eldo" line 8
+Warning 46: In file "/home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/models/lib.eldo" line 6767:
++   Double definition for parameter RBA
++   Previous definition was in file "/home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/models/lib.eldo" line 8
+Warning 46: In file "/home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/models/lib.eldo" line 6767:
++   Double definition for parameter REA
++   Previous definition was in file "/home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/models/lib.eldo" line 8
+Warning 46: In file "/home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/models/lib.eldo" line 6767:
++   Double definition for parameter RCA
++   Previous definition was in file "/home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/models/lib.eldo" line 8
+Warning 46: In file "/home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/models/lib.eldo" line 6767:
++   Double definition for parameter RBMA
++   Previous definition was in file "/home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/models/lib.eldo" line 8
+Warning 46: In file "/home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/models/lib.eldo" line 6767:
++   Double definition for parameter CJEA
++   Previous definition was in file "/home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/models/lib.eldo" line 8
+Warning 46: In file "/home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/models/lib.eldo" line 6767:
++   Double definition for parameter CJCA
++   Previous definition was in file "/home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/models/lib.eldo" line 8
+
+***** 0  error(s). 
+***** 9  warning(s). 
+
+
+***** GENERATION ...
+
+Warning 1615: In file "/home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/alu/default/alu_default.cir" line 12:
++   COMMAND ".TRAN": TPRINT can not be <= 0.0.
++   It is set to TSTOP/20.0 = 2.500e-08 s.
+
+***** 0  error(s). 
+***** 10  warning(s). 
+
+
+INFORMATION ABOUT COMPILATION...
+
+
+Memory space allocated (MB):    243
+71 elements
+34 nodes
+5 input signals
+
+***> Parsing CPU TIME 0h 0mn 0s 080ms <***
+
+
+Eldo VERSION : ELDO 12.1 patch1 (64 bits) Thu Sep  6 14:32:26 GMT 2012
+
+*** DATE:  4-Apr-2019 15:46:08
+
+*** TITLE: * Component: $VLSI/Project/alu  Viewpoint: default
+
+TEMPERATURE : 27.000000 degrees C
+
+
+Performing DC analysis...
+
+--> Partitioning circuit...
+
+***> DC CPU TIME 0s 010ms <***
+
+DC:6 iterations FOR DC analysis
+A  0.0000     
+ALUOP_0  0.0000     
+ALUOP_1  0.0000     
+B  0.0000     
+COUT  118.7480N  
+N$30  224.0724N  
+N$31  227.4907N  
+N$32  121.6260N  
+N$41  2.5000     
+N$44  1.4756U    
+RESULT  129.6659N  
+VDD  2.5000     
+X_ADD_SUB.N$10  2.5000     
+X_ADD_SUB.N$14  40.8634M   
+X_ADD_SUB.N$145  2.5000     
+X_ADD_SUB.N$157  2.5000     
+X_ADD_SUB.N$159  2.5000     
+X_ADD_SUB.N$165  74.8475M   
+X_ADD_SUB.N$167  17.5115M   
+X_ADD_SUB.N$19  56.9879M   
+X_ADD_SUB.N$210  2.5000     
+X_ADD_SUB.N$37  2.5000     
+X_ADD_SUB.N$47  2.0801     
+X_ADD_SUB.N$7  2.5000     
+X_AND.N$29  49.5793M   
+X_AND.N$54  2.5000     
+X_B_MUX.N$46  2.5000     
+X_MUX411.N$2  127.3684N  
+X_MUX411.N$4  230.9347N  
+X_MUX411.X_MUX211.N$46  2.5000     
+X_MUX411.X_MUX212.N$46  2.5000     
+X_MUX411.X_MUX213.N$46  2.5000     
+X_OR.N$13  2.5000     
+X_OR.N$22  2.5000     
+
+   TOTAL POWER DISSIPATION:  77.4094N    WATTS
+
+
+Eldo NEWTON: VNTOL=1.000000e-06 RELTOL=7.500000e-04
+
+Connecting to JWDB server, please wait...
+connected to wdb server : -jwdbhost egr-vlsi-07 -jwdbport 37856
+
+Compute from 0.000000 Nano to 500.000000 Nano
+................................................
+Simulation progress                : 10% (t = 50.0000 N)
+Elapsed CPU time                   :  0h  0mn  0s  60   ( 0h  0mn  0s  60)
+CPU Usage                          :  95%               ( 95%)
+................................................
+Simulation progress                : 20% (t = 100.0000 N)
+Elapsed CPU time                   :  0h  0mn  0s  50   ( 0h  0mn  0s 110)
+CPU Usage                          : 100%               ( 98%)
+................................................
+Simulation progress                : 30% (t = 150.0000 N)
+Elapsed CPU time                   :  0h  0mn  0s  60   ( 0h  0mn  0s 170)
+CPU Usage                          :  96%               ( 97%)
+................................................
+Simulation progress                : 40% (t = 200.0000 N)
+Elapsed CPU time                   :  0h  0mn  0s  60   ( 0h  0mn  0s 230)
+CPU Usage                          :  95%               ( 97%)
+................................................
+Simulation progress                : 50% (t = 250.0000 N)
+Elapsed CPU time                   :  0h  0mn  0s  70   ( 0h  0mn  0s 300)
+CPU Usage                          : 100%               ( 99%)
+................................................
+Simulation progress                : 60% (t = 300.0000 N)
+Elapsed CPU time                   :  0h  0mn  0s  60   ( 0h  0mn  0s 360)
+CPU Usage                          : 100%               ( 99%)
+................................................
+Simulation progress                : 70% (t = 350.0000 N)
+Elapsed CPU time                   :  0h  0mn  0s  60   ( 0h  0mn  0s 420)
+CPU Usage                          :  98%               ( 99%)
+................................................
+Simulation progress                : 80% (t = 400.0000 N)
+Elapsed CPU time                   :  0h  0mn  0s  60   ( 0h  0mn  0s 480)
+CPU Usage                          : 100%               ( 99%)
+................................................
+Simulation progress                : 90% (t = 450.0000 N)
+Elapsed CPU time                   :  0h  0mn  0s  70   ( 0h  0mn  0s 550)
+CPU Usage                          :  95%               ( 99%)
+................................................
+Simulation progress                : 100% (t = 500.0000 N)
+Elapsed CPU time                   :  0h  0mn  0s  60   ( 0h  0mn  0s 610)
+CPU Usage                          :  95%               ( 98%)
+
+
+***>Current simulation completed
+
+
+
+
+SIMULATION INFORMATION 
+memory size allocated in Mbytes  246.6
+Latency: 0.000000%
+average number of newton iterations: 3.403167
+nb of components: 203
+nb of nodes: 166
+nb of MOS or BIP calls: 74327
+Number of steps computed: 782
+
+***>CPU TIME 0s 610ms <***
+
+***>MESSAGE SUMMARY: 10 warnings
+
+***>GLOBAL CPU TIME 0s 750ms <***
+
+
+***>GLOBAL ELAPSED TIME 1s <***
+

@@ -1,9 +1,9 @@
 and 1000
 ERC PATHCHK GROUND && ! POWER
-0 0 0 Apr  2 16:01:56 2019                                      
+0 0 0 Apr  4 16:40:59 2019                                      
 ERC PATHCHK POWER && ! GROUND
-0 0 0 Apr  2 16:01:56 2019                                      
+0 0 0 Apr  4 16:40:59 2019                                      
 ERC PATHCHK ! POWER && ! GROUND
-0 0 0 Apr  2 16:01:56 2019                                      
+0 0 0 Apr  4 16:40:59 2019                                      
 ERC PATHCHK ! LABELED
-0 0 0 Apr  2 16:01:56 2019                                      
+0 0 0 Apr  4 16:40:59 2019                                      

@@ -1,6 +1,18 @@
-A 5 u Eddm_part 5ca4e6130482.03.7f.00.00.01.00.7c.12 1 2 1 0
-V v 1 1 5ca4e6130482.03.7f.00.00.01.01.7c.12
-F f 1 "part.part_1"
-O 1
+A 5 u Eddm_part 5ca4e6130482.03.7f.00.00.01.00.7c.12 4 2 3 0
+V v 2 1 5ca662c90c2d.03.7f.00.00.01.00.1f.2f
+F f 2 "part.part_2"
+V v 3 1 5ca66c179f95.03.7f.00.00.01.00.40.88
+F f 3 "part.part_3"
+V v 4 1 5ca66c3590bc.03.7f.00.00.01.00.40.63
+F f 4 "part.part_4"
+O 4
 P "eddm__stream_to_use" "eddm__propl_dstream"
 R csduv 0 "$VLSI/Project/alu/alu" 1 mgc_schematic 5ca4e60b9287.03.7f.00.00.01.01.7c.12 5ca4e60b9287.03.7f.00.00.01.00.7c.12
+R csduv 2 "$VLSI/Project/alu/alu" 1 mgc_symbol 5ca66c1fecd9.03.7f.00.00.01.01.40.63 5ca66282c260.03.7f.00.00.01.00.1f.2f
+O 3
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R csduv 0 "$VLSI/Project/alu/alu" 1 mgc_schematic 5ca4e60b9287.03.7f.00.00.01.01.7c.12 5ca4e60b9287.03.7f.00.00.01.00.7c.12
+O 2
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R csduv 0 "$VLSI/Project/alu/alu" 1 mgc_schematic 5ca4e60b9287.03.7f.00.00.01.01.7c.12 5ca4e60b9287.03.7f.00.00.01.00.7c.12
+R csduv 1 "$VLSI/Project/alu/alu" 1 mgc_symbol 5ca66282c260.03.7f.00.00.01.01.1f.2f 5ca66282c260.03.7f.00.00.01.00.1f.2f

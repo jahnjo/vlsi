@@ -1,0 +1,7 @@
+A 5 u mgc_cms_sim_db 5ca6581ff219.03.7f.00.00.01.00.1f.2f 2 2 0 0
+V v 1 1 5ca6581ff219.03.7f.00.00.01.01.1f.2f
+F f 1 "sim_settings.simdb_1"
+V v 2 1 5ca65d8960c7.03.7f.00.00.01.00.1f.2f
+F f 2 "sim_settings.simdb_2"
+O 2
+O 1

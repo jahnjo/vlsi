@@ -1,0 +1,24 @@
+//  Invocation args:  -check -upper -eldo -o /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/alu/default/alu_default.spi -log /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/alu/default/default.netlist_transcript -quiet $VLSI/Project/alu/default
+
+// **** Reading <$VLSI/Project/alu/default> for ELDO netlist ****
+
+// Checking 7 sheet(s) for out of date references to symbols and interfaces...
+// Done.
+// NOTE: There is no part interface for the top level schematic.  The external nets in the schematic
+//       are being scanned to create the pin names for the top level subckt.
+Processing [$VLSI/Project/alu] [alu/alu] [alu] (NCF entry line: 17 file: $NCF_GLOBAL)
+Processing [$VLSI/Project/Adder] [Adder/Adder] [mirror] (NCF entry line: 17 file: $NCF_GLOBAL)
+Processing [$VLSI/Project/and] [and/and] [and] (NCF entry line: 17 file: $NCF_GLOBAL)
+Processing [$VLSI/Project/or] [or/or] [or] (NCF entry line: 17 file: $NCF_GLOBAL)
+Processing [$VLSI/Project/Mux21] [Mux21/Mux21] [mux21] (NCF entry line: 17 file: $NCF_GLOBAL)
+Processing [$VLSI/Project/inv] [inv/inv] [schematic] (NCF entry line: 17 file: $NCF_GLOBAL)
+Processing [$VLSI/Project/Mux41] [Mux41/Mux41] [Mux41] (NCF entry line: 17 file: $NCF_GLOBAL)
+Primitive [$GENERIC13/symbols/pmos] [pmos/pmos] [ELDOSPICE=M] (NCF entry line: 19 file: $GENERIC13/symbols/pmos/@ncf.dir/pmos.ncf)
+Primitive [$GENERIC13/symbols/nmos] [nmos/nmos] [ELDOSPICE=M] (NCF entry line: 19 file: $GENERIC13/symbols/nmos/@ncf.dir/nmos.ncf)
+
+**** Writing <$VLSI/Project/alu/default> netlist for ELDO ****
+
+Number of cells: 9
+Number of primitive instances: 66
+
+Done...

@@ -1,0 +1,11 @@
+A 5 u mgc_symbol 5ca66c1fecd9.03.7f.00.00.01.00.40.63 2 2 1 0
+V v 1 2 5ca66c1fecd9.03.7f.00.00.01.01.40.63
+F f 1 "alu.smbl_1"
+F o 0 
+V v 2 2 5ca66c38a6c6.03.7f.00.00.01.00.40.63
+F f 2 "alu.smbl_2"
+F o 0 
+O 2
+R csduv 0 "$VLSI/Project/alu/part" 4 Eddm_part 5ca66c3590bc.03.7f.00.00.01.00.40.63 5ca4e6130482.03.7f.00.00.01.00.7c.12
+O 1
+R csduv 0 "$VLSI/Project/alu/part" 4 Eddm_part 5ca66c3590bc.03.7f.00.00.01.00.40.63 5ca4e6130482.03.7f.00.00.01.00.7c.12

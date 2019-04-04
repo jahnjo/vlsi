@@ -1,10 +1,10 @@
 # Automagically generated file: Please do not edit!
 lvs_ExtfVersion 3
-lvs_ExtRunTimes 1554397935 1554397936
+lvs_ExtRunTimes 1554404891 1554404891
 lvs_ExtOutFile RUNDIR /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/Mux41/Mux41.cal
 lvs_ExtOutFile RULES_FILE /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/Mux41/Mux41.cal/_LVS_
 lvs_ExtInfoExtSummary {0 0 0 0 0 0 0 0 0 0 0}
-lvs_ExtInfoErcSummary {0 0 0 0 0 4 74 74 2 0 0}
+lvs_ExtInfoErcSummary {0 0 0 0 0 4 76 76 2 0 0}
 lvs_ExtInfoDfmSummary {0}
 lvs_ExtOutFile LAYOUT_NETLIST /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/Mux41/Mux41.cal/lay.net
 lvs_ExtOutFile EXTRACTION_REPORT lvs.report.ext

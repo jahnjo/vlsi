@@ -1,0 +1,37 @@
+
+//  Pyxis Netlister  v10.1_1.0  Thu Jun 14 12:16:17 PDT 2012
+//
+//             Copyright Mentor Graphics Corporation 1982
+//
+//                      All Rights Reserved.
+//
+//    THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+//      WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR
+//           ITS LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+//
+//  Mentor Graphics software executing under x86_64 Linux.
+//
+
+//  Invocation args:  -lvs -preserve_case -spice_top_sub -o /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/Mux41/Mux41.cal/Mux41.calibre.src.net /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/Mux41/viewpoints/Mux41_SDL_HIER2
+
+// **** Reading <$VLSI/Project/Mux41/viewpoints/Mux41_SDL_HIER2> for LVS netlist ****
+
+// Checking 2 sheet(s) for out of date references to symbols and interfaces...
+// Done.
+// Parsing file '/opt/mentor/pyxis/v10.1_1_linux_x86_64/pyxis_home/mgc_icstd_lib/global.ncf' succeeded.
+// Parsing file '/home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/symbols/nmos/@ncf.dir/nmos.ncf' succeeded.
+// Parsing file '/home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/symbols/pmos/@ncf.dir/pmos.ncf' succeeded.
+Processing [$VLSI/Project/Mux41] [Mux41/Mux41] [Mux41] (NCF entry line: 17 file: $NCF_GLOBAL)
+Processing [$VLSI/Project/Mux21] [Mux21/Mux21] [mux21] (NCF entry line: 17 file: $NCF_GLOBAL)
+Primitive [$GENERIC13/symbols/nmos] [nmos/nmos] [SPICE=M] (NCF entry line: 7 file: $GENERIC13/symbols/nmos/@ncf.dir/nmos.ncf)
+Primitive [$GENERIC13/symbols/pmos] [pmos/pmos] [SPICE=M] (NCF entry line: 7 file: $GENERIC13/symbols/pmos/@ncf.dir/pmos.ncf)
+
+**** Writing <$VLSI/Project/Mux41/viewpoints/Mux41_SDL_HIER2> netlist for LVS ****
+
+Number of cells: 4
+Number of primitive instances: 18
+
+Done...
+// Registration file '/opt/mentor/pyxis/v10.1_1_linux_x86_64/pyxis_home/mgc_icstd_lib/global.ncf' closed.
+// Registration file '/home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/symbols/nmos/@ncf.dir/nmos.ncf' closed.
+// Registration file '/home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/symbols/pmos/@ncf.dir/pmos.ncf' closed.

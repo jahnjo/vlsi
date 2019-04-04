@@ -3,7 +3,7 @@
 ==================================================================================
 === CALIBRE::ERC-H SUMMARY REPORT
 ===
-Execution Date/Time:          Thu Apr  4 13:12:15 2019
+Execution Date/Time:          Thu Apr  4 15:08:11 2019
 Calibre Version:              v2012.2_36.25    Mon Jul 2 12:15:31 PDT 2012
 Rule File Pathname:           /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/Mux41/Mux41.cal/_LVS_
 Rule File Title:              
@@ -71,10 +71,10 @@ LAYER DUM2 ...... TOTAL Original Geometry Count = 0   (0)
 LAYER M2 ........ TOTAL Original Geometry Count = 14  (42)
 LAYER M2SLOT .... TOTAL Original Geometry Count = 0   (0)
 LAYER DUM3 ...... TOTAL Original Geometry Count = 0   (0)
-LAYER M3 ........ TOTAL Original Geometry Count = 25  (41)
+LAYER M3 ........ TOTAL Original Geometry Count = 27  (43)
 LAYER M3SLOT .... TOTAL Original Geometry Count = 0   (0)
 LAYER DUM4 ...... TOTAL Original Geometry Count = 0   (0)
-LAYER M4 ........ TOTAL Original Geometry Count = 15  (15)
+LAYER M4 ........ TOTAL Original Geometry Count = 16  (16)
 LAYER M4SLOT .... TOTAL Original Geometry Count = 0   (0)
 LAYER DUM5 ...... TOTAL Original Geometry Count = 0   (0)
 LAYER M5 ........ TOTAL Original Geometry Count = 0   (0)
@@ -104,7 +104,7 @@ LAYER PNP3DMY ... TOTAL Original Geometry Count = 0   (0)
 LAYER var_lvs ... TOTAL Original Geometry Count = 0   (0)
 LAYER VIA1 ...... TOTAL Original Geometry Count = 6   (18)
 LAYER VIA2 ...... TOTAL Original Geometry Count = 4   (12)
-LAYER VIA3 ...... TOTAL Original Geometry Count = 8   (8)
+LAYER VIA3 ...... TOTAL Original Geometry Count = 9   (9)
 LAYER VIA4 ...... TOTAL Original Geometry Count = 0   (0)
 LAYER VIA5 ...... TOTAL Original Geometry Count = 0   (0)
 LAYER VIA6 ...... TOTAL Original Geometry Count = 0   (0)
@@ -117,7 +117,7 @@ LAYER VIA6 ...... TOTAL Original Geometry Count = 0   (0)
   PATHCHK GROUND && ! POWER:
   PATHCHK POWER && ! GROUND:
   PATHCHK ! POWER && ! GROUND:
-    TOTAL POLYGON Results: 74
+    TOTAL POLYGON Results: 76
     TOTAL NET Results:     2
   PATHCHK ! LABELED:
 ----------------------------------------------------------------------------------
@@ -125,7 +125,7 @@ LAYER VIA6 ...... TOTAL Original Geometry Count = 0   (0)
 ---
 TOTAL CPU Time:                              0
 TOTAL REAL Time:                             0
-TOTAL Original Layer Geometries:             286 (774)
+TOTAL Original Layer Geometries:             290 (778)
 TOTAL ERC PATHCHK Operations Executed:       4
-TOTAL ERC PATHCHK POLYGON Results Generated: 74 (74)
+TOTAL ERC PATHCHK POLYGON Results Generated: 76 (76)
 TOTAL ERC PATHCHK NET Results Generated:     2

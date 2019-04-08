@@ -1,0 +1,21 @@
+reg 1000
+SOFTCHK DNW CONTACT.
+0 0 0 Apr  8 16:57:44 2019                                      
+SOFTCHK nxwell CONTACT.
+0 0 0 Apr  8 16:57:44 2019                                      
+SOFTCHK psub CONTACT.
+2 2 2 Apr  8 16:57:44 2019                                      
+Net 1 is selected for stamping.
+Rejected nets: 3 4
+p 1 4
+DN 4
+7880 48705
+70920 48705
+70920 50245
+7880 50245
+p 2 4
+DN 3
+19870 97990
+51910 97990
+51910 99530
+19870 99530

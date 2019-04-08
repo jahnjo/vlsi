@@ -1,0 +1,233 @@
+# This file provides name mapping information for all objects
+# on the schematic design.  It provides a mapping for each
+# object between its name on the schematic and its name in the netlist.
+version 1.0
+
+Globals
+   ground ground
+   VDD VDD
+End Globals
+
+Cell nmos
+   Pin D D
+   Pin G G
+   Pin S S
+   Pin B B
+End Cell
+
+Cell pmos
+   Pin D D
+   Pin G G
+   Pin S S
+   Pin B B
+End Cell
+
+Cell and
+   Pin Y Y
+   Pin A A
+   Pin B B
+   Net N$54 N$54
+   Net N$29 N$29
+   Net Y Y
+   Net B B
+   Net A A
+   Global ground ground
+   Global VDD VDD
+   Inst M6 M6 nmos
+   Inst M5 M5 pmos
+   Inst M4 M4 pmos
+   Inst M3 M3 pmos
+   Inst M2 M2 nmos
+   Inst M1 M1 nmos
+End Cell
+
+Cell Mux21
+   Pin Y Y
+   Pin A A
+   Pin B B
+   Pin S S
+   Net N$46 N$46
+   Net A A
+   Net Y Y
+   Net B B
+   Net S S
+   Global ground ground
+   Global VDD VDD
+   Inst M6 M6 nmos
+   Inst M3 M3 pmos
+   Inst M5 M5 nmos
+   Inst M4 M4 pmos
+   Inst M2 M2 pmos
+   Inst M1 M1 nmos
+End Cell
+
+Cell DFF
+   Pin Q Q
+   Pin CLK CLK
+   Pin D D
+   Net N$101 N$101
+   Net N$82 N$82
+   Net N$3 N$3
+   Net N$93 N$93
+   Net N$40 N$40
+   Net N$88 N$88
+   Net N$67 N$67
+   Net N$65 N$65
+   Net N$84 N$84
+   Net N$70 N$70
+   Net Q Q
+   Net D D
+   Net CLK CLK
+   Global VDD VDD
+   Global ground ground
+   Inst M20 M20 pmos
+   Inst M19 M19 pmos
+   Inst M18 M18 pmos
+   Inst M17 M17 pmos
+   Inst M16 M16 pmos
+   Inst M15 M15 pmos
+   Inst M14 M14 nmos
+   Inst M13 M13 nmos
+   Inst M12 M12 nmos
+   Inst M11 M11 nmos
+   Inst M10 M10 nmos
+   Inst M9 M9 nmos
+   Inst M8 M8 nmos
+   Inst M7 M7 nmos
+   Inst M6 M6 nmos
+   Inst M5 M5 nmos
+   Inst M4 M4 nmos
+   Inst M3 M3 nmos
+   Inst M2 M2 nmos
+   Inst M1 M1 nmos
+End Cell
+
+Cell DFFen
+   Pin Q Q
+   Pin CLK CLK
+   Pin D D
+   Pin En En
+   Net N$5 N$5
+   Net Q Q
+   Net En En
+   Net D D
+   Net CLK CLK
+   Inst Enable_Mux X_Enable_Mux Mux21
+   Inst DFF X_DFF DFF
+End Cell
+
+Cell Mux81
+   Pin OUT1 OUT1
+   Pin IN0 IN0
+   Pin IN1 IN1
+   Pin IN2 IN2
+   Pin IN3 IN3
+   Pin IN4 IN4
+   Pin IN5 IN5
+   Pin IN6 IN6
+   Pin IN7 IN7
+   Pin S0 S0
+   Pin S1 S1
+   Pin S2 S2
+   Net N$25 N$25
+   Net N$21 N$21
+   Net N$17 N$17
+   Net N$13 N$13
+   Net N$9 N$9
+   Net N$5 N$5
+   Net S1 S1
+   Net IN7 IN7
+   Net IN6 IN6
+   Net S2 S2
+   Net IN5 IN5
+   Net IN4 IN4
+   Net S0 S0
+   Net IN3 IN3
+   Net IN2 IN2
+   Net OUT1 OUT1
+   Net IN1 IN1
+   Net IN0 IN0
+   Inst MUX217 X_MUX217 Mux21
+   Inst MUX216 X_MUX216 Mux21
+   Inst MUX215 X_MUX215 Mux21
+   Inst MUX214 X_MUX214 Mux21
+   Inst MUX213 X_MUX213 Mux21
+   Inst MUX212 X_MUX212 Mux21
+   Inst MUX211 X_MUX211 Mux21
+End Cell
+
+Cell #top#
+   Pin BusA BusA
+   Pin BusB BusB
+   Pin BusW BusW
+   Pin clk clk
+   Pin dec0 dec0
+   Pin dec1 dec1
+   Pin dec2 dec2
+   Pin dec3 dec3
+   Pin dec4 dec4
+   Pin dec5 dec5
+   Pin dec6 dec6
+   Pin dec7 dec7
+   Pin Reg_W Reg_W
+   Pin Rs0 Rs0
+   Pin Rs1 Rs1
+   Pin Rs2 Rs2
+   Pin Rt0 Rt0
+   Pin Rt1 Rt1
+   Pin Rt2 Rt2
+   Net reg8 reg8
+   Net reg7 reg7
+   Net reg6 reg6
+   Net reg5 reg5
+   Net reg3 reg3
+   Net reg2 reg2
+   Net reg1 reg1
+   Net reg0 reg0
+   Net N$78 N$78
+   Net N$76 N$76
+   Net N$74 N$74
+   Net N$72 N$72
+   Net N$70 N$70
+   Net N$68 N$68
+   Net N$66 N$66
+   Net N$64 N$64
+   Net clk clk
+   Net BusW BusW
+   Net dec0 dec0
+   Net dec1 dec1
+   Net dec2 dec2
+   Net dec3 dec3
+   Net dec4 dec4
+   Net dec5 dec5
+   Net dec6 dec6
+   Net dec7 dec7
+   Net Reg_W Reg_W
+   Net BusA BusA
+   Net BusB BusB
+   Net Rs0 Rs0
+   Net Rt2 Rt2
+   Net Rt1 Rt1
+   Net Rt0 Rt0
+   Net Rs1 Rs1
+   Net Rs2 Rs2
+   Inst AND8 X_AND8 and
+   Inst AND7 X_AND7 and
+   Inst AND6 X_AND6 and
+   Inst AND5 X_AND5 and
+   Inst AND4 X_AND4 and
+   Inst AND3 X_AND3 and
+   Inst AND2 X_AND2 and
+   Inst AND1 X_AND1 and
+   Inst DFFEN8 X_DFFEN8 DFFen
+   Inst DFFEN7 X_DFFEN7 DFFen
+   Inst DFFEN6 X_DFFEN6 DFFen
+   Inst DFFEN5 X_DFFEN5 DFFen
+   Inst DFFEN4 X_DFFEN4 DFFen
+   Inst DFFEN3 X_DFFEN3 DFFen
+   Inst DFFEN2 X_DFFEN2 DFFen
+   Inst DFFEN1 X_DFFEN1 DFFen
+   Inst MUX812 X_MUX812 Mux81
+   Inst MUX811 X_MUX811 Mux81
+End Cell
+

@@ -1,0 +1,7 @@
+ERC PATHCHK REPORT for reg
+  PATHCHK GROUND && ! POWER:
+  PATHCHK POWER && ! GROUND:
+  PATHCHK ! POWER && ! GROUND:
+      cell DFFen (X0): 16 
+  PATHCHK ! LABELED:
+      cell DFFen (X0): 16 

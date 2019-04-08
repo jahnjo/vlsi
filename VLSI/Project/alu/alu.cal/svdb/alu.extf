@@ -1,0 +1,12 @@
+# Automagically generated file: Please do not edit!
+lvs_ExtfVersion 3
+lvs_ExtRunTimes 1554752510 1554752510
+lvs_ExtOutFile RUNDIR /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/alu/alu.cal
+lvs_ExtOutFile RULES_FILE /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/alu/alu.cal/_LVS_
+lvs_ExtInfoExtSummary {0 0 0 0 0 0 0 0 0 0 0}
+lvs_ExtInfoErcSummary {0 0 0 0 0 4 0 0 0 0 0}
+lvs_ExtInfoDfmSummary {0}
+lvs_ExtOutFile LAYOUT_NETLIST /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/alu/alu.cal/lay.net
+lvs_ExtOutFile EXTRACTION_REPORT lvs.report.ext
+lvs_ExtOutFile ERC_PATHCHK_DATABASE svdb/alu.pathchk.erc
+lvs_ExtOutFile ERC_PATHCHK_REPORT svdb/alu.pathchk.rep

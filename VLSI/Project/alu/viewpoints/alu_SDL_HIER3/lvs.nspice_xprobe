@@ -1,0 +1,198 @@
+# This file provides name mapping information for all objects
+# on the schematic design.  It provides a mapping for each
+# object between its name on the schematic and its name in the netlist.
+version 1.0
+
+Globals
+   VDD VDD
+   ground ground
+End Globals
+
+Cell pmos
+   Pin D D
+   Pin G G
+   Pin S S
+   Pin B B
+End Cell
+
+Cell nmos
+   Pin D D
+   Pin G G
+   Pin S S
+   Pin B B
+End Cell
+
+Cell inv
+   Pin OUT OUT
+   Pin IN IN
+   Net OUT OUT
+   Net IN IN
+   Global VDD VDD
+   Global ground ground
+   Inst M2 M2 pmos
+   Inst M1 M1 nmos
+End Cell
+
+Cell Mux21
+   Pin Y Y
+   Pin A A
+   Pin B B
+   Pin S S
+   Net N$46 N$46
+   Net A A
+   Net Y Y
+   Net B B
+   Net S S
+   Global ground ground
+   Global VDD VDD
+   Inst M6 M6 nmos
+   Inst M3 M3 pmos
+   Inst M5 M5 nmos
+   Inst M4 M4 pmos
+   Inst M2 M2 pmos
+   Inst M1 M1 nmos
+End Cell
+
+Cell Mux41
+   Pin OUT1 OUT1
+   Pin IN0 IN0
+   Pin IN1 IN1
+   Pin IN2 IN2
+   Pin IN3 IN3
+   Pin S0 S0
+   Pin S1 S1
+   Net N$4 N$4
+   Net N$2 N$2
+   Net OUT1 OUT1
+   Net S1 S1
+   Net IN3 IN3
+   Net IN2 IN2
+   Net S0 S0
+   Net IN1 IN1
+   Net IN0 IN0
+   Inst MUX213 X_MUX213 Mux21
+   Inst MUX212 X_MUX212 Mux21
+   Inst MUX211 X_MUX211 Mux21
+End Cell
+
+Cell or
+   Pin Y Y
+   Pin A A
+   Pin B B
+   Net N$22 N$22
+   Net N$13 N$13
+   Net Y Y
+   Net B B
+   Net A A
+   Global ground ground
+   Global VDD VDD
+   Inst M6 M6 nmos
+   Inst M5 M5 pmos
+   Inst M4 M4 nmos
+   Inst M3 M3 nmos
+   Inst M2 M2 pmos
+   Inst M1 M1 pmos
+End Cell
+
+Cell and
+   Pin Y Y
+   Pin A A
+   Pin B B
+   Net N$54 N$54
+   Net N$29 N$29
+   Net Y Y
+   Net B B
+   Net A A
+   Global ground ground
+   Global VDD VDD
+   Inst M6 M6 nmos
+   Inst M5 M5 pmos
+   Inst M4 M4 pmos
+   Inst M3 M3 pmos
+   Inst M2 M2 nmos
+   Inst M1 M1 nmos
+End Cell
+
+Cell Adder
+   Pin Cout Cout
+   Pin S S
+   Pin A A
+   Pin B B
+   Pin Cin Cin
+   Net N$210 N$210
+   Net N$167 N$167
+   Net N$165 N$165
+   Net N$159 N$159
+   Net N$157 N$157
+   Net N$145 N$145
+   Net N$7 N$7
+   Net N$47 N$47
+   Net N$37 N$37
+   Net N$19 N$19
+   Net N$10 N$10
+   Net N$14 N$14
+   Net A A
+   Net B B
+   Net Cin Cin
+   Net S S
+   Net Cout Cout
+   Global VDD VDD
+   Global ground ground
+   Inst M18 M18 nmos
+   Inst M17 M17 pmos
+   Inst M16 M16 pmos
+   Inst M15 M15 pmos
+   Inst M24 M24 nmos
+   Inst M23 M23 nmos
+   Inst M22 M22 nmos
+   Inst M21 M21 nmos
+   Inst M14 M14 pmos
+   Inst M13 M13 pmos
+   Inst M12 M12 pmos
+   Inst M11 M11 pmos
+   Inst M10 M10 pmos
+   Inst M9 M9 pmos
+   Inst M8 M8 pmos
+   Inst M7 M7 pmos
+   Inst M6 M6 nmos
+   Inst M5 M5 nmos
+   Inst M4 M4 nmos
+   Inst M3 M3 nmos
+   Inst M2 M2 pmos
+   Inst M1 M1 nmos
+   Inst M28 M28 nmos
+   Inst M27 M27 pmos
+   Inst M26 M26 nmos
+   Inst M25 M25 pmos
+   Inst M20 M20 nmos
+   Inst M19 M19 nmos
+End Cell
+
+Cell #top#
+   Pin Cout Cout
+   Pin result result
+   Pin A A
+   Pin ALUop_0 ALUop_0
+   Pin ALUop_1 ALUop_1
+   Pin B B
+   Pin Cin Cin
+   Net N$30 N$30
+   Net N$32 N$32
+   Net N$41 N$41
+   Net N$44 N$44
+   Net N$31 N$31
+   Net Cin Cin
+   Net ALUop_0 ALUop_0
+   Net Cout Cout
+   Net ALUop_1 ALUop_1
+   Net result result
+   Net B B
+   Net A A
+   Inst INV X_INV inv
+   Inst B_MUX X_B_MUX Mux21
+   Inst MUX411 X_MUX411 Mux41
+   Inst OR X_OR or
+   Inst AND X_AND and
+   Inst ADD_SUB X_ADD_SUB Adder
+End Cell
+

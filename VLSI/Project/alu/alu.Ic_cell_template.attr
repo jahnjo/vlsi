@@ -1,0 +1,17 @@
+A 5 u Ic_cell_template 5cab97fe2ea8.03.7f.00.00.01.00.2c.ca 1 4 13 0
+V v 1 2 5caba46a296b.03.7f.00.00.01.00.2c.ca
+F f 1 "alu.iccel_1"
+F o 0 
+O 1
+R csduv 1 "$GENERIC13/process/generic13" 75 Ic_persist_process 51bf7c9f2c7e.03.93.22.28.46.00.31.23 4aef38f1eeca.03.93.22.28.e1.00.3f.b3
+R csduv 2 "$VLSI/Project/alu/viewpoints/alu_SDL_HIER3" 1 Eddm_design_viewpoint 5cab97fe2bd8.03.7f.00.00.01.01.2c.ca 5cab97fe2bd8.03.7f.00.00.01.00.2c.ca
+R csduv 3 "$VLSI/Project/inv/inv" 1 Ic_cell_template 5ca25f94f421.03.7f.00.00.01.00.59.2d 5ca25d6ba202.03.7f.00.00.01.00.59.2d
+R csduv 4 "$VLSI/Project/Mux21/Mux21" 3 Ic_cell_template 5ca4e9299719.03.7f.00.00.01.00.05.65 5c9bb72e8cdd.03.7f.00.00.01.00.68.00
+R csduv 5 "$VLSI/Project/or/or" 3 Ic_cell_template 5cab97544186.03.7f.00.00.01.00.2a.43 5ca2602132f3.03.7f.00.00.01.00.60.08
+R csduv 6 "$VLSI/Project/and/and" 3 Ic_cell_template 5cab934ad8b4.03.7f.00.00.01.00.25.4a 5ca3b1c7aa85.03.7f.00.00.01.00.11.3a
+R csduv 7 "$VLSI/Project/Mux41/Mux41" 4 Ic_cell_template 5ca66e91cb87.03.7f.00.00.01.00.42.3d 5ca654173aab.03.7f.00.00.01.00.12.10
+R csduv 8 "$VLSI/Project/Adder/mirror" 3 Ic_cell_template 5ca24b6b7cee.03.7f.00.00.01.00.27.27 5c9d21f89fad.03.7f.00.00.01.00.25.ee
+R csduv 9 "$GENERIC13/process/vias/M4M5" 15 Ic_cell_template 4a561c1a8648.03.93.22.28.e1.00.26.11 4a561bdc32ae.03.93.22.28.e1.00.25.b6
+R csduv 10 "$GENERIC13/process/vias/M5M6" 11 Ic_cell_template 4a561e0a8c79.03.93.22.28.e1.00.29.be 4a561db49214.03.93.22.28.e1.00.29.6f
+R csduv 11 "$GENERIC13/process/vias/M3M4" 15 Ic_cell_template 4a60aad6d285.03.93.22.28.e1.00.3a.ee 4a561bb13417.03.93.22.28.e1.00.25.b6
+R csdni 12 "$GENERIC13/process/sdl_process_rules" 1 Mgc_file

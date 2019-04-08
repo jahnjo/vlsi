@@ -1,0 +1,113 @@
+* LVS netlist generated with ICnet by 'egrvlsi07' on Mon Apr  8 2019 at 15:41:49
+
+*
+* Globals.
+*
+.global VDD ground
+
+*
+* Component pathname : $VLSI/Project/inv
+*
+.subckt inv  OUT IN
+
+        M2 OUT IN VDD VDD pmos l=0.13u w=1.35u m=1
+        M1 OUT IN ground ground nmos l=0.13u w=0.6u m=1
+.ends inv
+
+*
+* Component pathname : $VLSI/Project/Mux21
+*
+.subckt Mux21  Y A B S
+
+        M6 Y N$46 A ground nmos l=0.13u w=0.6u m=1
+        M3 Y S A VDD pmos l=0.13u w=1.35u m=1
+        M5 Y S B ground nmos l=0.13u w=0.6u m=1
+        M4 Y N$46 B VDD pmos l=0.13u w=1.35u m=1
+        M2 N$46 S VDD VDD pmos l=0.13u w=1.35u m=1
+        M1 N$46 S ground ground nmos l=0.13u w=0.6u m=1
+.ends Mux21
+
+*
+* Component pathname : $VLSI/Project/Mux41
+*
+.subckt Mux41  OUT1 IN0 IN1 IN2 IN3 S0 S1
+
+        X_MUX213 OUT1 N$2 N$4 S1 Mux21
+        X_MUX212 N$4 IN2 IN3 S0 Mux21
+        X_MUX211 N$2 IN0 IN1 S0 Mux21
+.ends Mux41
+
+*
+* Component pathname : $VLSI/Project/or
+*
+.subckt or  Y A B
+
+        M6 Y N$22 ground ground nmos l=0.13u w=0.6u m=1
+        M5 Y N$22 VDD VDD pmos l=0.13u w=1.35u m=1
+        M4 N$22 A ground ground nmos l=0.13u w=0.6u m=1
+        M3 N$22 B ground ground nmos l=0.13u w=0.6u m=1
+        M2 N$22 B N$13 VDD pmos l=0.13u w=2.7u m=1
+        M1 N$13 A VDD VDD pmos l=0.13u w=2.7u m=1
+.ends or
+
+*
+* Component pathname : $VLSI/Project/and
+*
+.subckt and  Y A B
+
+        M6 Y N$54 ground ground nmos l=0.13u w=0.6u m=1
+        M5 Y N$54 VDD VDD pmos l=0.13u w=1.35u m=1
+        M4 N$54 B VDD VDD pmos l=0.13u w=1.35u m=1
+        M3 N$54 A VDD VDD pmos l=0.13u w=1.35u m=1
+        M2 N$29 B ground ground nmos l=0.13u w=1.2u m=1
+        M1 N$54 A N$29 ground nmos l=0.13u w=1.2u m=1
+.ends and
+
+*
+* Component pathname : $VLSI/Project/Adder
+*
+.subckt Adder  Cout S A B Cin
+
+        M18 N$145 Cin N$165 ground nmos l=0.13u w=2u m=1
+        M17 N$145 Cin N$159 VDD pmos l=0.13u w=2u m=1
+        M16 N$159 B N$157 VDD pmos l=0.13u w=2u m=1
+        M15 N$157 A VDD VDD pmos l=0.13u w=2u m=1
+        M24 N$47 Cin ground ground nmos l=0.13u w=2u m=1
+        M23 N$47 B ground ground nmos l=0.13u w=2u m=1
+        M22 N$47 A ground ground nmos l=0.13u w=2u m=1
+        M21 N$145 N$210 N$47 ground nmos l=0.13u w=2u m=1
+        M14 N$145 N$210 N$37 VDD pmos l=0.13u w=2u m=1
+        M13 N$37 Cin VDD VDD pmos l=0.13u w=2u m=1
+        M12 N$37 B VDD VDD pmos l=0.13u w=2u m=1
+        M11 N$37 A VDD VDD pmos l=0.13u w=2u m=1
+        M10 N$7 B VDD VDD pmos l=0.13u w=2u m=1
+        M9 N$10 B VDD VDD pmos l=0.13u w=2u m=1
+        M8 N$10 A VDD VDD pmos l=0.13u w=2u m=1
+        M7 N$210 A N$7 VDD pmos l=0.13u w=2u m=1
+        M6 N$210 A N$19 ground nmos l=0.13u w=2u m=1
+        M5 N$210 Cin N$14 ground nmos l=0.13u w=2u m=1
+        M4 N$19 B ground ground nmos l=0.13u w=2u m=1
+        M3 N$14 B ground ground nmos l=0.13u w=2u m=1
+        M2 N$210 Cin N$10 VDD pmos l=0.13u w=2u m=1
+        M1 N$14 A ground ground nmos l=0.13u w=2u m=1
+        M28 S N$145 ground ground nmos l=0.13u w=2u m=1
+        M27 S N$145 VDD VDD pmos l=0.13u w=2u m=1
+        M26 Cout N$210 ground ground nmos l=0.13u w=2u m=1
+        M25 Cout N$210 VDD VDD pmos l=0.13u w=2u m=1
+        M20 N$167 A ground ground nmos l=0.13u w=2u m=1
+        M19 N$165 B N$167 ground nmos l=0.13u w=2u m=1
+.ends Adder
+
+*
+* Component pathname : $VLSI/Project/alu
+*
+.subckt alu  Cout result A ALUop_0 ALUop_1 B Cin
+
+        X_INV N$41 B inv
+        X_B_MUX N$44 B N$41 ALUop_0 Mux21
+        X_MUX411 result N$32 N$32 N$31 N$30 ALUop_0 ALUop_1 Mux41
+        X_OR N$30 A B or
+        X_AND N$31 A B and
+        X_ADD_SUB Cout N$32 A N$44 Cin Adder
+.ends alu
+

@@ -1,9 +1,21 @@
-A 5 u mgc_sheet 5caba5306876.03.7f.00.00.01.00.41.ad 1 2 1 0
+A 5 u mgc_sheet 5caba5306876.03.7f.00.00.01.00.41.ad 2 2 5 0
 V v 1 4 5caba5306876.03.7f.00.00.01.01.41.ad
 F f 1 "sheet1.ssht_1"
 F f 1 "sheet1.sgfx_1"
-F o 0 
-F o 0 
+F o 0 ""
+F o 0 ""
+V v 2 4 5caba6a727a2.03.7f.00.00.01.00.43.f0
+F f 2 "sheet1.ssht_2"
+F f 2 "sheet1.sgfx_2"
+F o 0 ""
+F o 0 ""
+O 2
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R csduv 0 "$VLSI/Project/decoder/decoder" 1 mgc_schematic 5caba53067a2.03.7f.00.00.01.01.41.ad 5caba53067a2.03.7f.00.00.01.00.41.ad
+R csduv 1 "$VLSI/Project/inv/part" 2 Eddm_part 5ca2460c53dc.03.7f.00.00.01.00.13.3f 5ca243a6c6cb.03.7f.00.00.01.00.10.8e
+R csduv 2 "$VLSI/Project/inv/inv" 1 mgc_symbol 5ca245fc94b0.03.7f.00.00.01.00.13.3f 5ca245fc94af.03.7f.00.00.01.00.13.3f
+R csduv 3 "$MGC_IC_GENERIC_LIB/portin/part" 1 Eddm_part 35773eaadc18.03.86.56.31.87.00.0e.9f 3890e8888efb.03.86.56.31.70.00.3a.eb
+R csduv 4 "$MGC_IC_GENERIC_LIB/portin/portin" 1 mgc_symbol 35773d18855d.03.86.56.31.87.00.0e.9f 3890e8888efa.03.86.56.31.70.04.3a.eb
 O 1
 P "eddm__stream_to_use" "eddm__propl_dstream"
 R csduv 0 "$VLSI/Project/decoder/decoder" 1 mgc_schematic 5caba53067a2.03.7f.00.00.01.01.41.ad 5caba53067a2.03.7f.00.00.01.00.41.ad

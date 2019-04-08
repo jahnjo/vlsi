@@ -1,8 +1,12 @@
-A 5 u mgc_schematic 5caba53067a2.03.7f.00.00.01.00.41.ad 2 2 1 0
+A 5 u mgc_schematic 5caba53067a2.03.7f.00.00.01.00.41.ad 3 2 1 0
 V v 1 1 5caba53067a2.03.7f.00.00.01.01.41.ad
 F o 0 ""
 V v 2 1 5caba533c3ed.03.7f.00.00.01.00.41.ad
 F o 0 ""
+V v 3 1 5caba6a727bf.03.7f.00.00.01.00.43.f0
+F o 0 ""
+O 3
+R cspuv 0 "$VLSI/Project/decoder/decoder/sheet1" 2 mgc_sheet 5caba6a727a2.03.7f.00.00.01.00.43.f0 5caba5306876.03.7f.00.00.01.00.41.ad
 O 2
 R cspuv 0 "$VLSI/Project/decoder/decoder/sheet1" 1 mgc_sheet 5caba5306876.03.7f.00.00.01.01.41.ad 5caba5306876.03.7f.00.00.01.00.41.ad
 O 1

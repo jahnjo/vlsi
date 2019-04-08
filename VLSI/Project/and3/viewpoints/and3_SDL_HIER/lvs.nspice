@@ -1,0 +1,29 @@
+* LVS netlist generated with ICnet by 'egrvlsi07' on Mon Apr  8 2019 at 16:16:33
+
+*
+* Globals.
+*
+.global ground VDD
+
+*
+* Component pathname : $VLSI/Project/and
+*
+.subckt and  Y A B
+
+        M6 Y N$54 ground ground nmos l=0.13u w=0.6u m=1
+        M5 Y N$54 VDD VDD pmos l=0.13u w=1.35u m=1
+        M4 N$54 B VDD VDD pmos l=0.13u w=1.35u m=1
+        M3 N$54 A VDD VDD pmos l=0.13u w=1.35u m=1
+        M2 N$29 B ground ground nmos l=0.13u w=1.2u m=1
+        M1 N$54 A N$29 ground nmos l=0.13u w=1.2u m=1
+.ends and
+
+*
+* Component pathname : $VLSI/Project/and3
+*
+.subckt and3  Y A B C
+
+        X_AND2 Y N$10 C and
+        X_AND1 N$10 A B and
+.ends and3
+

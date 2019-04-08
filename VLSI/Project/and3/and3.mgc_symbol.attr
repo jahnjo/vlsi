@@ -1,0 +1,6 @@
+A 5 u mgc_symbol 5caba809e732.03.7f.00.00.01.00.49.30 1 2 1 0
+V v 1 2 5caba809e732.03.7f.00.00.01.01.49.30
+F f 1 "and3.smbl_1"
+F o 0 
+O 1
+R csduv 0 "$VLSI/Project/and3/part" 2 Eddm_part 5caba85c238f.03.7f.00.00.01.00.49.30 5caba73c62fc.03.7f.00.00.01.00.46.ed

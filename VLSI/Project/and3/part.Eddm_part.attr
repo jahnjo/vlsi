@@ -1,6 +1,12 @@
-A 5 u Eddm_part 5caba73c62fc.03.7f.00.00.01.00.46.ed 1 2 1 0
+A 5 u Eddm_part 5caba73c62fc.03.7f.00.00.01.00.46.ed 2 2 2 0
 V v 1 1 5caba73c62fc.03.7f.00.00.01.01.46.ed
 F f 1 "part.part_1"
+V v 2 1 5caba85c238f.03.7f.00.00.01.00.49.30
+F f 2 "part.part_2"
+O 2
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R csduv 0 "$VLSI/Project/and3/and3" 1 mgc_schematic 5caba738d4f3.03.7f.00.00.01.01.46.ed 5caba738d4f3.03.7f.00.00.01.00.46.ed
+R csduv 1 "$VLSI/Project/and3/and3" 1 mgc_symbol 5caba809e732.03.7f.00.00.01.01.49.30 5caba809e732.03.7f.00.00.01.00.49.30
 O 1
 P "eddm__stream_to_use" "eddm__propl_dstream"
 R csduv 0 "$VLSI/Project/and3/and3" 1 mgc_schematic 5caba738d4f3.03.7f.00.00.01.01.46.ed 5caba738d4f3.03.7f.00.00.01.00.46.ed

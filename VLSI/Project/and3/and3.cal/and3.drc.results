@@ -1,0 +1,2777 @@
+and3 1000
+G.1
+0 0 3 Apr  8 16:15:30 2019                     
+G.1 { @ Grid must be an integer multiple of 0.005um
+  DRAWN OFFGRID
+}
+G.3
+0 0 3 Apr  8 16:15:30 2019                     
+G.3 { @ Shapes must be orthogonal or on a 45 degree angle.
+  DRAWN SKEW
+}	
+NW.W.1
+0 0 4 Apr  8 16:15:30 2019                     
+NW.W.1 { @ Min. NWEL width 0.62um 
+  A = INT NWEL < 0.62 ABUT <90 SINGULAR REGION
+  A NOT INSIDE DMSRM
+}
+NW.W.2
+0 0 4 Apr  8 16:15:30 2019                     
+NW.W.2 { @ Min. HOT_NWEL width 1.8um 
+  A = INT HOT_NWEL < 1.8 ABUT <90 SINGULAR REGION
+  A NOT INSIDE DMSRM
+}
+NW.S.1
+0 0 5 Apr  8 16:15:30 2019                     
+NW.S.1 { @ Min. different potential NW1V space, or a notch in a hot NW1V 1.0um 
+  NW1V_NODAL = STAMP NW1V BY NWELLi
+  EXT NW1V_NODAL < 1.0 ABUT <90 NOT CONNECTED SINGULAR
+  EXT HOT_NW1V < 1.0 ABUT <90 NOTCH SINGULAR REGION
+}
+NW.S.2
+0 0 4 Apr  8 16:15:30 2019                     
+NW.S.2 { @ Min. same potential NWEL space 0.62um 
+  A = EXT NWEL < 0.62 ABUT <90 SINGULAR REGION
+  A NOT INSIDE DMSRM
+}
+NW.S.3
+0 0 6 Apr  8 16:15:30 2019                     
+NW.S.3 { @ Min. different potential NW2V , NW1V to NW2V, or a notch in hot NW2V 1.2um 
+  EXT NW1V NW2V < 1.2 ABUT <90 >0 SINGULAR
+  NW2V_NODAL = STAMP NW2V BY NWELLi
+  EXT NW2V_NODAL < 1.2 ABUT <90 NOT CONNECTED SINGULAR
+  EXT HOT_NW2V < 1.2 ABUT <90 NOTCH SINGULAR REGION
+}
+NW.A.1
+0 0 3 Apr  8 16:15:30 2019                     
+NW.A.1 { @ Min. area of NWEL 1.0um 
+  AREA NWEL < 1.0
+}
+NW.A.2
+0 0 3 Apr  8 16:15:30 2019                     
+NW.A.2 { @ Min. NWEL enclosed area 0.384
+  HOLES NWEL < 0.384
+}  
+NWR.S.1
+0 0 4 Apr  8 16:15:30 2019                     
+NWR.S.1 { @ Min. space of NWEL resistor to NWEL 1.2um 
+  EXT RNWEL < 1.2 ABUT <90 NOTCH SINGULAR REGION
+  EXT RNWEL NWEL < 1.2 ABUT <90 SINGULAR
+}
+NWR.E.1
+0 0 3 Apr  8 16:15:30 2019                     
+NWR.E.1 { @ Min. OD enclose NWEL resistor 1.0um 
+  ENC NWRES ODWR < 1.0 ABUT <90 OVERLAP SINGULAR
+}
+NWR.E.2
+0 0 4 Apr  8 16:15:30 2019                     
+NWR.E.2 { @ Min. silicide NWEL resistor enclose CO 0.3um 
+  ENC COWR NWRES < 0.3 ABUT <90 OVERLAP SINGULAR
+  ENC COWR RHWR < 0.3 ABUT <90 OVERLAP SINGULAR
+}
+NWR.C.1
+0 0 3 Apr  8 16:15:30 2019                     
+NWR.C.1 { @ Min. RPO hole enclose NWEL 0.3um 
+  ENC NWRES RHWR < 0.3 ABUT <90 SINGULAR
+}
+NWR.C.2
+0 0 3 Apr  8 16:15:30 2019                     
+NWR.C.2 { @ Min. RPO enclose OD (with NWEL resistor) 0.22um 
+  ENC ODWR RPO < 0.22 ABUT <90 SINGULAR
+}
+NWR.O.1
+0 0 3 Apr  8 16:15:30 2019                     
+NWR.O.1 { @ Min. RPO overlap NP inside NW 0.4um 
+  ENC RESW_EDGE RPO < 0.4 ABUT <90 OPPOSITE
+}
+NWR.R.1
+0 0 8 Apr  8 16:15:30 2019                     
+NWR.R.1 { @ NW resistor doped by implants not allowed. 
+  NWDUMMY AND NPOD
+  NWDUMMY AND PPOD
+  NWDUMMY AND (OD AND VTLN)
+  NWDUMMY AND (OD AND VTLP)
+  NWDUMMY AND (OD AND VTHN)
+  NWDUMMY AND (OD AND VTHP)
+}
+DNW.I.1
+0 0 3 Apr  8 16:15:30 2019                     
+DNW.I.1 { @ DNW edge must be enclosed by NW 
+  DNW OUTSIDE EDGE NWEL
+}
+DNW.W.1
+0 0 4 Apr  8 16:15:30 2019                     
+DNW.W.1 { @ Min. DNW width 3.0um 
+  A = INT DNW < 3.0 ABUT <90 SINGULAR REGION
+  A NOT INSIDE DMSRM
+}
+DNW.S.1
+0 0 4 Apr  8 16:15:30 2019                     
+DNW.S.1 { @ Min. DNW space 5.0um 
+  A = EXT DNW < 5.0 ABUT <90 SINGULAR REGION
+  A NOT INSIDE DMSRM
+}
+DNW.E.1
+0 0 3 Apr  8 16:15:30 2019                     
+DNW.E.1 { @ Min. extension of NW beyond DNW 1.5um 
+  ENC DNW NWEL < 1.5 ABUT <90 SINGULAR REGION
+}
+DNW.O.1
+0 0 3 Apr  8 16:15:30 2019                     
+DNW.O.1 { @ Min. overlap of NW into DNW 2.0um 
+  INT DNW NWEL < 2.0  ABUT <90 >0 SINGULAR REGION
+}
+DNW.C.1
+0 0 4 Apr  8 16:15:30 2019                     
+DNW.C.1 { @ Min. DNW space to NW 3.5um
+  EXT DNW NWEL < 3.5 ABUT <90 SINGULAR OPPOSITE	MEASURE ALL REGION
+  EXT DNW NWEL < 3.5 ABUT <90 CORNER MEASURE ALL REGION
+}
+NT_N.I.1
+0 0 3 Apr  8 16:15:30 2019                     
+NT_N.I.1 { @ NT_N inside or cross over a deep N-well is not allowed 
+  NTN AND DNW
+}
+NT_N.I.3
+0 0 3 Apr  8 16:15:30 2019                     
+NT_N.I.3 { @ Only one OD is allowed to be put in an NT_N region 
+  NTN ENCLOSE OD >1
+}
+NT_N.I.4
+0 0 3 Apr  8 16:15:30 2019                     
+NT_N.I.4 { @ A P+OD region is not allowed to be put in an NT_N region 
+  PPOD AND NTN
+}
+NT_N.I.5
+0 0 4 Apr  8 16:15:30 2019                     
+NT_N.I.5 { @ A bent poly region is not allowed to put in an NT_N region 
+  EXT NTN_PO_W < 0.13 ABUT == 90 INTERSECTING ONLY
+  EXT NTN_PO_W < 0.13 ABUT == 135 INTERSECTING ONLY
+}
+NT_N.W.1
+0 0 3 Apr  8 16:15:30 2019                     
+NT_N.W.1 { @ Min. width of a NT_N region 0.62um 
+  INT NTN < 0.62 ABUT <90 SINGULAR REGION
+}
+NT_N.W.2
+0 0 3 Apr  8 16:15:30 2019                     
+NT_N.W.2 { @ Min. poly gate dimension of a 1.0V/1.2V blocked NT_N device 0.30um 
+  INT NTN_GATE_W < 0.30 ABUT <90 REGION
+}
+NT_N.W.3
+0 0 3 Apr  8 16:15:30 2019                     
+NT_N.W.3 { @ Min. poly gate dimension of a 2.5V/3.3V blocked NT_N device 1.20um 
+  INT NTN_HV_GATE_W < 1.20 ABUT <90 REGION
+}
+NT_N.S.1
+0 0 3 Apr  8 16:15:30 2019                     
+NT_N.S.1 { @ Min. space between two NT_N regions 0.62um 
+  EXT NTN < 0.62 ABUT <90 SINGULAR REGION
+}
+NT_N.E.1
+0 0 8 Apr  8 16:15:30 2019                     
+NT_N.E.1 { @ Max. and Min. extension from NT_N region beyond an NP OD region 0.26um 
+  A = NTN INTERACT OD
+  B = OD INTERACT NTN
+  C = SIZE B BY 0.26
+  D = SIZE A BY -0.26
+  A XOR C
+  B XOR D
+}
+NT_N.C.1
+0 0 3 Apr  8 16:15:30 2019                     
+NT_N.C.1 { @ Min. clearance from NT_N to nominal device OD 0.38um 
+  EXT NTN DACT < 0.38 ABUT <90 OVERLAP SINGULAR
+}
+NT_N.C.2
+0 0 3 Apr  8 16:15:30 2019                     
+NT_N.C.2 { @ Min. clearance frome a NT_N region to an NWEL edge 1.20um 
+  EXT NTN NWELLi < 1.20 ABUT <90 INSIDE ALSO SINGULAR
+}
+NT_N.PO.1
+0 0 3 Apr  8 16:15:30 2019                     
+NT_N.PO.1 { @ Min. overlap of a PO region extended into field oxide(endcap) 0.35um 
+  ENC NTN_OD POLY < 0.35 ABUT <90 SINGULAR
+}
+VTL_N.I.1
+0 0 4 Apr  8 16:15:30 2019                     
+VTL_N.I.1 { @ VTL_N inside or cross over an N-well or a NT_N is not allowed. 
+  VTLN AND NWEL
+  VTLN AND NTN
+}
+VTL_N.I.2
+0 0 4 Apr  8 16:15:30 2019                     
+VTL_N.I.2 { @ P+ is not allowed to put in VTL_N. 
+  EXT_PP = VTLN AND PP
+  EXT_PP NOT INTERACT PSTP
+}
+VTL_N.W.1
+0 0 3 Apr  8 16:15:30 2019                     
+VTL_N.W.1 { @ Min. dimension of VTL_N 0.31 um. 
+  INT VTLN < 0.31 ABUT <90 SINGULAR REGION
+}
+VTL_N.W.2
+0 0 4 Apr  8 16:15:30 2019                     
+VTL_N.W.2 { @ Min. channel length of 1.2V low Vt NMOS 0.13 um. 
+  A = LV_NGATE_W INSIDE EDGE VTLN
+  INT A < 0.13 ABUT <90 REGION
+}
+VTL_N.S.1
+0 0 3 Apr  8 16:15:30 2019                     
+VTL_N.S.1 { @ Min. space between two VTL_N 0.31 um. 
+  EXT VTLN < 0.31 ABUT <90 SINGULAR REGION
+}
+VTL_N.E.1
+0 0 5 Apr  8 16:15:30 2019                     
+VTL_N.E.1 { @ Min. extension from VTL_N beyond PO gate in poly endcap direction 0.18 um. 
+  A = GATEN_L INSIDE EDGE VTLN
+  ENC A VTLN < 0.18 ABUT <90 OPPOSITE
+  VTLN INSIDE OD
+}
+VTL_N.C.1
+0 0 4 Apr  8 16:15:30 2019                     
+VTL_N.C.1 { @ Min. clearance from VTL_N to non-low Vt gate in poly endcap direction 0.18 um. 
+  A = GATE_L OUTSIDE EDGE VTLN
+  EXT A VTLN < 0.18 ABUT <90 OPPOSITE
+}
+VTL_N.E.2
+0 0 4 Apr  8 16:15:30 2019                     
+VTL_N.E.2 { @ Min. extension of VTL_N beyond poly gate in S/D direction 0.27 um.
+  A = GATEN_W INSIDE EDGE VTLN
+  ENC A VTLN < 0.27 ABUT < 90 OPPOSITE
+}
+VTL_N.C.2
+0 0 3 Apr  8 16:15:30 2019                     
+VTL_N.C.2 { @ Min. clearance between VTL_N and non-low Vt gate poly in S/D direction 0.27 um.
+  EXT GATE_W VTLN < 0.27 ABUT < 90 OPPOSITE
+}  
+VTL_P.I.1
+0 0 4 Apr  8 16:15:30 2019                     
+VTL_P.I.1 { @ VTL_P inside or cross over an P-well or a NT_N is not allowed. 
+  VTLP NOT NWEL
+  VTLP AND NTN
+}
+VTL_P.I.2
+0 0 4 Apr  8 16:15:30 2019                     
+VTL_P.I.2 { @ N+ is not allowed to put in VTL_P. 
+  EXT_NP = VTLP AND NP
+  EXT_NP NOT INTERACT NSTP
+}
+VTL_P.W.1
+0 0 3 Apr  8 16:15:30 2019                     
+VTL_P.W.1 { @ Min. dimension of VTL_P 0.31 um. 
+  INT VTLP < 0.31 ABUT <90 SINGULAR REGION
+}
+VTL_P.W.2
+0 0 4 Apr  8 16:15:30 2019                     
+VTL_P.W.2 { @ Min. channel length of 1.2V low Vt PMOS 0.13 um. 
+  A = LV_PGATE_W INSIDE EDGE VTLP
+  INT A < 0.13 ABUT <90 REGION
+}
+VTL_P.S.1
+0 0 3 Apr  8 16:15:30 2019                     
+VTL_P.S.1 { @ Min. space between two VTL_P 0.31 um. 
+  EXT VTLP < 0.31 ABUT <90 SINGULAR REGION
+}
+VTL_P.E.1
+0 0 5 Apr  8 16:15:30 2019                     
+VTL_P.E.1 { @ Min. extension from VTL_P beyond PO gate in poly endcap direction 0.18 um. 
+  A = GATEP_L INSIDE EDGE VTLP
+  ENC A VTLP < 0.18 ABUT <90 OPPOSITE
+  VTLP INSIDE OD
+}
+VTL_P.C.1
+0 0 4 Apr  8 16:15:30 2019                     
+VTL_P.C.1 { @ Min. clearance from VTL_P to non-low Vt gate in poly endcap direction 0.18 um. 
+  A = GATE_L OUTSIDE EDGE VTLP
+  EXT A VTLP < 0.18 ABUT <90 OPPOSITE
+}
+VTL_P.E.2
+0 0 4 Apr  8 16:15:30 2019                     
+VTL_P.E.2 { @ Min. extension of VTL_P beyond poly gate in S/D direction 0.27 um.
+  A = GATEP_W INSIDE EDGE VTLP
+  ENC A VTLP < 0.27 ABUT < 90 OPPOSITE
+}
+VTL_P.C.2
+0 0 3 Apr  8 16:15:30 2019                     
+VTL_P.C.2 { @ Min. clearance between VTL_P and non-low Vt gate poly in S/D direction 0.27 um.
+  EXT GATE_W VTLP < 0.27 ABUT < 90 OPPOSITE
+}  
+VTH_N.TITLE.1
+0 0 3 Apr  8 16:15:30 2019                     
+VTH_N.TITLE.1 { @ Only core (1.0V, 1.2V) has high vt devices.
+  VTHN AND OD2
+}  
+VTH_N.I.1
+0 0 4 Apr  8 16:15:30 2019                     
+VTH_N.I.1 { @ VTH_N inside or cross over an N-well or a NT_N is not allowed. 
+  VTHN AND NWEL
+  VTHN AND NTN
+}
+VTH_N.I.2
+0 0 4 Apr  8 16:15:30 2019                     
+VTH_N.I.2 { @ P+ is not allowed to put in VTH_N. 
+  EXT_PP =  VTHN AND PP
+  EXT_PP NOT INTERACT PSTP
+}
+VTH_N.W.1
+0 0 3 Apr  8 16:15:30 2019                     
+VTH_N.W.1 { @ Min. dimension of VTH_N 0.31 um. 
+  INT VTHN < 0.31 ABUT <90 SINGULAR REGION
+}
+VTH_N.W.2
+0 0 4 Apr  8 16:15:30 2019                     
+VTH_N.W.2 { @ Min. channel length of 1.0V or 1.2V low Vt NMOS 0.13 um. 
+  A = LV_NGATE_W INSIDE EDGE VTHN
+  INT A < 0.13 ABUT <90 REGION
+}
+VTH_N.S.1
+0 0 3 Apr  8 16:15:30 2019                     
+VTH_N.S.1 { @ Min. space between two VTH_N 0.31 um. 
+  EXT VTHN < 0.31 ABUT <90 SINGULAR REGION
+}
+VTH_N.E.1
+0 0 5 Apr  8 16:15:30 2019                     
+VTH_N.E.1 { @ Min. extension from VTH_N beyond PO gate in poly endcap direction 0.18 um. 
+  A = GATEN_L INSIDE EDGE VTHN
+  ENC A VTHN < 0.18 ABUT <90 OPPOSITE
+  VTHN INSIDE OD
+}
+VTH_N.C.1
+0 0 4 Apr  8 16:15:30 2019                     
+VTH_N.C.1 { @ Min. clearance from VTH_N to non-high Vt gate in poly endcap direction 0.18 um.
+  A = GATE_L OUTSIDE EDGE VTHN
+  EXT A VTHN < 0.18 ABUT <90 OPPOSITE
+}
+VTH_N.E.2
+0 0 4 Apr  8 16:15:30 2019                     
+VTH_N.E.2 { @ Min. extension of VTH_N beyond poly gate in S/D direction 0.27 um.
+  A = GATEN_W INSIDE EDGE VTHN
+  ENC A VTHN < 0.27 ABUT < 90 OPPOSITE
+}
+VTH_N.C.2
+0 0 3 Apr  8 16:15:30 2019                     
+VTH_N.C.2 { @ Min. clearance between VTH_N and non-high Vt gate poly in S/D direction 0.27 um.
+  EXT GATE_W VTHN < 0.27 ABUT < 90 OPPOSITE
+}  
+VTH_P.TITLE.1
+0 0 3 Apr  8 16:15:30 2019                     
+VTH_P.TITLE.1 { @ Only core (1.0V, 1.2V) has high vt devices.
+  VTHP AND OD2
+}  
+VTH_P.I.1
+0 0 4 Apr  8 16:15:30 2019                     
+VTH_P.I.1 { @ VTH_P inside or cross over an P-well or a NT_P is not allowed. 
+  VTHP NOT NWEL
+  VTHP AND NTN
+}
+VTH_P.I.2
+0 0 4 Apr  8 16:15:30 2019                     
+VTH_P.I.2 { @ N+ is not allowed to put in VTH_P. 
+  EXT_NP = VTHP AND NP
+  EXT_NP NOT INTERACT NSTP
+}
+VTH_P.W.1
+0 0 3 Apr  8 16:15:30 2019                     
+VTH_P.W.1 { @ Min. dimension of VTH_P 0.31 um. 
+  INT VTHP < 0.31 ABUT <90 SINGULAR REGION
+}
+VTH_P.W.2
+0 0 4 Apr  8 16:15:30 2019                     
+VTH_P.W.2 { @ Min. channel length of 1.0v or 1.2V low Vt PMOS 0.13 um. 
+  A = LV_PGATE_W INSIDE EDGE VTHP
+  INT A < 0.13 ABUT <90 REGION
+}
+VTH_P.S.1
+0 0 3 Apr  8 16:15:30 2019                     
+VTH_P.S.1 { @ Min. space between two VTH_P 0.31 um. 
+  EXT VTHP < 0.31 ABUT <90 SINGULAR REGION
+}
+VTH_P.E.1
+0 0 5 Apr  8 16:15:30 2019                     
+VTH_P.E.1 { @ Min. extension from VTH_P beyond PO gate in poly endcap direction 0.18 um. 
+  A = GATEP_L INSIDE EDGE VTHP
+  ENC A VTHP < 0.18 ABUT <90 OPPOSITE
+  VTHP INSIDE OD
+}
+VTH_P.C.1
+0 0 4 Apr  8 16:15:30 2019                     
+VTH_P.C.1 { @ Min. clearance from VTH_P to non-high Vt gate in poly endcap direction 0.18 um.  
+  A = GATE_L OUTSIDE EDGE VTHP
+  EXT A VTHP < 0.18 ABUT <90 OPPOSITE
+}
+VTH_P.E.2
+0 0 4 Apr  8 16:15:30 2019                     
+VTH_P.E.2 { @ Min. extension of VTH_P beyond poly gate in S/D direction 0.27 um.
+  A = GATEP_W INSIDE EDGE VTHP
+  ENC A VTHP < 0.27 ABUT < 90 OPPOSITE
+}
+VTH_P.C.2
+0 0 3 Apr  8 16:15:30 2019                     
+VTH_P.C.2 { @ Min. clearance between VTH_P and non-high Vt gate poly in S/D direction 0.27 um.
+  EXT GATE_W VTHP < 0.27 ABUT < 90 OPPOSITE
+}  
+OD.W.1
+0 0 4 Apr  8 16:15:30 2019                     
+OD.W.1 { @ Min. OD width 0.15um 
+  INT OD < 0.15 ABUT < 90 SINGULAR REGION
+  INT DOD < 0.15 ABUT < 90 SINGULAR REGION
+}
+OD.S.1
+0 0 3 Apr  8 16:15:30 2019                     
+OD.S.1 { @ Min. OD spacing 0.21um 
+  EXT OD < 0.21 ABUT < 90 SINGULAR REGION
+}
+OD.C.1
+0 0 3 Apr  8 16:15:30 2019                     
+OD.C.1 { @ Min. clearance of NWEL to NWEL pickup 0.24um 
+  ENC NPOD NONWR < 0.24 ABUT < 90 OVERLAP SINGULAR
+}
+OD.C.2
+0 0 4 Apr  8 16:15:30 2019                     
+OD.C.2 { @ Min. clearance of NWEL to N+ active OD outside NWEL 0.31um 
+  A = NPOD NOT ODWR
+  EXT A NWELLi < 0.31 ABUT < 90 OVERLAP SINGULAR
+}
+OD.C.4
+0 0 3 Apr  8 16:15:30 2019                     
+OD.C.4 { @ Min. extension of NWEL edge beyond PPOD 0.31um 
+  ENC PPOD NONWR < 0.31 ABUT < 90 OVERLAP SINGULAR
+}
+OD.C.5
+0 0 3 Apr  8 16:15:30 2019                     
+OD.C.5 { @ Min. NWEL space to PPOD tie 0.24um 
+  EXT PPOD NWELLi < 0.24 ABUT < 90 OVERLAP SINGULAR
+}
+OD.C.6
+0 0 6 Apr  8 16:15:30 2019                     
+OD.C.6 { @ Min. clearance from poly edge to the edge of abutted diffusion od 0.32um 
+  X = EXPAND EDGE GATEN_W OUTSIDE BY 0.32
+  X TOUCH PSTP
+  Y = EXPAND EDGE GATEP_W OUTSIDE BY 0.32
+  Y TOUCH NSTP
+}
+OD.W.3
+0 0 17 Apr  8 16:15:30 2019                    
+OD.W.3 { @ At least one segment of butting OD edge >= 0.3um 
+	 @ When active OD width < 0.3um, Max. length of this OD connected to butted OD 0.6um
+  SD = (DACT INTERACT GATE) NOT GATE
+  BUTT_EDGE = SD COIN OUTSIDE EDGE DSTP
+  BUTT_LONG_EDGE = LENGTH BUTT_EDGE >= 0.30
+  BUTT_EXP = (EXPAND EDGE BUTT_EDGE INSIDE BY 0.005 EXTEND BY 0.005) AND SD
+  BUTT_EXP_SHORT = BUTT_EXP NOT WITH EDGE BUTT_LONG_EDGE
+  CHECK_SD = SD INTERACT BUTT_EXP_SHORT
+  CHECK_EDGE = (CHECK_SD OUTSIDE EDGE GATE) OUTSIDE EDGE DSTP
+  CHECK_EDGE_LONG = PATH LENGTH CHECK_EDGE > 0.6
+  NARROW_SD1 = INT CHECK_EDGE_LONG < 0.3 ABUT < 90 OPPOSITE REGION
+  NARROW_SD2 = NARROW_SD1 INTERACT BUTT_EXP_SHORT
+  NARROW_SD3 = ((SIZE (NARROW_SD1 OUTSIDE NARROW_SD2) BY 0.001) AND SD) INTERACT NARROW_SD2
+  NARROW_SD = NARROW_SD2 OR NARROW_SD3
+  NARROW_SD_EDGE = NARROW_SD COIN INSIDE EDGE OD
+  PATH LENGTH NARROW_SD_EDGE > 0.6
+}  
+OD.A.1
+0 0 3 Apr  8 16:15:30 2019                     
+OD.A.1 { @ Min. area of stand-alone OD region 0.122 
+  AREA OD < 0.122
+}
+OD.A.2
+0 0 3 Apr  8 16:15:30 2019                     
+OD.A.2 { @ Min. OD enclosed area 0.15
+  HOLES OD < 0.15
+}  
+OD.C.8
+0 0 4 Apr  8 16:15:30 2019                     
+OD.C.8 { @ Min. clearance from DNW inside NW ring to N+OD outside NW 2.93um 
+  X = NPOD OUTSIDE NWRG
+  EXT DNW X < 2.93 ABUT <90 SINGULAR
+}
+DOD.I.0
+0 0 3 Apr  8 16:15:30 2019                     
+DOD.I.0 { @ DOD can not interact with real OD, PO, and CO
+  DOD INTERACT CONTi
+}
+DOD.C.1
+0 0 5 Apr  8 16:15:30 2019                     
+DOD.C.1 { @ Min. clearance from DOD to OD 1.2um
+  EXT DOD OD < 1.2 ABUT < 90 SINGULAR 
+  EXT DOD < 1.2 ABUT < 90 SINGULAR 
+  DOD INTERACT ODi
+}
+DOD.C.2
+0 0 4 Apr  8 16:15:30 2019                     
+DOD.C.2 { @ Min. clearance from DOD to poly 1.2um
+  EXT DOD POLYGi < 1.2 ABUT < 90 SINGULAR 
+  DOD INTERACT ALL_POLY
+}
+DOD.C.3
+0 0 3 Apr  8 16:15:30 2019                     
+DOD.C.3 { @ Min. clearance from DOD to DOD blocking area 1.2um
+  EXT DOD ODBLK < 1.2 ABUT < 90 SINGULAR 
+}
+DOD.C.4
+0 0 3 Apr  8 16:15:30 2019                     
+DOD.C.4 { @ Min. clearance from DOD to nwel 0.6um
+  EXT DOD NWELLi < 0.6 ABUT < 90 SINGULAR 
+}
+DOD.E.1
+0 0 4 Apr  8 16:15:30 2019                     
+DOD.E.1 { @ Min. extension of NW beyond DOD 0.6um
+  A = DOD AND NWELLi
+  ENC A NWELLi < 0.6 ABUT < 90 SINGULAR
+}
+DOD.C.5
+0 0 3 Apr  8 16:15:30 2019                     
+DOD.C.5 { @ Min. clearance from DOD to chip edge 2.5um
+  ENC DOD CHIP < 2.5 ABUT < 90 SINGULAR 
+}
+DOD.C.6
+0 0 4 Apr  8 16:15:30 2019                     
+DOD.C.6 { @ Min. clearance from DOD to FUSE window 1.2um
+  EXT DOD FWi < 1.2 ABUT < 90 SINGULAR 
+  DOD INTERACT FWi
+}
+DOD.C.7
+0 0 4 Apr  8 16:15:30 2019                     
+DOD.C.7 { @ Min. clearance from DOD to LMARK 1.2um
+  EXT DOD LMARK < 1.2 ABUT < 90 SINGULAR 
+  DOD INTERACT LMARK
+}
+DOD.C.8
+0 0 4 Apr  8 16:15:30 2019                     
+DOD.C.8 { @ Min. clearance from DOD to NWDUMMY 1.2um
+  EXT DOD NWDUMMY < 1.2 ABUT < 90 SINGULAR 
+  DOD INTERACT NWDUMMY
+}
+DOD.C.9
+0 0 4 Apr  8 16:15:30 2019                     
+DOD.C.9 { @ Min. clearance from DOD to CDUDMY 1.2um
+  EXT DOD CDUDMY < 1.2 ABUT < 90 SINGULAR 
+  DOD INTERACT CDUDMY
+}
+DOD.O.1
+0 0 3 Apr  8 16:15:30 2019                     
+DOD.O.1 { @ CO outside OD or PO is not allowed
+  CONTi NOT (ODi OR POLYGi)
+}
+DOD.USER_GUIDE.1
+0 0 3 Apr  8 16:15:30 2019                     
+DOD.USER_GUIDE.1 { @ DOD has to been filled in the chip as default
+  CHIP_CHAMFERED NOT INTERACT DOD
+}
+DOD.R.1
+0 0 4 Apr  8 16:15:30 2019                     
+DOD.R.1 { @ Min. OD density over window 500 step 250  20%
+  DENSITY ODx CHIP_CHAMFERED_NOT_OD_EXC < 0.2 WINDOW 500 STEP 250 BACKUP PRINT DODR1.density 
+    [ AREA(ODx)/AREA(CHIP_CHAMFERED_NOT_OD_EXC) ]
+}
+DOD.R.1.1
+0 0 4 Apr  8 16:15:30 2019                     
+DOD.R.1.1 { @ Max. OD density over window 500 step 250  80%
+  DENSITY ODx CHIP_CHAMFERED_NOT_OD_EXC > 0.8 WINDOW 500 STEP 250 BACKUP PRINT DODR11.density 
+    [ AREA(ODx)/AREA(CHIP_CHAMFERED_NOT_OD_EXC) ]
+}
+DOD.R.2
+0 0 4 Apr  8 16:15:30 2019                     
+DOD.R.2 { @ Min. OD density across full chip  25%
+  DENSITY ODx CHIP_CHAMFERED_NOT_OD_EXC < 0.25 PRINT DODR2.density
+    [ AREA(ODx)/AREA(CHIP_CHAMFERED_NOT_OD_EXC) ]
+}
+DOD.R.2.1
+0 0 4 Apr  8 16:15:30 2019                     
+DOD.R.2.1 { @ Max. OD density across full chip  75%
+  DENSITY ODx CHIP_CHAMFERED_NOT_OD_EXC > 0.75 PRINT DODR21.density
+    [ AREA(ODx)/AREA(CHIP_CHAMFERED_NOT_OD_EXC) ]
+}  
+OD2.E.1
+0 0 8 Apr  8 16:15:30 2019                     
+OD2.E.1 { @ Min. OD2 olap OD 0.27um 
+   // This only applies to active OD
+   ENC DACT OD2 < 0.27 ABUT <90 SINGULAR
+   OD2 INSIDE DACT
+   Y = DACT INTERACT OD2
+   Z = Y NOT OD2
+   Z OUTSIDE GATE
+}
+OD2.S.1
+0 0 3 Apr  8 16:15:30 2019                     
+OD2.S.1 { @ Min. OD2 spacing 0.86um 
+  EXT OD2 < 0.86 ABUT <90 SINGULAR REGION
+}
+OD2.C.1
+0 0 3 Apr  8 16:15:30 2019                     
+OD2.C.1 { @ Min. OD2 space to OD 0.27um 
+  EXT OD2 DACT < 0.27 ABUT <90 SINGULAR
+}
+OD2.C.2
+0 0 4 Apr  8 16:15:30 2019                     
+OD2.C.2 { @ Min. OD2 space to 1.0V/1.2V gate 0.34um 
+   A = OD2 INSIDE EDGE DACT
+   EXT A GATE_W < 0.34 ABUT <90
+}
+OD2.E.2
+0 0 3 Apr  8 16:15:30 2019                     
+OD2.E.2 { @ Min. enclosure of gate by OD2 0.34um 
+  ENC GATE_W OD2_BEDGE < 0.34 ABUT <90
+}
+OD2.E.3
+0 0 3 Apr  8 16:15:30 2019                     
+OD2.E.3 { @ Min. enclosure OD2 by NWEL 0.62um 
+  ENC OD2 NWEL < 0.62 ABUT <90 >0 SINGULAR
+}
+OD2.C.3
+0 0 4 Apr  8 16:15:30 2019                     
+OD2.C.3 { @ Min. clearance OD2 to NWEL < 0.62 
+  ENC NWEL OD2 < 0.62 ABUT <90 >0 SINGULAR
+  EXT OD2 NWEL < 0.62 ABUT <90 >0 SINGULAR
+}
+OD2.O.1
+0 0 4 Apr  8 16:15:30 2019                     
+OD2.O.1 { @ Min. overlap OD2 and NWEL < 0.62 
+  X = OD2 AND NWEL
+  INT X < 0.62 ABUT < 90 SINGULAR REGION
+}
+DPO.I.0
+0 0 5 Apr  8 16:15:30 2019                     
+DPO.I.0 { @ DPO can not interact with real OD, PO, and CO
+  DPO INTERACT ALL_OD
+  DPO INTERACT POLYGi
+  DPO INTERACT CONTi
+}
+PO.W.1B
+0 0 3 Apr  8 16:15:30 2019                     
+PO.W.1B { @ Min. POLY gate length 2.5V PMOS 0.28um 
+  INT HV_PGATE_W < 0.28 ABUT <90 REGION
+}
+PO.W.2B
+0 0 3 Apr  8 16:15:30 2019                     
+PO.W.2B { @ Min. POLY gate length 2.5V NMOS 0.28um 
+  INT HV_NGATE_W < 0.28 ABUT <90 REGION
+}
+PO.W.3
+0 0 3 Apr  8 16:15:30 2019                     
+PO.W.3 { @ Min. POLY width 0.13um 
+  INT POLY < 0.13 ABUT <90 SINGULAR REGION
+}
+PO.S.2
+0 0 3 Apr  8 16:15:30 2019                     
+PO.S.2 { @ Min. space between 1.0V or 1.2V gate w/o contact.
+  EXT LV_GATE < 0.18 ABUT <90 SINGULAR REGION
+}
+PO.S.4
+0 0 3 Apr  8 16:15:30 2019                     
+PO.S.4 { @ Min. space between two PO regions on field oxide.
+  EXT POLY < 0.18 ABUT <90 SINGULAR REGION
+}
+PO.S.3
+0 0 4 Apr  8 16:15:30 2019                     
+PO.S.3 { @ Min. two 2.5V or 3.3V POLY space on OD w/o contact 0.25um 
+  EXT HV_NGATE_W < 0.25
+  EXT HV_PGATE_W < 0.25
+}
+PO.C.1
+0 0 3 Apr  8 16:15:30 2019                     
+PO.C.1 { @ Min. POLY on field space to active 0.07um 
+  EXT POLY OD < 0.07 ABUT <89.5 SINGULAR
+}
+PO.C.2
+0 0 3 Apr  8 16:15:30 2019                     
+PO.C.2 { @ Min. OD overhang gate 0.23um 
+  ENC POLY OD < 0.23 ABUT <89.5 OPPOSITE SINGULAR
+}
+PO.O.1
+0 0 3 Apr  8 16:15:30 2019                     
+PO.O.1 { @ Min. POLY endcap 0.18um 
+  ENC OD POLY < 0.18 ABUT <89.5 SINGULAR
+}
+PO.R.1
+0 0 7 Apr  8 16:15:30 2019                     
+PO.R.1 { @ 45 and 90 degree bent gate are not allowed 
+  NORM_GATE_W = GATE_W OUTSIDE EDGE VARDMY
+  EXT GATE_W < 0.13 ABUT == 135 INTERSECTING ONLY
+  INT GATE_W < 0.13 ABUT == 135 INTERSECTING ONLY
+  EXT NORM_GATE_W < 0.13 ABUT == 90 INTERSECTING ONLY
+  INT NORM_GATE_W < 0.13 ABUT == 90 INTERSECTING ONLY
+}
+PO.R.2
+1 1 3 Apr  8 16:15:30 2019                     
+PO.R.2 { @ Min. POLY area coverage 14% 
+  DENSITY ALL_POLY  < 0.14 PRINT ALL_POLY.density
+}
+p 1 4
+-16415 29530
+-7895 29530
+-7895 48590
+-16415 48590
+PO.W.5
+0 0 3 Apr  8 16:15:30 2019                     
+PO.W.5 { @ Min. width of 45 degree bent poly (with length >= 0.39um) 0.16um 
+  INT POLY_EDGE_45L < 0.16 ABUT <90 REGION
+}
+PO.A.1
+0 0 3 Apr  8 16:15:30 2019                     
+PO.A.1 { @ Min. area of PO region 0.09
+  AREA POLY < 0.09
+}
+PO.A.2
+0 0 3 Apr  8 16:15:30 2019                     
+PO.A.2 { @ Min. PO enclosed area 0.15
+  HOLES POLY < 0.15
+}  
+PP.W.1
+0 0 4 Apr  8 16:15:30 2019                     
+PP.W.1 { @ Min. PP width 0.31um 
+  A = INT PP < 0.31 ABUT <90 SINGULAR REGION
+  A NOT INSIDE DMSRM
+}
+PP.S.1
+0 0 4 Apr  8 16:15:30 2019                     
+PP.S.1 { @ Min. PP space 0.31um 
+  A = EXT PP < 0.31 ABUT <90 SINGULAR REGION
+  A NOT INSIDE DMSRM
+}
+PP.C.1
+0 0 6 Apr  8 16:15:30 2019                     
+PP.C.1 { @ Min. PP space to N+ active OD in PWELL 0.18um 
+  EXT PP NACT < 0.18 ABUT <90 >0 INSIDE ALSO SINGULAR
+  X = EXT PP [NACT] < 0.001 ABUT == 0
+  Y = EXPAND EDGE X OUTSIDE BY 0.001
+  Y NOT INTERACT PPOD
+}
+PP.C.2
+0 0 6 Apr  8 16:15:30 2019                     
+PP.C.2 { @ Min. PP space to ntap 0.03um 
+  EXT PP NSTP < 0.03 ABUT <90 >0 INSIDE ALSO SINGULAR
+  X = EXT PP [NSTP] < 0.001 ABUT == 0
+  Y = EXPAND EDGE X OUTSIDE BY 0.001
+  Y NOT INTERACT PPOD
+}
+PP.C.3
+0 0 3 Apr  8 16:15:30 2019                     
+PP.C.3 { @ Min. PP clearance of ngate 0.40um 
+  EXT GATEN_W PP_BEDGE < 0.40 ABUT <90 OPPOSITE
+}
+PP.C.4
+0 0 3 Apr  8 16:15:30 2019                     
+PP.C.4 { @ Min. PP clearance of pgate 0.40um 
+  ENC GATEP_W PP_BEDGE < 0.40 ABUT <90 OPPOSITE
+}
+PP.E.1
+0 0 10 Apr  8 16:15:30 2019                    
+PP.E.1 { @ Min. PP olap OD 0.18um 
+  PP_CORE = (PP NOT CSR_PP) NOT SR_PP
+  IMP1    = NP OR PP_CORE
+  ENC PACT PP_CORE < 0.18 ABUT <90 >0 SINGULAR
+  X = ENC [PACT] PP_CORE < 0.001 ABUT == 0
+  Y = EXPAND EDGE X OUTSIDE BY 0.001
+  Y NOT INTERACT NPOD
+  OD COIN INSIDE EDGE IMP1 
+  // IMP cannot coincident OD except butting diffusion edge. PP.E.1,2/NP.E.1,2
+}
+PP.E.2
+0 0 7 Apr  8 16:15:30 2019                     
+PP.E.2 { @ Min. PP olap pickup OD 0.03um 
+  PP_CORE = (PP NOT CSR_PP) NOT SR_PP
+  ENC PSTP PP_CORE < 0.03 ABUT <90 >0 SINGULAR
+  X = ENC [PSTP] PP_CORE < 0.001 ABUT == 0
+  Y = EXPAND EDGE X OUTSIDE BY 0.001
+  Y NOT INTERACT NPOD
+}
+PP.A.1
+0 0 3 Apr  8 16:15:30 2019                     
+PP.A.1 { @ Min. area of PP 0.25 
+  AREA PP < 0.25
+}
+PP.E.4
+0 0 3 Apr  8 16:15:30 2019                     
+PP.E.4 { @ Min. enc of POLY resistor by PP 0.20um 
+  ENC ODPO_RES PP < 0.20 ABUT <90 SINGULAR
+}
+PP.E.5
+0 0 3 Apr  8 16:15:30 2019                     
+PP.E.5 { @ Min. PP clearance of pgate 0.27um (this rule must extend out of gate in the direction of PO by 0.3um) 
+  EXGATE_PP NOT PP
+}
+PP.C.7
+0 0 4 Apr  8 16:15:30 2019                     
+PP.C.7 { @ Min. space from PP to N-type resistor 0.20um 
+  NYRE = ODPO_RES AND NP 		// N-type poly and od resistor
+  EXT PP NYRE < 0.20 ABUT <90 SINGULAR
+}
+PP.R.2
+0 0 3 Apr  8 16:15:30 2019                     
+PP.R.2 { @ Overlap of NP and PP is not allowed 
+  PP AND NP
+}
+PP.A.2
+0 0 3 Apr  8 16:15:30 2019                     
+PP.A.2 { @ Min. PP enclosed area 0.25
+  HOLES PP < 0.25
+}  
+NP.W.1
+0 0 4 Apr  8 16:15:30 2019                     
+NP.W.1 { @ Min. NP width 0.31um 
+  A = INT NP < 0.31 ABUT <90 SINGULAR REGION
+  A NOT INSIDE DMSRM
+}
+NP.S.1
+0 0 4 Apr  8 16:15:30 2019                     
+NP.S.1 { @ Min. NP space 0.31um 
+  A = EXT NP < 0.31 ABUT <90 SINGULAR REGION
+  A NOT INSIDE DMSRM
+}
+NP.C.1
+0 0 6 Apr  8 16:15:30 2019                     
+NP.C.1 { @ Min. NP space to p active in NWEL 0.18um 
+  EXT NP PACT < 0.18 ABUT <90 >0 INSIDE ALSO SINGULAR
+  X = EXT NP [PACT] < 0.001 ABUT == 0
+  Y = EXPAND EDGE X OUTSIDE BY 0.001
+  Y NOT INTERACT NPOD
+}
+NP.C.2
+0 0 6 Apr  8 16:15:30 2019                     
+NP.C.2 { @ Min. NP space to ptap 0.03um 
+  EXT NP PSTP < 0.03 ABUT <90 >0 INSIDE ALSO SINGULAR
+  X = EXT NP [PSTP] < 0.001 ABUT == 0
+  Y = EXPAND EDGE X OUTSIDE BY 0.001
+  Y NOT INTERACT NPOD
+}
+NP.C.3
+0 0 3 Apr  8 16:15:30 2019                     
+NP.C.3 { @ Min. NP clearance of pgate 0.40um 
+  EXT GATEP_W NP_BEDGE < 0.40 ABUT <90 OPPOSITE
+}
+NP.C.4
+0 0 3 Apr  8 16:15:30 2019                     
+NP.C.4 { @ Min. NP clearance of ngate 0.40um 
+  ENC GATEN_W NP_BEDGE < 0.40 ABUT <90 OPPOSITE
+}
+NP.E.1
+0 0 7 Apr  8 16:15:30 2019                     
+NP.E.1 { @ Min. NP olap OD 0.18um 
+  A = NACT NOT ODWR
+  ENC A NP < 0.18 ABUT <90 >0 SINGULAR
+  X = ENC [A] NP < 0.001 ABUT == 0
+  Y = EXPAND EDGE X OUTSIDE BY 0.001
+  Y NOT INTERACT PPOD
+}
+NP.E.2
+0 0 6 Apr  8 16:15:30 2019                     
+NP.E.2 { @ Min. NP olap pickup OD 0.03um 
+  ENC NSTP NP < 0.03 ABUT <90 >0 SINGULAR
+  X = ENC [NSTP] NP < 0.001 ABUT == 0
+  Y = EXPAND EDGE X OUTSIDE BY 0.001
+  Y NOT INTERACT PPOD
+}
+NP.A.1
+0 0 3 Apr  8 16:15:30 2019                     
+NP.A.1 { @ Min. area of NP 0.25 
+  AREA NP < 0.25
+}
+NP.E.4
+0 0 3 Apr  8 16:15:30 2019                     
+NP.E.4 { @ Min. enc of POLY resistor by NP 0.20um 
+  ENC ODPO_RES NP < 0.20 ABUT <90 SINGULAR
+}
+NP.E.5
+0 0 3 Apr  8 16:15:30 2019                     
+NP.E.5 { @ Min. NP clearance of ngate 0.27um (this rule must extend out of gate in the direction of PO by 0.30um) 
+  EXGATE_NP NOT NP
+}
+NP.C.7
+0 0 4 Apr  8 16:15:30 2019                     
+NP.C.7 { @ Min. space from NP to P-type resistor 0.20um 
+  PYRE = ODPO_RES AND PP 		// P-type poly and od resistor
+  EXT NP PYRE < 0.20 ABUT <90 SINGULAR
+}
+NP.A.2
+0 0 3 Apr  8 16:15:30 2019                     
+NP.A.2 { @ Min. NP enclosed area 0.25
+  HOLES NP < 0.25
+}  
+LDN.E.1
+0 0 4 Apr  8 16:15:30 2019                     
+LDN.E.1 { @ Min. extension NP to OD2D/NW/RHDMY/VARDMY >= 0.31um. 
+  INT NLDDN1V < 0.31 ABUT < 90 SINGULAR REGION
+  EXT NLDDN1V < 0.31 ABUT < 90 SINGULAR REGION
+}
+LDN.O.1
+0 0 4 Apr  8 16:15:30 2019                     
+LDN.O.1 { @ Min. overlap NP to OD2U/NW >= 0.31um. 
+  INT NLDDN2V < 0.31 ABUT < 90 SINGULAR REGION
+  EXT NLDDN2V < 0.31 ABUT < 90 SINGULAR REGION
+}
+LDP.E.1
+0 0 4 Apr  8 16:15:30 2019                     
+LDP.E.1 { @ Min. extension PP to OD2D/RHDMY/VARDMY >= 0.31um. 
+  INT PLDDP1V < 0.31 ABUT < 90 SINGULAR REGION
+  EXT PLDDP1V < 0.31 ABUT < 90 SINGULAR REGION
+}
+LDP.O.1
+0 0 4 Apr  8 16:15:30 2019                     
+LDP.O.1 { @ Min. overlap PP to OD2U >= 0.31um. 
+  INT PLDDP2V < 0.31 ABUT < 90 SINGULAR REGION
+  EXT PLDDP2V < 0.31 ABUT < 90 SINGULAR REGION
+}
+RPO.I.0
+0 0 3 Apr  8 16:15:30 2019                     
+RPO.I.0 { @ SDI for ESD device only 
+  SDI AND RHDMY
+}
+RPO.W.1
+0 0 3 Apr  8 16:15:30 2019                     
+RPO.W.1 { @ Min. RPO width 0.43um 
+  INT RPO < 0.43 ABUT <90 SINGULAR REGION
+}
+RPO.S.1
+0 0 3 Apr  8 16:15:30 2019                     
+RPO.S.1 { @ Min. RPO space 0.43um 
+  EXT RPO < 0.43 ABUT <90 SINGULAR REGION
+}
+RPO.C.1
+0 0 3 Apr  8 16:15:30 2019                     
+RPO.C.1 { @ Min. RPO space to OD 0.22um 
+  EXT RPO OD < 0.22 ABUT <90 SINGULAR
+}
+RPO.C.2
+0 0 4 Apr  8 16:15:30 2019                     
+RPO.C.2 { @ Min. RPO space to CO 0.22um 
+  EXT RPO CO < 0.22 ABUT <90 SINGULAR
+  RPO AND CO 
+}
+RPO.C.3
+0 0 4 Apr  8 16:15:30 2019                     
+RPO.C.3 { @ Min. RPO space to gate 0.38um 
+  RPO AND NOGT
+  EXT RPO GATE < 0.38 ABUT <90 SINGULAR
+}
+RPO.C.4
+0 0 3 Apr  8 16:15:30 2019                     
+RPO.C.4 { @ Min. RPO overhang OD 0.22um 
+  ENC OD RPO < 0.22 ABUT <90 SINGULAR
+}
+RPO.E.1
+0 0 3 Apr  8 16:15:30 2019                     
+RPO.E.1 { @ Min. OD overhang RPO 0.22um 
+  ENC RPO OD < 0.22 ABUT <90 SINGULAR
+}
+RPO.C.5
+0 0 3 Apr  8 16:15:30 2019                     
+RPO.C.5 { @ Min. RPO overhang POLY 0.22um 
+  ENC FPO1A RPO < 0.22 ABUT <90 SINGULAR
+}
+RPO.A.1
+0 0 3 Apr  8 16:15:30 2019                     
+RPO.A.1 { @ Min. RPO area 1.0 um*um 
+  AREA RPO < 1.0
+}
+RPO.C.6
+0 0 3 Apr  8 16:15:30 2019                     
+RPO.C.6 { @ Min. clearance RPO to unrelated poly 0.3um 
+  EXT RPO FPO1 < 0.3 ABUT <90 SINGULAR
+}
+RPO.R.2.PO
+0 0 8 Apr  8 16:15:30 2019                     
+RPO.R.2.PO { @ each silicide blocked (rpo covered) PO region can only be
+          @ either N type or P type resistor
+    X = RPO AND POLY
+    NX = X AND NP
+    PX = X AND PP    
+    Y  = NX INTERACT PX
+    X INTERACT Y
+}  
+RPO.R.2.OD
+0 0 8 Apr  8 16:15:30 2019                     
+RPO.R.2.OD { @ each silicide blocked (rpo covered) OD region can only be
+          @ either N type or P type resistor
+    X = RPO AND OD
+    NX = X AND NP
+    PX = X AND PP    
+    Y  = NX INTERACT PX
+    X INTERACT Y
+}  
+CO.W.1
+0 0 5 Apr  8 16:15:30 2019                     
+CO.W.1 { @ Min. and max contact width 0.16 um 
+  CO_CORE = CO NOT SR_M1
+  A = NOT RECTANGLE CO_CORE == 0.16 BY == 0.16 ORTHOGONAL ONLY
+  A NOT VIA_EXD
+}
+CO.S.1
+0 0 3 Apr  8 16:15:30 2019                     
+CO.S.1 { @ Min. contact spacing 0.18 um 
+  EXT CO < 0.18 ABUT <90 SINGULAR REGION
+}
+CO.S.2
+0 0 9 Apr  8 16:15:30 2019                     
+CO.S.2 { @ Min space between two contacts in 4x4 or greater array 0.20 um 
+  COMerge = SIZE CO BY 0.21 / 2 OVERUNDER  // space <= 0.21 um treated as array
+  // ( ( 4 - 1 ) * 0.16 + ( 4 - 2 ) * 0.21 ) / 2 ) = 0.45
+  MinArray = SIZE COMerge BY 0.45 UNDEROVER
+  // get array larger than or equal to 4 x 4 
+  COArray = MinArray INTERACT CO >= 4 * 4
+  COInArray = CO INTERACT COArray
+  EXT COInArray < 0.20 ABUT <90 
+}
+CO.C.1
+0 0 3 Apr  8 16:15:30 2019                     
+CO.C.1 { @ Min. diff contact to 1.0V,1.2V,2.5V gate space 0.11 um 
+  EXT COOD GATE < 0.11 ABUT <90 INSIDE ALSO SINGULAR
+}
+CO.C.2
+0 0 3 Apr  8 16:15:30 2019                     
+CO.C.2 { @ Min. poly contact space to OD 0.14 um 
+  EXT COPO OD < 0.14 ABUT <90 INSIDE ALSO SINGULAR
+}
+CO.E.1
+0 0 3 Apr  8 16:15:30 2019                     
+CO.E.1 { @ Min. active OD olap contact 0.07 um 
+  ENC COOD DACT < 0.07 ABUT <90 SINGULAR
+}
+CO.E.2
+0 0 3 Apr  8 16:15:30 2019                     
+CO.E.2 { @ Min. poly olap contact 0.07 um 
+  ENC COPO POLY < 0.07 ABUT <90 SINGULAR
+}
+CO.E.3
+0 0 6 Apr  8 16:15:30 2019                     
+CO.E.3 { @ Min. butted diffusion PP olap S/D contact 0.09 um 
+  EXT NACT_PSTP_BTE COOD < 0.09 ABUT <90
+  EXT NSTP_PACT_BTE COOD < 0.09 ABUT <90
+  COOD CUT PP
+  ENC COOD PP < 0.001 ABUT <90 SINGULAR
+}
+CO.E.4
+0 0 6 Apr  8 16:15:30 2019                     
+CO.E.4 { @ Min. butted diffusion NP olap S/D contact 0.09 um 
+  EXT PACT_NSTP_BTE COOD < 0.09 ABUT <90
+  EXT PSTP_NACT_BTE COOD < 0.09 ABUT <90
+  COOD CUT NP
+  ENC COOD NP < 0.001 ABUT <90 SINGULAR
+}
+CO.E.5
+0 0 3 Apr  8 16:15:30 2019                     
+CO.E.5 { @ Min. pickup OD olap contact 0.05 um 
+  ENC COOD DSTP < 0.05 ABUT <90 SINGULAR
+}
+M1.W.1
+0 0 3 Apr  8 16:15:30 2019                     
+M1.W.1 { @ Min. M1 width 0.16 um 
+  INT M1 < 0.16 ABUT <90 SINGULAR REGION
+}
+M1.S.1
+0 0 3 Apr  8 16:15:30 2019                     
+M1.S.1 { @ Min. M1 spacing 0.18 um 
+  EXT M1 < 0.18 ABUT <90 SINGULAR REGION
+}
+M1.E.1
+0 0 3 Apr  8 16:15:30 2019                     
+M1.E.1 { @ Min. extension of M1 beyond CO 0um 
+  CO NOT M1
+}
+M1.E.2
+0 0 6 Apr  8 16:15:30 2019                     
+M1.E.2 { @ Min. extension of M1 end-of-line region beyond CO region is 0.05um 
+  X = RECTANGLE ENCLOSURE CO M1 ABUT > 0 < 90 GOOD 0.0 0.05 OPPOSITE 0.0 0.05 OPPOSITE
+  Y = ENC [X] M1 < 0.05 ABUT <90 OPPOSITE
+  Z = CO TOUCH EDGE Y
+  INT Z < 0.16 ABUT == 90 INTERSECTING ONLY   // adjacent narrow sides
+}
+M1.S.2
+0 0 21 Apr  8 16:15:30 2019                    
+M1.S.2 { @ Min. M1 wide metal rule 0.6um 
+  M1_S5 = SHRINK (SHRINK (SHRINK (SHRINK M1Wide7 RIGHT BY 5) LEFT BY 5) TOP BY 5) BOTTOM BY 5
+  M1_G5 = GROW (GROW (GROW (GROW M1_S5 RIGHT BY 5) LEFT BY 5) TOP BY 5) BOTTOM BY 5
+  M1_Wide = M1_G5 AND M1
+  // STEP = 0.18 / 1.415
+  M1_Exp = SIZE M1_Wide BY 1 INSIDE OF M1 STEP 0.126
+  M1_Check = M1 AND (SIZE M1_EXP BY 0.6)
+  M1_Branch = M1_Exp NOT M1_Wide
+  M1_Extend = M1_Check NOT M1_Exp 
+  // Branch length less than 1um
+  M1_BranchEnd = M1_Branch NOT INTERACT M1_Extend
+  M1_WideExp = M1_Wide OR M1_BranchEnd
+  M1_Else = M1_Check NOT INTERACT M1_Exp
+  // Space between end of brench to other metals
+  EXT M1_WideExp M1_Else < 0.6 ABUT > 0 < 89.5 REGION  
+  // Space between extended brench to other metals
+  EXT M1_Exp M1_Extend < 0.6 ABUT > 0 < 89.5 OPPOSITE REGION
+  // Space between wide and branch metals and release check of notch
+  A = EXT M1_Exp < 0.6 ABUT > 0 < 89.5 SPACE REGION
+  A NOT INTERACT M1_Extend
+}
+M1.A.1
+0 0 3 Apr  8 16:15:30 2019                     
+M1.A.1 { @ Min. M1 area region 0.122 um*um 
+  AREA M1 < 0.122
+}
+M1.S.3
+0 0 6 Apr  8 16:15:30 2019                     
+M1.S.3 { @ Min. space between two metal (at least one with width >= 0.3 um) and parallel run length >=1um 0.22 um 
+   X = EXT M1 [M1Wide0.3] < 0.22 OPPOSITE MEASURE ALL
+   Y = EXT [M1] M1Wide0.3 < 0.22 OPPOSITE MEASURE ALL
+   LENGTH X >= 1
+   LENGTH Y >= 1
+}
+M1.W.2
+0 0 3 Apr  8 16:15:30 2019                     
+M1.W.2 { @ Min. 45 degree bent metal width (with length >= 0.5um) 0.20 um 
+  INT M1_EDGE_45L < 0.20 ABUT <90 REGION
+}
+M1.S.4
+0 0 4 Apr  8 16:15:30 2019                     
+M1.S.4 { @ Min. 45 degree bent metal (with length >= 0.5um) space to another metal 0.22 um 
+  X = EXPAND EDGE M1_EDGE_45L OUTSIDE BY 0.22
+  X AND M1
+}
+M1.A.2
+0 0 3 Apr  8 16:15:30 2019                     
+M1.A.2 { @ Min. M1 enclosed area 0.2
+  HOLES M1 < 0.2
+}  
+VIA1.W.1
+0 0 4 Apr  8 16:15:30 2019                     
+VIA1.W.1 { @ VIA1 must be 0.19 x 0.19 
+  A = NOT RECTANGLE VIA1 == 0.19 BY == 0.19 ORTHOGONAL ONLY
+  A NOT VIA_EXD
+}
+VIA1.S.1
+0 0 3 Apr  8 16:15:30 2019                     
+VIA1.S.1 { @ Min. VIA1 spacing 0.22um 
+  EXT VIA1 < 0.22 ABUT <90 SINGULAR REGION
+}
+VIA1.S.2
+0 0 9 Apr  8 16:15:30 2019                     
+VIA1.S.2 { @ Min. space between two VIA1 regions of a VIA1 array whose size >= 3x3 0.29um 
+  VIA1Merge = SIZE VIA1 BY 0.31 / 2 OVERUNDER  // space <= 0.31 um treated as array
+  // ( ( 3 - 1 ) * 0.19 + ( 3 - 2 ) * 0.31 ) / 2 ) = 0.345
+  MinArray = SIZE VIA1Merge BY 0.345 UNDEROVER
+  // get array larger than or equal to 3 x 3 
+  VIA1Array = MinArray INTERACT VIA1 >= 3 * 3
+  VIA1InArray = VIA1 INTERACT VIA1Array
+  EXT VIA1InArray < 0.29 ABUT <90 
+}
+VIA1.E.1
+0 0 3 Apr  8 16:15:30 2019                     
+VIA1.E.1 { @ Min. extension of a M1 region beyond a VIA1 region 0.01um 
+  ENC VIA1 M1 < 0.01 ABUT <90 OUTSIDE ALSO SINGULAR
+}
+VIA1.E.2
+0 0 6 Apr  8 16:15:30 2019                     
+VIA1.E.2 { @ Min. extension of M1 end-of-line region beyond VIA1 region 0.05um 
+  X = RECTANGLE ENCLOSURE VIA1 M1 ABUT > 0 < 90 GOOD 0.005 0.05 OPPOSITE 0.005 0.05 OPPOSITE
+  Y = ENC [X] M1 < 0.05 ABUT <90 OPPOSITE
+  Z = VIA1 TOUCH EDGE Y
+  INT Z < 0.19 ABUT == 90 INTERSECTING ONLY   // adjacent narrow sides
+}
+VIA1.R.2
+0 0 24 Apr  8 16:15:30 2019                    
+VIA1.R.2 { @ When M1 or M2 width > 1.4um, more than 1 VIA1 is required.
+           @ if the metal has < 4 vias, vias spacing should be <= 0.71um, 
+	   @ or if the metal has >=4 vias, at least 4 vias spacing should be <= 1um
+//for wide M1
+    VIA1_EXD = VIA1 NOT VIA_EXD
+    M1HasWide = M1 INTERACT M1Wide1.4
+    M2OvpM1HasWide = M2 AND M1HasWide
+    VIA1MergeC1 = SIZE VIA1_EXD BY (0.71/2) 
+    VIA1InM1C1 = VIA1MergeC1 AND M2OvpM1HasWide
+    GVIA1InM1C1 = VIA1_EXD AND (VIA1InM1C1 ENCLOSE VIA1_EXD > (2 - 1))
+    VIA1MergeC2 = SIZE VIA1_EXD BY (1/2) 
+    VIA1InM1C2 = VIA1MergeC2 AND M2OvpM1HasWide
+    GVIA1InM1C2 = VIA1_EXD AND (VIA1InM1C2 ENCLOSE VIA1_EXD > (4 - 1))
+    M1Check = ((M1Wide1.4 AND M2) OUTSIDE GVIA1InM1C1) OUTSIDE GVIA1InM1C2
+//for wide M2
+    M2HasWide = M2 INTERACT M2Wide1.4
+    M1OvpM2HasWide = M1 AND M2HasWide
+    VIA1InM2C1 = VIA1MergeC1 AND M1OvpM2HasWide
+    GVIA1InM2C1 = VIA1_EXD AND (VIA1InM2C1 ENCLOSE VIA1_EXD > (2 - 1))
+    VIA1InM2C2 = VIA1MergeC2 AND M1OvpM2HasWide
+    GVIA1InM2C2 = VIA1_EXD AND (VIA1InM2C2 ENCLOSE VIA1_EXD > (4 - 1))
+    M2Check = ((M2Wide1.4 AND M1) OUTSIDE GVIA1InM2C1) OUTSIDE GVIA1InM2C2
+    VIA1_EXD NOT OUTSIDE ( M1Check OR M2Check)
+}  
+M2.W.1
+0 0 3 Apr  8 16:15:30 2019                     
+M2.W.1 { @ Min. M2 width 0.20um 
+  INT M2 < 0.20 ABUT <90 SINGULAR REGION
+}
+M2.S.1
+0 0 3 Apr  8 16:15:30 2019                     
+M2.S.1 { @ Min. M2 spacing 0.21um 
+  EXT M2 < 0.21 ABUT <90 SINGULAR REGION
+}
+M2.E.1
+0 0 3 Apr  8 16:15:30 2019                     
+M2.E.1 { @ Min. extension of a M2 region beyond a VIA1 region is 0.005 um 
+  ENC VIA1 M2 < 0.005 ABUT <90 OUTSIDE ALSO SINGULAR
+}
+M2.E.2
+0 0 6 Apr  8 16:15:30 2019                     
+M2.E.2 { @ Min. extension of M2 end-of-line region beyond VIA1 region is 0.05um 
+  X = RECTANGLE ENCLOSURE VIA1 M2 ABUT > 0 < 90 GOOD 0.005 0.05 OPPOSITE 0.005 0.05 OPPOSITE
+  Y = ENC [X] M2 < 0.05 ABUT < 90 OPPOSITE
+  Z = VIA1 TOUCH EDGE Y
+  INT Z < 0.19 ABUT == 90 INTERSECTING ONLY   // adjacent narrow sides
+}
+M2.S.2
+0 0 21 Apr  8 16:15:30 2019                    
+M2.S.2 { @ Min. M2 wide metal rule 0.6um 
+  M2_S5 = SHRINK (SHRINK (SHRINK (SHRINK M2Wide7 RIGHT BY 5) LEFT BY 5) TOP BY 5) BOTTOM BY 5
+  M2_G5 = GROW (GROW (GROW (GROW M2_S5 RIGHT BY 5) LEFT BY 5) TOP BY 5) BOTTOM BY 5
+  M2_Wide = M2_G5 AND M2
+  // STEP = 0.21 / 1.415
+  M2_Exp = SIZE M2_Wide BY 1 INSIDE OF M2 STEP 0.147
+  M2_Check = M2 AND (SIZE M2_EXP BY 0.6)
+  M2_Branch = M2_Exp NOT M2_Wide
+  M2_Extend = M2_Check NOT M2_Exp 
+  // Branch length less than 1um
+  M2_BranchEnd = M2_Branch NOT INTERACT M2_Extend
+  M2_WideExp = M2_Wide OR M2_BranchEnd
+  M2_Else = M2_Check NOT INTERACT M2_Exp
+  // Space between end of brench to other metals
+  EXT M2_WideExp M2_Else < 0.6 ABUT > 0 < 89.5 REGION  
+  // Space between extended brench to other metals
+  EXT M2_Exp M2_Extend < 0.6 ABUT > 0 < 89.5 OPPOSITE REGION
+  // Space between wide and branch metals and release check of notch
+  A = EXT M2_Exp < 0.6 ABUT > 0 < 89.5 SPACE REGION
+  A NOT INTERACT M2_Extend
+}
+M2.A.1
+0 0 3 Apr  8 16:15:30 2019                     
+M2.A.1 { @ Min. M2 area region 0.144 
+  AREA M2 < 0.144
+}
+M2.S.3
+0 0 6 Apr  8 16:15:30 2019                     
+M2.S.3 { @ Min. space between two metal (at least one with width >= 0.39um) and parallel run length >=1um 0.24um 
+   X = EXT M2 [M2Wide0.4] < 0.24 OPPOSITE MEASURE ALL
+   Y = EXT [M2] M2Wide0.4 < 0.24 OPPOSITE MEASURE ALL
+   LENGTH X >= 1
+   LENGTH Y >= 1
+}
+M2.W.2
+0 0 3 Apr  8 16:15:30 2019                     
+M2.W.2 { @ Min. 45 degree bent metal width (with length >= 0.5um) 0.24um 
+  INT M2_EDGE_45L < 0.24 ABUT <90 REGION
+}
+M2.S.4
+0 0 4 Apr  8 16:15:30 2019                     
+M2.S.4 { @ Min. 45 degree bent metal (with length >= 0.5um) space to another metal 0.24um 
+  X = EXPAND EDGE M2_EDGE_45L OUTSIDE BY 0.24
+  X AND M2
+}
+M2.A.2
+0 0 3 Apr  8 16:15:30 2019                     
+M2.A.2 { @ Min. M2 enclosed area 0.265
+  HOLES M2 < 0.265
+}  
+M2.S.5
+0 0 8 Apr  8 16:15:30 2019                     
+M2.S.5 { @ overlap area of M1 M2 and M3 width > 7 run length > 7 then spacing < 1um
+  M2OverlapBig = (SIZE M2Overlap BY 3.5 UNDEROVER TRUNCATE 3.5) AND M2Overlap
+  W = EXT M2OverlapBig M2Overlap < 1 OPPOSITE MEASURE ALL REGION
+  X = W NOT INSIDE M1
+  Y = X NOT INSIDE M2
+  Y1 = Y NOT INSIDE M3
+  ENCLOSE RECTANGLE Y1 0.005 7.005 
+}
+M3.W.1
+0 0 3 Apr  8 16:15:30 2019                     
+M3.W.1 { @ Min. M3 width 0.20um 
+  INT M3 < 0.20 ABUT <90 SINGULAR REGION
+}
+M3.S.1
+0 0 3 Apr  8 16:15:30 2019                     
+M3.S.1 { @ Min. M3 spacing 0.21um 
+  EXT M3 < 0.21 ABUT <90 SINGULAR REGION
+}
+M3.E.1
+0 0 3 Apr  8 16:15:30 2019                     
+M3.E.1 { @ Min. extension of a M3 region beyond a VIA2 region is 0.005 um 
+  ENC VIA2 M3 < 0.005 ABUT <90 OUTSIDE ALSO SINGULAR
+}
+M3.E.2
+0 0 6 Apr  8 16:15:30 2019                     
+M3.E.2 { @ Min. extension of M3 end-of-line region beyond VIA2 region is 0.05um 
+  X = RECTANGLE ENCLOSURE VIA2 M3 ABUT > 0 < 90 GOOD 0.005 0.05 OPPOSITE 0.005 0.05 OPPOSITE
+  Y = ENC [X] M3 < 0.05 ABUT < 90 OPPOSITE
+  Z = VIA2 TOUCH EDGE Y
+  INT Z < 0.19 ABUT == 90 INTERSECTING ONLY   // adjacent narrow sides
+}
+M3.S.2
+0 0 21 Apr  8 16:15:30 2019                    
+M3.S.2 { @ Min. M3 wide metal rule 0.6um 
+  M3_S5 = SHRINK (SHRINK (SHRINK (SHRINK M3Wide7 RIGHT BY 5) LEFT BY 5) TOP BY 5) BOTTOM BY 5
+  M3_G5 = GROW (GROW (GROW (GROW M3_S5 RIGHT BY 5) LEFT BY 5) TOP BY 5) BOTTOM BY 5
+  M3_Wide = M3_G5 AND M3
+  // STEP = 0.21 / 1.415
+  M3_Exp = SIZE M3_Wide BY 1 INSIDE OF M3 STEP 0.147
+  M3_Check = M3 AND (SIZE M3_EXP BY 0.6)
+  M3_Branch = M3_Exp NOT M3_Wide
+  M3_Extend = M3_Check NOT M3_Exp 
+  // Branch length less than 1um
+  M3_BranchEnd = M3_Branch NOT INTERACT M3_Extend
+  M3_WideExp = M3_Wide OR M3_BranchEnd
+  M3_Else = M3_Check NOT INTERACT M3_Exp
+  // Space between end of brench to other metals
+  EXT M3_WideExp M3_Else < 0.6 ABUT > 0 < 89.5 REGION  
+  // Space between extended brench to other metals
+  EXT M3_Exp M3_Extend < 0.6 ABUT > 0 < 89.5 OPPOSITE REGION
+  // Space between wide and branch metals and release check of notch
+  A = EXT M3_Exp < 0.6 ABUT > 0 < 89.5 SPACE REGION
+  A NOT INTERACT M3_Extend
+}
+M3.A.1
+0 0 3 Apr  8 16:15:30 2019                     
+M3.A.1 { @ Min. M3 area region 0.144 
+  AREA M3 < 0.144
+}
+M3.S.3
+0 0 6 Apr  8 16:15:30 2019                     
+M3.S.3 { @ Min. space between two metal (at least one with width >= 0.39um) and parallel run length >=1um 0.24um 
+   X = EXT M3 [M3Wide0.4] < 0.24 OPPOSITE MEASURE ALL
+   Y = EXT [M3] M3Wide0.4 < 0.24 OPPOSITE MEASURE ALL
+   LENGTH X >= 1
+   LENGTH Y >= 1
+}
+M3.W.2
+0 0 3 Apr  8 16:15:30 2019                     
+M3.W.2 { @ Min. 45 degree bent metal width (with length >= 0.5um) 0.24um 
+  INT M3_EDGE_45L < 0.24 ABUT <90 REGION
+}
+M3.S.4
+0 0 4 Apr  8 16:15:30 2019                     
+M3.S.4 { @ Min. 45 degree bent metal (with length >= 0.5um) space to another metal 0.24um 
+  X = EXPAND EDGE M3_EDGE_45L OUTSIDE BY 0.24
+  X AND M3
+}
+M3.A.2
+0 0 3 Apr  8 16:15:30 2019                     
+M3.A.2 { @ Min. M3 enclosed area 0.265
+  HOLES M3 < 0.265
+}  
+M3.S.5
+0 0 8 Apr  8 16:15:30 2019                     
+M3.S.5 { @ overlap area of M2 M3 and M4 width > 7 run length > 7 then spacing < 1um
+  M3OverlapBig = (SIZE M3Overlap BY 3.5 UNDEROVER TRUNCATE 3.5) AND M3Overlap
+  W = EXT M3OverlapBig M3Overlap < 1 OPPOSITE MEASURE ALL REGION
+  X = W NOT INSIDE M2
+  Y = X NOT INSIDE M3
+  Y1 = Y NOT INSIDE M4
+  ENCLOSE RECTANGLE Y1 0.005 7.005 
+}
+M4.W.1
+0 0 3 Apr  8 16:15:30 2019                     
+M4.W.1 { @ Min. M4 width 0.20um 
+  INT M4 < 0.20 ABUT <90 SINGULAR REGION
+}
+M4.S.1
+0 0 3 Apr  8 16:15:30 2019                     
+M4.S.1 { @ Min. M4 spacing 0.21um 
+  EXT M4 < 0.21 ABUT <90 SINGULAR REGION
+}
+M4.E.1
+0 0 3 Apr  8 16:15:30 2019                     
+M4.E.1 { @ Min. extension of a M4 region beyond a VIA3 region is 0.005 um 
+  ENC VIA3 M4 < 0.005 ABUT <90 OUTSIDE ALSO SINGULAR
+}
+M4.E.2
+0 0 6 Apr  8 16:15:30 2019                     
+M4.E.2 { @ Min. extension of M4 end-of-line region beyond VIA3 region is 0.05um 
+  X = RECTANGLE ENCLOSURE VIA3 M4 ABUT > 0 < 90 GOOD 0.005 0.05 OPPOSITE 0.005 0.05 OPPOSITE
+  Y = ENC [X] M4 < 0.05 ABUT < 90 OPPOSITE
+  Z = VIA3 TOUCH EDGE Y
+  INT Z < 0.19 ABUT == 90 INTERSECTING ONLY   // adjacent narrow sides
+}
+M4.S.2
+0 0 21 Apr  8 16:15:30 2019                    
+M4.S.2 { @ Min. M4 wide metal rule 0.6um 
+  M4_S5 = SHRINK (SHRINK (SHRINK (SHRINK M4Wide7 RIGHT BY 5) LEFT BY 5) TOP BY 5) BOTTOM BY 5
+  M4_G5 = GROW (GROW (GROW (GROW M4_S5 RIGHT BY 5) LEFT BY 5) TOP BY 5) BOTTOM BY 5
+  M4_Wide = M4_G5 AND M4
+  // STEP = 0.21 / 1.415
+  M4_Exp = SIZE M4_Wide BY 1 INSIDE OF M4 STEP 0.147
+  M4_Check = M4 AND (SIZE M4_EXP BY 0.6)
+  M4_Branch = M4_Exp NOT M4_Wide
+  M4_Extend = M4_Check NOT M4_Exp 
+  // Branch length less than 1um
+  M4_BranchEnd = M4_Branch NOT INTERACT M4_Extend
+  M4_WideExp = M4_Wide OR M4_BranchEnd
+  M4_Else = M4_Check NOT INTERACT M4_Exp
+  // Space between end of brench to other metals
+  EXT M4_WideExp M4_Else < 0.6 ABUT > 0 < 89.5 REGION  
+  // Space between extended brench to other metals
+  EXT M4_Exp M4_Extend < 0.6 ABUT > 0 < 89.5 OPPOSITE REGION
+  // Space between wide and branch metals and release check of notch
+  A = EXT M4_Exp < 0.6 ABUT > 0 < 89.5 SPACE REGION
+  A NOT INTERACT M4_Extend
+}
+M4.A.1
+0 0 3 Apr  8 16:15:30 2019                     
+M4.A.1 { @ Min. M4 area region 0.144 
+  AREA M4 < 0.144
+}
+M4.S.3
+0 0 6 Apr  8 16:15:30 2019                     
+M4.S.3 { @ Min. space between two metal (at least one with width >= 0.39um) and parallel run length >=1um 0.24um 
+   X = EXT M4 [M4Wide0.4] < 0.24 OPPOSITE MEASURE ALL
+   Y = EXT [M4] M4Wide0.4 < 0.24 OPPOSITE MEASURE ALL
+   LENGTH X >= 1
+   LENGTH Y >= 1
+}
+M4.W.2
+0 0 3 Apr  8 16:15:30 2019                     
+M4.W.2 { @ Min. 45 degree bent metal width (with length >= 0.5um) 0.24um 
+  INT M4_EDGE_45L < 0.24 ABUT <90 REGION
+}
+M4.S.4
+0 0 4 Apr  8 16:15:30 2019                     
+M4.S.4 { @ Min. 45 degree bent metal (with length >= 0.5um) space to another metal 0.24um 
+  X = EXPAND EDGE M4_EDGE_45L OUTSIDE BY 0.24
+  X AND M4
+}
+M4.A.2
+0 0 3 Apr  8 16:15:30 2019                     
+M4.A.2 { @ Min. M4 enclosed area 0.265
+  HOLES M4 < 0.265
+}  
+M4.S.5
+0 0 8 Apr  8 16:15:30 2019                     
+M4.S.5 { @ overlap area of M3 M4 and M5 width > 7 run length > 7 then spacing < 1um
+  M4OverlapBig = (SIZE M4Overlap BY 3.5 UNDEROVER TRUNCATE 3.5) AND M4Overlap
+  W = EXT M4OverlapBig M4Overlap < 1 OPPOSITE MEASURE ALL REGION
+  X = W NOT INSIDE M3
+  Y = X NOT INSIDE M4
+  Y1 = Y NOT INSIDE M5
+  ENCLOSE RECTANGLE Y1 0.005 7.005 
+}
+M5.W.1
+0 0 3 Apr  8 16:15:30 2019                     
+M5.W.1 { @ Min. M5 width 0.20um 
+  INT M5 < 0.20 ABUT <90 SINGULAR REGION
+}
+M5.S.1
+0 0 3 Apr  8 16:15:30 2019                     
+M5.S.1 { @ Min. M5 spacing 0.21um 
+  EXT M5 < 0.21 ABUT <90 SINGULAR REGION
+}
+M5.E.1
+0 0 3 Apr  8 16:15:30 2019                     
+M5.E.1 { @ Min. extension of a M5 region beyond a VIA4 region is 0.005 um 
+  ENC VIA4 M5 < 0.005 ABUT <90 OUTSIDE ALSO SINGULAR
+}
+M5.E.2
+0 0 6 Apr  8 16:15:30 2019                     
+M5.E.2 { @ Min. extension of M5 end-of-line region beyond VIA4 region is 0.05um 
+  X = RECTANGLE ENCLOSURE VIA4 M5 ABUT > 0 < 90 GOOD 0.005 0.05 OPPOSITE 0.005 0.05 OPPOSITE
+  Y = ENC [X] M5 < 0.05 ABUT < 90 OPPOSITE
+  Z = VIA4 TOUCH EDGE Y
+  INT Z < 0.19 ABUT == 90 INTERSECTING ONLY   // adjacent narrow sides
+}
+M5.S.2
+0 0 21 Apr  8 16:15:30 2019                    
+M5.S.2 { @ Min. M5 wide metal rule 0.6um 
+  M5_S5 = SHRINK (SHRINK (SHRINK (SHRINK M5Wide7 RIGHT BY 5) LEFT BY 5) TOP BY 5) BOTTOM BY 5
+  M5_G5 = GROW (GROW (GROW (GROW M5_S5 RIGHT BY 5) LEFT BY 5) TOP BY 5) BOTTOM BY 5
+  M5_Wide = M5_G5 AND M5
+  // STEP = 0.21 / 1.415
+  M5_Exp = SIZE M5_Wide BY 1 INSIDE OF M5 STEP 0.147
+  M5_Check = M5 AND (SIZE M5_EXP BY 0.6)
+  M5_Branch = M5_Exp NOT M5_Wide
+  M5_Extend = M5_Check NOT M5_Exp 
+  // Branch length less than 1um
+  M5_BranchEnd = M5_Branch NOT INTERACT M5_Extend
+  M5_WideExp = M5_Wide OR M5_BranchEnd
+  M5_Else = M5_Check NOT INTERACT M5_Exp
+  // Space between end of brench to other metals
+  EXT M5_WideExp M5_Else < 0.6 ABUT > 0 < 89.5 REGION  
+  // Space between extended brench to other metals
+  EXT M5_Exp M5_Extend < 0.6 ABUT > 0 < 89.5 OPPOSITE REGION
+  // Space between wide and branch metals and release check of notch
+  A = EXT M5_Exp < 0.6 ABUT > 0 < 89.5 SPACE REGION
+  A NOT INTERACT M5_Extend
+}
+M5.A.1
+0 0 3 Apr  8 16:15:30 2019                     
+M5.A.1 { @ Min. M5 area region 0.144 
+  AREA M5 < 0.144
+}
+M5.S.3
+0 0 6 Apr  8 16:15:30 2019                     
+M5.S.3 { @ Min. space between two metal (at least one with width >= 0.39um) and parallel run length >=1um 0.24um 
+   X = EXT M5 [M5Wide0.4] < 0.24 OPPOSITE MEASURE ALL
+   Y = EXT [M5] M5Wide0.4 < 0.24 OPPOSITE MEASURE ALL
+   LENGTH X >= 1
+   LENGTH Y >= 1
+}
+M5.W.2
+0 0 3 Apr  8 16:15:30 2019                     
+M5.W.2 { @ Min. 45 degree bent metal width (with length >= 0.5um) 0.24um 
+  INT M5_EDGE_45L < 0.24 ABUT <90 REGION
+}
+M5.S.4
+0 0 4 Apr  8 16:15:30 2019                     
+M5.S.4 { @ Min. 45 degree bent metal (with length >= 0.5um) space to another metal 0.24um 
+  X = EXPAND EDGE M5_EDGE_45L OUTSIDE BY 0.24
+  X AND M5
+}
+M5.A.2
+0 0 3 Apr  8 16:15:30 2019                     
+M5.A.2 { @ Min. M5 enclosed area 0.265
+  HOLES M5 < 0.265
+}  
+M5.S.5
+0 0 8 Apr  8 16:15:30 2019                     
+M5.S.5 { @ overlap area of M4 M5 and M6 width > 7 run length > 7 then spacing < 1um
+  M5OverlapBig = (SIZE M5Overlap BY 3.5 UNDEROVER TRUNCATE 3.5) AND M5Overlap
+  W = EXT M5OverlapBig M5Overlap < 1 OPPOSITE MEASURE ALL REGION
+  X = W NOT INSIDE M4
+  Y = X NOT INSIDE M5
+  Y1 = Y NOT INSIDE M6
+  ENCLOSE RECTANGLE Y1 0.005 7.005 
+}
+M6.W.1
+0 0 3 Apr  8 16:15:30 2019                     
+M6.W.1 { @ Min. M6 width 0.20um 
+  INT M6 < 0.20 ABUT <90 SINGULAR REGION
+}
+M6.S.1
+0 0 3 Apr  8 16:15:30 2019                     
+M6.S.1 { @ Min. M6 spacing 0.21um 
+  EXT M6 < 0.21 ABUT <90 SINGULAR REGION
+}
+M6.E.1
+0 0 3 Apr  8 16:15:30 2019                     
+M6.E.1 { @ Min. extension of a M6 region beyond a VIA5 region is 0.005 um 
+  ENC VIA5 M6 < 0.005 ABUT <90 OUTSIDE ALSO SINGULAR
+}
+M6.E.2
+0 0 6 Apr  8 16:15:30 2019                     
+M6.E.2 { @ Min. extension of M6 end-of-line region beyond VIA5 region is 0.05um 
+  X = RECTANGLE ENCLOSURE VIA5 M6 ABUT > 0 < 90 GOOD 0.005 0.05 OPPOSITE 0.005 0.05 OPPOSITE
+  Y = ENC [X] M6 < 0.05 ABUT < 90 OPPOSITE
+  Z = VIA5 TOUCH EDGE Y
+  INT Z < 0.19 ABUT == 90 INTERSECTING ONLY   // adjacent narrow sides
+}
+M6.S.2
+0 0 21 Apr  8 16:15:30 2019                    
+M6.S.2 { @ Min. M6 wide metal rule 0.6um 
+  M6_S5 = SHRINK (SHRINK (SHRINK (SHRINK M6Wide7 RIGHT BY 5) LEFT BY 5) TOP BY 5) BOTTOM BY 5
+  M6_G5 = GROW (GROW (GROW (GROW M6_S5 RIGHT BY 5) LEFT BY 5) TOP BY 5) BOTTOM BY 5
+  M6_Wide = M6_G5 AND M6
+  // STEP = 0.21 / 1.415
+  M6_Exp = SIZE M6_Wide BY 1 INSIDE OF M6 STEP 0.147
+  M6_Check = M6 AND (SIZE M6_EXP BY 0.6)
+  M6_Branch = M6_Exp NOT M6_Wide
+  M6_Extend = M6_Check NOT M6_Exp 
+  // Branch length less than 1um
+  M6_BranchEnd = M6_Branch NOT INTERACT M6_Extend
+  M6_WideExp = M6_Wide OR M6_BranchEnd
+  M6_Else = M6_Check NOT INTERACT M6_Exp
+  // Space between end of brench to other metals
+  EXT M6_WideExp M6_Else < 0.6 ABUT > 0 < 89.5 REGION  
+  // Space between extended brench to other metals
+  EXT M6_Exp M6_Extend < 0.6 ABUT > 0 < 89.5 OPPOSITE REGION
+  // Space between wide and branch metals and release check of notch
+  A = EXT M6_Exp < 0.6 ABUT > 0 < 89.5 SPACE REGION
+  A NOT INTERACT M6_Extend
+}
+M6.A.1
+0 0 3 Apr  8 16:15:30 2019                     
+M6.A.1 { @ Min. M6 area region 0.144 
+  AREA M6 < 0.144
+}
+M6.S.3
+0 0 6 Apr  8 16:15:30 2019                     
+M6.S.3 { @ Min. space between two metal (at least one with width >= 0.39um) and parallel run length >=1um 0.24um 
+   X = EXT M6 [M6Wide0.4] < 0.24 OPPOSITE MEASURE ALL
+   Y = EXT [M6] M6Wide0.4 < 0.24 OPPOSITE MEASURE ALL
+   LENGTH X >= 1
+   LENGTH Y >= 1
+}
+M6.W.2
+0 0 3 Apr  8 16:15:30 2019                     
+M6.W.2 { @ Min. 45 degree bent metal width (with length >= 0.5um) 0.24um 
+  INT M6_EDGE_45L < 0.24 ABUT <90 REGION
+}
+M6.S.4
+0 0 4 Apr  8 16:15:30 2019                     
+M6.S.4 { @ Min. 45 degree bent metal (with length >= 0.5um) space to another metal 0.24um 
+  X = EXPAND EDGE M6_EDGE_45L OUTSIDE BY 0.24
+  X AND M6
+}
+M6.A.2
+0 0 3 Apr  8 16:15:30 2019                     
+M6.A.2 { @ Min. M6 enclosed area 0.265
+  HOLES M6 < 0.265
+}  
+M6.S.5
+0 0 8 Apr  8 16:15:30 2019                     
+M6.S.5 { @ overlap area of M5 M6 and M7 width > 7 run length > 7 then spacing < 1um
+  M6OverlapBig = (SIZE M6Overlap BY 3.5 UNDEROVER TRUNCATE 3.5) AND M6Overlap
+  W = EXT M6OverlapBig M6Overlap < 1 OPPOSITE MEASURE ALL REGION
+  X = W NOT INSIDE M5
+  Y = X NOT INSIDE M6
+  Y1 = Y NOT INSIDE M7
+  ENCLOSE RECTANGLE Y1 0.005 7.005 
+}
+M7.W.1
+0 0 3 Apr  8 16:15:30 2019                     
+M7.W.1 { @ Min. M7 width 0.20um 
+  INT M7 < 0.20 ABUT <90 SINGULAR REGION
+}
+M7.S.1
+0 0 3 Apr  8 16:15:30 2019                     
+M7.S.1 { @ Min. M7 spacing 0.21um 
+  EXT M7 < 0.21 ABUT <90 SINGULAR REGION
+}
+M7.E.1
+0 0 3 Apr  8 16:15:30 2019                     
+M7.E.1 { @ Min. extension of a M7 region beyond a VIA6 region is 0.005 um 
+  ENC VIA6 M7 < 0.005 ABUT <90 OUTSIDE ALSO SINGULAR
+}
+M7.E.2
+0 0 6 Apr  8 16:15:30 2019                     
+M7.E.2 { @ Min. extension of M7 end-of-line region beyond VIA6 region is 0.05um 
+  X = RECTANGLE ENCLOSURE VIA6 M7 ABUT > 0 < 90 GOOD 0.005 0.05 OPPOSITE 0.005 0.05 OPPOSITE
+  Y = ENC [X] M7 < 0.05 ABUT < 90 OPPOSITE
+  Z = VIA6 TOUCH EDGE Y
+  INT Z < 0.19 ABUT == 90 INTERSECTING ONLY   // adjacent narrow sides
+}
+M7.S.2
+0 0 21 Apr  8 16:15:30 2019                    
+M7.S.2 { @ Min. M7 wide metal rule 0.6um 
+  M7_S5 = SHRINK (SHRINK (SHRINK (SHRINK M7Wide7 RIGHT BY 5) LEFT BY 5) TOP BY 5) BOTTOM BY 5
+  M7_G5 = GROW (GROW (GROW (GROW M7_S5 RIGHT BY 5) LEFT BY 5) TOP BY 5) BOTTOM BY 5
+  M7_Wide = M7_G5 AND M7
+  // STEP = 0.21 / 1.415
+  M7_Exp = SIZE M7_Wide BY 1 INSIDE OF M7 STEP 0.147
+  M7_Check = M7 AND (SIZE M7_EXP BY 0.6)
+  M7_Branch = M7_Exp NOT M7_Wide
+  M7_Extend = M7_Check NOT M7_Exp 
+  // Branch length less than 1um
+  M7_BranchEnd = M7_Branch NOT INTERACT M7_Extend
+  M7_WideExp = M7_Wide OR M7_BranchEnd
+  M7_Else = M7_Check NOT INTERACT M7_Exp
+  // Space between end of brench to other metals
+  EXT M7_WideExp M7_Else < 0.6 ABUT > 0 < 89.5 REGION  
+  // Space between extended brench to other metals
+  EXT M7_Exp M7_Extend < 0.6 ABUT > 0 < 89.5 OPPOSITE REGION
+  // Space between wide and branch metals and release check of notch
+  A = EXT M7_Exp < 0.6 ABUT > 0 < 89.5 SPACE REGION
+  A NOT INTERACT M7_Extend
+}
+M7.A.1
+0 0 3 Apr  8 16:15:30 2019                     
+M7.A.1 { @ Min. M7 area region 0.144 
+  AREA M7 < 0.144
+}
+M7.S.3
+0 0 6 Apr  8 16:15:30 2019                     
+M7.S.3 { @ Min. space between two metal (at least one with width >= 0.39um) and parallel run length >=1um 0.24um 
+   X = EXT M7 [M7Wide0.4] < 0.24 OPPOSITE MEASURE ALL
+   Y = EXT [M7] M7Wide0.4 < 0.24 OPPOSITE MEASURE ALL
+   LENGTH X >= 1
+   LENGTH Y >= 1
+}
+M7.W.2
+0 0 3 Apr  8 16:15:30 2019                     
+M7.W.2 { @ Min. 45 degree bent metal width (with length >= 0.5um) 0.24um 
+  INT M7_EDGE_45L < 0.24 ABUT <90 REGION
+}
+M7.S.4
+0 0 4 Apr  8 16:15:30 2019                     
+M7.S.4 { @ Min. 45 degree bent metal (with length >= 0.5um) space to another metal 0.24um 
+  X = EXPAND EDGE M7_EDGE_45L OUTSIDE BY 0.24
+  X AND M7
+}
+M7.A.2
+0 0 3 Apr  8 16:15:30 2019                     
+M7.A.2 { @ Min. M7 enclosed area 0.265
+  HOLES M7 < 0.265
+}  
+M7.S.5
+0 0 8 Apr  8 16:15:30 2019                     
+M7.S.5 { @ overlap area of M6 M7 and M8 width > 7 run length > 7 then spacing < 1um
+  M7OverlapBig = (SIZE M7Overlap BY 3.5 UNDEROVER TRUNCATE 3.5) AND M7Overlap
+  W = EXT M7OverlapBig M7Overlap < 1 OPPOSITE MEASURE ALL REGION
+  X = W NOT INSIDE M6
+  Y = X NOT INSIDE M7
+  Y1 = Y NOT INSIDE M8
+  ENCLOSE RECTANGLE Y1 0.005 7.005 
+}
+VIA2.W.1
+0 0 4 Apr  8 16:15:30 2019                     
+VIA2.W.1 { @ VIA2 must be 0.19 x 0.19 
+  A = NOT RECTANGLE VIA2 == 0.19 BY == 0.19 ORTHOGONAL ONLY
+  A NOT VIA_EXD
+}
+VIA2.S.1
+0 0 3 Apr  8 16:15:30 2019                     
+VIA2.S.1 { @ Min. VIA2 spacing 0.22um 
+  EXT VIA2 < 0.22 ABUT <90 SINGULAR REGION
+}
+VIA2.S.2
+0 0 9 Apr  8 16:15:30 2019                     
+VIA2.S.2 { @ Min. space between two VIA2 regions of a VIA2 array whose size >= 3x3 0.29um 
+  VIA2Merge = SIZE VIA2 BY 0.31 / 2 OVERUNDER  // space <= 0.31 um treated as array
+  // ( ( 3 - 1 ) * 0.19 + ( 3 - 2 ) * 0.31 ) / 2 ) = 0.345
+  MinArray = SIZE VIA2Merge BY 0.345 UNDEROVER
+  // get array larger than or equal to 3 x 3 
+  VIA2Array = MinArray INTERACT VIA2 >= 3 * 3
+  VIA2InArray = VIA2 INTERACT VIA2Array
+  EXT VIA2InArray < 0.29 ABUT <90 
+}
+VIA2.E.1
+0 0 3 Apr  8 16:15:30 2019                     
+VIA2.E.1 { @ Min. extension of a M2 region beyond a VIA2 region 0.005um 
+  ENC VIA2 M2 < 0.005 ABUT <90 OUTSIDE ALSO SINGULAR
+}
+VIA2.E.2
+0 0 6 Apr  8 16:15:30 2019                     
+VIA2.E.2 { @ Min. extension of M2 end-of-line region beyond VIA2 region 0.05um 
+  X = RECTANGLE ENCLOSURE VIA2 M2 ABUT > 0 < 90 GOOD 0.005 0.05 OPPOSITE 0.005 0.05 OPPOSITE
+  Y = ENC [X] M2 < 0.05 ABUT < 90 OPPOSITE
+  Z = VIA2 TOUCH EDGE Y
+  INT Z < 0.19 ABUT == 90 INTERSECTING ONLY   // adjacent narrow sides
+}
+VIA2.R.2
+0 0 24 Apr  8 16:15:30 2019                    
+VIA2.R.2 { @ When M2 or M3 width > 1.4um, more than 1 VIA2 is required.
+           @ if the metal has < 4 vias, vias spacing should be <= 0.71um, 
+  	   @ or if the metal has >=4 vias, at least 4 vias spacing should be <= 1um
+//for wide M2
+    VIA2_EXD = VIA2 NOT VIA_EXD
+    M2HasWide = M2 INTERACT M2Wide1.4
+    M3OvpM2HasWide = M3 AND M2HasWide
+    VIA2MergeC1 = SIZE VIA2_EXD BY (0.71/2) 
+    VIA2InM2C1 = VIA2MergeC1 AND M3OvpM2HasWide
+    GVIA2InM2C1 = VIA2_EXD AND (VIA2InM2C1 ENCLOSE VIA2_EXD > (2 - 1))
+    VIA2MergeC2 = SIZE VIA2_EXD BY (1/2) 
+    VIA2InM2C2 = VIA2MergeC2 AND M3OvpM2HasWide
+    GVIA2InM2C2 = VIA2_EXD AND (VIA2InM2C2 ENCLOSE VIA2_EXD > (4 - 1))
+    M2Check = ((M2Wide1.4 AND M3) OUTSIDE GVIA2InM2C1) OUTSIDE GVIA2InM2C2
+//for wide M3
+    M3HasWide = M3 INTERACT M3Wide1.4
+    M2OvpM3HasWide = M2 AND M3HasWide
+    VIA2InM3C1 = VIA2MergeC1 AND M2OvpM3HasWide
+    GVIA2InM3C1 = VIA2_EXD AND (VIA2InM3C1 ENCLOSE VIA2_EXD > (2 - 1))
+    VIA2InM3C2 = VIA2MergeC2 AND M2OvpM3HasWide
+    GVIA2InM3C2 = VIA2_EXD AND (VIA2InM3C2 ENCLOSE VIA2_EXD > (4 - 1))
+    M3Check = ((M3Wide1.4 AND M2) OUTSIDE GVIA2InM3C1) OUTSIDE GVIA2InM3C2
+    VIA2_EXD NOT OUTSIDE ( M2Check OR M3Check)
+}    
+VIA3.W.1
+0 0 4 Apr  8 16:15:30 2019                     
+VIA3.W.1 { @ VIA3 must be 0.19 x 0.19 
+  A = NOT RECTANGLE VIA3 == 0.19 BY == 0.19 ORTHOGONAL ONLY
+  A NOT VIA_EXD
+}
+VIA3.S.1
+0 0 3 Apr  8 16:15:30 2019                     
+VIA3.S.1 { @ Min. VIA3 spacing 0.22um 
+  EXT VIA3 < 0.22 ABUT <90 SINGULAR REGION
+}
+VIA3.S.2
+0 0 9 Apr  8 16:15:30 2019                     
+VIA3.S.2 { @ Min. space between two VIA3 regions of a VIA3 array whose size >= 3x3 0.29um 
+  VIA3Merge = SIZE VIA3 BY 0.31 / 2 OVERUNDER  // space <= 0.31 um treated as array
+  // ( ( 3 - 1 ) * 0.19 + ( 3 - 2 ) * 0.31 ) / 2 ) = 0.345
+  MinArray = SIZE VIA3Merge BY 0.345 UNDEROVER
+  // get array larger than or equal to 3 x 3 
+  VIA3Array = MinArray INTERACT VIA3 >= 3 * 3
+  VIA3InArray = VIA3 INTERACT VIA3Array
+  EXT VIA3InArray < 0.29 ABUT <90 
+}
+VIA3.E.1
+0 0 3 Apr  8 16:15:30 2019                     
+VIA3.E.1 { @ Min. extension of a M3 region beyond a VIA3 region 0.005um 
+  ENC VIA3 M3 < 0.005 ABUT <90 OUTSIDE ALSO SINGULAR
+}
+VIA3.E.2
+0 0 6 Apr  8 16:15:30 2019                     
+VIA3.E.2 { @ Min. extension of M3 end-of-line region beyond VIA3 region 0.05um 
+  X = RECTANGLE ENCLOSURE VIA3 M3 ABUT > 0 < 90 GOOD 0.005 0.05 OPPOSITE 0.005 0.05 OPPOSITE
+  Y = ENC [X] M3 < 0.05 ABUT < 90 OPPOSITE
+  Z = VIA3 TOUCH EDGE Y
+  INT Z < 0.19 ABUT == 90 INTERSECTING ONLY   // adjacent narrow sides
+}
+VIA3.R.2
+0 0 24 Apr  8 16:15:30 2019                    
+VIA3.R.2 { @ When M3 or M4 width > 1.4um, more than 1 VIA3 is required.
+           @ if the metal has < 4 vias, vias spacing should be <= 0.71um, 
+  	   @ or if the metal has >=4 vias, at least 4 vias spacing should be <= 1um
+//for wide M3
+    VIA3_EXD = VIA3 NOT VIA_EXD
+    M3HasWide = M3 INTERACT M3Wide1.4
+    M4OvpM3HasWide = M4 AND M3HasWide
+    VIA3MergeC1 = SIZE VIA3_EXD BY (0.71/2) 
+    VIA3InM3C1 = VIA3MergeC1 AND M4OvpM3HasWide
+    GVIA3InM3C1 = VIA3_EXD AND (VIA3InM3C1 ENCLOSE VIA3_EXD > (2 - 1))
+    VIA3MergeC2 = SIZE VIA3_EXD BY (1/2) 
+    VIA3InM3C2 = VIA3MergeC2 AND M4OvpM3HasWide
+    GVIA3InM3C2 = VIA3_EXD AND (VIA3InM3C2 ENCLOSE VIA3_EXD > (4 - 1))
+    M3Check = ((M3Wide1.4 AND M4) OUTSIDE GVIA3InM3C1) OUTSIDE GVIA3InM3C2
+//for wide M4
+    M4HasWide = M4 INTERACT M4Wide1.4
+    M3OvpM4HasWide = M3 AND M4HasWide
+    VIA3InM4C1 = VIA3MergeC1 AND M3OvpM4HasWide
+    GVIA3InM4C1 = VIA3_EXD AND (VIA3InM4C1 ENCLOSE VIA3_EXD > (2 - 1))
+    VIA3InM4C2 = VIA3MergeC2 AND M3OvpM4HasWide
+    GVIA3InM4C2 = VIA3_EXD AND (VIA3InM4C2 ENCLOSE VIA3_EXD > (4 - 1))
+    M4Check = ((M4Wide1.4 AND M3) OUTSIDE GVIA3InM4C1) OUTSIDE GVIA3InM4C2
+    VIA3_EXD NOT OUTSIDE ( M3Check OR M4Check)
+}    
+VIA4.W.1
+0 0 4 Apr  8 16:15:30 2019                     
+VIA4.W.1 { @ VIA4 must be 0.19 x 0.19 
+  A = NOT RECTANGLE VIA4 == 0.19 BY == 0.19 ORTHOGONAL ONLY
+  A NOT VIA_EXD
+}
+VIA4.S.1
+0 0 3 Apr  8 16:15:30 2019                     
+VIA4.S.1 { @ Min. VIA4 spacing 0.22um 
+  EXT VIA4 < 0.22 ABUT <90 SINGULAR REGION
+}
+VIA4.S.2
+0 0 9 Apr  8 16:15:30 2019                     
+VIA4.S.2 { @ Min. space between two VIA4 regions of a VIA4 array whose size >= 3x3 0.29um 
+  VIA4Merge = SIZE VIA4 BY 0.31 / 2 OVERUNDER  // space <= 0.31 um treated as array
+  // ( ( 3 - 1 ) * 0.19 + ( 3 - 2 ) * 0.31 ) / 2 ) = 0.345
+  MinArray = SIZE VIA4Merge BY 0.345 UNDEROVER
+  // get array larger than or equal to 3 x 3 
+  VIA4Array = MinArray INTERACT VIA4 >= 3 * 3
+  VIA4InArray = VIA4 INTERACT VIA4Array
+  EXT VIA4InArray < 0.29 ABUT <90 
+}
+VIA4.E.1
+0 0 3 Apr  8 16:15:30 2019                     
+VIA4.E.1 { @ Min. extension of a M4 region beyond a VIA4 region 0.005um 
+  ENC VIA4 M4 < 0.005 ABUT <90 OUTSIDE ALSO SINGULAR
+}
+VIA4.E.2
+0 0 6 Apr  8 16:15:30 2019                     
+VIA4.E.2 { @ Min. extension of M4 end-of-line region beyond VIA4 region 0.05um 
+  X = RECTANGLE ENCLOSURE VIA4 M4 ABUT > 0 < 90 GOOD 0.005 0.05 OPPOSITE 0.005 0.05 OPPOSITE
+  Y = ENC [X] M4 < 0.05 ABUT < 90 OPPOSITE
+  Z = VIA4 TOUCH EDGE Y
+  INT Z < 0.19 ABUT == 90 INTERSECTING ONLY   // adjacent narrow sides
+}
+VIA4.R.2
+0 0 24 Apr  8 16:15:30 2019                    
+VIA4.R.2 { @ When M4 or M5 width > 1.4um, more than 1 VIA4 is required.
+           @ if the metal has < 4 vias, vias spacing should be <= 0.71um, 
+  	   @ or if the metal has >=4 vias, at least 4 vias spacing should be <= 1um
+//for wide M4
+    VIA4_EXD = VIA4 NOT VIA_EXD
+    M4HasWide = M4 INTERACT M4Wide1.4
+    M5OvpM4HasWide = M5 AND M4HasWide
+    VIA4MergeC1 = SIZE VIA4_EXD BY (0.71/2) 
+    VIA4InM4C1 = VIA4MergeC1 AND M5OvpM4HasWide
+    GVIA4InM4C1 = VIA4_EXD AND (VIA4InM4C1 ENCLOSE VIA4_EXD > (2 - 1))
+    VIA4MergeC2 = SIZE VIA4_EXD BY (1/2) 
+    VIA4InM4C2 = VIA4MergeC2 AND M5OvpM4HasWide
+    GVIA4InM4C2 = VIA4_EXD AND (VIA4InM4C2 ENCLOSE VIA4_EXD > (4 - 1))
+    M4Check = ((M4Wide1.4 AND M5) OUTSIDE GVIA4InM4C1) OUTSIDE GVIA4InM4C2
+//for wide M5
+    M5HasWide = M5 INTERACT M5Wide1.4
+    M4OvpM5HasWide = M4 AND M5HasWide
+    VIA4InM5C1 = VIA4MergeC1 AND M4OvpM5HasWide
+    GVIA4InM5C1 = VIA4_EXD AND (VIA4InM5C1 ENCLOSE VIA4_EXD > (2 - 1))
+    VIA4InM5C2 = VIA4MergeC2 AND M4OvpM5HasWide
+    GVIA4InM5C2 = VIA4_EXD AND (VIA4InM5C2 ENCLOSE VIA4_EXD > (4 - 1))
+    M5Check = ((M5Wide1.4 AND M4) OUTSIDE GVIA4InM5C1) OUTSIDE GVIA4InM5C2
+    VIA4_EXD NOT OUTSIDE ( M4Check OR M5Check)
+}    
+VIA5.W.1
+0 0 4 Apr  8 16:15:30 2019                     
+VIA5.W.1 { @ VIA5 must be 0.19 x 0.19 
+  A = NOT RECTANGLE VIA5 == 0.19 BY == 0.19 ORTHOGONAL ONLY
+  A NOT VIA_EXD
+}
+VIA5.S.1
+0 0 3 Apr  8 16:15:30 2019                     
+VIA5.S.1 { @ Min. VIA5 spacing 0.22um 
+  EXT VIA5 < 0.22 ABUT <90 SINGULAR REGION
+}
+VIA5.S.2
+0 0 9 Apr  8 16:15:30 2019                     
+VIA5.S.2 { @ Min. space between two VIA5 regions of a VIA5 array whose size >= 3x3 0.29um 
+  VIA5Merge = SIZE VIA5 BY 0.31 / 2 OVERUNDER  // space <= 0.31 um treated as array
+  // ( ( 3 - 1 ) * 0.19 + ( 3 - 2 ) * 0.31 ) / 2 ) = 0.345
+  MinArray = SIZE VIA5Merge BY 0.345 UNDEROVER
+  // get array larger than or equal to 3 x 3 
+  VIA5Array = MinArray INTERACT VIA5 >= 3 * 3
+  VIA5InArray = VIA5 INTERACT VIA5Array
+  EXT VIA5InArray < 0.29 ABUT <90 
+}
+VIA5.E.1
+0 0 3 Apr  8 16:15:30 2019                     
+VIA5.E.1 { @ Min. extension of a M5 region beyond a VIA5 region 0.005um 
+  ENC VIA5 M5 < 0.005 ABUT <90 OUTSIDE ALSO SINGULAR
+}
+VIA5.E.2
+0 0 6 Apr  8 16:15:30 2019                     
+VIA5.E.2 { @ Min. extension of M5 end-of-line region beyond VIA5 region 0.05um 
+  X = RECTANGLE ENCLOSURE VIA5 M5 ABUT > 0 < 90 GOOD 0.005 0.05 OPPOSITE 0.005 0.05 OPPOSITE
+  Y = ENC [X] M5 < 0.05 ABUT < 90 OPPOSITE
+  Z = VIA5 TOUCH EDGE Y
+  INT Z < 0.19 ABUT == 90 INTERSECTING ONLY   // adjacent narrow sides
+}
+VIA5.R.2
+0 0 24 Apr  8 16:15:30 2019                    
+VIA5.R.2 { @ When M5 or M6 width > 1.4um, more than 1 VIA5 is required.
+           @ if the metal has < 4 vias, vias spacing should be <= 0.71um, 
+  	   @ or if the metal has >=4 vias, at least 4 vias spacing should be <= 1um
+//for wide M5
+    VIA5_EXD = VIA5 NOT VIA_EXD
+    M5HasWide = M5 INTERACT M5Wide1.4
+    M6OvpM5HasWide = M6 AND M5HasWide
+    VIA5MergeC1 = SIZE VIA5_EXD BY (0.71/2) 
+    VIA5InM5C1 = VIA5MergeC1 AND M6OvpM5HasWide
+    GVIA5InM5C1 = VIA5_EXD AND (VIA5InM5C1 ENCLOSE VIA5_EXD > (2 - 1))
+    VIA5MergeC2 = SIZE VIA5_EXD BY (1/2) 
+    VIA5InM5C2 = VIA5MergeC2 AND M6OvpM5HasWide
+    GVIA5InM5C2 = VIA5_EXD AND (VIA5InM5C2 ENCLOSE VIA5_EXD > (4 - 1))
+    M5Check = ((M5Wide1.4 AND M6) OUTSIDE GVIA5InM5C1) OUTSIDE GVIA5InM5C2
+//for wide M6
+    M6HasWide = M6 INTERACT M6Wide1.4
+    M5OvpM6HasWide = M5 AND M6HasWide
+    VIA5InM6C1 = VIA5MergeC1 AND M5OvpM6HasWide
+    GVIA5InM6C1 = VIA5_EXD AND (VIA5InM6C1 ENCLOSE VIA5_EXD > (2 - 1))
+    VIA5InM6C2 = VIA5MergeC2 AND M5OvpM6HasWide
+    GVIA5InM6C2 = VIA5_EXD AND (VIA5InM6C2 ENCLOSE VIA5_EXD > (4 - 1))
+    M6Check = ((M6Wide1.4 AND M5) OUTSIDE GVIA5InM6C1) OUTSIDE GVIA5InM6C2
+    VIA5_EXD NOT OUTSIDE ( M5Check OR M6Check)
+}    
+VIA6.W.1
+0 0 4 Apr  8 16:15:30 2019                     
+VIA6.W.1 { @ VIA6 must be 0.19 x 0.19 
+  A = NOT RECTANGLE VIA6 == 0.19 BY == 0.19 ORTHOGONAL ONLY
+  A NOT VIA_EXD
+}
+VIA6.S.1
+0 0 3 Apr  8 16:15:30 2019                     
+VIA6.S.1 { @ Min. VIA6 spacing 0.22um 
+  EXT VIA6 < 0.22 ABUT <90 SINGULAR REGION
+}
+VIA6.S.2
+0 0 9 Apr  8 16:15:30 2019                     
+VIA6.S.2 { @ Min. space between two VIA6 regions of a VIA6 array whose size >= 3x3 0.29um 
+  VIA6Merge = SIZE VIA6 BY 0.31 / 2 OVERUNDER  // space <= 0.31 um treated as array
+  // ( ( 3 - 1 ) * 0.19 + ( 3 - 2 ) * 0.31 ) / 2 ) = 0.345
+  MinArray = SIZE VIA6Merge BY 0.345 UNDEROVER
+  // get array larger than or equal to 3 x 3 
+  VIA6Array = MinArray INTERACT VIA6 >= 3 * 3
+  VIA6InArray = VIA6 INTERACT VIA6Array
+  EXT VIA6InArray < 0.29 ABUT <90 
+}
+VIA6.E.1
+0 0 3 Apr  8 16:15:30 2019                     
+VIA6.E.1 { @ Min. extension of a M6 region beyond a VIA6 region 0.005um 
+  ENC VIA6 M6 < 0.005 ABUT <90 OUTSIDE ALSO SINGULAR
+}
+VIA6.E.2
+0 0 6 Apr  8 16:15:30 2019                     
+VIA6.E.2 { @ Min. extension of M6 end-of-line region beyond VIA6 region 0.05um 
+  X = RECTANGLE ENCLOSURE VIA6 M6 ABUT > 0 < 90 GOOD 0.005 0.05 OPPOSITE 0.005 0.05 OPPOSITE
+  Y = ENC [X] M6 < 0.05 ABUT < 90 OPPOSITE
+  Z = VIA6 TOUCH EDGE Y
+  INT Z < 0.19 ABUT == 90 INTERSECTING ONLY   // adjacent narrow sides
+}
+VIA6.R.2
+0 0 24 Apr  8 16:15:30 2019                    
+VIA6.R.2 { @ When M6 or M7 width > 1.4um, more than 1 VIA6 is required.
+           @ if the metal has < 4 vias, vias spacing should be <= 0.71um, 
+  	   @ or if the metal has >=4 vias, at least 4 vias spacing should be <= 1um
+//for wide M6
+    VIA6_EXD = VIA6 NOT VIA_EXD
+    M6HasWide = M6 INTERACT M6Wide1.4
+    M7OvpM6HasWide = M7 AND M6HasWide
+    VIA6MergeC1 = SIZE VIA6_EXD BY (0.71/2) 
+    VIA6InM6C1 = VIA6MergeC1 AND M7OvpM6HasWide
+    GVIA6InM6C1 = VIA6_EXD AND (VIA6InM6C1 ENCLOSE VIA6_EXD > (2 - 1))
+    VIA6MergeC2 = SIZE VIA6_EXD BY (1/2) 
+    VIA6InM6C2 = VIA6MergeC2 AND M7OvpM6HasWide
+    GVIA6InM6C2 = VIA6_EXD AND (VIA6InM6C2 ENCLOSE VIA6_EXD > (4 - 1))
+    M6Check = ((M6Wide1.4 AND M7) OUTSIDE GVIA6InM6C1) OUTSIDE GVIA6InM6C2
+//for wide M7
+    M7HasWide = M7 INTERACT M7Wide1.4
+    M6OvpM7HasWide = M6 AND M7HasWide
+    VIA6InM7C1 = VIA6MergeC1 AND M6OvpM7HasWide
+    GVIA6InM7C1 = VIA6_EXD AND (VIA6InM7C1 ENCLOSE VIA6_EXD > (2 - 1))
+    VIA6InM7C2 = VIA6MergeC2 AND M6OvpM7HasWide
+    GVIA6InM7C2 = VIA6_EXD AND (VIA6InM7C2 ENCLOSE VIA6_EXD > (4 - 1))
+    M7Check = ((M7Wide1.4 AND M6) OUTSIDE GVIA6InM7C1) OUTSIDE GVIA6InM7C2
+    VIA6_EXD NOT OUTSIDE ( M6Check OR M7Check)
+}    
+M8.W.1.THICK
+0 0 3 Apr  8 16:15:30 2019                     
+M8.W.1.THICK { @ Min. M8 width 0.44 um 
+  INT M8 < 0.44 ABUT <90 SINGULAR REGION
+}
+M8.S.1.THICK
+0 0 3 Apr  8 16:15:30 2019                     
+M8.S.1.THICK { @ Min. M8 spacing 0.46 um 
+  EXT M8 < 0.46 ABUT <90 SINGULAR REGION
+}
+M8.E.1.THICK
+0 0 3 Apr  8 16:15:30 2019                     
+M8.E.1.THICK { @ Min. extension of a M8 region beyond a VIA7 region 0.09 um 
+  ENC VIA7 M8 < 0.09 ABUT <90 OUTSIDE ALSO SINGULAR REGION
+}
+M8.S.2.THICK
+0 0 21 Apr  8 16:15:30 2019                    
+M8.S.2.THICK { @ Min. M8 wide metal rule 0.6um 
+  M8_S5 = SHRINK (SHRINK (SHRINK (SHRINK M8Wide7 RIGHT BY 5) LEFT BY 5) TOP BY 5) BOTTOM BY 5
+  M8_G5 = GROW (GROW (GROW (GROW M8_S5 RIGHT BY 5) LEFT BY 5) TOP BY 5) BOTTOM BY 5
+  M8_Wide = M8_G5 AND M8
+  // STEP = 0.46 / 1.415
+  M8_Exp = SIZE M8_Wide BY 1 INSIDE OF M8 STEP 0.322
+  M8_Check = M8 AND (SIZE M8_EXP BY 0.6)
+  M8_Branch = M8_Exp NOT M8_Wide
+  M8_Extend = M8_Check NOT M8_Exp 
+  // Branch length less than 1um
+  M8_BranchEnd = M8_Branch NOT INTERACT M8_Extend
+  M8_WideExp = M8_Wide OR M8_BranchEnd
+  M8_Else = M8_Check NOT INTERACT M8_Exp
+  // Space between end of brench to other metals
+  EXT M8_WideExp M8_Else < 0.6 ABUT > 0 < 89.5 REGION  
+  // Space between extended brench to other metals
+  EXT M8_Exp M8_Extend < 0.6 ABUT > 0 < 89.5 OPPOSITE REGION
+  // Space between wide and branch metals and release check of notch
+  A = EXT M8_Exp < 0.6 ABUT > 0 < 89.5 SPACE REGION
+  A NOT INTERACT M8_Extend
+}
+M8.A.1.THICK
+0 0 3 Apr  8 16:15:30 2019                     
+M8.A.1.THICK { @ Min. M8 area region 0.562 
+  AREA M8 < 0.562
+}
+M8.A.2.THICK
+0 0 3 Apr  8 16:15:30 2019                     
+M8.A.2.THICK { @ Min. M8 enclosed area 0.565
+  HOLES M8 < 0.565
+}  
+VIA7.W.1.THICK
+0 0 4 Apr  8 16:15:30 2019                     
+VIA7.W.1.THICK { @ VIA7 must be 0.36 x 0.36 
+  A = NOT RECTANGLE VIA7 == 0.36 BY == 0.36 ORTHOGONAL ONLY
+  A NOT VIA_EXD
+}
+VIA7.S.1.THICK
+0 0 3 Apr  8 16:15:30 2019                     
+VIA7.S.1.THICK { @ Min. VIA7 spacing 0.35um 
+  EXT VIA7 < 0.35 ABUT <90 SINGULAR REGION
+}
+VIA7.S.2.THICK
+0 0 9 Apr  8 16:15:30 2019                     
+VIA7.S.2.THICK { @ Min. space between two VIA7 regions of a VIA7 array whose size >= 3x3 0.54um 
+  VIA7Merge = SIZE VIA7 BY 0.56 / 2 OVERUNDER  // space <= 0.56 um treated as array
+  // ( ( 3 - 1 ) * 0.36 + ( 3 - 2 ) * 0.56 ) / 2 ) = 0.64
+  MinArray = SIZE VIA7Merge BY 0.64 UNDEROVER
+  // get array larger than or equal to 3 x 3 
+  VIA7Array = MinArray INTERACT VIA7 >= 3 * 3
+  VIA7InArray = VIA7 INTERACT VIA7Array
+  EXT VIA7InArray < 0.54 ABUT <90 
+}
+VIA7.E.1.THICK
+0 0 3 Apr  8 16:15:30 2019                     
+VIA7.E.1.THICK { @ Min. extension of a M7 region beyond a VIA7 region 0.01um 
+  ENC VIA7 M7 < 0.01 ABUT <90 OUTSIDE ALSO SINGULAR
+}
+VIA7.E.2.THICK
+0 0 6 Apr  8 16:15:30 2019                     
+VIA7.E.2.THICK { @ Min. extension of M7 end-of-line region beyond VIA7 region 0.05um 
+  X = RECTANGLE ENCLOSURE VIA7 M7 ABUT > 0 < 90 GOOD 0.01 0.05 OPPOSITE 0.01 0.05 OPPOSITE
+  Y = ENC [X] M7 < 0.05 ABUT <90 OPPOSITE
+  Z = VIA7 TOUCH EDGE Y
+  INT Z < 0.36 ABUT == 90 INTERSECTING ONLY   // adjacent narrow sides
+}
+VIA7.R.2.THICK
+0 0 17 Apr  8 16:15:30 2019                    
+VIA7.R.2.THICK { @ When M7 or M8 width > 1.8um, more than 1 VIA7 with space <= 1.7um is required.
+//for wide M7
+    VIA7_EXD = VIA7 NOT VIA_EXD
+    M7HasWide = M7 INTERACT M7Wide1.8
+    M8OvpM7HasWide = M8 AND M7HasWide
+    VIA7MergeC1 = SIZE VIA7_EXD BY (1.7/2) 
+    VIA7InM7C1 = VIA7MergeC1 AND M8OvpM7HasWide
+    GVIA7InM7C1 = VIA7_EXD AND (VIA7InM7C1 ENCLOSE VIA7_EXD > (2 - 1))
+    M7Check = (M7Wide1.8 AND M8) OUTSIDE GVIA7InM7C1
+//for wide M8
+    M8HasWide = M8 INTERACT M8Wide1.8
+    M7OvpM8HasWide = M7 AND M8HasWide
+    VIA7InM8C1 = VIA7MergeC1 AND M7OvpM8HasWide
+    GVIA7InM8C1 = VIA7_EXD AND (VIA7InM8C1 ENCLOSE VIA7_EXD > (2 - 1))
+    M8Check = (M8Wide1.8 AND M7) OUTSIDE GVIA7InM8C1
+    VIA7_EXD NOT OUTSIDE ( M7Check OR M8Check)
+}    
+M1.R.1L
+0 0 4 Apr  8 16:15:30 2019                     
+M1.R.1L { @ M1 area coverage must be >= 20% <= 80% range over 200umx200um 
+  DENSITY M1x CHIP_CHAMFERED < 0.2 WINDOW 200 STEP 100 BACKUP PRINT M1xL.density 
+    [ AREA(M1x)/AREA(CHIP_CHAMFERED) ]
+}
+M1.R.1H
+0 0 4 Apr  8 16:15:30 2019                     
+M1.R.1H { @ M1 area coverage must be >= 20% <= 80% range over 200umx200um 
+  DENSITY M1x CHIP_CHAMFERED > 0.8 WINDOW 200 STEP 100 BACKUP PRINT M1xH.density 
+    [ AREA(M1x)/AREA(CHIP_CHAMFERED) ]
+}
+M2.R.1L
+0 0 4 Apr  8 16:15:30 2019                     
+M2.R.1L { @ M2 area coverage must be >= 20% <= 80% range over 200umx200um 
+  DENSITY M2x CHIP_CHAMFERED < 0.2 WINDOW 200 STEP 100 BACKUP PRINT M2xL.density 
+    [ AREA(M2x)/AREA(CHIP_CHAMFERED) ]
+}
+M2.R.1H
+0 0 4 Apr  8 16:15:30 2019                     
+M2.R.1H { @ M2 area coverage must be >= 20% <= 80% range over 200umx200um 
+  DENSITY M2x CHIP_CHAMFERED > 0.8 WINDOW 200 STEP 100 BACKUP PRINT M2xH.density 
+    [ AREA(M2x)/AREA(CHIP_CHAMFERED) ]
+}
+M3.R.1L
+0 0 4 Apr  8 16:15:30 2019                     
+M3.R.1L { @ M3 area coverage must be >= 20% <= 80% range over 200umx200um 
+  DENSITY M3x CHIP_CHAMFERED < 0.2 WINDOW 200 STEP 100 BACKUP PRINT M3xL.density 
+    [ AREA(M3x)/AREA(CHIP_CHAMFERED) ]
+}
+M3.R.1H
+0 0 4 Apr  8 16:15:30 2019                     
+M3.R.1H { @ M3 area coverage must be >= 20% <= 80% range over 200umx200um 
+  DENSITY M3x CHIP_CHAMFERED > 0.8 WINDOW 200 STEP 100 BACKUP PRINT M3xH.density 
+    [ AREA(M3x)/AREA(CHIP_CHAMFERED) ]
+}
+M4.R.1L
+0 0 4 Apr  8 16:15:30 2019                     
+M4.R.1L { @ M4 area coverage must be >= 20% <= 80% range over 200umx200um 
+  DENSITY M4x CHIP_CHAMFERED < 0.2 WINDOW 200 STEP 100 BACKUP PRINT M4xL.density 
+    [ AREA(M4x)/AREA(CHIP_CHAMFERED) ]
+}
+M4.R.1H
+0 0 4 Apr  8 16:15:30 2019                     
+M4.R.1H { @ M4 area coverage must be >= 20% <= 80% range over 200umx200um 
+  DENSITY M4x CHIP_CHAMFERED > 0.8 WINDOW 200 STEP 100 BACKUP PRINT M4xH.density 
+    [ AREA(M4x)/AREA(CHIP_CHAMFERED) ]
+}
+M5.R.1L
+0 0 4 Apr  8 16:15:30 2019                     
+M5.R.1L { @ M5 area coverage must be >= 20% <= 80% range over 200umx200um 
+  DENSITY M5x CHIP_CHAMFERED < 0.2 WINDOW 200 STEP 100 BACKUP PRINT M5xL.density 
+    [ AREA(M5x)/AREA(CHIP_CHAMFERED) ]
+}
+M5.R.1H
+0 0 4 Apr  8 16:15:30 2019                     
+M5.R.1H { @ M5 area coverage must be >= 20% <= 80% range over 200umx200um 
+  DENSITY M5x CHIP_CHAMFERED > 0.8 WINDOW 200 STEP 100 BACKUP PRINT M5xH.density 
+    [ AREA(M5x)/AREA(CHIP_CHAMFERED) ]
+}
+M6.R.1L
+0 0 4 Apr  8 16:15:30 2019                     
+M6.R.1L { @ M6 area coverage must be >= 20% <= 80% range over 200umx200um 
+  DENSITY M6x CHIP_CHAMFERED < 0.2 WINDOW 200 STEP 100 BACKUP PRINT M6xL.density 
+    [ AREA(M6x)/AREA(CHIP_CHAMFERED) ]
+}
+M6.R.1H
+0 0 4 Apr  8 16:15:30 2019                     
+M6.R.1H { @ M6 area coverage must be >= 20% <= 80% range over 200umx200um 
+  DENSITY M6x CHIP_CHAMFERED > 0.8 WINDOW 200 STEP 100 BACKUP PRINT M6xH.density 
+    [ AREA(M6x)/AREA(CHIP_CHAMFERED) ]
+}
+M7.R.1L
+0 0 4 Apr  8 16:15:30 2019                     
+M7.R.1L { @ M7 area coverage must be >= 20% <= 80% range over 200umx200um 
+  DENSITY M7x CHIP_CHAMFERED < 0.2 WINDOW 200 STEP 100 BACKUP PRINT M7xL.density 
+    [ AREA(M7x)/AREA(CHIP_CHAMFERED) ]
+}
+M7.R.1H
+0 0 4 Apr  8 16:15:30 2019                     
+M7.R.1H { @ M7 area coverage must be >= 20% <= 80% range over 200umx200um 
+  DENSITY M7x CHIP_CHAMFERED > 0.8 WINDOW 200 STEP 100 BACKUP PRINT M7xH.density 
+    [ AREA(M7x)/AREA(CHIP_CHAMFERED) ]
+}
+M8.R.1L
+0 0 4 Apr  8 16:15:30 2019                     
+M8.R.1L { @ M8 area coverage must be >= 20% <= 80% range over 200umx200um 
+  DENSITY M8x CHIP_CHAMFERED < 0.2 WINDOW 200 STEP 100 BACKUP PRINT M8xL.density 
+    [ AREA(M8x)/AREA(CHIP_CHAMFERED) ]
+}
+M8.R.1H
+0 0 4 Apr  8 16:15:30 2019                     
+M8.R.1H { @ M8 area coverage must be >= 20% <= 80% range over 200umx200um 
+  DENSITY M8x_NOT_CB CHIP_CHAMFERED_NOT_CB > 0.8 WINDOW 200 STEP 100 BACKUP PRINT M8xH.density 
+    [ AREA(M8x_NOT_CB)/AREA(CHIP_CHAMFERED_NOT_CB) ]
+}
+ADP.R.2A
+0 0 20 Apr  8 16:15:30 2019                    
+ADP.R.2A { @ Dummy pattern structure must be Mtop~M1/VIAtop~VIA1/CO/PP/OD 
+  CSRDMY NOT INTERACT ODi 
+  CSRDMY NOT INTERACT PIMPi 
+  CSRDMY NOT INTERACT M1x 
+  CSRDMY NOT INTERACT M2x 
+  CSRDMY NOT INTERACT M3x 
+  CSRDMY NOT INTERACT M4x 
+  CSRDMY NOT INTERACT M5x 
+  CSRDMY NOT INTERACT M6x 
+  CSRDMY NOT INTERACT M7x 
+  CSRDMY NOT INTERACT M8x 
+  CSRDMY NOT ENCLOSE CONTi 
+  CSRDMY NOT ENCLOSE VIA12i 
+  CSRDMY NOT ENCLOSE VIA23i 
+  CSRDMY NOT ENCLOSE VIA34i 
+  CSRDMY NOT ENCLOSE VIA45i 
+  CSRDMY NOT ENCLOSE VIA56i 
+  CSRDMY NOT ENCLOSE VIA67i 
+  CSRDMY NOT ENCLOSE VIA78i 
+}
+ADP.R.2B
+0 0 20 Apr  8 16:15:30 2019                    
+ADP.R.2B { @ Dummy pattern structure must be Mtop~M1/VIAtop~VIA1/CO/PP/OD
+  SEALRING NOT ODi 
+  SEALRING NOT PIMPi 
+  SEALRING NOT M1x 
+  SEALRING NOT M2x 
+  SEALRING NOT M3x 
+  SEALRING NOT M4x 
+  SEALRING NOT M5x 
+  SEALRING NOT M6x 
+  SEALRING NOT M7x 
+  SEALRING NOT M8x 
+  SR_M1 NOT ENCLOSE CONTi 
+  SR_M1 NOT ENCLOSE VIA12i 
+  SR_M1 NOT ENCLOSE VIA23i 
+  SR_M1 NOT ENCLOSE VIA34i 
+  SR_M1 NOT ENCLOSE VIA45i 
+  SR_M1 NOT ENCLOSE VIA56i 
+  SR_M1 NOT ENCLOSE VIA67i 
+  SR_M1 NOT ENCLOSE VIA78i 
+}
+ADP.R.2C
+0 0 3 Apr  8 16:15:30 2019                     
+ADP.R.2C { @ Dummy pattern structure must have CSRDMY
+  SR_EDGE NOT INTERACT CSRDMY
+}
+CSR_USER_GUIDE.1.M1
+0 0 3 Apr  8 16:15:30 2019                     
+CSR_USER_GUIDE.1.M1 { @ METAL1 must be stacked and coincident the edge .
+   XOR CC_M1 CC_M2 
+}
+CSR_USER_GUIDE.1.M2
+0 0 3 Apr  8 16:15:30 2019                     
+CSR_USER_GUIDE.1.M2 { @ METAL2 must be stacked and coincident the edge .
+   XOR CC_M2 CC_M3 
+}
+CSR_USER_GUIDE.1.M3
+0 0 3 Apr  8 16:15:30 2019                     
+CSR_USER_GUIDE.1.M3 { @ METAL3 must be stacked and coincident the edge .
+   XOR CC_M3 CC_M4 
+}
+CSR_USER_GUIDE.1.M4
+0 0 3 Apr  8 16:15:30 2019                     
+CSR_USER_GUIDE.1.M4 { @ METAL4 must be stacked and coincident the edge .
+   XOR CC_M4 CC_M5 
+}
+CSR_USER_GUIDE.1.M5
+0 0 3 Apr  8 16:15:30 2019                     
+CSR_USER_GUIDE.1.M5 { @ METAL5 must be stacked and coincident the edge .
+   XOR CC_M5 CC_M6 
+}
+CSR_USER_GUIDE.1.M6
+0 0 3 Apr  8 16:15:30 2019                     
+CSR_USER_GUIDE.1.M6 { @ METAL6 must be stacked and coincident the edge .
+   XOR CC_M6 CC_M7 
+}
+CSR_USER_GUIDE.1.M7
+0 0 3 Apr  8 16:15:30 2019                     
+CSR_USER_GUIDE.1.M7 { @ METAL7 must be stacked and coincident the edge .
+   XOR CC_M7 CC_M8 
+}
+CSR_USER_GUIDE.2.M1
+0 0 5 Apr  8 16:15:30 2019                     
+CSR_USER_GUIDE.2.M1 { @ METAL1 at same level have a exactive spacing value 1.5.
+   CC_MH1 = HOLES CC_M1
+   INT CC_MH1 < 1.5 ABUT < 90 PARALLEL ONLY
+   SIZE CC_MH1 BY 0.75 UNDEROVER
+}
+CSR_USER_GUIDE.2.M2
+0 0 5 Apr  8 16:15:30 2019                     
+CSR_USER_GUIDE.2.M2 { @ METAL2 at same level have a exactive spacing value 1.5.
+   CC_MH2 = HOLES CC_M2
+   INT CC_MH2 < 1.5 ABUT < 90 PARALLEL ONLY
+   SIZE CC_MH2 BY 0.75 UNDEROVER
+}
+CSR_USER_GUIDE.2.M3
+0 0 5 Apr  8 16:15:30 2019                     
+CSR_USER_GUIDE.2.M3 { @ METAL3 at same level have a exactive spacing value 1.5.
+   CC_MH3 = HOLES CC_M3
+   INT CC_MH3 < 1.5 ABUT < 90 PARALLEL ONLY
+   SIZE CC_MH3 BY 0.75 UNDEROVER
+}
+CSR_USER_GUIDE.2.M4
+0 0 5 Apr  8 16:15:30 2019                     
+CSR_USER_GUIDE.2.M4 { @ METAL4 at same level have a exactive spacing value 1.5.
+   CC_MH4 = HOLES CC_M4
+   INT CC_MH4 < 1.5 ABUT < 90 PARALLEL ONLY
+   SIZE CC_MH4 BY 0.75 UNDEROVER
+}
+CSR_USER_GUIDE.2.M5
+0 0 5 Apr  8 16:15:30 2019                     
+CSR_USER_GUIDE.2.M5 { @ METAL5 at same level have a exactive spacing value 1.5.
+   CC_MH5 = HOLES CC_M5
+   INT CC_MH5 < 1.5 ABUT < 90 PARALLEL ONLY
+   SIZE CC_MH5 BY 0.75 UNDEROVER
+}
+CSR_USER_GUIDE.2.M6
+0 0 5 Apr  8 16:15:30 2019                     
+CSR_USER_GUIDE.2.M6 { @ METAL6 at same level have a exactive spacing value 1.5.
+   CC_MH6 = HOLES CC_M6
+   INT CC_MH6 < 1.5 ABUT < 90 PARALLEL ONLY
+   SIZE CC_MH6 BY 0.75 UNDEROVER
+}
+CSR_USER_GUIDE.2.M7
+0 0 5 Apr  8 16:15:30 2019                     
+CSR_USER_GUIDE.2.M7 { @ METAL7 at same level have a exactive spacing value 1.5.
+   CC_MH7 = HOLES CC_M7
+   INT CC_MH7 < 1.5 ABUT < 90 PARALLEL ONLY
+   SIZE CC_MH7 BY 0.75 UNDEROVER
+}
+CSR_USER_GUIDE.2.M8
+0 0 5 Apr  8 16:15:30 2019                     
+CSR_USER_GUIDE.2.M8 { @ METAL8 at same level have a exactive spacing value 1.5.
+   CC_MH8 = HOLES CC_M8
+   INT CC_MH8 < 1.5 ABUT < 90 PARALLEL ONLY
+   SIZE CC_MH8 BY 0.75 UNDEROVER
+}
+CSR_USER_GUIDE.2.MD
+0 0 5 Apr  8 16:15:30 2019                     
+CSR_USER_GUIDE.2.MD { @ MD at same level have a exactive spacing value 1.5.
+   CC_MHD = HOLES CC_MD
+   INT CC_MHD < 1.5 ABUT < 90 PARALLEL ONLY
+   SIZE CC_MHD BY 0.75 UNDEROVER
+}
+ADP.S.1.CO
+0 0 3 Apr  8 16:15:30 2019                     
+ADP.S.1.CO { @ Min. space between two CO  0.32um.
+   EXT CC_CO < 0.32 ABUT < 90 SINGULAR  
+}
+ADP.S.2.VIA1
+0 0 3 Apr  8 16:15:30 2019                     
+ADP.S.2.VIA1 { @ Min. space between two VIA1 at the same level 0.29um.
+   EXT CC_V1 < 0.29 ABUT < 90 SINGULAR 
+}
+ADP.S.2.VIA2
+0 0 3 Apr  8 16:15:30 2019                     
+ADP.S.2.VIA2 { @ Min. space between two VIA2 at the same level 0.29um.
+   EXT CC_V2 < 0.29 ABUT < 90 SINGULAR 
+}
+ADP.S.2.VIA3
+0 0 3 Apr  8 16:15:30 2019                     
+ADP.S.2.VIA3 { @ Min. space between two VIA3 at the same level 0.29um.
+   EXT CC_V3 < 0.29 ABUT < 90 SINGULAR 
+}
+ADP.S.2.VIA4
+0 0 3 Apr  8 16:15:30 2019                     
+ADP.S.2.VIA4 { @ Min. space between two VIA4 at the same level 0.29um.
+   EXT CC_V4 < 0.29 ABUT < 90 SINGULAR 
+}
+ADP.S.2.VIA5
+0 0 3 Apr  8 16:15:30 2019                     
+ADP.S.2.VIA5 { @ Min. space between two VIA5 at the same level 0.29um.
+   EXT CC_V5 < 0.29 ABUT < 90 SINGULAR 
+}
+ADP.S.2.VIA6
+0 0 3 Apr  8 16:15:30 2019                     
+ADP.S.2.VIA6 { @ Min. space between two VIA6 at the same level 0.29um.
+   EXT CC_V6 < 0.29 ABUT < 90 SINGULAR 
+}
+ADP.S.3.VIA7
+0 0 3 Apr  8 16:15:30 2019                     
+ADP.S.3.VIA7 { @ Min. space between two VIA7  0.36um.
+   EXT CC_V7 < 0.36 ABUT < 90 SINGULAR 
+}
+ADP.S.3.VIAD
+0 0 3 Apr  8 16:15:30 2019                     
+ADP.S.3.VIAD { @ Min. space between two VIAD  0.36um.
+   EXT CC_VD < 0.36 ABUT < 90 SINGULAR 
+}
+SR_USER_GUIDE.1.M1
+0 0 9 Apr  8 16:15:30 2019                     
+SR_USER_GUIDE.1.M1 { @ SEAL-RING exactive space between M1 2.3um.
+   EXT SR_MW1 SR_MS1 < 2.3 ABUT < 90 PARALLEL ONLY ANGLED == 0
+   EXT SR_MW1 SR_MS1 < 2.298 ABUT < 90 OPPOSITE PARALLEL ONLY ANGLED == 2
+   K1 = EXPAND EDGE SR_MW1 OUTSIDE BY 2.3
+   B1 = EXPAND EDGE SR_MS1 OUTSIDE BY 2.3 
+   C1 = K1 OR B1
+   Z1 = C1 NOT SR_M1
+   SIZE Z1 BY 1.15 UNDEROVER
+}
+SR_USER_GUIDE.1.M2
+0 0 9 Apr  8 16:15:30 2019                     
+SR_USER_GUIDE.1.M2 { @ SEAL-RING exactive space between M2 2.3um.
+   EXT SR_MW2 SR_MS2 < 2.3 ABUT < 90 PARALLEL ONLY ANGLED == 0
+   EXT SR_MW2 SR_MS2 < 2.298 ABUT < 90 OPPOSITE PARALLEL ONLY ANGLED == 2
+   K2 = EXPAND EDGE SR_MW2 OUTSIDE BY 2.3
+   B2 = EXPAND EDGE SR_MS2 OUTSIDE BY 2.3 
+   C2 = K2 OR B2
+   Z2 = C2 NOT SR_M2
+   SIZE Z2 BY 1.15 UNDEROVER
+}
+SR_USER_GUIDE.1.M3
+0 0 9 Apr  8 16:15:30 2019                     
+SR_USER_GUIDE.1.M3 { @ SEAL-RING exactive space between M3 2.3um.
+   EXT SR_MW3 SR_MS3 < 2.3 ABUT < 90 PARALLEL ONLY ANGLED == 0
+   EXT SR_MW3 SR_MS3 < 2.298 ABUT < 90 OPPOSITE PARALLEL ONLY ANGLED == 2
+   K3 = EXPAND EDGE SR_MW3 OUTSIDE BY 2.3
+   B3 = EXPAND EDGE SR_MS3 OUTSIDE BY 2.3 
+   C3 = K3 OR B3
+   Z3 = C3 NOT SR_M3
+   SIZE Z3 BY 1.15 UNDEROVER
+}
+SR_USER_GUIDE.1.M4
+0 0 9 Apr  8 16:15:30 2019                     
+SR_USER_GUIDE.1.M4 { @ SEAL-RING exactive space between M4 2.3um.
+   EXT SR_MW4 SR_MS4 < 2.3 ABUT < 90 PARALLEL ONLY ANGLED == 0
+   EXT SR_MW4 SR_MS4 < 2.298 ABUT < 90 OPPOSITE PARALLEL ONLY ANGLED == 2
+   K4 = EXPAND EDGE SR_MW4 OUTSIDE BY 2.3
+   B4 = EXPAND EDGE SR_MS4 OUTSIDE BY 2.3 
+   C4 = K4 OR B4
+   Z4 = C4 NOT SR_M4
+   SIZE Z4 BY 1.15 UNDEROVER
+}
+SR_USER_GUIDE.1.M5
+0 0 9 Apr  8 16:15:30 2019                     
+SR_USER_GUIDE.1.M5 { @ SEAL-RING exactive space between M5 2.3um.
+   EXT SR_MW5 SR_MS5 < 2.3 ABUT < 90 PARALLEL ONLY ANGLED == 0
+   EXT SR_MW5 SR_MS5 < 2.298 ABUT < 90 OPPOSITE PARALLEL ONLY ANGLED == 2
+   K5 = EXPAND EDGE SR_MW5 OUTSIDE BY 2.3
+   B5 = EXPAND EDGE SR_MS5 OUTSIDE BY 2.3 
+   C5 = K5 OR B5
+   Z5 = C5 NOT SR_M5
+   SIZE Z5 BY 1.15 UNDEROVER
+}
+SR_USER_GUIDE.1.M6
+0 0 9 Apr  8 16:15:30 2019                     
+SR_USER_GUIDE.1.M6 { @ SEAL-RING exactive space between M6 2.3um.
+   EXT SR_MW6 SR_MS6 < 2.3 ABUT < 90 PARALLEL ONLY ANGLED == 0
+   EXT SR_MW6 SR_MS6 < 2.298 ABUT < 90 OPPOSITE PARALLEL ONLY ANGLED == 2
+   K6 = EXPAND EDGE SR_MW6 OUTSIDE BY 2.3
+   B6 = EXPAND EDGE SR_MS6 OUTSIDE BY 2.3 
+   C6 = K6 OR B6
+   Z6 = C6 NOT SR_M6
+   SIZE Z6 BY 1.15 UNDEROVER
+}
+SR_USER_GUIDE.1.M7
+0 0 9 Apr  8 16:15:30 2019                     
+SR_USER_GUIDE.1.M7 { @ SEAL-RING exactive space between M7 2.3um.
+   EXT SR_MW7 SR_MS7 < 2.3 ABUT < 90 PARALLEL ONLY ANGLED == 0
+   EXT SR_MW7 SR_MS7 < 2.298 ABUT < 90 OPPOSITE PARALLEL ONLY ANGLED == 2
+   K7 = EXPAND EDGE SR_MW7 OUTSIDE BY 2.3
+   B7 = EXPAND EDGE SR_MS7 OUTSIDE BY 2.3 
+   C7 = K7 OR B7
+   Z7 = C7 NOT SR_M7
+   SIZE Z7 BY 1.15 UNDEROVER
+}
+SR_USER_GUIDE.1.M8
+0 0 9 Apr  8 16:15:30 2019                     
+SR_USER_GUIDE.1.M8 { @ SEAL-RING exactive space between M8 2.3um.
+   EXT SR_MW8 SR_MS8 < 2.3 ABUT < 90 PARALLEL ONLY ANGLED == 0
+   EXT SR_MW8 SR_MS8 < 2.298 ABUT < 90 OPPOSITE PARALLEL ONLY ANGLED == 2
+   K8 = EXPAND EDGE SR_MW8 OUTSIDE BY 2.3
+   B8 = EXPAND EDGE SR_MS8 OUTSIDE BY 2.3 
+   C8 = K8 OR B8
+   Z8 = C8 NOT SR_M8
+   SIZE Z8 BY 1.15 UNDEROVER
+}
+SR_USER_GUIDE.1.MD
+0 0 9 Apr  8 16:15:30 2019                     
+SR_USER_GUIDE.1.MD { @ SEAL-RING exactive space between MD 2.3um.
+   EXT SR_MWD SR_MSD < 2.3 ABUT < 90 PARALLEL ONLY ANGLED == 0
+   EXT SR_MWD SR_MSD < 2.298 ABUT < 90 OPPOSITE PARALLEL ONLY ANGLED == 2
+   KD = EXPAND EDGE SR_MWD OUTSIDE BY 2.3
+   BD = EXPAND EDGE SR_MSD OUTSIDE BY 2.3 
+   CD = KD OR BD
+   ZD = CD NOT SR_MD
+   SIZE ZD BY 1.15 UNDEROVER
+}
+SR_USER_GUIDE.3.CO
+0 0 4 Apr  8 16:15:30 2019                     
+SR_USER_GUIDE.3.CO { @ SEAL-RING CO width respective 0.16.
+   INT SR_CO < 0.16 ABUT < 90 OPPOSITE PARALLEL ONLY 
+   SIZE SR_CO BY 0.084 UNDEROVER
+}
+SR_USER_GUIDE.3.VIA1
+0 0 4 Apr  8 16:15:30 2019                     
+SR_USER_GUIDE.3.VIA1 { @ SEAL-RING VIA1 width respective 0.13.
+   INT SR_V1 < 0.13 ABUT < 90 OPPOSITE PARALLEL ONLY 
+   SIZE SR_V1 BY 0.068 UNDEROVER
+}
+SR_USER_GUIDE.3.VIA2
+0 0 4 Apr  8 16:15:30 2019                     
+SR_USER_GUIDE.3.VIA2 { @ SEAL-RING VIA2 width respective 0.13.
+   INT SR_V2 < 0.13 ABUT < 90 OPPOSITE PARALLEL ONLY 
+   SIZE SR_V2 BY 0.068 UNDEROVER
+}
+SR_USER_GUIDE.3.VIA3
+0 0 4 Apr  8 16:15:30 2019                     
+SR_USER_GUIDE.3.VIA3 { @ SEAL-RING VIA3 width respective 0.13.
+   INT SR_V3 < 0.13 ABUT < 90 OPPOSITE PARALLEL ONLY 
+   SIZE SR_V3 BY 0.068 UNDEROVER
+}
+SR_USER_GUIDE.3.VIA4
+0 0 4 Apr  8 16:15:30 2019                     
+SR_USER_GUIDE.3.VIA4 { @ SEAL-RING VIA4 width respective 0.13.
+   INT SR_V4 < 0.13 ABUT < 90 OPPOSITE PARALLEL ONLY 
+   SIZE SR_V4 BY 0.068 UNDEROVER
+}
+SR_USER_GUIDE.3.VIA5
+0 0 4 Apr  8 16:15:30 2019                     
+SR_USER_GUIDE.3.VIA5 { @ SEAL-RING VIA5 width respective 0.13.
+   INT SR_V5 < 0.13 ABUT < 90 OPPOSITE PARALLEL ONLY 
+   SIZE SR_V5 BY 0.068 UNDEROVER
+}
+SR_USER_GUIDE.3.VIA6
+0 0 4 Apr  8 16:15:30 2019                     
+SR_USER_GUIDE.3.VIA6 { @ SEAL-RING VIA6 width respective 0.13.
+   INT SR_V6 < 0.13 ABUT < 90 OPPOSITE PARALLEL ONLY 
+   SIZE SR_V6 BY 0.068 UNDEROVER
+}
+SR_USER_GUIDE.3.VIA7
+0 0 4 Apr  8 16:15:30 2019                     
+SR_USER_GUIDE.3.VIA7 { @ SEAL-RING VIA7 width respective 0.28 .
+   INT SR_V7 < 0.28 ABUT < 90 OPPOSITE PARALLEL ONLY 
+   SIZE SR_V7 BY 0.142 UNDEROVER
+}
+SR_USER_GUIDE.3.VIAD
+0 0 4 Apr  8 16:15:30 2019                     
+SR_USER_GUIDE.3.VIAD { @ SEAL-RING VIAD width respective 0.28 .
+   INT SR_VD < 0.28 ABUT < 90 OPPOSITE PARALLEL ONLY 
+   SIZE SR_VD BY 0.142 UNDEROVER
+}
+CDU.I.1
+0 0 6 Apr  8 16:15:30 2019                     
+CDU.I.1 { @ CDUDMY must be inside the assembly isolation beside seal ring.
+   PAD_HOLES = HOLES ALL_PAD INNER
+   MPW_CORE = SIZE PAD_HOLES BY -20
+   CDUDMY AND MPW_CORE
+   SR_EDGE NOT INTERACT CDUDMY
+}
+CDU.I.2
+0 0 6 Apr  8 16:15:30 2019                     
+CDU.I.2 { @ OD/Poly/CO/M1 must be inside CDUDMY.
+   CDUDMY NOT INTERACT ODi
+   CDUDMY NOT INTERACT POLYGi
+   CDUDMY NOT INTERACT CONTi
+   CDUDMY NOT INTERACT METAL1i
+}
+LAT.2
+0 0 3 Apr  8 16:15:30 2019                     
+LAT.2 { @ Min. I/O - NMOS to PMOS space 15um 
+  EXT EPMOS ENMOS < 15 ABUT <90 >0 SINGULAR
+}
+LAT.3P
+0 0 17 Apr  8 16:15:30 2019                    
+LAT.3P { @ N-well pickup OD to PMOS space > 30um
+  NWELLi_US = SIZE NWELLi BY - 0.165 // 0.24/1.415 = 0.165
+  // 30/1.415 = 21.201, (0.62 + 2 * 0.165)/1.415 = 0.671
+  NSTPi_OS = SIZE NSTPi BY 21.201 INSIDE OF NWELLi_US STEP 0.671 TRUNCATE 0.671
+  PASDi_FAR = PASDi NOT NSTPi_OS
+  PASDi_FAR_FILTER = SIZE PASDi_FAR BY 30
+  NSTPi_NEAR = NSTPi INTERACT PASDi_FAR_FILTER
+  // doing an more accurate sizing
+  NSTPi_NEAR_OS = SIZE NSTPi_NEAR BY 0.10
+  NSTPi_90_CORNER = INT NSTPi_NEAR_OS < 0.06 ABUT==90 INTERSECTING ONLY REGION
+  NSTPi_OCT = NSTPi_NEAR_OS NOT NSTPi_90_CORNER
+  NSTPi_135_CORNER = INT NSTPi_OCT < 0.04 ABUT>134<136 INTERSECTING ONLY REGION
+  NSTPi_HEX = NSTPi_OCT NOT NSTPi_135_CORNER
+  // 30-0.10 = 29.9
+  NSTPi_HEX_OS = SIZE NSTPi_HEX BY 29.9 INSIDE OF NWELLi_US STEP 0.671 TRUNCATE 0.671
+  PASDi_FAR NOT NSTPi_HEX_OS
+}
+LAT.3N
+0 0 17 Apr  8 16:15:30 2019                    
+LAT.3N { @ P-well pickup OD to NMOS space > 30um
+  PWELi_US = SIZE PWELi BY - 0.165 // 0.24/1.415 = 0.165
+  // 30/1.415 = 21.201, (0.62 + 2 * 0.165)/1.415 = 0.671
+  PSTPi_OS = SIZE PSTPi BY 21.201 INSIDE OF PWELi_US STEP 0.671 TRUNCATE 0.671
+  NASDi_FAR = NASDi NOT PSTPi_OS
+  NASDi_FAR_FILTER = SIZE NASDi_FAR BY 30
+  PSTPi_NEAR = PSTPi INTERACT NASDi_FAR_FILTER
+  // doing an more accurate sizing
+  PSTPi_NEAR_OS = SIZE PSTPi_NEAR BY 0.10
+  PSTPi_90_CORNER = INT PSTPi_NEAR_OS < 0.06 ABUT==90 INTERSECTING ONLY REGION
+  PSTPi_OCT = PSTPi_NEAR_OS NOT PSTPi_90_CORNER
+  PSTPi_135_CORNER = INT PSTPi_OCT < 0.04 ABUT>134<136 INTERSECTING ONLY REGION
+  PSTPi_HEX = PSTPi_OCT NOT PSTPi_135_CORNER
+  // 30-0.10 = 29.9
+  PSTPi_HEX_OS = SIZE PSTPi_HEX BY 29.9 INSIDE OF PWELi_US STEP 0.671 TRUNCATE 0.671
+  NASDi_FAR NOT PSTPi_HEX_OS
+}
+AMS.1.M1
+0 0 5 Apr  8 16:15:30 2019                     
+AMS.1.M1 { @ Wide M1 with >= 12um wide and >= 30um long must have hole 
+   M1WideEXD = M1Wide7 NOT SLT_EXD
+   X = (SIZE M1WideEXD BY 5.999 UNDEROVER) AND M1WideEXD
+   ENCLOSE RECTANGLE X 12 30
+}
+AM.R.3.M1
+0 0 6 Apr  8 16:15:30 2019                     
+AM.R.3.M1 { @ Min. Hole density for metal lines that need to apply slot  9%
+   NET AREA RATIO LM1X M1HoleD < 0.09
+   [
+      AREA(M1HoleD) / AREA(LM1X)
+   ] RDB M1Hole.density LM1X M1HoleD 
+}
+AMS.1.M2
+0 0 5 Apr  8 16:15:30 2019                     
+AMS.1.M2 { @ Wide M2 with >= 12um wide and >= 30um long must have hole 
+   M2WideEXD = M2Wide7 NOT SLT_EXD
+   X = (SIZE M2WideEXD BY 5.999 UNDEROVER) AND M2WideEXD
+   ENCLOSE RECTANGLE X 12 30
+}
+AM.R.3.M2
+0 0 6 Apr  8 16:15:30 2019                     
+AM.R.3.M2 { @ Min. Hole density for metal lines that need to apply slot  9%
+   NET AREA RATIO LM2X M2HoleD < 0.09
+   [
+      AREA(M2HoleD) / AREA(LM2X)
+   ] RDB M2Hole.density LM2X M2HoleD 
+}
+AMS.1.M3
+0 0 5 Apr  8 16:15:30 2019                     
+AMS.1.M3 { @ Wide M3 with >= 12um wide and >= 30um long must have hole 
+   M3WideEXD = M3Wide7 NOT SLT_EXD
+   X = (SIZE M3WideEXD BY 5.999 UNDEROVER) AND M3WideEXD
+   ENCLOSE RECTANGLE X 12 30
+}
+AM.R.3.M3
+0 0 6 Apr  8 16:15:30 2019                     
+AM.R.3.M3 { @ Min. Hole density for metal lines that need to apply slot  9%
+   NET AREA RATIO LM3X M3HoleD < 0.09
+   [
+      AREA(M3HoleD) / AREA(LM3X)
+   ] RDB M3Hole.density LM3X M3HoleD 
+}
+AMS.1.M4
+0 0 5 Apr  8 16:15:30 2019                     
+AMS.1.M4 { @ Wide M4 with >= 12um wide and >= 30um long must have hole 
+   M4WideEXD = M4Wide7 NOT SLT_EXD
+   X = (SIZE M4WideEXD BY 5.999 UNDEROVER) AND M4WideEXD
+   ENCLOSE RECTANGLE X 12 30
+}
+AM.R.3.M4
+0 0 6 Apr  8 16:15:30 2019                     
+AM.R.3.M4 { @ Min. Hole density for metal lines that need to apply slot  9%
+   NET AREA RATIO LM4X M4HoleD < 0.09
+   [
+      AREA(M4HoleD) / AREA(LM4X)
+   ] RDB M4Hole.density LM4X M4HoleD 
+}
+AMS.1.M5
+0 0 5 Apr  8 16:15:30 2019                     
+AMS.1.M5 { @ Wide M5 with >= 12um wide and >= 30um long must have hole 
+   M5WideEXD = M5Wide7 NOT SLT_EXD
+   X = (SIZE M5WideEXD BY 5.999 UNDEROVER) AND M5WideEXD
+   ENCLOSE RECTANGLE X 12 30
+}
+AM.R.3.M5
+0 0 6 Apr  8 16:15:30 2019                     
+AM.R.3.M5 { @ Min. Hole density for metal lines that need to apply slot  9%
+   NET AREA RATIO LM5X M5HoleD < 0.09
+   [
+      AREA(M5HoleD) / AREA(LM5X)
+   ] RDB M5Hole.density LM5X M5HoleD 
+}
+AMS.1.M6
+0 0 5 Apr  8 16:15:30 2019                     
+AMS.1.M6 { @ Wide M6 with >= 12um wide and >= 30um long must have hole 
+   M6WideEXD = M6Wide7 NOT SLT_EXD
+   X = (SIZE M6WideEXD BY 5.999 UNDEROVER) AND M6WideEXD
+   ENCLOSE RECTANGLE X 12 30
+}
+AM.R.3.M6
+0 0 6 Apr  8 16:15:30 2019                     
+AM.R.3.M6 { @ Min. Hole density for metal lines that need to apply slot  9%
+   NET AREA RATIO LM6X M6HoleD < 0.09
+   [
+      AREA(M6HoleD) / AREA(LM6X)
+   ] RDB M6Hole.density LM6X M6HoleD 
+}
+AMS.1.M7
+0 0 5 Apr  8 16:15:30 2019                     
+AMS.1.M7 { @ Wide M7 with >= 12um wide and >= 30um long must have hole 
+   M7WideEXD = M7Wide7 NOT SLT_EXD
+   X = (SIZE M7WideEXD BY 5.999 UNDEROVER) AND M7WideEXD
+   ENCLOSE RECTANGLE X 12 30
+}
+AM.R.3.M7
+0 0 6 Apr  8 16:15:30 2019                     
+AM.R.3.M7 { @ Min. Hole density for metal lines that need to apply slot  9%
+   NET AREA RATIO LM7X M7HoleD < 0.09
+   [
+      AREA(M7HoleD) / AREA(LM7X)
+   ] RDB M7Hole.density LM7X M7HoleD 
+}
+AMS.1.M8
+0 0 5 Apr  8 16:15:30 2019                     
+AMS.1.M8 { @ Wide M8 with >= 12um wide and >= 30um long must have hole 
+   M8WideEXD = M8Wide7 NOT SLT_EXD8
+   X = (SIZE M8WideEXD BY 5.999 UNDEROVER) AND M8WideEXD
+   ENCLOSE RECTANGLE X 12 30
+}
+AM.R.3.M8
+0 0 6 Apr  8 16:15:30 2019                     
+AM.R.3.M8 { @ Min. Hole density for metal lines that need to apply slot  9%
+   NET AREA RATIO LM8X M8HoleD < 0.09
+   [
+      AREA(M8HoleD) / AREA(LM8X)
+   ] RDB M8Hole.density LM8X M8HoleD 
+}
+AMS.1.MD
+0 0 4 Apr  8 16:15:30 2019                     
+AMS.1.MD { @ Wide MD with >= 12um wide and >= 30um long must have hole 
+   X = (SIZE (SIZE MDEXD BY 1.0 UNDEROVER) BY 5.999 UNDEROVER) AND MDEXD
+   ENCLOSE RECTANGLE X 12 30
+}
+AM.R.3.MD
+0 0 6 Apr  8 16:15:30 2019                     
+AM.R.3.MD { @ Min. Hole density for metal lines that need to apply slot  9%
+   NET AREA RATIO LMDX MDHoleD < 0.09
+   [
+      AREA(MDHoleD) / AREA(LMDX)
+   ] RDB MDHole.density LMDX MDHoleD 
+}
+NET_AREA_RATIO_RDBS
+0 0 9 Apr  8 16:15:30 2019
+M1Hole.density 0
+M2Hole.density 0
+M3Hole.density 0
+M4Hole.density 0
+M5Hole.density 0
+M6Hole.density 0
+M7Hole.density 0
+M8Hole.density 0
+MDHole.density 0
+DENSITY_PRINT_FILES
+0 0 21 Apr  8 16:15:30 2019
+DODR1.density
+DODR11.density
+DODR2.density
+DODR21.density
+ALL_POLY.density
+M1xL.density
+M1xH.density
+M2xL.density
+M2xH.density
+M3xL.density
+M3xH.density
+M4xL.density
+M4xH.density
+M5xL.density
+M5xH.density
+M6xL.density
+M6xH.density
+M7xL.density
+M7xH.density
+M8xL.density
+M8xH.density

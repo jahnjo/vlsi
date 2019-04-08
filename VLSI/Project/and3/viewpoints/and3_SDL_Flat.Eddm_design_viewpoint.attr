@@ -1,0 +1,15 @@
+A 5 u Eddm_design_viewpoint 5cabaa65db6e.03.7f.00.00.01.00.51.a8 1 2 6 0
+V v 1 4 5cabaa65db6e.03.7f.00.00.01.01.51.a8
+F f 1 "and3_SDL_Flat.dvpt_1"
+F o 0 
+F o 0 
+F o 0 
+O 1
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R cspuv 0 "$VLSI/Project/and3/part" 2 Eddm_part 5caba85c238f.03.7f.00.00.01.00.49.30 5caba73c62fc.03.7f.00.00.01.00.46.ed
+R cspuv 1 "$VLSI/Project/and3/and3" 3 mgc_schematic 5caba86d34aa.03.7f.00.00.01.00.49.30 5caba738d4f3.03.7f.00.00.01.00.46.ed
+R cspuv 2 "$VLSI/Project/and3/and3" 1 mgc_symbol 5caba809e732.03.7f.00.00.01.01.49.30 5caba809e732.03.7f.00.00.01.00.49.30
+R cspuv 3 "$VLSI/Project/and/part" 2 Eddm_part 5ca2677180e1.03.7f.00.00.01.00.6b.10 5c9bb0259227.03.7f.00.00.01.00.57.f5
+R cspuv 4 "$VLSI/Project/and/and" 1 mgc_schematic 5c9bb0213d9b.03.7f.00.00.01.01.57.f5 5c9bb0213d9b.03.7f.00.00.01.00.57.f5
+P "eddm__refer_state" "eddm__refer_floating"
+R cspuv 5 "$VLSI/Project/and/and" 1 mgc_symbol 5ca26764d86b.03.7f.00.00.01.01.6b.10 5ca26764d86b.03.7f.00.00.01.00.6b.10

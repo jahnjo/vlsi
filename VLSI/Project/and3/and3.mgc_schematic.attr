@@ -1,8 +1,12 @@
-A 5 u mgc_schematic 5caba738d4f3.03.7f.00.00.01.00.46.ed 2 2 1 0
+A 5 u mgc_schematic 5caba738d4f3.03.7f.00.00.01.00.46.ed 3 2 1 0
 V v 1 1 5caba738d4f3.03.7f.00.00.01.01.46.ed
 F o 0 ""
 V v 2 1 5caba73c64cf.03.7f.00.00.01.00.46.ed
 F o 0 ""
+V v 3 1 5caba86d34aa.03.7f.00.00.01.00.49.30
+F o 0 ""
+O 3
+R cspuv 0 "$VLSI/Project/and3/and3/sheet1" 2 mgc_sheet 5caba86d348b.03.7f.00.00.01.00.49.30 5caba738d5c8.03.7f.00.00.01.00.46.ed
 O 2
 R cspuv 0 "$VLSI/Project/and3/and3/sheet1" 1 mgc_sheet 5caba738d5c8.03.7f.00.00.01.01.46.ed 5caba738d5c8.03.7f.00.00.01.00.46.ed
 O 1

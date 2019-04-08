@@ -1,7 +1,10 @@
-A 5 u mgc_cms_sim_db 5ca65eaaaea7.03.7f.00.00.01.00.10.6a 2 2 0 0
-V v 1 1 5ca65eaaaea7.03.7f.00.00.01.01.10.6a
-F f 1 "sim_settings.simdb_1"
-V v 2 1 5ca666d0e588.03.7f.00.00.01.00.2c.98
-F f 2 "sim_settings.simdb_2"
-O 2
-O 1
+A 5 u mgc_cms_sim_db 5ca65eaaaea7.03.7f.00.00.01.00.10.6a 6 2 0 0
+V v 4 1 5cab859163cd.03.7f.00.00.01.00.0e.e0
+F f 4 "sim_settings.simdb_4"
+V v 5 1 5cab86094eb4.03.7f.00.00.01.00.0e.e0
+F f 5 "sim_settings.simdb_5"
+V v 6 1 5cab8658de5b.03.7f.00.00.01.00.0e.e0
+F f 6 "sim_settings.simdb_6"
+O 6
+O 5
+O 4

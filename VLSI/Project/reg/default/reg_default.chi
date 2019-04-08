@@ -1,27 +1,27 @@
-  Run on egr-vlsi-15 (Linux 3.10.0-514.26.2.el7.x86_64)
+  Run on egr-vlsi-25 (Linux 3.10.0-514.26.2.el7.x86_64)
 
 
 ***** SYSTEM INFORMATION ...
 
-*** User  : egrvlsi07@egr-vlsi-15
+*** User  : egrvlsi07@egr-vlsi-25
 *** OS    : \S [VCO = aol]
 *** CPU   :
-    Intel(R) Xeon(R) CPU E5-2603 0 @ 1.80GHz
+    Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
     Number of physical processors     : 1
-    Hyper-Threading Technology        : disabled
-    Number of cpu cores               : 4
-    Number of logical processors      : 4
-*** Freq  : 1779.679MHz
-*** Cache : 10240 KB
-*** MEM   : 16386688 kB
-*** Date  : Thu Apr  4 16:28:51 2019
+    Hyper-Threading Technology        : enabled
+    Number of cpu cores               : 6
+    Number of logical processors      : 12
+*** Freq  : 1931.484MHz
+*** Cache : 15360 KB
+*** MEM   : 16353912 kB
+*** Date  : Mon Apr  8 14:05:16 2019
 
 /opt/mentor/ams_12_1/aol/bin/eldo_64.exe -i /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/reg/default/reg_default.cir -o /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/reg/default/reg_default.chi -nocou -gwl jwdb -64b -outname reg_default 
 
 
 ***** PRE-PROCESSING ...
 
-1******* 4-Apr-19 *******  ELDO 12.1 patch1 (64 bits)  (v7.7_1.1)  *******16:28:51******
+1******* 8-Apr-19 *******  ELDO 12.1 patch1 (64 bits)  (v7.7_1.1)  *******14:05:16******
 
 0* Component: $VLSI/Project/reg  Viewpoint: default
 
@@ -35,146 +35,144 @@
     4  .CONNECT GROUND 0
     5  
     6  
-    7  * ELDO netlist generated with ICnet by 'egrvlsi07' on Thu Apr  4 2019 at 16:28:50
+    7  * ELDO netlist generated with ICnet by 'egrvlsi07' on Mon Apr  8 2019 at 14:05:16
     8  
     9  *
    10  * Globals.
    11  *
-   12  .GLOBAL VDD GROUND
+   12  .GLOBAL GROUND VDD
    13  
    14  *
-   15  * Component pathname : $VLSI/Project/Mux21
+   15  * Component pathname : $VLSI/Project/and
    16  *
-   17  .SUBCKT MUX21  Y A B S
+   17  .SUBCKT AND  Y A B
    18  
-   19          M6 Y N$46 A GROUND NMOS W=0.6U L=0.13U M=1 AS=0.204P AD=0.204P PS=1.28U
-   20  +  PD=1.28U
-   21          M3 Y S A VDD PMOS W=1.35U L=0.13U M=1 AS=0.459P AD=0.459P PS=2.03U
+   19          M6 Y N$54 GROUND GROUND NMOS W=0.6U L=0.13U M=1 AS=0.204P AD=0.204P
+   20  +  PS=1.28U PD=1.28U
+   21          M5 Y N$54 VDD VDD PMOS W=1.35U L=0.13U M=1 AS=0.459P AD=0.459P PS=2.03U
    22  +  PD=2.03U
-   23          M5 Y S B GROUND NMOS W=0.6U L=0.13U M=1 AS=0.204P AD=0.204P PS=1.28U
-   24  +  PD=1.28U
-   25          M4 Y N$46 B VDD PMOS W=1.35U L=0.13U M=1 AS=0.459P AD=0.459P PS=2.03U
+   23          M4 N$54 B VDD VDD PMOS W=1.35U L=0.13U M=1 AS=0.459P AD=0.459P PS=2.03U
+   24  +  PD=2.03U
+   25          M3 N$54 A VDD VDD PMOS W=1.35U L=0.13U M=1 AS=0.459P AD=0.459P PS=2.03U
    26  +  PD=2.03U
-   27          M2 N$46 S VDD VDD PMOS W=1.35U L=0.13U M=1 AS=0.459P AD=0.459P PS=2.03U
-   28  +  PD=2.03U
-   29          M1 N$46 S GROUND GROUND NMOS W=0.6U L=0.13U M=1 AS=0.204P AD=0.204P
-   30  +  PS=1.28U PD=1.28U
-   31  .ENDS MUX21
+   27          M2 N$29 B GROUND GROUND NMOS W=1.2U L=0.13U M=1 AS=0.408P AD=0.408P
+   28  +  PS=1.88U PD=1.88U
+   29          M1 N$54 A N$29 GROUND NMOS W=1.2U L=0.13U M=1 AS=0.408P AD=0.408P
+   30  +  PS=1.88U PD=1.88U
+   31  .ENDS AND
    32  
    33  *
-   34  * Component pathname : $VLSI/Project/Mux81
+   34  * Component pathname : $VLSI/Project/Mux21
    35  *
-   36  .SUBCKT MUX81  OUT1 IN0 IN1 IN2 IN3 IN4 IN5 IN6 IN7 S0 S1 S2
+   36  .SUBCKT MUX21  Y A B S
    37  
-   38          X_MUX217 OUT1 N$13 N$25 S2 MUX21
-   39          X_MUX216 N$25 N$17 N$21 S1 MUX21
-   40          X_MUX215 N$21 IN6 IN7 S0 MUX21
-   41          X_MUX214 N$17 IN4 IN5 S0 MUX21
-   42          X_MUX213 N$13 N$5 N$9 S1 MUX21
-   43          X_MUX212 N$9 IN2 IN3 S0 MUX21
-   44          X_MUX211 N$5 IN0 IN1 S0 MUX21
-   45  .ENDS MUX81
-   46  
-   47  *
-   48  * Component pathname : $VLSI/Project/and
-   49  *
-   50  .SUBCKT AND  Y A B
+   38          M6 Y N$46 A GROUND NMOS W=0.6U L=0.13U M=1 AS=0.204P AD=0.204P PS=1.28U
+   39  +  PD=1.28U
+   40          M3 Y S A VDD PMOS W=1.35U L=0.13U M=1 AS=0.459P AD=0.459P PS=2.03U
+   41  +  PD=2.03U
+   42          M5 Y S B GROUND NMOS W=0.6U L=0.13U M=1 AS=0.204P AD=0.204P PS=1.28U
+   43  +  PD=1.28U
+   44          M4 Y N$46 B VDD PMOS W=1.35U L=0.13U M=1 AS=0.459P AD=0.459P PS=2.03U
+   45  +  PD=2.03U
+   46          M2 N$46 S VDD VDD PMOS W=1.35U L=0.13U M=1 AS=0.459P AD=0.459P PS=2.03U
+   47  +  PD=2.03U
+   48          M1 N$46 S GROUND GROUND NMOS W=0.6U L=0.13U M=1 AS=0.204P AD=0.204P
+   49  +  PS=1.28U PD=1.28U
+   50  .ENDS MUX21
    51  
-   52          M6 Y N$54 GROUND GROUND NMOS W=0.6U L=0.13U M=1 AS=0.204P AD=0.204P
-   53  +  PS=1.28U PD=1.28U
-   54          M5 Y N$54 VDD VDD PMOS W=1.35U L=0.13U M=1 AS=0.459P AD=0.459P PS=2.03U
-   55  +  PD=2.03U
-   56          M4 N$54 B VDD VDD PMOS W=1.35U L=0.13U M=1 AS=0.459P AD=0.459P PS=2.03U
-   57  +  PD=2.03U
-   58          M3 N$54 A VDD VDD PMOS W=1.35U L=0.13U M=1 AS=0.459P AD=0.459P PS=2.03U
-   59  +  PD=2.03U
-   60          M2 N$29 B GROUND GROUND NMOS W=1.2U L=0.13U M=1 AS=0.408P AD=0.408P
-   61  +  PS=1.88U PD=1.88U
-   62          M1 N$54 A N$29 GROUND NMOS W=1.2U L=0.13U M=1 AS=0.408P AD=0.408P
-   63  +  PS=1.88U PD=1.88U
-   64  .ENDS AND
-   65  
-   66  *
-   67  * Component pathname : $VLSI/Project/DFF
-   68  *
-   69  .SUBCKT DFF  Q CLK D
-   70  
-   71          M20 N$101 Q VDD VDD PMOS W=0.6U L=0.13U M=1 AS=0.204P AD=0.204P
+   52  *
+   53  * Component pathname : $VLSI/Project/DFF
+   54  *
+   55  .SUBCKT DFF  Q CLK D
+   56  
+   57          M20 N$101 Q VDD VDD PMOS W=0.6U L=0.13U M=1 AS=0.204P AD=0.204P
+   58  +  PS=1.28U PD=1.28U
+   59          M19 Q N$101 VDD VDD PMOS W=0.6U L=0.13U M=1 AS=0.204P AD=0.204P
+   60  +  PS=1.28U PD=1.28U
+   61          M18 N$84 N$82 VDD VDD PMOS W=0.6U L=0.13U M=1 AS=0.204P AD=0.204P
+   62  +  PS=1.28U PD=1.28U
+   63          M17 N$82 N$84 VDD VDD PMOS W=0.6U L=0.13U M=1 AS=0.204P AD=0.204P
+   64  +  PS=1.28U PD=1.28U
+   65          M16 N$70 D VDD VDD PMOS W=0.6U L=0.13U M=1 AS=0.204P AD=0.204P PS=1.28U
+   66  +  PD=1.28U
+   67          M15 N$65 CLK VDD VDD PMOS W=0.6U L=0.13U M=1 AS=0.204P AD=0.204P
+   68  +  PS=1.28U PD=1.28U
+   69          M14 Q CLK N$93 GROUND NMOS W=0.6U L=0.13U M=1 AS=0.204P AD=0.204P
+   70  +  PS=1.28U PD=1.28U
+   71          M13 N$101 CLK N$40 GROUND NMOS W=0.6U L=0.13U M=1 AS=0.204P AD=0.204P
    72  +  PS=1.28U PD=1.28U
-   73          M19 Q N$101 VDD VDD PMOS W=0.6U L=0.13U M=1 AS=0.204P AD=0.204P
+   73          M12 N$82 N$65 N$88 GROUND NMOS W=0.6U L=0.13U M=1 AS=0.204P AD=0.204P
    74  +  PS=1.28U PD=1.28U
-   75          M18 N$84 N$82 VDD VDD PMOS W=0.6U L=0.13U M=1 AS=0.204P AD=0.204P
+   75          M11 N$84 N$65 N$67 GROUND NMOS W=0.6U L=0.13U M=1 AS=0.204P AD=0.204P
    76  +  PS=1.28U PD=1.28U
-   77          M17 N$82 N$84 VDD VDD PMOS W=0.6U L=0.13U M=1 AS=0.204P AD=0.204P
+   77          M10 N$40 N$84 GROUND GROUND NMOS W=0.6U L=0.13U M=1 AS=0.204P AD=0.204P
    78  +  PS=1.28U PD=1.28U
-   79          M16 N$70 D VDD VDD PMOS W=0.6U L=0.13U M=1 AS=0.204P AD=0.204P PS=1.28U
-   80  +  PD=1.28U
-   81          M15 N$65 CLK VDD VDD PMOS W=0.6U L=0.13U M=1 AS=0.204P AD=0.204P
+   79          M9 Q N$101 GROUND GROUND NMOS W=0.6U L=0.13U M=1 AS=0.204P AD=0.204P
+   80  +  PS=1.28U PD=1.28U
+   81          M8 N$101 Q GROUND GROUND NMOS W=0.6U L=0.13U M=1 AS=0.204P AD=0.204P
    82  +  PS=1.28U PD=1.28U
-   83          M14 Q CLK N$93 GROUND NMOS W=0.6U L=0.13U M=1 AS=0.204P AD=0.204P
+   83          M7 N$93 N$82 GROUND GROUND NMOS W=0.6U L=0.13U M=1 AS=0.204P AD=0.204P
    84  +  PS=1.28U PD=1.28U
-   85          M13 N$101 CLK N$40 GROUND NMOS W=0.6U L=0.13U M=1 AS=0.204P AD=0.204P
+   85          M6 N$88 D GROUND GROUND NMOS W=0.6U L=0.13U M=1 AS=0.204P AD=0.204P
    86  +  PS=1.28U PD=1.28U
-   87          M12 N$82 N$65 N$88 GROUND NMOS W=0.6U L=0.13U M=1 AS=0.204P AD=0.204P
+   87          M5 N$84 N$82 GROUND GROUND NMOS W=0.6U L=0.13U M=1 AS=0.204P AD=0.204P
    88  +  PS=1.28U PD=1.28U
-   89          M11 N$84 N$65 N$67 GROUND NMOS W=0.6U L=0.13U M=1 AS=0.204P AD=0.204P
+   89          M4 N$82 N$84 GROUND GROUND NMOS W=0.6U L=0.13U M=1 AS=0.204P AD=0.204P
    90  +  PS=1.28U PD=1.28U
-   91          M10 N$40 N$84 GROUND GROUND NMOS W=0.6U L=0.13U M=1 AS=0.204P AD=0.204P
+   91          M3 N$67 N$70 GROUND GROUND NMOS W=0.6U L=0.13U M=1 AS=0.204P AD=0.204P
    92  +  PS=1.28U PD=1.28U
-   93          M9 Q N$101 GROUND GROUND NMOS W=0.6U L=0.13U M=1 AS=0.204P AD=0.204P
+   93          M2 N$70 D GROUND GROUND NMOS W=0.6U L=0.13U M=1 AS=0.204P AD=0.204P
    94  +  PS=1.28U PD=1.28U
-   95          M8 N$101 Q GROUND GROUND NMOS W=0.6U L=0.13U M=1 AS=0.204P AD=0.204P
+   95          M1 N$65 CLK GROUND GROUND NMOS W=0.6U L=0.13U M=1 AS=0.204P AD=0.204P
    96  +  PS=1.28U PD=1.28U
-   97          M7 N$93 N$82 GROUND GROUND NMOS W=0.6U L=0.13U M=1 AS=0.204P AD=0.204P
-   98  +  PS=1.28U PD=1.28U
-   99          M6 N$88 D GROUND GROUND NMOS W=0.6U L=0.13U M=1 AS=0.204P AD=0.204P
-  100  +  PS=1.28U PD=1.28U
-  101          M5 N$84 N$82 GROUND GROUND NMOS W=0.6U L=0.13U M=1 AS=0.204P AD=0.204P
-  102  +  PS=1.28U PD=1.28U
-  103          M4 N$82 N$84 GROUND GROUND NMOS W=0.6U L=0.13U M=1 AS=0.204P AD=0.204P
-  104  +  PS=1.28U PD=1.28U
-  105          M3 N$67 N$70 GROUND GROUND NMOS W=0.6U L=0.13U M=1 AS=0.204P AD=0.204P
-  106  +  PS=1.28U PD=1.28U
-  107          M2 N$70 D GROUND GROUND NMOS W=0.6U L=0.13U M=1 AS=0.204P AD=0.204P
-  108  +  PS=1.28U PD=1.28U
-  109          M1 N$65 CLK GROUND GROUND NMOS W=0.6U L=0.13U M=1 AS=0.204P AD=0.204P
-  110  +  PS=1.28U PD=1.28U
-  111  .ENDS DFF
+   97  .ENDS DFF
+   98  
+   99  *
+  100  * Component pathname : $VLSI/Project/DFFen
+  101  *
+  102  .SUBCKT DFFEN  Q CLK D EN
+  103  
+  104          X_ENABLE_MUX N$5 Q D EN MUX21
+  105          X_DFF Q CLK N$5 DFF
+  106  .ENDS DFFEN
+  107  
+  108  *
+  109  * Component pathname : $VLSI/Project/Mux81
+  110  *
+  111  .SUBCKT MUX81  OUT1 IN0 IN1 IN2 IN3 IN4 IN5 IN6 IN7 S0 S1 S2
   112  
-  113  *
-  114  * Component pathname : $VLSI/Project/DFFen
-  115  *
-  116  .SUBCKT DFFEN  Q CLK D EN
-  117  
-  118          X_ENABLE_MUX N$5 Q D EN MUX21
-  119          X_DFF Q CLK N$5 DFF
-  120  .ENDS DFFEN
+  113          X_MUX217 OUT1 N$13 N$25 S2 MUX21
+  114          X_MUX216 N$25 N$17 N$21 S1 MUX21
+  115          X_MUX215 N$21 IN6 IN7 S0 MUX21
+  116          X_MUX214 N$17 IN4 IN5 S0 MUX21
+  117          X_MUX213 N$13 N$5 N$9 S1 MUX21
+  118          X_MUX212 N$9 IN2 IN3 S0 MUX21
+  119          X_MUX211 N$5 IN0 IN1 S0 MUX21
+  120  .ENDS MUX81
   121  
   122  *
   123  * MAIN CELL: Component pathname : $VLSI/Project/reg
   124  *
-  125          X_MUX812 BUSB N$100 N$101 N$102 N$103 N$104 N$105 N$106 N$107 RS0
-  126  + RS1 RS2 MUX81
-  127          X_MUX811 BUSA N$100 N$101 N$102 N$103 N$104 N$105 N$106 N$107 RT0
-  128  + RT1 RT2 MUX81
-  129          X_AND8 N$78 DEC7 REG_W AND
-  130          X_AND7 N$76 DEC6 REG_W AND
-  131          X_AND6 N$74 DEC5 REG_W AND
-  132          X_AND5 N$72 DEC4 REG_W AND
-  133          X_AND4 N$70 DEC3 REG_W AND
-  134          X_AND3 N$68 DEC2 REG_W AND
-  135          X_AND2 N$66 DEC1 REG_W AND
-  136          X_AND1 N$64 DEC0 REG_W AND
-  137          X_DFFEN8 N$107 CLK BUSW N$78 DFFEN
-  138          X_DFFEN7 N$106 CLK BUSW N$76 DFFEN
-  139          X_DFFEN6 N$105 CLK BUSW N$74 DFFEN
-  140          X_DFFEN5 N$104 CLK BUSW N$72 DFFEN
-  141          X_DFFEN4 N$103 CLK BUSW N$70 DFFEN
-  142          X_DFFEN3 N$102 CLK BUSW N$68 DFFEN
-  143          X_DFFEN2 N$101 CLK BUSW N$66 DFFEN
-  144          X_DFFEN1 N$100 CLK BUSW N$64 DFFEN
-  145  *
-  146  *end
+  125          X_AND8 N$78 DEC7 REG_W AND
+  126          X_AND7 N$76 DEC6 REG_W AND
+  127          X_AND6 N$74 DEC5 REG_W AND
+  128          X_AND5 N$72 DEC4 REG_W AND
+  129          X_AND4 N$70 DEC3 REG_W AND
+  130          X_AND3 N$68 DEC2 REG_W AND
+  131          X_AND2 N$66 DEC1 REG_W AND
+  132          X_AND1 N$64 DEC0 REG_W AND
+  133          X_DFFEN8 REG8 CLK BUSW N$78 DFFEN
+  134          X_DFFEN7 REG7 CLK BUSW N$76 DFFEN
+  135          X_DFFEN6 REG6 CLK BUSW N$74 DFFEN
+  136          X_DFFEN5 REG5 CLK BUSW N$72 DFFEN
+  137          X_DFFEN4 REG3 CLK BUSW N$70 DFFEN
+  138          X_DFFEN3 REG2 CLK BUSW N$68 DFFEN
+  139          X_DFFEN2 REG1 CLK BUSW N$66 DFFEN
+  140          X_DFFEN1 REG0 CLK BUSW N$64 DFFEN
+  141          X_MUX812 BUSB REG0 REG1 REG2 REG3 REG5 REG6 REG7 REG8 RS0 RS1 RS2 MUX81
+  142          X_MUX811 BUSA REG0 REG1 REG2 REG3 REG5 REG6 REG7 REG8 RT0 RT1 RT2 MUX81
+  143  *
+  144  *end
     2  
     3  ** including /home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/models/include_all
     1  *
@@ -222,33 +220,41 @@
    31  .PROBE TRAN V(RS2)
    32  .PROBE TRAN V(BUSA)
    33  .PROBE TRAN V(BUSB)
-   34  
-   35  * --- Params
-   36  .TEMP 27
-   37  
-   38  * --- Forces
-   39  VFORCE__BusW BUSW GROUND PULSE (0 2.5v 0 1n 1n 100n 200n)
-   40  VFORCE__clk CLK GROUND PULSE (0 2.5v 0 1n 1n 10n 20n)
-   41  VFORCE__Reg_W REG_W GROUND PULSE (0 2.5v 0 1n 1n 400n 800n)
-   42  VFORCE__dec0 DEC0 GROUND PULSE (0 2.5v 0 1n 1n 20n 400n)
-   43  VFORCE__dec1 DEC1 GROUND PULSE (0 2.5v 20n 1n 1n 20n 400n)
-   44  VFORCE__dec2 DEC2 GROUND PULSE (0 2.5v 40n 1n 1n 20n 400n)
-   45  VFORCE__dec3 DEC3 GROUND PULSE (0 2.5v 60n 1n 1n 20n 400n)
-   46  VFORCE__dec4 DEC4 GROUND PULSE (0 2.5v 80n 1n 1n 20n 400n)
-   47  VFORCE__dec5 DEC5 GROUND PULSE (0 2.5v 100n 1n 1n 20n 400n)
-   48  VFORCE__dec6 DEC6 GROUND PULSE (0 2.5v 120n 1n 1n 20n 400n)
-   49  VFORCE__dec7 DEC7 GROUND PULSE (0 2.5v 140n 1n 1n 20n 400n)
-   50  VFORCE__Rt0 RT0 GROUND PULSE (0 2.5v 40n 1n 1n 20n 40n)
-   51  VFORCE__Rt1 RT1 GROUND PULSE (0 2.5v 60n 1n 1n 40n 80n)
-   52  VFORCE__Rt2 RT2 GROUND PULSE (0 2.5v 100n 1n 1n 80n 160n)
-   53  VFORCE__Rs0 RS0 GROUND PULSE (0 2.5v 40n 1n 1n 20n 40n)
-   54  VFORCE__Rs1 RS1 GROUND PULSE (0 2.5v 60n 1n 1n 40n 80n)
-   55  VFORCE__Rs2 RS2 GROUND PULSE (0 2.5v 100n 1n 1n 80n 160n)
-   56  VFORCE___VDD VDD GROUND dc 1
-   57  
-   58  * --- Libsetup
-   59  .LIB key=MOS $GENERIC13/models/lib.eldo TT
-   60  ** INCLUDING LIBRARY /home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/models/lib.eldo LIBTYPE=TT
+   34  .PROBE TRAN V(REG0)
+   35  .PROBE TRAN V(REG1)
+   36  .PROBE TRAN V(REG2)
+   37  .PROBE TRAN V(REG3)
+   38  .PROBE TRAN V(REG5)
+   39  .PROBE TRAN V(REG6)
+   40  .PROBE TRAN V(REG7)
+   41  .PROBE TRAN V(REG8)
+   42  
+   43  * --- Params
+   44  .TEMP 27
+   45  
+   46  * --- Forces
+   47  VFORCE__BusW BUSW GROUND PULSE (0 2.5v 0 1n 1n 50n 100n)
+   48  VFORCE__clk CLK GROUND PULSE (0 2.5v 0 1n 1n 10n 20n)
+   49  VFORCE__Reg_W REG_W GROUND PULSE (0 2.5v 0 1n 1n 400n 400n)
+   50  VFORCE__dec0 DEC0 GROUND PULSE (0 2.5v 0 1n 1n 20n 400n)
+   51  VFORCE__dec1 DEC1 GROUND PULSE (0 2.5v 20n 1n 1n 20n 400n)
+   52  VFORCE__dec2 DEC2 GROUND PULSE (0 2.5v 40n 1n 1n 20n 400n)
+   53  VFORCE__dec3 DEC3 GROUND PULSE (0 2.5v 60n 1n 1n 20n 400n)
+   54  VFORCE__dec4 DEC4 GROUND PULSE (0 2.5v 80n 1n 1n 20n 400n)
+   55  VFORCE__dec5 DEC5 GROUND PULSE (0 2.5v 100n 1n 1n 20n 400n)
+   56  VFORCE__dec6 DEC6 GROUND PULSE (0 2.5v 120n 1n 1n 20n 400n)
+   57  VFORCE__dec7 DEC7 GROUND PULSE (0 2.5v 140n 1n 1n 20n 400n)
+   58  VFORCE__Rt0 RT0 GROUND PULSE (0 2.5v 40n 1n 1n 20n 40n)
+   59  VFORCE__Rt1 RT1 GROUND PULSE (0 2.5v 60n 1n 1n 40n 80n)
+   60  VFORCE__Rt2 RT2 GROUND PULSE (0 2.5v 100n 1n 1n 80n 160n)
+   61  VFORCE__Rs0 RS0 GROUND PULSE (0 2.5v 40n 1n 1n 20n 40n)
+   62  VFORCE__Rs1 RS1 GROUND PULSE (0 2.5v 60n 1n 1n 40n 80n)
+   63  VFORCE__Rs2 RS2 GROUND PULSE (0 2.5v 100n 1n 1n 80n 160n)
+   64  VFORCE___VDD VDD GROUND dc 2.5v
+   65  
+   66  * --- Libsetup
+   67  .LIB key=MOS $GENERIC13/models/lib.eldo TT
+   68  ** INCLUDING LIBRARY /home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/models/lib.eldo LIBTYPE=TT
     1  .PARAM
     2  +TOXN   = 2.81E-09        CJN    = 1.376E-3      CJSWN  = 2.06E-10     
     3  +CJSWGN = 5.0462E-10      CGON   = 3.85E-10      RSHN   = 6.6  
@@ -1779,9 +1785,9 @@
  1518  
  1519  *
    10  ** END OF LIBRARY /home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/models/lib.eldo LIBTYPE=MOS
-   60  ** END OF LIBRARY /home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/models/lib.eldo LIBTYPE=TT
-   60  .LIB key=MOS_33 $GENERIC13/models/lib.eldo TT_33
-   61  ** INCLUDING LIBRARY /home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/models/lib.eldo LIBTYPE=TT_33
+   68  ** END OF LIBRARY /home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/models/lib.eldo LIBTYPE=TT
+   68  .LIB key=MOS_33 $GENERIC13/models/lib.eldo TT_33
+   69  ** INCLUDING LIBRARY /home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/models/lib.eldo LIBTYPE=TT_33
     1  .PARAM
     2  +TOXN_33   = 7.15E-09        TOXP_33   = 7.15E-09        
     3  +DVTHN_33  = 0               DVTHP_33  = 0              
@@ -3524,9 +3530,9 @@
  1728  +OPTACM=1
  1729  
    12  ** END OF LIBRARY /home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/models/lib.eldo LIBTYPE=MOS_33
-   61  ** END OF LIBRARY /home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/models/lib.eldo LIBTYPE=TT_33
-   61  .LIB key=MOS_lvt $GENERIC13/models/lib.eldo TT_lvt
-   62  ** INCLUDING LIBRARY /home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/models/lib.eldo LIBTYPE=TT_lvt
+   69  ** END OF LIBRARY /home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/models/lib.eldo LIBTYPE=TT_33
+   69  .LIB key=MOS_lvt $GENERIC13/models/lib.eldo TT_lvt
+   70  ** INCLUDING LIBRARY /home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/models/lib.eldo LIBTYPE=TT_lvt
     1  .PARAM
     2  +TOXN_LVT   = 2.81E-09        CJN_LVT    = 0.00109733      CJSWN_LVT  = 1.62E-10
     3  +CJSWGN_LVT = 4.872442E-10    CGON_LVT   = 3.9E-10         RSHN_LVT   = 6.6
@@ -5047,9 +5053,9 @@
  1507  +OPTACM=1
  1508  *
    11  ** END OF LIBRARY /home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/models/lib.eldo LIBTYPE=MOS_lvt
-   62  ** END OF LIBRARY /home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/models/lib.eldo LIBTYPE=TT_lvt
-   62  .LIB key=MOS_hvt $GENERIC13/models/lib.eldo TT_hvt
-   63  ** INCLUDING LIBRARY /home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/models/lib.eldo LIBTYPE=TT_hvt
+   70  ** END OF LIBRARY /home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/models/lib.eldo LIBTYPE=TT_lvt
+   70  .LIB key=MOS_hvt $GENERIC13/models/lib.eldo TT_hvt
+   71  ** INCLUDING LIBRARY /home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/models/lib.eldo LIBTYPE=TT_hvt
     1  .PARAM
     2  +TOXN_HVT   = 2.81E-09        CJN_HVT    = 0.001727        CJSWN_HVT  = 2.45E-10
     3  +CJSWGN_HVT = 4.558E-10       CGON_HVT   = 3.75E-10       
@@ -6627,9 +6633,9 @@
  1563  +OPTACM=1
  1564  *
    12  ** END OF LIBRARY /home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/models/lib.eldo LIBTYPE=MOS_hvt
-   63  ** END OF LIBRARY /home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/models/lib.eldo LIBTYPE=TT_hvt
-   63  .LIB key=BIP $GENERIC13/models/lib.eldo TT_BIP
-   64  ** INCLUDING LIBRARY /home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/models/lib.eldo LIBTYPE=TT_BIP
+   71  ** END OF LIBRARY /home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/models/lib.eldo LIBTYPE=TT_hvt
+   71  .LIB key=BIP $GENERIC13/models/lib.eldo TT_BIP
+   72  ** INCLUDING LIBRARY /home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/models/lib.eldo LIBTYPE=TT_BIP
     1  .PARAM
     2  +ISA=  1        BFA = 1         NFA = 1        RBA = 1        REA= 1       
     3  +RCA=  1        RBMA= 1         CJEA= 1        CJCA= 1       
@@ -6698,9 +6704,9 @@
    61  +DCAP=2
    62  
     5  ** END OF LIBRARY /home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/models/lib.eldo LIBTYPE=BIP
-   64  ** END OF LIBRARY /home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/models/lib.eldo LIBTYPE=TT_BIP
-   64  .LIB key=BIP_NPN $GENERIC13/models/lib.eldo TT_BIP_NPN
-   65  ** INCLUDING LIBRARY /home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/models/lib.eldo LIBTYPE=TT_BIP_NPN
+   72  ** END OF LIBRARY /home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/models/lib.eldo LIBTYPE=TT_BIP
+   72  .LIB key=BIP_NPN $GENERIC13/models/lib.eldo TT_BIP_NPN
+   73  ** INCLUDING LIBRARY /home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/models/lib.eldo LIBTYPE=TT_BIP_NPN
     1  .PARAM
     2  +ISA= 1         BFA= 1         NFA= 1         RBA= 1         REA= 1
     3  +RCA= 1         RBMA= 1        CJEA= 1        CJCA= 1
@@ -6790,10 +6796,10 @@ Warning 46: In file "/home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tec
    55  
    56  
     5  ** END OF LIBRARY /home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/models/lib.eldo LIBTYPE=BIP_NPN
-   65  ** END OF LIBRARY /home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/models/lib.eldo LIBTYPE=TT_BIP_NPN
-   65  .LIB key=RES $GENERIC13/models/lib.eldo TT_RES
-   66  
-   67  ** INCLUDING LIBRARY /home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/models/lib.eldo LIBTYPE=TT_RES
+   73  ** END OF LIBRARY /home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/models/lib.eldo LIBTYPE=TT_BIP_NPN
+   73  .LIB key=RES $GENERIC13/models/lib.eldo TT_RES
+   74  
+   75  ** INCLUDING LIBRARY /home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/models/lib.eldo LIBTYPE=TT_RES
     1  .PARAM
     2  + R_RPPOLYS  = 7.54    R_RNPOLYS  = 7.18    
     3  + R_RNODS    = 6.7     R_RNODWO   = 72.75      
@@ -6939,8 +6945,8 @@ Warning 46: In file "/home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tec
   134  .ENDS RPPOLYHI
   135  
     9  ** END OF LIBRARY /home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/models/lib.eldo LIBTYPE=RES
-   67  ** END OF LIBRARY /home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/models/lib.eldo LIBTYPE=TT_RES
-   67  .END
+   75  ** END OF LIBRARY /home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/models/lib.eldo LIBTYPE=TT_RES
+   75  .END
 
 End of file 
 
@@ -6954,9 +6960,11 @@ End of file
 Warning 1615: In file "/home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/reg/default/reg_default.cir" line 12:
 +   COMMAND ".TRAN": TPRINT can not be <= 0.0.
 +   It is set to TSTOP/20.0 = 2.000e-08 s.
+Warning 903: In file "/home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/reg/default/reg_default.cir" line 49:
++   OBJECT "VFORCE__REG_W": PULSE period enlarged to match TR + TF + THOLD
 
 ***** 0  error(s). 
-***** 10  warning(s). 
+***** 11  warning(s). 
 
 
 INFORMATION ABOUT COMPILATION 
@@ -6987,13 +6995,13 @@ Total number of elements simulated  358
 
 Eldo VERSION : ELDO 12.1 patch1 (64 bits) Thu Sep  6 14:32:26 GMT 2012
 
-*** DATE:  4-Apr-2019 16:28:51
+*** DATE:  8-Apr-2019 14:05:17
 
 *** TITLE: * Component: $VLSI/Project/reg  Viewpoint: default
 
 TEMPERATURE : 27.000000 degrees C
 
-1*************** 4-Apr-2019 ***********************  ELDO 12.1 patch1 (64 bits)  (v7.7_1.1)  ***********************16:28:51*****************
+1*************** 8-Apr-2019 ***********************  ELDO 12.1 patch1 (64 bits)  (v7.7_1.1)  ***********************14:05:17*****************
 
 0* Component: $VLSI/Project/reg  Viewpoin
 0****                 MODELS PARAMETERS                                    TEMPERATURE =   27.000 DEG C
@@ -7480,7 +7488,7 @@ unit6 represents 1/degK^2
 
 
 
-1*************** 4-Apr-2019 ***********************  ELDO 12.1 patch1 (64 bits)  (v7.7_1.1)  ***********************16:28:51*****************
+1*************** 8-Apr-2019 ***********************  ELDO 12.1 patch1 (64 bits)  (v7.7_1.1)  ***********************14:05:17*****************
 
 0* Component: $VLSI/Project/reg  Viewpoint: default
 0****                 OPTION SUMMARY                                        TEMPERATURE =   27.000 DEG C
@@ -7549,14 +7557,14 @@ TIMING         = 0        MODWL          = 1        ULOGIC         = 0
 
 
 
-***> DC CPU TIME 0s 040ms <***
+***> DC CPU TIME 0s 030ms <***
 
-DC:10 iterations FOR DC analysis
-
-
+DC:5 iterations FOR DC analysis
 
 
-1*************** 4-Apr-2019 ***********************  ELDO 12.1 patch1 (64 bits)  (v7.7_1.1)  ***********************16:28:51*****************
+
+
+1*************** 8-Apr-2019 ***********************  ELDO 12.1 patch1 (64 bits)  (v7.7_1.1)  ***********************14:05:17*****************
 
 0* Component: $VLSI/Project/reg  Viewpoint: default
 0****                 INITIAL TRANSIENT SOLUTION                           TEMPERATURE =   27.000 DEG C
@@ -7565,13 +7573,7 @@ DC:10 iterations FOR DC analysis
 
 
   NODE         VOLTAGE    
- VDD       1.0000     
- RS0       0.0000     
- RS1       0.0000     
- RS2       0.0000     
- RT0       0.0000     
- RT1       0.0000     
- RT2       0.0000     
+ VDD       2.5000     
  DEC7       0.0000     
  REG_W       0.0000     
  DEC6       0.0000     
@@ -7583,161 +7585,167 @@ DC:10 iterations FOR DC analysis
  DEC0       0.0000     
  CLK       0.0000     
  BUSW       0.0000     
- X_MUX812.X_MUX217.N$46       999.9981M  
- X_MUX812.X_MUX216.N$46       999.9981M  
- X_MUX812.X_MUX215.N$46       999.9981M  
- X_MUX812.X_MUX214.N$46       999.9981M  
- X_MUX812.X_MUX213.N$46       999.9981M  
- X_MUX812.X_MUX212.N$46       999.9981M  
- X_MUX812.X_MUX211.N$46       999.9981M  
- X_MUX811.X_MUX217.N$46       999.9981M  
- X_MUX811.X_MUX216.N$46       999.9981M  
- X_MUX811.X_MUX215.N$46       999.9981M  
- X_MUX811.X_MUX214.N$46       999.9981M  
- X_MUX811.X_MUX213.N$46       999.9981M  
- X_MUX811.X_MUX212.N$46       999.9981M  
- X_MUX811.X_MUX211.N$46       999.9981M  
- X_AND8.N$54       999.9998M  
- X_AND7.N$54       999.9998M  
- X_AND6.N$54       999.9998M  
- X_AND5.N$54       999.9998M  
- X_AND4.N$54       999.9998M  
- X_AND3.N$54       999.9998M  
- X_AND2.N$54       999.9998M  
- X_AND1.N$54       999.9998M  
- X_DFFEN8.X_DFF.N$65       999.9948M  
- X_DFFEN7.X_DFF.N$65       999.9948M  
- X_DFFEN6.X_DFF.N$65       999.9948M  
- X_DFFEN5.X_DFF.N$65       999.9948M  
- X_DFFEN4.X_DFF.N$65       999.9948M  
- X_DFFEN3.X_DFF.N$65       999.9948M  
- X_DFFEN2.X_DFF.N$65       999.9948M  
- X_DFFEN1.X_DFF.N$65       999.9948M  
- BUSB       101.8005N  
- BUSA       101.8005N  
- X_MUX812.N$13       100.0173N  
- X_MUX812.N$25       92.8860N   
- X_MUX812.N$17       90.2110N   
- X_MUX812.N$21       82.1872N   
- X_MUX812.N$5       95.5594N   
- X_MUX812.N$9       82.1875N   
- X_MUX811.N$13       100.0173N  
- X_MUX811.N$25       92.8860N   
- X_MUX811.N$17       90.2110N   
- X_MUX811.N$21       82.1872N   
- X_MUX811.N$5       95.5594N   
- X_MUX811.N$9       82.1875N   
- X_AND8.N$29       30.6375M   
- X_AND7.N$29       30.6375M   
- X_AND6.N$29       30.6375M   
- X_AND5.N$29       30.6375M   
- X_AND4.N$29       30.6375M   
- X_AND3.N$29       30.6375M   
- X_AND2.N$29       30.6375M   
- X_AND1.N$29       30.6375M   
- N$78       145.8707N  
- N$76       145.8707N  
- N$74       145.8707N  
- N$72       145.8707N  
- N$70       145.8707N  
- N$68       145.8707N  
- N$66       145.8707N  
- N$64       145.8707N  
- X_DFFEN8.X_ENABLE_MUX.N$46       999.9981M  
- X_DFFEN7.X_ENABLE_MUX.N$46       999.9981M  
- X_DFFEN6.X_ENABLE_MUX.N$46       999.9981M  
- X_DFFEN5.X_ENABLE_MUX.N$46       999.9981M  
- X_DFFEN4.X_ENABLE_MUX.N$46       999.9981M  
- X_DFFEN3.X_ENABLE_MUX.N$46       999.9981M  
- X_DFFEN2.X_ENABLE_MUX.N$46       999.9981M  
- X_DFFEN1.X_ENABLE_MUX.N$46       999.9981M  
- X_DFFEN8.N$5       75.9444N   
- X_DFFEN8.X_DFF.N$70       999.9948M  
- X_DFFEN7.N$5       81.2940N   
- X_DFFEN7.X_DFF.N$70       999.9948M  
- X_DFFEN6.N$5       75.9447N   
- X_DFFEN6.X_DFF.N$70       999.9948M  
- X_DFFEN5.N$5       86.6431N   
- X_DFFEN5.X_DFF.N$70       999.9948M  
- X_DFFEN4.N$5       75.9444N   
- X_DFFEN4.X_DFF.N$70       999.9948M  
- X_DFFEN3.N$5       81.2943N   
- X_DFFEN3.X_DFF.N$70       999.9948M  
- X_DFFEN2.N$5       75.9449N   
- X_DFFEN2.X_DFF.N$70       999.9948M  
- X_DFFEN1.N$5       90.2086N   
- X_DFFEN1.X_DFF.N$70       999.9948M  
- X_DFFEN8.X_DFF.N$88       820.1452M  
- X_DFFEN8.X_DFF.N$67       23.2375N   
- X_DFFEN7.X_DFF.N$88       820.1452M  
- X_DFFEN7.X_DFF.N$67       23.2375N   
- X_DFFEN6.X_DFF.N$88       820.1452M  
- X_DFFEN6.X_DFF.N$67       23.2375N   
- X_DFFEN5.X_DFF.N$88       820.1452M  
- X_DFFEN5.X_DFF.N$67       23.2375N   
- X_DFFEN4.X_DFF.N$88       820.1452M  
- X_DFFEN4.X_DFF.N$67       23.2375N   
- X_DFFEN3.X_DFF.N$88       820.1452M  
- X_DFFEN3.X_DFF.N$67       23.2375N   
- X_DFFEN2.X_DFF.N$88       820.1452M  
- X_DFFEN2.X_DFF.N$67       23.2375N   
- X_DFFEN1.X_DFF.N$88       820.1452M  
- X_DFFEN1.X_DFF.N$67       23.2375N   
- N$100       88.4268N   
- X_DFFEN1.X_DFF.N$101       999.9931M  
- N$101       74.1629N   
- X_DFFEN2.X_DFF.N$101       999.9931M  
- N$102       79.5123N   
- X_DFFEN3.X_DFF.N$101       999.9931M  
- N$103       74.1624N   
- X_DFFEN4.X_DFF.N$101       999.9931M  
- N$104       84.8613N   
- X_DFFEN5.X_DFF.N$101       999.9931M  
- N$105       74.1627N   
- X_DFFEN6.X_DFF.N$101       999.9931M  
- N$106       79.5121N   
- X_DFFEN7.X_DFF.N$101       999.9931M  
- N$107       74.1624N   
- X_DFFEN8.X_DFF.N$101       999.9931M  
- X_DFFEN8.X_DFF.N$84       46.4750N   
- X_DFFEN8.X_DFF.N$82       999.9902M  
- X_DFFEN8.X_DFF.N$93       1.3067P    
- X_DFFEN8.X_DFF.N$40       31.2633M   
- X_DFFEN7.X_DFF.N$84       46.4750N   
- X_DFFEN7.X_DFF.N$82       999.9902M  
- X_DFFEN7.X_DFF.N$93       1.4009P    
- X_DFFEN7.X_DFF.N$40       31.2633M   
- X_DFFEN6.X_DFF.N$84       46.4750N   
- X_DFFEN6.X_DFF.N$82       999.9902M  
- X_DFFEN6.X_DFF.N$93       1.3067P    
- X_DFFEN6.X_DFF.N$40       31.2633M   
- X_DFFEN5.X_DFF.N$84       46.4750N   
- X_DFFEN5.X_DFF.N$82       999.9902M  
- X_DFFEN5.X_DFF.N$93       1.4952P    
- X_DFFEN5.X_DFF.N$40       31.2633M   
- X_DFFEN4.X_DFF.N$84       46.4750N   
- X_DFFEN4.X_DFF.N$82       999.9902M  
- X_DFFEN4.X_DFF.N$93       1.3067P    
- X_DFFEN4.X_DFF.N$40       31.2633M   
- X_DFFEN3.X_DFF.N$84       46.4750N   
- X_DFFEN3.X_DFF.N$82       999.9902M  
- X_DFFEN3.X_DFF.N$93       1.4009P    
- X_DFFEN3.X_DFF.N$40       31.2633M   
- X_DFFEN2.X_DFF.N$84       46.4750N   
- X_DFFEN2.X_DFF.N$82       999.9902M  
- X_DFFEN2.X_DFF.N$93       1.3067P    
- X_DFFEN2.X_DFF.N$40       31.2633M   
- X_DFFEN1.X_DFF.N$84       46.4750N   
- X_DFFEN1.X_DFF.N$82       999.9902M  
- X_DFFEN1.X_DFF.N$93       1.5580P    
- X_DFFEN1.X_DFF.N$40       31.2633M   
+ RS0       0.0000     
+ RS1       0.0000     
+ RS2       0.0000     
+ RT0       0.0000     
+ RT1       0.0000     
+ RT2       0.0000     
+ X_AND8.N$54       2.5000     
+ X_AND7.N$54       2.5000     
+ X_AND6.N$54       2.5000     
+ X_AND5.N$54       2.5000     
+ X_AND4.N$54       2.5000     
+ X_AND3.N$54       2.5000     
+ X_AND2.N$54       2.5000     
+ X_AND1.N$54       2.5000     
+ X_DFFEN8.X_DFF.N$65       2.5000     
+ X_DFFEN7.X_DFF.N$65       2.5000     
+ X_DFFEN6.X_DFF.N$65       2.5000     
+ X_DFFEN5.X_DFF.N$65       2.5000     
+ X_DFFEN4.X_DFF.N$65       2.5000     
+ X_DFFEN3.X_DFF.N$65       2.5000     
+ X_DFFEN2.X_DFF.N$65       2.5000     
+ X_DFFEN1.X_DFF.N$65       2.5000     
+ X_MUX812.X_MUX217.N$46       2.5000     
+ X_MUX812.X_MUX216.N$46       2.5000     
+ X_MUX812.X_MUX215.N$46       2.5000     
+ X_MUX812.X_MUX214.N$46       2.5000     
+ X_MUX812.X_MUX213.N$46       2.5000     
+ X_MUX812.X_MUX212.N$46       2.5000     
+ X_MUX812.X_MUX211.N$46       2.5000     
+ X_MUX811.X_MUX217.N$46       2.5000     
+ X_MUX811.X_MUX216.N$46       2.5000     
+ X_MUX811.X_MUX215.N$46       2.5000     
+ X_MUX811.X_MUX214.N$46       2.5000     
+ X_MUX811.X_MUX213.N$46       2.5000     
+ X_MUX811.X_MUX212.N$46       2.5000     
+ X_MUX811.X_MUX211.N$46       2.5000     
+ BUSB       135.6083N  
+ BUSA       135.6083N  
+ X_AND8.N$29       49.5793M   
+ X_AND7.N$29       49.5793M   
+ X_AND6.N$29       49.5793M   
+ X_AND5.N$29       49.5793M   
+ X_AND4.N$29       49.5793M   
+ X_AND3.N$29       49.5793M   
+ X_AND2.N$29       49.5793M   
+ X_AND1.N$29       49.5793M   
+ X_MUX812.N$13       133.3118N  
+ X_MUX812.N$25       124.1268N  
+ X_MUX812.N$17       120.6819N  
+ X_MUX812.N$21       110.3480N  
+ X_MUX812.N$5       127.5706N  
+ X_MUX812.N$9       110.3483N  
+ X_MUX811.N$13       133.3118N  
+ X_MUX811.N$25       124.1268N  
+ X_MUX811.N$17       120.6819N  
+ X_MUX811.N$21       110.3480N  
+ X_MUX811.N$5       127.5706N  
+ X_MUX811.N$9       110.3483N  
+ N$78       222.8985N  
+ N$76       222.8985N  
+ N$74       222.8985N  
+ N$72       222.8985N  
+ N$70       222.8985N  
+ N$68       222.8985N  
+ N$66       222.8985N  
+ N$64       222.8985N  
+ X_DFFEN8.X_ENABLE_MUX.N$46       2.5000     
+ X_DFFEN7.X_ENABLE_MUX.N$46       2.5000     
+ X_DFFEN6.X_ENABLE_MUX.N$46       2.5000     
+ X_DFFEN5.X_ENABLE_MUX.N$46       2.5000     
+ X_DFFEN4.X_ENABLE_MUX.N$46       2.5000     
+ X_DFFEN3.X_ENABLE_MUX.N$46       2.5000     
+ X_DFFEN2.X_ENABLE_MUX.N$46       2.5000     
+ X_DFFEN1.X_ENABLE_MUX.N$46       2.5000     
+ X_DFFEN8.N$5       102.3092N  
+ X_DFFEN8.X_DFF.N$70       2.5000     
+ X_DFFEN7.N$5       109.1987N  
+ X_DFFEN7.X_DFF.N$70       2.5000     
+ X_DFFEN6.N$5       102.3094N  
+ X_DFFEN6.X_DFF.N$70       2.5000     
+ X_DFFEN5.N$5       116.0879N  
+ X_DFFEN5.X_DFF.N$70       2.5000     
+ X_DFFEN4.N$5       102.3092N  
+ X_DFFEN4.X_DFF.N$70       2.5000     
+ X_DFFEN3.N$5       109.1989N  
+ X_DFFEN3.X_DFF.N$70       2.5000     
+ X_DFFEN2.N$5       102.3095N  
+ X_DFFEN2.X_DFF.N$70       2.5000     
+ X_DFFEN1.N$5       120.6802N  
+ X_DFFEN1.X_DFF.N$70       2.5000     
+ X_DFFEN8.X_DFF.N$88       2.1302     
+ X_DFFEN8.X_DFF.N$67       31.4278N   
+ X_DFFEN7.X_DFF.N$88       2.1302     
+ X_DFFEN7.X_DFF.N$67       31.4278N   
+ X_DFFEN6.X_DFF.N$88       2.1302     
+ X_DFFEN6.X_DFF.N$67       31.4278N   
+ X_DFFEN5.X_DFF.N$88       2.1302     
+ X_DFFEN5.X_DFF.N$67       31.4278N   
+ X_DFFEN4.X_DFF.N$88       2.1302     
+ X_DFFEN4.X_DFF.N$67       31.4278N   
+ X_DFFEN3.X_DFF.N$88       2.1302     
+ X_DFFEN3.X_DFF.N$67       31.4278N   
+ X_DFFEN2.X_DFF.N$88       2.1302     
+ X_DFFEN2.X_DFF.N$67       31.4278N   
+ X_DFFEN1.X_DFF.N$88       2.1302     
+ X_DFFEN1.X_DFF.N$67       31.4278N   
+ REG8       100.0135N  
+ X_DFFEN8.X_DFF.N$101       2.5000     
+ REG7       106.9031N  
+ X_DFFEN7.X_DFF.N$101       2.5000     
+ REG6       100.0137N  
+ X_DFFEN6.X_DFF.N$101       2.5000     
+ REG5       113.7923N  
+ X_DFFEN5.X_DFF.N$101       2.5000     
+ REG3       100.0135N  
+ X_DFFEN4.X_DFF.N$101       2.5000     
+ REG2       106.9032N  
+ X_DFFEN3.X_DFF.N$101       2.5000     
+ REG1       100.0138N  
+ X_DFFEN2.X_DFF.N$101       2.5000     
+ REG0       118.3847N  
+ X_DFFEN1.X_DFF.N$101       2.5000     
+ X_DFFEN8.X_DFF.N$84       62.8556N   
+ X_DFFEN8.X_DFF.N$82       2.5000     
+ X_DFFEN8.X_DFF.N$93       907.8440F  
+ X_DFFEN8.X_DFF.N$40       50.4599M   
+ X_DFFEN7.X_DFF.N$84       62.8556N   
+ X_DFFEN7.X_DFF.N$82       2.5000     
+ X_DFFEN7.X_DFF.N$93       970.3510F  
+ X_DFFEN7.X_DFF.N$40       50.4599M   
+ X_DFFEN6.X_DFF.N$84       62.8556N   
+ X_DFFEN6.X_DFF.N$82       2.5000     
+ X_DFFEN6.X_DFF.N$93       907.8473F  
+ X_DFFEN6.X_DFF.N$40       50.4599M   
+ X_DFFEN5.X_DFF.N$84       62.8556N   
+ X_DFFEN5.X_DFF.N$82       2.5000     
+ X_DFFEN5.X_DFF.N$93       1.0329P    
+ X_DFFEN5.X_DFF.N$40       50.4599M   
+ X_DFFEN4.X_DFF.N$84       62.8556N   
+ X_DFFEN4.X_DFF.N$82       2.5000     
+ X_DFFEN4.X_DFF.N$93       907.8440F  
+ X_DFFEN4.X_DFF.N$40       50.4599M   
+ X_DFFEN3.X_DFF.N$84       62.8556N   
+ X_DFFEN3.X_DFF.N$82       2.5000     
+ X_DFFEN3.X_DFF.N$93       970.3539F  
+ X_DFFEN3.X_DFF.N$40       50.4599M   
+ X_DFFEN2.X_DFF.N$84       62.8556N   
+ X_DFFEN2.X_DFF.N$82       2.5000     
+ X_DFFEN2.X_DFF.N$93       907.8496F  
+ X_DFFEN2.X_DFF.N$40       50.4599M   
+ X_DFFEN1.X_DFF.N$84       62.8556N   
+ X_DFFEN1.X_DFF.N$82       2.5000     
+ X_DFFEN1.X_DFF.N$93       1.0745P    
+ X_DFFEN1.X_DFF.N$40       50.4599M   
 
 
 
    VOLTAGE SOURCE CURRENT
 
 NAME      CURRENT      VOLTAGE      POWER        
-VFORCE__BUSW   8.0141P      0.0000       0.0000      
+VFORCE__BUSW   20.0185P     0.0000       0.0000      
 VFORCE__CLK   0.0000       0.0000       0.0000      
 VFORCE__REG_W   0.0000       0.0000       0.0000      
 VFORCE__DEC0   0.0000       0.0000       0.0000      
@@ -7754,9 +7762,9 @@ VFORCE__RT2   0.0000       0.0000       0.0000
 VFORCE__RS0   0.0000       0.0000       0.0000      
 VFORCE__RS1   0.0000       0.0000       0.0000      
 VFORCE__RS2   0.0000       0.0000       0.0000      
-VFORCE___VDD  -79.9995N     1.0000      -79.9995N    
+VFORCE___VDD  -178.6174N    2.5000      -446.5435N   
 
-   TOTAL POWER DISSIPATION:  79.9995N    WATTS
+   TOTAL POWER DISSIPATION:  446.5435N   WATTS
 
 
 
@@ -7766,48 +7774,48 @@ Eldo NEWTON: VNTOL=1.000000e-06 RELTOL=7.500000e-04
 
 ................................................
 Simulation progress                : 10% (t = 40.0000 N)
-Elapsed CPU time                   :  0h  0mn  0s 350   ( 0h  0mn  0s 350)
-CPU Usage                          :  98%               ( 98%)
+Elapsed CPU time                   :  0h  0mn  0s 370   ( 0h  0mn  0s 370)
+CPU Usage                          :  99%               ( 99%)
 ................................................
 Simulation progress                : 20% (t = 80.0000 N)
-Elapsed CPU time                   :  0h  0mn  0s 210   ( 0h  0mn  0s 560)
+Elapsed CPU time                   :  0h  0mn  0s 300   ( 0h  0mn  0s 670)
 CPU Usage                          : 100%               ( 99%)
 ................................................
 Simulation progress                : 30% (t = 120.0000 N)
-Elapsed CPU time                   :  0h  0mn  0s 270   ( 0h  0mn  0s 830)
-CPU Usage                          :  98%               ( 99%)
+Elapsed CPU time                   :  0h  0mn  0s 410   ( 0h  0mn  1s  80)
+CPU Usage                          : 100%               (100%)
 ................................................
 Simulation progress                : 40% (t = 160.0000 N)
-Elapsed CPU time                   :  0h  0mn  0s 310   ( 0h  0mn  1s 140)
-CPU Usage                          :  98%               ( 99%)
+Elapsed CPU time                   :  0h  0mn  0s 440   ( 0h  0mn  1s 520)
+CPU Usage                          :  97%               ( 99%)
 ................................................
 Simulation progress                : 50% (t = 200.0000 N)
-Elapsed CPU time                   :  0h  0mn  0s 190   ( 0h  0mn  1s 330)
+Elapsed CPU time                   :  0h  0mn  0s 200   ( 0h  0mn  1s 720)
 CPU Usage                          : 100%               ( 99%)
 ................................................
 Simulation progress                : 60% (t = 240.0000 N)
-Elapsed CPU time                   :  0h  0mn  0s 230   ( 0h  0mn  1s 560)
+Elapsed CPU time                   :  0h  0mn  0s 190   ( 0h  0mn  1s 910)
 CPU Usage                          : 100%               (100%)
 ................................................
 Simulation progress                : 70% (t = 280.0000 N)
-Elapsed CPU time                   :  0h  0mn  0s 120   ( 0h  0mn  1s 680)
-CPU Usage                          : 100%               (100%)
+Elapsed CPU time                   :  0h  0mn  0s 170   ( 0h  0mn  2s  80)
+CPU Usage                          :  96%               ( 99%)
 ................................................
 Simulation progress                : 80% (t = 320.0000 N)
-Elapsed CPU time                   :  0h  0mn  0s 140   ( 0h  0mn  1s 820)
-CPU Usage                          :  93%               ( 99%)
+Elapsed CPU time                   :  0h  0mn  0s 190   ( 0h  0mn  2s 270)
+CPU Usage                          : 100%               ( 99%)
 ................................................
 Simulation progress                : 90% (t = 360.0000 N)
-Elapsed CPU time                   :  0h  0mn  0s 150   ( 0h  0mn  1s 980)
-CPU Usage                          :  94%               ( 99%)
+Elapsed CPU time                   :  0h  0mn  0s 180   ( 0h  0mn  2s 450)
+CPU Usage                          : 100%               ( 99%)
 ................................................
 Simulation progress                : 100% (t = 400.0000 N)
-Elapsed CPU time                   :  0h  0mn  0s 160   ( 0h  0mn  2s 140)
-CPU Usage                          : 100%               ( 99%)
+Elapsed CPU time                   :  0h  0mn  0s 180   ( 0h  0mn  2s 630)
+CPU Usage                          :  98%               ( 99%)
 
 
 
-1*************** 4-Apr-2019 ***********************  ELDO 12.1 patch1 (64 bits)  (v7.7_1.1)  ***********************16:28:51*****************
+1*************** 8-Apr-2019 ***********************  ELDO 12.1 patch1 (64 bits)  (v7.7_1.1)  ***********************14:05:17*****************
 
 0* Component: $VLSI/Project/reg  Viewpoint: default
 0****                 ACCOUNTING INFORMATION                                TEMPERATURE =   27.000 DEG C
@@ -7838,27 +7846,27 @@ Total number of elements simulated  358
 Number of equations                 828
 Number of non-zero terms            4122
 Percent Zeros                       99.4
-Number of Newton iterations         2807
-Average number of Newton iterations 3.402
-Number of accepted time steps       825
-Number of rejected time steps       26
-      due to LTE                    19
-      due to Newton                 7
-Evaluation of active devices        248253
+Number of Newton iterations         4429
+Average number of Newton iterations 3.763
+Number of accepted time steps       1177
+Number of rejected time steps       107
+      due to LTE                    98
+      due to Newton                 9
+Evaluation of active devices        358577
 Memory size (MB)                    248.7
 
-***>CPU TIME 2s 140ms <***
+***>CPU TIME 2s 630ms <***
 
-***>MESSAGE SUMMARY: 10 warnings
+***>MESSAGE SUMMARY: 11 warnings
 
-***>GLOBAL CPU TIME 2s 310ms <***
-
-
-***>GLOBAL ELAPSED TIME 3s <***
+***>GLOBAL CPU TIME 2s 800ms <***
 
 
-  Job started at  4-Apr-2019 16:28:51
-  Job end at      4-Apr-2019 16:28:54
+***>GLOBAL ELAPSED TIME 4s <***
 
-  Run on egr-vlsi-15 (Linux 3.10.0-514.26.2.el7.x86_64)
+
+  Job started at  8-Apr-2019 14:05:16
+  Job end at      8-Apr-2019 14:05:20
+
+  Run on egr-vlsi-25 (Linux 3.10.0-514.26.2.el7.x86_64)
 

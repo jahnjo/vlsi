@@ -349,7 +349,7 @@ $$set_sim_value("vsim_netlist_run_viewer_flag",0);
 
 // Netlister Options
 $$set_sim_value("sim_eldonet_check",@false);
-$$set_sim_value("sim_eldonet_timestamp",1553707505);
+$$set_sim_value("sim_eldonet_timestamp",1553884870);
 $$set_sim_value("sim_netlist_run_viewer_flag",1);
 $$set_sim_value("sim_netlist_uptodate_check_flag",@yes);
 $$set_sim_value("sim_netlister_additional_globals","");

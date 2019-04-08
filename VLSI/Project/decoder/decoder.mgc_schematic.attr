@@ -1,14 +1,13 @@
-A 5 u mgc_schematic 5caba53067a2.03.7f.00.00.01.00.41.ad 3 2 1 0
-V v 1 1 5caba53067a2.03.7f.00.00.01.01.41.ad
+A 5 u mgc_schematic 5caba53067a2.03.7f.00.00.01.00.41.ad 6 2 1 0
+V v 4 1 5cabaf16d4a9.03.7f.00.00.01.00.5b.c9
 F o 0 ""
-V v 2 1 5caba533c3ed.03.7f.00.00.01.00.41.ad
+V v 5 1 5cabb5ede4e8.03.7f.00.00.01.00.6f.c7
 F o 0 ""
-V v 3 1 5caba6a727bf.03.7f.00.00.01.00.43.f0
+V v 6 1 5cabb6da21cc.03.7f.00.00.01.00.6f.c7
 F o 0 ""
-O 3
-R cspuv 0 "$VLSI/Project/decoder/decoder/sheet1" 2 mgc_sheet 5caba6a727a2.03.7f.00.00.01.00.43.f0 5caba5306876.03.7f.00.00.01.00.41.ad
-O 2
-R cspuv 0 "$VLSI/Project/decoder/decoder/sheet1" 1 mgc_sheet 5caba5306876.03.7f.00.00.01.01.41.ad 5caba5306876.03.7f.00.00.01.00.41.ad
-O 1
-R cspuv 0 "$VLSI/Project/decoder/decoder/sheet1" 1 mgc_sheet 5caba5306876.03.7f.00.00.01.01.41.ad 5caba5306876.03.7f.00.00.01.00.41.ad
-P "eddm__refer_state" "eddm__refer_floating"
+O 6
+R cspuv 0 "$VLSI/Project/decoder/decoder/sheet1" 5 mgc_sheet 5cabb6da2189.03.7f.00.00.01.00.6f.c7 5caba5306876.03.7f.00.00.01.00.41.ad
+O 5
+R cspuv 0 "$VLSI/Project/decoder/decoder/sheet1" 4 mgc_sheet 5cabb5ede4b6.03.7f.00.00.01.00.6f.c7 5caba5306876.03.7f.00.00.01.00.41.ad
+O 4
+R cspuv 0 "$VLSI/Project/decoder/decoder/sheet1" 3 mgc_sheet 5cabaf16d481.03.7f.00.00.01.00.5b.c9 5caba5306876.03.7f.00.00.01.00.41.ad

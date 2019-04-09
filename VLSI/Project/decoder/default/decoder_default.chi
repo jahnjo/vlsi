@@ -1,27 +1,27 @@
-  Run on egr-vlsi-13 (Linux 3.10.0-514.26.2.el7.x86_64)
+  Run on egr-vlsi-22 (Linux 3.10.0-514.26.2.el7.x86_64)
 
 
 ***** SYSTEM INFORMATION ...
 
-*** User  : egrvlsi07@egr-vlsi-13
+*** User  : egrvlsi07@egr-vlsi-22
 *** OS    : \S [VCO = aol]
 *** CPU   :
-    Intel(R) Xeon(R) CPU E5-2603 0 @ 1.80GHz
+    Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
     Number of physical processors     : 1
-    Hyper-Threading Technology        : disabled
-    Number of cpu cores               : 4
-    Number of logical processors      : 4
-*** Freq  : 1790.226MHz
-*** Cache : 10240 KB
-*** MEM   : 16386688 kB
-*** Date  : Mon Apr  8 17:02:25 2019
+    Hyper-Threading Technology        : enabled
+    Number of cpu cores               : 6
+    Number of logical processors      : 12
+*** Freq  : 1999.921MHz
+*** Cache : 15360 KB
+*** MEM   : 16353912 kB
+*** Date  : Tue Apr  9 15:15:30 2019
 
 /opt/mentor/ams_12_1/aol/bin/eldo_64.exe -i /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/decoder/default/decoder_default.cir -o /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/decoder/default/decoder_default.chi -nocou -gwl jwdb -64b -outname decoder_default 
 
 
 ***** PRE-PROCESSING ...
 
-1******* 8-Apr-19 *******  ELDO 12.1 patch1 (64 bits)  (v7.7_1.1)  *******17:02:25******
+1******* 9-Apr-19 *******  ELDO 12.1 patch1 (64 bits)  (v7.7_1.1)  *******15:15:30******
 
 0* Component: $VLSI/Project/decoder  Viewpoint: default
 
@@ -35,7 +35,7 @@
     4  .CONNECT GROUND 0
     5  
     6  
-    7  * ELDO netlist generated with ICnet by 'egrvlsi07' on Mon Apr  8 2019 at 17:02:25
+    7  * ELDO netlist generated with ICnet by 'egrvlsi07' on Tue Apr  9 2019 at 15:15:30
     8  
     9  *
    10  * Globals.
@@ -86,15 +86,15 @@
    55  *
    56          X_AND38 REG7 RD_0 RD_1 RD_2 AND3
    57          X_AND37 REG6 N$31 RD_1 RD_2 AND3
-   58          X_AND36 REG5 RD_0 N$45 RD_2 AND3
-   59          X_AND35 REG4 N$31 N$45 RD_2 AND3
-   60          X_AND34 REG3 RD_0 RD_1 N$51 AND3
-   61          X_AND33 REG2 N$31 RD_1 N$51 AND3
-   62          X_AND32 REG1 RD_0 N$45 N$51 AND3
-   63          X_AND31 REG0 N$31 N$45 N$51 AND3
-   64          X_INV3 RD_0 N$31 INV
-   65          X_INV2 RD_1 N$45 INV
-   66          X_INV1 RD_2 N$51 INV
+   58          X_AND36 REG5 RD_0 N$53 RD_2 AND3
+   59          X_AND35 REG4 N$31 N$53 RD_2 AND3
+   60          X_AND34 REG3 RD_0 RD_1 N$54 AND3
+   61          X_AND33 REG2 N$31 RD_1 N$54 AND3
+   62          X_AND32 REG1 RD_0 N$53 N$54 AND3
+   63          X_AND31 REG0 N$31 N$53 N$54 AND3
+   64          X_INV3 N$31 RD_0 INV
+   65          X_INV2 N$53 RD_1 INV
+   66          X_INV1 N$54 RD_2 INV
    67  *
    68  *end
     2  
@@ -6884,57 +6884,16 @@ Number of MOS                       102
 Number of SWITCHES                  0
 Number of transmission lines        0
 Total number of elements simulated  106
-Warning 108:  NODE "N$31": This node is a floating gate.
-+   List of MOS devices connected to that node follows:
-+   --> X_AND37.X_AND1.M3
-+   --> X_AND37.X_AND1.M1
-+   --> X_AND35.X_AND1.M3
-+   --> X_AND35.X_AND1.M1
-+   --> X_AND33.X_AND1.M3
-+   --> X_AND33.X_AND1.M1
-+   --> X_AND31.X_AND1.M3
-+   --> X_AND31.X_AND1.M1
-+   --> X_INV3.M2
-+   --> X_INV3.M1
-
-Warning 108:  NODE "N$45": This node is a floating gate.
-+   List of MOS devices connected to that node follows:
-+   --> X_AND36.X_AND1.M4
-+   --> X_AND36.X_AND1.M2
-+   --> X_AND35.X_AND1.M4
-+   --> X_AND35.X_AND1.M2
-+   --> X_AND32.X_AND1.M4
-+   --> X_AND32.X_AND1.M2
-+   --> X_AND31.X_AND1.M4
-+   --> X_AND31.X_AND1.M2
-+   --> X_INV2.M2
-+   --> X_INV2.M1
-
-Warning 108:  NODE "N$51": This node is a floating gate.
-+   List of MOS devices connected to that node follows:
-+   --> X_AND34.X_AND2.M4
-+   --> X_AND34.X_AND2.M2
-+   --> X_AND33.X_AND2.M4
-+   --> X_AND33.X_AND2.M2
-+   --> X_AND32.X_AND2.M4
-+   --> X_AND32.X_AND2.M2
-+   --> X_AND31.X_AND2.M4
-+   --> X_AND31.X_AND2.M2
-+   --> X_INV1.M2
-+   --> X_INV1.M1
-
-Warning  29:  Such messages will not be displayed in future. Set .option MSGNODE = 0 to receive all such warnings.
-
 
 Eldo VERSION : ELDO 12.1 patch1 (64 bits) Thu Sep  6 14:32:26 GMT 2012
 
-*** DATE:  8-Apr-2019 17:02:25
+*** DATE:  9-Apr-2019 15:15:30
 
 *** TITLE: * Component: $VLSI/Project/decoder  Viewpoint: default
 
 TEMPERATURE : 27.000000 degrees C
 
-1*************** 8-Apr-2019 ***********************  ELDO 12.1 patch1 (64 bits)  (v7.7_1.1)  ***********************17:02:25*****************
+1*************** 9-Apr-2019 ***********************  ELDO 12.1 patch1 (64 bits)  (v7.7_1.1)  ***********************15:15:30*****************
 
 0* Component: $VLSI/Project/decoder  View
 0****                 MODELS PARAMETERS                                    TEMPERATURE =   27.000 DEG C
@@ -7263,7 +7222,7 @@ unit6 represents 1/degK^2
 
 
 
-1*************** 8-Apr-2019 ***********************  ELDO 12.1 patch1 (64 bits)  (v7.7_1.1)  ***********************17:02:25*****************
+1*************** 9-Apr-2019 ***********************  ELDO 12.1 patch1 (64 bits)  (v7.7_1.1)  ***********************15:15:30*****************
 
 0* Component: $VLSI/Project/decoder  Viewpoint: default
 0****                 OPTION SUMMARY                                        TEMPERATURE =   27.000 DEG C
@@ -7339,7 +7298,7 @@ DC:5 iterations FOR DC analysis
 
 
 
-1*************** 8-Apr-2019 ***********************  ELDO 12.1 patch1 (64 bits)  (v7.7_1.1)  ***********************17:02:25*****************
+1*************** 9-Apr-2019 ***********************  ELDO 12.1 patch1 (64 bits)  (v7.7_1.1)  ***********************15:15:30*****************
 
 0* Component: $VLSI/Project/decoder  Viewpoint: default
 0****                 INITIAL TRANSIENT SOLUTION                           TEMPERATURE =   27.000 DEG C
@@ -7348,53 +7307,53 @@ DC:5 iterations FOR DC analysis
 
 
   NODE         VOLTAGE    
- N$31       0.0000     
- N$45       0.0000     
- N$51       0.0000     
+ N$31       2.5000     
+ N$53       2.5000     
+ N$54       2.5000     
  RD_0       0.0000     
  RD_1       0.0000     
  RD_2       0.0000     
- REG0       222.8985N  
- REG1       222.8985N  
- REG2       222.8985N  
- REG3       222.8985N  
- REG4       222.8985N  
+ REG0       2.5000     
+ REG1       222.9051N  
+ REG2       222.9051N  
+ REG3       222.9051N  
+ REG4       222.9037N  
  REG5       222.8985N  
  REG6       222.8985N  
  REG7       222.8985N  
  VDD       2.5000     
- X_AND31.N$10       222.8985N  
- X_AND31.X_AND1.N$29       49.5546M   
- X_AND31.X_AND1.N$54       2.5000     
- X_AND31.X_AND2.N$29       49.5547M   
- X_AND31.X_AND2.N$54       2.5000     
- X_AND32.N$10       222.8985N  
- X_AND32.X_AND1.N$29       49.5546M   
+ X_AND31.N$10       2.5000     
+ X_AND31.X_AND1.N$29       232.1198N  
+ X_AND31.X_AND1.N$54       464.2395N  
+ X_AND31.X_AND2.N$29       232.1198N  
+ X_AND31.X_AND2.N$54       464.2395N  
+ X_AND32.N$10       222.9051N  
+ X_AND32.X_AND1.N$29       343.0525N  
  X_AND32.X_AND1.N$54       2.5000     
- X_AND32.X_AND2.N$29       49.5547M   
+ X_AND32.X_AND2.N$29       343.0547N  
  X_AND32.X_AND2.N$54       2.5000     
- X_AND33.N$10       222.8985N  
- X_AND33.X_AND1.N$29       49.5546M   
+ X_AND33.N$10       222.9037N  
+ X_AND33.X_AND1.N$29       2.1154     
  X_AND33.X_AND1.N$54       2.5000     
- X_AND33.X_AND2.N$29       49.5547M   
+ X_AND33.X_AND2.N$29       343.0547N  
  X_AND33.X_AND2.N$54       2.5000     
  X_AND34.N$10       222.8985N  
  X_AND34.X_AND1.N$29       49.5546M   
  X_AND34.X_AND1.N$54       2.5000     
- X_AND34.X_AND2.N$29       49.5547M   
+ X_AND34.X_AND2.N$29       343.0547N  
  X_AND34.X_AND2.N$54       2.5000     
- X_AND35.N$10       222.8985N  
- X_AND35.X_AND1.N$29       49.5546M   
- X_AND35.X_AND1.N$54       2.5000     
- X_AND35.X_AND2.N$29       49.5547M   
+ X_AND35.N$10       2.5000     
+ X_AND35.X_AND1.N$29       232.1198N  
+ X_AND35.X_AND1.N$54       464.2395N  
+ X_AND35.X_AND2.N$29       2.1154     
  X_AND35.X_AND2.N$54       2.5000     
- X_AND36.N$10       222.8985N  
- X_AND36.X_AND1.N$29       49.5546M   
+ X_AND36.N$10       222.9051N  
+ X_AND36.X_AND1.N$29       343.0525N  
  X_AND36.X_AND1.N$54       2.5000     
  X_AND36.X_AND2.N$29       49.5547M   
  X_AND36.X_AND2.N$54       2.5000     
- X_AND37.N$10       222.8985N  
- X_AND37.X_AND1.N$29       49.5546M   
+ X_AND37.N$10       222.9037N  
+ X_AND37.X_AND1.N$29       2.1154     
  X_AND37.X_AND1.N$54       2.5000     
  X_AND37.X_AND2.N$29       49.5547M   
  X_AND37.X_AND2.N$54       2.5000     
@@ -7409,12 +7368,12 @@ DC:5 iterations FOR DC analysis
    VOLTAGE SOURCE CURRENT
 
 NAME      CURRENT      VOLTAGE      POWER        
-VFORCE__RD   1.1965M      0.0000       0.0000      
-VFORCE__RD_1   1.1965M      0.0000       0.0000      
-VFORCE__RD_2   1.1965M      0.0000       0.0000      
-VFORCE__RD_3  -3.5895M      2.5000      -8.9737M     
+VFORCE__RD   0.0000       0.0000       0.0000      
+VFORCE__RD_1   0.0000       0.0000       0.0000      
+VFORCE__RD_2   0.0000       0.0000       0.0000      
+VFORCE__RD_3  -37.5507N     2.5000      -93.8767N    
 
-   TOTAL POWER DISSIPATION:  8.9737M     WATTS
+   TOTAL POWER DISSIPATION:  93.8767N    WATTS
 
 
 
@@ -7424,48 +7383,48 @@ Eldo NEWTON: VNTOL=1.000000e-06 RELTOL=7.500000e-04
 
 ................................................
 Simulation progress                : 10% (t = 25.0000 N)
-Elapsed CPU time                   :  0h  0mn  0s  10   ( 0h  0mn  0s  10)
-CPU Usage                          : 100%               (100%)
+Elapsed CPU time                   :  0h  0mn  0s   0   ( 0h  0mn  0s   0)
+CPU Usage                          :   0%               (  0%)
 ................................................
 Simulation progress                : 20% (t = 50.0000 N)
-Elapsed CPU time                   :  0h  0mn  0s  10   ( 0h  0mn  0s  20)
+Elapsed CPU time                   :  0h  0mn  0s  40   ( 0h  0mn  0s  40)
 CPU Usage                          : 100%               (100%)
 ................................................
 Simulation progress                : 30% (t = 75.0000 N)
-Elapsed CPU time                   :  0h  0mn  0s  40   ( 0h  0mn  0s  60)
-CPU Usage                          :  97%               (100%)
+Elapsed CPU time                   :  0h  0mn  0s  60   ( 0h  0mn  0s 100)
+CPU Usage                          :  92%               ( 95%)
 ................................................
 Simulation progress                : 40% (t = 100.0000 N)
-Elapsed CPU time                   :  0h  0mn  0s  10   ( 0h  0mn  0s  70)
-CPU Usage                          :  55%               ( 97%)
+Elapsed CPU time                   :  0h  0mn  0s  30   ( 0h  0mn  0s 130)
+CPU Usage                          : 100%               ( 97%)
 ................................................
 Simulation progress                : 50% (t = 125.0000 N)
-Elapsed CPU time                   :  0h  0mn  0s  40   ( 0h  0mn  0s 110)
+Elapsed CPU time                   :  0h  0mn  0s  60   ( 0h  0mn  0s 190)
 CPU Usage                          : 100%               (100%)
 ................................................
 Simulation progress                : 60% (t = 150.0000 N)
-Elapsed CPU time                   :  0h  0mn  0s   0   ( 0h  0mn  0s 110)
-CPU Usage                          :   0%               ( 97%)
+Elapsed CPU time                   :  0h  0mn  0s  30   ( 0h  0mn  0s 220)
+CPU Usage                          :  83%               ( 98%)
 ................................................
 Simulation progress                : 70% (t = 175.0000 N)
-Elapsed CPU time                   :  0h  0mn  0s  70   ( 0h  0mn  0s 180)
-CPU Usage                          : 100%               (100%)
+Elapsed CPU time                   :  0h  0mn  0s  60   ( 0h  0mn  0s 280)
+CPU Usage                          : 100%               ( 99%)
 ................................................
-Simulation progress                : 80% (t = 200.3338 N)
-Elapsed CPU time                   :  0h  0mn  0s  30   ( 0h  0mn  0s 210)
-CPU Usage                          : 100%               (100%)
+Simulation progress                : 80% (t = 200.9662 N)
+Elapsed CPU time                   :  0h  0mn  0s  30   ( 0h  0mn  0s 310)
+CPU Usage                          : 100%               ( 99%)
 ................................................
 Simulation progress                : 90% (t = 225.0000 N)
-Elapsed CPU time                   :  0h  0mn  0s  20   ( 0h  0mn  0s 230)
-CPU Usage                          :  76%               ( 99%)
+Elapsed CPU time                   :  0h  0mn  0s  40   ( 0h  0mn  0s 350)
+CPU Usage                          :  97%               ( 99%)
 ................................................
 Simulation progress                : 100% (t = 250.0000 N)
-Elapsed CPU time                   :  0h  0mn  0s  10   ( 0h  0mn  0s 240)
-CPU Usage                          :  83%               ( 98%)
+Elapsed CPU time                   :  0h  0mn  0s  40   ( 0h  0mn  0s 390)
+CPU Usage                          : 100%               ( 99%)
 
 
 
-1*************** 8-Apr-2019 ***********************  ELDO 12.1 patch1 (64 bits)  (v7.7_1.1)  ***********************17:02:25*****************
+1*************** 9-Apr-2019 ***********************  ELDO 12.1 patch1 (64 bits)  (v7.7_1.1)  ***********************15:15:30*****************
 
 0* Component: $VLSI/Project/decoder  Viewpoint: default
 0****                 ACCOUNTING INFORMATION                                TEMPERATURE =   27.000 DEG C
@@ -7494,29 +7453,29 @@ Number of SWITCHES                  0
 Number of transmission lines        0
 Total number of elements simulated  106
 Number of equations                 255
-Number of non-zero terms            1141
-Percent Zeros                      98.25
-Number of Newton iterations         1001
-Average number of Newton iterations 3.588
-Number of accepted time steps       279
-Number of rejected time steps       25
-      due to LTE                    25
+Number of non-zero terms            1129
+Percent Zeros                      98.26
+Number of Newton iterations         1842
+Average number of Newton iterations 3.759
+Number of accepted time steps       490
+Number of rejected time steps       50
+      due to LTE                    50
       due to Newton                 0
-Evaluation of active devices        24364
-Memory size (MB)                    246.5
+Evaluation of active devices        58253
+Memory size (MB)                    246.7
 
-***>CPU TIME 0s 240ms <***
+***>CPU TIME 0s 390ms <***
 
-***>MESSAGE SUMMARY: 14 warnings
+***>MESSAGE SUMMARY: 10 warnings
 
-***>GLOBAL CPU TIME 0s 380ms <***
+***>GLOBAL CPU TIME 0s 500ms <***
 
 
 ***>GLOBAL ELAPSED TIME 1s <***
 
 
-  Job started at  8-Apr-2019 17:02:25
-  Job end at      8-Apr-2019 17:02:26
+  Job started at  9-Apr-2019 15:15:30
+  Job end at      9-Apr-2019 15:15:31
 
-  Run on egr-vlsi-13 (Linux 3.10.0-514.26.2.el7.x86_64)
+  Run on egr-vlsi-22 (Linux 3.10.0-514.26.2.el7.x86_64)
 

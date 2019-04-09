@@ -78,9 +78,9 @@ Cell #top#
    Pin Rd_0 RD_0
    Pin Rd_1 RD_1
    Pin Rd_2 RD_2
-   Net N$51 N$51
-   Net N$45 N$45
    Net N$31 N$31
+   Net N$53 N$53
+   Net N$54 N$54
    Net reg0 REG0
    Net reg1 REG1
    Net reg2 REG2
@@ -88,10 +88,10 @@ Cell #top#
    Net reg4 REG4
    Net reg5 REG5
    Net reg6 REG6
-   Net Rd_0 RD_0
-   Net Rd_2 RD_2
    Net reg7 REG7
+   Net Rd_2 RD_2
    Net Rd_1 RD_1
+   Net Rd_0 RD_0
    Inst AND38 X_AND38 AND3
    Inst AND37 X_AND37 AND3
    Inst AND36 X_AND36 AND3

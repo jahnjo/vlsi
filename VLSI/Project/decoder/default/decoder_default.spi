@@ -4,7 +4,7 @@
 .CONNECT GROUND 0
 
 
-* ELDO netlist generated with ICnet by 'egrvlsi07' on Mon Apr  8 2019 at 17:02:25
+* ELDO netlist generated with ICnet by 'egrvlsi07' on Tue Apr  9 2019 at 15:15:30
 
 *
 * Globals.
@@ -55,14 +55,14 @@
 *
         X_AND38 REG7 RD_0 RD_1 RD_2 AND3
         X_AND37 REG6 N$31 RD_1 RD_2 AND3
-        X_AND36 REG5 RD_0 N$45 RD_2 AND3
-        X_AND35 REG4 N$31 N$45 RD_2 AND3
-        X_AND34 REG3 RD_0 RD_1 N$51 AND3
-        X_AND33 REG2 N$31 RD_1 N$51 AND3
-        X_AND32 REG1 RD_0 N$45 N$51 AND3
-        X_AND31 REG0 N$31 N$45 N$51 AND3
-        X_INV3 RD_0 N$31 INV
-        X_INV2 RD_1 N$45 INV
-        X_INV1 RD_2 N$51 INV
+        X_AND36 REG5 RD_0 N$53 RD_2 AND3
+        X_AND35 REG4 N$31 N$53 RD_2 AND3
+        X_AND34 REG3 RD_0 RD_1 N$54 AND3
+        X_AND33 REG2 N$31 RD_1 N$54 AND3
+        X_AND32 REG1 RD_0 N$53 N$54 AND3
+        X_AND31 REG0 N$31 N$53 N$54 AND3
+        X_INV3 N$31 RD_0 INV
+        X_INV2 N$53 RD_1 INV
+        X_INV1 N$54 RD_2 INV
 *
 .end

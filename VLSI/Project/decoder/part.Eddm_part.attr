@@ -1,6 +1,12 @@
-A 5 u Eddm_part 5caba533c211.03.7f.00.00.01.00.41.ad 1 2 1 0
+A 5 u Eddm_part 5caba533c211.03.7f.00.00.01.00.41.ad 2 2 2 0
 V v 1 1 5caba533c212.03.7f.00.00.01.00.41.ad
 F f 1 "part.part_1"
+V v 2 1 5cacefcab2b3.03.7f.00.00.01.00.47.8c
+F f 2 "part.part_2"
+O 2
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R csduv 0 "$VLSI/Project/decoder/decoder" 1 mgc_schematic 5caba53067a2.03.7f.00.00.01.01.41.ad 5caba53067a2.03.7f.00.00.01.00.41.ad
+R csduv 1 "$VLSI/Project/decoder/decoder" 1 mgc_symbol 5cacef9820e4.03.7f.00.00.01.01.47.8c 5cacef9820e4.03.7f.00.00.01.00.47.8c
 O 1
 P "eddm__stream_to_use" "eddm__propl_dstream"
 R csduv 0 "$VLSI/Project/decoder/decoder" 1 mgc_schematic 5caba53067a2.03.7f.00.00.01.01.41.ad 5caba53067a2.03.7f.00.00.01.00.41.ad

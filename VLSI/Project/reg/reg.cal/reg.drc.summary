@@ -3,7 +3,7 @@
 ==================================================================================
 === CALIBRE::DRC-H SUMMARY REPORT
 ===
-Execution Date/Time:       Mon Apr  8 16:04:59 2019
+Execution Date/Time:       Tue Apr  9 17:02:45 2019
 Calibre Version:           v2012.2_36.25    Mon Jul 2 12:15:31 PDT 2012
 Rule File Pathname:        /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/reg/reg.cal/_DRC_
 Rule File Title:           
@@ -36,6 +36,10 @@ Layer 33 contains unmapped objects and is the source layer of LAYER MAP == 33 DA
 Layer 33 contains unmapped objects and is the source layer of LAYER MAP == 33 DATATYPE == 1.
 Layer 34 contains unmapped objects and is the source layer of LAYER MAP == 34 DATATYPE == 2.
 Layer 34 contains unmapped objects and is the source layer of LAYER MAP == 34 DATATYPE == 1.
+Layer 35 contains unmapped objects and is the source layer of LAYER MAP == 35 DATATYPE == 2.
+Layer 35 contains unmapped objects and is the source layer of LAYER MAP == 35 DATATYPE == 1.
+Layer 36 contains unmapped objects and is the source layer of LAYER MAP == 36 DATATYPE == 2.
+Layer 36 contains unmapped objects and is the source layer of LAYER MAP == 36 DATATYPE == 1.
 ----------------------------------------------------------------------------------
 --- ORIGINAL LAYER STATISTICS
 ---
@@ -45,22 +49,22 @@ LAYER PDIFFi ..... TOTAL Original Geometry Count = 0   (0)
 LAYER DIFFi ...... TOTAL Original Geometry Count = 18  (228)
 LAYER M1SLOTi .... TOTAL Original Geometry Count = 0   (0)
 LAYER DUM1 ....... TOTAL Original Geometry Count = 0   (0)
-LAYER METAL1i .... TOTAL Original Geometry Count = 137 (2242)
+LAYER METAL1i .... TOTAL Original Geometry Count = 147 (2252)
 LAYER M2SLOTi .... TOTAL Original Geometry Count = 0   (0)
 LAYER DUM2 ....... TOTAL Original Geometry Count = 0   (0)
 LAYER METAL2i .... TOTAL Original Geometry Count = 27  (788)
 LAYER M3SLOTi .... TOTAL Original Geometry Count = 0   (0)
 LAYER DUM3 ....... TOTAL Original Geometry Count = 0   (0)
-LAYER METAL3i .... TOTAL Original Geometry Count = 44  (430)
+LAYER METAL3i .... TOTAL Original Geometry Count = 74  (477)
 LAYER M4SLOTi .... TOTAL Original Geometry Count = 0   (0)
 LAYER DUM4 ....... TOTAL Original Geometry Count = 0   (0)
-LAYER METAL4i .... TOTAL Original Geometry Count = 19  (124)
+LAYER METAL4i .... TOTAL Original Geometry Count = 99  (277)
 LAYER M5SLOTi .... TOTAL Original Geometry Count = 0   (0)
 LAYER DUM5 ....... TOTAL Original Geometry Count = 0   (0)
-LAYER METAL5i .... TOTAL Original Geometry Count = 0   (0)
+LAYER METAL5i .... TOTAL Original Geometry Count = 32  (106)
 LAYER M6SLOTi .... TOTAL Original Geometry Count = 0   (0)
 LAYER DUM6 ....... TOTAL Original Geometry Count = 0   (0)
-LAYER METAL6i .... TOTAL Original Geometry Count = 0   (0)
+LAYER METAL6i .... TOTAL Original Geometry Count = 20  (38)
 LAYER M7SLOTi .... TOTAL Original Geometry Count = 0   (0)
 LAYER DUM7 ....... TOTAL Original Geometry Count = 0   (0)
 LAYER METAL7i .... TOTAL Original Geometry Count = 0   (0)
@@ -86,9 +90,9 @@ LAYER PIMPi ...... TOTAL Original Geometry Count = 9   (114)
 LAYER CONTi ...... TOTAL Original Geometry Count = 455 (5670)
 LAYER VIA12i ..... TOTAL Original Geometry Count = 1   (396)
 LAYER VIA23i ..... TOTAL Original Geometry Count = 1   (136)
-LAYER VIA34i ..... TOTAL Original Geometry Count = 1   (64)
-LAYER VIA45i ..... TOTAL Original Geometry Count = 0   (0)
-LAYER VIA56i ..... TOTAL Original Geometry Count = 0   (0)
+LAYER VIA34i ..... TOTAL Original Geometry Count = 1   (81)
+LAYER VIA45i ..... TOTAL Original Geometry Count = 1   (57)
+LAYER VIA56i ..... TOTAL Original Geometry Count = 1   (19)
 LAYER VIA67i ..... TOTAL Original Geometry Count = 0   (0)
 LAYER VIA78i ..... TOTAL Original Geometry Count = 0   (0)
 LAYER PADi ....... TOTAL Original Geometry Count = 0   (0)
@@ -286,7 +290,7 @@ RULECHECK RPO.R.2.PO ............. TOTAL Result Count = 0  (0)
 RULECHECK RPO.R.2.OD ............. TOTAL Result Count = 0  (0)
 RULECHECK CO.W.1 ................. TOTAL Result Count = 64 (120)
 RULECHECK CO.S.1 ................. TOTAL Result Count = 0  (0)
-RULECHECK CO.S.2 ................. TOTAL Result Count = 6  (6)
+RULECHECK CO.S.2 ................. TOTAL Result Count = 0  (0)
 RULECHECK CO.C.1 ................. TOTAL Result Count = 0  (0)
 RULECHECK CO.C.2 ................. TOTAL Result Count = 0  (0)
 RULECHECK CO.E.1 ................. TOTAL Result Count = 0  (0)
@@ -326,7 +330,7 @@ RULECHECK M3.S.1 ................. TOTAL Result Count = 0  (0)
 RULECHECK M3.E.1 ................. TOTAL Result Count = 0  (0)
 RULECHECK M3.E.2 ................. TOTAL Result Count = 0  (0)
 RULECHECK M3.S.2 ................. TOTAL Result Count = 0  (0)
-RULECHECK M3.A.1 ................. TOTAL Result Count = 4  (32)
+RULECHECK M3.A.1 ................. TOTAL Result Count = 1  (8)
 RULECHECK M3.S.3 ................. TOTAL Result Count = 0  (0)
 RULECHECK M3.W.2 ................. TOTAL Result Count = 0  (0)
 RULECHECK M3.S.4 ................. TOTAL Result Count = 0  (0)
@@ -337,7 +341,7 @@ RULECHECK M4.S.1 ................. TOTAL Result Count = 0  (0)
 RULECHECK M4.E.1 ................. TOTAL Result Count = 0  (0)
 RULECHECK M4.E.2 ................. TOTAL Result Count = 0  (0)
 RULECHECK M4.S.2 ................. TOTAL Result Count = 0  (0)
-RULECHECK M4.A.1 ................. TOTAL Result Count = 16 (56)
+RULECHECK M4.A.1 ................. TOTAL Result Count = 0  (0)
 RULECHECK M4.S.3 ................. TOTAL Result Count = 0  (0)
 RULECHECK M4.W.2 ................. TOTAL Result Count = 0  (0)
 RULECHECK M4.S.4 ................. TOTAL Result Count = 0  (0)
@@ -394,7 +398,7 @@ RULECHECK VIA4.S.2 ............... TOTAL Result Count = 0  (0)
 RULECHECK VIA4.E.1 ............... TOTAL Result Count = 0  (0)
 RULECHECK VIA4.E.2 ............... TOTAL Result Count = 0  (0)
 RULECHECK VIA4.R.2 ............... TOTAL Result Count = 0  (0)
-RULECHECK VIA5.W.1 ............... TOTAL Result Count = 0  (0)
+RULECHECK VIA5.W.1 ............... TOTAL Result Count = 1  (19)
 RULECHECK VIA5.S.1 ............... TOTAL Result Count = 0  (0)
 RULECHECK VIA5.S.2 ............... TOTAL Result Count = 0  (0)
 RULECHECK VIA5.E.1 ............... TOTAL Result Count = 0  (0)
@@ -506,23 +510,19 @@ RULECHECK AM.R.3.MD .............. TOTAL Result Count = 0  (0)
 ----------------------------------------------------------------------------------
 --- RULECHECK RESULTS STATISTICS (BY CELL)
 ---
-CELL DFFen ............. TOTAL Result Count = 13 (104)
-    RULECHECK CO.W.1 ... TOTAL Result Count = 8  (64)
-    RULECHECK M3.A.1 ... TOTAL Result Count = 1  (8)
-    RULECHECK M4.A.1 ... TOTAL Result Count = 4  (32)
-CELL Mux81 ............. TOTAL Result Count = 12 (24)
-    RULECHECK M4.A.1 ... TOTAL Result Count = 12 (24)
-CELL and ............... TOTAL Result Count = 3  (24)
-    RULECHECK M3.A.1 ... TOTAL Result Count = 3  (24)
-CELL reg ............... TOTAL Result Count = 63 (63)
-    RULECHECK PO.R.2 ... TOTAL Result Count = 1  (1)
-    RULECHECK CO.W.1 ... TOTAL Result Count = 56 (56)
-    RULECHECK CO.S.2 ... TOTAL Result Count = 6  (6)
+CELL DFFen ............... TOTAL Result Count = 9  (72)
+    RULECHECK CO.W.1 ..... TOTAL Result Count = 8  (64)
+    RULECHECK M3.A.1 ..... TOTAL Result Count = 1  (8)
+CELL M5M6 ................ TOTAL Result Count = 1  (19)
+    RULECHECK VIA5.W.1 ... TOTAL Result Count = 1  (19)
+CELL reg ................. TOTAL Result Count = 57 (57)
+    RULECHECK PO.R.2 ..... TOTAL Result Count = 1  (1)
+    RULECHECK CO.W.1 ..... TOTAL Result Count = 56 (56)
 ----------------------------------------------------------------------------------
 --- SUMMARY
 ---
 TOTAL CPU Time:                  0
 TOTAL REAL Time:                 0
-TOTAL Original Layer Geometries: 872 (12270)
+TOTAL Original Layer Geometries: 1046 (12717)
 TOTAL DRC RuleChecks Executed:   386
-TOTAL DRC Results Generated:     91 (215)
+TOTAL DRC Results Generated:     67 (148)

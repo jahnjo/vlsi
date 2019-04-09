@@ -1,0 +1,6 @@
+A 5 u mgc_symbol 5cacf25bbff5.03.7f.00.00.01.00.19.99 1 2 1 0
+V v 1 2 5cacf25bbff5.03.7f.00.00.01.01.19.99
+F f 1 "reg.smbl_1"
+F o 0 
+O 1
+R csduv 0 "$VLSI/Project/reg/part" 2 Eddm_part 5cacf2635ca9.03.7f.00.00.01.00.19.99 5ca4e62e316a.03.7f.00.00.01.00.7e.3b

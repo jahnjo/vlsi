@@ -1,0 +1,56 @@
+* LVS netlist generated with ICnet by 'egrvlsi07' on Tue Apr  9 2019 at 15:57:51
+
+*
+* Globals.
+*
+.global VDD ground
+
+*
+* Component pathname : $VLSI/Project/and
+*
+.subckt and  Y A B
+
+        M6 Y N$54 ground ground nmos l=0.13u w=0.6u m=1
+        M5 Y N$54 VDD VDD pmos l=0.13u w=1.35u m=1
+        M4 N$54 B VDD VDD pmos l=0.13u w=1.35u m=1
+        M3 N$54 A VDD VDD pmos l=0.13u w=1.35u m=1
+        M2 N$29 B ground ground nmos l=0.13u w=1.2u m=1
+        M1 N$54 A N$29 ground nmos l=0.13u w=1.2u m=1
+.ends and
+
+*
+* Component pathname : $VLSI/Project/and3
+*
+.subckt and3  Y A B C
+
+        X_AND2 Y N$10 C and
+        X_AND1 N$10 A B and
+.ends and3
+
+*
+* Component pathname : $VLSI/Project/inv
+*
+.subckt inv  OUT IN
+
+        M2 OUT IN VDD VDD pmos l=0.13u w=1.35u m=1
+        M1 OUT IN ground ground nmos l=0.13u w=0.6u m=1
+.ends inv
+
+*
+* Component pathname : $VLSI/Project/decoder
+*
+.subckt decoder  reg0 reg1 reg2 reg3 reg4 reg5 reg6 reg7 Rd_0 Rd_1 Rd_2
+
+        X_AND38 reg7 Rd_0 Rd_1 Rd_2 and3
+        X_AND37 reg6 N$31 Rd_1 Rd_2 and3
+        X_AND36 reg5 Rd_0 N$53 Rd_2 and3
+        X_AND35 reg4 N$31 N$53 Rd_2 and3
+        X_AND34 reg3 Rd_0 Rd_1 N$54 and3
+        X_AND33 reg2 N$31 Rd_1 N$54 and3
+        X_AND32 reg1 Rd_0 N$53 N$54 and3
+        X_AND31 reg0 N$31 N$53 N$54 and3
+        X_INV3 N$31 Rd_0 inv
+        X_INV2 N$53 Rd_1 inv
+        X_INV1 N$54 Rd_2 inv
+.ends decoder
+

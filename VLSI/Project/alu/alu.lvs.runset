@@ -3,13 +3,9 @@
 *lvsLayoutPaths: alu.calibre.gds
 *lvsLayoutPrimary: alu
 *lvsLayoutGetFromViewer: 1
+*lvsResultsFile: alu.lvs.results
+*lvsSummaryFile: alu.lvs.summary
+*cmnApplyTemplates: 0
+*lvsSourceGetFromViewer: 1
 *lvsSourcePath: alu.calibre.src.net
 *lvsSourcePrimary: alu
-*lvsSourceGetFromViewer: 1
-*lvsPowerNames: VDD
-*lvsGroundNames: ground
-*cmnShowOptions: 1
-*cmnApplyTemplates: 0
-*cmnSlaveHosts: {use {}} {hostName {}} {cpuCount {}} {a32a64 {}} {rsh {}} {maxMem {}} {workingDir {}} {layerDir {}} {mgcLibPath {}} {launchName {}}
-*cmnLSFSlaveTbl: {use 1} {totalCpus 1} {minCpus 1} {architecture {{}}} {minMemory {{}}} {resourceOptions {{}}} {submitOptions {{}}}
-*cmnGridSlaveTbl: {use 1} {totalCpus 1} {minCpus 1} {architecture {{}}} {minMemory {{}}} {resourceOptions {{}}} {submitOptions {{}}}

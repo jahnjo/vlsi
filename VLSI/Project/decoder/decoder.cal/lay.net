@@ -1,0 +1,46 @@
+* SPICE NETLIST
+***************************************
+
+.SUBCKT mimcap_g13 plus minus
+.ENDS
+***************************************
+.SUBCKT spiral_inductor_lvs pos neg
+.ENDS
+***************************************
+.SUBCKT and VDD ground Y A B
+** N=7 EP=5 IP=0 FDC=6
+M0 7 A 6 ground nmos L=1.3e-07 W=1.2e-06 $X=24885 $Y=96580 $D=19
+M1 ground B 7 ground nmos L=1.3e-07 W=1.2e-06 $X=25195 $Y=96580 $D=19
+M2 Y 6 ground ground nmos L=1.3e-07 W=6e-07 $X=25735 $Y=97180 $D=19
+M3 6 A VDD VDD pmos L=1.3e-07 W=1.35e-06 $X=24745 $Y=110170 $D=25
+M4 VDD B 6 VDD pmos L=1.3e-07 W=1.35e-06 $X=25255 $Y=110170 $D=25
+M5 Y 6 VDD VDD pmos L=1.3e-07 W=1.35e-06 $X=25765 $Y=110170 $D=25
+.ENDS
+***************************************
+.SUBCKT and3 ground VDD A B C Y
+** N=7 EP=6 IP=10 FDC=12
+X0 VDD ground 7 A B and $T=-39475 -65080 0 0 $X=-16415 $Y=29530
+X1 VDD ground Y 7 C and $T=-35475 -65080 0 0 $X=-12415 $Y=29530
+.ENDS
+***************************************
+.SUBCKT inv VDD ground OUT IN
+** N=4 EP=4 IP=0 FDC=2
+M0 OUT IN ground ground nmos L=1.3e-07 W=6e-07 $X=-1085 $Y=89785 $D=19
+M1 OUT IN VDD VDD pmos L=1.3e-07 W=1.35e-06 $X=-1075 $Y=103375 $D=25
+.ENDS
+***************************************
+.SUBCKT decoder ground VDD reg0 Rd_0 reg1 Rd_2 Rd_1 reg2 reg3 reg4 reg5 reg6 reg7
+** N=16 EP=13 IP=60 FDC=102
+X0 ground VDD 3 4 5 reg0 and3 $T=605 -16290 0 0 $X=-15810 $Y=13240
+X1 ground VDD Rd_0 4 5 reg1 and3 $T=8605 -16290 0 0 $X=-7810 $Y=13240
+X2 ground VDD 3 Rd_1 5 reg2 and3 $T=18205 -16290 0 0 $X=1790 $Y=13240
+X3 ground VDD Rd_0 Rd_1 5 reg3 and3 $T=26205 -16290 0 0 $X=9790 $Y=13240
+X4 ground VDD 3 4 Rd_2 reg4 and3 $T=35805 -16290 0 0 $X=19390 $Y=13240
+X5 ground VDD Rd_0 4 Rd_2 reg5 and3 $T=43805 -16290 0 0 $X=27390 $Y=13240
+X6 ground VDD 3 Rd_1 Rd_2 reg6 and3 $T=53405 -16290 0 0 $X=36990 $Y=13240
+X7 ground VDD Rd_0 Rd_1 Rd_2 reg7 and3 $T=61405 -16290 0 0 $X=44990 $Y=13240
+X8 VDD ground 5 Rd_2 inv $T=2250 -74575 0 0 $X=190 $Y=13240
+X9 VDD ground 3 Rd_0 inv $T=19850 -74575 0 0 $X=17790 $Y=13240
+X10 VDD ground 4 Rd_1 inv $T=37450 -74575 0 0 $X=35390 $Y=13240
+.ENDS
+***************************************

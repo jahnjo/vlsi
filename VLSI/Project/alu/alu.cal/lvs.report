@@ -15,7 +15,7 @@ REPORT FILE NAME:         lvs.report
 LAYOUT NAME:              /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/alu/alu.cal/lay.net ('alu')
 SOURCE NAME:              /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/alu/alu.cal/alu.calibre.src.net ('alu')
 RULE FILE:                /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/alu/alu.cal/_LVS_
-CREATION TIME:            Mon Apr  8 15:41:50 2019
+CREATION TIME:            Tue Apr  9 16:16:52 2019
 CURRENT DIRECTORY:        /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/alu/alu.cal
 USER NAME:                egrvlsi07
 CALIBRE VERSION:          v2012.2_36.25    Mon Jul 2 12:15:31 PDT 2012

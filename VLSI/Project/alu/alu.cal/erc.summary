@@ -3,7 +3,7 @@
 ==================================================================================
 === CALIBRE::ERC-H SUMMARY REPORT
 ===
-Execution Date/Time:          Mon Apr  8 15:41:50 2019
+Execution Date/Time:          Tue Apr  9 16:16:52 2019
 Calibre Version:              v2012.2_36.25    Mon Jul 2 12:15:31 PDT 2012
 Rule File Pathname:           /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/alu/alu.cal/_LVS_
 Rule File Title:              
@@ -84,7 +84,7 @@ LAYER DUM5 ...... TOTAL Original Geometry Count = 0   (0)
 LAYER M5 ........ TOTAL Original Geometry Count = 16  (16)
 LAYER M5SLOT .... TOTAL Original Geometry Count = 0   (0)
 LAYER DUM6 ...... TOTAL Original Geometry Count = 0   (0)
-LAYER M6 ........ TOTAL Original Geometry Count = 16  (16)
+LAYER M6 ........ TOTAL Original Geometry Count = 14  (14)
 LAYER M6SLOT .... TOTAL Original Geometry Count = 0   (0)
 LAYER DUM7 ...... TOTAL Original Geometry Count = 0   (0)
 LAYER M7 ........ TOTAL Original Geometry Count = 0   (0)
@@ -110,7 +110,7 @@ LAYER VIA1 ...... TOTAL Original Geometry Count = 71  (89)
 LAYER VIA2 ...... TOTAL Original Geometry Count = 18  (30)
 LAYER VIA3 ...... TOTAL Original Geometry Count = 16  (16)
 LAYER VIA4 ...... TOTAL Original Geometry Count = 8   (8)
-LAYER VIA5 ...... TOTAL Original Geometry Count = 8   (8)
+LAYER VIA5 ...... TOTAL Original Geometry Count = 7   (7)
 LAYER VIA6 ...... TOTAL Original Geometry Count = 0   (0)
 ----------------------------------------------------------------------------------
 --- RULECHECK RESULTS STATISTICS
@@ -127,5 +127,5 @@ LAYER VIA6 ...... TOTAL Original Geometry Count = 0   (0)
 ---
 TOTAL CPU Time:                              0
 TOTAL REAL Time:                             0
-TOTAL Original Layer Geometries:             1846 (2578)
+TOTAL Original Layer Geometries:             1843 (2575)
 TOTAL ERC PATHCHK Operations Executed:       4

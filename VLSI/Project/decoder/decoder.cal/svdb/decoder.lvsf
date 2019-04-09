@@ -1,0 +1,9 @@
+# Automagically generated file: Please do not edit!
+lvs_LvsOutFile RUNDIR /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/decoder/decoder.cal
+lvs_LvsfVersion 2
+lvs_LvsInputSummary {0 0 0}
+lvs_LvsComparisonSummary {3 0 0 0}
+lvs_LvsOutFile LVS_REPORT lvs.report
+lvs_LvsOutFile SOURCE_NETLIST /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/decoder/decoder.cal/decoder.calibre.src.net
+lvs_LvsOutFile RULES_FILE /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/decoder/decoder.cal/_LVS_
+lvs_LvsRunTimes 1554839873 1554839873

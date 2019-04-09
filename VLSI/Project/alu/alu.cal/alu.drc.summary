@@ -3,7 +3,7 @@
 ==================================================================================
 === CALIBRE::DRC-H SUMMARY REPORT
 ===
-Execution Date/Time:       Mon Apr  8 15:40:58 2019
+Execution Date/Time:       Tue Apr  9 16:16:23 2019
 Calibre Version:           v2012.2_36.25    Mon Jul 2 12:15:31 PDT 2012
 Rule File Pathname:        /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/alu/alu.cal/_DRC_
 Rule File Title:           
@@ -61,10 +61,10 @@ LAYER DUM4 ....... TOTAL Original Geometry Count = 0   (0)
 LAYER METAL4i .... TOTAL Original Geometry Count = 22  (44)
 LAYER M5SLOTi .... TOTAL Original Geometry Count = 0   (0)
 LAYER DUM5 ....... TOTAL Original Geometry Count = 0   (0)
-LAYER METAL5i .... TOTAL Original Geometry Count = 2   (16)
+LAYER METAL5i .... TOTAL Original Geometry Count = 3   (16)
 LAYER M6SLOTi .... TOTAL Original Geometry Count = 0   (0)
 LAYER DUM6 ....... TOTAL Original Geometry Count = 0   (0)
-LAYER METAL6i .... TOTAL Original Geometry Count = 9   (16)
+LAYER METAL6i .... TOTAL Original Geometry Count = 8   (14)
 LAYER M7SLOTi .... TOTAL Original Geometry Count = 0   (0)
 LAYER DUM7 ....... TOTAL Original Geometry Count = 0   (0)
 LAYER METAL7i .... TOTAL Original Geometry Count = 0   (0)
@@ -92,7 +92,7 @@ LAYER VIA12i ..... TOTAL Original Geometry Count = 1   (89)
 LAYER VIA23i ..... TOTAL Original Geometry Count = 1   (30)
 LAYER VIA34i ..... TOTAL Original Geometry Count = 1   (16)
 LAYER VIA45i ..... TOTAL Original Geometry Count = 1   (8)
-LAYER VIA56i ..... TOTAL Original Geometry Count = 1   (8)
+LAYER VIA56i ..... TOTAL Original Geometry Count = 1   (7)
 LAYER VIA67i ..... TOTAL Original Geometry Count = 0   (0)
 LAYER VIA78i ..... TOTAL Original Geometry Count = 0   (0)
 LAYER PADi ....... TOTAL Original Geometry Count = 0   (0)
@@ -398,7 +398,7 @@ RULECHECK VIA4.S.2 ............... TOTAL Result Count = 0 (0)
 RULECHECK VIA4.E.1 ............... TOTAL Result Count = 0 (0)
 RULECHECK VIA4.E.2 ............... TOTAL Result Count = 0 (0)
 RULECHECK VIA4.R.2 ............... TOTAL Result Count = 0 (0)
-RULECHECK VIA5.W.1 ............... TOTAL Result Count = 1 (8)
+RULECHECK VIA5.W.1 ............... TOTAL Result Count = 1 (7)
 RULECHECK VIA5.S.1 ............... TOTAL Result Count = 0 (0)
 RULECHECK VIA5.S.2 ............... TOTAL Result Count = 0 (0)
 RULECHECK VIA5.E.1 ............... TOTAL Result Count = 0 (0)
@@ -510,8 +510,8 @@ RULECHECK AM.R.3.MD .............. TOTAL Result Count = 0 (0)
 ----------------------------------------------------------------------------------
 --- RULECHECK RESULTS STATISTICS (BY CELL)
 ---
-CELL M5M6 ................ TOTAL Result Count = 1 (8)
-    RULECHECK VIA5.W.1 ... TOTAL Result Count = 1 (8)
+CELL M5M6 ................ TOTAL Result Count = 1 (7)
+    RULECHECK VIA5.W.1 ... TOTAL Result Count = 1 (7)
 CELL alu ................. TOTAL Result Count = 3 (3)
     RULECHECK PO.R.2 ..... TOTAL Result Count = 1 (1)
     RULECHECK VIA1.W.1 ... TOTAL Result Count = 1 (1)
@@ -521,6 +521,6 @@ CELL alu ................. TOTAL Result Count = 3 (3)
 ---
 TOTAL CPU Time:                  0
 TOTAL REAL Time:                 0
-TOTAL Original Layer Geometries: 1369 (2578)
+TOTAL Original Layer Geometries: 1369 (2575)
 TOTAL DRC RuleChecks Executed:   386
-TOTAL DRC Results Generated:     4 (11)
+TOTAL DRC Results Generated:     4 (10)

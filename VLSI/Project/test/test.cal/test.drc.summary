@@ -3,7 +3,7 @@
 ==================================================================================
 === CALIBRE::DRC-H SUMMARY REPORT
 ===
-Execution Date/Time:       Wed Apr 10 13:49:18 2019
+Execution Date/Time:       Wed Apr 10 13:54:17 2019
 Calibre Version:           v2012.2_36.25    Mon Jul 2 12:15:31 PDT 2012
 Rule File Pathname:        /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/test/test.cal/_DRC_
 Rule File Title:           
@@ -56,7 +56,7 @@ LAYER DUM3 ....... TOTAL Original Geometry Count = 0   (0)
 LAYER METAL3i .... TOTAL Original Geometry Count = 14  (46)
 LAYER M4SLOTi .... TOTAL Original Geometry Count = 0   (0)
 LAYER DUM4 ....... TOTAL Original Geometry Count = 0   (0)
-LAYER METAL4i .... TOTAL Original Geometry Count = 14  (30)
+LAYER METAL4i .... TOTAL Original Geometry Count = 12  (28)
 LAYER M5SLOTi .... TOTAL Original Geometry Count = 0   (0)
 LAYER DUM5 ....... TOTAL Original Geometry Count = 0   (0)
 LAYER METAL5i .... TOTAL Original Geometry Count = 7   (12)
@@ -85,7 +85,7 @@ LAYER DNWELLi .... TOTAL Original Geometry Count = 0   (0)
 LAYER OD2i ....... TOTAL Original Geometry Count = 0   (0)
 LAYER DPO ........ TOTAL Original Geometry Count = 0   (0)
 LAYER PIMPi ...... TOTAL Original Geometry Count = 7   (14)
-LAYER CONTi ...... TOTAL Original Geometry Count = 344 (748)
+LAYER CONTi ...... TOTAL Original Geometry Count = 400 (860)
 LAYER VIA12i ..... TOTAL Original Geometry Count = 1   (62)
 LAYER VIA23i ..... TOTAL Original Geometry Count = 1   (14)
 LAYER VIA34i ..... TOTAL Original Geometry Count = 1   (8)
@@ -286,9 +286,9 @@ RULECHECK RPO.A.1 ................ TOTAL Result Count = 0  (0)
 RULECHECK RPO.C.6 ................ TOTAL Result Count = 0  (0)
 RULECHECK RPO.R.2.PO ............. TOTAL Result Count = 0  (0)
 RULECHECK RPO.R.2.OD ............. TOTAL Result Count = 0  (0)
-RULECHECK CO.W.1 ................. TOTAL Result Count = 16 (24)
-RULECHECK CO.S.1 ................. TOTAL Result Count = 0  (0)
-RULECHECK CO.S.2 ................. TOTAL Result Count = 0  (0)
+RULECHECK CO.W.1 ................. TOTAL Result Count = 64 (96)
+RULECHECK CO.S.1 ................. TOTAL Result Count = 64 (88)
+RULECHECK CO.S.2 ................. TOTAL Result Count = 64 (88)
 RULECHECK CO.C.1 ................. TOTAL Result Count = 0  (0)
 RULECHECK CO.C.2 ................. TOTAL Result Count = 0  (0)
 RULECHECK CO.E.1 ................. TOTAL Result Count = 0  (0)
@@ -508,18 +508,22 @@ RULECHECK AM.R.3.MD .............. TOTAL Result Count = 0  (0)
 ----------------------------------------------------------------------------------
 --- RULECHECK RESULTS STATISTICS (BY CELL)
 ---
-CELL DFFen ............. TOTAL Result Count = 9  (18)
-    RULECHECK CO.W.1 ... TOTAL Result Count = 8  (16)
-    RULECHECK M3.A.1 ... TOTAL Result Count = 1  (2)
-CELL test .............. TOTAL Result Count = 15 (15)
-    RULECHECK PO.R.2 ... TOTAL Result Count = 1  (1)
-    RULECHECK CO.W.1 ... TOTAL Result Count = 8  (8)
-    RULECHECK M5.A.1 ... TOTAL Result Count = 6  (6)
+CELL DFFen ............. TOTAL Result Count = 81  (162)
+    RULECHECK CO.W.1 ... TOTAL Result Count = 32  (64)
+    RULECHECK CO.S.1 ... TOTAL Result Count = 24  (48)
+    RULECHECK CO.S.2 ... TOTAL Result Count = 24  (48)
+    RULECHECK M3.A.1 ... TOTAL Result Count = 1   (2)
+CELL test .............. TOTAL Result Count = 119 (119)
+    RULECHECK PO.R.2 ... TOTAL Result Count = 1   (1)
+    RULECHECK CO.W.1 ... TOTAL Result Count = 32  (32)
+    RULECHECK CO.S.1 ... TOTAL Result Count = 40  (40)
+    RULECHECK CO.S.2 ... TOTAL Result Count = 40  (40)
+    RULECHECK M5.A.1 ... TOTAL Result Count = 6   (6)
 ----------------------------------------------------------------------------------
 --- SUMMARY
 ---
 TOTAL CPU Time:                  0
 TOTAL REAL Time:                 0
-TOTAL Original Layer Geometries: 670 (1750)
+TOTAL Original Layer Geometries: 724 (1860)
 TOTAL DRC RuleChecks Executed:   386
-TOTAL DRC Results Generated:     24 (33)
+TOTAL DRC Results Generated:     200 (281)

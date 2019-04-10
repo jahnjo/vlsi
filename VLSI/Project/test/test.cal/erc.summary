@@ -3,7 +3,7 @@
 ==================================================================================
 === CALIBRE::ERC-H SUMMARY REPORT
 ===
-Execution Date/Time:          Wed Apr 10 13:36:39 2019
+Execution Date/Time:          Wed Apr 10 13:56:03 2019
 Calibre Version:              v2012.2_36.25    Mon Jul 2 12:15:31 PDT 2012
 Rule File Pathname:           /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/test/test.cal/_LVS_
 Rule File Title:              
@@ -58,7 +58,7 @@ LAYER VTH_N ..... TOTAL Original Geometry Count = 0   (0)
 LAYER DNW ....... TOTAL Original Geometry Count = 0   (0)
 LAYER PSUB2 ..... TOTAL Original Geometry Count = 0   (0)
 LAYER RFDUMMY ... TOTAL Original Geometry Count = 0   (0)
-LAYER CONT ...... TOTAL Original Geometry Count = 374 (748)
+LAYER CONT ...... TOTAL Original Geometry Count = 430 (860)
 LAYER VARDMY .... TOTAL Original Geometry Count = 0   (0)
 LAYER PP ........ TOTAL Original Geometry Count = 7   (14)
 LAYER VTL_P ..... TOTAL Original Geometry Count = 0   (0)
@@ -76,7 +76,7 @@ LAYER DUM3 ...... TOTAL Original Geometry Count = 0   (0)
 LAYER M3 ........ TOTAL Original Geometry Count = 23  (46)
 LAYER M3SLOT .... TOTAL Original Geometry Count = 0   (0)
 LAYER DUM4 ...... TOTAL Original Geometry Count = 0   (0)
-LAYER M4 ........ TOTAL Original Geometry Count = 22  (30)
+LAYER M4 ........ TOTAL Original Geometry Count = 20  (28)
 LAYER M4SLOT .... TOTAL Original Geometry Count = 0   (0)
 LAYER DUM5 ...... TOTAL Original Geometry Count = 0   (0)
 LAYER M5 ........ TOTAL Original Geometry Count = 12  (12)
@@ -129,7 +129,7 @@ LAYER VIA6 ...... TOTAL Original Geometry Count = 0   (0)
 ---
 TOTAL CPU Time:                              0
 TOTAL REAL Time:                             0
-TOTAL Original Layer Geometries:             892 (1750)
+TOTAL Original Layer Geometries:             946 (1860)
 TOTAL ERC PATHCHK Operations Executed:       4
 TOTAL ERC PATHCHK POLYGON Results Generated: 32 (48)
 TOTAL ERC PATHCHK NET Results Generated:     2

@@ -1,0 +1,37 @@
+* Component: $VLSI/Project/or3  Viewpoint: default
+.INCLUDE $VLSI/Project/or3/default/or3_default.spi
+.INCLUDE $GENERIC13/models/include_all
+.OPTION NOASCII
+.OPTION MODWL
+.OPTION ENGNOT
+.OPTION AEX
+
+* --- Singles
+
+* - Analysis Setup - Trans
+.TRAN 0 210N
+
+* --- Waveform Outputs
+.PROBE TRAN V(A)
+.PROBE TRAN V(B)
+.PROBE TRAN V(C)
+.PROBE TRAN V(Y)
+
+* --- Params
+.TEMP 27
+
+* --- Forces
+VFORCE__A A GROUND PULSE (0 2.5v 25n 1n 1n 25n 50n)
+VFORCE__B B GROUND PULSE (0 2.5v 50n 1n 1n 50n 100n)
+VFORCE__C C GROUND PULSE (0 2.5v 100n 1n 1n 100n 200n)
+VFORCE___VDD VDD GROUND dc 2.5v
+
+* --- Libsetup
+.LIB key=MOS $GENERIC13/models/lib.eldo TT
+.LIB key=MOS_33 $GENERIC13/models/lib.eldo TT_33
+.LIB key=MOS_lvt $GENERIC13/models/lib.eldo TT_lvt
+.LIB key=MOS_hvt $GENERIC13/models/lib.eldo TT_hvt
+.LIB key=BIP $GENERIC13/models/lib.eldo TT_BIP
+.LIB key=BIP_NPN $GENERIC13/models/lib.eldo TT_BIP_NPN
+.LIB key=RES $GENERIC13/models/lib.eldo TT_RES
+

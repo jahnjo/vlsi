@@ -1,0 +1,6 @@
+A 5 u mgc_symbol 5cae23ffc663.03.7f.00.00.01.00.13.31 1 2 1 0
+V v 1 2 5cae23ffc663.03.7f.00.00.01.01.13.31
+F f 1 "or3.smbl_1"
+F o 0 
+O 1
+R csduv 0 "$VLSI/Project/or3/part" 2 Eddm_part 5cae24366a80.03.7f.00.00.01.00.13.31 5cae21cac25f.03.7f.00.00.01.00.0e.ce

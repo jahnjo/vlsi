@@ -1,0 +1,9 @@
+A 5 u mgc_sheet 5cae21d61b8f.03.7f.00.00.01.00.11.01 1 2 1 0
+V v 1 4 5cae21d61b8f.03.7f.00.00.01.01.11.01
+F f 1 "sheet1.ssht_1"
+F f 1 "sheet1.sgfx_1"
+F o 0 
+F o 0 
+O 1
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R csduv 0 "$VLSI/Project/test/test" 1 mgc_schematic 5cae21d61abc.03.7f.00.00.01.01.11.01 5cae21d61abc.03.7f.00.00.01.00.11.01

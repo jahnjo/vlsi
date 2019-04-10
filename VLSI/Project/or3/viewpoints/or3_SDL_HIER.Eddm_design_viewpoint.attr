@@ -1,0 +1,15 @@
+A 5 u Eddm_design_viewpoint 5cae246b3968.03.7f.00.00.01.00.1f.d9 1 2 6 0
+V v 1 4 5cae246b3968.03.7f.00.00.01.01.1f.d9
+F f 1 "or3_SDL_HIER.dvpt_1"
+F o 0 
+F o 0 
+F o 0 
+O 1
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R cspuv 0 "$VLSI/Project/or3/part" 2 Eddm_part 5cae24366a80.03.7f.00.00.01.00.13.31 5cae21cac25f.03.7f.00.00.01.00.0e.ce
+R cspuv 1 "$VLSI/Project/or3/or3" 3 mgc_schematic 5cae227051c0.03.7f.00.00.01.00.13.31 5cae21c2002f.03.7f.00.00.01.00.0e.ce
+R cspuv 2 "$VLSI/Project/or3/or3" 1 mgc_symbol 5cae23ffc663.03.7f.00.00.01.01.13.31 5cae23ffc663.03.7f.00.00.01.00.13.31
+R cspuv 3 "$VLSI/Project/or/part" 2 Eddm_part 5ca25ff1e676.03.7f.00.00.01.00.5f.b9 5c9bb03ee604.03.7f.00.00.01.00.5a.1e
+R cspuv 4 "$VLSI/Project/or/or" 1 mgc_schematic 5c9bb0379e21.03.7f.00.00.01.01.5a.1e 5c9bb0379e21.03.7f.00.00.01.00.5a.1e
+P "eddm__refer_state" "eddm__refer_floating"
+R cspuv 5 "$VLSI/Project/or/or" 1 mgc_symbol 5ca25fe8999b.03.7f.00.00.01.01.5f.b9 5ca25fe8999b.03.7f.00.00.01.00.5f.b9

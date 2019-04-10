@@ -1,0 +1,33 @@
+A 5 u Eddm_design_viewpoint 5cae22b9de6e.03.7f.00.00.01.00.13.31 2 2 18 0
+V v 1 4 5cae22b9de6e.03.7f.00.00.01.01.13.31
+F f 1 "default.dvpt_1"
+F o 0 
+F o 0 
+F o 0 
+V v 2 4 5cae22ba444d.03.7f.00.00.01.00.13.31
+F f 2 "default.dvpt_2"
+F o 0 
+F o 0 
+F o 0 
+O 2
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R cspuv 0 "$VLSI/Project/or3/part" 1 Eddm_part 5cae21cac25f.03.7f.00.00.01.01.0e.ce 5cae21cac25f.03.7f.00.00.01.00.0e.ce
+R cspuv 1 "$VLSI/Project/or3/or3" 3 mgc_schematic 5cae227051c0.03.7f.00.00.01.00.13.31 5cae21c2002f.03.7f.00.00.01.00.0e.ce
+R cspuv 2 "$VLSI/Project/or3/default" 1 Eddm_ba_mgr 5cae22b9dfd9.03.7f.00.00.01.01.13.31 5cae22b9dfd9.03.7f.00.00.01.00.13.31
+R cspuv 3 "$VLSI/Project/or/part" 2 Eddm_part 5ca25ff1e676.03.7f.00.00.01.00.5f.b9 5c9bb03ee604.03.7f.00.00.01.00.5a.1e
+R cspuv 4 "$VLSI/Project/or/or" 4 mgc_schematic 5ca254b7f37e.03.7f.00.00.01.00.42.fc 5c9bb0379e21.03.7f.00.00.01.00.5a.1e
+R cspuv 5 "$VLSI/Project/or/or" 1 mgc_symbol 5ca25fe8999b.03.7f.00.00.01.01.5f.b9 5ca25fe8999b.03.7f.00.00.01.00.5f.b9
+R cspuv 10 "$GENERIC13/symbols/pmos/part" 24 Eddm_part 4f3c5315ac7a.03.93.22.28.e1.00.55.af 488e22b57236.03.93.22.28.e1.03.11.a3
+R cspuv 11 "$GENERIC13/symbols/nmos/part" 33 Eddm_part 4f3c52ec7414.03.93.22.28.e1.00.55.af 488e22b57232.03.93.22.28.e1.0a.11.a3
+R cspuv 12 "$GENERIC13/symbols/nmos/nmos" 41 mgc_symbol 4f3c52ec7400.03.93.22.28.e1.00.55.af 488e22b57232.03.93.22.28.e1.0b.11.a3
+R cspuv 13 "$GENERIC13/symbols/pmos/pmos" 27 mgc_symbol 4f3c5315ac6d.03.93.22.28.e1.00.55.af 488e22b57236.03.93.22.28.e1.02.11.a3
+R cspuv 14 "$MGC_IC_GENERIC_LIB/vdd/part" 1 Eddm_part 3db48b399318.03.93.22.29.75.00.28.94 3db48b399317.03.93.22.29.75.00.28.94
+R cspuv 15 "$MGC_IC_GENERIC_LIB/ground/part" 1 Eddm_part 3db4867e4bc8.03.93.22.29.75.00.27.f6 3db4867e4bc7.03.93.22.29.75.00.27.f6
+R cspuv 16 "$MGC_IC_GENERIC_LIB/vdd/vdd" 1 mgc_symbol 3db48b399bae.03.93.22.29.75.00.28.94 3db48b399bac.03.93.22.29.75.00.28.94
+R cspuv 17 "$MGC_IC_GENERIC_LIB/ground/ground" 1 mgc_symbol 3db4867e5447.03.93.22.29.75.00.27.f6 3db4867e5446.03.93.22.29.75.00.27.f6
+O 1
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R cspuv 0 "$VLSI/Project/or3/part" 1 Eddm_part 5cae21cac25f.03.7f.00.00.01.01.0e.ce 5cae21cac25f.03.7f.00.00.01.00.0e.ce
+R cspuv 1 "$VLSI/Project/or3/or3" 1 mgc_schematic 5cae21c20030.03.7f.00.00.01.00.0e.ce 5cae21c2002f.03.7f.00.00.01.00.0e.ce
+P "eddm__refer_state" "eddm__refer_floating"
+R cspuv 2 "$VLSI/Project/or3/default" 1 Eddm_ba_mgr 5cae22b9dfd9.03.7f.00.00.01.01.13.31 5cae22b9dfd9.03.7f.00.00.01.00.13.31

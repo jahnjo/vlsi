@@ -1,0 +1,7 @@
+ERC PATHCHK REPORT for test
+  PATHCHK GROUND && ! POWER:
+  PATHCHK POWER && ! GROUND:
+  PATHCHK ! POWER && ! GROUND:
+      cell DFFen (X0): 18 
+  PATHCHK ! LABELED:
+      cell DFFen (X0): 18 

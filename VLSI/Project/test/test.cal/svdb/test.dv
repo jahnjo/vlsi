@@ -1,0 +1,68 @@
+# CALIBRE-LVS DISCREPANCY VIEWER TCL FILE 
+# FILE: svdb/test.dv
+dv_start unmatched
+dv_cell {test} {test} unmatched
+dv_obj_count -transformed_nets {22 20} -transformed_inst {20 20} -transformed_port {8 8}
+dv_discrep 1 {Incorrect Nets}
+dv_discrep_line {Net } -lnet {ENABLE} {                                                } -snet {ENABLE} {}
+dv_discrep_line {--------------------------                                --------------------------}
+dv_discrep_line {}
+dv_discrep_line {** missing connection **                                  (_mx2v):}  {sel} {}
+dv_discrep_line {                                                            } -sdev {X_DFFEN1/X_Enable_Mux/M1} {:}  {g} {}
+dv_discrep_line {                                                            } -sdev {X_DFFEN1/X_Enable_Mux/M2} {:}  {g} {}
+dv_discrep_line {                                                            } -sdev {X_DFFEN1/X_Enable_Mux/M5} {:}  {g} {}
+dv_discrep_line {                                                            } -sdev {X_DFFEN1/X_Enable_Mux/M3} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {** missing connection **                                  (_mx2v):}  {sel} {}
+dv_discrep_line {                                                            } -sdev {X_DFFEN2/X_Enable_Mux/M1} {:}  {g} {}
+dv_discrep_line {                                                            } -sdev {X_DFFEN2/X_Enable_Mux/M2} {:}  {g} {}
+dv_discrep_line {                                                            } -sdev {X_DFFEN2/X_Enable_Mux/M5} {:}  {g} {}
+dv_discrep_line {                                                            } -sdev {X_DFFEN2/X_Enable_Mux/M3} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep 2 {Incorrect Nets}
+dv_discrep_line {Net } -lnet {X0/18} {                                                 ** missing net **}
+dv_discrep_line {}
+dv_discrep 3 {Incorrect Nets}
+dv_discrep_line {Net } -lnet {X1/18} {                                                 ** missing net **}
+dv_discrep_line {}
+dv_discrep -1 {Detailed Instance Connections}
+dv_discrep_line {}
+dv_discrep_line {(_mx2v)                                                   (_mx2v)}
+dv_discrep_line {  } -lport {in1} {: } -lnet {X} {                                                    } -sport {in1} {: } -snet {X} {}
+dv_discrep_line {  } -lport {in2} {: } -lnet {A} {                                                    } -sport {in2} {: } -snet {A} {}
+dv_discrep_line {  } -lport {out} {: } -lnet {X0/7} {                                                 } -sport {out} {: } -snet {X_DFFEN1/N$5} {}
+dv_discrep_line {  } -lport {sup1} {: } -lnet {VDD} {                                                 } -sport {sup1} {: } -snet {VDD} {}
+dv_discrep_line {  } -lport {sup2} {: } -lnet {GROUND} {                                              } -sport {sup2} {: } -snet {GROUND} {}
+dv_discrep_line {  } -lport {sel} {: } -lnet {X0/18} {                                                ** missing net **}
+dv_discrep_line {  ** } -lnet {ENABLE} { **                                              } -sport {sel} {: } -snet {ENABLE} {}
+dv_discrep_line {}
+dv_discrep_line {Devices: }
+dv_discrep_line {  } -ldev {X0/M17} {} -lloc {(-0.630,136.365)} {  MP(PMOS)                          } -sdev {X_DFFEN1/X_Enable_Mux/M3} {  MP(PMOS) }
+dv_discrep_line {  } -ldev {X0/M18} {} -lloc {(-0.120,136.365)} {  MP(PMOS)                          } -sdev {X_DFFEN1/X_Enable_Mux/M4} {  MP(PMOS) }
+dv_discrep_line {  } -ldev {X0/M1} {} -lloc {(-0.110,122.775)} {  MN(NMOS)                           } -sdev {X_DFFEN1/X_Enable_Mux/M5} {  MN(NMOS) }
+dv_discrep_line {  } -ldev {X0/M0} {} -lloc {(-0.620,122.775)} {  MN(NMOS)                           } -sdev {X_DFFEN1/X_Enable_Mux/M6} {  MN(NMOS) }
+dv_discrep_line {  } -ldev {X0/M19} {} -lloc {(1.360,136.365)} {  MP(PMOS)                           } -sdev {X_DFFEN1/X_Enable_Mux/M2} {  MP(PMOS) }
+dv_discrep_line {  } -ldev {X0/M2} {} -lloc {(1.370,122.775)} {  MN(NMOS)                            } -sdev {X_DFFEN1/X_Enable_Mux/M1} {  MN(NMOS) }
+dv_discrep_line {}
+dv_discrep_line {--------------------------------------------------------------------------------------------------------------}
+dv_discrep_line {}
+dv_discrep_line {(_mx2v)                                                   (_mx2v)}
+dv_discrep_line {  } -lport {in1} {: } -lnet {Y} {                                                    } -sport {in1} {: } -snet {Y} {}
+dv_discrep_line {  } -lport {in2} {: } -lnet {B} {                                                    } -sport {in2} {: } -snet {B} {}
+dv_discrep_line {  } -lport {out} {: } -lnet {X1/7} {                                                 } -sport {out} {: } -snet {X_DFFEN2/N$5} {}
+dv_discrep_line {  } -lport {sup1} {: } -lnet {VDD} {                                                 } -sport {sup1} {: } -snet {VDD} {}
+dv_discrep_line {  } -lport {sup2} {: } -lnet {GROUND} {                                              } -sport {sup2} {: } -snet {GROUND} {}
+dv_discrep_line {  } -lport {sel} {: } -lnet {X1/18} {                                                ** missing net **}
+dv_discrep_line {  ** } -lnet {ENABLE} { **                                              } -sport {sel} {: } -snet {ENABLE} {}
+dv_discrep_line {}
+dv_discrep_line {Devices: }
+dv_discrep_line {  } -ldev {X1/M17} {} -lloc {(12.225,136.365)} {  MP(PMOS)                          } -sdev {X_DFFEN2/X_Enable_Mux/M3} {  MP(PMOS) }
+dv_discrep_line {  } -ldev {X1/M18} {} -lloc {(12.735,136.365)} {  MP(PMOS)                          } -sdev {X_DFFEN2/X_Enable_Mux/M4} {  MP(PMOS) }
+dv_discrep_line {  } -ldev {X1/M1} {} -lloc {(12.745,122.775)} {  MN(NMOS)                           } -sdev {X_DFFEN2/X_Enable_Mux/M5} {  MN(NMOS) }
+dv_discrep_line {  } -ldev {X1/M0} {} -lloc {(12.235,122.775)} {  MN(NMOS)                           } -sdev {X_DFFEN2/X_Enable_Mux/M6} {  MN(NMOS) }
+dv_discrep_line {  } -ldev {X1/M19} {} -lloc {(14.215,136.365)} {  MP(PMOS)                          } -sdev {X_DFFEN2/X_Enable_Mux/M2} {  MP(PMOS) }
+dv_discrep_line {  } -ldev {X1/M2} {} -lloc {(14.225,122.775)} {  MN(NMOS)                           } -sdev {X_DFFEN2/X_Enable_Mux/M1} {  MN(NMOS) }
+dv_discrep_line {}
+dv_end

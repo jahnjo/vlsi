@@ -1,0 +1,15 @@
+A 5 u Eddm_design_viewpoint 5cae287b715a.03.7f.00.00.01.00.31.46 1 2 6 0
+V v 1 4 5cae287b715a.03.7f.00.00.01.01.31.46
+F f 1 "test_SDL_HIER.dvpt_1"
+F o 0 
+F o 0 
+F o 0 
+O 1
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R cspuv 0 "$VLSI/Project/test/part" 2 Eddm_part 5cae2863ae2e.03.7f.00.00.01.00.27.16 5cae21da69c4.03.7f.00.00.01.00.11.01
+R cspuv 1 "$VLSI/Project/test/test" 3 mgc_schematic 5cae26d2d153.03.7f.00.00.01.00.27.16 5cae21d61abc.03.7f.00.00.01.00.11.01
+R cspuv 2 "$VLSI/Project/test/test" 1 mgc_symbol 5cae2838c06d.03.7f.00.00.01.01.27.16 5cae2838c06d.03.7f.00.00.01.00.27.16
+R cspuv 3 "$VLSI/Project/DFFen/part" 2 Eddm_part 5c9d2381092c.03.7f.00.00.01.00.28.34 5c9badbb8aae.03.7f.00.00.01.00.4e.07
+R cspuv 4 "$VLSI/Project/DFFen/DFFen" 1 mgc_schematic 5c9bada97d8f.03.7f.00.00.01.00.4e.07 5c9bada97d8e.03.7f.00.00.01.00.4e.07
+P "eddm__refer_state" "eddm__refer_floating"
+R cspuv 5 "$VLSI/Project/DFFen/DFFen" 1 mgc_symbol 5c9d229c1b27.03.7f.00.00.01.00.28.34 5c9d229c1b26.03.7f.00.00.01.00.28.34

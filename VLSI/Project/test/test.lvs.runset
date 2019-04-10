@@ -1,0 +1,11 @@
+*lvsRulesFile: /home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/rule_deck/LVS
+*lvsRunDir: /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/test/test.cal
+*lvsLayoutPaths: test.calibre.gds
+*lvsLayoutPrimary: test
+*lvsLayoutGetFromViewer: 1
+*lvsResultsFile: test.lvs.results
+*lvsSummaryFile: test.lvs.summary
+*cmnApplyTemplates: 0
+*lvsSourceGetFromViewer: 1
+*lvsSourcePath: test.calibre.src.net
+*lvsSourcePrimary: test

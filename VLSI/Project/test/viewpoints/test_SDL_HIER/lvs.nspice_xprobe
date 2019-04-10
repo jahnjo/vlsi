@@ -1,0 +1,116 @@
+# This file provides name mapping information for all objects
+# on the schematic design.  It provides a mapping for each
+# object between its name on the schematic and its name in the netlist.
+version 1.0
+
+Globals
+   VDD VDD
+   ground ground
+End Globals
+
+Cell nmos
+   Pin D D
+   Pin G G
+   Pin S S
+   Pin B B
+End Cell
+
+Cell pmos
+   Pin D D
+   Pin G G
+   Pin S S
+   Pin B B
+End Cell
+
+Cell Mux21
+   Pin Y Y
+   Pin A A
+   Pin B B
+   Pin S S
+   Net N$46 N$46
+   Net A A
+   Net Y Y
+   Net B B
+   Net S S
+   Global ground ground
+   Global VDD VDD
+   Inst M6 M6 nmos
+   Inst M3 M3 pmos
+   Inst M5 M5 nmos
+   Inst M4 M4 pmos
+   Inst M2 M2 pmos
+   Inst M1 M1 nmos
+End Cell
+
+Cell DFF
+   Pin Q Q
+   Pin CLK CLK
+   Pin D D
+   Net N$101 N$101
+   Net N$82 N$82
+   Net N$3 N$3
+   Net N$93 N$93
+   Net N$40 N$40
+   Net N$88 N$88
+   Net N$67 N$67
+   Net N$65 N$65
+   Net N$84 N$84
+   Net N$70 N$70
+   Net Q Q
+   Net D D
+   Net CLK CLK
+   Global VDD VDD
+   Global ground ground
+   Inst M20 M20 pmos
+   Inst M19 M19 pmos
+   Inst M18 M18 pmos
+   Inst M17 M17 pmos
+   Inst M16 M16 pmos
+   Inst M15 M15 pmos
+   Inst M14 M14 nmos
+   Inst M13 M13 nmos
+   Inst M12 M12 nmos
+   Inst M11 M11 nmos
+   Inst M10 M10 nmos
+   Inst M9 M9 nmos
+   Inst M8 M8 nmos
+   Inst M7 M7 nmos
+   Inst M6 M6 nmos
+   Inst M5 M5 nmos
+   Inst M4 M4 nmos
+   Inst M3 M3 nmos
+   Inst M2 M2 nmos
+   Inst M1 M1 nmos
+End Cell
+
+Cell DFFen
+   Pin Q Q
+   Pin CLK CLK
+   Pin D D
+   Pin En En
+   Net N$5 N$5
+   Net Q Q
+   Net En En
+   Net D D
+   Net CLK CLK
+   Inst Enable_Mux X_Enable_Mux Mux21
+   Inst DFF X_DFF DFF
+End Cell
+
+Cell #top#
+   Pin X X
+   Pin Y Y
+   Pin A A
+   Pin B B
+   Pin CLK CLK
+   Pin Enable Enable
+   Net B B
+   Net CLK CLK
+   Net Enable Enable
+   Net A A
+   Net Y Y
+   Net X X
+   Inst DFFEN2 X_DFFEN2 DFFen
+   Inst DFFEN1 X_DFFEN1 DFFen
+End Cell
+

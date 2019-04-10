@@ -1,0 +1,6 @@
+A 5 u mgc_symbol 5cae2838c06d.03.7f.00.00.01.00.27.16 1 2 1 0
+V v 1 2 5cae2838c06d.03.7f.00.00.01.01.27.16
+F f 1 "test.smbl_1"
+F o 0 
+O 1
+R csduv 0 "$VLSI/Project/test/part" 2 Eddm_part 5cae2863ae2e.03.7f.00.00.01.00.27.16 5cae21da69c4.03.7f.00.00.01.00.11.01

@@ -1,0 +1,6 @@
+A 5 u mgc_symbol 5caf953163d5.03.7f.00.00.01.00.13.98 1 2 1 0
+V v 1 2 5caf953163d6.03.7f.00.00.01.00.13.98
+F f 1 "test2.smbl_1"
+F o 0 
+O 1
+R csduv 0 "$VLSI/Project/test2/part" 1 Eddm_part 5caf953a1ec3.03.7f.00.00.01.01.13.98 5caf953a1ec3.03.7f.00.00.01.00.13.98

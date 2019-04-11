@@ -1,0 +1,10 @@
+# CALIBRE-LVS DISCREPANCY VIEWER TCL FILE 
+# FILE: svdb/test3.dv
+dv_start unmatched
+dv_cell {test3} {test3} unmatched
+dv_obj_count -transformed_nets {16 15} -transformed_inst {12 12} -transformed_port {7 7}
+dv_discrep 1 {Incorrect Nets}
+dv_discrep_line {Net } -lnet {21} {                                                    } -snet {N$2} {}
+dv_discrep_line {    } -lnet {5} {                                                    }
+dv_discrep_line {}
+dv_end

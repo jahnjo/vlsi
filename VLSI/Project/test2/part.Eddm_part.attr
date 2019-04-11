@@ -1,0 +1,12 @@
+A 5 u Eddm_part 5caf953a1ec3.03.7f.00.00.01.00.13.98 2 2 2 0
+V v 1 1 5caf953a1ec3.03.7f.00.00.01.01.13.98
+F f 1 "part.part_1"
+V v 2 1 5caf9544a99d.03.7f.00.00.01.00.13.98
+F f 2 "part.part_2"
+O 2
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R csduv 0 "$VLSI/Project/test2/test2" 1 mgc_symbol 5caf953163d6.03.7f.00.00.01.00.13.98 5caf9510a460.03.7f.00.00.01.00.13.98
+R csduv 1 "$VLSI/Project/test2/dff" 1 mgc_schematic 5caf94422ce4.03.7f.00.00.01.01.13.98 5caf94422ce4.03.7f.00.00.01.00.13.98
+O 1
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R csduv 0 "$VLSI/Project/test2/test2" 1 mgc_symbol 5caf953163d6.03.7f.00.00.01.00.13.98 5caf9510a460.03.7f.00.00.01.00.13.98

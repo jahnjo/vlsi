@@ -1,0 +1,78 @@
+* LVS netlist generated with ICnet by 'egrvlsi07' on Thu Apr 11 2019 at 16:07:06
+
+*
+* Globals.
+*
+.global ground VDD
+
+*
+* Component pathname : $VLSI/Project/Mux21
+*
+.subckt Mux21  Y A B S
+
+        M6 Y N$46 A ground nmos l=0.13u w=0.6u m=1
+        M3 Y S A VDD pmos l=0.13u w=1.35u m=1
+        M5 Y S B ground nmos l=0.13u w=0.6u m=1
+        M4 Y N$46 B VDD pmos l=0.13u w=1.35u m=1
+        M2 N$46 S VDD VDD pmos l=0.13u w=1.35u m=1
+        M1 N$46 S ground ground nmos l=0.13u w=0.6u m=1
+.ends Mux21
+
+*
+* Component pathname : $VLSI/Project/DFF
+*
+.subckt DFF  Q CLK D
+
+        M20 N$101 Q VDD VDD pmos l=0.13u w=0.6u m=1
+        M19 Q N$101 VDD VDD pmos l=0.13u w=0.6u m=1
+        M18 N$84 N$82 VDD VDD pmos l=0.13u w=0.6u m=1
+        M17 N$82 N$84 VDD VDD pmos l=0.13u w=0.6u m=1
+        M16 N$70 D VDD VDD pmos l=0.13u w=0.6u m=1
+        M15 N$65 CLK VDD VDD pmos l=0.13u w=0.6u m=1
+        M14 Q CLK N$93 ground nmos l=0.13u w=0.6u m=1
+        M13 N$101 CLK N$40 ground nmos l=0.13u w=0.6u m=1
+        M12 N$82 N$65 N$88 ground nmos l=0.13u w=0.6u m=1
+        M11 N$84 N$65 N$67 ground nmos l=0.13u w=0.6u m=1
+        M10 N$40 N$84 ground ground nmos l=0.13u w=0.6u m=1
+        M9 Q N$101 ground ground nmos l=0.13u w=0.6u m=1
+        M8 N$101 Q ground ground nmos l=0.13u w=0.6u m=1
+        M7 N$93 N$82 ground ground nmos l=0.13u w=0.6u m=1
+        M6 N$88 D ground ground nmos l=0.13u w=0.6u m=1
+        M5 N$84 N$82 ground ground nmos l=0.13u w=0.6u m=1
+        M4 N$82 N$84 ground ground nmos l=0.13u w=0.6u m=1
+        M3 N$67 N$70 ground ground nmos l=0.13u w=0.6u m=1
+        M2 N$70 D ground ground nmos l=0.13u w=0.6u m=1
+        M1 N$65 CLK ground ground nmos l=0.13u w=0.6u m=1
+.ends DFF
+
+*
+* Component pathname : $VLSI/Project/DFFen
+*
+.subckt DFFen  Q CLK D En
+
+        X_Enable_Mux N$5 Q D En Mux21
+        X_DFF Q CLK N$5 DFF
+.ends DFFen
+
+*
+* Component pathname : $VLSI/Project/and
+*
+.subckt and  Y A B
+
+        M6 Y N$54 ground ground nmos l=0.13u w=0.6u m=1
+        M5 Y N$54 VDD VDD pmos l=0.13u w=1.35u m=1
+        M4 N$54 B VDD VDD pmos l=0.13u w=1.35u m=1
+        M3 N$54 A VDD VDD pmos l=0.13u w=1.35u m=1
+        M2 N$29 B ground ground nmos l=0.13u w=1.2u m=1
+        M1 N$54 A N$29 ground nmos l=0.13u w=1.2u m=1
+.ends and
+
+*
+* Component pathname : $VLSI/Project/test3
+*
+.subckt test3  out a b clk d
+
+        X_DFFEN1 out clk d N$2 DFFen
+        X_AND1 N$2 a b and
+.ends test3
+

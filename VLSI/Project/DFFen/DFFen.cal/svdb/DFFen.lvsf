@@ -6,4 +6,4 @@ lvs_LvsComparisonSummary {3 0 0 0}
 lvs_LvsOutFile LVS_REPORT lvs.report
 lvs_LvsOutFile SOURCE_NETLIST /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/DFFen/DFFen.cal/DFFen.calibre.src.net
 lvs_LvsOutFile RULES_FILE /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/DFFen/DFFen.cal/_LVS_
-lvs_LvsRunTimes 1553805563 1553805563
+lvs_LvsRunTimes 1555347147 1555347147

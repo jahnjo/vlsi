@@ -3,7 +3,7 @@
 ==================================================================================
 === CALIBRE::DRC-H SUMMARY REPORT
 ===
-Execution Date/Time:       Thu Mar 28 16:44:28 2019
+Execution Date/Time:       Mon Apr 15 12:51:54 2019
 Calibre Version:           v2012.2_36.25    Mon Jul 2 12:15:31 PDT 2012
 Rule File Pathname:        /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/DFFen/DFFen.cal/_DRC_
 Rule File Title:           
@@ -75,7 +75,7 @@ LAYER RPDUMMY .... TOTAL Original Geometry Count = 0   (0)
 LAYER NIMPi ...... TOTAL Original Geometry Count = 7   (7)
 LAYER NWDUMMY .... TOTAL Original Geometry Count = 0   (0)
 LAYER NWELLi ..... TOTAL Original Geometry Count = 4   (4)
-LAYER POLYGi ..... TOTAL Original Geometry Count = 117 (147)
+LAYER POLYGi ..... TOTAL Original Geometry Count = 119 (149)
 LAYER DMSRM ...... TOTAL Original Geometry Count = 0   (0)
 LAYER EXCLi ...... TOTAL Original Geometry Count = 0   (0)
 LAYER CDUDMY ..... TOTAL Original Geometry Count = 0   (0)
@@ -83,7 +83,7 @@ LAYER DNWELLi .... TOTAL Original Geometry Count = 0   (0)
 LAYER OD2i ....... TOTAL Original Geometry Count = 0   (0)
 LAYER DPO ........ TOTAL Original Geometry Count = 0   (0)
 LAYER PIMPi ...... TOTAL Original Geometry Count = 7   (7)
-LAYER CONTi ...... TOTAL Original Geometry Count = 328 (358)
+LAYER CONTi ...... TOTAL Original Geometry Count = 400 (430)
 LAYER VIA12i ..... TOTAL Original Geometry Count = 1   (31)
 LAYER VIA23i ..... TOTAL Original Geometry Count = 1   (7)
 LAYER VIA34i ..... TOTAL Original Geometry Count = 1   (4)
@@ -514,6 +514,6 @@ CELL DFFen ............. TOTAL Result Count = 5 (5)
 ---
 TOTAL CPU Time:                  0
 TOTAL REAL Time:                 0
-TOTAL Original Layer Geometries: 633 (840)
+TOTAL Original Layer Geometries: 707 (914)
 TOTAL DRC RuleChecks Executed:   386
 TOTAL DRC Results Generated:     5 (5)

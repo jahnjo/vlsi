@@ -1,7 +1,15 @@
-A 5 u Ic_cell_template 5caf95619e20.03.7f.00.00.01.00.16.44 1 4 6 0
+A 5 u Ic_cell_template 5caf95619e20.03.7f.00.00.01.00.16.44 2 4 6 0
 V v 1 2 5caf965e6e12.03.7f.00.00.01.00.16.44
 F f 1 "dff.iccel_1"
-F o 0 
+F o 0 ""
+V v 2 2 5cb4b45298dd.03.7f.00.00.01.00.0b.d4
+F f 2 "dff.iccel_2"
+F o 0 ""
+O 2
+R csduv 1 "$GENERIC13/process/generic13" 75 Ic_persist_process 51bf7c9f2c7e.03.93.22.28.46.00.31.23 4aef38f1eeca.03.93.22.28.e1.00.3f.b3
+R csduv 2 "$VLSI/Project/test2/viewpoints/test2_SDL_HIER" 1 Eddm_design_viewpoint 5caf95619c58.03.7f.00.00.01.01.16.44 5caf95619c58.03.7f.00.00.01.00.16.44
+R csduv 4 "$VLSI/Project/DFF/DFF" 3 Ic_cell_template 5cae2cc7a236.03.7f.00.00.01.00.37.61 5c915bfb5a13.03.7f.00.00.01.00.35.3b
+R csdni 5 "$GENERIC13/process/sdl_process_rules" 1 Mgc_file
 O 1
 R csduv 1 "$GENERIC13/process/generic13" 75 Ic_persist_process 51bf7c9f2c7e.03.93.22.28.46.00.31.23 4aef38f1eeca.03.93.22.28.e1.00.3f.b3
 R csduv 2 "$VLSI/Project/test2/viewpoints/test2_SDL_HIER" 1 Eddm_design_viewpoint 5caf95619c58.03.7f.00.00.01.01.16.44 5caf95619c58.03.7f.00.00.01.00.16.44

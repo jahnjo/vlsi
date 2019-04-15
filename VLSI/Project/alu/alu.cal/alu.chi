@@ -1,11 +1,11 @@
   Run on egr-vlsi-06 (Linux 3.10.0-514.26.2.el7.x86_64)
 
-/opt/mentor/ams_12_1/aol/bin/vams_ms_64 -i /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/alu/alu.cal/alu.cir -noconf -nogwl -cou46 -gwl wdl -nocou -wdb_folder -wdb_incremental -jwdb_design -hdla /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/alu/work  -hdlav3opt -jwdbport 33817 -jwdbhost egr-vlsi-06 -folder -mainpane -mach -ezwave -kernelplotmechanism -jwdb_checkpoint 1 -viewer_config 2 -msl transcript_ms -ms -multisource_delay max 
+/opt/mentor/ams_12_1/aol/bin/vams_ms_64 -i /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/alu/alu.cal/alu.cir -noconf -nogwl -cou46 -gwl wdl -nocou -wdb_folder -wdb_incremental -jwdb_design -hdla /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/alu/work  -hdlav3opt -jwdbport 43996 -jwdbhost egr-vlsi-06 -folder -mainpane -mach -ezwave -kernelplotmechanism -jwdb_checkpoint 1 -viewer_config 2 -msl transcript_ms -ms -multisource_delay max 
 
 
 ***** PRE-PROCESSING ...
 
-1*******15-Apr-19 *******  ELDO 12.1 patch1 (64 bits)  (v7.7_1.1)  *******14:33:23******
+1*******15-Apr-19 *******  ELDO 12.1 patch1 (64 bits)  (v7.7_1.1)  *******15:03:32******
 
 0*  Top-Level Spice netlist alu.pex.netlist for AMS-Sim
 
@@ -3730,13 +3730,13 @@ Warning  29:   Such messages will not be displayed in future. Set .option MSGNOD
 
 EldoHDL VERSION : ELDO 12.1 patch1 (64 bits) Thu Sep  6 14:32:26 GMT 2012
 
-*** DATE: 15-Apr-2019 14:33:36
+*** DATE: 15-Apr-2019 15:03:49
 
 *** TITLE: *  Top-Level Spice netlist alu.pex.netlist for AMS-Sim
 
 TEMPERATURE : 27.000000 degrees C
 
-1***************15-Apr-2019 ***********************  ELDO 12.1 patch1 (64 bits)  (v7.7_1.1)  ***********************14:33:36*****************
+1***************15-Apr-2019 ***********************  ELDO 12.1 patch1 (64 bits)  (v7.7_1.1)  ***********************15:03:49*****************
 
 0*  Top-Level Spice netlist alu.pex.netli
 0****                 MODELS PARAMETERS                                    TEMPERATURE =   27.000 DEG C
@@ -4225,7 +4225,7 @@ unit6 represents 1/degK^2
 
 
 
-1***************15-Apr-2019 ***********************  ELDO 12.1 patch1 (64 bits)  (v7.7_1.1)  ***********************14:33:36*****************
+1***************15-Apr-2019 ***********************  ELDO 12.1 patch1 (64 bits)  (v7.7_1.1)  ***********************15:03:49*****************
 
 0*  Top-Level Spice netlist alu.pex.netlist for AMS-Sim
 0****                 OPTION SUMMARY                                        TEMPERATURE =   27.000 DEG C
@@ -4293,13 +4293,13 @@ TIMING         = 0        MODWL          = 1        ULOGIC         = 0
 
 
 
-    DC cpu Time 0s 050ms 
+    DC cpu Time 0s 060ms 
 DC:26 iterations FOR DC analysis
 
 
 
 
-1***************15-Apr-2019 ***********************  ELDO 12.1 patch1 (64 bits)  (v7.7_1.1)  ***********************14:33:36*****************
+1***************15-Apr-2019 ***********************  ELDO 12.1 patch1 (64 bits)  (v7.7_1.1)  ***********************15:03:49*****************
 
 0*  Top-Level Spice netlist alu.pex.netlist for AMS-Sim
 0****                 INITIAL TRANSIENT SOLUTION                           TEMPERATURE =   27.000 DEG C
@@ -6047,3 +6047,47 @@ VGND       2.7748E-08   0.0          0.0
 
 EldoHDL NEWTON: VNTOL=1.000000e-06 RELTOL=7.500000e-04
 
+
+
+
+1***************15-Apr-2019 ***********************  ELDO 12.1 patch1 (64 bits)  (v7.7_1.1)  ***********************15:03:49*****************
+
+0*  Top-Level Spice netlist alu.pex.netlist for AMS-Sim
+0****                 ACCOUNTING INFORMATION                                TEMPERATURE =   27.000 DEG C
+
+0*************************************************************************************************************************
+
+
+
+
+
+Number of nodes                     1854
+Number of intrinsic nodes           132
+Number of input signals             7
+Number of resistors                 1837
+Number of floating capacitors       0
+Number of grounded capacitors       0
+Number of inductors                 0
+Number of voltage sources           2
+Number of current sources           0
+Number of dependent sources         0
+Number of diodes                    0
+Number of BJT                       0
+Number of JFET                      0
+Number of MOS                       66
+Number of SWITCHES                  0
+Number of transmission lines        0
+Total number of elements simulated  1905
+Number of equations                 1846
+Number of non-zero terms            10824
+Percent Zeros                      99.68
+Number of Newton iterations         1524
+Average number of Newton iterations 2.601
+Number of accepted time steps       586
+Number of rejected time steps       17
+      due to LTE                    17
+      due to Newton                 0
+Evaluation of active devices        23139
+Memory size (MB)                    505.6
+   cpu Time 0s 830ms 
+Memory size (MB)                    505.6

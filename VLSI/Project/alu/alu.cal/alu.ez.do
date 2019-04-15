@@ -1,6 +1,6 @@
 ############################################################
 ## EZwave - Saved Window File
-## Monday, April 15, 2019 at 2:32:43 PM EDT
+## Monday, April 15, 2019 at 3:05:05 PM EDT
 ##
 ## Note: This is an auto-generated file.
 ##
@@ -37,10 +37,6 @@ add wave  -show TRAN.v -color -65281 -separator : -terminals  :alu:cin
 
 # ===== Create row #6 =====
 add wave  -show TRAN.v -color -16711681 -separator : -terminals  :alu:result
-
-
-# ===== Create row #7 =====
-add wave  -show TRAN.v -color -3650716 -separator : -terminals  :alu:cout
 
 
 # ====== Create the cursors, markers and measurements =====

@@ -72,3 +72,17 @@ do alu.do
 #   EPS    = 1.000000e-03
 # Starting analog time is 0.000000 ns
 # Simulation time for "run -all" is 1.000000 ns
+# Transient analysis done
+#    Global cpu Time 0h 0mn 1s 010ms 
+#    Global Elapsed Time 0h 1mn 33s 
+# -----------| Simulation Information |-----------
+# Analog kernel and ELDO devices memory size allocated (MB):  505.6
+# 2037 devices
+# 1854 nodes
+# 23139 MOS or BIP model calls
+# 586 steps computed
+# ----------- Simulation Information done -----------
+# --- Simulation stopped at time 400 ns
+# Newton iteration            :  2.600683
+# Total of transactions       :  1
+# Total of events             :  1

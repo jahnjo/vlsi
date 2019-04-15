@@ -14,57 +14,57 @@ add wave \
         :alu:Cout
 
 
-force -source :alu:ALUop_0 2.5v
-force -source :alu:ALUop_1 0v
+force -source :alu:ALUop_0 0v
+force -source :alu:ALUop_1 2.5v
+force -source :alu:A 0v
+force -source :alu:B 0v
+force -source :alu:Cin 0v
+run 50 ns
+
+force -source :alu:ALUop_0 0v
+force -source :alu:ALUop_1 2.5v
 force -source :alu:A 0v
 force -source :alu:B 0v
 force -source :alu:Cin 2.5v
 run 50 ns
 
-force -source :alu:ALUop_0 2.5v
-force -source :alu:ALUop_1 0v
+force -source :alu:ALUop_0 0v
+force -source :alu:ALUop_1 2.5v
 force -source :alu:A 0v
-force -source :alu:B 0v
-force -source :alu:Cin 2.5v
+force -source :alu:B 2.5v
+force -source :alu:Cin 0v
 run 50 ns
 
-force -source :alu:ALUop_0 2.5v
-force -source :alu:ALUop_1 0v
+force -source :alu:ALUop_0 0v
+force -source :alu:ALUop_1 2.5v
 force -source :alu:A 0v
 force -source :alu:B 2.5v
 force -source :alu:Cin 2.5v
 run 50 ns
 
-force -source :alu:ALUop_0 2.5v
-force -source :alu:ALUop_1 0v
-force -source :alu:A 0v
-force -source :alu:B 2.5v
-force -source :alu:Cin 2.5v
+force -source :alu:ALUop_0 0v
+force -source :alu:ALUop_1 2.5v
+force -source :alu:A 2.5v
+force -source :alu:B 0v
+force -source :alu:Cin 0v
 run 50 ns
 
-force -source :alu:ALUop_0 2.5v
-force -source :alu:ALUop_1 0v
+force -source :alu:ALUop_0 0v
+force -source :alu:ALUop_1 2.5v
 force -source :alu:A 2.5v
 force -source :alu:B 0v
 force -source :alu:Cin 2.5v
 run 50 ns
 
-force -source :alu:ALUop_0 2.5v
-force -source :alu:ALUop_1 0v
-force -source :alu:A 2.5v
-force -source :alu:B 0v
-force -source :alu:Cin 2.5v
-run 50 ns
-
-force -source :alu:ALUop_0 2.5v
-force -source :alu:ALUop_1 0v
+force -source :alu:ALUop_0 0v
+force -source :alu:ALUop_1 2.5v
 force -source :alu:A 2.5v
 force -source :alu:B 2.5v
-force -source :alu:Cin 2.5v
+force -source :alu:Cin 0v
 run 50 ns
 
-force -source :alu:ALUop_0 2.5v
-force -source :alu:ALUop_1 0v
+force -source :alu:ALUop_0 0v
+force -source :alu:ALUop_1 2.5v
 force -source :alu:A 2.5v
 force -source :alu:B 2.5v
 force -source :alu:Cin 2.5v

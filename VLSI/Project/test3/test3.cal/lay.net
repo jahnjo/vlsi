@@ -8,38 +8,38 @@
 .ENDS
 ***************************************
 .SUBCKT test3 VDD ground out d a b clk
-** N=22 EP=7 IP=0 FDC=32
-M0 3 a 2 ground nmos L=1.3e-07 W=1.2e-06 $X=45440 $Y=-1145395 $D=19
-M1 ground b 3 ground nmos L=1.3e-07 W=1.2e-06 $X=45750 $Y=-1145395 $D=19
-M2 5 2 ground ground nmos L=1.3e-07 W=6e-07 $X=46290 $Y=-1144795 $D=19
-M3 7 9 out ground nmos L=1.3e-07 W=6e-07 $X=48720 $Y=-1145395 $D=19
-M4 d 21 7 ground nmos L=1.3e-07 W=6e-07 $X=49230 $Y=-1145395 $D=19
-M5 9 21 ground ground nmos L=1.3e-07 W=6e-07 $X=50710 $Y=-1145395 $D=19
-M6 ground 14 out ground nmos L=1.3e-07 W=6e-07 $X=52245 $Y=-1145395 $D=19
-M7 10 13 ground ground nmos L=1.3e-07 W=6e-07 $X=52755 $Y=-1145395 $D=19
-M8 11 18 10 ground nmos L=1.3e-07 W=6e-07 $X=53265 $Y=-1145395 $D=19
-M9 ground 7 11 ground nmos L=1.3e-07 W=6e-07 $X=53575 $Y=-1145395 $D=19
-M10 12 17 ground ground nmos L=1.3e-07 W=6e-07 $X=54085 $Y=-1145395 $D=19
-M11 13 18 12 ground nmos L=1.3e-07 W=6e-07 $X=54395 $Y=-1145395 $D=19
-M12 ground 10 13 ground nmos L=1.3e-07 W=6e-07 $X=54905 $Y=-1145395 $D=19
-M13 14 out ground ground nmos L=1.3e-07 W=6e-07 $X=55415 $Y=-1145395 $D=19
-M14 15 clk 14 ground nmos L=1.3e-07 W=6e-07 $X=56895 $Y=-1145395 $D=19
-M15 ground 13 15 ground nmos L=1.3e-07 W=6e-07 $X=57205 $Y=-1145395 $D=19
-M16 16 10 ground ground nmos L=1.3e-07 W=6e-07 $X=57715 $Y=-1145395 $D=19
-M17 out clk 16 ground nmos L=1.3e-07 W=6e-07 $X=58025 $Y=-1145395 $D=19
-M18 ground 7 17 ground nmos L=1.3e-07 W=6e-07 $X=59505 $Y=-1145395 $D=19
-M19 18 clk ground ground nmos L=1.3e-07 W=6e-07 $X=60015 $Y=-1145395 $D=19
-M20 2 a VDD VDD pmos L=1.3e-07 W=1.35e-06 $X=45300 $Y=-1131805 $D=25
-M21 VDD b 2 VDD pmos L=1.3e-07 W=1.35e-06 $X=45810 $Y=-1131805 $D=25
-M22 5 2 VDD VDD pmos L=1.3e-07 W=1.35e-06 $X=46320 $Y=-1131805 $D=25
-M23 7 21 out VDD pmos L=1.3e-07 W=1.35e-06 $X=48710 $Y=-1131805 $D=25
-M24 d 9 7 VDD pmos L=1.3e-07 W=1.35e-06 $X=49220 $Y=-1131805 $D=25
-M25 9 21 VDD VDD pmos L=1.3e-07 W=1.35e-06 $X=50700 $Y=-1131805 $D=25
-M26 VDD 7 17 VDD pmos L=1.3e-07 W=6e-07 $X=53905 $Y=-1131055 $D=25
-M27 18 clk VDD VDD pmos L=1.3e-07 W=6e-07 $X=54415 $Y=-1131055 $D=25
-M28 VDD 10 13 VDD pmos L=1.3e-07 W=6e-07 $X=55895 $Y=-1131055 $D=25
-M29 10 13 VDD VDD pmos L=1.3e-07 W=6e-07 $X=56405 $Y=-1131055 $D=25
-M30 VDD 14 out VDD pmos L=1.3e-07 W=6e-07 $X=57885 $Y=-1131055 $D=25
-M31 14 out VDD VDD pmos L=1.3e-07 W=6e-07 $X=58395 $Y=-1131055 $D=25
+** N=21 EP=7 IP=0 FDC=32
+M0 3 a 2 ground nmos L=1.3e-07 W=1.2e-06 $X=100 $Y=53705 $D=19
+M1 ground b 3 ground nmos L=1.3e-07 W=1.2e-06 $X=410 $Y=53705 $D=19
+M2 5 2 ground ground nmos L=1.3e-07 W=6e-07 $X=950 $Y=54305 $D=19
+M3 7 9 out ground nmos L=1.3e-07 W=6e-07 $X=3725 $Y=53705 $D=19
+M4 d 5 7 ground nmos L=1.3e-07 W=6e-07 $X=4235 $Y=53705 $D=19
+M5 9 5 ground ground nmos L=1.3e-07 W=6e-07 $X=5715 $Y=53705 $D=19
+M6 ground 14 out ground nmos L=1.3e-07 W=6e-07 $X=8745 $Y=53705 $D=19
+M7 10 13 ground ground nmos L=1.3e-07 W=6e-07 $X=9255 $Y=53705 $D=19
+M8 11 18 10 ground nmos L=1.3e-07 W=6e-07 $X=9765 $Y=53705 $D=19
+M9 ground 7 11 ground nmos L=1.3e-07 W=6e-07 $X=10075 $Y=53705 $D=19
+M10 12 17 ground ground nmos L=1.3e-07 W=6e-07 $X=10585 $Y=53705 $D=19
+M11 13 18 12 ground nmos L=1.3e-07 W=6e-07 $X=10895 $Y=53705 $D=19
+M12 ground 10 13 ground nmos L=1.3e-07 W=6e-07 $X=11405 $Y=53705 $D=19
+M13 14 out ground ground nmos L=1.3e-07 W=6e-07 $X=11915 $Y=53705 $D=19
+M14 15 clk 14 ground nmos L=1.3e-07 W=6e-07 $X=13395 $Y=53705 $D=19
+M15 ground 13 15 ground nmos L=1.3e-07 W=6e-07 $X=13705 $Y=53705 $D=19
+M16 16 10 ground ground nmos L=1.3e-07 W=6e-07 $X=14215 $Y=53705 $D=19
+M17 out clk 16 ground nmos L=1.3e-07 W=6e-07 $X=14525 $Y=53705 $D=19
+M18 ground 7 17 ground nmos L=1.3e-07 W=6e-07 $X=16005 $Y=53705 $D=19
+M19 18 clk ground ground nmos L=1.3e-07 W=6e-07 $X=16515 $Y=53705 $D=19
+M20 2 a VDD VDD pmos L=1.3e-07 W=1.35e-06 $X=-40 $Y=67295 $D=25
+M21 VDD b 2 VDD pmos L=1.3e-07 W=1.35e-06 $X=470 $Y=67295 $D=25
+M22 5 2 VDD VDD pmos L=1.3e-07 W=1.35e-06 $X=980 $Y=67295 $D=25
+M23 7 5 out VDD pmos L=1.3e-07 W=1.35e-06 $X=3715 $Y=67295 $D=25
+M24 d 9 7 VDD pmos L=1.3e-07 W=1.35e-06 $X=4225 $Y=67295 $D=25
+M25 9 5 VDD VDD pmos L=1.3e-07 W=1.35e-06 $X=5705 $Y=67295 $D=25
+M26 VDD 7 17 VDD pmos L=1.3e-07 W=6e-07 $X=10405 $Y=68045 $D=25
+M27 18 clk VDD VDD pmos L=1.3e-07 W=6e-07 $X=10915 $Y=68045 $D=25
+M28 VDD 10 13 VDD pmos L=1.3e-07 W=6e-07 $X=12395 $Y=68045 $D=25
+M29 10 13 VDD VDD pmos L=1.3e-07 W=6e-07 $X=12905 $Y=68045 $D=25
+M30 VDD 14 out VDD pmos L=1.3e-07 W=6e-07 $X=14385 $Y=68045 $D=25
+M31 14 out VDD VDD pmos L=1.3e-07 W=6e-07 $X=14895 $Y=68045 $D=25
 .ENDS
 ***************************************

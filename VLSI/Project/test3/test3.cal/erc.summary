@@ -3,7 +3,7 @@
 ==================================================================================
 === CALIBRE::ERC-H SUMMARY REPORT
 ===
-Execution Date/Time:          Thu Apr 11 16:07:07 2019
+Execution Date/Time:          Mon Apr 15 13:19:57 2019
 Calibre Version:              v2012.2_36.25    Mon Jul 2 12:15:31 PDT 2012
 Rule File Pathname:           /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/test3/test3.cal/_LVS_
 Rule File Title:              
@@ -39,6 +39,8 @@ Layer 34 contains unmapped objects and is the source layer of LAYER MAP == 34 DA
 Layer 34 contains unmapped objects and is the source layer of LAYER MAP == 34 DATATYPE == 2.
 Layer 35 contains unmapped objects and is the source layer of LAYER MAP == 35 DATATYPE == 1.
 Layer 35 contains unmapped objects and is the source layer of LAYER MAP == 35 DATATYPE == 2.
+Layer 36 contains unmapped objects and is the source layer of LAYER MAP == 36 DATATYPE == 1.
+Layer 36 contains unmapped objects and is the source layer of LAYER MAP == 36 DATATYPE == 2.
 ----------------------------------------------------------------------------------
 --- ORIGINAL LAYER STATISTICS
 ---
@@ -82,7 +84,7 @@ LAYER DUM5 ...... TOTAL Original Geometry Count = 0   (0)
 LAYER M5 ........ TOTAL Original Geometry Count = 10  (10)
 LAYER M5SLOT .... TOTAL Original Geometry Count = 0   (0)
 LAYER DUM6 ...... TOTAL Original Geometry Count = 0   (0)
-LAYER M6 ........ TOTAL Original Geometry Count = 0   (0)
+LAYER M6 ........ TOTAL Original Geometry Count = 10  (10)
 LAYER M6SLOT .... TOTAL Original Geometry Count = 0   (0)
 LAYER DUM7 ...... TOTAL Original Geometry Count = 0   (0)
 LAYER M7 ........ TOTAL Original Geometry Count = 0   (0)
@@ -108,7 +110,7 @@ LAYER VIA1 ...... TOTAL Original Geometry Count = 39  (39)
 LAYER VIA2 ...... TOTAL Original Geometry Count = 10  (10)
 LAYER VIA3 ...... TOTAL Original Geometry Count = 7   (7)
 LAYER VIA4 ...... TOTAL Original Geometry Count = 5   (5)
-LAYER VIA5 ...... TOTAL Original Geometry Count = 0   (0)
+LAYER VIA5 ...... TOTAL Original Geometry Count = 5   (5)
 LAYER VIA6 ...... TOTAL Original Geometry Count = 0   (0)
 ----------------------------------------------------------------------------------
 --- RULECHECK RESULTS STATISTICS
@@ -119,17 +121,11 @@ LAYER VIA6 ...... TOTAL Original Geometry Count = 0   (0)
   PATHCHK GROUND && ! POWER:
   PATHCHK POWER && ! GROUND:
   PATHCHK ! POWER && ! GROUND:
-    TOTAL POLYGON Results: 8
-    TOTAL NET Results:     1
   PATHCHK ! LABELED:
-    TOTAL POLYGON Results: 8
-    TOTAL NET Results:     1
 ----------------------------------------------------------------------------------
 --- SUMMARY
 ---
 TOTAL CPU Time:                              0
 TOTAL REAL Time:                             0
-TOTAL Original Layer Geometries:             1177 (1177)
+TOTAL Original Layer Geometries:             1192 (1192)
 TOTAL ERC PATHCHK Operations Executed:       4
-TOTAL ERC PATHCHK POLYGON Results Generated: 16 (16)
-TOTAL ERC PATHCHK NET Results Generated:     2

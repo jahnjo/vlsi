@@ -2,6 +2,4 @@ ERC PATHCHK REPORT for test3
   PATHCHK GROUND && ! POWER:
   PATHCHK POWER && ! GROUND:
   PATHCHK ! POWER && ! GROUND:
-      cell test3: 21 
   PATHCHK ! LABELED:
-      cell test3: 21 

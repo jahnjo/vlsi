@@ -15,7 +15,7 @@ REPORT FILE NAME:         lvs.report
 LAYOUT NAME:              /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/test/test.cal/lay.net ('test')
 SOURCE NAME:              /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/test/test.cal/test.calibre.src.net ('test')
 RULE FILE:                /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/test/test.cal/_LVS_
-CREATION TIME:            Wed Apr 10 13:56:04 2019
+CREATION TIME:            Mon Apr 15 13:10:58 2019
 CURRENT DIRECTORY:        /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/test/test.cal
 USER NAME:                egrvlsi07
 CALIBRE VERSION:          v2012.2_36.25    Mon Jul 2 12:15:31 PDT 2012
@@ -26,15 +26,13 @@ CALIBRE VERSION:          v2012.2_36.25    Mon Jul 2 12:15:31 PDT 2012
 
 
 
-                  #   #         #####################  
-                   # #          #                   #  
-                    #           #     INCORRECT     #  
-                   # #          #                   #  
-                  #   #         #####################  
+                         #       ###################       _   _   
+                        #        #                 #       *   *   
+                   #   #         #     CORRECT     #         |     
+                    # #          #                 #       \___/  
+                     #           ###################               
 
 
-  Error:    Different numbers of nets.
-  Error:    Connectivity errors.
 
 
 **************************************************************************************************************
@@ -43,7 +41,7 @@ CALIBRE VERSION:          v2012.2_36.25    Mon Jul 2 12:15:31 PDT 2012
 
   Result         Layout                        Source
   -----------    -----------                   --------------
-  INCORRECT      test                          test
+  CORRECT        test                          test
 
 
 
@@ -199,15 +197,13 @@ o LVS Setup:
 
 
 
-                  #   #         #####################  
-                   # #          #                   #  
-                    #           #     INCORRECT     #  
-                   # #          #                   #  
-                  #   #         #####################  
+                         #       ###################       _   _   
+                        #        #                 #       *   *   
+                   #   #         #     CORRECT     #         |     
+                    # #          #                 #       \___/  
+                     #           ###################               
 
 
-  Error:    Different numbers of nets (see below).
-  Error:    Connectivity errors.
 
 LAYOUT CELL NAME:         test
 SOURCE CELL NAME:         test
@@ -221,7 +217,7 @@ INITIAL NUMBERS OF OBJECTS
                 ------    ------         --------------
  Ports:              8         8
 
- Nets:              32        30    *
+ Nets:              30        30
 
  Instances:         34        34         MN (4 pins)
                     18        18         MP (4 pins)
@@ -236,7 +232,7 @@ NUMBERS OF OBJECTS AFTER TRANSFORMATION
                 ------    ------         --------------
  Ports:              8         8
 
- Nets:              22        20    *
+ Nets:              20        20
 
  Instances:          2         2         _bitcorev (4 pins)
                      8         8         _invv (4 pins)
@@ -244,54 +240,6 @@ NUMBERS OF OBJECTS AFTER TRANSFORMATION
                      8         8         _sdw2v (4 pins)
                 ------    ------
  Total Inst:        20        20
-
-
-       * = Number of objects in layout different from number in source.
-
-
-
-**************************************************************************************************************
-                                 INCORRECT OBJECTS
-**************************************************************************************************************
-
-
-LEGEND:
--------
-
-  ne  = Naming Error (same layout name found in source
-        circuit, but object was matched otherwise).
-
-
-**************************************************************************************************************
-                                   INCORRECT NETS
-
-DISC#  LAYOUT NAME                                               SOURCE NAME
-**************************************************************************************************************
-
-  1    Net ENABLE                                                ENABLE
-       --------------------------                                --------------------------
-       
-       ** missing connection **                                  (_mx2v):sel
-                                                                   X_DFFEN1/X_Enable_Mux/M1:g
-                                                                   X_DFFEN1/X_Enable_Mux/M2:g
-                                                                   X_DFFEN1/X_Enable_Mux/M5:g
-                                                                   X_DFFEN1/X_Enable_Mux/M3:g
-       
-       
-       ** missing connection **                                  (_mx2v):sel
-                                                                   X_DFFEN2/X_Enable_Mux/M1:g
-                                                                   X_DFFEN2/X_Enable_Mux/M2:g
-                                                                   X_DFFEN2/X_Enable_Mux/M5:g
-                                                                   X_DFFEN2/X_Enable_Mux/M3:g
-       
-
---------------------------------------------------------------------------------------------------------------
-
-  2    Net X0/18                                                 ** missing net **
-
---------------------------------------------------------------------------------------------------------------
-
-  3    Net X1/18                                                 ** missing net **
 
 
 
@@ -305,7 +253,7 @@ DISC#  LAYOUT NAME                                               SOURCE NAME
                   -------    -------    ---------    ---------    ---------
    Ports:               8          8            0            0
 
-   Nets:               20         20            2            0
+   Nets:               20         20            0            0
 
    Instances:           2          2            0            0    _bitcorev
                         8          8            0            0    _invv
@@ -315,69 +263,9 @@ DISC#  LAYOUT NAME                                               SOURCE NAME
    Total Inst:         20         20            0            0
 
 
-o Statistics:
-
-   1 passthrough layout net was found.
-
-
-o Passthrough Layout Nets And Their Ports:
-
-      (Layout nets which are connected only to ports).
-
-   ENABLE (port: ENABLE),
-
-
 o Initial Correspondence Points:
 
-   Ports:        VDD ground A X ENABLE B CLK Y
-
-
-**************************************************************************************************************
-                             DETAILED INSTANCE CONNECTIONS
-
-       LAYOUT NAME                                               SOURCE NAME
-**************************************************************************************************************
-
-          (This section contains detailed information about connections of
-           matched instances that are involved in net discrepancies).
-
---------------------------------------------------------------------------------------------------------------
-
-       (_mx2v)                                                   (_mx2v)
-         in1: X                                                    in1: X
-         in2: A                                                    in2: A
-         out: X0/7                                                 out: X_DFFEN1/N$5
-         sup1: VDD                                                 sup1: VDD
-         sup2: GROUND                                              sup2: GROUND
-         sel: X0/18                                                ** missing net **
-         ** ENABLE **                                              sel: ENABLE
-
-       Devices: 
-         X0/M17(-0.630,136.365)  MP(PMOS)                          X_DFFEN1/X_Enable_Mux/M3  MP(PMOS) 
-         X0/M18(-0.120,136.365)  MP(PMOS)                          X_DFFEN1/X_Enable_Mux/M4  MP(PMOS) 
-         X0/M1(-0.110,122.775)  MN(NMOS)                           X_DFFEN1/X_Enable_Mux/M5  MN(NMOS) 
-         X0/M0(-0.620,122.775)  MN(NMOS)                           X_DFFEN1/X_Enable_Mux/M6  MN(NMOS) 
-         X0/M19(1.360,136.365)  MP(PMOS)                           X_DFFEN1/X_Enable_Mux/M2  MP(PMOS) 
-         X0/M2(1.370,122.775)  MN(NMOS)                            X_DFFEN1/X_Enable_Mux/M1  MN(NMOS) 
-
---------------------------------------------------------------------------------------------------------------
-
-       (_mx2v)                                                   (_mx2v)
-         in1: Y                                                    in1: Y
-         in2: B                                                    in2: B
-         out: X1/7                                                 out: X_DFFEN2/N$5
-         sup1: VDD                                                 sup1: VDD
-         sup2: GROUND                                              sup2: GROUND
-         sel: X1/18                                                ** missing net **
-         ** ENABLE **                                              sel: ENABLE
-
-       Devices: 
-         X1/M17(12.225,136.365)  MP(PMOS)                          X_DFFEN2/X_Enable_Mux/M3  MP(PMOS) 
-         X1/M18(12.735,136.365)  MP(PMOS)                          X_DFFEN2/X_Enable_Mux/M4  MP(PMOS) 
-         X1/M1(12.745,122.775)  MN(NMOS)                           X_DFFEN2/X_Enable_Mux/M5  MN(NMOS) 
-         X1/M0(12.235,122.775)  MN(NMOS)                           X_DFFEN2/X_Enable_Mux/M6  MN(NMOS) 
-         X1/M19(14.215,136.365)  MP(PMOS)                          X_DFFEN2/X_Enable_Mux/M2  MP(PMOS) 
-         X1/M2(14.225,122.775)  MN(NMOS)                           X_DFFEN2/X_Enable_Mux/M1  MN(NMOS) 
+   Ports:        VDD ground B Y ENABLE A CLK X
 
 
 **************************************************************************************************************

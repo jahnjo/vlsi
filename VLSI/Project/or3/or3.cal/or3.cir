@@ -1,0 +1,5 @@
+*  Top-Level Spice netlist or3.pex.netlist for AMS-Sim
+
+.trans 0 1ns 1ms
+
+.include or3.sp

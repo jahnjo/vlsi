@@ -3,7 +3,7 @@
 ==================================================================================
 === CALIBRE::DRC-H SUMMARY REPORT
 ===
-Execution Date/Time:       Tue Apr  9 17:02:45 2019
+Execution Date/Time:       Wed Apr 10 11:44:49 2019
 Calibre Version:           v2012.2_36.25    Mon Jul 2 12:15:31 PDT 2012
 Rule File Pathname:        /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/reg/reg.cal/_DRC_
 Rule File Title:           
@@ -522,7 +522,7 @@ CELL reg ................. TOTAL Result Count = 57 (57)
 --- SUMMARY
 ---
 TOTAL CPU Time:                  0
-TOTAL REAL Time:                 0
+TOTAL REAL Time:                 1
 TOTAL Original Layer Geometries: 1046 (12717)
 TOTAL DRC RuleChecks Executed:   386
 TOTAL DRC Results Generated:     67 (148)

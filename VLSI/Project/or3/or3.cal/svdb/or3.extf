@@ -1,12 +1,11 @@
 # Automagically generated file: Please do not edit!
 lvs_ExtfVersion 3
-lvs_ExtRunTimes 1554916776 1554916776
+lvs_ExtRunTimes 1555359497 1555359497
 lvs_ExtOutFile RUNDIR /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/or3/or3.cal
-lvs_ExtOutFile RULES_FILE /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/or3/or3.cal/_LVS_
+lvs_ExtOutFile RULES_FILE /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/or3/or3.cal/_PEX_
 lvs_ExtInfoExtSummary {0 0 0 0 0 0 0 0 0 0 0}
-lvs_ExtInfoErcSummary {0 0 0 0 0 4 0 0 0 0 0}
+lvs_ExtInfoErcSummary {0 0 0 0 0 0 0 0 0 0 0}
 lvs_ExtInfoDfmSummary {0}
-lvs_ExtOutFile LAYOUT_NETLIST /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/or3/or3.cal/lay.net
-lvs_ExtOutFile EXTRACTION_REPORT lvs.report.ext
-lvs_ExtOutFile ERC_PATHCHK_DATABASE svdb/or3.pathchk.erc
-lvs_ExtOutFile ERC_PATHCHK_REPORT svdb/or3.pathchk.rep
+lvs_ExtOutFile LAYOUT_NETLIST svdb/or3.sp
+lvs_ExtOutFile EXTRACTION_REPORT or3.lvs.report.ext
+lvs_ExtOutFile SOFTCHK_DATABASE svdb/or3.softchk

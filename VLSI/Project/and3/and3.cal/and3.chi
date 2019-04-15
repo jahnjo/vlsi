@@ -1,0 +1,2809 @@
+  Run on egr-vlsi-25 (Linux 3.10.0-514.26.2.el7.x86_64)
+
+/opt/mentor/ams_12_1/aol/bin/vams_ms_64 -i /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/and3/and3.cal/and3.cir -noconf -nogwl -cou46 -gwl wdl -nocou -wdb_folder -wdb_incremental -jwdb_design -hdla /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/and3/work  -hdlav3opt -jwdbport 43209 -jwdbhost egr-vlsi-25 -folder -mainpane -mach -ezwave -kernelplotmechanism -jwdb_checkpoint 1 -viewer_config 2 -msl transcript_ms -ms -multisource_delay max 
+
+
+***** PRE-PROCESSING ...
+
+1*******15-Apr-19 *******  ELDO 12.1 patch1 (64 bits)  (v7.7_1.1)  *******16:28:45******
+
+0*  Top-Level Spice netlist and3.pex.netlist for AMS-Sim
+
+0****     INPUT LISTING                                               
+
+0***********************************************************************
+    2  
+    3  .trans 0 1ns 1ms
+    4  
+    5  ** including /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/and3/and3.cal/and3.sp
+    1  *  Spice netlist and3.pex.netlist transformed for AMS-Sim
+    2  *    additions
+    3  
+    4  .LIB $MGC_DESIGN_KIT/models/lib.eldo TT
+    5  
+    6  ** INCLUDING LIBRARY /home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/models/lib.eldo LIBTYPE=TT
+    1  .PARAM
+    2  +TOXN   = 2.81E-09        CJN    = 1.376E-3      CJSWN  = 2.06E-10     
+    3  +CJSWGN = 5.0462E-10      CGON   = 3.85E-10      RSHN   = 6.6  
+    4  +DVTHN  = 0               HDIFN  = 1.35E-07      DWVTHN = 0
+    5  +TOXP   = 2.85E-09        CJP    = 0.00136925    CJSWP  = 9.8E-11 
+    6  +CJSWGP = 4.53119E-10     CGOP   = 2.7988E-10    RSHP   = 7.2
+    7  +DVTHP  = 0               HDIFP  = 1.35E-07      DWVTHP = 0 
+    8  +DXL    = 0               DXW    = 0.0            
+    9  .LIB  lib.eldo  MOS
+   10  ** INCLUDING LIBRARY /home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/models/lib.eldo LIBTYPE=MOS
+    1  *
+    2  ***************************************************************
+    3  *                                                             *
+    4  *               1.2V NMOS DEVICES MODEL                       *
+    5  *                                                             *
+    6  ***************************************************************
+    7  *
+    8  .MODEL NMOS.1            NMOS   (                    LMIN     = '8.00E-07-DXL' 
+    9  +LMAX    = 2.1E-05        WMIN     = '1.0005E-05-DXW' WMAX     = 0.000101   
+   10  + LEVEL=53 TNOM = 25  VERSION = 3.2  
+   11  +TOX     = 'TOXN'         TOXM     = 'TOXN'         XJ       = 1.9E-07        
+   12  +NCH     = 6.14815E+17    LLN      = 1              LWN      = 1              
+   13  +WLN     = 1              WWN      = 1              LINT     = 0              
+   14  +LL      = 0              LW       = 0              LWL      = 0              
+   15  +WINT    = 1.25E-08       WL       = 0              WW       = 0              
+   16  +WWL     = 0              MOBMOD   = 1              BINUNIT  = 2              
+   17  +XL      = '-2.0E-08+DXL' XW       = '1.5E-08+DXW'  DWG      = 0              
+   18  +DWB     = 0              VTH0     = '0.3186263+DVTHN' LVTH0    = 3.77315E-08
+   19  +K1      = 0.4020326      LK1      = 2.961456E-08   K2       = -0.01          
+   20  +K3      = 0              DVT0     = 0              DVT1     = 0              
+   21  +DVT2    = 0              DVT0W    = 0              DVT1W    = 0              
+   22  +DVT2W   = 0              NLX      = 0              W0       = 0              
+   23  +K3B     = 0              VFB      = -0.9638587     VSAT     = 92000          
+   24  +UA      = 6.957609E-10   LUA      = 4.230652E-17   UB       = 1.29963E-18    
+   25  +LUB     = 7.022882E-25   UC       = 9.558696E-11   LUC      = 1.438422E-16   
+   26  +RDSW    = 102.9          PRWB     = 0              PRWG     = 0              
+   27  +WR      = 1              U0       = 0.05146012     LU0      = 8.222194E-09   
+   28  +A0      = 1.2            KETA     = -0.003169565   LKETA    = 1.692261E-09   
+   29  +A1      = 0              A2       = 0.99           AGS      = 0.620326       
+   30  +LAGS    = 2.961457E-07   B0       = 0              B1       = 0              
+   31  +VOFF    = -0.1336783     LVOFF    = 6.769044E-09   NFACTOR  = 0.4491304      
+   32  +LNFACTOR= 5.076783E-07   CIT      = 0              CDSC     = 0              
+   33  +CDSCB   = 0              CDSCD    = 0              ETA0     = -7.847857E-06  
+   34  +LETA0   = 1.176121E-09   ETAB     = 0.0001458695   LETAB    = -2.453778E-09  
+   35  +DSUB    = 0              PCLM     = 0.55           PDIBLC1  = 0              
+   36  +PDIBLC2 = 0.0008728261   LPDIBLC2 = 1.269195E-09   PDIBLCB  = 0              
+   37  +DROUT   = 0              PSCBE1   = 1.8E+08        PSCBE2   = 5E-08          
+   38  +PVAG    = 0              DELTA    = 0.004576087    LDELTA   = 4.230652E-09   
+   39  +KT1     = -0.1783044     LKT1     = -1.69226E-08   KT2      = -0.02          
+   40  +AT      = 44152.18       LAT      = 0.008461304    UTE      = -1.5           
+   41  +UA1     = 2.469456E-09   LUA1     = 8.038239E-16   UB1      = -2.330435E-18  
+   42  +LUB1    = -1.692261E-24  UC1      = 7.561846E-11   LUC1     = -2.828424E-16  
+   43  +KT1L    = 0              PRT      = 0              ALPHA0   = 0              
+   44  +ALPHA1  = 0.009179       BETA0    = 6.415          CJ       = 'CJN'          
+   45  +MJ      = 0.4528         PB       = 0.7956         CJSW     = 'CJSWN'        
+   46  +MJSW    = 0.2323         PBSW     = 0.7956         CJSWG    = 'CJSWGN'      
+   47  +MJSWG   = 0.4087         PBSWG    = 0.7956         TCJ      = 0.0009067      
+   48  +TCJSW   = 0.0002781      TCJSWG   = 0.0002781      TPB      = 0.001427       
+   49  +TPBSW   = 0.001427       TPBSWG   = 0.001427       JS       = 1E-05          
+   50  +JSW     = 1.55E-10       CGDO     = 'CGON'         CGSO     = 'CGON'         
+   51  +CGBO    = 0              CAPMOD   = 3              NQSMOD   = 0              
+   52  +XPART   = 1              CF       = 0              TLEV     = 1              
+   53  +TLEVC   = 1              XTI      = 3              N        = 1              
+   54  +HDIF    = 'HDIFN'        LDIF     = 8E-08          RSH      = RSHN            
+   55  +RS      = 0              RD       = 0              ACM      = 12             
+   56  + CALCACM = 1  
+   57  + AF = 0.868  KF = 1.13E-24  
+   58  +DLC     = -5.8E-09          WVTH0    = '0+DWVTHN'     IJTH     = 0.01 )
+   59  +OPTACM=1
+   60  +THMLEV=1  FLKLEV=1
+   61  
+   62  
+   63  
+   64  .MODEL NMOS.2            NMOS   (                    LMIN     = '3.50E-07-DXL' 
+   65  +LMAX    = '8.00E-07-DXL' WMIN     = '1.0005E-05-DXW' WMAX     = 0.000101   
+   66  + LEVEL=53 TNOM = 25  VERSION = 3.2  
+   67  +TOX     = 'TOXN'         TOXM     = 'TOXN'         XJ       = 1.9E-07        
+   68  +NCH     = 6.14815E+17    LLN      = 1              LWN      = 1              
+   69  +WLN     = 1              WWN      = 1              LINT     = 0              
+   70  +LL      = 0              LW       = 0              LWL      = 0              
+   71  +WINT    = 1.25E-08       WL       = 0              WW       = 0              
+   72  +WWL     = 0              MOBMOD   = 1              BINUNIT  = 2              
+   73  +XL      = '-2.0E-08+DXL' XW       = '1.5E-08+DXW'  DWG      = 0              
+   74  +DWB     = 0              VTH0     = '0.3464667+DVTHN' LVTH0    = 1.6016E-08  
+   75  +K1      = 0.4253333      LK1      = 1.144001E-08   K2       = -0.01          
+   76  +K3      = 0              DVT0     = 0              DVT1     = 0              
+   77  +DVT2    = 0              DVT0W    = 0              DVT1W    = 0              
+   78  +DVT2W   = 0              NLX      = 0              W0       = 0              
+   79  +K3B     = 0              VFB      = -0.9549471     VSAT     = 92000          
+   80  +UA      = 8.966667E-10   LUA      = -1.144E-16     UB       = 1.833333E-18   
+   81  +LUB     = 2.860001E-25   UC       = 2.323333E-10   LUC      = 3.718E-17      
+   82  +RDSW    = 102.9          PRWB     = 0              PRWG     = 0              
+   83  +WR      = 1              U0       = 0.05833474     LU0      = 2.859993E-09   
+   84  +A0      = 1.2            KETA     = -0.001         A1       = 0              
+   85  +A2      = 0.99           AGS      = 1              B0       = 0              
+   86  +B1      = 0              VOFF     = -0.1242667     LVOFF    = -5.720012E-10  
+   87  +NFACTOR = 0.9533334      LNFACTOR = 1.144E-07      CIT      = 0              
+   88  +CDSC    = 0              CDSCB    = 0              CDSCD    = 0              
+   89  +ETA0    = 0.0003999999   LETA0    = 8.580001E-10   ETAB     = -0.0019        
+   90  +LETAB   = -8.579999E-10  DSUB     = 0              PCLM     = 0.55           
+   91  +PDIBLC1 = 0              PDIBLC2  = 0.0025         PDIBLCB  = 0              
+   92  +DROUT   = 0              PSCBE1   = 1.8E+08        PSCBE2   = 5E-08          
+   93  +PVAG    = 0              DELTA    = 0.01           KT1      = -0.2088        
+   94  +LKT1    = 6.864006E-09   KT2      = -0.02          AT       = 69666.67       
+   95  +LAT     = -0.01144       UTE      = -1.5           UA1      = 3.866667E-09   
+   96  +LUA1    = -2.860001E-16  UB1      = -4.683333E-18  LUB1     = 1.43E-25       
+   97  +UC1     = -2.408E-10     LUC1     = -3.6036E-17    KT1L     = 0              
+   98  +PRT     = 0              ALPHA0   = 0              ALPHA1   = 0.009179       
+   99  +BETA0   = 6.415          CJ       = 'CJN'          MJ       = 0.4528         
+  100  +PB      = 0.7956         CJSW     = 'CJSWN'        MJSW     = 0.2323         
+  101  +PBSW    = 0.7956         CJSWG    = 'CJSWGN'       MJSWG    = 0.4087         
+  102  +PBSWG   = 0.7956         TCJ      = 0.0009067      TCJSW    = 0.0002781      
+  103  +TCJSWG  = 0.0002781      TPB      = 0.001427       TPBSW    = 0.001427       
+  104  +TPBSWG  = 0.001427       JS       = 1E-05          JSW      = 1.55E-10       
+  105  +CGDO    = 'CGON'         CGSO     = 'CGON'         CGBO     = 0              
+  106  +CAPMOD  = 3              NQSMOD   = 0              XPART    = 1              
+  107  +CF      = 0              TLEV     = 1              TLEVC    = 1              
+  108  +XTI     = 3              N        = 1              HDIF     = 'HDIFN'        
+  109  +LDIF    = 8E-08          RSH      = RSHN            RS       = 0              
+  110  +RD      = 0              ACM      = 12             CALCACM  = 1              
+  111  + AF = 0.868  
+  112  + KF = 1.13E-24  DLC = -5.8E-09  
+  113  +WVTH0   = '0+DWVTHN'     IJTH     = 0.01 )
+  114  +OPTACM=1
+  115  +THMLEV=1  FLKLEV=1
+  116  
+  117  
+  118  
+  119  .MODEL NMOS.3            NMOS   (                    LMIN     = 1.30E-07   
+  120  +LMAX    = '3.50E-07-DXL' WMIN     = '1.0005E-05-DXW' WMAX     = 0.000101   
+  121  + LEVEL=53 TNOM = 25  VERSION = 3.2  
+  122  +TOX     = 'TOXN'         TOXM     = 'TOXN'         XJ       = 1.9E-07        
+  123  +NCH     = 6.14815E+17    LLN      = 1              LWN      = 1              
+  124  +WLN     = 1              WWN      = 1              LINT     = 0              
+  125  +LL      = 0              LW       = 0              LWL      = 0              
+  126  +WINT    = 1.25E-08       WL       = 0              WW       = 0              
+  127  +WWL     = 0              MOBMOD   = 1              BINUNIT  = 2              
+  128  +XL      = '-2.0E-08+DXL' XW       = '1.5E-08+DXW'  DWG      = 0              
+  129  +DWB     = 0              VTH0     = '0.372+DVTHN'  LVTH0    = 7.590001E-09   
+  130  +K1      = 0.4625         LK1      = -8.249992E-10  K2       = -0.01          
+  131  +K3      = 0              DVT0     = 0              DVT1     = 0              
+  132  +DVT2    = 0              DVT0W    = 0              DVT1W    = 0              
+  133  +DVT2W   = 0              NLX      = 0              W0       = 0              
+  134  +K3B     = 0              VFB      = -0.904175      VSAT     = 92475          
+  135  +LVSAT   = -0.00015675    UA       = 5.6E-10        LUA      = -3.3E-18       
+  136  +UB      = 2.7E-18        UC       = 2.95E-10       LUC      = 1.65E-17       
+  137  +RDSW    = 102.9          PRWB     = 0              PRWG     = 0              
+  138  +WR      = 1              U0       = 0.06050138     LU0      = 2.145002E-09   
+  139  +A0      = 1.2            KETA     = -0.001         A1       = 0              
+  140  +A2      = 0.99           AGS      = 1              B0       = 0              
+  141  +B1      = 0              VOFF     = -0.124         LVOFF    = -6.599989E-10  
+  142  +NFACTOR = 1.05           LNFACTOR = 8.25E-08       CIT      = 0              
+  143  +CDSC    = 0              CDSCB    = 0              CDSCD    = 0              
+  144  +ETA0    = 0.0004999998   LETA0    = 8.250001E-10   ETAB     = -0.003249999   
+  145  +LETAB   = -4.125001E-10  DSUB     = 0              PCLM     = 0.225          
+  146  +LPCLM   = 1.0725E-07     PDIBLC1  = 0              PDIBLC2  = 0.00125        
+  147  +LPDIBLC2= 4.125E-10      PDIBLCB  = 0              DROUT    = 0              
+  148  +PSCBE1  = 1.8E+08        PSCBE2   = 5E-08          PVAG     = 0              
+  149  +DELTA   = 0.01           KT1      = -0.182         LKT1     = -1.980001E-09  
+  150  +KT2     = -0.02          AT       = 35000          UTE      = -1.45          
+  151  +LUTE    = -1.65E-08      UA1      = 3.5E-09        LUA1     = -1.65E-16      
+  152  +UB1     = -4.825E-18     LUB1     = 1.8975E-25     UC1      = -3.75E-10      
+  153  +LUC1    = 8.250001E-18   KT1L     = 0              PRT      = 0              
+  154  +ALPHA0  = 0              ALPHA1   = 0.009179       BETA0    = 6.415          
+  155  +CJ      = 'CJN'          MJ       = 0.4528         PB       = 0.7956         
+  156  +CJSW    = 'CJSWN'        MJSW     = 0.2323         PBSW     = 0.7956         
+  157  +CJSWG   = 'CJSWGN'       MJSWG    = 0.4087         PBSWG    = 0.7956         
+  158  +TCJ     = 0.0009067      TCJSW    = 0.0002781      TCJSWG   = 0.0002781      
+  159  +TPB     = 0.001427       TPBSW    = 0.001427       TPBSWG   = 0.001427       
+  160  +JS      = 1E-05          JSW      = 1.55E-10       CGDO     = 'CGON'         
+  161  +CGSO    = 'CGON'         CGBO     = 0              CAPMOD   = 3              
+  162  +NQSMOD  = 0              XPART    = 1              CF       = 0              
+  163  +TLEV    = 1              TLEVC    = 1              XTI      = 3              
+  164  +N       = 1              HDIF     = 'HDIFN'        LDIF     = 8E-08          
+  165  +RSH     = RSHN            RS       = 0              RD       = 0              
+  166  + ACM = 12  CALCACM = 1  
+  167  + AF = 0.868  KF = 1.13E-24  
+  168  + DLC = -5.8E-09  WVTH0 = '0+DWVTHN'  
+  169  +IJTH    = 0.01 )
+  170  +OPTACM=1
+  171  +THMLEV=1  FLKLEV=1
+  172  
+  173  
+  174  
+  175  .MODEL NMOS.4            NMOS   (                    LMIN     = '8.00E-07-DXL' 
+  176  +LMAX    = 2.1E-05        WMIN     = '1.205E-06-DXW' WMAX     = '1.0005E-05-DXW'
+  177  + LEVEL=53 TNOM = 25  VERSION = 3.2  
+  178  +TOX     = 'TOXN'         TOXM     = 'TOXN'         XJ       = 1.9E-07        
+  179  +NCH     = 6.14815E+17    LLN      = 1              LWN      = 1              
+  180  +WLN     = 1              WWN      = 1              LINT     = 0              
+  181  +LL      = 0              LW       = 0              LWL      = 0              
+  182  +WINT    = 1.25E-08       WL       = 0              WW       = 0              
+  183  +WWL     = 0              MOBMOD   = 1              BINUNIT  = 2              
+  184  +XL      = '-2.0E-08+DXL' XW       = '1.5E-08+DXW'  DWG      = 0              
+  185  +DWB     = 0              VTH0     = '0.3192846+DVTHN' LVTH0    = 3.848904E-08
+  186  +WVTH0   = '-6.580117E-09+DWVTHN' PVTH0    = -7.571634E-15  K1       = 0.4019175
+  187  +LK1     = 3.076357E-08   WK1      = 1.150731E-09   PK1      = -1.148431E-14  
+  188  +K2      = -0.01          K3       = 0              DVT0     = 0              
+  189  +DVT1    = 0              DVT2     = 0              DVT0W    = 0              
+  190  +DVT1W   = 0              DVT2W    = 0              NLX      = 0              
+  191  +W0      = 0              K3B      = 0              VFB      = -0.9663146     
+  192  +VSAT    = 92000          UA       = 6.956929E-10   LUA      = 1.587938E-17   
+  193  +WUA     = 6.786699E-19   PUA      = 2.641394E-22   UB       = 1.301512E-18   
+  194  +LUB     = 8.258063E-25   WUB      = -1.88102E-26   PUB      = -1.234564E-30  
+  195  +UC      = 9.466591E-11   LUC      = 1.530342E-16   WUC      = 9.205861E-18   
+  196  +PUC     = -9.187456E-23  RDSW     = 102.9          PRWB     = 0              
+  197  +PRWG    = 0              WR       = 1              U0       = 0.05210034     
+  198  +LU0     = 8.993866E-09   WU0      = -6.399003E-09  PU0      = -7.712874E-15  
+  199  +A0      = 1.2            KETA     = -0.003169565   LKETA    = 1.692261E-09   
+  200  +A1      = 0              A2       = 0.99           AGS      = 0.620326       
+  201  +LAGS    = 2.961457E-07   B0       = 0              B1       = 0              
+  202  +VOFF    = -0.1330592     LVOFF    = 8.722355E-09   WVOFF    = -6.187405E-09  
+  203  +PVOFF   = -1.952335E-14  NFACTOR  = 0.3913584      LNFACTOR = 5.421484E-07   
+  204  +WNFACTOR= 5.774322E-07   PNFACTOR = -3.445296E-13  CIT      = 0              
+  205  +CDSC    = 0              CDSCB    = 0              CDSCD    = 0              
+  206  +ETA0    = -7.847857E-06  LETA0    = 1.176121E-09   ETAB     = 0.0001458695   
+  207  +LETAB   = -2.453778E-09  DSUB     = 0              PCLM     = 0.55           
+  208  +PDIBLC1 = 0              PDIBLC2  = 0.0008728261   LPDIBLC2 = 1.269195E-09   
+  209  +PDIBLCB = 0              DROUT    = 0              PSCBE1   = 1.8E+08        
+  210  +PSCBE2  = 5E-08          PVAG     = 0              DELTA    = 0.004576087    
+  211  +LDELTA  = 4.230652E-09   KT1      = -0.1789258     LKT1     = -1.749711E-08  
+  212  +WKT1    = 6.211026E-09   PKT1     = 5.742155E-15   KT2      = -0.02          
+  213  +AT      = 44094.61       LAT      = 0.009035808    WAT      = 0.0005753656   
+  214  +PAT     = -5.742161E-09  UTE      = -1.5           UA1      = 2.516867E-09   
+  215  +LUA1    = 8.727644E-16   WUA1     = -4.738664E-16  PUA1     = -6.890593E-22  
+  216  +UB1     = -2.308542E-18  LUB1     = -1.788777E-24  WUB1     = -2.188163E-25  
+  217  +PUB1    = 9.646825E-31   UC1      = 7.515796E-11   LUC1     = -2.782464E-16  
+  218  +WUC1    = 4.602911E-18   PUC1     = -4.593729E-23  KT1L     = 0              
+  219  +PRT     = 0              ALPHA0   = 0              ALPHA1   = 0.009179       
+  220  +BETA0   = 6.415          CJ       = 'CJN'          MJ       = 0.4528         
+  221  +PB      = 0.7956         CJSW     = 'CJSWN'        MJSW     = 0.2323         
+  222  +PBSW    = 0.7956         CJSWG    = 'CJSWGN'       MJSWG    = 0.4087         
+  223  +PBSWG   = 0.7956         TCJ      = 0.0009067      TCJSW    = 0.0002781      
+  224  +TCJSWG  = 0.0002781      TPB      = 0.001427       TPBSW    = 0.001427       
+  225  +TPBSWG  = 0.001427       JS       = 1E-05          JSW      = 1.55E-10       
+  226  +CGDO    = 'CGON'         CGSO     = 'CGON'         CGBO     = 0              
+  227  +CAPMOD  = 3              NQSMOD   = 0              XPART    = 1              
+  228  +CF      = 0              TLEV     = 1              TLEVC    = 1              
+  229  +XTI     = 3              N        = 1              HDIF     = 'HDIFN'        
+  230  +LDIF    = 8E-08          RSH      = RSHN            RS       = 0              
+  231  +RD      = 0              ACM      = 12             CALCACM  = 1              
+  232  + AF = 0.868  
+  233  + KF = 1.13E-24  DLC = -5.8E-09  
+  234  +IJTH    = 0.01 )
+  235  +OPTACM=1
+  236  +THMLEV=1  FLKLEV=1
+  237  
+  238  
+  239  
+  240  .MODEL NMOS.5            NMOS   (                    LMIN     = '3.50E-07-DXL' 
+  241  +LMAX    = '8.00E-07-DXL' WMIN     = '1.205E-06-DXW' WMAX     = '1.0005E-05-DXW'
+  242  + LEVEL=53 TNOM = 25  VERSION = 3.2  
+  243  +TOX     = 'TOXN'         TOXM     = 'TOXN'         XJ       = 1.9E-07        
+  244  +NCH     = 6.14815E+17    LLN      = 1              LWN      = 1              
+  245  +WLN     = 1              WWN      = 1              LINT     = 0              
+  246  +LL      = 0              LW       = 0              LWL      = 0              
+  247  +WINT    = 1.25E-08       WL       = 0              WW       = 0              
+  248  +WWL     = 0              MOBMOD   = 1              BINUNIT  = 2              
+  249  +XL      = '-2.0E-08+DXL' XW       = '1.5E-08+DXW'  DWG      = 0              
+  250  +DWB     = 0              VTH0     = '0.3487933+DVTHN' LVTH0    = 1.547228E-08
+  251  +WVTH0   = '-2.325469E-08+DWVTHN' PVTH0    = 5.434531E-15   K1       = 0.4276871
+  252  +LK1     = 1.066326E-08   WK1      = -2.352609E-08  PK1      = 7.763609E-15   
+  253  +K2      = -0.01          K3       = 0              DVT0     = 0              
+  254  +DVT1    = 0              DVT2     = 0              DVT0W    = 0              
+  255  +DVT1W   = 0              DVT2W    = 0              NLX      = 0              
+  256  +W0      = 0              K3B      = 0              VFB      = -0.9599471     
+  257  +VSAT    = 92099.59       LVSAT    = -7.767496E-05  WVSAT    = -0.0009953355  
+  258  +PVSAT   = 7.763617E-10   UA       = 8.477803E-10   LUA      = -1.027488E-16  
+  259  +WUA     = 4.886192E-16   PUA      = -1.164542E-22  UB       = 1.989588E-18   
+  260  +LUB     = 2.891071E-25   WUB      = -1.561772E-24  PUB      = -3.105452E-32  
+  261  +UC      = 2.387157E-10   LUC      = 4.067538E-17   WUC      = -6.379194E-17  
+  262  +PUC     = -3.493628E-23  RDSW     = 102.9          PRWB     = 0              
+  263  +PRWG    = 0              WR       = 1              U0       = 0.05966554     
+  264  +LU0     = 3.093016E-09   WU0      = -1.330132E-08  PU0      = -2.329068E-15  
+  265  +A0      = 1.2            KETA     = -0.001         A1       = 0              
+  266  +A2      = 0.99           AGS      = 1.024896       LAGS     = -1.941873E-08  
+  267  +WAGS    = -2.488339E-07  PAGS     = 1.940904E-13   B0       = 0              
+  268  +B1      = 0              VOFF     = -0.1192513     LVOFF    = -2.047826E-09  
+  269  +WVOFF   = -5.012873E-08  PVOFF    = 1.475088E-14   NFACTOR  = 0.9347747      
+  270  +LNFACTOR= 1.182837E-07   WNFACTOR = 1.854943E-07   PNFACTOR = -3.881805E-14  
+  271  +CIT     = 0              CDSC     = 0              CDSCB    = 0              
+  272  +CDSCD   = 0              ETA0     = 0.000345229    LETA0    = 9.007213E-10   
+  273  +WETA0   = 5.474347E-10   PETA0    = -4.269989E-16  ETAB     = -0.001800417   
+  274  +LETAB   = -9.35675E-10   WETAB    = -9.95335E-10   PETAB    = 7.763614E-16   
+  275  +DSUB    = 0              PCLM     = 0.55           PDIBLC1  = 0              
+  276  +PDIBLC2 = 0.0025         PDIBLCB  = 0              DROUT    = 0              
+  277  +PSCBE1  = 1.8E+08        PSCBE2   = 5E-08          PVAG     = 0              
+  278  +DELTA   = 0.01           KT1      = -0.211353      LKT1     = 7.796106E-09   
+  279  +WKT1    = 2.55168E-08    PKT1     = -9.316348E-15  KT2      = -0.02          
+  280  +AT      = 70843.56       LAT      = -0.01182838    WAT      = -0.01176305    
+  281  +PAT     = 3.881808E-09   UTE      = -1.5           UA1      = 4.032337E-09   
+  282  +LUA1    = -3.093026E-16  WUA1     = -1.655877E-15  PUA1     = 2.329085E-22   
+  283  +UB1     = -4.78518E-18   LUB1     = 1.43E-25       WUB1     = 1.017956E-24   
+  284  +UC1     = -2.271028E-10  LUC1     = -4.248302E-17  WUC1     = -1.369039E-16  
+  285  +PUC1    = 6.443801E-23   KT1L     = 0              PRT      = 0              
+  286  +ALPHA0  = 0              ALPHA1   = 0.009179       BETA0    = 6.415          
+  287  +CJ      = 'CJN'          MJ       = 0.4528         PB       = 0.7956         
+  288  +CJSW    = 'CJSWN'        MJSW     = 0.2323         PBSW     = 0.7956         
+  289  +CJSWG   = 'CJSWGN'       MJSWG    = 0.4087         PBSWG    = 0.7956         
+  290  +TCJ     = 0.0009067      TCJSW    = 0.0002781      TCJSWG   = 0.0002781      
+  291  +TPB     = 0.001427       TPBSW    = 0.001427       TPBSWG   = 0.001427       
+  292  +JS      = 1E-05          JSW      = 1.55E-10       CGDO     = 'CGON'         
+  293  +CGSO    = 'CGON'         CGBO     = 0              CAPMOD   = 3              
+  294  +NQSMOD  = 0              XPART    = 1              CF       = 0              
+  295  +TLEV    = 1              TLEVC    = 1              XTI      = 3              
+  296  +N       = 1              HDIF     = 'HDIFN'        LDIF     = 8E-08          
+  297  +RSH     = RSHN            RS       = 0              RD       = 0              
+  298  + ACM = 12  CALCACM = 1  
+  299  + AF = 0.868  KF = 1.13E-24  
+  300  + DLC = -5.8E-09  IJTH = 0.01 ) 
+  301  +OPTACM=1
+  302  +THMLEV=1  FLKLEV=1
+  303  
+  304  
+  305  
+  306  .MODEL NMOS.6            NMOS   (                    LMIN     = 1.30E-07   
+  307  +LMAX    = '3.50E-07-DXL' WMIN     = '1.205E-06-DXW' WMAX     = '1.0005E-05-DXW'
+  308  + LEVEL=53 TNOM = 25  VERSION = 3.2  
+  309  +TOX     = 'TOXN'         TOXM     = 'TOXN'         XJ       = 1.9E-07        
+  310  +NCH     = 6.14815E+17    LLN      = 1              LWN      = 1              
+  311  +WLN     = 1              WWN      = 1              LINT     = 0              
+  312  +LL      = 0              LW       = 0              LWL      = 0              
+  313  +WINT    = 1.25E-08       WL       = 0              WW       = 0              
+  314  +WWL     = 0              MOBMOD   = 1              BINUNIT  = 2              
+  315  +XL      = '-2.0E-08+DXL' XW       = '1.5E-08+DXW'  DWG      = 0              
+  316  +DWB     = 0              VTH0     = '0.3731874+DVTHN' LVTH0    = 7.422214E-09
+  317  +WVTH0   = '-1.186831E-08+DWVTHN' PVTH0    = 1.677027E-15   K1       = 0.4624763
+  318  +LK1     = -8.17183E-10   WK1      = 2.367341E-10   PK1      = -7.812222E-17  
+  319  +K2      = -0.01          K3       = 0              DVT0     = 0              
+  320  +DVT1    = 0              DVT2     = 0              DVT0W    = 0              
+  321  +DVT1W   = 0              DVT2W    = 0              NLX      = 0              
+  322  +W0      = 0              K3B      = 0              VFB      = -0.905175      
+  323  +VSAT    = 92367.39       LVSAT    = -0.0001660512  WVSAT    = 0.001075562    
+  324  +PVSAT   = 9.296548E-11   UA       = 5.390622E-10   LUA      = -8.717873E-19  
+  325  +WUA     = 2.09273E-16    PUA      = -2.426999E-23  UB       = 2.801752E-18   
+  326  +LUB     = 2.109314E-26   WUB      = -1.01701E-24   PUB      = -2.108259E-31  
+  327  +UC      = 2.99737E-10    LUC      = 2.053834E-17   WUC      = -4.73468E-17   
+  328  +PUC     = -4.036318E-23  RDSW     = 102.9          PRWB     = 0              
+  329  +PRWG    = 0              WR       = 1              U0       = 0.06172818     
+  330  +LU0     = 2.412345E-09   WU0      = -1.226186E-08  PU0      = -2.672088E-15  
+  331  +A0      = 1.2            KETA     = -0.001         A1       = 0              
+  332  +A2      = 0.99           AGS      = 0.9478924      LAGS     = 5.99237E-09    
+  333  +WAGS    = 5.208151E-07   PAGS     = -5.989373E-14  B0       = 0              
+  334  +B1      = 0              VOFF     = -0.1260906     LVOFF    = 2.091559E-10   
+  335  +WVOFF   = 2.089575E-08   PVOFF    = -8.687199E-15  NFACTOR  = 1.041947       
+  336  +LNFACTOR= 8.291686E-08   WNFACTOR = 8.048968E-08   PNFACTOR = -4.166534E-15  
+  337  +CIT     = 0              CDSC     = 0              CDSCB    = 0              
+  338  +CDSCD   = 0              ETA0     = 0.0003695728   LETA0    = 8.926878E-10   
+  339  +WETA0   = 1.303616E-09   PETA0    = -6.765388E-16  ETAB     = -0.003397638   
+  340  +LETAB   = -4.08592E-10   WETAB    = 1.475642E-09   PETAB    = -3.906104E-17  
+  341  +DSUB    = 0              PCLM     = 0.2353426      LPCLM    = 1.03837E-07    
+  342  +WPCLM   = -1.033738E-07  PPCLM    = 3.411337E-14   PDIBLC1  = 0              
+  343  +PDIBLC2 = 0.001378058    LPDIBLC2 = 3.702408E-10   WPDIBLC2 = -1.279943E-09  
+  344  +PPDIBLC2= 4.223811E-16   PDIBLCB  = 0              DROUT    = 0              
+  345  +PSCBE1  = 1.8E+08        PSCBE2   = 5E-08          PVAG     = 0              
+  346  +DELTA   = 0.01           KT1      = -0.1794609     LKT1     = -2.728266E-09  
+  347  +WKT1    = -2.53779E-08   PKT1     = 7.478905E-15   KT2      = -0.02          
+  348  +AT      = 35000          UTE      = -1.44321       LUTE     = -1.874063E-08  
+  349  +WUTE    = -6.786381E-08  PUTE     = 2.239505E-14   UA1      = 3.56853E-09    
+  350  +LUA1    = -1.56246E-16   WUA1     = -6.849511E-16  PUA1     = -8.74969E-23   
+  351  +UB1     = -4.90324E-18   LUB1     = 1.819599E-25   WUB1     = 7.820111E-25   
+  352  +PUB1    = 7.786192E-32   UC1      = -3.769706E-10  LUC1     = 6.973365E-18   
+  353  +WUC1    = 1.969626E-17   PUC1     = 1.275997E-23   KT1L     = 0              
+  354  +PRT     = 0              ALPHA0   = 0              ALPHA1   = 0.009179       
+  355  +BETA0   = 6.415          CJ       = 'CJN'          MJ       = 0.4528         
+  356  +PB      = 0.7956         CJSW     = 'CJSWN'        MJSW     = 0.2323         
+  357  +PBSW    = 0.7956         CJSWG    = 'CJSWGN'       MJSWG    = 0.4087         
+  358  +PBSWG   = 0.7956         TCJ      = 0.0009067      TCJSW    = 0.0002781      
+  359  +TCJSWG  = 0.0002781      TPB      = 0.001427       TPBSW    = 0.001427       
+  360  +TPBSWG  = 0.001427       JS       = 1E-05          JSW      = 1.55E-10       
+  361  +CGDO    = 'CGON'         CGSO     = 'CGON'         CGBO     = 0              
+  362  +CAPMOD  = 3              NQSMOD   = 0              XPART    = 1              
+  363  +CF      = 0              TLEV     = 1              TLEVC    = 1              
+  364  +XTI     = 3              N        = 1              HDIF     = 'HDIFN'        
+  365  +LDIF    = 8E-08          RSH      = RSHN            RS       = 0              
+  366  +RD      = 0              ACM      = 12             CALCACM  = 1              
+  367  + AF = 0.868  
+  368  + KF = 1.13E-24  DLC = -5.8E-09  
+  369  +IJTH    = 0.01 )
+  370  +OPTACM=1
+  371  +THMLEV=1  FLKLEV=1
+  372  
+  373  
+  374  
+  375  .MODEL NMOS.7            NMOS   (                    LMIN     = '8.00E-07-DXL' 
+  376  +LMAX    = 2.1E-05        WMIN     = '5.85E-07-DXW'  WMAX     = '1.205E-06-DXW'
+  377  + LEVEL=53 TNOM = 25  VERSION = 3.2  
+  378  +TOX     = 'TOXN'         TOXM     = 'TOXN'         XJ       = 1.9E-07        
+  379  +NCH     = 6.14815E+17    LLN      = 1              LWN      = 1              
+  380  +WLN     = 1              WWN      = 1              LINT     = 0              
+  381  +LL      = 0              LW       = 0              LWL      = 0              
+  382  +WINT    = 1.25E-08       WL       = 0              WW       = 0              
+  383  +WWL     = 0              MOBMOD   = 1              BINUNIT  = 2              
+  384  +XL      = '-2.0E-08+DXL' XW       = '1.5E-08+DXW'  DWG      = 0              
+  385  +DWB     = 0              VTH0     = '0.3285222+DVTHN' LVTH0    = 4.235429E-08
+  386  +WVTH0   = '-1.761901E-08+DWVTHN' PVTH0    = -1.21906E-14   K1       = 0.4028804
+  387  +LK1     = 2.115326E-08   K2       = -0.01          K3       = 0              
+  388  +DVT0    = 0              DVT1     = 0              DVT2     = 0              
+  389  +DVT0W   = 0              DVT1W    = 0              DVT2W    = 0              
+  390  +NLX     = 0              W0       = 0              K3B      = 0              
+  391  +VFB     = -0.9963146     VSAT     = 92000          UA       = 6.970471E-10   
+  392  +LUA     = 2.290693E-16   WUA      = -9.396122E-19  PUA      = 9.377379E-24   
+  393  +UB      = 1.734552E-18   LUB      = -2.896972E-25  WUB      = -5.362924E-25  
+  394  +PUB     = 9.846243E-32   UC       = 1.00797E-10    LUC      = 9.184609E-17   
+  395  +WUC     = 1.879232E-18   PUC      = -1.875476E-23  RDSW     = 102.9          
+  396  +PRWB    = 0              PRWG     = 0              WR       = 1              
+  397  +U0      = 0.05177577     LU0      = -1.384007E-09  WU0      = -6.011136E-09  
+  398  +PU0     = 4.688686E-15   A0       = 1.2            KETA     = -0.003169565   
+  399  +LKETA   = 1.692261E-09   A1       = 0              A2       = 0.99           
+  400  +AGS     = 0.628189       LAGS     = 2.176739E-07   WAGS     = -9.396179E-09  
+  401  +PAGS    = 9.37738E-14    B0       = 0              B1       = 0              
+  402  +VOFF    = -0.1273277     LVOFF    = -1.467764E-08  WVOFF    = -1.303659E-08  
+  403  +PVOFF   = 8.439643E-15   NFACTOR  = 0.7739603      LNFACTOR = 3.32311E-07    
+  404  +WNFACTOR= 1.202228E-07   PNFACTOR = -9.37738E-14   CIT      = 0              
+  405  +CDSC    = 0              CDSCB    = 0              CDSCD    = 0              
+  406  +ETA0    = -7.847708E-06  LETA0    = 1.176121E-09   ETAB     = 0.0001458695   
+  407  +LETAB   = -2.453778E-09  DSUB     = 0              PCLM     = 0.3459678      
+  408  +WPCLM   = 2.438185E-07   PDIBLC1  = 0              PDIBLC2  = 0.0008728262   
+  409  +LPDIBLC2= 1.269195E-09   PDIBLCB  = 0              DROUT    = 0              
+  410  +PSCBE1  = 1.8E+08        PSCBE2   = 5E-08          PVAG     = 0              
+  411  +DELTA   = 0.004576087    LDELTA   = 4.230652E-09   KT1      = -0.172942      
+  412  +LKT1    = -2.053913E-08  WKT1     = -9.396166E-10  PKT1     = 9.37737E-15    
+  413  +KT2     = -0.02          AT       = 44182.94       LAT      = 0.008154241    
+  414  +WAT     = 0.0004698085   PAT      = -4.688689E-09  UTE      = -1.449698      
+  415  +LUTE    = -3.923585E-08  WUTE     = -6.011134E-08  PUTE     = 4.688685E-14   
+  416  +UA1     = 2.700366E-09   LUA1     = 6.073042E-17   WUA1     = -6.931482E-16  
+  417  +PUA1    = 2.813212E-22   UB1      = -2.647418E-18  LUB1     = -1.185538E-24  
+  418  +WUB1    = 1.861403E-25   PUB1     = 2.438121E-31   UC1      = 2.461553E-10   
+  419  +LUC1    = -4.615289E-16  WUC1     = -1.997389E-16  PUC1     = 1.730853E-22   
+  420  +KT1L    = 0              PRT      = 0              ALPHA0   = 0              
+  421  +ALPHA1  = 0.009179       BETA0    = 6.415          CJ       = 'CJN'          
+  422  +MJ      = 0.4528         PB       = 0.7956         CJSW     = 'CJSWN'        
+  423  +MJSW    = 0.2323         PBSW     = 0.7956         CJSWG    = 'CJSWGN'      
+  424  +MJSWG   = 0.4087         PBSWG    = 0.7956         TCJ      = 0.0009067      
+  425  +TCJSW   = 0.0002781      TCJSWG   = 0.0002781      TPB      = 0.001427       
+  426  +TPBSW   = 0.001427       TPBSWG   = 0.001427       JS       = 1E-05          
+  427  +JSW     = 1.55E-10       CGDO     = 'CGON'         CGSO     = 'CGON'         
+  428  +CGBO    = 0              CAPMOD   = 3              NQSMOD   = 0              
+  429  +XPART   = 1              CF       = 0              TLEV     = 1              
+  430  +TLEVC   = 1              XTI      = 3              N        = 1              
+  431  +HDIF    = 'HDIFN'        LDIF     = 8E-08          RSH      = RSHN            
+  432  +RS      = 0              RD       = 0              ACM      = 12             
+  433  + CALCACM = 1  
+  434  + AF = 0.868  KF = 1.13E-24  
+  435  +DLC     = -5.8E-09          IJTH     = 0.01 )
+  436  +OPTACM=1
+  437  +THMLEV=1  FLKLEV=1
+  438  
+  439  
+  440  
+  441  .MODEL NMOS.8            NMOS   (                    LMIN     = '3.50E-07-DXL' 
+  442  +LMAX    = '8.00E-07-DXL' WMIN     = '5.85E-07-DXW'  WMAX     = '1.205E-06-DXW'
+  443  + LEVEL=53 TNOM = 25  VERSION = 3.2  
+  444  +TOX     = 'TOXN'         TOXM     = 'TOXN'         XJ       = 1.9E-07        
+  445  +NCH     = 6.14815E+17    LLN      = 1              LWN      = 1              
+  446  +WLN     = 1              WWN      = 1              LINT     = 0              
+  447  +LL      = 0              LW       = 0              LWL      = 0              
+  448  +WINT    = 1.25E-08       WL       = 0              WW       = 0              
+  449  +WWL     = 0              MOBMOD   = 1              BINUNIT  = 2              
+  450  +XL      = '-2.0E-08+DXL' XW       = '1.5E-08+DXW'  DWG      = 0              
+  451  +DWB     = 0              VTH0     = '0.3557957+DVTHN' LVTH0    = 2.108095E-08
+  452  +WVTH0   = '-3.162255E-08+DWVTHN' PVTH0    = -1.26784E-15   K1       = 0.3841963
+  453  +LK1     = 3.572693E-08   WK1      = 2.844549E-08   PK1      = -2.218749E-14  
+  454  +K2      = -0.01          K3       = 0              DVT0     = 0              
+  455  +DVT1    = 0              DVT2     = 0              DVT0W    = 0              
+  456  +DVT1W   = 0              DVT2W    = 0              NLX      = 0              
+  457  +W0      = 0              K3B      = 0              VFB      = -0.9585425     
+  458  +VSAT    = 93987.09       LVSAT    = -0.001549935   WVSAT    = -0.003250914   
+  459  +PVSAT   = 2.535713E-09   UA       = 1.322204E-09   LUA      = -2.585532E-16  
+  460  +WUA     = -7.831745E-17  PUA      = 6.973212E-23   UB       = 7.894746E-19   
+  461  +LUB     = 4.474632E-25   WUB      = -1.276354E-25  PUB      = -2.202901E-31  
+  462  +UC      = 1.698764E-10   LUC      = 3.79642E-17    WUC      = 1.84711E-17    
+  463  +PUC     = -3.169642E-23  RDSW     = 102.9          PRWB     = 0              
+  464  +PRWG    = 0              WR       = 1              U0       = 0.04785461     
+  465  +LU0     = 1.674494E-09   WU0      = 8.127357E-10   PU0      = -6.339341E-16  
+  466  +A0      = 1.2            KETA     = -0.001         A1       = 0              
+  467  +A2      = 0.99           AGS      = 0.6559139      LAGS     = 1.960484E-07   
+  468  +WAGS    = 1.920995E-07   PAGS     = -6.339284E-14  B0       = 0              
+  469  +B1      = 0              VOFF     = -0.164786      LVOFF    = 1.453988E-08   
+  470  +WVOFF   = 4.285292E-09   PVOFF    = -5.071427E-15  NFACTOR  = 1.09           
+  471  +LNFACTOR= 8.58E-08       CIT      = 0              CDSC     = 0              
+  472  +CDSCB   = 0              CDSCD    = 0              ETA0     = 0.0005312903   
+  473  +LETA0   = 7.555936E-10   WETA0    = 3.250914E-10   PETA0    = -2.535713E-16  
+  474  +ETAB    = -0.002633333   LETAB    = -2.860001E-10  DSUB     = 0              
+  475  +PCLM    = 0.3459678      WPCLM    = 2.438185E-07   PDIBLC1  = 0              
+  476  +PDIBLC2 = 0.005220429    LPDIBLC2 = -2.121935E-09  WPDIBLC2 = -3.250914E-09  
+  477  +PPDIBLC2= 2.535713E-15   PDIBLCB  = 0              DROUT    = 0              
+  478  +PSCBE1  = 1.8E+08        PSCBE2   = 5E-08          PVAG     = 0              
+  479  +DELTA   = 0.01           KT1      = -0.1992742     WKT1     = 1.108265E-08   
+  480  +KT2     = -0.02          AT       = 69037.63       LAT      = -0.01123242    
+  481  +WAT     = -0.009604974   PAT      = 3.169641E-09   UTE      = -1.534005      
+  482  +LUTE    = 2.652416E-08   WUTE     = 4.063638E-08   PUTE     = -3.169638E-14  
+  483  +UA1     = 2.584839E-09   LUA1     = 1.508418E-16   WUA1     = 7.38843E-17    
+  484  +PUA1    = -3.169641E-22  UB1      = -4.180646E-18  LUB1     = 1.037907E-26   
+  485  +WUB1    = 2.955378E-25   PUB1     = 1.584821E-31   UC1      = -4.080266E-10  
+  486  +LUC1    = 4.873301E-17   WUC1     = 7.930013E-17   PUC1     = -4.456515E-23  
+  487  +KT1L    = 0              PRT      = 0              ALPHA0   = 0              
+  488  +ALPHA1  = 0.009179       BETA0    = 6.415          CJ       = 'CJN'          
+  489  +MJ      = 0.4528         PB       = 0.7956         CJSW     = 'CJSWN'        
+  490  +MJSW    = 0.2323         PBSW     = 0.7956         CJSWG    = 'CJSWGN'      
+  491  +MJSWG   = 0.4087         PBSWG    = 0.7956         TCJ      = 0.0009067      
+  492  +TCJSW   = 0.0002781      TCJSWG   = 0.0002781      TPB      = 0.001427       
+  493  +TPBSW   = 0.001427       TPBSWG   = 0.001427       JS       = 1E-05          
+  494  +JSW     = 1.55E-10       CGDO     = 'CGON'         CGSO     = 'CGON'         
+  495  +CGBO    = 0              CAPMOD   = 3              NQSMOD   = 0              
+  496  +XPART   = 1              CF       = 0              TLEV     = 1              
+  497  +TLEVC   = 1              XTI      = 3              N        = 1              
+  498  +HDIF    = 'HDIFN'        LDIF     = 8E-08          RSH      = RSHN            
+  499  +RS      = 0              RD       = 0              ACM      = 12             
+  500  + CALCACM = 1  
+  501  + AF = 0.868  KF = 1.13E-24  
+  502  +DLC     = -5.8E-09          IJTH     = 0.01 )
+  503  +OPTACM=1
+  504  +THMLEV=1  FLKLEV=1
+  505  
+  506  
+  507  
+  508  .MODEL NMOS.9            NMOS   (                    LMIN     = 1.30E-07   
+  509  +LMAX    = '3.50E-07-DXL' WMIN     = '5.85E-07-DXW'  WMAX     = '1.205E-06-DXW'
+  510  + LEVEL=53 TNOM = 25  VERSION = 3.2  
+  511  +TOX     = 'TOXN'         TOXM     = 'TOXN'         XJ       = 1.9E-07        
+  512  +NCH     = 6.14815E+17    LLN      = 1              LWN      = 1              
+  513  +WLN     = 1              WWN      = 1              LINT     = 0              
+  514  +LL      = 0              LW       = 0              LWL      = 0              
+  515  +WINT    = 1.25E-08       WL       = 0              WW       = 0              
+  516  +WWL     = 0              MOBMOD   = 1              BINUNIT  = 2              
+  517  +XL      = '-2.0E-08+DXL' XW       = '1.5E-08+DXW'  DWG      = 0              
+  518  +DWB     = 0              VTH0     = '0.3988859+DVTHN' LVTH0    = 6.861186E-09
+  519  +WVTH0   = '-4.257799E-08+DWVTHN' PVTH0    = 2.347455E-15   K1       = 0.502575
+  520  +LK1     = -3.338058E-09  WK1      = -4.76812E-08   PK1      = 2.934325E-15   
+  521  +K2      = -0.01          K3       = 0              DVT0     = 0              
+  522  +DVT1    = 0              DVT2     = 0              DVT0W    = 0              
+  523  +DVT1W   = 0              DVT2W    = 0              NLX      = 0              
+  524  +W0      = 0              K3B      = 0              VFB      = -0.9060867     
+  525  +VSAT    = 88317.61       LVSAT    = 0.0003209948   WVSAT    = 0.005915049    
+  526  +PVSAT   = -4.890546E-10  UA       = 5.433684E-10   LUA      = -1.537363E-18  
+  527  +WUA     = 2.041272E-16   PUA      = -2.347462E-23  UB       = 2.892675E-18   
+  528  +LUB     = -2.465931E-25  WUB      = -1.125663E-24  PUB      = 1.090592E-31   
+  529  +UC      = 3.399175E-10   LUC      = -1.814938E-17  WUC      = -9.536245E-17  
+  530  +PUC     = 5.868657E-24   RDSW     = 102.9          PRWB     = 0              
+  531  +PRWG    = 0              WR       = 1              U0       = 0.0528907      
+  532  +LU0     = 1.258577E-11   WU0      = -1.701075E-09  PU0      = 1.956236E-16   
+  533  +A0      = 1.2            KETA     = -0.001         A1       = 0              
+  534  +A2      = 0.99           AGS      = 1.383721       LAGS     = -4.412791E-08  
+  535  +B0      = 0              B1       = 0              VOFF     = -0.1092517     
+  536  +LVOFF   = -3.786461E-09  WVOFF    = 7.731984E-10   PVOFF    = -3.912437E-15  
+  537  +NFACTOR = 1.109302       LNFACTOR = 7.943022E-08   CIT      = 0              
+  538  +CDSC    = 0              CDSCB    = 0              CDSCD    = 0              
+  539  +ETA0    = 0.002029857    LETA0    = 2.610664E-10   WETA0    = -6.804239E-10  
+  540  +PETA0   = 7.824874E-17   ETAB     = -0.002162791   LETAB    = -4.412791E-10  
+  541  +DSUB    = 0              PCLM     = -0.1147222     LPCLM    = 1.520277E-07   
+  542  +WPCLM   = 3.149537E-07   PPCLM    = -2.347461E-14  PDIBLC1  = 0              
+  543  +PDIBLC2 = -0.005386946   LPDIBLC2 = 1.378499E-09   WPDIBLC2 = 6.804239E-09   
+  544  +PPDIBLC2= -7.824874E-16  PDIBLCB  = 0              DROUT    = 0              
+  545  +PSCBE1  = 1.8E+08        PSCBE2   = 5E-08          PVAG     = 0              
+  546  +DELTA   = 0.01           KT1      = -0.2149325     LKT1     = 5.167233E-09   
+  547  +WKT1    = 1.701058E-08   PKT1     = -1.956217E-15  KT2      = -0.02          
+  548  +AT      = 35000          UTE      = -1.428826      LUTE     = -8.185006E-09  
+  549  +WUTE    = -8.50529E-08   PUTE     = 9.781084E-15   UA1      = 4.183739E-09   
+  550  +LUA1    = -3.767954E-16  WUA1     = -1.420127E-15  PUA1     = 1.760597E-22   
+  551  +UB1     = -5.245274E-18  LUB1     = 3.617065E-25   WUB1     = 1.190742E-24   
+  552  +PUB1    = -1.369353E-31  UC1      = -2.888873E-10  LUC1     = 9.417043E-18   
+  553  +WUC1    = -8.556327E-17  PUC1     = 9.839777E-24   KT1L     = 0              
+  554  +PRT     = 0              ALPHA0   = 0              ALPHA1   = 0.009179       
+  555  +BETA0   = 6.415          CJ       = 'CJN'          MJ       = 0.4528         
+  556  +PB      = 0.7956         CJSW     = 'CJSWN'        MJSW     = 0.2323         
+  557  +PBSW    = 0.7956         CJSWG    = 'CJSWGN'       MJSWG    = 0.4087         
+  558  +PBSWG   = 0.7956         TCJ      = 0.0009067      TCJSW    = 0.0002781      
+  559  +TCJSWG  = 0.0002781      TPB      = 0.001427       TPBSW    = 0.001427       
+  560  +TPBSWG  = 0.001427       JS       = 1E-05          JSW      = 1.55E-10       
+  561  +CGDO    = 'CGON'         CGSO     = 'CGON'         CGBO     = 0              
+  562  +CAPMOD  = 3              NQSMOD   = 0              XPART    = 1              
+  563  +CF      = 0              TLEV     = 1              TLEVC    = 1              
+  564  +XTI     = 3              N        = 1              HDIF     = 'HDIFN'        
+  565  +LDIF    = 8E-08          RSH      = RSHN            RS       = 0              
+  566  +RD      = 0              ACM      = 12             CALCACM  = 1              
+  567  + AF = 0.868  
+  568  + KF = 1.13E-24  DLC = -5.8E-09  
+  569  +IJTH    = 0.01 )
+  570  +OPTACM=1
+  571  +THMLEV=1  FLKLEV=1
+  572  
+  573  
+  574  
+  575  .MODEL NMOS.10           NMOS   (                    LMIN     = '8.00E-07-DXL'
+  576  +LMAX    = 2.1E-05        WMIN     = 1.50E-07       WMAX     = '5.85E-07-DXW'
+  577  + LEVEL=53 TNOM = 25  VERSION = 3.2  
+  578  +TOX     = 'TOXN'         TOXM     = 'TOXN'         XJ       = 1.9E-07        
+  579  +NCH     = 6.14815E+17    LLN      = 1              LWN      = 1              
+  580  +WLN     = 1              WWN      = 1              LINT     = 0              
+  581  +LL      = 0              LW       = 0              LWL      = 0              
+  582  +WINT    = 1.25E-08       WL       = 0              WW       = 0              
+  583  +WWL     = 0              MOBMOD   = 1              BINUNIT  = 2              
+  584  +XL      = '-2.0E-08+DXL' XW       = '1.5E-08+DXW'  DWG      = 0              
+  585  +DWB     = 0              VTH0     = '0.3224233+DVTHN' LVTH0    = 2.403332E-08
+  586  +WVTH0   = '-1.411215E-08+DWVTHN' PVTH0    = -1.656046E-15  K1       = 0.4222209
+  587  +LK1     = 3.222062E-08   WK1      = -1.112078E-08  PK1      = -6.363734E-15  
+  588  +K2      = -0.01          K3       = 0              DVT0     = 0              
+  589  +DVT1    = 0              DVT2     = 0              DVT0W    = 0              
+  590  +DVT1W   = 0              DVT2W    = 0              NLX      = 0              
+  591  +W0      = 0              K3B      = 0              VFB      = -0.9856448     
+  592  +VSAT    = 92089.77       LVSAT    = -0.0008959022  WVSAT    = -5.161759E-05  
+  593  +PVSAT   = 5.15144E-10    UA       = 6.921215E-10   LUA      = 2.782275E-16   
+  594  +WUA     = 1.892642E-18   PUA      = -1.888861E-23  UB       = 8.560726E-19   
+  595  +LUB     = -7.63039E-26   WUB      = -3.116676E-26  PUB      = -2.423873E-32  
+  596  +UC      = 1.007737E-10   LUC      = 9.207889E-17   WUC      = 1.892646E-18   
+  597  +PUC     = -1.888861E-23  RDSW     = 102.9          PRWB     = 0              
+  598  +PRWG    = 0              WR       = 1              U0       = 0.04195543     
+  599  +LU0     = 6.275861E-09   WU0      = -3.644381E-10  PU0      = 2.842617E-16   
+  600  +A0      = 1.2            KETA     = -0.003169565   LKETA    = 1.692261E-09   
+  601  +A1      = 0              A2       = 0.99           AGS      = 0.6163363      
+  602  +LAGS    = 3.359636E-07   WAGS     = -2.58088E-09   PAGS     = 2.57572E-14    
+  603  +B0      = 0              B1       = 0              VOFF     = -0.1589086     
+  604  +LVOFF   = 1.442836E-09   WVOFF    = 5.122456E-09   PVOFF    = -8.296319E-16  
+  605  +NFACTOR = 0.9770589      LNFACTOR = 2.289529E-07   WNFACTOR = 3.441172E-09   
+  606  +PNFACTOR= -3.434294E-14  CIT      = 0              CDSC     = 0              
+  607  +CDSCB   = 0              CDSCD    = 0              ETA0     = -1.532852E-05  
+  608  +LETA0   = 1.25078E-09    WETA0    = 4.301469E-12   PETA0    = -4.292868E-17  
+  609  +ETAB    = 0.0001458695   LETAB    = -2.453778E-09  DSUB     = 0              
+  610  +PCLM    = 0.77           PDIBLC1  = 0              PDIBLC2  = 0.000992519    
+  611  +LPDIBLC2= 7.465881E-11   WPDIBLC2 = -6.882347E-11  PPDIBLC2 = 6.868587E-16   
+  612  +PDIBLCB = 0              DROUT    = 0              PSCBE1   = 1.8E+08        
+  613  +PSCBE2  = 5E-08          PVAG     = 0              DELTA    = 0.004576087    
+  614  +LDELTA  = 4.230652E-09   KT1      = -0.1732908     LKT1     = -2.480245E-09  
+  615  +WKT1    = -7.390387E-10  PKT1     = -1.006489E-15  KT2      = -0.02          
+  616  +AT      = 45000          UTE      = -1.570084      LUTE     = 5.466567E-08   
+  617  +WUTE    = 9.110945E-09   PUTE     = -7.106536E-15  UA1      = 1.653343E-09   
+  618  +LUA1    = 4.263927E-16   WUA1     = -9.110954E-17  PUA1     = 7.106544E-23   
+  619  +UB1     = -2.525806E-18  LUB1     = -4.937533E-25  WUB1     = 1.162138E-25   
+  620  +PUB1    = -1.539644E-31  UC1      = -9.120629E-11  LUC1     = -1.73825E-16   
+  621  +WUC1    = -5.756021E-18  PUC1     = 7.65558E-24    KT1L     = 0              
+  622  +PRT     = 0              ALPHA0   = 0              ALPHA1   = 0.009179       
+  623  +BETA0   = 6.415          CJ       = 'CJN'          MJ       = 0.4528         
+  624  +PB      = 0.7956         CJSW      = 'CJSWN'       MJSW     = 0.2323         
+  625  +PBSW    = 0.7956         CJSWG    = 'CJSWGN'       MJSWG    = 0.4087         
+  626  +PBSWG   = 0.7956         TCJ      = 0.0009067      TCJSW    = 0.0002781      
+  627  +TCJSWG  = 0.0002781      TPB      = 0.001427       TPBSW    = 0.001427       
+  628  +TPBSWG  = 0.001427       JS       = 1E-05          JSW      = 1.55E-10       
+  629  +CGDO    = 'CGON'         CGSO     = 'CGON'         CGBO     = 0              
+  630  +CAPMOD  = 3              NQSMOD   = 0              XPART    = 1              
+  631  +CF      = 0              TLEV     = 1              TLEVC    = 1              
+  632  +XTI     = 3              N        = 1              HDIF     = 'HDIFN'        
+  633  +LDIF    = 8E-08          RSH      = RSHN            RS       = 0              
+  634  +RD      = 0              ACM      = 12             CALCACM  = 1              
+  635  + AF = 0.868  
+  636  + KF = 1.13E-24  DLC = -5.8E-09  
+  637  +IJTH    = 0.01 )
+  638  +OPTACM=1
+  639  +THMLEV=1  FLKLEV=1
+  640  
+  641  
+  642  
+  643  .MODEL NMOS.11           NMOS   (                    LMIN     = '3.50E-07-DXL'
+  644  +LMAX    = '8.00E-07-DXL' WMIN     = 1.50E-07       WMAX     = '5.85E-07-DXW'
+  645  + LEVEL=53 TNOM = 25  VERSION = 3.2  
+  646  +TOX     = 'TOXN'         TOXM     = 'TOXN'         XJ       = 1.9E-07        
+  647  +NCH     = 6.14815E+17    LLN      = 1              LWN      = 1              
+  648  +WLN     = 1              WWN      = 1              LINT     = 0              
+  649  +LL      = 0              LW       = 0              LWL      = 0              
+  650  +WINT    = 1.25E-08       WL       = 0              WW       = 0              
+  651  +WWL     = 0              MOBMOD   = 1              BINUNIT  = 2              
+  652  +XL      = '-2.0E-08+DXL' XW       = '1.5E-08+DXW'  DWG      = 0              
+  653  +DWB     = 0              VTH0     = '0.3287764+DVTHN' LVTH0    = 1.90779E-08
+  654  +WVTH0   = '-1.608646E-08+DWVTHN' PVTH0    = -1.160849E-16  K1       = 0.4736666
+  655  +LK1     = -7.907047E-09  WK1      = -2.299999E-08  PK1      = 2.902055E-15   
+  656  +K2      = -0.01          K3       = 0              DVT0     = 0              
+  657  +DVT1    = 0              DVT2     = 0              DVT0W    = 0              
+  658  +DVT1W   = 0              DVT2W    = 0              NLX      = 0              
+  659  +W0      = 0              K3B      = 0              VFB      = -0.9727331     
+  660  +VSAT    = 88309.8        LVSAT    = 0.002052471    WVSAT    = 1.352933E-05   
+  661  +PVSAT   = 4.643294E-10   UA       = 1.253294E-09   LUA      = -1.59487E-16   
+  662  +WUA     = -3.86941E-17   PUA      = 1.276905E-23   UB       = 6.052177E-19   
+  663  +LUB     = 1.193629E-25   WUB      = -2.168765E-26  PUB      = -3.163244E-32  
+  664  +UC      = 2.434117E-10   LUC      = -1.917882E-17  WUC      = -2.381176E-17  
+  665  +PUC     = 1.160823E-24   RDSW     = 102.9          PRWB     = 0              
+  666  +PRWG    = 0              WR       = 1              U0       = 0.04926807     
+  667  +LU0     = 5.720001E-10   A0       = 1.2            KETA     = -0.001         
+  668  +A1      = 0              A2       = 0.99           AGS      = 0.8982354      
+  669  +LAGS    = 1.160823E-07   WAGS     = 5.276469E-08   PAGS     = -1.741235E-14  
+  670  +B0      = 0              B1       = 0              VOFF     = -0.1669804     
+  671  +LVOFF   = 7.738826E-09   WVOFF    = 5.547061E-09   PVOFF    = -1.160824E-15  
+  672  +NFACTOR = 1.121765       LNFACTOR = 1.160824E-07   WNFACTOR = -1.826471E-08  
+  673  +PNFACTOR= -1.741235E-14  CIT      = 0              CDSC     = 0              
+  674  +CDSCB   = 0              CDSCD    = 0              ETA0     = 0.001236667    
+  675  +LETA0   = 2.742235E-10   WETA0    = -8.050002E-11  PETA0    = 2.321648E-17   
+  676  +ETAB    = -0.002633333   LETAB    = -2.860001E-10  DSUB     = 0              
+  677  +PCLM    = 0.8295293      LPCLM    = -4.643294E-08  WPCLM    = -3.422941E-08  
+  678  +PPCLM   = 2.669894E-14   PDIBLC1  = 0              PDIBLC2  = -0.002000392   
+  679  +LPDIBLC2= 2.40913E-09    WPDIBLC2 = 9.010587E-10   PPDIBLC2 = -6.964942E-17  
+  680  +PDIBLCB = 0              DROUT    = 0              PSCBE1   = 1.8E+08        
+  681  +PSCBE2  = 5E-08          PVAG     = 0              DELTA    = 0.01           
+  682  +KT1     = -0.1725882     LKT1     = -3.028235E-09  WKT1     = -4.261762E-09  
+  683  +PKT1    = 1.741235E-15   KT2      = -0.02          AT       = 50133.34       
+  684  +LAT     = -0.004004001   WAT      = 0.001265       PAT      = -9.867001E-10  
+  685  +UTE     = -1.463333      LUTE     = -2.859998E-08  UA1      = 2.842745E-09   
+  686  +LUA1    = -5.013412E-16  WUA1     = -7.441175E-17  PUA1     = 5.804117E-23   
+  687  +UB1     = -3.654902E-18  LUB1     = 3.869413E-25   WUB1     = -6.764658E-27  
+  688  +PUB1    = -5.804119E-32  UC1      = -2.641533E-10  LUC1     = -3.892628E-17  
+  689  +WUC1    = -3.426998E-18  PUC1     = 5.838941E-24   KT1L     = 0              
+  690  +PRT     = 0              ALPHA0   = 0              ALPHA1   = 0.009179       
+  691  +BETA0   = 6.415          CJ       = 'CJN'          MJ       = 0.4528         
+  692  +PB      = 0.7956         CJSW     = 'CJSWN'        MJSW     = 0.2323         
+  693  +PBSW    = 0.7956         CJSWG    = 'CJSWGN'       MJSWG    = 0.4087         
+  694  +PBSWG   = 0.7956         TCJ      = 0.0009067      TCJSW    = 0.0002781      
+  695  +TCJSWG  = 0.0002781      TPB      = 0.001427       TPBSW    = 0.001427       
+  696  +TPBSWG  = 0.001427       JS       = 1E-05          JSW      = 1.55E-10       
+  697  +CGDO    = 'CGON'         CGSO     = 'CGON'         CGBO     = 0              
+  698  +CAPMOD  = 3              NQSMOD   = 0              XPART    = 1              
+  699  +CF      = 0              TLEV     = 1              TLEVC    = 1              
+  700  +XTI     = 3              N        = 1              HDIF     = 'HDIFN'        
+  701  +LDIF    = 8E-08          RSH      = RSHN            RS       = 0              
+  702  +RD      = 0              ACM      = 12             CALCACM  = 1              
+  703  + AF = 0.868  
+  704  + KF = 1.13E-24  DLC = -5.8E-09  
+  705  +IJTH    = 0.01 )
+  706  +OPTACM=1
+  707  +THMLEV=1  FLKLEV=1
+  708  
+  709  
+  710  
+  711  .MODEL NMOS.12           NMOS   (                    LMIN     = 1.30E-07      
+  712  +LMAX    = '3.50E-07-DXL' WMIN     = 1.50E-07       WMAX     = '5.85E-07-DXW'
+  713  + LEVEL=53 TNOM = 25  VERSION = 3.2  
+  714  +TOX     = 'TOXN'         TOXM     = 'TOXN'         XJ       = 1.9E-07        
+  715  +NCH     = 6.14815E+17    LLN      = 1              LWN      = 1              
+  716  +WLN     = 1              WWN      = 1              LINT     = 0              
+  717  +LL      = 0              LW       = 0              LWL      = 0              
+  718  +WINT    = 1.25E-08       WL       = 0              WW       = 0              
+  719  +WWL     = 0              MOBMOD   = 1              BINUNIT  = 2              
+  720  +XL      = '-2.0E-08+DXL' XW       = '1.5E-08+DXW'  DWG      = 0              
+  721  +DWB     = 0              VTH0     = '0.3493916+DVTHN' LVTH0    = 1.227488E-08
+  722  +WVTH0   = '-1.411879E-08+DWVTHN' PVTH0    = -7.65417E-16   K1       = 0.4418194
+  723  +LK1     = 2.602556E-09   WK1      = -1.274671E-08  PK1      = -4.815287E-16  
+  724  +K2      = -0.01          K3       = 0              DVT0     = 0              
+  725  +DVT1    = 0              DVT2     = 0              DVT0W    = 0              
+  726  +DVT1W   = 0              DVT2W    = 0              NLX      = 0              
+  727  +W0      = 0              K3B      = 0              VFB      = -0.9247332     
+  728  +VSAT    = 96598.1        LVSAT    = -0.0006826686  WVSAT    = 0.001153764    
+  729  +PVSAT   = 8.805189E-11   UA       = 8.405689E-10   LUA      = -2.328776E-17  
+  730  +WUA     = 3.323681E-17   PUA      = -1.096815E-23  UB       = 1.219954E-18   
+  731  +LUB     = -8.349997E-26  WUB      = -1.638484E-25  PUB      = 1.528061E-32   
+  732  +UC      = 2.174414E-10   LUC      = -1.060862E-17  WUC      = -2.493871E-17  
+  733  +PUC     = 1.532718E-24   RDSW     = 102.9          PRWB     = 0              
+  734  +PRWG    = 0              WR       = 1              U0       = 0.04990658     
+  735  +LU0     = 3.612921E-10   WU0      = 1.47955E-11    PU0      = -4.882514E-18  
+  736  +A0      = 1.163095       LA0      = 1.217857E-08   WA0      = 2.122024E-08   
+  737  +PA0     = -7.00268E-15   KETA     = -0.001         A1       = 0              
+  738  +A2      = 0.99           AGS      = 1.423844       LAGS     = -5.736857E-08  
+  739  +WAGS    = -2.307085E-08  PAGS     = 7.613379E-15   B0       = 0              
+  740  +B1      = 0              VOFF     = -0.1041251     LVOFF    = -1.300342E-08  
+  741  +WVOFF   = -2.17458E-09   PVOFF    = 1.387317E-15   NFACTOR  = 1.288803       
+  742  +LNFACTOR= 6.095963E-08   WNFACTOR = -1.03213E-07   PNFACTOR = 1.062059E-14   
+  743  +CIT     = 0              CDSC     = 0              CDSCB    = 0              
+  744  +CDSCD   = 0              ETA0     = 0.0008440161   LETA0    = 4.037982E-10   
+  745  +WETA0   = 1.434869E-12   PETA0    = -3.822031E-18  ETAB     = -0.002130606   
+  746  +LETAB   = -4.518999E-10  WETAB    = -1.850606E-11  PETAB    = 6.106991E-18   
+  747  +DSUB    = 0              PCLM     = 0.3585052      LPCLM    = 1.09005E-07    
+  748  +WPCLM   = 4.284785E-08   PPCLM    = 1.263441E-15   PDIBLC1  = 0              
+  749  +PDIBLC2 = 0.005364868    LPDIBLC2 = -2.14062E-11   WPDIBLC2 = 6.219454E-10   
+  750  +PPDIBLC2= 2.245796E-17   PDIBLCB  = 0              DROUT    = 0              
+  751  +PSCBE1  = 1.8E+08        PSCBE2   = 5E-08          PVAG     = 0              
+  752  +DELTA   = 0.01           KT1      = -0.1890473     LKT1     = 2.403242E-09   
+  753  +WKT1    = 2.126591E-09   PKT1     = -3.669215E-16  KT2      = -0.02          
+  754  +AT      = 40422.62       LAT      = -0.0007994639  WAT      = -0.003118006   
+  755  +PAT     = 4.596919E-10   UTE      = -1.577388      LUTE     = 9.03799E-09    
+  756  +WUTE    = 3.701206E-10   PUTE     = -1.221397E-16  UA1      = 1.528207E-09   
+  757  +LUA1    = -6.754351E-17  WUA1     = 1.068044E-16   PUA1     = -1.760166E-24  
+  758  +UB1     = -2.801067E-18  LUB1     = 1.051756E-25   WUB1     = -2.146773E-25  
+  759  +PUB1    = 1.056997E-32   UC1      = -4.953533E-10  LUC1     = 3.736971E-17   
+  760  +WUC1    = 3.315467E-17   PUC1     = -6.23301E-24   KT1L     = 0              
+  761  +PRT     = 0              ALPHA0   = 0              ALPHA1   = 0.009179       
+  762  +BETA0   = 6.415          CJ       = 'CJN'          MJ       = 0.4528         
+  763  +PB      = 0.7956         CJSW     = 'CJSWN'        MJSW     = 0.2323         
+  764  +PBSW    = 0.7956         CJSWG    = 'CJSWGN'       MJSWG    = 0.4087         
+  765  +PBSWG   = 0.7956         TCJ      = 0.0009067      TCJSW    = 0.0002781      
+  766  +TCJSWG  = 0.0002781      TPB      = 0.001427       TPBSW    = 0.001427       
+  767  +TPBSWG  = 0.001427       JS       = 1E-05          JSW      = 1.55E-10       
+  768  +CGDO    = 'CGON'         CGSO     = 'CGON'         CGBO     = 0              
+  769  +CAPMOD  = 3              NQSMOD   = 0              XPART    = 1              
+  770  +CF      = 0              TLEV     = 1              TLEVC    = 1              
+  771  +XTI     = 3              N        = 1              HDIF     = 'HDIFN'        
+  772  +LDIF    = 8E-08          RSH      = RSHN            RS       = 0              
+  773  +RD      = 0              ACM      = 12             CALCACM  = 1              
+  774  + AF = 0.868  
+  775  + KF = 1.13E-24  DLC = -5.8E-09  
+  776  +IJTH    = 0.01 )
+  777  +OPTACM=1
+  778  +THMLEV=1  FLKLEV=1
+  779  
+  780  *
+  781  ***************************************************************
+  782  *                                                             *
+  783  *               1.2V PMOS DEVICES MODEL                       *
+  784  *                                                             *
+  785  ***************************************************************
+  786  *
+  787  .MODEL PMOS.1            PMOS   (                    LMIN     = '8.00E-07-DXL' 
+  788  +LMAX    = 2.1E-05        WMIN     = '1.0005E-05-DXW' WMAX     = 0.000121   
+  789  + LEVEL=53 TNOM = 25  VERSION = 3.2  
+  790  +TOX     = 'TOXP'         TOXM     = 'TOXP'         XJ       = 2.1E-07        
+  791  +NCH     = 7.3E+17        LLN      = 1              LWN      = 1              
+  792  +WLN     = 1              WWN      = 1              LINT     = 4E-09          
+  793  +LL      = 0              LW       = 0              LWL      = 0              
+  794  +WINT    = -6.5E-09       WL       = 0              WW       = 0              
+  795  +WWL     = 0              MOBMOD   = 1              BINUNIT  = 2              
+  796  +XL      = '-2.0E-08+DXL' XW       = '1.5E-08+DXW'  DWG      = 0              
+  797  +DWB     = 0              VTH0     = '-0.2932273+DVTHP' LVTH0    = -2.066847E-08
+  798  +K1      = 0.4394179      LK1      = 8.3678E-09     K2       = -0.001         
+  799  +K3      = 0              DVT0     = 0              DVT1     = 0              
+  800  +DVT2    = 0              DVT0W    = 0              DVT1W    = 0              
+  801  +DVT2W   = 0              NLX      = 0              W0       = 0              
+  802  +K3B     = 0              VFB      = -1.031548      VSAT     = 80000          
+  803  +UA      = 2.530576E-09   LUA      = -4.183904E-16  UB       = -7.355376E-19  
+  804  +LUB     = 1.031064E-25   UC       = -1.865951E-10  LUC      = 8.367809E-18   
+  805  +RDSW    = 445            PRWB     = 0              PRWG     = 0              
+  806  +WR      = 1              U0       = 0.0139415      A0       = 1.312587       
+  807  +LA0     = -1.255171E-07  KETA     = -0.001         A1       = 0              
+  808  +A2      = 0.99           AGS      = 0.3466435      LAGS     = 3.347123E-08   
+  809  +B0      = 0              B1       = 0              VOFF     = -0.1248322     
+  810  +LVOFF   = -1.673565E-09  NFACTOR  = 0.6832174      LNFACTOR = 1.673561E-07   
+  811  +CIT     = 0              CDSC     = 0              CDSCB    = 0              
+  812  +CDSCD   = 0              ETA0     = 0.0003741305   LETA0    = 1.255171E-09   
+  813  +ETAB    = -0.0001        DSUB     = 0              PCLM     = 0.77           
+  814  +PDIBLC1 = 0              PDIBLC2  = 0.0001         PDIBLCB  = 0              
+  815  +DROUT   = 0              PSCBE1   = 4.24E+08       PSCBE2   = 1E-07          
+  816  +PVAG    = 0              DELTA    = 0.005          KT1      = -0.1874826     
+  817  +LKT1    = -2.510342E-08  KT2      = 0.01           AT       = 103000         
+  818  +UTE     = -1             UA1      = 1.995804E-09   LUA1     = 4.183904E-17   
+  819  +UB1     = -3.364265E-18  LUB1     = 1.422528E-25   UC1      = -3.044239E-10  
+  820  +LUC1    = -2.568917E-17  KT1L     = 0              PRT      = 0              
+  821  +ALPHA0  = 0              ALPHA1   = 0.001435       BETA0    = 9.351          
+  822  +CJ      = 'CJP'          MJ       = 0.4234         PB       = 0.9            
+  823  +CJSW    = 'CJSWP'        MJSW     = 0.1716         PBSW     = 0.9            
+  824  +CJSWG   = 'CJSWGP'       MJSWG    = 0.4413         PBSWG    = 0.9            
+  825  +TCJ     = 0.000887       TCJSW    = 0.000298       TCJSWG   = 0.000298       
+  826  +TPB     = 0.001643       TPBSW    = 0.001643       TPBSWG   = 0.001643       
+  827  +JS      = 8E-07          JSW      = 6.055E-11      CGDO     = 'CGOP'         
+  828  +CGSO    = 'CGOP'         CGBO     = 0              CAPMOD   = 3              
+  829  +NQSMOD  = 0              XPART    = 1              CF       = 0              
+  830  +TLEV    = 1              TLEVC    = 1              XTI      = 3              
+  831  +N       = 1              HDIF     = 'HDIFP'        LDIF     = 8E-08          
+  832  +RSH     = RSHP            RS       = 0              RD       = 0              
+  833  + ACM = 12  CALCACM = 1  
+  834  + AF = 0.97  KF = 3.03E-24  
+  835  + DLC = -5.8E-09  WVTH0 = '0+DWVTHP'  
+  836  +IJTH    = 0.01 )
+  837  +OPTACM=1
+  838  +THMLEV=1  FLKLEV=1
+  839  
+  840  
+  841  
+  842  .MODEL PMOS.2            PMOS   (                    LMIN     = '3.50E-07-DXL' 
+  843  +LMAX    = '8.00E-07-DXL' WMIN     = '1.0005E-05-DXW' WMAX     = 0.000121   
+  844  + LEVEL=53 TNOM = 25  VERSION = 3.2  
+  845  +TOX     = 'TOXP'         TOXM     = 'TOXP'         XJ       = 2.1E-07        
+  846  +NCH     = 7.3E+17        LLN      = 1              LWN      = 1              
+  847  +WLN     = 1              WWN      = 1              LINT     = 4E-09          
+  848  +LL      = 0              LW       = 0              LWL      = 0              
+  849  +WINT    = -6.5E-09       WL       = 0              WW       = 0              
+  850  +WWL     = 0              MOBMOD   = 1              BINUNIT  = 2              
+  851  +XL      = '-2.0E-08+DXL' XW       = '1.5E-08+DXW'  DWG      = 0              
+  852  +DWB     = 0              VTH0     = '-0.3068838+DVTHP' LVTH0    = -1.012566E-08
+  853  +K1      = 0.450257       K2       = -0.001         K3       = 0              
+  854  +DVT0    = 0              DVT1     = 0              DVT2     = 0              
+  855  +DVT0W   = 0              DVT1W    = 0              DVT2W    = 0              
+  856  +NLX     = 0              W0       = 0              K3B      = 0              
+  857  +VFB     = -1.013218      VSAT     = 80000          UA       = 2.060176E-09   
+  858  +LUA     = -5.52409E-17   UB       = -4.803356E-19  LUB      = -9.390952E-26  
+  859  +UC      = -1.75756E-10   RDSW     = 445            PRWB     = 0              
+  860  +PRWG    = 0              WR       = 1              U0       = 0.0139415      
+  861  +A0      = 1.257333       LA0      = -8.286134E-08  KETA     = -0.001         
+  862  +A1      = 0              A2       = 0.99           AGS      = 0.3828444      
+  863  +LAGS    = 5.524101E-09   B0       = 0              B1       = 0              
+  864  +VOFF    = -0.1262845     LVOFF    = -5.524101E-10  NFACTOR  = 0.9            
+  865  +CIT     = 0              CDSC     = 0              CDSCB    = 0              
+  866  +CDSCD   = 0              ETA0     = 0.001642222    LETA0    = 2.762044E-10   
+  867  +ETAB    = -0.0001        DSUB     = 0              PCLM     = 0.77           
+  868  +PDIBLC1 = 0              PDIBLC2  = 0.0001         PDIBLCB  = 0              
+  869  +DROUT   = 0              PSCBE1   = 4.24E+08       PSCBE2   = 1E-07          
+  870  +PVAG    = 0              DELTA    = 0.005          KT1      = -0.2343111     
+  871  +LKT1    = 1.104818E-08   KT2      = 0.01           AT       = 155235.6       
+  872  +LAT     = -0.04032586    UTE      = -1.143111      LUTE     = 1.104818E-07   
+  873  +UA1     = 2.193111E-09   LUA1     = -1.104818E-16  UB1      = -4.095911E-18  
+  874  +LUB1    = 7.070835E-25   UC1      = -3.017075E-10  LUC1     = -2.778616E-17  
+  875  +KT1L    = 0              PRT      = 0              ALPHA0   = 0              
+  876  +ALPHA1  = 0.001435       BETA0    = 9.351          CJ       = 'CJP'          
+  877  +MJ      = 0.4234         PB       = 0.9            CJSW     = 'CJSWP'        
+  878  +MJSW    = 0.1716         PBSW     = 0.9            CJSWG    = 'CJSWGP'       
+  879  +MJSWG   = 0.4413         PBSWG    = 0.9            TCJ      = 0.000887       
+  880  +TCJSW   = 0.000298       TCJSWG   = 0.000298       TPB      = 0.001643       
+  881  +TPBSW   = 0.001643       TPBSWG   = 0.001643       JS       = 8E-07          
+  882  +JSW     = 6.055E-11      CGDO     = 'CGOP'         CGSO     = 'CGOP'         
+  883  +CGBO    = 0              CAPMOD   = 3              NQSMOD   = 0              
+  884  +XPART   = 1              CF       = 0              TLEV     = 1              
+  885  +TLEVC   = 1              XTI      = 3              N        = 1              
+  886  +HDIF    = 'HDIFP'        LDIF     = 8E-08          RSH      = RSHP            
+  887  +RS      = 0              RD       = 0              ACM      = 12             
+  888  + CALCACM = 1  
+  889  + AF = 0.97  KF = 3.03E-24  
+  890  +DLC     = -5.8E-09          WVTH0    = '0+DWVTHP'     IJTH     = 0.01 )
+  891  +OPTACM=1
+  892  +THMLEV=1  FLKLEV=1
+  893  
+  894  
+  895  
+  896  .MODEL PMOS.3            PMOS   (                    LMIN     = 1.30E-07   
+  897  +LMAX    = '3.50E-07-DXL' WMIN     = '1.0005E-05-DXW' WMAX     = 0.000121   
+  898  + LEVEL=53 TNOM = 25  VERSION = 3.2  
+  899  +TOX     = 'TOXP'         TOXM     = 'TOXP'         XJ       = 2.1E-07        
+  900  +NCH     = 7.3E+17        LLN      = 1              LWN      = 1              
+  901  +WLN     = 1              WWN      = 1              LINT     = 4E-09          
+  902  +LL      = 0              LW       = 0              LWL      = 0              
+  903  +WINT    = -6.5E-09       WL       = 0              WW       = 0              
+  904  +WWL     = 0              MOBMOD   = 1              BINUNIT  = 2              
+  905  +XL      = '-2.0E-08+DXL' XW       = '1.5E-08+DXW'  DWG      = 0              
+  906  +DWB     = 0              VTH0     = '-0.3074194+DVTHP' LVTH0    = -9.953224E-09
+  907  +K1      = 0.4363479      LK1      = 4.478727E-09   K2       = -0.001         
+  908  +K3      = 0              DVT0     = 0              DVT1     = 0              
+  909  +DVT2    = 0              DVT0W    = 0              DVT1W    = 0              
+  910  +DVT2W   = 0              NLX      = 0              W0       = 0              
+  911  +K3B     = 0              VFB      = -0.9703192     VSAT     = 79536.37       
+  912  +LVSAT   = 0.0001492909   UA       = 1.999253E-09   LUA      = -3.562378E-17  
+  913  +UB      = -6.570817E-19  LUB      = -3.699726E-26  UC       = -1.75756E-10   
+  914  +RDSW    = 445            PRWB     = 0              PRWG     = 0              
+  915  +WR      = 1              U0       = 0.0139415      A0       = 1              
+  916  +KETA    = -0.001         A1       = 0              A2       = 0.99           
+  917  +AGS     = 0.4            B0       = 0              B1       = 0              
+  918  +VOFF    = -0.1154818     LVOFF    = -4.030853E-09  NFACTOR  = 0.8072727      
+  919  +LNFACTOR= 2.985818E-08   CIT      = 0              CDSC     = 0              
+  920  +CDSCB   = 0              CDSCD    = 0              ETA0     = 0.0007845453   
+  921  +LETA0   = 5.523764E-10   ETAB     = 0.001476364    LETAB    = -5.075891E-10  
+  922  +DSUB    = 0              PCLM     = 0.6633636      LPCLM    = 3.433691E-08   
+  923  +PDIBLC1 = 0              PDIBLC2  = -0.0003172727  LPDIBLC2 = 1.343618E-10   
+  924  +PDIBLCB = 0              DROUT    = 0              PSCBE1   = 4.24E+08       
+  925  +PSCBE2  = 1E-07          PVAG     = 0              DELTA    = 0.005          
+  926  +KT1     = -0.1907273     LKT1     = -2.985817E-09  KT2      = 0.01           
+  927  +AT      = 37881.82       LAT      = -0.002537945   UTE      = -0.8           
+  928  +UA1     = 1.757273E-09   LUA1     = 2.985817E-17   UB1      = -1.649636E-18  
+  929  +LUB1    = -8.061709E-26  UC1      = -4.113209E-10  LUC1     = 7.50933E-18    
+  930  +KT1L    = 0              PRT      = 0              ALPHA0   = 0              
+  931  +ALPHA1  = 0.001435       BETA0    = 9.351          CJ       = 'CJP'          
+  932  +MJ      = 0.4234         PB       = 0.9            CJSW     = 'CJSWP'        
+  933  +MJSW    = 0.1716         PBSW     = 0.9            CJSWG    = 'CJSWGP'       
+  934  +MJSWG   = 0.4413         PBSWG    = 0.9            TCJ      = 0.000887       
+  935  +TCJSW   = 0.000298       TCJSWG   = 0.000298       TPB      = 0.001643       
+  936  +TPBSW   = 0.001643       TPBSWG   = 0.001643       JS       = 8E-07          
+  937  +JSW     = 6.055E-11      CGDO     = 'CGOP'         CGSO     = 'CGOP'         
+  938  +CGBO    = 0              CAPMOD   = 3              NQSMOD   = 0              
+  939  +XPART   = 1              CF       = 0              TLEV     = 1              
+  940  +TLEVC   = 1              XTI      = 3              N        = 1              
+  941  +HDIF    = 'HDIFP'        LDIF     = 8E-08          RSH      = RSHP            
+  942  +RS      = 0              RD       = 0              ACM      = 12             
+  943  + CALCACM = 1  
+  944  + AF = 0.97  KF = 3.03E-24  
+  945  +DLC     = -5.8E-09          WVTH0    = '0+DWVTHP'     IJTH     = 0.01 )
+  946  +OPTACM=1
+  947  +THMLEV=1  FLKLEV=1
+  948  
+  949  
+  950  
+  951  .MODEL PMOS.4            PMOS   (                    LMIN     = '8.00E-07-DXL' 
+  952  +LMAX    = 2.1E-05        WMIN     = '1.205E-06-DXW' WMAX     = '1.0005E-05-DXW'
+  953  + LEVEL=53 TNOM = 25  VERSION = 3.2  
+  954  +TOX     = 'TOXP'         TOXM     = 'TOXP'         XJ       = 2.1E-07        
+  955  +NCH     = 7.3E+17        LLN      = 1              LWN      = 1              
+  956  +WLN     = 1              WWN      = 1              LINT     = 4E-09          
+  957  +LL      = 0              LW       = 0              LWL      = 0              
+  958  +WINT    = -6.5E-09       WL       = 0              WW       = 0              
+  959  +WWL     = 0              MOBMOD   = 1              BINUNIT  = 2              
+  960  +XL      = '-2.0E-08+DXL' XW       = '1.5E-08+DXW'  DWG      = 0              
+  961  +DWB     = 0              VTH0     = '-0.2946285+DVTHP' LVTH0    = -2.066847E-08
+  962  +WVTH0   = '1.405763E-08+DWVTHP' K1       = 0.4393003      LK1      = 9.540242E-09
+  963  +WK1     = 1.179614E-09   PK1      = -1.176312E-14  K2       = -0.001         
+  964  +K3      = 0              DVT0     = 0              DVT1     = 0              
+  965  +DVT2    = 0              DVT0W    = 0              DVT1W    = 0              
+  966  +DVT2W   = 0              NLX      = 0              W0       = 0              
+  967  +K3B     = 0              VFB      = -1.031958      VSAT     = 80000          
+  968  +UA      = 2.530576E-09   LUA      = -4.183904E-16  UB       = -7.365039E-19  
+  969  +LUB     = 9.877072E-26   WUB      = 9.695372E-27   PUB      = 4.35001E-32    
+  970  +UC      = -1.881138E-10  LUC      = 9.540252E-18   WUC      = 1.523722E-17   
+  971  +PUC     = -1.176313E-23  RDSW     = 445            PRWB     = 0              
+  972  +PRWG    = 0              WR       = 1              U0       = 0.0141423      
+  973  +LU0     = 1.172443E-11   WU0      = -2.014606E-09  PU0      = -1.176313E-16  
+  974  +A0      = 1.312587       LA0      = -1.255171E-07  KETA     = -0.001         
+  975  +A1      = 0              A2       = 0.99           AGS      = 0.3461732      
+  976  +LAGS    = 3.8161E-08     WAGS     = 4.718462E-09   PAGS     = -4.705251E-14  
+  977  +B0      = 0              B1       = 0              VOFF     = -0.1240611     
+  978  +LVOFF   = -2.377031E-09  WVOFF    = -7.736563E-09  PVOFF    = 7.057875E-15   
+  979  +NFACTOR = 0.6756238      LNFACTOR = 1.732184E-07   WNFACTOR = 7.618609E-08   
+  980  +PNFACTOR= -5.881567E-14  CIT      = 0              CDSC     = 0              
+  981  +CDSCB   = 0              CDSCD    = 0              ETA0     = 0.0003741306   
+  982  +LETA0   = 1.255171E-09   ETAB     = -0.0001        DSUB     = 0              
+  983  +PCLM    = 0.77           PDIBLC1  = 0              PDIBLC2  = 0.0001         
+  984  +PDIBLCB = 0              DROUT    = 0              PSCBE1   = 4.24E+08       
+  985  +PSCBE2  = 1E-07          PVAG     = 0              DELTA    = 0.005          
+  986  +KT1     = -0.1872475     LKT1     = -2.744831E-08  WKT1     = -2.359228E-09  
+  987  +PKT1    = 2.352626E-14   KT2      = 0.01           AT       = 103000         
+  988  +UTE     = -0.9976485     LUTE     = -2.344887E-08  WUTE     = -2.359231E-08  
+  989  +PUTE    = 2.352626E-13   UA1      = 1.969202E-09   LUA1     = 1.370039E-17   
+  990  +WUA1    = 2.668989E-16   PUA1     = 2.823152E-22   UB1      = -3.264863E-18  
+  991  +LUB1    = 8.714795E-26   WUB1     = -9.973013E-25  PUB1     = 5.528672E-31   
+  992  +UC1     = -2.993632E-10  LUC1     = -3.284108E-17  WUC1     = -5.077419E-17  
+  993  +PUC1    = 7.175508E-23   KT1L     = 0              PRT      = 0              
+  994  +ALPHA0  = 0              ALPHA1   = 0.001435       BETA0    = 9.351          
+  995  +CJ      = 'CJP'          MJ       = 0.4234         PB       = 0.9            
+  996  +CJSW    = 'CJSWP'        MJSW     = 0.1716         PBSW     = 0.9            
+  997  +CJSWG   = 'CJSWGP'       MJSWG    = 0.4413         PBSWG    = 0.9            
+  998  +TCJ     = 0.000887       TCJSW    = 0.000298       TCJSWG   = 0.000298       
+  999  +TPB     = 0.001643       TPBSW    = 0.001643       TPBSWG   = 0.001643       
+ 1000  +JS      = 8E-07          JSW      = 6.055E-11      CGDO     = 'CGOP'         
+ 1001  +CGSO    = 'CGOP'         CGBO     = 0              CAPMOD   = 3              
+ 1002  +NQSMOD  = 0              XPART    = 1              CF       = 0              
+ 1003  +TLEV    = 1              TLEVC    = 1              XTI      = 3              
+ 1004  +N       = 1              HDIF     = 'HDIFP'        LDIF     = 8E-08          
+ 1005  +RSH     = RSHP            RS       = 0              RD       = 0              
+ 1006  + ACM = 12  CALCACM = 1  
+ 1007  + AF = 0.97  KF = 3.03E-24  
+ 1008  + DLC = -5.8E-09  IJTH = 0.01 ) 
+ 1009  +OPTACM=1
+ 1010  +THMLEV=1  FLKLEV=1
+ 1011  
+ 1012  
+ 1013  
+ 1014  .MODEL PMOS.5            PMOS   (                    LMIN     = '3.50E-07-DXL' 
+ 1015  +LMAX    = '8.00E-07-DXL' WMIN     = '1.205E-06-DXW' WMAX     = '1.0005E-05-DXW'
+ 1016  + LEVEL=53 TNOM = 25  VERSION = 3.2  
+ 1017  +TOX     = 'TOXP'         TOXM     = 'TOXP'         XJ       = 2.1E-07        
+ 1018  +NCH     = 7.3E+17        LLN      = 1              LWN      = 1              
+ 1019  +WLN     = 1              WWN      = 1              LINT     = 4E-09          
+ 1020  +LL      = 0              LW       = 0              LWL      = 0              
+ 1021  +WINT    = -6.5E-09       WL       = 0              WW       = 0              
+ 1022  +WWL     = 0              MOBMOD   = 1              BINUNIT  = 2              
+ 1023  +XL      = '-2.0E-08+DXL' XW       = '1.5E-08+DXW'  DWG      = 0              
+ 1024  +DWB     = 0              VTH0     = '-0.3084855+DVTHP' LVTH0    = -9.970861E-09
+ 1025  +WVTH0   = '1.606939E-08+DWVTHP' PVTH0    = -1.553112E-15  K1       = 0.4526607 
+ 1026  +LK1     = -7.739997E-10  WK1      = -2.411658E-08  PK1      = 7.765538E-15   
+ 1027  +K2      = -0.001         K3       = 0              DVT0     = 0              
+ 1028  +DVT1    = 0              DVT2     = 0              DVT0W    = 0              
+ 1029  +DVT1W   = 0              DVT2W    = 0              NLX      = 0              
+ 1030  +W0      = 0              K3B      = 0              VFB      = -1.021218      
+ 1031  +VSAT    = 80000          UA       = 2.070201E-09   LUA      = -6.298091E-17  
+ 1032  +WUA     = -1.0059E-16    PUA      = 7.765547E-23   UB       = -4.846101E-19  
+ 1033  +LUB     = -9.569127E-26  WUB      = 4.288687E-26   PUB      = 1.787626E-32   
+ 1034  +UC      = -1.75756E-10   RDSW     = 445            PRWB     = 0              
+ 1035  +PRWG    = 0              WR       = 1              U0       = 0.01417167     
+ 1036  +LU0     = -1.095212E-11  WU0      = -2.309313E-09  PU0      = 1.098825E-16   
+ 1037  +A0      = 1.257333       LA0      = -8.286133E-08  KETA     = -0.001         
+ 1038  +A1      = 0              A2       = 0.99           AGS      = 0.3924593      
+ 1039  +LAGS    = 2.428099E-09   WAGS     = -9.646639E-08  PAGS     = 3.106218E-14   
+ 1040  +B0      = 0              B1       = 0              VOFF     = -0.1264246     
+ 1041  +LVOFF   = -5.524101E-10  WVOFF    = 1.405763E-09   NFACTOR  = 0.9            
+ 1042  +CIT     = 0              CDSC     = 0              CDSCB    = 0              
+ 1043  +CDSCD   = 0              ETA0     = 0.001642222    LETA0    = 2.762044E-10   
+ 1044  +ETAB    = -0.0001        DSUB     = 0              PCLM     = 0.77           
+ 1045  +PDIBLC1 = 0              PDIBLC2  = 0.0001         PDIBLCB  = 0              
+ 1046  +DROUT   = 0              PSCBE1   = 4.24E+08       PSCBE2   = 1E-07          
+ 1047  +PVAG    = 0              DELTA    = 0.005          KT1      = -0.2401212     
+ 1048  +LKT1    = 1.337018E-08   WKT1     = 5.829218E-08   PKT1     = -2.329663E-14  
+ 1049  +KT2     = 0.01           AT       = 155235.6       LAT      = -0.04032585    
+ 1050  +UTE     = -1.191186      LUTE     = 1.259618E-07   WUTE     = 4.82332E-07    
+ 1051  +PUTE    = -1.553109E-13  UA1      = 2.115021E-09   LUA1     = -9.887172E-17  
+ 1052  +WUA1    = 7.834772E-16   PUA1     = -1.164833E-22  UB1      = -4.107992E-18  
+ 1053  +LUB1    = 7.380436E-25   WUB1     = 1.212076E-25   PUB1     = -3.106218E-31  
+ 1054  +UC1     = -3.000959E-10  LUC1     = -3.227537E-17  WUC1     = -1.616938E-17  
+ 1055  +PUC1    = 4.504016E-23   KT1L     = 0              PRT      = 0              
+ 1056  +ALPHA0  = 0              ALPHA1   = 0.001435       BETA0    = 9.351          
+ 1057  +CJ      = 'CJP'          MJ       = 0.4234         PB       = 0.9            
+ 1058  +CJSW    = 'CJSWP'        MJSW     = 0.1716         PBSW     = 0.9            
+ 1059  +CJSWG   = 'CJSWGP'       MJSWG    = 0.4413         PBSWG    = 0.9            
+ 1060  +TCJ     = 0.000887       TCJSW    = 0.000298       TCJSWG   = 0.000298       
+ 1061  +TPB     = 0.001643       TPBSW    = 0.001643       TPBSWG   = 0.001643       
+ 1062  +JS      = 8E-07          JSW      = 6.055E-11      CGDO     = 'CGOP'         
+ 1063  +CGSO    = 'CGOP'         CGBO     = 0              CAPMOD   = 3              
+ 1064  +NQSMOD  = 0              XPART    = 1              CF       = 0              
+ 1065  +TLEV    = 1              TLEVC    = 1              XTI      = 3              
+ 1066  +N       = 1              HDIF     = 'HDIFP'        LDIF     = 8E-08          
+ 1067  +RSH     = RSHP            RS       = 0              RD       = 0              
+ 1068  + ACM = 12  CALCACM = 1  
+ 1069  + AF = 0.97  KF = 3.03E-24  
+ 1070  + DLC = -5.8E-09  IJTH = 0.01 ) 
+ 1071  +OPTACM=1
+ 1072  +THMLEV=1  FLKLEV=1
+ 1073  
+ 1074  
+ 1075  
+ 1076  .MODEL PMOS.6            PMOS   (                    LMIN     = 1.30E-07   
+ 1077  +LMAX    = '3.50E-07-DXL' WMIN     = '1.205E-06-DXW' WMAX     = '1.0005E-05-DXW'
+ 1078  + LEVEL=53 TNOM = 25  VERSION = 3.2  
+ 1079  +TOX     = 'TOXP'         TOXM     = 'TOXP'         XJ       = 2.1E-07        
+ 1080  +NCH     = 7.3E+17        LLN      = 1              LWN      = 1              
+ 1081  +WLN     = 1              WWN      = 1              LINT     = 4E-09          
+ 1082  +LL      = 0              LW       = 0              LWL      = 0              
+ 1083  +WINT    = -6.5E-09       WL       = 0              WW       = 0              
+ 1084  +WWL     = 0              MOBMOD   = 1              BINUNIT  = 2              
+ 1085  +XL      = '-2.0E-08+DXL' XW       = '1.5E-08+DXW'  DWG      = 0              
+ 1086  +DWB     = 0              VTH0     = '-0.3097647+DVTHP' LVTH0    = -9.558948E-09
+ 1087  +WVTH0   = '2.35311E-08+DWVTHP' PVTH0    = -3.955783E-15  K1       = 0.4343991
+ 1088  +LK1     = 5.106258E-09   WK1      = 1.955284E-08   PK1      = -6.296016E-15  
+ 1089  +K2      = -0.001         K3       = 0              DVT0     = 0              
+ 1090  +DVT1    = 0              DVT2     = 0              DVT0W    = 0              
+ 1091  +DVT1W   = 0              DVT2W    = 0              NLX      = 0              
+ 1092  +W0      = 0              K3B      = 0              VFB      = -0.9415483     
+ 1093  +VSAT    = 79541.13       LVSAT    = 0.0001477552   WVSAT    = -4.78493E-05   
+ 1094  +PVSAT   = 1.540748E-11   UA       = 1.97713E-09    LUA      = -3.3012E-17    
+ 1095  +WUA     = 2.219549E-16   PUA      = -2.6204E-23    UB       = -6.506528E-19  
+ 1096  +LUB     = -4.222554E-26  WUB      = -6.450149E-26  PUB      = 5.245532E-32   
+ 1097  +UC      = -1.75756E-10   RDSW     = 445            PRWB     = 0              
+ 1098  +PRWG    = 0              WR       = 1              U0       = 0.01419055     
+ 1099  +LU0     = -1.703087E-11  WU0      = -2.498718E-09  PU0      = 1.708708E-16   
+ 1100  +A0      = 1              KETA     = -0.001         A1       = 0              
+ 1101  +A2      = 0.99           AGS      = 0.4            B0       = 0              
+ 1102  +B1      = 0              VOFF     = -0.1158204     LVOFF    = -3.966937E-09  
+ 1103  +WVOFF   = 3.397306E-09   PVOFF    = -6.412771E-16  NFACTOR  = 0.8082265      
+ 1104  +LNFACTOR= 2.955105E-08   WNFACTOR = -9.569868E-09  PNFACTOR = 3.081497E-15   
+ 1105  +CIT     = 0              CDSC     = 0              CDSCB    = 0              
+ 1106  +CDSCD   = 0              ETA0     = 0.0008440302   LETA0    = 5.332224E-10   
+ 1107  +WETA0   = -5.968088E-10  PETA0    = 1.921725E-16   ETAB     = 0.001460148    
+ 1108  +LETAB   = -5.023678E-10  WETAB    = 1.626878E-10   PETAB    = -5.238544E-17  
+ 1109  +DSUB    = 0              PCLM     = 0.6714336      LPCLM    = 3.173837E-08   
+ 1110  +WPCLM   = -8.096643E-08  PPCLM    = 2.607119E-14   PDIBLC1  = 0              
+ 1111  +PDIBLC2 = -0.0003129804  LPDIBLC2 = 1.329797E-10   WPDIBLC2 = -4.306437E-11  
+ 1112  +PPDIBLC2= 1.386674E-17   PDIBLCB  = 0              DROUT    = 0              
+ 1113  +PSCBE1  = 4.24E+08       PSCBE2   = 1E-07          PVAG     = 0              
+ 1114  +DELTA   = 0.005          KT1      = -0.1887242     LKT1     = -3.179637E-09  
+ 1115  +WKT1    = -2.00967E-08   PKT1     = 1.944595E-15   KT2      = 0.01           
+ 1116  +AT      = 37800.74       LAT      = -0.002511839   WAT      = 0.0008134381   
+ 1117  +PAT     = -2.619272E-10  UTE      = -0.8           UA1      = 1.691787E-09   
+ 1118  +LUA1    = 3.740971E-17   WUA1     = 6.570216E-16   PUA1     = -7.576462E-23  
+ 1119  +UB1     = -1.550013E-18  LUB1     = -8.562571E-26  WUB1     = -9.995162E-25  
+ 1120  +PUB1    = 5.025138E-32   UC1      = -4.330339E-10  LUC1     = 1.053065E-17   
+ 1121  +WUC1    = 2.178463E-16   PUC1     = -3.031291E-23  KT1L     = 0              
+ 1122  +PRT     = 0              ALPHA0   = 0              ALPHA1   = 0.001435       
+ 1123  +BETA0   = 9.351          CJ       = 'CJP'          MJ       = 0.4234         
+ 1124  +PB      = 0.9            CJSW     = 'CJSWP'        MJSW     = 0.1716         
+ 1125  +PBSW    = 0.9            CJSWG    = 'CJSWGP'       MJSWG    = 0.4413         
+ 1126  +PBSWG   = 0.9            TCJ      = 0.000887       TCJSW    = 0.000298       
+ 1127  +TCJSWG  = 0.000298       TPB      = 0.001643       TPBSW    = 0.001643       
+ 1128  +TPBSWG  = 0.001643       JS       = 8E-07          JSW      = 6.055E-11      
+ 1129  +CGDO    = 'CGOP'         CGSO     = 'CGOP'         CGBO     = 0              
+ 1130  +CAPMOD  = 3              NQSMOD   = 0              XPART    = 1              
+ 1131  +CF      = 0              TLEV     = 1              TLEVC    = 1              
+ 1132  +XTI     = 3              N        = 1              HDIF     = 'HDIFP'        
+ 1133  +LDIF    = 8E-08          RSH      = RSHP            RS       = 0              
+ 1134  +RD      = 0              ACM      = 12             CALCACM  = 1              
+ 1135  + AF = 0.97  
+ 1136  + KF = 3.03E-24  DLC = -5.8E-09  
+ 1137  +IJTH    = 0.01 )
+ 1138  +OPTACM=1
+ 1139  +THMLEV=1  FLKLEV=1
+ 1140  
+ 1141  
+ 1142  
+ 1143  .MODEL PMOS.7            PMOS   (                    LMIN     = '8.00E-07-DXL' 
+ 1144  +LMAX    = 2.1E-05        WMIN     = '5.85E-07-DXW'  WMAX     = '1.205E-06-DXW'
+ 1145  + LEVEL=53 TNOM = 25  VERSION = 3.2  
+ 1146  +TOX     = 'TOXP'         TOXM     = 'TOXP'         XJ       = 2.1E-07        
+ 1147  +NCH     = 7.3E+17        LLN      = 1              LWN      = 1              
+ 1148  +WLN     = 1              WWN      = 1              LINT     = 4E-09          
+ 1149  +LL      = 0              LW       = 0              LWL      = 0              
+ 1150  +WINT    = -6.5E-09       WL       = 0              WW       = 0              
+ 1151  +WWL     = 0              MOBMOD   = 1              BINUNIT  = 2              
+ 1152  +XL      = '-2.0E-08+DXL' XW       = '1.5E-08+DXW'  DWG      = 0              
+ 1153  +DWB     = 0              VTH0     = '-0.2969828+DVTHP' LVTH0    = -1.4629E-08
+ 1154  +WVTH0   = '1.696048E-08+DWVTHP' PVTH0    = -7.446704E-15  K1       = 0.4711628
+ 1155  +LK1     = -1.240999E-08  WK1      = -3.810682E-08  PK1      = 1.530152E-14   
+ 1156  +K2      = -0.001         K3       = 0              DVT0     = 0              
+ 1157  +DVT1    = 0              DVT2     = 0              DVT0W    = 0              
+ 1158  +DVT1W   = 0              DVT2W    = 0              NLX      = 0              
+ 1159  +W0      = 0              K3B      = 0              VFB      = -1.023573      
+ 1160  +VSAT    = 80000          UA       = 2.530576E-09   LUA      = -4.183904E-16  
+ 1161  +UB      = -7.175091E-19  LUB      = 1.216406E-25   WUB      = -1.372522E-26  
+ 1162  +PUB     = 1.530152E-32   UC       = -1.75756E-10   RDSW     = 445            
+ 1163  +PRWB    = 0              PRWG     = 0              WR       = 1              
+ 1164  +U0      = 0.0128866      LU0      = 1.074588E-09   WU0      = -4.663244E-10  
+ 1165  +PU0     = -1.428143E-15  A0       = 1.312587       LA0      = -1.255171E-07  
+ 1166  +KETA    = -0.001         A1       = 0              A2       = 0.99           
+ 1167  +AGS     = 0.35           B0       = 0              B1       = 0              
+ 1168  +VOFF    = -0.1306675     LVOFF    = 6.656445E-09   WVOFF    = 4.091857E-10   
+ 1169  +PVOFF   = -4.080401E-15  NFACTOR  = 0.737413       LNFACTOR = 1.255171E-07   
+ 1170  +CIT     = 0              CDSC     = 0              CDSCB    = 0              
+ 1171  +CDSCD   = 0              ETA0     = 0.0003741305   LETA0    = 1.255171E-09   
+ 1172  +ETAB    = -0.0001        DSUB     = 0              PCLM     = 0.77           
+ 1173  +PDIBLC1 = 0              PDIBLC2  = 0.0001         PDIBLCB  = 0              
+ 1174  +DROUT   = 0              PSCBE1   = 4.24E+08       PSCBE2   = 1E-07          
+ 1175  +PVAG    = 0              DELTA    = 0.005          KT1      = -0.1891609     
+ 1176  +LKT1    = -8.367812E-09  KT2      = 0.01           AT       = 103000         
+ 1177  +UTE     = -1.016783      LUTE     = 1.673561E-07   UA1      = 2.3319E-09     
+ 1178  +LUA1    = 8.54893E-16    WUA1     = -1.803072E-16  PUA1     = -7.548755E-22  
+ 1179  +UB1     = -4.149071E-18  LUB1     = -9.323311E-26  WUB1     = 9.29261E-26    
+ 1180  +PUB1    = 7.752772E-31   UC1      = -3.108813E-10  LUC1     = 2.535445E-17   
+ 1181  +WUC1    = -3.657238E-17  KT1L     = 0              PRT      = 0              
+ 1182  +ALPHA0  = 0              ALPHA1   = 0.001435       BETA0    = 9.351          
+ 1183  +CJ      = 'CJP'          MJ       = 0.4234         PB       = 0.9            
+ 1184  +CJSW    = 'CJSWP'        MJSW     = 0.1716         PBSW     = 0.9            
+ 1185  +CJSWG   = 'CJSWGP'       MJSWG    = 0.4413         PBSWG    = 0.9            
+ 1186  +TCJ     = 0.000887       TCJSW    = 0.000298       TCJSWG   = 0.000298       
+ 1187  +TPB     = 0.001643       TPBSW    = 0.001643       TPBSWG   = 0.001643       
+ 1188  +JS      = 8E-07          JSW      = 6.055E-11      CGDO     = 'CGOP'         
+ 1189  +CGSO    = 'CGOP'         CGBO     = 0              CAPMOD   = 3              
+ 1190  +NQSMOD  = 0              XPART    = 1              CF       = 0              
+ 1191  +TLEV    = 1              TLEVC    = 1              XTI      = 3              
+ 1192  +N       = 1              HDIF     = 'HDIFP'        LDIF     = 8E-08          
+ 1193  +RSH     = RSHP            RS       = 0              RD       = 0              
+ 1194  + ACM = 12  CALCACM = 1  
+ 1195  + AF = 0.97  KF = 3.03E-24  
+ 1196  + DLC = -5.8E-09  IJTH = 0.01 ) 
+ 1197  +OPTACM=1
+ 1198  +THMLEV=1  FLKLEV=1
+ 1199  
+ 1200  
+ 1201  
+ 1202  .MODEL PMOS.8            PMOS   (                    LMIN     = '3.50E-07-DXL'
+ 1203  +LMAX    = '8.00E-07-DXL' WMIN     = '5.85E-07-DXW' WMAX     = '1.205E-06-DXW'
+ 1204  + LEVEL=53 TNOM = 25  VERSION = 3.2  
+ 1205  +TOX     = 'TOXP'         TOXM     = 'TOXP'         XJ       = 2.1E-07        
+ 1206  +NCH     = 7.3E+17        LLN      = 1              LWN      = 1              
+ 1207  +WLN     = 1              WWN      = 1              LINT     = 4E-09          
+ 1208  +LL      = 0              LW       = 0              LWL      = 0              
+ 1209  +WINT    = -6.5E-09       WL       = 0              WW       = 0              
+ 1210  +WWL     = 0              MOBMOD   = 1              BINUNIT  = 2              
+ 1211  +XL      = '-2.0E-08+DXL' XW       = '1.5E-08+DXW'  DWG      = 0              
+ 1212  +DWB     = 0              VTH0     = '-0.3049012+DVTHP' LVTH0    = -8.516014E-09
+ 1213  +WVTH0   = '1.16499E-08+DWVTHP' PVTH0    = -3.346938E-15  K1       = 0.4443947 
+ 1214  +LK1     = 8.254944E-09   WK1      = -1.392461E-08  PK1      = -3.367149E-15  
+ 1215  +K2      = -0.001         K3       = 0              DVT0     = 0              
+ 1216  +DVT1    = 0              DVT2     = 0              DVT0W    = 0              
+ 1217  +DVT1W   = 0              DVT2W    = 0              NLX      = 0              
+ 1218  +W0      = 0              K3B      = 0              VFB      = -1.003068      
+ 1219  +VSAT    = 83537.38       LVSAT    = -0.002730861   WVSAT    = -0.004361596   
+ 1220  +PVSAT   = 3.367152E-09   UA       = 1.995695E-09   LUA      = -5.461724E-18  
+ 1221  +WUA     = -8.723193E-18  PUA      = 6.734304E-24   UB       = -2.515979E-19  
+ 1222  +LUB     = -2.380428E-25  WUB      = -2.444172E-25  PUB      = 1.933957E-31   
+ 1223  +UC      = -1.75756E-10   RDSW     = 445            PRWB     = 0              
+ 1224  +PRWG    = 0              WR       = 1              U0       = 0.0141773      
+ 1225  +LU0     = 7.816593E-11   WU0      = -2.31625E-09   A0       = 1.257333       
+ 1226  +LA0     = -8.286133E-08  KETA     = -0.001         A1       = 0              
+ 1227  +A2      = 0.99           AGS      = 0.3142222      LAGS     = 2.762046E-08   
+ 1228  +B0      = 0              B1       = 0              VOFF     = -0.124867      
+ 1229  +LVOFF   = 2.178457E-09   WVOFF    = -5.147034E-10  PVOFF    = -3.367159E-15  
+ 1230  +NFACTOR = 0.9            CIT      = 0              CDSC     = 0              
+ 1231  +CDSCB   = 0              CDSCD    = 0              ETA0     = 0.001642222    
+ 1232  +LETA0   = 2.762044E-10   ETAB     = -0.0001        DSUB     = 0              
+ 1233  +PCLM    = 0.77           PDIBLC1  = 0              PDIBLC2  = 0.0001         
+ 1234  +PDIBLCB = 0              DROUT    = 0              PSCBE1   = 4.24E+08       
+ 1235  +PSCBE2  = 1E-07          PVAG     = 0              DELTA    = 0.005          
+ 1236  +KT1     = -0.1999192     LKT1     = -6.23589E-11   WKT1     = 8.723196E-09   
+ 1237  +PKT1    = -6.734307E-15  KT2      = 0.01           AT       = 155235.6       
+ 1238  +LAT     = -0.04032585    UTE      = -0.8           UA1      = 4.715561E-09   
+ 1239  +LUA1    = -9.852931E-16  WUA1     = -2.422988E-15  PUA1     = 9.76474E-22    
+ 1240  +UB1     = -6.668221E-18  LUB1     = 1.851551E-24   WUB1     = 3.277969E-24   
+ 1241  +PUB1    = -1.683576E-30  UC1      = -3.243699E-10  LUC1     = 3.57677E-17    
+ 1242  +WUC1    = 1.376045E-17   PUC1     = -3.885694E-23  KT1L     = 0              
+ 1243  +PRT     = 0              ALPHA0   = 0              ALPHA1   = 0.001435       
+ 1244  +BETA0   = 9.351          CJ       = 'CJP'          MJ       = 0.4234         
+ 1245  +PB      = 0.9            CJSW     = 'CJSWP'        MJSW     = 0.1716         
+ 1246  +PBSW    = 0.9            CJSWG    = 'CJSWGP'       MJSWG    = 0.4413         
+ 1247  +PBSWG   = 0.9            TCJ      = 0.000887       TCJSW    = 0.000298       
+ 1248  +TCJSWG  = 0.000298       TPB      = 0.001643       TPBSW    = 0.001643       
+ 1249  +TPBSWG  = 0.001643       JS       = 8E-07          JSW      = 6.055E-11      
+ 1250  +CGDO    = 'CGOP'         CGSO     = 'CGOP'         CGBO     = 0              
+ 1251  +CAPMOD  = 3              NQSMOD   = 0              XPART    = 1              
+ 1252  +CF      = 0              TLEV     = 1              TLEVC    = 1              
+ 1253  +XTI     = 3              N        = 1              HDIF     = 'HDIFP'        
+ 1254  +LDIF    = 8E-08          RSH      = RSHP            RS       = 0              
+ 1255  +RD      = 0              ACM      = 12             CALCACM  = 1              
+ 1256  + AF = 0.97  
+ 1257  + KF = 3.03E-24  DLC = -5.8E-09  
+ 1258  +IJTH    = 0.01 )
+ 1259  +OPTACM=1
+ 1260  +THMLEV=1  FLKLEV=1
+ 1261  
+ 1262  
+ 1263  
+ 1264  .MODEL PMOS.9            PMOS   (                    LMIN     = 1.30E-07   
+ 1265  +LMAX    = '3.50E-07-DXL' WMIN     = '5.85E-07-DXW' WMAX     = '1.205E-06-DXW'
+ 1266  + LEVEL=53 TNOM = 25  VERSION = 3.2  
+ 1267  +TOX     = 'TOXP'         TOXM     = 'TOXP'         XJ       = 2.1E-07        
+ 1268  +NCH     = 7.3E+17        LLN      = 1              LWN      = 1              
+ 1269  +WLN     = 1              WWN      = 1              LINT     = 4E-09          
+ 1270  +LL      = 0              LW       = 0              LWL      = 0              
+ 1271  +WINT    = -6.5E-09       WL       = 0              WW       = 0              
+ 1272  +WWL     = 0              MOBMOD   = 1              BINUNIT  = 2              
+ 1273  +XL      = '-2.0E-08+DXL' XW       = '1.5E-08+DXW'  DWG      = 0              
+ 1274  +DWB     = 0              VTH0     = '-0.2904834+DVTHP' LVTH0    = -1.315855E-08
+ 1275  +WVTH0   = '-2.428481E-10+DWVTHP' PVTH0    = 4.825279E-16   K1       = 0.4872531
+ 1276  +LK1     = -5.545465E-09  WK1      = -4.561625E-08  PK1      = 6.837558E-15   
+ 1277  +K2      = -0.001         K3       = 0              DVT0     = 0              
+ 1278  +DVT1    = 0              DVT2     = 0              DVT0W    = 0              
+ 1279  +DVT1W   = 0              DVT2W    = 0              NLX      = 0              
+ 1280  +W0      = 0              K3B      = 0              VFB      = -0.9594337     
+ 1281  +VSAT    = 75542.89       LVSAT    = -0.0001566327  WVSAT    = 0.004881986    
+ 1282  +PVSAT   = 3.907177E-10   UA       = 2.142335E-09   LUA      = -5.267981E-17  
+ 1283  +WUA     = 1.825783E-17   PUA      = -1.953588E-24  UB       = -9.879987E-19  
+ 1284  +LUB     = -9.217233E-28  WUB      = 3.514461E-25   PUB      = 1.527712E-33   
+ 1285  +UC      = -1.48693E-10   LUC      = -8.714301E-18  WUC      = -3.336873E-17  
+ 1286  +PUC     = 1.074473E-23   RDSW     = 445            PRWB     = 0              
+ 1287  +PRWG    = 0              WR       = 1              U0       = 0.01369812     
+ 1288  +LU0     = 2.324597E-10   WU0      = -1.891558E-09  PU0      = -1.367511E-16  
+ 1289  +A0      = 1              KETA     = -0.001         A1       = 0              
+ 1290  +A2      = 0.99           AGS      = 0.4            B0       = 0              
+ 1291  +B1      = 0              VOFF     = -0.1046588     LVOFF    = -4.328589E-09  
+ 1292  +WVOFF   = -1.036501E-08  PVOFF    = -1.953594E-16  NFACTOR  = 0.800465       
+ 1293  +LNFACTOR= 3.205024E-08   CIT      = 0              CDSC     = 0              
+ 1294  +CDSCB   = 0              CDSCD    = 0              ETA0     = -3.364374E-05  
+ 1295  +LETA0   = 8.158335E-10   WETA0    = 4.853635E-10   PETA0    = -1.562871E-16  
+ 1296  +ETAB    = 0.001346065    LETAB    = -4.65633E-10   WETAB    = 3.033523E-10   
+ 1297  +PETAB   = -9.767944E-17  DSUB     = 0              PCLM     = 0.5565619      
+ 1298  +LPCLM   = 6.872708E-08   WPCLM    = 6.067044E-08   PPCLM    = -1.953589E-14  
+ 1299  +PDIBLC1 = 0              PDIBLC2  = -0.0006923457  LPDIBLC2 = 2.551354E-10   
+ 1300  +WPDIBLC2= 4.246931E-10   PPDIBLC2 = -1.367512E-16  PDIBLCB  = 0              
+ 1301  +DROUT   = 0              PSCBE1   = 4.24E+08       PSCBE2   = 1E-07          
+ 1302  +PVAG    = 0              DELTA    = 0.005          KT1      = -0.185295      
+ 1303  +LKT1    = -4.771351E-09  WKT1     = -2.432489E-08  PKT1     = 3.907179E-15   
+ 1304  +KT2     = 0.01           AT       = 38460.46       LAT      = -0.00272427    
+ 1305  +UTE     = -0.8           UA1      = 1.435063E-09   LUA1     = 7.102744E-17   
+ 1306  +WUA1    = 9.735622E-16   PUA1     = -1.172153E-22  UB1      = -3.063422E-19  
+ 1307  +LUB1    = -1.969745E-25  WUB1     = -2.532963E-24  PUB1     = 1.875445E-31   
+ 1308  +UC1     = -2.545728E-10  LUC1     = 1.329303E-17   WUC1     = -2.19609E-18   
+ 1309  +PUC1    = -3.371893E-23  KT1L     = 0              PRT      = 0              
+ 1310  +ALPHA0  = 0              ALPHA1   = 0.001435       BETA0    = 9.351          
+ 1311  +CJ      = 'CJP'          MJ       = 0.4234         PB       = 0.9            
+ 1312  +CJSW    = 'CJSWP'        MJSW     = 0.1716         PBSW     = 0.9            
+ 1313  +CJSWG   = 'CJSWGP'       MJSWG    = 0.4413         PBSWG    = 0.9            
+ 1314  +TCJ     = 0.000887       TCJSW    = 0.000298       TCJSWG   = 0.000298       
+ 1315  +TPB     = 0.001643       TPBSW    = 0.001643       TPBSWG   = 0.001643       
+ 1316  +JS      = 8E-07          JSW      = 6.055E-11      CGDO     = 'CGOP'         
+ 1317  +CGSO    = 'CGOP'         CGBO     = 0              CAPMOD   = 3              
+ 1318  +NQSMOD  = 0              XPART    = 1              CF       = 0              
+ 1319  +TLEV    = 1              TLEVC    = 1              XTI      = 3              
+ 1320  +N       = 1              HDIF     = 'HDIFP'        LDIF     = 8E-08          
+ 1321  +RSH     = RSHP            RS       = 0              RD       = 0              
+ 1322  + ACM = 12  CALCACM = 1  
+ 1323  + AF = 0.97  KF = 3.03E-24  
+ 1324  + DLC = -5.8E-09  IJTH = 0.01 ) 
+ 1325  +OPTACM=1
+ 1326  +THMLEV=1  FLKLEV=1
+ 1327  
+ 1328  
+ 1329  
+ 1330  .MODEL PMOS.10           PMOS   (                    LMIN     = '8.00E-07-DXL'
+ 1331  +LMAX    = 2.1E-05        WMIN     = 1.50E-07       WMAX     = '5.85E-07-DXW'
+ 1332  + LEVEL=53 TNOM = 25  VERSION = 3.2  
+ 1333  +TOX     = 'TOXP'         TOXM     = 'TOXP'         XJ       = 2.1E-07        
+ 1334  +NCH     = 7.3E+17        LLN      = 1              LWN      = 1              
+ 1335  +WLN     = 1              WWN      = 1              LINT     = 4E-09          
+ 1336  +LL      = 0              LW       = 0              LWL      = 0              
+ 1337  +WINT    = -6.5E-09       WL       = 0              WW       = 0              
+ 1338  +WWL     = 0              MOBMOD   = 1              BINUNIT  = 2              
+ 1339  +XL      = '-2.0E-08+DXL' XW       = '1.5E-08+DXW'  DWG      = 0              
+ 1340  +DWB     = 0              VTH0     = '-0.2798276+DVTHP' LVTH0    = -3.129704E-08
+ 1341  +WVTH0   = '6.444338E-09+DWVTHP' PVTH0    = 2.77081E-15    K1       = 0.4469916
+ 1342  +LK1     = 1.015345E-08   WK1      = -2.32899E-08   PK1      = 1.470128E-15   
+ 1343  +K2      = -0.001         K3       = 0              DVT0     = 0              
+ 1344  +DVT1    = 0              DVT2     = 0              DVT0W    = 0              
+ 1345  +DVT1W   = 0              DVT2W    = 0              NLX      = 0              
+ 1346  +W0      = 0              K3B      = 0              VFB      = -0.9818085     
+ 1347  +VSAT    = 80000          UA       = 2.527534E-09   LUA      = -3.880463E-16  
+ 1348  +WUA     = 1.865315E-18   PUA      = -1.860093E-23  UB       = -4.750965E-19  
+ 1349  +LUB     = 4.64211E-26    WUB      = -1.623242E-25  PUB      = 6.14111E-32    
+ 1350  +UC      = -1.75756E-10   RDSW     = 445            PRWB     = 0              
+ 1351  +PRWG    = 0              WR       = 1              U0       = 0.0121293      
+ 1352  +LU0     = -1.289412E-09  WU0      = -2.104852E-12  PU0      = 2.098954E-17   
+ 1353  +A0      = 1.312587       LA0      = -1.255171E-07  KETA     = -0.001         
+ 1354  +A1      = 0              A2       = 0.99           AGS      = 0.35           
+ 1355  +B0      = 0              B1       = 0              VOFF     = -0.128429      
+ 1356  +LVOFF   = -4.371794E-09  WVOFF    = -9.630188E-10  PVOFF    = 2.67991E-15    
+ 1357  +NFACTOR = 0.737413       LNFACTOR = 1.255171E-07   CIT      = 0              
+ 1358  +CDSC    = 0              CDSCB    = 0              CDSCD    = 0              
+ 1359  +ETA0    = 0.0003741306   LETA0    = 1.255171E-09   ETAB     = -0.0001        
+ 1360  +DSUB    = 0              PCLM     = 0.77           PDIBLC1  = 0              
+ 1361  +PDIBLC2 = 0.0001         PDIBLCB  = 0              DROUT    = 0              
+ 1362  +PSCBE1  = 4.24E+08       PSCBE2   = 1E-07          PVAG     = 0              
+ 1363  +DELTA   = 0.005          KT1      = -0.1930813     LKT1     = -6.920771E-09  
+ 1364  +WKT1    = 2.403198E-09   PKT1     = -8.870365E-16  KT2      = 0.01           
+ 1365  +AT      = 103000         UTE      = -1.016783      LUTE     = 1.673561E-07   
+ 1366  +UA1     = 2.048204E-09   LUA1     = -6.689221E-16  WUA1     = -6.401409E-18  
+ 1367  +PUA1    = 1.792233E-22   UB1      = -4.325127E-18  LUB1     = 1.803517E-24   
+ 1368  +WUB1    = 2.008491E-25   PUB1     = -3.874307E-31  UC1      = -3.768008E-10  
+ 1369  +LUC1    = 4.635038E-17   WUC1     = 3.836331E-18   PUC1     = -1.287051E-23  
+ 1370  +KT1L    = 0              PRT      = 0              ALPHA0   = 0              
+ 1371  +ALPHA1  = 0.001435       BETA0    = 9.351          CJ       = 'CJP'          
+ 1372  +MJ      = 0.4234         PB       = 0.9            CJSW     = 'CJSWP'        
+ 1373  +MJSW    = 0.1716         PBSW     = 0.9            CJSWG    = 'CJSWGP'       
+ 1374  +MJSWG   = 0.4413         PBSWG    = 0.9            TCJ      = 0.000887       
+ 1375  +TCJSW   = 0.000298       TCJSWG   = 0.000298       TPB      = 0.001643       
+ 1376  +TPBSW   = 0.001643       TPBSWG   = 0.001643       JS       = 8E-07          
+ 1377  +JSW     = 6.055E-11      CGDO     = 'CGOP'         CGSO     = 'CGOP'         
+ 1378  +CGBO    = 0              CAPMOD   = 3              NQSMOD   = 0              
+ 1379  +XPART   = 1              CF       = 0              TLEV     = 1              
+ 1380  +TLEVC   = 1              XTI      = 3              N        = 1              
+ 1381  +HDIF    = 'HDIFP'        LDIF     = 8E-08          RSH      = RSHP            
+ 1382  +RS      = 0              RD       = 0              ACM      = 12             
+ 1383  + CALCACM = 1  
+ 1384  + AF = 0.97  KF = 3.03E-24  
+ 1385  +DLC     = -5.8E-09          IJTH     = 0.01 )
+ 1386  +OPTACM=1
+ 1387  +THMLEV=1  FLKLEV=1
+ 1388  
+ 1389  
+ 1390  
+ 1391  .MODEL PMOS.11           PMOS   (                    LMIN     = '3.50E-07-DXL'
+ 1392  +LMAX    = '8.00E-07-DXL' WMIN     = 1.50E-07       WMAX     = '5.85E-07-DXW'
+ 1393  + LEVEL=53 TNOM = 25  VERSION = 3.2  
+ 1394  +TOX     = 'TOXP'         TOXM     = 'TOXP'         XJ       = 2.1E-07        
+ 1395  +NCH     = 7.3E+17        LLN      = 1              LWN      = 1              
+ 1396  +WLN     = 1              WWN      = 1              LINT     = 4E-09          
+ 1397  +LL      = 0              LW       = 0              LWL      = 0              
+ 1398  +WINT    = -6.5E-09       WL       = 0              WW       = 0              
+ 1399  +WWL     = 0              MOBMOD   = 1              BINUNIT  = 2              
+ 1400  +XL      = '-2.0E-08+DXL' XW       = '1.5E-08+DXW'  DWG      = 0              
+ 1401  +DWB     = 0              VTH0     = '-0.3039332+DVTHP' LVTH0    = -1.26875E-08
+ 1402  +WVTH0   = '1.105655E-08+DWVTHP' PVTH0    = -7.898166E-16  K1       = 0.4581052
+ 1403  +LK1     = 1.573731E-09   WK1      = -2.232916E-08  PK1      = 7.28435E-16    
+ 1404  +K2      = -0.001         K3       = 0              DVT0     = 0              
+ 1405  +DVT1    = 0              DVT2     = 0              DVT0W    = 0              
+ 1406  +DVT1W   = 0              DVT2W    = 0              NLX      = 0              
+ 1407  +W0      = 0              K3B      = 0              VFB      = -0.9606453     
+ 1408  +VSAT    = 74958.21       LVSAT    = 0.003892261    WVSAT    = 0.0008974384   
+ 1409  +PVSAT   = -6.928225E-10  UA       = 2.014799E-09   LUA      = 7.784523E-18   
+ 1410  +WUA     = -2.043428E-17  PUA      = -1.385645E-24  UB       = -5.357826E-19  
+ 1411  +LUB     = 9.327074E-26   WUB      = -7.021202E-26  PUB      = -9.699508E-33  
+ 1412  +UC      = -1.75756E-10   RDSW     = 445            PRWB     = 0              
+ 1413  +PRWG    = 0              WR       = 1              U0       = 0.01032855     
+ 1414  +LU0     = 1.007702E-10   WU0      = 4.303245E-11   PU0      = -1.385645E-17  
+ 1415  +A0      = 1.257333       LA0      = -8.286133E-08  KETA     = -0.001         
+ 1416  +A1      = 0              A2       = 0.99           AGS      = 0.3142222      
+ 1417  +LAGS    = 2.762046E-08   B0       = 0              B1       = 0              
+ 1418  +VOFF    = -0.1324338     LVOFF    = -1.280073E-09  WVOFF    = 4.123756E-09   
+ 1419  +PVOFF   = -1.24708E-15   NFACTOR  = 0.9            CIT      = 0              
+ 1420  +CDSC    = 0              CDSCB    = 0              CDSCD    = 0              
+ 1421  +ETA0    = 0.001642222    LETA0    = 2.762044E-10   ETAB     = -0.0001        
+ 1422  +DSUB    = 0              PCLM     = 0.77           PDIBLC1  = 0              
+ 1423  +PDIBLC2 = 0.0001         PDIBLCB  = 0              DROUT    = 0              
+ 1424  +PSCBE1  = 4.24E+08       PSCBE2   = 1E-07          PVAG     = 0              
+ 1425  +DELTA   = 0.005          KT1      = -0.1848069     LKT1     = -1.330861E-08  
+ 1426  +WKT1    = -5.406888E-10  PKT1     = 1.385644E-15   KT2      = 0.01           
+ 1427  +AT      = 155235.6       LAT      = -0.04032585    UTE      = -0.8           
+ 1428  +UA1     = 1.310912E-10   LUA1     = 8.110887E-16   WUA1     = 3.87292E-16    
+ 1429  +PUA1    = -1.24708E-22   UB1      = -4.491228E-19  LUB1     = -1.188759E-24  
+ 1430  +WUB1    = -5.343381E-25  PUB1     = 1.801338E-31   UC1      = -2.573048E-10  
+ 1431  +LUC1    = -4.590057E-17  WUC1     = -2.735048E-17  PUC1     = 1.120571E-23   
+ 1432  +KT1L    = 0              PRT      = 0              ALPHA0   = 0              
+ 1433  +ALPHA1  = 0.001435       BETA0    = 9.351          CJ       = 'CJP'          
+ 1434  +MJ      = 0.4234         PB       = 0.9            CJSW     = 'CJSWP'        
+ 1435  +MJSW    = 0.1716         PBSW     = 0.9            CJSWG    = 'CJSWGP'       
+ 1436  +MJSWG   = 0.4413         PBSWG    = 0.9            TCJ      = 0.000887       
+ 1437  +TCJSW   = 0.000298       TCJSWG   = 0.000298       TPB      = 0.001643       
+ 1438  +TPBSW   = 0.001643       TPBSWG   = 0.001643       JS       = 8E-07          
+ 1439  +JSW     = 6.055E-11      CGDO     = 'CGOP'         CGSO     = 'CGOP'         
+ 1440  +CGBO    = 0              CAPMOD   = 3              NQSMOD   = 0              
+ 1441  +XPART   = 1              CF       = 0              TLEV     = 1              
+ 1442  +TLEVC   = 1              XTI      = 3              N        = 1              
+ 1443  +HDIF    = 'HDIFP'        LDIF     = 8E-08          RSH      = RSHP            
+ 1444  +RS      = 0              RD       = 0              ACM      = 12             
+ 1445  + CALCACM = 1  
+ 1446  + AF = 0.97  KF = 3.03E-24  
+ 1447  +DLC     = -5.8E-09          IJTH     = 0.01 )
+ 1448  +OPTACM=1
+ 1449  +THMLEV=1  FLKLEV=1
+ 1450  
+ 1451  
+ 1452  
+ 1453  .MODEL PMOS.12           PMOS   (                    LMIN     = 1.30E-07      
+ 1454  +LMAX    = '3.50E-07-DXL' WMIN     = 1.50E-07       WMAX     = '5.85E-07-DXW'
+ 1455  + LEVEL=53 TNOM = 25  VERSION = 3.2  
+ 1456  +TOX     = 'TOXP'         TOXM     = 'TOXP'         XJ       = 2.1E-07        
+ 1457  +NCH     = 7.3E+17        LLN      = 1              LWN      = 1              
+ 1458  +WLN     = 1              WWN      = 1              LINT     = 4E-09          
+ 1459  +LL      = 0              LW       = 0              LWL      = 0              
+ 1460  +WINT    = -6.5E-09       WL       = 0              WW       = 0              
+ 1461  +WWL     = 0              MOBMOD   = 1              BINUNIT  = 2              
+ 1462  +XL      = '-2.0E-08+DXL' XW       = '1.5E-08+DXW'  DWG      = 0              
+ 1463  +DWB     = 0              VTH0     = '-0.3017486+DVTHP' LVTH0    = -1.339095E-08
+ 1464  +WVTH0   = '6.662736E-09+DWVTHP' PVTH0    = 6.249907E-16   K1       = 0.4427917
+ 1465  +LK1     = 6.504686E-09   WK1      = -1.83614E-08   PK1      = -5.491839E-16  
+ 1466  +K2      = -0.001         K3       = 0              DVT0     = 0              
+ 1467  +DVT1    = 0              DVT2     = 0              DVT0W    = 0              
+ 1468  +DVT1W   = 0              DVT2W    = 0              NLX      = 0              
+ 1469  +W0      = 0              K3B      = 0              VFB      = -0.9194162     
+ 1470  +VSAT    = 84815.65       LVSAT    = 0.0007181668   WVSAT    = -0.0008022141  
+ 1471  +PVSAT   = -1.455343E-10  UA       = 2.236433E-09   LUA      = -6.358157E-17  
+ 1472  +WUA     = -3.942444E-17  PUA      = 4.729189E-24   UB       = -1.957686E-19  
+ 1473  +LUB     = -1.621375E-26  WUB      = -1.34191E-25   PUB      = 1.090173E-32   
+ 1474  +UC      = -2.152362E-10  LUC      = 1.271263E-17   WUC      = 7.422278E-18   
+ 1475  +PUC     = -2.389974E-24  RDSW     = 445            PRWB     = 0              
+ 1476  +PRWG    = 0              WR       = 1              U0       = 0.01061151     
+ 1477  +LU0     = 9.658429E-12   WU0      = 5.399522E-13   PU0      = -1.738645E-19  
+ 1478  +A0      = 1              KETA     = -0.001         A1       = 0              
+ 1479  +A2      = 0.99           AGS      = 0.4            B0       = 0              
+ 1480  +B1      = 0              VOFF     = -0.1196788     LVOFF    = -5.387188E-09  
+ 1481  +WVOFF   = -1.157738E-09  PVOFF    = 4.535614E-16   NFACTOR  = 0.7974537      
+ 1482  +LNFACTOR= 3.30199E-08    WNFACTOR = 1.845967E-09   PNFACTOR = -5.944019E-16  
+ 1483  +CIT     = 0              CDSC     = 0              CDSCB    = 0              
+ 1484  +CDSCD   = 0              ETA0     = 0.0008490036   LETA0    = 5.316207E-10   
+ 1485  +WETA0   = -5.569997E-11  PETA0    = 1.793541E-17   ETAB     = 0.002002198    
+ 1486  +LETAB   = -6.769076E-10  WETAB    = -9.885673E-11  PETAB    = 3.183187E-17   
+ 1487  +DSUB    = 0              PCLM     = 0.6500209      LPCLM    = 3.863327E-08   
+ 1488  +WPCLM   = 3.380071E-09   PPCLM    = -1.088382E-15  PDIBLC1  = 0              
+ 1489  +PDIBLC2 = 0.0001410173   LPDIBLC2 = -1.32076E-11   WPDIBLC2 = -8.615851E-11  
+ 1490  +PPDIBLC2= 2.774305E-17   PDIBLCB  = 0              DROUT    = 0              
+ 1491  +PSCBE1  = 4.24E+08       PSCBE2   = 1E-07          PVAG     = 0              
+ 1492  +DELTA   = 0.005          KT1      = -0.2279583     LKT1     = 5.861558E-10   
+ 1493  +WKT1    = 1.827687E-09   PKT1     = 6.230266E-16   KT2      = 0.01           
+ 1494  +AT      = 38101.16       LAT      = -0.002608573   WAT      = 0.0002202548   
+ 1495  +PAT     = -7.092206E-11  UTE      = -0.8           UA1      = 3.024294E-09   
+ 1496  +LUA1    = -1.205227E-16  WUA1     = -6.363516E-19  PUA1     = 2.049077E-25   
+ 1497  +UB1     = -4.582381E-18  LUB1     = 1.421507E-25   WUB1     = 8.824908E-26   
+ 1498  +PUB1    = -2.033927E-32  UC1      = -2.43311E-10   LUC1     = -5.040653E-17  
+ 1499  +WUC1    = -9.099546E-18  PUC1     = 5.328908E-24   KT1L     = 0              
+ 1500  +PRT     = 0              ALPHA0   = 0              ALPHA1   = 0.001435       
+ 1501  +BETA0   = 9.351          CJ       = 'CJP'          MJ       = 0.4234         
+ 1502  +PB      = 0.9            CJSW     = 'CJSWP'        MJSW     = 0.1716         
+ 1503  +PBSW    = 0.9            CJSWG    = 'CJSWGP'       MJSWG    = 0.4413         
+ 1504  +PBSWG   = 0.9            TCJ      = 0.000887       TCJSW    = 0.000298       
+ 1505  +TCJSWG  = 0.000298       TPB      = 0.001643       TPBSW    = 0.001643       
+ 1506  +TPBSWG  = 0.001643       JS       = 8E-07          JSW      = 6.055E-11      
+ 1507  +CGDO    = 'CGOP'         CGSO     = 'CGOP'         CGBO     = 0              
+ 1508  +CAPMOD  = 3              NQSMOD   = 0              XPART    = 1              
+ 1509  +CF      = 0              TLEV     = 1              TLEVC    = 1              
+ 1510  +XTI     = 3              N        = 1              HDIF     = 'HDIFP'        
+ 1511  +LDIF    = 8E-08          RSH      = RSHP            RS       = 0              
+ 1512  +RD      = 0              ACM      = 12             CALCACM  = 1              
+ 1513  + AF = 0.97  
+ 1514  + KF = 3.03E-24  DLC = -5.8E-09  
+ 1515  +IJTH    = 0.01 )
+ 1516  +OPTACM=1
+ 1517  +THMLEV=1  FLKLEV=1
+ 1518  
+ 1519  *
+   10  ** END OF LIBRARY /home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/models/lib.eldo LIBTYPE=MOS
+    6  ** END OF LIBRARY /home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/models/lib.eldo LIBTYPE=TT
+    6  Vvdd VDD 0 2.5
+    7  Vgnd ground 0 0
+    8  
+    9  *  Here begins the original spice file
+   10  
+   11  * File: and3.pex.netlist
+   12  * Created: Mon Apr 15 16:27:06 2019
+   13  * Program "Calibre xRC"
+   14  * Version "v2012.2_36.25"
+   15  * 
+   16  .GLOBAL VDD VSS 
+   17  ** including /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/and3/and3.cal/and3.pex.netlist.pex
+    1  * File: and3.pex.netlist.pex
+    2  * Created: Mon Apr 15 16:27:06 2019
+    3  * Program "Calibre xRC"
+    4  * Version "v2012.2_36.25"
+    5  * Nominal Temperature: 27C
+    6  * Circuit Temperature: 27C
+    7  * 
+    8  .SUBCKT PM_AND3_X0_6 6 10 28 30
+    9  R0 78 121 0.017931
+   10  R1 69 70 0.146
+   11  R2 67 68 0.534
+   12  R3 61 63 0.0525
+   13  R4 56 66 0.0517569
+   14  R5 56 58 0.209231
+   15  R6 54 65 0.101866
+   16  R7 54 66 0.28
+   17  R8 52 121 0.0276608
+   18  R9 52 53 0.105
+   19  R10 50 51 0.2975
+   20  R11 48 65 0.0174182
+   21  R12 48 49 0.1175
+   22  R13 43 50 0.0458784
+   23  R14 43 45 0.104615
+   24  R15 42 63 0.0046983
+   25  R16 41 53 0.0446983
+   26  R17 41 42 0.635
+   27  R18 40 49 0.0446983
+   28  R19 39 61 0.0046983
+   29  R20 39 40 0.2875
+   30  R21 37 51 0.0446983
+   31  R22 37 38 0.18
+   32  R23 36 73 0.0559551
+   33  R24 35 38 0.0446983
+   34  R25 35 36 0.11
+   35  R26 34 88 11.07
+   36  R27 34 67 0.0477743
+   37  R28 34 88 0.68
+   38  R29 33 83 11.07
+   39  R30 33 69 0.0477743
+   40  R31 33 83 0.68
+   41  R32 32 70 0.0477743
+   42  R33 32 78 0.68
+   43  R34 32 58 3.8825
+   44  R35 31 68 0.0477743
+   45  R36 31 73 0.68
+   46  R37 31 45 5.20333
+   47  R38 30 32 1.03022
+   48  R39 28 31 1.06083
+   49  R40 24 26 7.30769
+   50  R41 20 22 18.8462
+   51  R42 18 19 634.615
+   52  R43 17 34 4.63979
+   53  R44 16 18 5.58729
+   54  R45 16 17 13.8462
+   55  R46 15 26 0.587288
+   56  R47 14 22 0.587288
+   57  R48 14 15 76.9231
+   58  R49 13 33 4.63979
+   59  R50 12 19 5.58729
+   60  R51 12 13 23.0769
+   61  R52 8 24 0.587288
+   62  R53 8 10 161.923
+   63  R54 4 34 8.27089
+   64  R55 4 6 87.6923
+   65  R56 3 20 0.587288
+   66  R57 2 33 8.27089
+   67  R58 2 3 13.8462
+   68  .ENDS
+   69  
+   70  .SUBCKT PM_AND3_X1_6 6 10 28 30
+   71  R0 78 121 0.017931
+   72  R1 69 70 0.146
+   73  R2 67 68 0.534
+   74  R3 61 63 0.0525
+   75  R4 56 66 0.0517569
+   76  R5 56 58 0.209231
+   77  R6 54 65 0.101866
+   78  R7 54 66 0.28
+   79  R8 52 121 0.0276608
+   80  R9 52 53 0.105
+   81  R10 50 51 0.2975
+   82  R11 48 65 0.0174182
+   83  R12 48 49 0.1175
+   84  R13 43 50 0.0458784
+   85  R14 43 45 0.104615
+   86  R15 42 63 0.0046983
+   87  R16 41 53 0.0446983
+   88  R17 41 42 0.635
+   89  R18 40 49 0.0446983
+   90  R19 39 61 0.0046983
+   91  R20 39 40 0.2875
+   92  R21 37 51 0.0446983
+   93  R22 37 38 0.18
+   94  R23 36 73 0.0559551
+   95  R24 35 38 0.0446983
+   96  R25 35 36 0.11
+   97  R26 34 88 11.07
+   98  R27 34 67 0.0477743
+   99  R28 34 88 0.68
+  100  R29 33 83 11.07
+  101  R30 33 69 0.0477743
+  102  R31 33 83 0.68
+  103  R32 32 70 0.0477743
+  104  R33 32 78 0.68
+  105  R34 32 58 3.8825
+  106  R35 31 68 0.0477743
+  107  R36 31 73 0.68
+  108  R37 31 45 5.20333
+  109  R38 30 32 1.03022
+  110  R39 28 31 1.06083
+  111  R40 24 26 7.30769
+  112  R41 20 22 18.8462
+  113  R42 18 19 634.615
+  114  R43 17 34 4.63979
+  115  R44 16 18 5.58729
+  116  R45 16 17 13.8462
+  117  R46 15 26 0.587288
+  118  R47 14 22 0.587288
+  119  R48 14 15 76.9231
+  120  R49 13 33 4.63979
+  121  R50 12 19 5.58729
+  122  R51 12 13 23.0769
+  123  R52 8 24 0.587288
+  124  R53 8 10 161.923
+  125  R54 4 34 8.27089
+  126  R55 4 6 87.6923
+  127  R56 3 20 0.587288
+  128  R57 2 33 8.27089
+  129  R58 2 3 13.8462
+  130  .ENDS
+  131  
+  132  .SUBCKT PM_AND3_VDD 4 5 36 39 40 99
+  133  R0 101 110 0.0983827
+  134  R1 100 108 0.0983827
+  135  R2 97 107 0.00426667
+  136  R3 97 99 0.0885333
+  137  R4 96 108 0.00426667
+  138  R5 96 99 0.0621333
+  139  R6 95 107 0.0983827
+  140  R7 94 104 0.0983827
+  141  R8 57 101 0.2125
+  142  R9 56 100 0.2125
+  143  R10 54 110 0.0138667
+  144  R11 54 108 0.0402667
+  145  R12 48 57 0.0461878
+  146  R13 48 50 0.104615
+  147  R14 42 56 0.0465316
+  148  R15 42 44 0.104615
+  149  R16 41 59 0.108444
+  150  R17 41 54 0.354773
+  151  R18 41 50 3.8825
+  152  R19 41 44 3.8825
+  153  R20 40 41 1.03022
+  154  R21 39 59 0.921778
+  155  R22 36 41 8.69695
+  156  R23 36 41 8.70565
+  157  R24 24 41 0.108444
+  158  R25 22 95 0.2125
+  159  R26 21 94 0.2125
+  160  R27 19 107 0.0138667
+  161  R28 19 104 0.0402667
+  162  R29 19 41 0.354773
+  163  R30 15 41 3.8825
+  164  R31 13 22 0.0461878
+  165  R32 13 15 0.104615
+  166  R33 9 41 3.8825
+  167  R34 7 21 0.0465316
+  168  R35 7 9 0.104615
+  169  R36 5 41 1.03022
+  170  R37 4 24 0.921778
+  171  .ENDS
+  172  
+  173  .SUBCKT PM_AND3_GROUND 1 2 24 73
+  174  R0 75 79 0.0648174
+  175  R1 71 78 0.00419427
+  176  R2 71 73 0.0946667
+  177  R3 70 79 0.00419427
+  178  R4 69 78 0.0648174
+  179  R5 67 78 0.00419427
+  180  R6 39 42 0.267592
+  181  R7 37 75 0.26
+  182  R8 32 37 0.0517569
+  183  R9 32 34 0.104615
+  184  R10 29 70 0.00346667
+  185  R11 29 73 0.106667
+  186  R12 24 39 3.86097
+  187  R13 16 19 0.267592
+  188  R14 14 69 0.26
+  189  R15 9 14 0.0517569
+  190  R16 9 11 0.104615
+  191  R17 6 67 0.00346667
+  192  R18 5 42 0.215104
+  193  R19 5 34 5.20333
+  194  R20 5 29 0.352955
+  195  R21 5 19 0.215104
+  196  R22 5 11 5.20333
+  197  R23 5 6 0.352955
+  198  R24 2 5 9.50174
+  199  R25 2 5 9.51125
+  200  R26 1 16 3.86097
+  201  .ENDS
+  202  
+  203  .SUBCKT PM_AND3_A 10 14 51
+  204  R0 49 51 0.36
+  205  R1 24 49 0.0477743
+  206  R2 17 40 0.68
+  207  R3 17 31 2
+  208  R4 17 40 11.07
+  209  R5 17 24 0.68
+  210  R6 16 20 11.07
+  211  R7 16 20 0.68
+  212  R8 12 31 4.20996
+  213  R9 12 14 647.308
+  214  R10 8 10 96.9231
+  215  R11 7 16 6.11371
+  216  R12 6 31 7.85253
+  217  R13 6 7 14.75
+  218  R14 4 8 5.58729
+  219  R15 4 5 28.4615
+  220  R16 3 5 5.58729
+  221  R17 2 16 4.63979
+  222  R18 2 3 273.846
+  223  .ENDS
+  224  
+  225  .SUBCKT PM_AND3_B 6 12 44
+  226  R0 42 44 0.454
+  227  R1 25 42 0.0477743
+  228  R2 24 33 0.68
+  229  R3 24 30 8.27089
+  230  R4 24 33 11.07
+  231  R5 24 25 0.68
+  232  R6 20 22 10.7692
+  233  R7 18 30 471.923
+  234  R8 16 24 8.27089
+  235  R9 16 17 58.0769
+  236  R10 14 18 5.58729
+  237  R11 14 15 20
+  238  R12 10 22 0.587288
+  239  R13 10 12 252.692
+  240  R14 8 17 5.58729
+  241  R15 8 9 19.6154
+  242  R16 4 15 5.58729
+  243  R17 4 6 166.923
+  244  R18 3 20 0.587288
+  245  R19 2 9 5.58729
+  246  R20 2 3 48.4615
+  247  .ENDS
+  248  
+  249  .SUBCKT PM_AND3_5 1 3 60 64
+  250  R0 102 103 0.748
+  251  R1 100 103 0.0446983
+  252  R2 100 106 0.962
+  253  R3 74 102 0.0477743
+  254  R4 67 90 0.68
+  255  R5 67 81 2
+  256  R6 67 90 11.07
+  257  R7 67 74 0.68
+  258  R8 66 70 11.07
+  259  R9 66 70 0.68
+  260  R10 62 81 4.20996
+  261  R11 62 64 647.308
+  262  R12 58 60 96.9231
+  263  R13 57 66 6.11371
+  264  R14 56 81 7.85253
+  265  R15 56 57 14.75
+  266  R16 54 58 5.58729
+  267  R17 54 55 28.4615
+  268  R18 53 55 5.58729
+  269  R19 52 66 4.63979
+  270  R20 52 53 273.846
+  271  R21 32 106 0.0477743
+  272  R22 28 30 0.11
+  273  R23 24 26 0.1325
+  274  R24 19 22 0.0517569
+  275  R25 17 30 0.0046983
+  276  R26 16 45 0.0559551
+  277  R27 16 17 0.7025
+  278  R28 15 45 0.0559551
+  279  R29 14 26 0.0046983
+  280  R30 14 15 4.6675
+  281  R31 12 28 0.0046983
+  282  R32 12 23 0.3225
+  283  R33 11 24 0.0046983
+  284  R34 11 22 0.3
+  285  R35 5 23 0.0517569
+  286  R36 5 7 0.209231
+  287  R37 4 45 0.68
+  288  R38 4 32 0.68
+  289  R39 4 19 15.61
+  290  R40 4 7 3.8825
+  291  R41 3 4 0.921778
+  292  R42 1 4 1.89833
+  293  .ENDS
+  294  
+  295  .SUBCKT PM_AND3_C 6 12 44
+  296  R0 42 44 1.366
+  297  R1 25 42 0.0477743
+  298  R2 24 33 0.68
+  299  R3 24 30 8.27089
+  300  R4 24 33 11.07
+  301  R5 24 25 0.68
+  302  R6 20 22 10.7692
+  303  R7 18 30 471.923
+  304  R8 16 24 8.27089
+  305  R9 16 17 58.0769
+  306  R10 14 18 5.58729
+  307  R11 14 15 20
+  308  R12 10 22 0.587288
+  309  R13 10 12 252.692
+  310  R14 8 17 5.58729
+  311  R15 8 9 19.6154
+  312  R16 4 15 5.58729
+  313  R17 4 6 166.923
+  314  R18 3 20 0.587288
+  315  R19 2 9 5.58729
+  316  R20 2 3 48.4615
+  317  .ENDS
+  318  
+  319  .SUBCKT PM_AND3_Y 1 3 54
+  320  R0 52 54 0.616
+  321  R1 32 52 0.0477743
+  322  R2 28 30 0.11
+  323  R3 24 26 0.1325
+  324  R4 19 22 0.0517569
+  325  R5 17 30 0.0046983
+  326  R6 16 45 0.0559551
+  327  R7 16 17 0.7025
+  328  R8 15 45 0.0559551
+  329  R9 14 26 0.0046983
+  330  R10 14 15 4.6675
+  331  R11 12 28 0.0046983
+  332  R12 12 23 0.3225
+  333  R13 11 24 0.0046983
+  334  R14 11 22 0.3
+  335  R15 5 23 0.0517569
+  336  R16 5 7 0.209231
+  337  R17 4 45 0.68
+  338  R18 4 32 0.68
+  339  R19 4 19 15.61
+  340  R20 4 7 3.8825
+  341  R21 3 4 0.921778
+  342  R22 1 4 1.89833
+  343  .ENDS
+  344  
+   17  
+   18  * 
+   19  * Y	Y
+   20  * C	C
+   21  * B	B
+   22  * A	A
+   23  * GROUND	GROUND
+   24  * VDD	VDD
+   25  MX0_M0 X0_7 N_A_X0_M0_G N_X0_6_X0_M0_S N_GROUND_X0_M0_B NMOS L=1.3E-07 W=1.2E-06
+   26  MX0_M1 N_GROUND_X0_M1_D N_B_X0_M1_G X0_7 N_GROUND_X0_M0_B NMOS L=1.3E-07
+   27  + W=1.2E-06
+   28  MX0_M2 N_5_X0_M2_D N_X0_6_X0_M2_G N_GROUND_X0_M1_D N_GROUND_X0_M0_B NMOS
+   29  + L=1.3E-07 W=6E-07
+   30  MX0_M3 N_X0_6_X0_M3_D N_A_X0_M3_G N_VDD_X0_M3_S N_VDD_X0_M3_B PMOS L=1.3E-07
+   31  + W=1.35E-06
+   32  MX0_M4 N_VDD_X0_M4_D N_B_X0_M4_G N_X0_6_X0_M3_D N_VDD_X0_M3_B PMOS L=1.3E-07
+   33  + W=1.35E-06
+   34  MX0_M5 N_5_X0_M5_D N_X0_6_X0_M5_G N_VDD_X0_M4_D N_VDD_X0_M3_B PMOS L=1.3E-07
+   35  + W=1.35E-06
+   36  MX1_M0 X1_7 N_5_X1_M0_G N_X1_6_X1_M0_S N_GROUND_X0_M0_B NMOS L=1.3E-07 W=1.2E-06
+   37  MX1_M1 N_GROUND_X1_M1_D N_C_X1_M1_G X1_7 N_GROUND_X0_M0_B NMOS L=1.3E-07
+   38  + W=1.2E-06
+   39  MX1_M2 N_Y_X1_M2_D N_X1_6_X1_M2_G N_GROUND_X1_M1_D N_GROUND_X0_M0_B NMOS
+   40  + L=1.3E-07 W=6E-07
+   41  MX1_M3 N_X1_6_X1_M3_D N_5_X1_M3_G N_VDD_X1_M3_S N_VDD_X0_M3_B PMOS L=1.3E-07
+   42  + W=1.35E-06
+   43  MX1_M4 N_VDD_X1_M4_D N_C_X1_M4_G N_X1_6_X1_M3_D N_VDD_X0_M3_B PMOS L=1.3E-07
+   44  + W=1.35E-06
+   45  MX1_M5 N_Y_X1_M5_D N_X1_6_X1_M5_G N_VDD_X1_M4_D N_VDD_X0_M3_B PMOS L=1.3E-07
+   46  + W=1.35E-06
+   47  *
+   48  ** including /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/and3/and3.cal/and3.pex.netlist.AND3.pxi
+    1  * File: and3.pex.netlist.AND3.pxi
+    2  * Created: Mon Apr 15 16:27:06 2019
+    3  * 
+    4  X_PM_AND3_X0_6 N_X0_6_X0_M2_G N_X0_6_X0_M5_G N_X0_6_X0_M0_S N_X0_6_X0_M3_D
+    5  + PM_AND3_X0_6
+    6  X_PM_AND3_X1_6 N_X1_6_X1_M2_G N_X1_6_X1_M5_G N_X1_6_X1_M0_S N_X1_6_X1_M3_D
+    7  + PM_AND3_X1_6
+    8  X_PM_AND3_VDD N_VDD_X0_M3_S N_VDD_X0_M4_D N_VDD_X0_M3_B N_VDD_X1_M3_S
+    9  + N_VDD_X1_M4_D VDD PM_AND3_VDD
+   10  X_PM_AND3_GROUND N_GROUND_X0_M1_D N_GROUND_X0_M0_B N_GROUND_X1_M1_D GROUND
+   11  + PM_AND3_GROUND
+   12  X_PM_AND3_A N_A_X0_M3_G N_A_X0_M0_G A PM_AND3_A
+   13  X_PM_AND3_B N_B_X0_M1_G N_B_X0_M4_G B PM_AND3_B
+   14  X_PM_AND3_5 N_5_X0_M2_D N_5_X0_M5_D N_5_X1_M3_G N_5_X1_M0_G PM_AND3_5
+   15  X_PM_AND3_C N_C_X1_M1_G N_C_X1_M4_G C PM_AND3_C
+   16  X_PM_AND3_Y N_Y_X1_M2_D N_Y_X1_M5_D Y PM_AND3_Y
+   48  
+   49  *
+   50  *End
+   51  *
+   52  *
+    5  
+    6  .END
+
+End of file 
+
+
+***** 0  error(s). 
+***** 0  warning(s). 
+
+
+***** GENERATION ...
+
+Warning 1615: In file "./and3.cal/and3.cir" line 3:
++   COMMAND ".TRAN": TPRINT can not be <= 0.0.
++   It is set to TSTOP/20.0 = 5.000e-11 s.
+Warning 400:  In file "./and3.cal/and3.cir" line 3:
++   .TRAN: TSTART > TSTOP: TSTART set to 0
+Warning 107:   NODE "VSS": Less than two connections.
+Warning 107:   NODE "A": Less than two connections.
+Warning 107:   NODE "B": Less than two connections.
+Warning  29:  Such messages will not be displayed in future. Set .option MSGNODE = 0 to receive all such warnings.
+
+Warning 107:   NODE "C": Less than two connections.
+Warning 107:   NODE "Y": Less than two connections.
+
+***** 0  error(s). 
+***** 8  warning(s). 
+
+
+INFORMATION ABOUT COMPILATION 
+
+
+Memory space allocated (MB):    463
+324 elements
+294 nodes 
+2 input signals
+Detail about objects and nodes found in the design, and simulated by Eldo:
+Number of nodes                     294
+Number of intrinsic nodes           0
+Number of input signals             2
+Number of resistors                 310
+Number of floating capacitors       0
+Number of grounded capacitors       0
+Number of inductors                 0
+Number of voltage sources           2
+Number of current sources           0
+Number of dependent sources         0
+Number of diodes                    0
+Number of BJT                       0
+Number of JFET                      0
+Number of MOS                       12
+Number of SWITCHES                  0
+Number of transmission lines        0
+Total number of elements simulated  324
+Warning 117:   NODE "VSS": Not connected to any power supply.
+Warning 108:   NODE "N_A_X0_M0_G": This node is a floating gate.
++   List of MOS devices connected to that node follows:
++   --> MX0_M0
+
+Warning 108:   NODE "N_B_X0_M1_G": This node is a floating gate.
++   List of MOS devices connected to that node follows:
++   --> MX0_M1
+
+Warning 108:   NODE "N_A_X0_M3_G": This node is a floating gate.
++   List of MOS devices connected to that node follows:
++   --> MX0_M3
+
+Warning  29:   Such messages will not be displayed in future. Set .option MSGNODE = 0 to receive all such warnings.
+
+
+EldoHDL VERSION : ELDO 12.1 patch1 (64 bits) Thu Sep  6 14:32:26 GMT 2012
+
+*** DATE: 15-Apr-2019 16:28:59
+
+*** TITLE: *  Top-Level Spice netlist and3.pex.netlist for AMS-Sim
+
+TEMPERATURE : 27.000000 degrees C
+
+1***************15-Apr-2019 ***********************  ELDO 12.1 patch1 (64 bits)  (v7.7_1.1)  ***********************16:28:59*****************
+
+0*  Top-Level Spice netlist and3.pex.netl
+0****                 MODELS PARAMETERS                                    TEMPERATURE =   27.000 DEG C
+
+0*************************************************************************************************************************
+
+
+
+ DEVICE          MOS
+ MODEL: NMOS.9
+ TYPE            N
+ LEVEL 53 : Bsim3v3 version 3.2.2
+ LIBRARY : /home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/models/lib.eldo
+ CORNER  : TT
+
+  names    values    units     names    values    units     names    values    units   
+  -----    ------    -----     -----    ------    -----     -----    ------    -----   
+VER     = 3.2000E+00 -       MOBMOD  = 1          -       CAPMOD  = 3          -      
+VFBFLAG = 0          -       NQSMOD  = 0          -       NOIMOD  = 1          -      
+DERIV   = 1          -       BINFLAG = 0          -       PARAMCHK= 0          -      
+IIMOD   = 0          -       FNLEV   = 0          -       
+
+ * Threshold voltage related model parameters *
+   ------------------------------------------  
+VTH0    = 3.9889E-01 V       DELVTO  = 0.0        V       K1      = 5.0257E-01 V^1/2  
+K2      =-1.0000E-02 -       NCH     = 6.1482E+17 At/cm^3 K3      = 0.0        -      
+K3B     = 0.0        1/V     DVT0    = 0.0        -       DVT1    = 0.0        -      
+DVT2    = 0.0        1/V     DVT0W   = 0.0        -       DVT1W   = 0.0        1/m    
+DVT2W   = 0.0        1/V     DSUB    = 0.0        -       ETA0    = 2.0299E-03 -      
+ETAB    =-2.1628E-03 1/V     
+
+ * Subthreshold related parameters *
+   -------------------------------  
+NFACTOR = 1.1093E+00 -       CDSC    = 0.0        F/m^2   CDSCB   = 0.0        F/Vm^2 
+CDSCD   = 0.0        F/Vm^2  VOFF    =-1.0925E-01 V       CIT     = 0.0        F/m^2  
+
+ * Mobility related model parameters *
+   ---------------------------------  
+UA      = 5.4337E-10 m/V     UB      = 2.8927E-18 (m/V)^2 UC      = 3.3992E-10 m/V^2  
+U0      = 5.2891E-02 unit1   MULUO   = 1.0000E+00 -       
+
+ * Saturation related parameters *
+   -----------------------------  
+PCLM    =-1.1472E-01 -       KETA    =-1.0000E-03 1/V     DELTA   = 1.0000E-02 V      
+A0      = 1.2000E+00 -       A1      = 0.0        1/V     A2      = 9.9000E-01 -      
+B0      = 0.0        m       B1      = 0.0        m       PVAG    = 0.0        -      
+PDIBLC1 = 0.0        -       PDIBLC2 =-5.3869E-03 -       PDIBLCB = 0.0        1/V    
+DROUT   = 0.0        -       VSAT    = 8.8318E+04 m/s     PSCBE1  = 1.8000E+08 V/m    
+PSCBE2  = 5.0000E-08 m/V     PRWB    = 0.0        V^-1/2  PRWG    = 0.0        1/V    
+RDSW    = 1.0290E+02 Ohm.um  AGS     = 1.3837E+00 1/V     
+
+ * Geometry modulation related parameters *
+   --------------------------------------  
+LREF    = 0.0        m       WREF    = 0.0        m       LINT    = 0.0        m      
+DLC     =-5.8000E-09 m       LL      = 0.0        m       LW      = 0.0        m      
+LWL     = 0.0        m       LLN     = 1.0000E+00 -       LWN     = 1.0000E+00 -      
+WINT    = 1.2500E-08 m       DWC     = 1.2500E-08 m       WL      = 0.0        m      
+WW      = 0.0        m       WWL     = 0.0        m       WLN     = 1.0000E+00 -      
+WWN     = 1.0000E+00 -       WR      = 1.0000E+00 -       W0      = 0.0        m      
+DWG     = 0.0        m/V     DWB     = 0.0        m/V^1/2 
+
+ * Temperature effect parameters *
+   -----------------------------  
+UPDATEPHI= 0          -       AT      = 3.5000E+04 m/sec   UTE     =-1.4288E+00 -      
+KT1     =-2.1493E-01 V       KT2     =-2.0000E-02 -       KT1L    = 0.0        mV     
+UA1     = 4.1837E-09 m/V     UB1     =-5.2453E-18 (m/V)^2 UC1     =-2.8889E-10 m/V^2  
+PRT     = 0.0        Ohm.um  
+
+ * Overlap capacitance related and dynamic model parameters *
+   --------------------------------------------------------  
+XPART   = 1.0000E+00 -       CLC     = 1.0000E-07 m       CLE     = 6.0000E-01 -      
+CGDO    = 3.8500E-10 F/m     CGDL    = 0.0        F/m     CGSO    = 3.8500E-10 F/m    
+CGSL    = 0.0        F/m     CGBO    = 0.0        F/m     CKAPPA  = 6.0000E-01 V      
+CF      = 0.0        F/m     ELM     = 5.0000E+00 -       VFBCV   =-1.0000E+00 -      
+
+ * Substrate current related model parameters *
+   ----------------------------------------------
+ALPHA0  = 0.0        m/V     BETA0   = 6.4150E+00 V       
+
+ * Process and parameters extraction related model parameters *
+   ----------------------------------------------------------  
+TOX     = 2.8100E-09 m       DTOXCV  = 0.0        m       NGATE   = 0.0        At/cm^3
+NLX     = 0.0        m       XL      =-2.0000E-08 m       XW      = 1.5000E-08 m      
+ND      = 1.0000E+20 At/cm^3 
+
+ * Noise effect related model parameters *
+   -------------------------------------  
+THMLEV  = 1          -       FLKLEV  = 1          -       AF      = 8.6800E-01 -      
+KF      = 1.1300E-24 -       EF      = 1.0000E+00 -       NSTAR   = 2.0000E+14 -      
+FLKFLAG = 0.0        -       NOIFLAG = 0.0        -       NOIA    = 1.0000E+20 unit2  
+NOIB    = 5.0000E+04 1/V     NOIC    =-1.4000E-12 unit3   EM      = 4.1000E+07 V/m    
+
+ * Sidewall parasitic capacitances at gate side *
+   --------------------------------------------  
+MJSWG   = 4.0870E-01 -       PBSWG   = 7.9275E-01 V       CJSWG   = 5.0490E-10 F/m    
+
+ * BSIM3V3.2 Extra Model Parameters *
+   --------------------------------  
+VFB     =-9.0609E-01 V       NOFF    = 1.0000E+00 -       VOFFCV  = 0.0        -      
+ALPHA1  = 9.1790E-03 1/V     ACDE    = 1.0000E+00 m/V     MOIN    = 1.5000E+01 V^1/2  
+TOXM    = 2.8100E-09 m       IJTH    = 1.0000E-02 A       TPBSWG  = 1.4270E-03 V/K    
+TCJSWG  = 2.7810E-04 1/K     LLC     = 0.0        m^LLN   LWC     = 0.0        m^LWN  
+LWLC    = 0.0        unit4   WLC     = 0.0        m^WLN   WWC     = 0.0        m^WWN  
+WWLC    = 0.0        unit5   WPEMOD  = 0.0        -       SCREF   = 1.0000E-06 m      
+KVTH0WE = 0.0        V       K2WE    = 0.0        -       KU0WE   = 0.0        -      
+WEB     = 0.0        -       WEC     = 0.0        -       
+
+ * Binning Parameters *
+   -------------------  
+BINUNIT = 2.0000E+00 -       
+* Display only non null Binning Parameters *
+LK1     =-3.3381E-09 -       WK1     =-4.7681E-08 -       PK1     = 2.9343E-15 -      
+LU0     = 1.2586E-11 -       WU0     =-1.7011E-09 -       PU0     = 1.9562E-16 -      
+LUA     =-1.5374E-18 -       WUA     = 2.0413E-16 -       PUA     =-2.3475E-23 -      
+LUB     =-2.4659E-25 -       WUB     =-1.1257E-24 -       PUB     = 1.0906E-31 -      
+LUC     =-1.8149E-17 -       WUC     =-9.5362E-17 -       PUC     = 5.8687E-24 -      
+LVSAT   = 3.2099E-04 -       WVSAT   = 5.9150E-03 -       PVSAT   =-4.8905E-10 -      
+LAGS    =-4.4128E-08 -       LVOFF   =-3.7865E-09 -       WVOFF   = 7.7320E-10 -      
+PVOFF   =-3.9124E-15 -       LNFACTOR= 7.9430E-08 -       LETA0   = 2.6107E-10 -      
+WETA0   =-6.8042E-10 -       PETA0   = 7.8249E-17 -       LETAB   =-4.4128E-10 -      
+LPCLM   = 1.5203E-07 -       WPCLM   = 3.1495E-07 -       PPCLM   =-2.3475E-14 -      
+LPDIBLC2= 1.3785E-09 -       WPDIBLC2= 6.8042E-09 -       PPDIBLC2=-7.8249E-16 -      
+LUTE    =-8.1850E-09 -       WUTE    =-8.5053E-08 -       PUTE    = 9.7811E-15 -      
+LKT1    = 5.1672E-09 -       WKT1    = 1.7011E-08 -       PKT1    =-1.9562E-15 -      
+LUA1    =-3.7680E-16 -       WUA1    =-1.4201E-15 -       PUA1    = 1.7606E-22 -      
+LUB1    = 3.6171E-25 -       WUB1    = 1.1907E-24 -       PUB1    =-1.3694E-31 -      
+LUC1    = 9.4170E-18 -       WUC1    =-8.5563E-17 -       PUC1    = 9.8398E-24 -      
+LVTH0   = 6.8612E-09 -       WVTH0   =-4.2578E-08 -       PVTH0   = 2.3475E-15 -      
+   ------------------------------------------------------------------------  
+
+ *** Common extrinsic model parameters ***
+OPTACM  = 1          -       GDSNOI  = 1.0000E+00 -       ACM     = 12         -      
+CALCACM = 1          -       ALEV    = 2          -       RLEV    = 2          -      
+ * Access resistances related parameters *
+RD      = 0.0        Ohm     RS      = 0.0        Ohm     RSH     = 6.6000E+00 Ohm/Sq.
+RDC     = 0.0        Ohm     RSC     = 0.0        Ohm     
+ * Geometry related parameters *
+LD      = 0.0        m       WD      = 1.2500E-08 m       DL      = 0.0        m      
+DW      = 0.0        m       LDIF    = 8.0000E-08 m       HDIF    = 1.3500E-07 m      
+WMLT    = 1.0000E+00 -       LMLT    = 1.0000E+00 -       DEL     = 0.0        m      
+XJ      = 1.9000E-07 m       
+ * Static bulk-diode related parameters *
+DIOLEV  = 7          -       JS      = 1.3910E-05 A/m^2   JSW     = 2.1561E-10 A/m    
+IS      = 1.3910E-14 A       NJ      = 1.0000E+00 -       NDS     = 1.0000E+00 -      
+VNDS    =-1.0000E+00 V       VDLIN   = 5.0000E-01 -       
+ * Dynamic bulk-diode related parameters *
+DCAPLEV = 4          -       CJGATE  = 0.0                CBD     = 0.0        F      
+CBS     = 0.0        F       CJ      = 1.3785E-03 F/m^2   CJSW    = 2.0611E-10 F/m    
+FC      = 0.0        -       MJ      = 4.5280E-01 -       MJSW    = 2.3230E-01 -      
+TT      = 0.0        s       PB      = 7.9275E-01 V       PBSW    = 7.9275E-01 V      
+ * Temperature related Parameters 
+EG      = 1.1100E+00 eV      GAP1    = 7.0200E-04 eV/degK GAP2    = 1.1080E+03 degK   
+TNOM    = 2.5000E+01 degC    TLEV    = 1          -       TLEVC   = 1          -      
+TCJ     = 9.0670E-04 1/degK  TCJSW   = 2.7810E-04 1/degK  TPB     = 1.4270E-03 V/degK 
+TPBSW   = 1.4270E-03 V/degK  TLEVI   = 3          -       XTI     = 3.0000E+00 -      
+ * Temperature Access Resistance related parameters * TLEVR = 1 
+TRD1    = 0.0        1/degK  TRS1    = 0.0        1/degK  TRSH1   = 0.0        1/degK 
+TRD2    = 0.0        unit6   TRS2    = 0.0        unit6   TRSH2   = 0.0        unit6  
+
+unit1 represents m^2/V/sec
+unit2 represents V^-1.m^-2
+unit3 represents V^-1.m^2
+unit4 represents m^LLN+LWN
+unit5 represents m^WLN+WWN
+unit6 represents 1/degK^2
+
+ DEVICE          MOS
+ MODEL: PMOS.6
+ TYPE            P
+ LEVEL 53 : Bsim3v3 version 3.2.2
+ LIBRARY : /home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/models/lib.eldo
+ CORNER  : TT
+
+  names    values    units     names    values    units     names    values    units   
+  -----    ------    -----     -----    ------    -----     -----    ------    -----   
+VER     = 3.2000E+00 -       MOBMOD  = 1          -       CAPMOD  = 3          -      
+VFBFLAG = 0          -       NQSMOD  = 0          -       NOIMOD  = 1          -      
+DERIV   = 1          -       BINFLAG = 0          -       PARAMCHK= 0          -      
+IIMOD   = 0          -       FNLEV   = 0          -       
+
+ * Threshold voltage related model parameters *
+   ------------------------------------------  
+VTH0    =-3.0976E-01 V       DELVTO  = 0.0        V       K1      = 4.3440E-01 V^1/2  
+K2      =-1.0000E-03 -       NCH     = 7.3000E+17 At/cm^3 K3      = 0.0        -      
+K3B     = 0.0        1/V     DVT0    = 0.0        -       DVT1    = 0.0        -      
+DVT2    = 0.0        1/V     DVT0W   = 0.0        -       DVT1W   = 0.0        1/m    
+DVT2W   = 0.0        1/V     DSUB    = 0.0        -       ETA0    = 8.4403E-04 -      
+ETAB    = 1.4601E-03 1/V     
+
+ * Subthreshold related parameters *
+   -------------------------------  
+NFACTOR = 8.0823E-01 -       CDSC    = 0.0        F/m^2   CDSCB   = 0.0        F/Vm^2 
+CDSCD   = 0.0        F/Vm^2  VOFF    =-1.1582E-01 V       CIT     = 0.0        F/m^2  
+
+ * Mobility related model parameters *
+   ---------------------------------  
+UA      = 1.9771E-09 m/V     UB      =-6.5065E-19 (m/V)^2 UC      =-1.7576E-10 m/V^2  
+U0      = 1.4191E-02 unit1   MULUO   = 1.0000E+00 -       
+
+ * Saturation related parameters *
+   -----------------------------  
+PCLM    = 6.7143E-01 -       KETA    =-1.0000E-03 1/V     DELTA   = 5.0000E-03 V      
+A0      = 1.0000E+00 -       A1      = 0.0        1/V     A2      = 9.9000E-01 -      
+B0      = 0.0        m       B1      = 0.0        m       PVAG    = 0.0        -      
+PDIBLC1 = 0.0        -       PDIBLC2 =-3.1298E-04 -       PDIBLCB = 0.0        1/V    
+DROUT   = 0.0        -       VSAT    = 7.9541E+04 m/s     PSCBE1  = 4.2400E+08 V/m    
+PSCBE2  = 1.0000E-07 m/V     PRWB    = 0.0        V^-1/2  PRWG    = 0.0        1/V    
+RDSW    = 4.4500E+02 Ohm.um  AGS     = 4.0000E-01 1/V     
+
+ * Geometry modulation related parameters *
+   --------------------------------------  
+LREF    = 0.0        m       WREF    = 0.0        m       LINT    = 4.0000E-09 m      
+DLC     =-5.8000E-09 m       LL      = 0.0        m       LW      = 0.0        m      
+LWL     = 0.0        m       LLN     = 1.0000E+00 -       LWN     = 1.0000E+00 -      
+WINT    =-6.5000E-09 m       DWC     =-6.5000E-09 m       WL      = 0.0        m      
+WW      = 0.0        m       WWL     = 0.0        m       WLN     = 1.0000E+00 -      
+WWN     = 1.0000E+00 -       WR      = 1.0000E+00 -       W0      = 0.0        m      
+DWG     = 0.0        m/V     DWB     = 0.0        m/V^1/2 
+
+ * Temperature effect parameters *
+   -----------------------------  
+UPDATEPHI= 0          -       AT      = 3.7801E+04 m/sec   UTE     =-8.0000E-01 -      
+KT1     =-1.8872E-01 V       KT2     = 1.0000E-02 -       KT1L    = 0.0        mV     
+UA1     = 1.6918E-09 m/V     UB1     =-1.5500E-18 (m/V)^2 UC1     =-4.3303E-10 m/V^2  
+PRT     = 0.0        Ohm.um  
+
+ * Overlap capacitance related and dynamic model parameters *
+   --------------------------------------------------------  
+XPART   = 1.0000E+00 -       CLC     = 1.0000E-07 m       CLE     = 6.0000E-01 -      
+CGDO    = 2.7988E-10 F/m     CGDL    = 0.0        F/m     CGSO    = 2.7988E-10 F/m    
+CGSL    = 0.0        F/m     CGBO    = 0.0        F/m     CKAPPA  = 6.0000E-01 V      
+CF      = 0.0        F/m     ELM     = 5.0000E+00 -       VFBCV   =-1.0000E+00 -      
+
+ * Substrate current related model parameters *
+   ----------------------------------------------
+ALPHA0  = 0.0        m/V     BETA0   = 9.3510E+00 V       
+
+ * Process and parameters extraction related model parameters *
+   ----------------------------------------------------------  
+TOX     = 2.8500E-09 m       DTOXCV  = 0.0        m       NGATE   = 0.0        At/cm^3
+NLX     = 0.0        m       XL      =-2.0000E-08 m       XW      = 1.5000E-08 m      
+ND      = 1.0000E+20 At/cm^3 
+
+ * Noise effect related model parameters *
+   -------------------------------------  
+THMLEV  = 1          -       FLKLEV  = 1          -       AF      = 9.7000E-01 -      
+KF      = 3.0300E-24 -       EF      = 1.0000E+00 -       NSTAR   = 2.0000E+14 -      
+FLKFLAG = 0.0        -       NOIFLAG = 0.0        -       NOIA    = 9.9000E+18 unit2  
+NOIB    = 2.4000E+03 1/V     NOIC    = 1.4000E-12 unit3   EM      = 4.1000E+07 V/m    
+
+ * Sidewall parasitic capacitances at gate side *
+   --------------------------------------------  
+MJSWG   = 4.4130E-01 -       PBSWG   = 8.9671E-01 V       CJSWG   = 4.5339E-10 F/m    
+
+ * BSIM3V3.2 Extra Model Parameters *
+   --------------------------------  
+VFB     =-9.4155E-01 V       NOFF    = 1.0000E+00 -       VOFFCV  = 0.0        -      
+ALPHA1  = 1.4350E-03 1/V     ACDE    = 1.0000E+00 m/V     MOIN    = 1.5000E+01 V^1/2  
+TOXM    = 2.8500E-09 m       IJTH    = 1.0000E-02 A       TPBSWG  = 1.6430E-03 V/K    
+TCJSWG  = 2.9800E-04 1/K     LLC     = 0.0        m^LLN   LWC     = 0.0        m^LWN  
+LWLC    = 0.0        unit4   WLC     = 0.0        m^WLN   WWC     = 0.0        m^WWN  
+WWLC    = 0.0        unit5   WPEMOD  = 0.0        -       SCREF   = 1.0000E-06 m      
+KVTH0WE = 0.0        V       K2WE    = 0.0        -       KU0WE   = 0.0        -      
+WEB     = 0.0        -       WEC     = 0.0        -       
+
+ * Binning Parameters *
+   -------------------  
+BINUNIT = 2.0000E+00 -       
+* Display only non null Binning Parameters *
+LK1     = 5.1063E-09 -       WK1     = 1.9553E-08 -       PK1     =-6.2960E-15 -      
+LU0     =-1.7031E-11 -       WU0     =-2.4987E-09 -       PU0     = 1.7087E-16 -      
+LUA     =-3.3012E-17 -       WUA     = 2.2195E-16 -       PUA     =-2.6204E-23 -      
+LUB     =-4.2226E-26 -       WUB     =-6.4501E-26 -       PUB     = 5.2455E-32 -      
+LVSAT   = 1.4776E-04 -       WVSAT   =-4.7849E-05 -       PVSAT   = 1.5407E-11 -      
+LVOFF   =-3.9669E-09 -       WVOFF   = 3.3973E-09 -       PVOFF   =-6.4128E-16 -      
+LNFACTOR= 2.9551E-08 -       WNFACTOR=-9.5699E-09 -       PNFACTOR= 3.0815E-15 -      
+LETA0   = 5.3322E-10 -       WETA0   =-5.9681E-10 -       PETA0   = 1.9217E-16 -      
+LETAB   =-5.0237E-10 -       WETAB   = 1.6269E-10 -       WETAB   = 1.6269E-10 -      
+LPCLM   = 3.1738E-08 -       WPCLM   =-8.0966E-08 -       PPCLM   = 2.6071E-14 -      
+LPDIBLC2= 1.3298E-10 -       WPDIBLC2=-4.3064E-11 -       PPDIBLC2= 1.3867E-17 -      
+LKT1    =-3.1796E-09 -       WKT1    =-2.0097E-08 -       PKT1    = 1.9446E-15 -      
+LUA1    = 3.7410E-17 -       WUA1    = 6.5702E-16 -       PUA1    =-7.5765E-23 -      
+LUB1    =-8.5626E-26 -       WUB1    =-9.9952E-25 -       PUB1    = 5.0251E-32 -      
+LUC1    = 1.0531E-17 -       WUC1    = 2.1785E-16 -       PUC1    =-3.0313E-23 -      
+LAT     =-2.5118E-03 -       WAT     = 8.1344E-04 -       PAT     =-2.6193E-10 -      
+LVTH0   =-9.5589E-09 -       WVTH0   = 2.3531E-08 -       PVTH0   =-3.9558E-15 -      
+   ------------------------------------------------------------------------  
+
+ *** Common extrinsic model parameters ***
+OPTACM  = 1          -       GDSNOI  = 1.0000E+00 -       ACM     = 12         -      
+CALCACM = 1          -       ALEV    = 2          -       RLEV    = 2          -      
+ * Access resistances related parameters *
+RD      = 0.0        Ohm     RS      = 0.0        Ohm     RSH     = 7.2000E+00 Ohm/Sq.
+RDC     = 0.0        Ohm     RSC     = 0.0        Ohm     
+ * Geometry related parameters *
+LD      = 4.0000E-09 m       WD      =-6.5000E-09 m       DL      = 0.0        m      
+DW      = 0.0        m       LDIF    = 8.0000E-08 m       HDIF    = 1.3500E-07 m      
+WMLT    = 1.0000E+00 -       LMLT    = 1.0000E+00 -       DEL     = 0.0        m      
+XJ      = 2.1000E-07 m       
+ * Static bulk-diode related parameters *
+DIOLEV  = 7          -       JS      = 1.1128E-06 A/m^2   JSW     = 8.4225E-11 A/m    
+IS      = 1.3910E-14 A       NJ      = 1.0000E+00 -       NDS     = 1.0000E+00 -      
+VNDS    =-1.0000E+00 V       VDLIN   = 5.0000E-01 -       
+ * Dynamic bulk-diode related parameters *
+DCAPLEV = 4          -       CJGATE  = 0.0                CBD     = 0.0        F      
+CBS     = 0.0        F       CJ      = 1.3717E-03 F/m^2   CJSW    = 9.8058E-11 F/m    
+FC      = 0.0        -       MJ      = 4.2340E-01 -       MJSW    = 1.7160E-01 -      
+TT      = 0.0        s       PB      = 8.9671E-01 V       PBSW    = 8.9671E-01 V      
+ * Temperature related Parameters 
+EG      = 1.1100E+00 eV      GAP1    = 7.0200E-04 eV/degK GAP2    = 1.1080E+03 degK   
+TNOM    = 2.5000E+01 degC    TLEV    = 1          -       TLEVC   = 1          -      
+TCJ     = 8.8700E-04 1/degK  TCJSW   = 2.9800E-04 1/degK  TPB     = 1.6430E-03 V/degK 
+TPBSW   = 1.6430E-03 V/degK  TLEVI   = 3          -       XTI     = 3.0000E+00 -      
+ * Temperature Access Resistance related parameters * TLEVR = 1 
+TRD1    = 0.0        1/degK  TRS1    = 0.0        1/degK  TRSH1   = 0.0        1/degK 
+TRD2    = 0.0        unit6   TRS2    = 0.0        unit6   TRSH2   = 0.0        unit6  
+
+unit1 represents m^2/V/sec
+unit2 represents V^-1.m^-2
+unit3 represents V^-1.m^2
+unit4 represents m^LLN+LWN
+unit5 represents m^WLN+WWN
+unit6 represents 1/degK^2
+
+
+
+
+
+1***************15-Apr-2019 ***********************  ELDO 12.1 patch1 (64 bits)  (v7.7_1.1)  ***********************16:28:59*****************
+
+0*  Top-Level Spice netlist and3.pex.netlist for AMS-Sim
+0****                 OPTION SUMMARY                                        TEMPERATURE =   27.000 DEG C
+
+0*************************************************************************************************************************
+
+
+
+
+
+*** DC Control Options : 
+
+GMIN           = 1.00e-12 NMAXSIZE       = 60000    ITL1           = 100      
+GRAMP          = 0        NETSIZE        = 100      VMINDC         = UNDEF    
+VMAXDC         = UNDEF    
+
+*** Initial Accuracy Control Options (May be adjusted during simulation): 
+
+ITOL           = 1.00e-06 EPS            = 5.00e-03 VNTOL          = 1.00e-06 
+RELTOL         = 1.00e-03 RELERR         = 5.00e-02 PIVREL         = 1.00e-03 
+PIVTOL         = 1.00e-16 ABSTOL         = 1.00e-12 FLXTOL         = 1.00e-11 
+MAXORD         = 2.00e+00 
+
+*** Time-step Control Options : 
+
+ZOOMTIME       = 1.00e+00 STEP           = 0.00e+00 STARTSMP       = 0.00e+00 
+FREQSMP        = 0.00e+00 COURESOL       = 0.00e+00 TRTOL          = 7.00e+00 
+HMIN           = 1.00e-12 ITL3           = 3        ITL4           = 13       
+FT             = 1.25e-01 DCLOG          = 1.00e+00 LVLTIM         = 2        
+LVLCNV         = 2        DVDT           = -1       RELVAR         = 1.50e-01 
+ABSVAR         = 2.00e-01 SAMPLE         = 0.00e+00 HMAX           = UNDEF    
+
+
+*** MosFet default Options : 
+
+SCALE          = 1.00e+00 SCALM          = 1.00e+00 SCALEBSIM      = 1.00e+00 
+DEFAD          = UNDEF    DEFAS          = UNDEF    DEFPD          = UNDEF    
+DEFPS          = UNDEF    DEFW           = 1.00e-04 DEFL           = 1.00e-04 
+DEFNRD         = UNDEF    DEFNRS         = UNDEF    XA             = 6.00e-06 
+LIMRMOS        = UNDEF    SHRINK         = 1.00e+00 
+
+*** General Information Options : 
+
+CPTIME         = UNDEF    STAT           = 0        TIMEDIV        = 0        
+SIMUDIV        = 0        SAVETIME       = 0        MAXTRAN        = 1000     
+MAXNODES       = 10000    MAXV           = 1.00e+13 LIMPROBE       = 10000    
+FLICKER_NOISE  = 0        THERMAL_NOISE  = 0        TNOM           = 2.70e+01 
+TMAX           = UNDEF    
+SPICDC         = 0        SPIOUT         = 0        NEWTON         = 1        
+OSR            = 0        TRAP           = 1        GEAR           = 0        
+BE             = 0        PROBEOP        = 0        NOLAT          = 0        
+NWLAT          = 0        ANALOG         = 0        BBDEBUG        = 0        
+NOSIZECHK      = 0        QTRUNC         = 0        UNBOUND        = 0        
+LCAPOP         = 0        NOAEX          = 0        AEX            = 0        
+AEX            = 0        STVER          = 0        MOTOROLA       = 0        
+AMS            = 0        ASPEC          = 0        INPUT          = 0        
+NOINIT         = 0        PSF            = 0        NOBIN          = 0        
+NOCOU          = 1        WL             = 0        NODE           = 0        
+LIST           = 0        SPI3BIN        = 0        SPI3ASC        = 0        
+NOMOD          = 0        NOBIN          = 0        NOCOU          = 1        
+RMOS           = 0        NWRMOS         = 1        NONWRMOS       = 0        
+USEDEFAP       = 0        NOASCII        = 0        ASCII          = 1        
+MIXED          = 0        SWITCH         = 0        USERSWITCH     = 0        
+TIMING         = 0        MODWL          = 1        ULOGIC         = 0        
+
+
+
+    DC cpu Time 0s 020ms 
+DC:20 iterations FOR DC analysis
+
+
+
+
+1***************15-Apr-2019 ***********************  ELDO 12.1 patch1 (64 bits)  (v7.7_1.1)  ***********************16:28:59*****************
+
+0*  Top-Level Spice netlist and3.pex.netlist for AMS-Sim
+0****                 INITIAL TRANSIENT SOLUTION                           TEMPERATURE =   27.000 DEG C
+
+0*************************************************************************************************************************
+
+
+  NODE         VOLTAGE    
+ VDD       2.5000E+00
+ GROUND       0.0       
+ N_A_X0_M0_G       0.0       
+ N_B_X0_M1_G       0.0       
+ N_X0_6_X0_M2_G       2.5000E+00
+ N_A_X0_M3_G       0.0       
+ N_B_X0_M4_G       0.0       
+ N_X0_6_X0_M5_G       2.5000E+00
+ N_5_X1_M0_G       2.2735E-07
+ N_C_X1_M1_G       0.0       
+ N_X1_6_X1_M2_G       2.5000E+00
+ N_5_X1_M3_G       2.2735E-07
+ N_C_X1_M4_G       0.0       
+ N_X1_6_X1_M5_G       2.5000E+00
+ VSS       0.0       
+ X0_7       4.9579E-02
+ N_X0_6_X0_M0_S       2.5000E+00
+ N_GROUND_X0_M0_B       3.5332E-10
+ N_GROUND_X0_M1_D       3.5329E-09
+ N_5_X0_M2_D       2.2643E-07
+ N_X0_6_X0_M3_D       2.5000E+00
+ N_VDD_X0_M3_S       2.5000E+00
+ N_VDD_X0_M3_B       2.5000E+00
+ N_VDD_X0_M4_D       2.5000E+00
+ N_5_X0_M5_D       2.2780E-07
+ X1_7       4.9571E-02
+ N_X1_6_X1_M0_S       2.5000E+00
+ N_GROUND_X1_M1_D       3.5329E-09
+ N_Y_X1_M2_D       2.2643E-07
+ N_X1_6_X1_M3_D       2.5000E+00
+ N_VDD_X1_M3_S       2.5000E+00
+ N_VDD_X1_M4_D       2.5000E+00
+ N_Y_X1_M5_D       2.2780E-07
+ A       0.0       
+ B       0.0       
+ C       0.0       
+ Y       2.2735E-07
+ X_PM_AND3_X0_6.78       2.5000E+00
+ X_PM_AND3_X0_6.121       2.5000E+00
+ X_PM_AND3_X0_6.69       2.5000E+00
+ X_PM_AND3_X0_6.70       2.5000E+00
+ X_PM_AND3_X0_6.67       2.5000E+00
+ X_PM_AND3_X0_6.68       2.5000E+00
+ X_PM_AND3_X0_6.61       2.5000E+00
+ X_PM_AND3_X0_6.63       2.5000E+00
+ X_PM_AND3_X0_6.56       2.5000E+00
+ X_PM_AND3_X0_6.66       2.5000E+00
+ X_PM_AND3_X0_6.58       2.5000E+00
+ X_PM_AND3_X0_6.54       2.5000E+00
+ X_PM_AND3_X0_6.65       2.5000E+00
+ X_PM_AND3_X0_6.52       2.5000E+00
+ X_PM_AND3_X0_6.53       2.5000E+00
+ X_PM_AND3_X0_6.50       2.5000E+00
+ X_PM_AND3_X0_6.51       2.5000E+00
+ X_PM_AND3_X0_6.48       2.5000E+00
+ X_PM_AND3_X0_6.49       2.5000E+00
+ X_PM_AND3_X0_6.43       2.5000E+00
+ X_PM_AND3_X0_6.45       2.5000E+00
+ X_PM_AND3_X0_6.42       2.5000E+00
+ X_PM_AND3_X0_6.41       2.5000E+00
+ X_PM_AND3_X0_6.40       2.5000E+00
+ X_PM_AND3_X0_6.39       2.5000E+00
+ X_PM_AND3_X0_6.37       2.5000E+00
+ X_PM_AND3_X0_6.38       2.5000E+00
+ X_PM_AND3_X0_6.36       2.5000E+00
+ X_PM_AND3_X0_6.73       2.5000E+00
+ X_PM_AND3_X0_6.35       2.5000E+00
+ X_PM_AND3_X0_6.34       2.5000E+00
+ X_PM_AND3_X0_6.88       2.5000E+00
+ X_PM_AND3_X0_6.33       2.5000E+00
+ X_PM_AND3_X0_6.83       2.5000E+00
+ X_PM_AND3_X0_6.32       2.5000E+00
+ X_PM_AND3_X0_6.31       2.5000E+00
+ X_PM_AND3_X0_6.24       2.5000E+00
+ X_PM_AND3_X0_6.26       2.5000E+00
+ X_PM_AND3_X0_6.20       2.5000E+00
+ X_PM_AND3_X0_6.22       2.5000E+00
+ X_PM_AND3_X0_6.18       2.5000E+00
+ X_PM_AND3_X0_6.19       2.5000E+00
+ X_PM_AND3_X0_6.17       2.5000E+00
+ X_PM_AND3_X0_6.16       2.5000E+00
+ X_PM_AND3_X0_6.15       2.5000E+00
+ X_PM_AND3_X0_6.14       2.5000E+00
+ X_PM_AND3_X0_6.13       2.5000E+00
+ X_PM_AND3_X0_6.12       2.5000E+00
+ X_PM_AND3_X0_6.8       2.5000E+00
+ X_PM_AND3_X0_6.4       2.5000E+00
+ X_PM_AND3_X0_6.3       2.5000E+00
+ X_PM_AND3_X0_6.2       2.5000E+00
+ X_PM_AND3_X1_6.78       2.5000E+00
+ X_PM_AND3_X1_6.121       2.5000E+00
+ X_PM_AND3_X1_6.69       2.5000E+00
+ X_PM_AND3_X1_6.70       2.5000E+00
+ X_PM_AND3_X1_6.67       2.5000E+00
+ X_PM_AND3_X1_6.68       2.5000E+00
+ X_PM_AND3_X1_6.61       2.5000E+00
+ X_PM_AND3_X1_6.63       2.5000E+00
+ X_PM_AND3_X1_6.56       2.5000E+00
+ X_PM_AND3_X1_6.66       2.5000E+00
+ X_PM_AND3_X1_6.58       2.5000E+00
+ X_PM_AND3_X1_6.54       2.5000E+00
+ X_PM_AND3_X1_6.65       2.5000E+00
+ X_PM_AND3_X1_6.52       2.5000E+00
+ X_PM_AND3_X1_6.53       2.5000E+00
+ X_PM_AND3_X1_6.50       2.5000E+00
+ X_PM_AND3_X1_6.51       2.5000E+00
+ X_PM_AND3_X1_6.48       2.5000E+00
+ X_PM_AND3_X1_6.49       2.5000E+00
+ X_PM_AND3_X1_6.43       2.5000E+00
+ X_PM_AND3_X1_6.45       2.5000E+00
+ X_PM_AND3_X1_6.42       2.5000E+00
+ X_PM_AND3_X1_6.41       2.5000E+00
+ X_PM_AND3_X1_6.40       2.5000E+00
+ X_PM_AND3_X1_6.39       2.5000E+00
+ X_PM_AND3_X1_6.37       2.5000E+00
+ X_PM_AND3_X1_6.38       2.5000E+00
+ X_PM_AND3_X1_6.36       2.5000E+00
+ X_PM_AND3_X1_6.73       2.5000E+00
+ X_PM_AND3_X1_6.35       2.5000E+00
+ X_PM_AND3_X1_6.34       2.5000E+00
+ X_PM_AND3_X1_6.88       2.5000E+00
+ X_PM_AND3_X1_6.33       2.5000E+00
+ X_PM_AND3_X1_6.83       2.5000E+00
+ X_PM_AND3_X1_6.32       2.5000E+00
+ X_PM_AND3_X1_6.31       2.5000E+00
+ X_PM_AND3_X1_6.24       2.5000E+00
+ X_PM_AND3_X1_6.26       2.5000E+00
+ X_PM_AND3_X1_6.20       2.5000E+00
+ X_PM_AND3_X1_6.22       2.5000E+00
+ X_PM_AND3_X1_6.18       2.5000E+00
+ X_PM_AND3_X1_6.19       2.5000E+00
+ X_PM_AND3_X1_6.17       2.5000E+00
+ X_PM_AND3_X1_6.16       2.5000E+00
+ X_PM_AND3_X1_6.15       2.5000E+00
+ X_PM_AND3_X1_6.14       2.5000E+00
+ X_PM_AND3_X1_6.13       2.5000E+00
+ X_PM_AND3_X1_6.12       2.5000E+00
+ X_PM_AND3_X1_6.8       2.5000E+00
+ X_PM_AND3_X1_6.4       2.5000E+00
+ X_PM_AND3_X1_6.3       2.5000E+00
+ X_PM_AND3_X1_6.2       2.5000E+00
+ X_PM_AND3_VDD.101       2.5000E+00
+ X_PM_AND3_VDD.110       2.5000E+00
+ X_PM_AND3_VDD.100       2.5000E+00
+ X_PM_AND3_VDD.108       2.5000E+00
+ X_PM_AND3_VDD.97       2.5000E+00
+ X_PM_AND3_VDD.107       2.5000E+00
+ X_PM_AND3_VDD.96       2.5000E+00
+ X_PM_AND3_VDD.95       2.5000E+00
+ X_PM_AND3_VDD.94       2.5000E+00
+ X_PM_AND3_VDD.104       2.5000E+00
+ X_PM_AND3_VDD.57       2.5000E+00
+ X_PM_AND3_VDD.56       2.5000E+00
+ X_PM_AND3_VDD.54       2.5000E+00
+ X_PM_AND3_VDD.48       2.5000E+00
+ X_PM_AND3_VDD.50       2.5000E+00
+ X_PM_AND3_VDD.42       2.5000E+00
+ X_PM_AND3_VDD.44       2.5000E+00
+ X_PM_AND3_VDD.41       2.5000E+00
+ X_PM_AND3_VDD.59       2.5000E+00
+ X_PM_AND3_VDD.24       2.5000E+00
+ X_PM_AND3_VDD.22       2.5000E+00
+ X_PM_AND3_VDD.21       2.5000E+00
+ X_PM_AND3_VDD.19       2.5000E+00
+ X_PM_AND3_VDD.15       2.5000E+00
+ X_PM_AND3_VDD.13       2.5000E+00
+ X_PM_AND3_VDD.9       2.5000E+00
+ X_PM_AND3_VDD.7       2.5000E+00
+ X_PM_AND3_GROUND.75       8.2128E-11
+ X_PM_AND3_GROUND.79       7.9325E-11
+ X_PM_AND3_GROUND.71       7.0275E-11
+ X_PM_AND3_GROUND.78       7.3388E-11
+ X_PM_AND3_GROUND.70       7.9144E-11
+ X_PM_AND3_GROUND.69       7.6259E-11
+ X_PM_AND3_GROUND.67       7.6316E-11
+ X_PM_AND3_GROUND.39       6.8158E-10
+ X_PM_AND3_GROUND.42       4.8397E-10
+ X_PM_AND3_GROUND.37       9.3370E-11
+ X_PM_AND3_GROUND.32       9.5608E-11
+ X_PM_AND3_GROUND.34       1.0013E-10
+ X_PM_AND3_GROUND.29       7.8994E-11
+ X_PM_AND3_GROUND.16       6.8158E-10
+ X_PM_AND3_GROUND.19       4.8397E-10
+ X_PM_AND3_GROUND.14       8.7773E-11
+ X_PM_AND3_GROUND.9       9.0065E-11
+ X_PM_AND3_GROUND.11       9.4697E-11
+ X_PM_AND3_GROUND.6       7.8736E-11
+ X_PM_AND3_GROUND.5       3.2512E-10
+ X_PM_AND3_A.49       0.0       
+ X_PM_AND3_A.24       0.0       
+ X_PM_AND3_A.17       0.0       
+ X_PM_AND3_A.40       0.0       
+ X_PM_AND3_A.31       0.0       
+ X_PM_AND3_A.16       0.0       
+ X_PM_AND3_A.20       0.0       
+ X_PM_AND3_A.12       0.0       
+ X_PM_AND3_A.8       0.0       
+ X_PM_AND3_A.7       0.0       
+ X_PM_AND3_A.6       0.0       
+ X_PM_AND3_A.4       0.0       
+ X_PM_AND3_A.5       0.0       
+ X_PM_AND3_A.3       0.0       
+ X_PM_AND3_A.2       0.0       
+ X_PM_AND3_B.42       0.0       
+ X_PM_AND3_B.25       0.0       
+ X_PM_AND3_B.24       0.0       
+ X_PM_AND3_B.33       0.0       
+ X_PM_AND3_B.30       0.0       
+ X_PM_AND3_B.20       0.0       
+ X_PM_AND3_B.22       0.0       
+ X_PM_AND3_B.18       0.0       
+ X_PM_AND3_B.16       0.0       
+ X_PM_AND3_B.17       0.0       
+ X_PM_AND3_B.14       0.0       
+ X_PM_AND3_B.15       0.0       
+ X_PM_AND3_B.10       0.0       
+ X_PM_AND3_B.8       0.0       
+ X_PM_AND3_B.9       0.0       
+ X_PM_AND3_B.4       0.0       
+ X_PM_AND3_B.3       0.0       
+ X_PM_AND3_B.2       0.0       
+ X_PM_AND3_5.102       2.2735E-07
+ X_PM_AND3_5.103       2.2735E-07
+ X_PM_AND3_5.100       2.2735E-07
+ X_PM_AND3_5.106       2.2735E-07
+ X_PM_AND3_5.74       2.2735E-07
+ X_PM_AND3_5.67       2.2735E-07
+ X_PM_AND3_5.90       2.2735E-07
+ X_PM_AND3_5.81       2.2735E-07
+ X_PM_AND3_5.66       2.2735E-07
+ X_PM_AND3_5.70       2.2735E-07
+ X_PM_AND3_5.62       2.2735E-07
+ X_PM_AND3_5.58       2.2735E-07
+ X_PM_AND3_5.57       2.2735E-07
+ X_PM_AND3_5.56       2.2735E-07
+ X_PM_AND3_5.54       2.2735E-07
+ X_PM_AND3_5.55       2.2735E-07
+ X_PM_AND3_5.53       2.2735E-07
+ X_PM_AND3_5.52       2.2735E-07
+ X_PM_AND3_5.32       2.2735E-07
+ X_PM_AND3_5.28       2.2735E-07
+ X_PM_AND3_5.30       2.2735E-07
+ X_PM_AND3_5.24       2.2735E-07
+ X_PM_AND3_5.26       2.2735E-07
+ X_PM_AND3_5.19       2.2735E-07
+ X_PM_AND3_5.22       2.2735E-07
+ X_PM_AND3_5.17       2.2735E-07
+ X_PM_AND3_5.16       2.2735E-07
+ X_PM_AND3_5.45       2.2735E-07
+ X_PM_AND3_5.15       2.2735E-07
+ X_PM_AND3_5.14       2.2735E-07
+ X_PM_AND3_5.12       2.2735E-07
+ X_PM_AND3_5.23       2.2735E-07
+ X_PM_AND3_5.11       2.2735E-07
+ X_PM_AND3_5.5       2.2735E-07
+ X_PM_AND3_5.7       2.2735E-07
+ X_PM_AND3_5.4       2.2735E-07
+ X_PM_AND3_C.42       0.0       
+ X_PM_AND3_C.25       0.0       
+ X_PM_AND3_C.24       0.0       
+ X_PM_AND3_C.33       0.0       
+ X_PM_AND3_C.30       0.0       
+ X_PM_AND3_C.20       0.0       
+ X_PM_AND3_C.22       0.0       
+ X_PM_AND3_C.18       0.0       
+ X_PM_AND3_C.16       0.0       
+ X_PM_AND3_C.17       0.0       
+ X_PM_AND3_C.14       0.0       
+ X_PM_AND3_C.15       0.0       
+ X_PM_AND3_C.10       0.0       
+ X_PM_AND3_C.8       0.0       
+ X_PM_AND3_C.9       0.0       
+ X_PM_AND3_C.4       0.0       
+ X_PM_AND3_C.3       0.0       
+ X_PM_AND3_C.2       0.0       
+ X_PM_AND3_Y.52       2.2735E-07
+ X_PM_AND3_Y.32       2.2735E-07
+ X_PM_AND3_Y.28       2.2735E-07
+ X_PM_AND3_Y.30       2.2735E-07
+ X_PM_AND3_Y.24       2.2735E-07
+ X_PM_AND3_Y.26       2.2735E-07
+ X_PM_AND3_Y.19       2.2735E-07
+ X_PM_AND3_Y.22       2.2735E-07
+ X_PM_AND3_Y.17       2.2735E-07
+ X_PM_AND3_Y.16       2.2735E-07
+ X_PM_AND3_Y.45       2.2735E-07
+ X_PM_AND3_Y.15       2.2735E-07
+ X_PM_AND3_Y.14       2.2735E-07
+ X_PM_AND3_Y.12       2.2735E-07
+ X_PM_AND3_Y.23       2.2735E-07
+ X_PM_AND3_Y.11       2.2735E-07
+ X_PM_AND3_Y.5       2.2735E-07
+ X_PM_AND3_Y.7       2.2735E-07
+ X_PM_AND3_Y.4       2.2735E-07
+
+
+
+   VOLTAGE SOURCE CURRENT
+
+NAME      CURRENT      VOLTAGE      POWER        
+VVDD      -1.4829E-09   2.5000E+00  -3.7073E-09  
+VGND       1.4829E-09   0.0          0.0         
+
+   TOTAL POWER DISSIPATION:  3.7073E-09 WATTS
+
+
+
+
+
+EldoHDL NEWTON: VNTOL=1.000000e-06 RELTOL=7.500000e-04
+
+
+
+
+1***************15-Apr-2019 ***********************  ELDO 12.1 patch1 (64 bits)  (v7.7_1.1)  ***********************16:28:59*****************
+
+0*  Top-Level Spice netlist and3.pex.netlist for AMS-Sim
+0****                 ACCOUNTING INFORMATION                                TEMPERATURE =   27.000 DEG C
+
+0*************************************************************************************************************************
+
+
+
+
+
+Number of nodes                     318
+Number of intrinsic nodes           24
+Number of input signals             5
+Number of resistors                 310
+Number of floating capacitors       0
+Number of grounded capacitors       0
+Number of inductors                 0
+Number of voltage sources           2
+Number of current sources           0
+Number of dependent sources         0
+Number of diodes                    0
+Number of BJT                       0
+Number of JFET                      0
+Number of MOS                       12
+Number of SWITCHES                  0
+Number of transmission lines        0
+Total number of elements simulated  324
+Number of equations                 312
+Number of non-zero terms            1786
+Percent Zeros                      98.17
+Number of Newton iterations         1203
+Average number of Newton iterations 2.266
+Number of accepted time steps       531
+Number of rejected time steps       8
+      due to LTE                    8
+      due to Newton                 0
+Evaluation of active devices        3897
+Memory size (MB)                    464.2
+   cpu Time 0s 150ms 
+Memory size (MB)                    464.2

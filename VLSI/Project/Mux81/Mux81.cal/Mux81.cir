@@ -1,0 +1,5 @@
+*  Top-Level Spice netlist Mux81.pex.netlist for AMS-Sim
+
+.trans 0 1ns 1ms
+
+.include Mux81.sp

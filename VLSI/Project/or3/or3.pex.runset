@@ -1,0 +1,7 @@
+*pexRulesFile: /home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/rule_deck/PEX
+*pexRunDir: /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/or3/or3.cal
+*pexLayoutPaths: or3.calibre.gds
+*pexLayoutPrimary: or3
+*pexLayoutGetFromViewer: 1
+*pexResultsFile: or3.pex.results
+*pexSummaryFile: or3.pex.summary

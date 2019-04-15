@@ -1,12 +1,11 @@
 # Automagically generated file: Please do not edit!
 lvs_ExtfVersion 3
-lvs_ExtRunTimes 1554145815 1554145816
+lvs_ExtRunTimes 1555360248 1555360248
 lvs_ExtOutFile RUNDIR /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/inv/inv.cal
-lvs_ExtOutFile RULES_FILE /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/inv/inv.cal/_LVS_
+lvs_ExtOutFile RULES_FILE /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/inv/inv.cal/_PEX_
 lvs_ExtInfoExtSummary {0 0 0 0 0 0 0 0 0 0 0}
-lvs_ExtInfoErcSummary {0 0 0 0 0 4 0 0 0 0 0}
+lvs_ExtInfoErcSummary {0 0 0 0 0 0 0 0 0 0 0}
 lvs_ExtInfoDfmSummary {0}
-lvs_ExtOutFile LAYOUT_NETLIST /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/inv/inv.cal/lay.net
-lvs_ExtOutFile EXTRACTION_REPORT lvs.report.ext
-lvs_ExtOutFile ERC_PATHCHK_DATABASE svdb/inv.pathchk.erc
-lvs_ExtOutFile ERC_PATHCHK_REPORT svdb/inv.pathchk.rep
+lvs_ExtOutFile LAYOUT_NETLIST svdb/inv.sp
+lvs_ExtOutFile EXTRACTION_REPORT inv.lvs.report.ext
+lvs_ExtOutFile SOFTCHK_DATABASE svdb/inv.softchk

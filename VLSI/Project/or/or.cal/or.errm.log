@@ -1,0 +1,13 @@
+START report: Mon Apr 15 15:58:44 2019 
+** Note: (vasim - 3800) Running Questa ADMS 12.1 patch1 Fri Sep  7 07:23:32 GMT 2012
++   on egr-vlsi-06 Linux x86_64(3.10.0-514.26.2.el7.x86_64) #1 SMP Tue Jul 4 15:04:05 UTC 2017
+Loading "/opt/mentor/ams_12_1/libs/std.standard"
+Loading "/opt/mentor/ams_12_1/libs/ieee.math_real"
+Loading "/opt/mentor/ams_12_1/libs/DISCIPLINES.physical_constants"
+Loading "/opt/mentor/ams_12_1/libs/DISCIPLINES.electromagnetic_system"
+Load done
+** Warning: (eldo - 1615)  In file "./or.cal/or.cir" line 3:
++   COMMAND ".TRAN": TPRINT can not be <= 0.0.
++   It is set to TSTOP/20.0 = 5.000e-11 s.
+** Warning: (eldo - 109)  NODE "N_2_M0_B": This bulk node is not biased. 
+** Warning: (eldo - 109)  NODE "N_1_M3_B": This bulk node is not biased. 

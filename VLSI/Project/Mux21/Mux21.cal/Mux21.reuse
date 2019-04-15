@@ -1,0 +1,22 @@
+## ADMS GUI CONTEXT FILE, FORMAT VERSION 1.0 ##
+
+proc reuseproc {} {
+global vsimPriv design structure 
+global PrefReuse _prefReuse 
+if {[string compare [design_top] ":mux21"] != 0} {
+gui_reuse_aborted 1 :mux21
+return
+}
+tcl::HistClear 
+tcl::HistAdd {vasim -cmd /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/Mux21/Mux21.cal/Mux21.cir -lib /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/Mux21/work -ms -multisource_delay max}
+tcl::HistAdd {so Mux21.do}
+tcl::HistAdd {do Mux21.do}
+tcl::HistAdd {do mux21.do}
+## Last actions : ## 
+
+set _prefReuse(ChoiseDone) 1 
+
+}
+catch {reuseproc}
+
+ 

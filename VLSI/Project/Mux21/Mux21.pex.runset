@@ -1,0 +1,7 @@
+*pexRulesFile: /home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/rule_deck/PEX
+*pexRunDir: /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/Mux21/Mux21.cal
+*pexLayoutPaths: Mux21.calibre.gds
+*pexLayoutPrimary: Mux21
+*pexLayoutGetFromViewer: 1
+*pexResultsFile: Mux21.pex.results
+*pexSummaryFile: Mux21.pex.summary

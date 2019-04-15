@@ -1,12 +1,11 @@
 # Automagically generated file: Please do not edit!
 lvs_ExtfVersion 3
-lvs_ExtRunTimes 1555347147 1555347147
+lvs_ExtRunTimes 1555359705 1555359705
 lvs_ExtOutFile RUNDIR /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/DFFen/DFFen.cal
-lvs_ExtOutFile RULES_FILE /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/DFFen/DFFen.cal/_LVS_
+lvs_ExtOutFile RULES_FILE /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/DFFen/DFFen.cal/_PEX_
 lvs_ExtInfoExtSummary {0 0 0 0 0 0 0 0 0 0 0}
-lvs_ExtInfoErcSummary {0 0 0 0 0 4 0 0 0 0 0}
+lvs_ExtInfoErcSummary {0 0 0 0 0 0 0 0 0 0 0}
 lvs_ExtInfoDfmSummary {0}
-lvs_ExtOutFile LAYOUT_NETLIST /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/DFFen/DFFen.cal/lay.net
-lvs_ExtOutFile EXTRACTION_REPORT lvs.report.ext
-lvs_ExtOutFile ERC_PATHCHK_DATABASE svdb/DFFen.pathchk.erc
-lvs_ExtOutFile ERC_PATHCHK_REPORT svdb/DFFen.pathchk.rep
+lvs_ExtOutFile LAYOUT_NETLIST svdb/DFFen.sp
+lvs_ExtOutFile EXTRACTION_REPORT DFFen.lvs.report.ext
+lvs_ExtOutFile SOFTCHK_DATABASE svdb/DFFen.softchk

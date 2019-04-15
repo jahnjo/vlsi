@@ -1,0 +1,55 @@
+OK
+VERSION          2
+TIME_NUMBER 4115078210
+LAYER_COUNT         38
+VIACOR_COUNT         10
+FIELD_NAMES drc_layer_nb layer_name
+        23 poly
+        37 nxwell
+        55 DNW
+        58 tndiff
+        68 psub
+       117 tndiff2
+       140 tpdiff
+       205 M1
+       213 metal1
+       223 metal2
+       233 metal3
+       243 metal4
+       253 metal5
+       263 metal6
+       273 metal7
+       286 metal8
+       306 VIA7
+       313 CTM_M6
+       316 CTM_gen13_M5
+       317 CTM_gen13_M4
+       318 CTM_M7
+       319 dnwc
+       326 tiod
+       327 podcon
+       330 pl2co
+       331 pplug
+       332 CV7
+       333 nodcon
+       337 c2poly
+       338 pl1co
+       427 mimcap1_pos
+       428 mimcap1_neg
+       478 VIA1
+       482 VIA2
+       486 VIA3
+       490 VIA4
+       494 VIA5
+       498 VIA6
+VIACOR_FIELD_NAMES VIA_drc_layer_nb LAYER1_drc_layer_nb LAYER2_drc_layer_nb
+338  58  213
+338  23  213
+338  140  213
+478  213  223
+482  223  233
+486  233  243
+490  243  253
+494  253  263
+498  263  273
+306  273  286

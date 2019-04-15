@@ -1,12 +1,11 @@
 # Automagically generated file: Please do not edit!
 lvs_ExtfVersion 3
-lvs_ExtRunTimes 1554311454 1554311454
+lvs_ExtRunTimes 1555359386 1555359386
 lvs_ExtOutFile RUNDIR /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/Mux21/Mux21.cal
-lvs_ExtOutFile RULES_FILE /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/Mux21/Mux21.cal/_LVS_
+lvs_ExtOutFile RULES_FILE /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/Mux21/Mux21.cal/_PEX_
 lvs_ExtInfoExtSummary {0 0 0 0 0 0 0 0 0 0 0}
-lvs_ExtInfoErcSummary {0 0 0 0 0 4 0 0 0 0 0}
+lvs_ExtInfoErcSummary {0 0 0 0 0 0 0 0 0 0 0}
 lvs_ExtInfoDfmSummary {0}
-lvs_ExtOutFile LAYOUT_NETLIST /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/Mux21/Mux21.cal/lay.net
-lvs_ExtOutFile EXTRACTION_REPORT lvs.report.ext
-lvs_ExtOutFile ERC_PATHCHK_DATABASE svdb/Mux21.pathchk.erc
-lvs_ExtOutFile ERC_PATHCHK_REPORT svdb/Mux21.pathchk.rep
+lvs_ExtOutFile LAYOUT_NETLIST svdb/Mux21.sp
+lvs_ExtOutFile EXTRACTION_REPORT Mux21.lvs.report.ext
+lvs_ExtOutFile SOFTCHK_DATABASE svdb/Mux21.softchk

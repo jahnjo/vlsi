@@ -1,0 +1,20 @@
+## ADMS GUI CONTEXT FILE, FORMAT VERSION 1.0 ##
+
+proc reuseproc {} {
+global vsimPriv design structure 
+global PrefReuse _prefReuse 
+if {[string compare [design_top] ":alu"] != 0} {
+gui_reuse_aborted 1 :alu
+return
+}
+tcl::HistClear 
+tcl::HistAdd {vasim -cmd /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/alu/alu.cal/alu.cir -lib /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/alu/work -ms -multisource_delay max}
+tcl::HistAdd {do alu.do}
+## Last actions : ## 
+
+set _prefReuse(ChoiseDone) 1 
+
+}
+catch {reuseproc}
+
+ 

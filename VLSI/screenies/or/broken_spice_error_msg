@@ -1,25 +1,3 @@
-vasim -cmd /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/or/or.cal/or.cir -lib /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/or/work -ms -multisource_delay max
-# ** Note: (vasim - 3800) Running Questa ADMS 12.1 patch1 Fri Sep  7 07:23:32 GMT 2012
-# +   on egr-vlsi-06 Linux x86_64(3.10.0-514.26.2.el7.x86_64) #1 SMP Tue Jul 4 15:04:05 UTC 2017
-# ELDO 12.1 patch1 (64 bits) Thu Sep  6 14:32:26 GMT 2012
-# EZwave 12.1 patch1 Wed Jun 20 13:28:31 GMT 2012
-# Copyright 1988 Mentor Graphics Corporation
-# All Rights Reserved
-# THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY
-# INFORMATION WHICH ARE THE PROPERTY OF MENTOR
-# GRAPHICS CORPORATION OR ITS LICENSORS AND IS
-# SUBJECT TO LICENSE TERMS.
-#  ---------------
-# | Load starting |
-#  ---------------
-# Loading "/opt/mentor/ams_12_1/libs/std.standard"
-# ModelSim for Questa-64 Version 10.1c 2012.07
-# Reading /opt/mentor/ams_12_1/questasim/v10.1c/tcl/vsim/pref.tcl 
-# Loading /opt/mentor/ams_12_1/libs/MS/OS/aol/libVLA2D_64.so
-# Loading "/opt/mentor/ams_12_1/libs/ieee.math_real"
-# Loading "/opt/mentor/ams_12_1/libs/DISCIPLINES.physical_constants"
-# Loading "/opt/mentor/ams_12_1/libs/DISCIPLINES.electromagnetic_system"
-# Load done
 do or.do
 #  ----------------------------
 # | Analog Data pre-processing |
@@ -74,17 +52,3 @@ do or.do
 #   EPS    = 1.000000e-03
 # Starting analog time is 0.000000 ns
 # Simulation time for "run -all" is 1.000000 ns
-# Transient analysis done
-#    Global cpu Time 0h 0mn 0s 580ms 
-#    Global Elapsed Time 0h 6mn 57s 
-# -----------| Simulation Information |-----------
-# Analog kernel and ELDO devices memory size allocated (MB):  463.9
-# 175 devices
-# 166 nodes
-# 1115 MOS or BIP model calls
-# 4035 steps computed
-# ----------- Simulation Information done -----------
-# --- Simulation stopped at time 4 us
-# Newton iteration            :  1.127138
-# Total of transactions       :  1
-# Total of events             :  1

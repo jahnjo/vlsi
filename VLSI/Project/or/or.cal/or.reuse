@@ -10,8 +10,6 @@ return
 tcl::HistClear 
 tcl::HistAdd {vasim -cmd /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/or/or.cal/or.cir -lib /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/or/work -ms -multisource_delay max}
 tcl::HistAdd {do or.do}
-tcl::HistAdd restart
-tcl::HistAdd {do or.do}
 ## Last actions : ## 
 
 set _prefReuse(ChoiseDone) 1 

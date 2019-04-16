@@ -1,62 +1,62 @@
-* ELDO netlist generated with ICnet by 'egrvlsi07' on Wed Apr 10 2019 at 13:06:23
+* ELDO netlist generated with ICnet by 'egrvlsi07' on Mon Apr 15 2019 at 21:09:12
 
 *
 * Globals.
 *
-.global vdd ground
+.global VDD GROUND
 
 *
 * Component pathname : $VLSI/Project/and
 *
-.subckt and  y a b
+.subckt AND  Y A B
 
-        m6 y n$54 ground ground nmos w=0.6u l=0.13u m=1 as=0.204p ad=0.204p
+        M6 Y N$54 GROUND GROUND nmos w=0.6u l=0.13u m=1 as=0.204p ad=0.204p
 +  ps=1.28u pd=1.28u
-        m5 y n$54 vdd vdd pmos w=1.35u l=0.13u m=1 as=0.459p ad=0.459p ps=2.03u
+        M5 Y N$54 VDD VDD pmos w=1.35u l=0.13u m=1 as=0.459p ad=0.459p ps=2.03u
 +  pd=2.03u
-        m4 n$54 b vdd vdd pmos w=1.35u l=0.13u m=1 as=0.459p ad=0.459p ps=2.03u
+        M4 N$54 B VDD VDD pmos w=1.35u l=0.13u m=1 as=0.459p ad=0.459p ps=2.03u
 +  pd=2.03u
-        m3 n$54 a vdd vdd pmos w=1.35u l=0.13u m=1 as=0.459p ad=0.459p ps=2.03u
+        M3 N$54 A VDD VDD pmos w=1.35u l=0.13u m=1 as=0.459p ad=0.459p ps=2.03u
 +  pd=2.03u
-        m2 n$29 b ground ground nmos w=1.2u l=0.13u m=1 as=0.408p ad=0.408p
+        M2 N$29 B GROUND GROUND nmos w=1.2u l=0.13u m=1 as=0.408p ad=0.408p
 +  ps=1.88u pd=1.88u
-        m1 n$54 a n$29 ground nmos w=1.2u l=0.13u m=1 as=0.408p ad=0.408p
+        M1 N$54 A N$29 GROUND nmos w=1.2u l=0.13u m=1 as=0.408p ad=0.408p
 +  ps=1.88u pd=1.88u
-.ends and
+.ends AND
 
 *
 * Component pathname : $VLSI/Project/and3
 *
-.subckt and3  y a b c
+.subckt AND3  Y A B C
 
-        x_and2 y n$10 c and
-        x_and1 n$10 a b and
-.ends and3
+        X_AND2 Y N$10 C AND
+        X_AND1 N$10 A B AND
+.ends AND3
 
 *
 * Component pathname : $VLSI/Project/inv
 *
-.subckt inv  out in
+.subckt INV  OUT IN
 
-        m2 out in vdd vdd pmos w=1.35u l=0.13u m=1 as=0.459p ad=0.459p ps=2.03u
+        M2 OUT IN VDD VDD pmos w=1.35u l=0.13u m=1 as=0.459p ad=0.459p ps=2.03u
 +  pd=2.03u
-        m1 out in ground ground nmos w=0.6u l=0.13u m=1 as=0.204p ad=0.204p
+        M1 OUT IN GROUND GROUND nmos w=0.6u l=0.13u m=1 as=0.204p ad=0.204p
 +  ps=1.28u pd=1.28u
-.ends inv
+.ends INV
 
 *
 * MAIN CELL: Component pathname : $VLSI/Project/decoder
 *
-        x_and38 reg7 rd_0 rd_1 rd_2 and3
-        x_and37 reg6 n$31 rd_1 rd_2 and3
-        x_and36 reg5 rd_0 n$53 rd_2 and3
-        x_and35 reg4 n$31 n$53 rd_2 and3
-        x_and34 reg3 rd_0 rd_1 n$54 and3
-        x_and33 reg2 n$31 rd_1 n$54 and3
-        x_and32 reg1 rd_0 n$53 n$54 and3
-        x_and31 reg0 n$31 n$53 n$54 and3
-        x_inv3 n$31 rd_0 inv
-        x_inv2 n$53 rd_1 inv
-        x_inv1 n$54 rd_2 inv
+        X_AND38 REG7 RD_0 RD_1 RD_2 AND3
+        X_AND37 REG6 N$31 RD_1 RD_2 AND3
+        X_AND36 REG5 RD_0 N$53 RD_2 AND3
+        X_AND35 REG4 N$31 N$53 RD_2 AND3
+        X_AND34 REG3 RD_0 RD_1 N$54 AND3
+        X_AND33 REG2 N$31 RD_1 N$54 AND3
+        X_AND32 REG1 RD_0 N$53 N$54 AND3
+        X_AND31 REG0 N$31 N$53 N$54 AND3
+        X_INV3 N$31 RD_0 INV
+        X_INV2 N$53 RD_1 INV
+        X_INV1 N$54 RD_2 INV
 *
 .end

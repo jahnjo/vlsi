@@ -1,5 +1,5 @@
 
-Running eldo on egr-vlsi-22
+Running eldo on egr-vlsi-25
 with Eldo libraries :
 /opt/mentor/ams_12_1/aol/lib/libeldoudm_64.so
 /opt/mentor/ams_12_1/aol/lib/libeldomos1_64.so
@@ -45,7 +45,7 @@ SUBJECT TO LICENSE TERMS.
 
 ***** SYSTEM INFORMATION ...
 
-*** User  : egrvlsi07@egr-vlsi-22
+*** User  : egrvlsi07@egr-vlsi-25
 *** OS    : \S [VCO = aol]
 *** CPU   :
     Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
@@ -56,7 +56,7 @@ SUBJECT TO LICENSE TERMS.
 *** Freq  : 1999.921MHz
 *** Cache : 15360 KB
 *** MEM   : 16353912 kB
-*** Date  : Tue Apr  9 15:15:30 2019
+*** Date  : Mon Apr 15 21:09:13 2019
 
 
 ***** PRE-PROCESSING ...
@@ -114,12 +114,12 @@ Memory space allocated (MB):    243
 55 nodes
 4 input signals
 
-***> Parsing CPU TIME 0h 0mn 0s 070ms <***
+***> Parsing CPU TIME 0h 0mn 0s 060ms <***
 
 
 Eldo VERSION : ELDO 12.1 patch1 (64 bits) Thu Sep  6 14:32:26 GMT 2012
 
-*** DATE:  9-Apr-2019 15:15:30
+*** DATE: 15-Apr-2019 21:09:13
 
 *** TITLE: * Component: $VLSI/Project/decoder  Viewpoint: default
 
@@ -140,49 +140,49 @@ DC:5 iterations FOR DC analysis
 Eldo NEWTON: VNTOL=1.000000e-06 RELTOL=7.500000e-04
 
 Connecting to JWDB server, please wait...
-connected to wdb server : -jwdbhost egr-vlsi-22 -jwdbport 42416
+connected to wdb server : -jwdbhost egr-vlsi-25 -jwdbport 40506
 
 Compute from 0.000000 Nano to 250.000000 Nano
 ................................................
 Simulation progress                : 10% (t = 25.0000 N)
-Elapsed CPU time                   :  0h  0mn  0s   0   ( 0h  0mn  0s   0)
-CPU Usage                          :   0%               (  0%)
+Elapsed CPU time                   :  0h  0mn  0s  10   ( 0h  0mn  0s  10)
+CPU Usage                          : 100%               (100%)
 ................................................
 Simulation progress                : 20% (t = 50.0000 N)
-Elapsed CPU time                   :  0h  0mn  0s  40   ( 0h  0mn  0s  40)
-CPU Usage                          : 100%               (100%)
+Elapsed CPU time                   :  0h  0mn  0s  40   ( 0h  0mn  0s  50)
+CPU Usage                          :  90%               (100%)
 ................................................
 Simulation progress                : 30% (t = 75.0000 N)
-Elapsed CPU time                   :  0h  0mn  0s  60   ( 0h  0mn  0s 100)
-CPU Usage                          :  92%               ( 95%)
-................................................
-Simulation progress                : 40% (t = 100.0000 N)
-Elapsed CPU time                   :  0h  0mn  0s  30   ( 0h  0mn  0s 130)
-CPU Usage                          : 100%               ( 97%)
-................................................
-Simulation progress                : 50% (t = 125.0000 N)
-Elapsed CPU time                   :  0h  0mn  0s  60   ( 0h  0mn  0s 190)
+Elapsed CPU time                   :  0h  0mn  0s  70   ( 0h  0mn  0s 120)
 CPU Usage                          : 100%               (100%)
 ................................................
+Simulation progress                : 40% (t = 100.0000 N)
+Elapsed CPU time                   :  0h  0mn  0s  30   ( 0h  0mn  0s 150)
+CPU Usage                          : 100%               (100%)
+................................................
+Simulation progress                : 50% (t = 125.0000 N)
+Elapsed CPU time                   :  0h  0mn  0s  50   ( 0h  0mn  0s 200)
+CPU Usage                          :  92%               ( 99%)
+................................................
 Simulation progress                : 60% (t = 150.0000 N)
-Elapsed CPU time                   :  0h  0mn  0s  30   ( 0h  0mn  0s 220)
-CPU Usage                          :  83%               ( 98%)
+Elapsed CPU time                   :  0h  0mn  0s  40   ( 0h  0mn  0s 240)
+CPU Usage                          : 100%               (100%)
 ................................................
 Simulation progress                : 70% (t = 175.0000 N)
-Elapsed CPU time                   :  0h  0mn  0s  60   ( 0h  0mn  0s 280)
-CPU Usage                          : 100%               ( 99%)
+Elapsed CPU time                   :  0h  0mn  0s  60   ( 0h  0mn  0s 300)
+CPU Usage                          : 100%               (100%)
 ................................................
 Simulation progress                : 80% (t = 200.9662 N)
-Elapsed CPU time                   :  0h  0mn  0s  30   ( 0h  0mn  0s 310)
-CPU Usage                          : 100%               ( 99%)
+Elapsed CPU time                   :  0h  0mn  0s  30   ( 0h  0mn  0s 330)
+CPU Usage                          :  96%               (100%)
 ................................................
 Simulation progress                : 90% (t = 225.0000 N)
-Elapsed CPU time                   :  0h  0mn  0s  40   ( 0h  0mn  0s 350)
-CPU Usage                          :  97%               ( 99%)
+Elapsed CPU time                   :  0h  0mn  0s  40   ( 0h  0mn  0s 370)
+CPU Usage                          :  97%               (100%)
 ................................................
 Simulation progress                : 100% (t = 250.0000 N)
-Elapsed CPU time                   :  0h  0mn  0s  40   ( 0h  0mn  0s 390)
-CPU Usage                          : 100%               ( 99%)
+Elapsed CPU time                   :  0h  0mn  0s  40   ( 0h  0mn  0s 410)
+CPU Usage                          : 100%               (100%)
 
 
 ***>Current simulation completed
@@ -199,11 +199,11 @@ nb of nodes: 259
 nb of MOS or BIP calls: 58253
 Number of steps computed: 490
 
-***>CPU TIME 0s 390ms <***
+***>CPU TIME 0s 410ms <***
 
 ***>MESSAGE SUMMARY: 10 warnings
 
-***>GLOBAL CPU TIME 0s 500ms <***
+***>GLOBAL CPU TIME 0s 510ms <***
 
 
 ***>GLOBAL ELAPSED TIME 1s <***

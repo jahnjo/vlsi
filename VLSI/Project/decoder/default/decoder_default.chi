@@ -1,9 +1,9 @@
-  Run on egr-vlsi-22 (Linux 3.10.0-514.26.2.el7.x86_64)
+  Run on egr-vlsi-25 (Linux 3.10.0-514.26.2.el7.x86_64)
 
 
 ***** SYSTEM INFORMATION ...
 
-*** User  : egrvlsi07@egr-vlsi-22
+*** User  : egrvlsi07@egr-vlsi-25
 *** OS    : \S [VCO = aol]
 *** CPU   :
     Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
@@ -14,14 +14,14 @@
 *** Freq  : 1999.921MHz
 *** Cache : 15360 KB
 *** MEM   : 16353912 kB
-*** Date  : Tue Apr  9 15:15:30 2019
+*** Date  : Mon Apr 15 21:09:13 2019
 
 /opt/mentor/ams_12_1/aol/bin/eldo_64.exe -i /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/decoder/default/decoder_default.cir -o /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/decoder/default/decoder_default.chi -nocou -gwl jwdb -64b -outname decoder_default 
 
 
 ***** PRE-PROCESSING ...
 
-1******* 9-Apr-19 *******  ELDO 12.1 patch1 (64 bits)  (v7.7_1.1)  *******15:15:30******
+1*******15-Apr-19 *******  ELDO 12.1 patch1 (64 bits)  (v7.7_1.1)  *******21:09:13******
 
 0* Component: $VLSI/Project/decoder  Viewpoint: default
 
@@ -35,7 +35,7 @@
     4  .CONNECT GROUND 0
     5  
     6  
-    7  * ELDO netlist generated with ICnet by 'egrvlsi07' on Tue Apr  9 2019 at 15:15:30
+    7  * ELDO netlist generated with ICnet by 'egrvlsi07' on Mon Apr 15 2019 at 21:09:12
     8  
     9  *
    10  * Globals.
@@ -6887,13 +6887,13 @@ Total number of elements simulated  106
 
 Eldo VERSION : ELDO 12.1 patch1 (64 bits) Thu Sep  6 14:32:26 GMT 2012
 
-*** DATE:  9-Apr-2019 15:15:30
+*** DATE: 15-Apr-2019 21:09:13
 
 *** TITLE: * Component: $VLSI/Project/decoder  Viewpoint: default
 
 TEMPERATURE : 27.000000 degrees C
 
-1*************** 9-Apr-2019 ***********************  ELDO 12.1 patch1 (64 bits)  (v7.7_1.1)  ***********************15:15:30*****************
+1***************15-Apr-2019 ***********************  ELDO 12.1 patch1 (64 bits)  (v7.7_1.1)  ***********************21:09:13*****************
 
 0* Component: $VLSI/Project/decoder  View
 0****                 MODELS PARAMETERS                                    TEMPERATURE =   27.000 DEG C
@@ -7222,7 +7222,7 @@ unit6 represents 1/degK^2
 
 
 
-1*************** 9-Apr-2019 ***********************  ELDO 12.1 patch1 (64 bits)  (v7.7_1.1)  ***********************15:15:30*****************
+1***************15-Apr-2019 ***********************  ELDO 12.1 patch1 (64 bits)  (v7.7_1.1)  ***********************21:09:13*****************
 
 0* Component: $VLSI/Project/decoder  Viewpoint: default
 0****                 OPTION SUMMARY                                        TEMPERATURE =   27.000 DEG C
@@ -7298,7 +7298,7 @@ DC:5 iterations FOR DC analysis
 
 
 
-1*************** 9-Apr-2019 ***********************  ELDO 12.1 patch1 (64 bits)  (v7.7_1.1)  ***********************15:15:30*****************
+1***************15-Apr-2019 ***********************  ELDO 12.1 patch1 (64 bits)  (v7.7_1.1)  ***********************21:09:13*****************
 
 0* Component: $VLSI/Project/decoder  Viewpoint: default
 0****                 INITIAL TRANSIENT SOLUTION                           TEMPERATURE =   27.000 DEG C
@@ -7383,48 +7383,48 @@ Eldo NEWTON: VNTOL=1.000000e-06 RELTOL=7.500000e-04
 
 ................................................
 Simulation progress                : 10% (t = 25.0000 N)
-Elapsed CPU time                   :  0h  0mn  0s   0   ( 0h  0mn  0s   0)
-CPU Usage                          :   0%               (  0%)
+Elapsed CPU time                   :  0h  0mn  0s  10   ( 0h  0mn  0s  10)
+CPU Usage                          : 100%               (100%)
 ................................................
 Simulation progress                : 20% (t = 50.0000 N)
-Elapsed CPU time                   :  0h  0mn  0s  40   ( 0h  0mn  0s  40)
-CPU Usage                          : 100%               (100%)
+Elapsed CPU time                   :  0h  0mn  0s  40   ( 0h  0mn  0s  50)
+CPU Usage                          :  90%               (100%)
 ................................................
 Simulation progress                : 30% (t = 75.0000 N)
-Elapsed CPU time                   :  0h  0mn  0s  60   ( 0h  0mn  0s 100)
-CPU Usage                          :  92%               ( 95%)
-................................................
-Simulation progress                : 40% (t = 100.0000 N)
-Elapsed CPU time                   :  0h  0mn  0s  30   ( 0h  0mn  0s 130)
-CPU Usage                          : 100%               ( 97%)
-................................................
-Simulation progress                : 50% (t = 125.0000 N)
-Elapsed CPU time                   :  0h  0mn  0s  60   ( 0h  0mn  0s 190)
+Elapsed CPU time                   :  0h  0mn  0s  70   ( 0h  0mn  0s 120)
 CPU Usage                          : 100%               (100%)
 ................................................
+Simulation progress                : 40% (t = 100.0000 N)
+Elapsed CPU time                   :  0h  0mn  0s  30   ( 0h  0mn  0s 150)
+CPU Usage                          : 100%               (100%)
+................................................
+Simulation progress                : 50% (t = 125.0000 N)
+Elapsed CPU time                   :  0h  0mn  0s  50   ( 0h  0mn  0s 200)
+CPU Usage                          :  92%               ( 99%)
+................................................
 Simulation progress                : 60% (t = 150.0000 N)
-Elapsed CPU time                   :  0h  0mn  0s  30   ( 0h  0mn  0s 220)
-CPU Usage                          :  83%               ( 98%)
+Elapsed CPU time                   :  0h  0mn  0s  40   ( 0h  0mn  0s 240)
+CPU Usage                          : 100%               (100%)
 ................................................
 Simulation progress                : 70% (t = 175.0000 N)
-Elapsed CPU time                   :  0h  0mn  0s  60   ( 0h  0mn  0s 280)
-CPU Usage                          : 100%               ( 99%)
+Elapsed CPU time                   :  0h  0mn  0s  60   ( 0h  0mn  0s 300)
+CPU Usage                          : 100%               (100%)
 ................................................
 Simulation progress                : 80% (t = 200.9662 N)
-Elapsed CPU time                   :  0h  0mn  0s  30   ( 0h  0mn  0s 310)
-CPU Usage                          : 100%               ( 99%)
+Elapsed CPU time                   :  0h  0mn  0s  30   ( 0h  0mn  0s 330)
+CPU Usage                          :  96%               (100%)
 ................................................
 Simulation progress                : 90% (t = 225.0000 N)
-Elapsed CPU time                   :  0h  0mn  0s  40   ( 0h  0mn  0s 350)
-CPU Usage                          :  97%               ( 99%)
+Elapsed CPU time                   :  0h  0mn  0s  40   ( 0h  0mn  0s 370)
+CPU Usage                          :  97%               (100%)
 ................................................
 Simulation progress                : 100% (t = 250.0000 N)
-Elapsed CPU time                   :  0h  0mn  0s  40   ( 0h  0mn  0s 390)
-CPU Usage                          : 100%               ( 99%)
+Elapsed CPU time                   :  0h  0mn  0s  40   ( 0h  0mn  0s 410)
+CPU Usage                          : 100%               (100%)
 
 
 
-1*************** 9-Apr-2019 ***********************  ELDO 12.1 patch1 (64 bits)  (v7.7_1.1)  ***********************15:15:30*****************
+1***************15-Apr-2019 ***********************  ELDO 12.1 patch1 (64 bits)  (v7.7_1.1)  ***********************21:09:13*****************
 
 0* Component: $VLSI/Project/decoder  Viewpoint: default
 0****                 ACCOUNTING INFORMATION                                TEMPERATURE =   27.000 DEG C
@@ -7464,18 +7464,18 @@ Number of rejected time steps       50
 Evaluation of active devices        58253
 Memory size (MB)                    246.7
 
-***>CPU TIME 0s 390ms <***
+***>CPU TIME 0s 410ms <***
 
 ***>MESSAGE SUMMARY: 10 warnings
 
-***>GLOBAL CPU TIME 0s 500ms <***
+***>GLOBAL CPU TIME 0s 510ms <***
 
 
 ***>GLOBAL ELAPSED TIME 1s <***
 
 
-  Job started at  9-Apr-2019 15:15:30
-  Job end at      9-Apr-2019 15:15:31
+  Job started at 15-Apr-2019 21:09:13
+  Job end at     15-Apr-2019 21:09:14
 
-  Run on egr-vlsi-22 (Linux 3.10.0-514.26.2.el7.x86_64)
+  Run on egr-vlsi-25 (Linux 3.10.0-514.26.2.el7.x86_64)
 

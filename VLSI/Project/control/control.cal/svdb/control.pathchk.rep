@@ -1,0 +1,7 @@
+ERC PATHCHK REPORT for control
+  PATHCHK GROUND && ! POWER:
+  PATHCHK POWER && ! GROUND:
+  PATHCHK ! POWER && ! GROUND:
+      cell control: 24 25 26 27 28 29 30 31 
+  PATHCHK ! LABELED:
+      cell control: 24 25 26 27 28 29 30 31 

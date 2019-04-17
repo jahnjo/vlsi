@@ -1,0 +1,38 @@
+A 5 u Ic_cell_template 5cb76302eea2.03.7f.00.00.01.00.16.4a 3 4 13 0
+V v 1 2 5cb7690abe67.03.7f.00.00.01.00.16.4a
+F f 1 "control.iccel_1"
+F o 0 ""
+V v 2 2 5cb76a3e44e2.03.7f.00.00.01.00.19.75
+F f 2 "control.iccel_2"
+F o 0 ""
+V v 3 2 5cb7725da34f.03.7f.00.00.01.00.1a.05
+F f 3 "control.iccel_3"
+F o 0 ""
+O 3
+R csduv 1 "$GENERIC13/process/generic13" 75 Ic_persist_process 51bf7c9f2c7e.03.93.22.28.46.00.31.23 4aef38f1eeca.03.93.22.28.e1.00.3f.b3
+R csduv 2 "$VLSI/Project/control/viewpoints/control_SDL_HIER" 1 Eddm_design_viewpoint 5cb76302ec86.03.7f.00.00.01.01.16.4a 5cb76302ec86.03.7f.00.00.01.00.16.4a
+R csduv 3 "$VLSI/Project/inv/inv" 1 Ic_cell_template 5ca25f94f421.03.7f.00.00.01.00.59.2d 5ca25d6ba202.03.7f.00.00.01.00.59.2d
+R csduv 4 "$VLSI/Project/and3/and3" 1 Ic_cell_template 5cabac5a4737.03.7f.00.00.01.00.54.00 5cabaa8ecb0c.03.7f.00.00.01.00.54.00
+R csduv 5 "$VLSI/Project/or3/or3" 1 Ic_cell_template 5cae25c98862.03.7f.00.00.01.00.1f.d9 5cae246b3b6c.03.7f.00.00.01.00.1f.d9
+R csduv 6 "$VLSI/Project/or/or" 3 Ic_cell_template 5cab97544186.03.7f.00.00.01.00.2a.43 5ca2602132f3.03.7f.00.00.01.00.60.08
+R csdni 7 "$GENERIC13/process/sdl_process_rules" 1 Mgc_file
+R csduv 9 "$GENERIC13/process/vias/M4M5" 15 Ic_cell_template 4a561c1a8648.03.93.22.28.e1.00.26.11 4a561bdc32ae.03.93.22.28.e1.00.25.b6
+R csduv 10 "$GENERIC13/process/vias/M5M6" 11 Ic_cell_template 4a561e0a8c79.03.93.22.28.e1.00.29.be 4a561db49214.03.93.22.28.e1.00.29.6f
+R csduv 11 "$GENERIC13/process/vias/M6M7" 10 Ic_cell_template 4a561e3f3e56.03.93.22.28.e1.00.29.be 4a561e142a97.03.93.22.28.e1.00.29.6f
+R csduv 12 "$GENERIC13/process/vias/M3M4" 15 Ic_cell_template 4a60aad6d285.03.93.22.28.e1.00.3a.ee 4a561bb13417.03.93.22.28.e1.00.25.b6
+O 2
+R csduv 1 "$GENERIC13/process/generic13" 75 Ic_persist_process 51bf7c9f2c7e.03.93.22.28.46.00.31.23 4aef38f1eeca.03.93.22.28.e1.00.3f.b3
+R csduv 2 "$VLSI/Project/control/viewpoints/control_SDL_HIER" 1 Eddm_design_viewpoint 5cb76302ec86.03.7f.00.00.01.01.16.4a 5cb76302ec86.03.7f.00.00.01.00.16.4a
+R csduv 3 "$VLSI/Project/inv/inv" 1 Ic_cell_template 5ca25f94f421.03.7f.00.00.01.00.59.2d 5ca25d6ba202.03.7f.00.00.01.00.59.2d
+R csduv 4 "$VLSI/Project/and3/and3" 1 Ic_cell_template 5cabac5a4737.03.7f.00.00.01.00.54.00 5cabaa8ecb0c.03.7f.00.00.01.00.54.00
+R csduv 5 "$VLSI/Project/or3/or3" 1 Ic_cell_template 5cae25c98862.03.7f.00.00.01.00.1f.d9 5cae246b3b6c.03.7f.00.00.01.00.1f.d9
+R csduv 6 "$VLSI/Project/or/or" 3 Ic_cell_template 5cab97544186.03.7f.00.00.01.00.2a.43 5ca2602132f3.03.7f.00.00.01.00.60.08
+R csdni 7 "$GENERIC13/process/sdl_process_rules" 1 Mgc_file
+O 1
+R csduv 1 "$GENERIC13/process/generic13" 75 Ic_persist_process 51bf7c9f2c7e.03.93.22.28.46.00.31.23 4aef38f1eeca.03.93.22.28.e1.00.3f.b3
+R csduv 2 "$VLSI/Project/control/viewpoints/control_SDL_HIER" 1 Eddm_design_viewpoint 5cb76302ec86.03.7f.00.00.01.01.16.4a 5cb76302ec86.03.7f.00.00.01.00.16.4a
+R csduv 3 "$VLSI/Project/inv/inv" 1 Ic_cell_template 5ca25f94f421.03.7f.00.00.01.00.59.2d 5ca25d6ba202.03.7f.00.00.01.00.59.2d
+R csduv 4 "$VLSI/Project/and3/and3" 1 Ic_cell_template 5cabac5a4737.03.7f.00.00.01.00.54.00 5cabaa8ecb0c.03.7f.00.00.01.00.54.00
+R csduv 5 "$VLSI/Project/or3/or3" 1 Ic_cell_template 5cae25c98862.03.7f.00.00.01.00.1f.d9 5cae246b3b6c.03.7f.00.00.01.00.1f.d9
+R csduv 6 "$VLSI/Project/or/or" 3 Ic_cell_template 5cab97544186.03.7f.00.00.01.00.2a.43 5ca2602132f3.03.7f.00.00.01.00.60.08
+R csdni 7 "$GENERIC13/process/sdl_process_rules" 1 Mgc_file

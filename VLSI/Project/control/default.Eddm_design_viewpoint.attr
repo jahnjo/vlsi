@@ -1,0 +1,45 @@
+A 5 u Eddm_design_viewpoint 5cb760ae7dcd.03.7f.00.00.01.00.0f.4b 2 2 30 0
+V v 1 4 5cb760ae7dce.03.7f.00.00.01.00.0f.4b
+F f 1 "default.dvpt_1"
+F o 0 
+F o 0 
+F o 0 
+V v 2 4 5cb760aec837.03.7f.00.00.01.00.0f.4b
+F f 2 "default.dvpt_2"
+F o 0 
+F o 0 
+F o 0 
+O 2
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R cspuv 0 "$VLSI/Project/control/part" 1 Eddm_part 5ca4e66412d0.03.7f.00.00.01.00.03.fd 5ca4e66412cf.03.7f.00.00.01.00.03.fd
+R cspuv 1 "$VLSI/Project/control/control" 4 mgc_schematic 5cb621e0ab7b.03.7f.00.00.01.00.0f.19 5ca4e6604c4a.03.7f.00.00.01.00.03.fd
+R cspuv 2 "$VLSI/Project/control/default" 1 Eddm_ba_mgr 5cb760ae7f48.03.7f.00.00.01.01.0f.4b 5cb760ae7f48.03.7f.00.00.01.00.0f.4b
+R cspuv 3 "$VLSI/Project/inv/part" 2 Eddm_part 5ca2460c53dc.03.7f.00.00.01.00.13.3f 5ca243a6c6cb.03.7f.00.00.01.00.10.8e
+R cspuv 4 "$VLSI/Project/and3/part" 2 Eddm_part 5caba85c238f.03.7f.00.00.01.00.49.30 5caba73c62fc.03.7f.00.00.01.00.46.ed
+R cspuv 5 "$VLSI/Project/or3/part" 2 Eddm_part 5cae24366a80.03.7f.00.00.01.00.13.31 5cae21cac25f.03.7f.00.00.01.00.0e.ce
+R cspuv 6 "$VLSI/Project/or/part" 2 Eddm_part 5ca25ff1e676.03.7f.00.00.01.00.5f.b9 5c9bb03ee604.03.7f.00.00.01.00.5a.1e
+R cspuv 7 "$VLSI/Project/or/or" 4 mgc_schematic 5ca254b7f37e.03.7f.00.00.01.00.42.fc 5c9bb0379e21.03.7f.00.00.01.00.5a.1e
+R cspuv 8 "$VLSI/Project/or/or" 1 mgc_symbol 5ca25fe8999b.03.7f.00.00.01.01.5f.b9 5ca25fe8999b.03.7f.00.00.01.00.5f.b9
+R cspuv 9 "$VLSI/Project/and3/and3" 3 mgc_schematic 5caba86d34aa.03.7f.00.00.01.00.49.30 5caba738d4f3.03.7f.00.00.01.00.46.ed
+R cspuv 10 "$VLSI/Project/and3/and3" 1 mgc_symbol 5caba809e732.03.7f.00.00.01.01.49.30 5caba809e732.03.7f.00.00.01.00.49.30
+R cspuv 11 "$VLSI/Project/inv/schematic" 3 mgc_schematic 5ca244c80d57.03.7f.00.00.01.00.13.3f 5ca2439d6167.03.7f.00.00.01.00.10.8e
+R cspuv 12 "$VLSI/Project/inv/inv" 1 mgc_symbol 5ca245fc94b0.03.7f.00.00.01.00.13.3f 5ca245fc94af.03.7f.00.00.01.00.13.3f
+R cspuv 13 "$VLSI/Project/or3/or3" 3 mgc_schematic 5cae227051c0.03.7f.00.00.01.00.13.31 5cae21c2002f.03.7f.00.00.01.00.0e.ce
+R cspuv 14 "$VLSI/Project/or3/or3" 1 mgc_symbol 5cae23ffc663.03.7f.00.00.01.01.13.31 5cae23ffc663.03.7f.00.00.01.00.13.31
+R cspuv 19 "$GENERIC13/symbols/pmos/part" 24 Eddm_part 4f3c5315ac7a.03.93.22.28.e1.00.55.af 488e22b57236.03.93.22.28.e1.03.11.a3
+R cspuv 20 "$GENERIC13/symbols/nmos/part" 33 Eddm_part 4f3c52ec7414.03.93.22.28.e1.00.55.af 488e22b57232.03.93.22.28.e1.0a.11.a3
+R cspuv 21 "$GENERIC13/symbols/nmos/nmos" 41 mgc_symbol 4f3c52ec7400.03.93.22.28.e1.00.55.af 488e22b57232.03.93.22.28.e1.0b.11.a3
+R cspuv 22 "$GENERIC13/symbols/pmos/pmos" 27 mgc_symbol 4f3c5315ac6d.03.93.22.28.e1.00.55.af 488e22b57236.03.93.22.28.e1.02.11.a3
+R cspuv 23 "$VLSI/Project/and/part" 2 Eddm_part 5ca2677180e1.03.7f.00.00.01.00.6b.10 5c9bb0259227.03.7f.00.00.01.00.57.f5
+R cspuv 24 "$VLSI/Project/and/and" 6 mgc_schematic 5ca25215d72a.03.7f.00.00.01.00.2b.f9 5c9bb0213d9b.03.7f.00.00.01.00.57.f5
+R cspuv 25 "$VLSI/Project/and/and" 1 mgc_symbol 5ca26764d86b.03.7f.00.00.01.01.6b.10 5ca26764d86b.03.7f.00.00.01.00.6b.10
+R cspuv 26 "$MGC_IC_GENERIC_LIB/vdd/part" 1 Eddm_part 3db48b399318.03.93.22.29.75.00.28.94 3db48b399317.03.93.22.29.75.00.28.94
+R cspuv 27 "$MGC_IC_GENERIC_LIB/ground/part" 1 Eddm_part 3db4867e4bc8.03.93.22.29.75.00.27.f6 3db4867e4bc7.03.93.22.29.75.00.27.f6
+R cspuv 28 "$MGC_IC_GENERIC_LIB/vdd/vdd" 1 mgc_symbol 3db48b399bae.03.93.22.29.75.00.28.94 3db48b399bac.03.93.22.29.75.00.28.94
+R cspuv 29 "$MGC_IC_GENERIC_LIB/ground/ground" 1 mgc_symbol 3db4867e5447.03.93.22.29.75.00.27.f6 3db4867e5446.03.93.22.29.75.00.27.f6
+O 1
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R cspuv 0 "$VLSI/Project/control/part" 1 Eddm_part 5ca4e66412d0.03.7f.00.00.01.00.03.fd 5ca4e66412cf.03.7f.00.00.01.00.03.fd
+R cspuv 1 "$VLSI/Project/control/control" 1 mgc_schematic 5ca4e6604c4a.03.7f.00.00.01.01.03.fd 5ca4e6604c4a.03.7f.00.00.01.00.03.fd
+P "eddm__refer_state" "eddm__refer_floating"
+R cspuv 2 "$VLSI/Project/control/default" 1 Eddm_ba_mgr 5cb760ae7f48.03.7f.00.00.01.01.0f.4b 5cb760ae7f48.03.7f.00.00.01.00.0f.4b

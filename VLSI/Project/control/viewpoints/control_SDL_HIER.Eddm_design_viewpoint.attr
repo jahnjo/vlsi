@@ -1,0 +1,27 @@
+A 5 u Eddm_design_viewpoint 5cb76302ec86.03.7f.00.00.01.00.16.4a 1 2 15 0
+V v 1 4 5cb76302ec86.03.7f.00.00.01.01.16.4a
+F f 1 "control_SDL_HIER.dvpt_1"
+F o 0 
+F o 0 
+F o 0 
+O 1
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R cspuv 0 "$VLSI/Project/control/part" 2 Eddm_part 5cb762dc30e0.03.7f.00.00.01.00.0f.4b 5ca4e66412cf.03.7f.00.00.01.00.03.fd
+R cspuv 1 "$VLSI/Project/control/control" 4 mgc_schematic 5cb621e0ab7b.03.7f.00.00.01.00.0f.19 5ca4e6604c4a.03.7f.00.00.01.00.03.fd
+R cspuv 2 "$VLSI/Project/control/control" 1 mgc_symbol 5cb7627f0f2d.03.7f.00.00.01.01.0f.4b 5cb7627f0f2d.03.7f.00.00.01.00.0f.4b
+R cspuv 3 "$VLSI/Project/inv/part" 2 Eddm_part 5ca2460c53dc.03.7f.00.00.01.00.13.3f 5ca243a6c6cb.03.7f.00.00.01.00.10.8e
+R cspuv 4 "$VLSI/Project/and3/part" 2 Eddm_part 5caba85c238f.03.7f.00.00.01.00.49.30 5caba73c62fc.03.7f.00.00.01.00.46.ed
+R cspuv 5 "$VLSI/Project/or3/part" 2 Eddm_part 5cae24366a80.03.7f.00.00.01.00.13.31 5cae21cac25f.03.7f.00.00.01.00.0e.ce
+R cspuv 6 "$VLSI/Project/or/part" 2 Eddm_part 5ca25ff1e676.03.7f.00.00.01.00.5f.b9 5c9bb03ee604.03.7f.00.00.01.00.5a.1e
+R cspuv 7 "$VLSI/Project/or/or" 1 mgc_schematic 5c9bb0379e21.03.7f.00.00.01.01.5a.1e 5c9bb0379e21.03.7f.00.00.01.00.5a.1e
+P "eddm__refer_state" "eddm__refer_floating"
+R cspuv 8 "$VLSI/Project/or/or" 1 mgc_symbol 5ca25fe8999b.03.7f.00.00.01.01.5f.b9 5ca25fe8999b.03.7f.00.00.01.00.5f.b9
+R cspuv 9 "$VLSI/Project/and3/and3" 1 mgc_schematic 5caba738d4f3.03.7f.00.00.01.01.46.ed 5caba738d4f3.03.7f.00.00.01.00.46.ed
+P "eddm__refer_state" "eddm__refer_floating"
+R cspuv 10 "$VLSI/Project/and3/and3" 1 mgc_symbol 5caba809e732.03.7f.00.00.01.01.49.30 5caba809e732.03.7f.00.00.01.00.49.30
+R cspuv 11 "$VLSI/Project/inv/schematic" 1 mgc_schematic 5ca2439d6167.03.7f.00.00.01.01.10.8e 5ca2439d6167.03.7f.00.00.01.00.10.8e
+P "eddm__refer_state" "eddm__refer_floating"
+R cspuv 12 "$VLSI/Project/inv/inv" 1 mgc_symbol 5ca245fc94b0.03.7f.00.00.01.00.13.3f 5ca245fc94af.03.7f.00.00.01.00.13.3f
+R cspuv 13 "$VLSI/Project/or3/or3" 1 mgc_schematic 5cae21c20030.03.7f.00.00.01.00.0e.ce 5cae21c2002f.03.7f.00.00.01.00.0e.ce
+P "eddm__refer_state" "eddm__refer_floating"
+R cspuv 14 "$VLSI/Project/or3/or3" 1 mgc_symbol 5cae23ffc663.03.7f.00.00.01.01.13.31 5cae23ffc663.03.7f.00.00.01.00.13.31

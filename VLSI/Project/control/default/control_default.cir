@@ -1,0 +1,41 @@
+* Component: $VLSI/Project/control  Viewpoint: default
+.INCLUDE $VLSI/Project/control/default/control_default.spi
+.INCLUDE $GENERIC13/models/include_all
+.OPTION NOASCII
+.OPTION MODWL
+.OPTION ENGNOT
+.OPTION AEX
+
+* --- Singles
+
+* - Analysis Setup - Trans
+.TRAN 0 210N
+
+* --- Waveform Outputs
+.PROBE TRAN V(OP_2)
+.PROBE TRAN V(OP_1)
+.PROBE TRAN V(OP_0)
+.PROBE TRAN V(ALU_OP_1)
+.PROBE TRAN V(ALU_OP_0)
+.PROBE TRAN V(ALU_SRC)
+.PROBE TRAN V(PC_SRC)
+.PROBE TRAN V(REG_WRITE)
+
+* --- Params
+.TEMP 27
+
+* --- Forces
+VFORCE__op OP_2 GROUND PULSE (0 2.5v 100n 1n 1n 100n 200n)
+VFORCE__op_1 OP_1 GROUND PULSE (0 2.5v 50n 1n 1n 50n 100n)
+VFORCE__op_2 OP_0 GROUND PULSE (0 2.5v 25n 1n 1n 25n 50n)
+VFORCE___VDD VDD GROUND dc 2.5v
+
+* --- Libsetup
+.LIB key=MOS $GENERIC13/models/lib.eldo TT
+.LIB key=MOS_33 $GENERIC13/models/lib.eldo TT_33
+.LIB key=MOS_lvt $GENERIC13/models/lib.eldo TT_lvt
+.LIB key=MOS_hvt $GENERIC13/models/lib.eldo TT_hvt
+.LIB key=BIP $GENERIC13/models/lib.eldo TT_BIP
+.LIB key=BIP_NPN $GENERIC13/models/lib.eldo TT_BIP_NPN
+.LIB key=RES $GENERIC13/models/lib.eldo TT_RES
+

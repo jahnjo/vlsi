@@ -1,0 +1,151 @@
+# This file provides name mapping information for all objects
+# on the schematic design.  It provides a mapping for each
+# object between its name on the schematic and its name in the netlist.
+version 1.0
+
+Globals
+   VDD VDD
+   ground GROUND
+End Globals
+
+Cell NMOS
+   Pin D D
+   Pin G G
+   Pin S S
+   Pin B B
+End Cell
+
+Cell PMOS
+   Pin D D
+   Pin G G
+   Pin S S
+   Pin B B
+End Cell
+
+Cell OR
+   Pin Y Y
+   Pin A A
+   Pin B B
+   Net N$22 N$22
+   Net N$13 N$13
+   Net Y Y
+   Net B B
+   Net A A
+   Global ground GROUND
+   Global VDD VDD
+   Inst M6 M6 NMOS
+   Inst M5 M5 PMOS
+   Inst M4 M4 NMOS
+   Inst M3 M3 NMOS
+   Inst M2 M2 PMOS
+   Inst M1 M1 PMOS
+End Cell
+
+Cell OR3
+   Pin Y Y
+   Pin A A
+   Pin B B
+   Pin C C
+   Net N$5 N$5
+   Net Y Y
+   Net C C
+   Net B B
+   Net A A
+   Inst OR2 X_OR2 OR
+   Inst OR1 X_OR1 OR
+End Cell
+
+Cell AND
+   Pin Y Y
+   Pin A A
+   Pin B B
+   Net N$54 N$54
+   Net N$29 N$29
+   Net Y Y
+   Net B B
+   Net A A
+   Global ground GROUND
+   Global VDD VDD
+   Inst M6 M6 NMOS
+   Inst M5 M5 PMOS
+   Inst M4 M4 PMOS
+   Inst M3 M3 PMOS
+   Inst M2 M2 NMOS
+   Inst M1 M1 NMOS
+End Cell
+
+Cell AND3
+   Pin Y Y
+   Pin A A
+   Pin B B
+   Pin C C
+   Net N$10 N$10
+   Net Y Y
+   Net C C
+   Net B B
+   Net A A
+   Inst AND2 X_AND2 AND
+   Inst AND1 X_AND1 AND
+End Cell
+
+Cell INV
+   Pin OUT OUT
+   Pin IN IN
+   Net OUT OUT
+   Net IN IN
+   Global VDD VDD
+   Global ground GROUND
+   Inst M2 M2 PMOS
+   Inst M1 M1 NMOS
+End Cell
+
+Cell #top#
+   Pin ALU_OP_0 ALU_OP_0
+   Pin ALU_OP_1 ALU_OP_1
+   Pin ALU_SRC ALU_SRC
+   Pin PC_SRC PC_SRC
+   Pin REG_WRITE REG_WRITE
+   Pin op_0 OP_0
+   Pin op_1 OP_1
+   Pin op_2 OP_2
+   Net N$59 N$59
+   Net N$56 N$56
+   Net N$53 N$53
+   Net N$48 N$48
+   Net N$41 N$41
+   Net N$46 N$46
+   Net N$39 N$39
+   Net N$30 N$30
+   Net N$27 N$27
+   Net N$20 N$20
+   Net N$37 N$37
+   Net N$35 N$35
+   Net N$33 N$33
+   Net op_0 OP_0
+   Net op_2 OP_2
+   Net op_1 OP_1
+   Net REG_WRITE REG_WRITE
+   Net ALU_OP_1 ALU_OP_1
+   Net ALU_OP_0 ALU_OP_0
+   Net ALU_SRC ALU_SRC
+   Net PC_SRC PC_SRC
+   Inst OR35 X_OR35 OR3
+   Inst OR3 X_OR3 OR
+   Inst OR34 X_OR34 OR3
+   Inst OR2 X_OR2 OR
+   Inst OR33 X_OR33 OR3
+   Inst OR1 X_OR1 OR
+   Inst OR32 X_OR32 OR3
+   Inst OR31 X_OR31 OR3
+   Inst BEQ X_BEQ AND3
+   Inst ORI X_ORI AND3
+   Inst OR X_OR AND3
+   Inst ANDI X_ANDI AND3
+   Inst AND X_AND AND3
+   Inst SUB X_SUB AND3
+   Inst ADD X_ADD AND3
+   Inst INV3 X_INV3 INV
+   Inst INV2 X_INV2 INV
+   Inst INV1 X_INV1 INV
+End Cell
+

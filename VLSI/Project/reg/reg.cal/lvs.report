@@ -15,7 +15,7 @@ REPORT FILE NAME:         lvs.report
 LAYOUT NAME:              /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/reg/reg.cal/lay.net ('reg')
 SOURCE NAME:              /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/reg/reg.cal/reg.calibre.src.net ('reg')
 RULE FILE:                /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/reg/reg.cal/_LVS_
-CREATION TIME:            Thu Apr 11 15:36:16 2019
+CREATION TIME:            Wed Apr 17 13:52:43 2019
 CURRENT DIRECTORY:        /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/reg/reg.cal
 USER NAME:                egrvlsi07
 CALIBRE VERSION:          v2012.2_36.25    Mon Jul 2 12:15:31 PDT 2012
@@ -26,15 +26,13 @@ CALIBRE VERSION:          v2012.2_36.25    Mon Jul 2 12:15:31 PDT 2012
 
 
 
-                  #   #         #####################  
-                   # #          #                   #  
-                    #           #     INCORRECT     #  
-                   # #          #                   #  
-                  #   #         #####################  
+                         #       ###################       _   _   
+                        #        #                 #       *   *   
+                   #   #         #     CORRECT     #         |     
+                    # #          #                 #       \___/  
+                     #           ###################               
 
 
-  Error:    Different numbers of nets.
-  Error:    Connectivity errors.
 
 
 **************************************************************************************************************
@@ -43,7 +41,7 @@ CALIBRE VERSION:          v2012.2_36.25    Mon Jul 2 12:15:31 PDT 2012
 
   Result         Layout                        Source
   -----------    -----------                   --------------
-  INCORRECT      reg                           reg
+  CORRECT        reg                           reg
 
 
 
@@ -199,15 +197,13 @@ o LVS Setup:
 
 
 
-                  #   #         #####################  
-                   # #          #                   #  
-                    #           #     INCORRECT     #  
-                   # #          #                   #  
-                  #   #         #####################  
+                         #       ###################       _   _   
+                        #        #                 #       *   *   
+                   #   #         #     CORRECT     #         |     
+                    # #          #                 #       \___/  
+                     #           ###################               
 
 
-  Error:    Different numbers of nets (see below).
-  Error:    Connectivity errors.
 
 LAYOUT CELL NAME:         reg
 SOURCE CELL NAME:         reg
@@ -221,7 +217,7 @@ INITIAL NUMBERS OF OBJECTS
                 ------    ------         --------------
  Ports:             21        21
 
- Nets:             175       167    *
+ Nets:             167       167
 
  Instances:        202       202         MN (4 pins)
                    138       138         MP (4 pins)
@@ -236,7 +232,7 @@ NUMBERS OF OBJECTS AFTER TRANSFORMATION
                 ------    ------         --------------
  Ports:             21        21
 
- Nets:             125       117    *
+ Nets:             117       117
 
  Instances:         24        24         MN (4 pins)
                     24        24         MP (4 pins)
@@ -247,67 +243,6 @@ NUMBERS OF OBJECTS AFTER TRANSFORMATION
                     32        32         _sdw2v (4 pins)
                 ------    ------
  Total Inst:       158       158
-
-
-       * = Number of objects in layout different from number in source.
-
-
-
-**************************************************************************************************************
-                                 INCORRECT OBJECTS
-**************************************************************************************************************
-
-
-LEGEND:
--------
-
-  ne  = Naming Error (same layout name found in source
-        circuit, but object was matched otherwise).
-
-
-**************************************************************************************************************
-                                   INCORRECT NETS
-
-DISC#  LAYOUT NAME                                               SOURCE NAME
-**************************************************************************************************************
-
-  1    Net X3/X1/17                                              N$78
-           19                                                   
-
---------------------------------------------------------------------------------------------------------------
-
-  2    Net X3/X0/17                                              N$76
-           18                                                   
-
---------------------------------------------------------------------------------------------------------------
-
-  3    Net X2/X1/17                                              N$74
-           17                                                   
-
---------------------------------------------------------------------------------------------------------------
-
-  4    Net X2/X0/17                                              N$72
-           12                                                   
-
---------------------------------------------------------------------------------------------------------------
-
-  5    Net X1/X1/17                                              N$70
-           10                                                   
-
---------------------------------------------------------------------------------------------------------------
-
-  6    Net X1/X0/17                                              N$68
-           8                                                    
-
---------------------------------------------------------------------------------------------------------------
-
-  7    Net X0/X1/17                                              N$66
-           5                                                    
-
---------------------------------------------------------------------------------------------------------------
-
-  8    Net X0/X0/17                                              N$64
-           3                                                    
 
 
 
@@ -321,7 +256,7 @@ DISC#  LAYOUT NAME                                               SOURCE NAME
                   -------    -------    ---------    ---------    ---------
    Ports:              21         21            0            0
 
-   Nets:              125        117            0            0
+   Nets:              117        117            0            0
 
    Instances:          24         24            0            0    MN(NMOS)
                        24         24            0            0    MP(PMOS)

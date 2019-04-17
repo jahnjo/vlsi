@@ -2,6 +2,4 @@ ERC PATHCHK REPORT for reg
   PATHCHK GROUND && ! POWER:
   PATHCHK POWER && ! GROUND:
   PATHCHK ! POWER && ! GROUND:
-      cell DFFen (X0/X0): 17 
   PATHCHK ! LABELED:
-      cell DFFen (X0/X0): 17 

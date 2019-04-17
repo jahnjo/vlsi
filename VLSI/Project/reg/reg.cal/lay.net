@@ -17,35 +17,35 @@ M4 B 7 Y VDD pmos L=1.3e-07 W=1.35e-06 $X=-655 $Y=108725 $D=25
 M5 7 S VDD VDD pmos L=1.3e-07 W=1.35e-06 $X=825 $Y=108725 $D=25
 .ENDS
 ***************************************
-.SUBCKT DFFen VDD Q ground CLK D
-** N=17 EP=5 IP=6 FDC=26
-M0 ground 11 Q ground nmos L=1.3e-07 W=6e-07 $X=2900 $Y=53705 $D=19
-M1 7 10 ground ground nmos L=1.3e-07 W=6e-07 $X=3410 $Y=53705 $D=19
-M2 8 15 7 ground nmos L=1.3e-07 W=6e-07 $X=3920 $Y=53705 $D=19
-M3 ground 16 8 ground nmos L=1.3e-07 W=6e-07 $X=4230 $Y=53705 $D=19
-M4 9 14 ground ground nmos L=1.3e-07 W=6e-07 $X=4740 $Y=53705 $D=19
-M5 10 15 9 ground nmos L=1.3e-07 W=6e-07 $X=5050 $Y=53705 $D=19
-M6 ground 7 10 ground nmos L=1.3e-07 W=6e-07 $X=5560 $Y=53705 $D=19
-M7 11 Q ground ground nmos L=1.3e-07 W=6e-07 $X=6070 $Y=53705 $D=19
-M8 12 CLK 11 ground nmos L=1.3e-07 W=6e-07 $X=7550 $Y=53705 $D=19
-M9 ground 10 12 ground nmos L=1.3e-07 W=6e-07 $X=7860 $Y=53705 $D=19
-M10 13 7 ground ground nmos L=1.3e-07 W=6e-07 $X=8370 $Y=53705 $D=19
-M11 Q CLK 13 ground nmos L=1.3e-07 W=6e-07 $X=8680 $Y=53705 $D=19
-M12 ground 16 14 ground nmos L=1.3e-07 W=6e-07 $X=10160 $Y=53705 $D=19
-M13 15 CLK ground ground nmos L=1.3e-07 W=6e-07 $X=10670 $Y=53705 $D=19
-M14 VDD 16 14 VDD pmos L=1.3e-07 W=6e-07 $X=4560 $Y=68045 $D=25
-M15 15 CLK VDD VDD pmos L=1.3e-07 W=6e-07 $X=5070 $Y=68045 $D=25
-M16 VDD 7 10 VDD pmos L=1.3e-07 W=6e-07 $X=6550 $Y=68045 $D=25
-M17 7 10 VDD VDD pmos L=1.3e-07 W=6e-07 $X=7060 $Y=68045 $D=25
-M18 VDD 11 Q VDD pmos L=1.3e-07 W=6e-07 $X=8540 $Y=68045 $D=25
-M19 11 Q VDD VDD pmos L=1.3e-07 W=6e-07 $X=9050 $Y=68045 $D=25
-X20 VDD Q 16 D ground 17 Mux21 $T=530 -41430 0 0 $X=-2075 $Y=51735
+.SUBCKT DFFen VDD Q ground CLK D En
+** N=16 EP=6 IP=6 FDC=26
+M0 ground 11 Q ground nmos L=1.3e-07 W=6e-07 $X=4745 $Y=53705 $D=19
+M1 7 10 ground ground nmos L=1.3e-07 W=6e-07 $X=5255 $Y=53705 $D=19
+M2 8 15 7 ground nmos L=1.3e-07 W=6e-07 $X=5765 $Y=53705 $D=19
+M3 ground 16 8 ground nmos L=1.3e-07 W=6e-07 $X=6075 $Y=53705 $D=19
+M4 9 14 ground ground nmos L=1.3e-07 W=6e-07 $X=6585 $Y=53705 $D=19
+M5 10 15 9 ground nmos L=1.3e-07 W=6e-07 $X=6895 $Y=53705 $D=19
+M6 ground 7 10 ground nmos L=1.3e-07 W=6e-07 $X=7405 $Y=53705 $D=19
+M7 11 Q ground ground nmos L=1.3e-07 W=6e-07 $X=7915 $Y=53705 $D=19
+M8 12 CLK 11 ground nmos L=1.3e-07 W=6e-07 $X=9395 $Y=53705 $D=19
+M9 ground 10 12 ground nmos L=1.3e-07 W=6e-07 $X=9705 $Y=53705 $D=19
+M10 13 7 ground ground nmos L=1.3e-07 W=6e-07 $X=10215 $Y=53705 $D=19
+M11 Q CLK 13 ground nmos L=1.3e-07 W=6e-07 $X=10525 $Y=53705 $D=19
+M12 ground 16 14 ground nmos L=1.3e-07 W=6e-07 $X=12005 $Y=53705 $D=19
+M13 15 CLK ground ground nmos L=1.3e-07 W=6e-07 $X=12515 $Y=53705 $D=19
+M14 VDD 16 14 VDD pmos L=1.3e-07 W=6e-07 $X=6405 $Y=68045 $D=25
+M15 15 CLK VDD VDD pmos L=1.3e-07 W=6e-07 $X=6915 $Y=68045 $D=25
+M16 VDD 7 10 VDD pmos L=1.3e-07 W=6e-07 $X=8395 $Y=68045 $D=25
+M17 7 10 VDD VDD pmos L=1.3e-07 W=6e-07 $X=8905 $Y=68045 $D=25
+M18 VDD 11 Q VDD pmos L=1.3e-07 W=6e-07 $X=10385 $Y=68045 $D=25
+M19 11 Q VDD VDD pmos L=1.3e-07 W=6e-07 $X=10895 $Y=68045 $D=25
+X20 VDD Q 16 D ground En Mux21 $T=880 -41430 0 0 $X=-1725 $Y=51735
 .ENDS
 ***************************************
-.SUBCKT ICV_1 1 2 3 5 6 8
-** N=8 EP=6 IP=12 FDC=52
-X0 2 5 1 6 3 DFFen $T=0 0 0 0 $X=-2075 $Y=51735
-X1 2 8 1 6 3 DFFen $T=12855 0 0 0 $X=10780 $Y=51735
+.SUBCKT ICV_1 1 2 3 4 5 6 7 8
+** N=8 EP=8 IP=12 FDC=52
+X0 2 5 1 6 3 4 DFFen $T=0 0 0 0 $X=-1725 $Y=51735
+X1 2 8 1 6 3 7 DFFen $T=16000 0 0 0 $X=14275 $Y=51735
 .ENDS
 ***************************************
 .SUBCKT and VDD ground Y A B
@@ -78,15 +78,15 @@ X6 VDD 19 OUT1 20 ground S2 Mux21 $T=27880 165780 0 0 $X=25275 $Y=258945
 .SUBCKT reg ground VDD dec0 dec1 dec2 dec3 dec4 dec5 dec6 dec7 Reg_W Rt0 Rt1 BusA Rt2 Rs0 Rs1 BusB Rs2 BusW
 + clk
 ** N=37 EP=21 IP=88 FDC=340
-X0 ground VDD BusW 20 clk 21 ICV_1 $T=-11985 15905 0 0 $X=-14060 $Y=67640
-X1 ground VDD BusW 22 clk 23 ICV_1 $T=13725 15905 0 0 $X=11650 $Y=67640
-X2 ground VDD BusW 24 clk 26 ICV_1 $T=39435 15905 0 0 $X=37360 $Y=67640
-X3 ground VDD BusW 27 clk 29 ICV_1 $T=65145 15905 0 0 $X=63070 $Y=67640
-X4 ground VDD dec0 Reg_W 3 dec1 5 ICV_2 $T=-3430 3320 0 0 $X=19630 $Y=97930
-X5 ground VDD dec2 Reg_W 8 dec3 10 ICV_2 $T=4570 3320 0 0 $X=27630 $Y=97930
-X6 ground VDD dec4 Reg_W 12 dec5 17 ICV_2 $T=12570 3320 0 0 $X=35630 $Y=97930
-X7 ground VDD dec6 Reg_W 18 dec7 19 ICV_2 $T=20570 3320 0 0 $X=43630 $Y=97930
-X8 ground VDD 20 21 22 23 24 26 Rt0 27 29 Rt1 BusA Rt2 Mux81 $T=5865 -221780 0 0 $X=4140 $Y=37165
-X9 ground VDD 20 21 22 23 24 26 Rs0 27 29 Rs1 BusB Rs2 Mux81 $T=37365 -221780 0 0 $X=35640 $Y=37165
+X0 ground VDD BusW 4 20 clk 6 21 ICV_1 $T=-125110 273965 0 0 $X=-126835 $Y=325700
+X1 ground VDD BusW 8 22 clk 10 23 ICV_1 $T=-93110 273965 0 0 $X=-94835 $Y=325700
+X2 ground VDD BusW 12 24 clk 14 26 ICV_1 $T=-61110 273965 0 0 $X=-62835 $Y=325700
+X3 ground VDD BusW 16 27 clk 19 28 ICV_1 $T=-29110 273965 0 0 $X=-30835 $Y=325700
+X4 ground VDD dec0 Reg_W 4 dec1 6 ICV_2 $T=-107910 261050 0 0 $X=-84850 $Y=355660
+X5 ground VDD dec2 Reg_W 8 dec3 10 ICV_2 $T=-99910 261050 0 0 $X=-76850 $Y=355660
+X6 ground VDD dec4 Reg_W 12 dec5 14 ICV_2 $T=-91910 261050 0 0 $X=-68850 $Y=355660
+X7 ground VDD dec6 Reg_W 16 dec7 19 ICV_2 $T=-83910 261050 0 0 $X=-60850 $Y=355660
+X8 ground VDD 20 21 22 23 24 26 Rt0 27 28 Rt1 BusA Rt2 Mux81 $T=-95220 32745 0 0 $X=-96945 $Y=291690
+X9 ground VDD 20 21 22 23 24 26 Rs0 27 28 Rs1 BusB Rs2 Mux81 $T=-63720 32745 0 0 $X=-65445 $Y=291690
 .ENDS
 ***************************************

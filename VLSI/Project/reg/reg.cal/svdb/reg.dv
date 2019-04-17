@@ -1,38 +1,6 @@
 # CALIBRE-LVS DISCREPANCY VIEWER TCL FILE 
 # FILE: svdb/reg.dv
-dv_start unmatched
-dv_cell {reg} {reg} unmatched
-dv_obj_count -transformed_nets {125 117} -transformed_inst {158 158} -transformed_port {21 21}
-dv_discrep 1 {Incorrect Nets}
-dv_discrep_line {Net } -lnet {X3/X1/17} {                                              } -snet {N$78} {}
-dv_discrep_line {    } -lnet {19} {                                                   }
-dv_discrep_line {}
-dv_discrep 2 {Incorrect Nets}
-dv_discrep_line {Net } -lnet {X3/X0/17} {                                              } -snet {N$76} {}
-dv_discrep_line {    } -lnet {18} {                                                   }
-dv_discrep_line {}
-dv_discrep 3 {Incorrect Nets}
-dv_discrep_line {Net } -lnet {X2/X1/17} {                                              } -snet {N$74} {}
-dv_discrep_line {    } -lnet {17} {                                                   }
-dv_discrep_line {}
-dv_discrep 4 {Incorrect Nets}
-dv_discrep_line {Net } -lnet {X2/X0/17} {                                              } -snet {N$72} {}
-dv_discrep_line {    } -lnet {12} {                                                   }
-dv_discrep_line {}
-dv_discrep 5 {Incorrect Nets}
-dv_discrep_line {Net } -lnet {X1/X1/17} {                                              } -snet {N$70} {}
-dv_discrep_line {    } -lnet {10} {                                                   }
-dv_discrep_line {}
-dv_discrep 6 {Incorrect Nets}
-dv_discrep_line {Net } -lnet {X1/X0/17} {                                              } -snet {N$68} {}
-dv_discrep_line {    } -lnet {8} {                                                    }
-dv_discrep_line {}
-dv_discrep 7 {Incorrect Nets}
-dv_discrep_line {Net } -lnet {X0/X1/17} {                                              } -snet {N$66} {}
-dv_discrep_line {    } -lnet {5} {                                                    }
-dv_discrep_line {}
-dv_discrep 8 {Incorrect Nets}
-dv_discrep_line {Net } -lnet {X0/X0/17} {                                              } -snet {N$64} {}
-dv_discrep_line {    } -lnet {3} {                                                    }
-dv_discrep_line {}
+dv_start matched
+dv_cell {reg} {reg} matched
+dv_obj_count -transformed_nets {117 117} -transformed_inst {158 158} -transformed_port {21 21}
 dv_end

@@ -15,7 +15,7 @@ REPORT FILE NAME:         lvs.report
 LAYOUT NAME:              /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/control/control.cal/lay.net ('control')
 SOURCE NAME:              /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/control/control.cal/control.calibre.src.net ('control')
 RULE FILE:                /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/control/control.cal/_LVS_
-CREATION TIME:            Wed Apr 17 14:33:30 2019
+CREATION TIME:            Thu Apr 18 13:13:19 2019
 CURRENT DIRECTORY:        /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/control/control.cal
 USER NAME:                egrvlsi07
 CALIBRE VERSION:          v2012.2_36.25    Mon Jul 2 12:15:31 PDT 2012

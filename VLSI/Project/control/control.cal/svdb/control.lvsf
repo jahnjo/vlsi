@@ -6,4 +6,4 @@ lvs_LvsComparisonSummary {3 0 0 0}
 lvs_LvsOutFile LVS_REPORT lvs.report
 lvs_LvsOutFile SOURCE_NETLIST /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/control/control.cal/control.calibre.src.net
 lvs_LvsOutFile RULES_FILE /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/control/control.cal/_LVS_
-lvs_LvsRunTimes 1555526010 1555526010
+lvs_LvsRunTimes 1555607599 1555607599

@@ -1,0 +1,5 @@
+*  Top-Level Spice netlist control.pex.netlist for AMS-Sim
+
+.trans 0 1ns 1ms
+
+.include control.sp

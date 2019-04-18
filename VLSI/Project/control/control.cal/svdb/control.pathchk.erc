@@ -1,10 +1,10 @@
 control 1000
 ERC PATHCHK GROUND && ! POWER
-0 0 0 Apr 17 14:33:30 2019                                      
+0 0 0 Apr 18 13:13:19 2019                                      
 ERC PATHCHK POWER && ! GROUND
-0 0 0 Apr 17 14:33:30 2019                                      
+0 0 0 Apr 18 13:13:19 2019                                      
 ERC PATHCHK ! POWER && ! GROUND
-8 8 0 Apr 17 14:33:30 2019                                      
+8 8 0 Apr 18 13:13:19 2019                                      
 p 1 4
 -6110 73195
 -5570 73195
@@ -46,7 +46,7 @@ p 8 4
 27875 74455
 27335 74455
 ERC PATHCHK ! LABELED
-8 8 0 Apr 17 14:33:30 2019                                      
+8 8 0 Apr 18 13:13:19 2019                                      
 p 1 4
 -6110 73195
 -5570 73195

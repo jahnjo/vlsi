@@ -4,8 +4,9 @@
 
 // Checking 6 sheet(s) for out of date references to symbols and interfaces...
 // Done.
-// NOTE: There is no part interface for the top level schematic.  The external nets in the schematic
-//       are being scanned to create the pin names for the top level subckt.
+// Parsing file '/opt/mentor/pyxis/v10.1_1_linux_x86_64/pyxis_home/mgc_icstd_lib/global.ncf' succeeded.
+// Parsing file '/home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/symbols/nmos/@ncf.dir/nmos.ncf' succeeded.
+// Parsing file '/home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/symbols/pmos/@ncf.dir/pmos.ncf' succeeded.
 Processing [$VLSI/Project/reg] [reg/reg] [reg] (NCF entry line: 17 file: $NCF_GLOBAL)
 Processing [$VLSI/Project/Mux81] [Mux81/Mux81] [Mux81] (NCF entry line: 17 file: $NCF_GLOBAL)
 Processing [$VLSI/Project/Mux21] [Mux21/Mux21] [mux21] (NCF entry line: 17 file: $NCF_GLOBAL)

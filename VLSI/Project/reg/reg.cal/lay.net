@@ -75,7 +75,7 @@ X5 VDD 17 20 18 ground S1 Mux21 $T=23380 165780 0 0 $X=20775 $Y=258945
 X6 VDD 19 OUT1 20 ground S2 Mux21 $T=27880 165780 0 0 $X=25275 $Y=258945
 .ENDS
 ***************************************
-.SUBCKT reg ground VDD dec0 dec1 dec2 dec3 dec4 dec5 dec6 dec7 Reg_W Rt0 Rt1 BusA Rt2 Rs0 Rs1 BusB Rs2 BusW
+.SUBCKT reg ground VDD dec0 dec1 dec2 dec3 dec4 dec5 dec6 dec7 Reg_W Rt0 Rt1 BusA Rt2 BusW Rs0 Rs1 BusB Rs2
 + clk
 ** N=37 EP=21 IP=88 FDC=340
 X0 ground VDD BusW 4 20 clk 6 21 ICV_1 $T=-125110 273965 0 0 $X=-126835 $Y=325700

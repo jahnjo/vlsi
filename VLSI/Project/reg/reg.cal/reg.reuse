@@ -1,0 +1,38 @@
+## ADMS GUI CONTEXT FILE, FORMAT VERSION 1.0 ##
+
+proc reuseproc {} {
+global vsimPriv design structure 
+global PrefReuse _prefReuse 
+if {[string compare [design_top] ":reg"] != 0} {
+gui_reuse_aborted 1 :reg
+return
+}
+tcl::HistClear 
+tcl::HistAdd {do reg.do}
+tcl::HistAdd restart
+tcl::HistAdd {do reg.do}
+tcl::HistAdd restart
+tcl::HistAdd {do reg.do}
+tcl::HistAdd restart
+tcl::HistAdd {do reg.do}
+tcl::HistAdd restart
+tcl::HistAdd {do reg.do}
+tcl::HistAdd restart
+tcl::HistAdd {do reg.do}
+tcl::HistAdd restart
+tcl::HistAdd {do reg.do}
+tcl::HistAdd restart
+tcl::HistAdd {do reg.do}
+tcl::HistAdd restart
+tcl::HistAdd {do reg.do}
+tcl::HistAdd run
+tcl::HistAdd restart
+tcl::HistAdd {do reg.do}
+## Last actions : ## 
+
+set _prefReuse(ChoiseDone) 1 
+
+}
+catch {reuseproc}
+
+ 

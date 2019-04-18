@@ -15,7 +15,7 @@ REPORT FILE NAME:         lvs.report
 LAYOUT NAME:              /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/reg/reg.cal/lay.net ('reg')
 SOURCE NAME:              /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/reg/reg.cal/reg.calibre.src.net ('reg')
 RULE FILE:                /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/reg/reg.cal/_LVS_
-CREATION TIME:            Wed Apr 17 14:42:29 2019
+CREATION TIME:            Thu Apr 18 14:05:45 2019
 CURRENT DIRECTORY:        /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/reg/reg.cal
 USER NAME:                egrvlsi07
 CALIBRE VERSION:          v2012.2_36.25    Mon Jul 2 12:15:31 PDT 2012
@@ -271,8 +271,8 @@ NUMBERS OF OBJECTS AFTER TRANSFORMATION
 
 o Initial Correspondence Points:
 
-   Ports:        VDD ground DEC0 DEC1 DEC2 DEC3 DEC4 DEC5 DEC6 DEC7 REG_W RT0 RT1 BUSA RT2 RS0
-                 RS1 BUSB RS2 BUSW CLK
+   Ports:        VDD ground DEC0 DEC1 DEC2 DEC3 DEC4 DEC5 DEC6 DEC7 REG_W RT0 RT1 BUSA RT2 BUSW
+                 RS0 RS1 BUSB RS2 CLK
 
 
 **************************************************************************************************************

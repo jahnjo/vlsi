@@ -11,17 +11,17 @@
     Hyper-Threading Technology        : enabled
     Number of cpu cores               : 6
     Number of logical processors      : 12
-*** Freq  : 1931.484MHz
+*** Freq  : 1999.921MHz
 *** Cache : 15360 KB
 *** MEM   : 16353912 kB
-*** Date  : Mon Apr  8 14:05:16 2019
+*** Date  : Thu Apr 18 14:35:42 2019
 
 /opt/mentor/ams_12_1/aol/bin/eldo_64.exe -i /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/reg/default/reg_default.cir -o /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/reg/default/reg_default.chi -nocou -gwl jwdb -64b -outname reg_default 
 
 
 ***** PRE-PROCESSING ...
 
-1******* 8-Apr-19 *******  ELDO 12.1 patch1 (64 bits)  (v7.7_1.1)  *******14:05:16******
+1*******18-Apr-19 *******  ELDO 12.1 patch1 (64 bits)  (v7.7_1.1)  *******14:35:42******
 
 0* Component: $VLSI/Project/reg  Viewpoint: default
 
@@ -35,7 +35,7 @@
     4  .CONNECT GROUND 0
     5  
     6  
-    7  * ELDO netlist generated with ICnet by 'egrvlsi07' on Mon Apr  8 2019 at 14:05:16
+    7  * ELDO netlist generated with ICnet by 'egrvlsi07' on Thu Apr 18 2019 at 14:35:41
     8  
     9  *
    10  * Globals.
@@ -6995,13 +6995,13 @@ Total number of elements simulated  358
 
 Eldo VERSION : ELDO 12.1 patch1 (64 bits) Thu Sep  6 14:32:26 GMT 2012
 
-*** DATE:  8-Apr-2019 14:05:17
+*** DATE: 18-Apr-2019 14:35:42
 
 *** TITLE: * Component: $VLSI/Project/reg  Viewpoint: default
 
 TEMPERATURE : 27.000000 degrees C
 
-1*************** 8-Apr-2019 ***********************  ELDO 12.1 patch1 (64 bits)  (v7.7_1.1)  ***********************14:05:17*****************
+1***************18-Apr-2019 ***********************  ELDO 12.1 patch1 (64 bits)  (v7.7_1.1)  ***********************14:35:42*****************
 
 0* Component: $VLSI/Project/reg  Viewpoin
 0****                 MODELS PARAMETERS                                    TEMPERATURE =   27.000 DEG C
@@ -7488,7 +7488,7 @@ unit6 represents 1/degK^2
 
 
 
-1*************** 8-Apr-2019 ***********************  ELDO 12.1 patch1 (64 bits)  (v7.7_1.1)  ***********************14:05:17*****************
+1***************18-Apr-2019 ***********************  ELDO 12.1 patch1 (64 bits)  (v7.7_1.1)  ***********************14:35:42*****************
 
 0* Component: $VLSI/Project/reg  Viewpoint: default
 0****                 OPTION SUMMARY                                        TEMPERATURE =   27.000 DEG C
@@ -7557,14 +7557,14 @@ TIMING         = 0        MODWL          = 1        ULOGIC         = 0
 
 
 
-***> DC CPU TIME 0s 030ms <***
+***> DC CPU TIME 0s 020ms <***
 
 DC:5 iterations FOR DC analysis
 
 
 
 
-1*************** 8-Apr-2019 ***********************  ELDO 12.1 patch1 (64 bits)  (v7.7_1.1)  ***********************14:05:17*****************
+1***************18-Apr-2019 ***********************  ELDO 12.1 patch1 (64 bits)  (v7.7_1.1)  ***********************14:35:42*****************
 
 0* Component: $VLSI/Project/reg  Viewpoint: default
 0****                 INITIAL TRANSIENT SOLUTION                           TEMPERATURE =   27.000 DEG C
@@ -7774,48 +7774,48 @@ Eldo NEWTON: VNTOL=1.000000e-06 RELTOL=7.500000e-04
 
 ................................................
 Simulation progress                : 10% (t = 40.0000 N)
-Elapsed CPU time                   :  0h  0mn  0s 370   ( 0h  0mn  0s 370)
+Elapsed CPU time                   :  0h  0mn  0s 320   ( 0h  0mn  0s 320)
 CPU Usage                          :  99%               ( 99%)
 ................................................
 Simulation progress                : 20% (t = 80.0000 N)
-Elapsed CPU time                   :  0h  0mn  0s 300   ( 0h  0mn  0s 670)
-CPU Usage                          : 100%               ( 99%)
+Elapsed CPU time                   :  0h  0mn  0s 270   ( 0h  0mn  0s 590)
+CPU Usage                          :  99%               ( 99%)
 ................................................
 Simulation progress                : 30% (t = 120.0000 N)
-Elapsed CPU time                   :  0h  0mn  0s 410   ( 0h  0mn  1s  80)
-CPU Usage                          : 100%               (100%)
+Elapsed CPU time                   :  0h  0mn  0s 350   ( 0h  0mn  0s 940)
+CPU Usage                          : 100%               ( 99%)
 ................................................
 Simulation progress                : 40% (t = 160.0000 N)
-Elapsed CPU time                   :  0h  0mn  0s 440   ( 0h  0mn  1s 520)
-CPU Usage                          :  97%               ( 99%)
+Elapsed CPU time                   :  0h  0mn  0s 380   ( 0h  0mn  1s 320)
+CPU Usage                          :  99%               ( 99%)
 ................................................
 Simulation progress                : 50% (t = 200.0000 N)
-Elapsed CPU time                   :  0h  0mn  0s 200   ( 0h  0mn  1s 720)
+Elapsed CPU time                   :  0h  0mn  0s 210   ( 0h  0mn  1s 530)
 CPU Usage                          : 100%               ( 99%)
 ................................................
 Simulation progress                : 60% (t = 240.0000 N)
+Elapsed CPU time                   :  0h  0mn  0s 190   ( 0h  0mn  1s 720)
+CPU Usage                          :  98%               ( 99%)
+................................................
+Simulation progress                : 70% (t = 280.0000 N)
 Elapsed CPU time                   :  0h  0mn  0s 190   ( 0h  0mn  1s 910)
 CPU Usage                          : 100%               (100%)
 ................................................
-Simulation progress                : 70% (t = 280.0000 N)
-Elapsed CPU time                   :  0h  0mn  0s 170   ( 0h  0mn  2s  80)
-CPU Usage                          :  96%               ( 99%)
-................................................
 Simulation progress                : 80% (t = 320.0000 N)
-Elapsed CPU time                   :  0h  0mn  0s 190   ( 0h  0mn  2s 270)
-CPU Usage                          : 100%               ( 99%)
+Elapsed CPU time                   :  0h  0mn  0s 200   ( 0h  0mn  2s 110)
+CPU Usage                          :  99%               ( 99%)
 ................................................
 Simulation progress                : 90% (t = 360.0000 N)
-Elapsed CPU time                   :  0h  0mn  0s 180   ( 0h  0mn  2s 450)
-CPU Usage                          : 100%               ( 99%)
+Elapsed CPU time                   :  0h  0mn  0s 180   ( 0h  0mn  2s 290)
+CPU Usage                          :  98%               ( 99%)
 ................................................
 Simulation progress                : 100% (t = 400.0000 N)
-Elapsed CPU time                   :  0h  0mn  0s 180   ( 0h  0mn  2s 630)
-CPU Usage                          :  98%               ( 99%)
+Elapsed CPU time                   :  0h  0mn  0s 190   ( 0h  0mn  2s 480)
+CPU Usage                          : 100%               ( 99%)
 
 
 
-1*************** 8-Apr-2019 ***********************  ELDO 12.1 patch1 (64 bits)  (v7.7_1.1)  ***********************14:05:17*****************
+1***************18-Apr-2019 ***********************  ELDO 12.1 patch1 (64 bits)  (v7.7_1.1)  ***********************14:35:42*****************
 
 0* Component: $VLSI/Project/reg  Viewpoint: default
 0****                 ACCOUNTING INFORMATION                                TEMPERATURE =   27.000 DEG C
@@ -7855,18 +7855,18 @@ Number of rejected time steps       107
 Evaluation of active devices        358577
 Memory size (MB)                    248.7
 
-***>CPU TIME 2s 630ms <***
+***>CPU TIME 2s 480ms <***
 
 ***>MESSAGE SUMMARY: 11 warnings
 
-***>GLOBAL CPU TIME 2s 800ms <***
+***>GLOBAL CPU TIME 2s 620ms <***
 
 
-***>GLOBAL ELAPSED TIME 4s <***
+***>GLOBAL ELAPSED TIME 3s <***
 
 
-  Job started at  8-Apr-2019 14:05:16
-  Job end at      8-Apr-2019 14:05:20
+  Job started at 18-Apr-2019 14:35:42
+  Job end at     18-Apr-2019 14:35:45
 
   Run on egr-vlsi-25 (Linux 3.10.0-514.26.2.el7.x86_64)
 

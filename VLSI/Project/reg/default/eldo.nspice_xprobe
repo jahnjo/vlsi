@@ -192,25 +192,25 @@ Cell #top#
    Net N$68 N$68
    Net N$66 N$66
    Net N$64 N$64
-   Net clk CLK
-   Net BusW BUSW
-   Net dec0 DEC0
-   Net dec1 DEC1
-   Net dec2 DEC2
-   Net dec3 DEC3
-   Net dec4 DEC4
-   Net dec5 DEC5
-   Net dec6 DEC6
    Net dec7 DEC7
+   Net dec6 DEC6
+   Net dec5 DEC5
+   Net dec4 DEC4
+   Net dec3 DEC3
+   Net dec2 DEC2
+   Net dec1 DEC1
+   Net dec0 DEC0
    Net Reg_W REG_W
-   Net BusA BUSA
+   Net clk CLK
    Net BusB BUSB
-   Net Rs0 RS0
-   Net Rt2 RT2
-   Net Rt1 RT1
-   Net Rt0 RT0
-   Net Rs1 RS1
+   Net BusA BUSA
    Net Rs2 RS2
+   Net Rs1 RS1
+   Net Rt0 RT0
+   Net Rt1 RT1
+   Net Rt2 RT2
+   Net Rs0 RS0
+   Net BusW BUSW
    Inst AND8 X_AND8 AND
    Inst AND7 X_AND7 AND
    Inst AND6 X_AND6 AND

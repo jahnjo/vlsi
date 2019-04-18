@@ -1,0 +1,6 @@
+A 5 u Eddm_part 5cb8b0fa3885.03.7f.00.00.01.00.20.c4 1 2 1 0
+V v 1 1 5cb8b0fa3885.03.7f.00.00.01.01.20.c4
+F f 1 "part.part_1"
+O 1
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R csduv 0 "$VLSI/Project/imm_mux/imm_mux" 1 mgc_schematic 5cb8b0f633bd.03.7f.00.00.01.01.20.c4 5cb8b0f633bd.03.7f.00.00.01.00.20.c4

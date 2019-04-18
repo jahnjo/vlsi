@@ -1,0 +1,17 @@
+A 5 u mgc_sheet 5cb8b0f6345e.03.7f.00.00.01.00.20.c4 2 2 1 0
+V v 1 4 5cb8b0f6345e.03.7f.00.00.01.01.20.c4
+F f 1 "sheet1.ssht_1"
+F f 1 "sheet1.sgfx_1"
+F o 0 
+F o 0 
+V v 2 4 5cb8b0fadf1a.03.7f.00.00.01.00.20.c4
+F f 2 "sheet1.ssht_2"
+F f 2 "sheet1.sgfx_2"
+F o 0 
+F o 0 
+O 2
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R csduv 0 "$VLSI/Project/imm_mux/imm_mux" 1 mgc_schematic 5cb8b0f633bd.03.7f.00.00.01.01.20.c4 5cb8b0f633bd.03.7f.00.00.01.00.20.c4
+O 1
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R csduv 0 "$VLSI/Project/imm_mux/imm_mux" 1 mgc_schematic 5cb8b0f633bd.03.7f.00.00.01.01.20.c4 5cb8b0f633bd.03.7f.00.00.01.00.20.c4

@@ -1,0 +1,7 @@
+*pexRulesFile: /home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/rule_deck/PEX
+*pexRunDir: /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/imm_mux/imm_mux.cal
+*pexLayoutPaths: imm_mux.calibre.gds
+*pexLayoutPrimary: imm_mux
+*pexLayoutGetFromViewer: 1
+*pexResultsFile: imm_mux.pex.results
+*pexSummaryFile: imm_mux.pex.summary

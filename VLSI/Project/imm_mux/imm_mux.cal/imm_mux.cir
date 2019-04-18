@@ -1,0 +1,5 @@
+*  Top-Level Spice netlist imm_mux.pex.netlist for AMS-Sim
+
+.trans 0 1ns 1ms
+
+.include imm_mux.sp

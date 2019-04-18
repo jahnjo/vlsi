@@ -1,0 +1,15 @@
+A 5 u Eddm_design_viewpoint 5cb8b49c708e.03.7f.00.00.01.00.29.a7 1 2 6 0
+V v 1 4 5cb8b49c708e.03.7f.00.00.01.01.29.a7
+F f 1 "imm_mux_SDL_HIER.dvpt_1"
+F o 0 
+F o 0 
+F o 0 
+O 1
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R cspuv 0 "$VLSI/Project/imm_mux/part" 2 Eddm_part 5cb8b47cd00e.03.7f.00.00.01.00.23.0c 5cb8b0fa3885.03.7f.00.00.01.00.20.c4
+R cspuv 1 "$VLSI/Project/imm_mux/imm_mux" 5 mgc_schematic 5cb8b42c12ad.03.7f.00.00.01.00.23.0c 5cb8b0f633bd.03.7f.00.00.01.00.20.c4
+R cspuv 2 "$VLSI/Project/imm_mux/imm_mux" 1 mgc_symbol 5cb8b432054c.03.7f.00.00.01.01.23.0c 5cb8b432054c.03.7f.00.00.01.00.23.0c
+R cspuv 3 "$VLSI/Project/Mux21/part" 2 Eddm_part 5c9bb6d87a8a.03.7f.00.00.01.00.67.7e 5c9a8336c0c3.03.7f.00.00.01.00.1d.00
+R cspuv 4 "$VLSI/Project/Mux21/mux21" 1 mgc_schematic 5c9a8329642d.03.7f.00.00.01.01.1d.00 5c9a8329642d.03.7f.00.00.01.00.1d.00
+P "eddm__refer_state" "eddm__refer_floating"
+R cspuv 5 "$VLSI/Project/Mux21/Mux21" 1 mgc_symbol 5c9bb655bf6b.03.7f.00.00.01.01.67.7e 5c9bb655bf6b.03.7f.00.00.01.00.67.7e

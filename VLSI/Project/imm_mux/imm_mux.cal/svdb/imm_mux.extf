@@ -1,0 +1,12 @@
+# Automagically generated file: Please do not edit!
+lvs_ExtfVersion 3
+lvs_ExtRunTimes 1555609359 1555609360
+lvs_ExtOutFile RUNDIR /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/imm_mux/imm_mux.cal
+lvs_ExtOutFile RULES_FILE /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/imm_mux/imm_mux.cal/_LVS_
+lvs_ExtInfoExtSummary {0 0 0 0 0 0 0 0 0 0 0}
+lvs_ExtInfoErcSummary {0 0 0 0 0 4 26 26 26 0 0}
+lvs_ExtInfoDfmSummary {0}
+lvs_ExtOutFile LAYOUT_NETLIST /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/imm_mux/imm_mux.cal/lay.net
+lvs_ExtOutFile EXTRACTION_REPORT lvs.report.ext
+lvs_ExtOutFile ERC_PATHCHK_DATABASE svdb/imm_mux.pathchk.erc
+lvs_ExtOutFile ERC_PATHCHK_REPORT svdb/imm_mux.pathchk.rep

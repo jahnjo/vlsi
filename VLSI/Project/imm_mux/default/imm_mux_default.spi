@@ -1,0 +1,41 @@
+*
+* .CONNECT statements
+*
+.CONNECT GROUND 0
+
+
+* ELDO netlist generated with ICnet by 'egrvlsi07' on Thu Apr 18 2019 at 13:27:36
+
+*
+* Globals.
+*
+.global GROUND VDD
+
+*
+* Component pathname : $VLSI/Project/Mux21
+*
+.subckt MUX21  Y A B S
+
+        M6 Y N$46 A GROUND nmos w=0.6u l=0.13u m=1 as=0.204p ad=0.204p ps=1.28u
++  pd=1.28u
+        M3 Y S A VDD pmos w=1.35u l=0.13u m=1 as=0.459p ad=0.459p ps=2.03u
++  pd=2.03u
+        M5 Y S B GROUND nmos w=0.6u l=0.13u m=1 as=0.204p ad=0.204p ps=1.28u
++  pd=1.28u
+        M4 Y N$46 B VDD pmos w=1.35u l=0.13u m=1 as=0.459p ad=0.459p ps=2.03u
++  pd=2.03u
+        M2 N$46 S VDD VDD pmos w=1.35u l=0.13u m=1 as=0.459p ad=0.459p ps=2.03u
++  pd=2.03u
+        M1 N$46 S GROUND GROUND nmos w=0.6u l=0.13u m=1 as=0.204p ad=0.204p
++  ps=1.28u pd=1.28u
+.ends MUX21
+
+*
+* MAIN CELL: Component pathname : $VLSI/Project/imm_mux
+*
+        X_BIT0 BUSW_RESULT_0 RESULT_0 IMM_0 INPUT_SELECT MUX21
+        X_BIT1 BUSW_RESULT_1 RESULT_1 IMM_1 INPUT_SELECT MUX21
+        X_BIT2 BUSW_RESULT_2 RESULT_2 IMM_2 INPUT_SELECT MUX21
+        X_BIT3 BUSW_RESULT_3 RESULT_3 IMM_3 INPUT_SELECT MUX21
+*
+.end

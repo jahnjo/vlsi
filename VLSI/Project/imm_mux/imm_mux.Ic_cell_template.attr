@@ -1,0 +1,13 @@
+A 5 u Ic_cell_template 5cb8b49c725f.03.7f.00.00.01.00.29.a7 1 4 9 0
+V v 1 2 5cb8b75fecb4.03.7f.00.00.01.00.29.a7
+F f 1 "imm_mux.iccel_1"
+F o 0 
+O 1
+R csduv 1 "$GENERIC13/process/generic13" 75 Ic_persist_process 51bf7c9f2c7e.03.93.22.28.46.00.31.23 4aef38f1eeca.03.93.22.28.e1.00.3f.b3
+R csduv 2 "$VLSI/Project/imm_mux/viewpoints/imm_mux_SDL_HIER" 1 Eddm_design_viewpoint 5cb8b49c708e.03.7f.00.00.01.01.29.a7 5cb8b49c708e.03.7f.00.00.01.00.29.a7
+R csduv 3 "$VLSI/Project/Mux21/Mux21" 3 Ic_cell_template 5ca4e9299719.03.7f.00.00.01.00.05.65 5c9bb72e8cdd.03.7f.00.00.01.00.68.00
+R csduv 4 "$GENERIC13/process/vias/M3M4" 15 Ic_cell_template 4a60aad6d285.03.93.22.28.e1.00.3a.ee 4a561bb13417.03.93.22.28.e1.00.25.b6
+R csduv 5 "$GENERIC13/process/vias/M4M5" 15 Ic_cell_template 4a561c1a8648.03.93.22.28.e1.00.26.11 4a561bdc32ae.03.93.22.28.e1.00.25.b6
+R csduv 6 "$GENERIC13/process/vias/M5M6" 11 Ic_cell_template 4a561e0a8c79.03.93.22.28.e1.00.29.be 4a561db49214.03.93.22.28.e1.00.29.6f
+R csduv 7 "$GENERIC13/process/vias/M6M7" 10 Ic_cell_template 4a561e3f3e56.03.93.22.28.e1.00.29.be 4a561e142a97.03.93.22.28.e1.00.29.6f
+R csdni 8 "$GENERIC13/process/sdl_process_rules" 1 Mgc_file

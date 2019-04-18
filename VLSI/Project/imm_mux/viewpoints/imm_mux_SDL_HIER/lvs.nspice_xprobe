@@ -1,0 +1,77 @@
+# This file provides name mapping information for all objects
+# on the schematic design.  It provides a mapping for each
+# object between its name on the schematic and its name in the netlist.
+version 1.0
+
+Globals
+   ground ground
+   VDD VDD
+End Globals
+
+Cell nmos
+   Pin D D
+   Pin G G
+   Pin S S
+   Pin B B
+End Cell
+
+Cell pmos
+   Pin D D
+   Pin G G
+   Pin S S
+   Pin B B
+End Cell
+
+Cell Mux21
+   Pin Y Y
+   Pin A A
+   Pin B B
+   Pin S S
+   Net N$46 N$46
+   Net A A
+   Net Y Y
+   Net B B
+   Net S S
+   Global ground ground
+   Global VDD VDD
+   Inst M6 M6 nmos
+   Inst M3 M3 pmos
+   Inst M5 M5 nmos
+   Inst M4 M4 pmos
+   Inst M2 M2 pmos
+   Inst M1 M1 nmos
+End Cell
+
+Cell #top#
+   Pin busW_result_0 busW_result_0
+   Pin busW_result_1 busW_result_1
+   Pin busW_result_2 busW_result_2
+   Pin busW_result_3 busW_result_3
+   Pin imm_0 imm_0
+   Pin imm_1 imm_1
+   Pin imm_2 imm_2
+   Pin imm_3 imm_3
+   Pin input_select input_select
+   Pin result_0 result_0
+   Pin result_1 result_1
+   Pin result_2 result_2
+   Pin result_3 result_3
+   Net busW_result_0 busW_result_0
+   Net busW_result_1 busW_result_1
+   Net busW_result_2 busW_result_2
+   Net busW_result_3 busW_result_3
+   Net imm_0 imm_0
+   Net result_0 result_0
+   Net imm_1 imm_1
+   Net result_1 result_1
+   Net input_select input_select
+   Net imm_2 imm_2
+   Net result_2 result_2
+   Net imm_3 imm_3
+   Net result_3 result_3
+   Inst bit0 X_bit0 Mux21
+   Inst bit1 X_bit1 Mux21
+   Inst bit2 X_bit2 Mux21
+   Inst bit3 X_bit3 Mux21
+End Cell
+

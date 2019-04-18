@@ -1,0 +1,77 @@
+# This file provides name mapping information for all objects
+# on the schematic design.  It provides a mapping for each
+# object between its name on the schematic and its name in the netlist.
+version 1.0
+
+Globals
+   ground GROUND
+   VDD VDD
+End Globals
+
+Cell NMOS
+   Pin D D
+   Pin G G
+   Pin S S
+   Pin B B
+End Cell
+
+Cell PMOS
+   Pin D D
+   Pin G G
+   Pin S S
+   Pin B B
+End Cell
+
+Cell MUX21
+   Pin Y Y
+   Pin A A
+   Pin B B
+   Pin S S
+   Net N$46 N$46
+   Net A A
+   Net Y Y
+   Net B B
+   Net S S
+   Global ground GROUND
+   Global VDD VDD
+   Inst M6 M6 NMOS
+   Inst M3 M3 PMOS
+   Inst M5 M5 NMOS
+   Inst M4 M4 PMOS
+   Inst M2 M2 PMOS
+   Inst M1 M1 NMOS
+End Cell
+
+Cell #top#
+   Pin busW_result_0 BUSW_RESULT_0
+   Pin busW_result_1 BUSW_RESULT_1
+   Pin busW_result_2 BUSW_RESULT_2
+   Pin busW_result_3 BUSW_RESULT_3
+   Pin imm_0 IMM_0
+   Pin imm_1 IMM_1
+   Pin imm_2 IMM_2
+   Pin imm_3 IMM_3
+   Pin input_select INPUT_SELECT
+   Pin result_0 RESULT_0
+   Pin result_1 RESULT_1
+   Pin result_2 RESULT_2
+   Pin result_3 RESULT_3
+   Net result_3 RESULT_3
+   Net imm_3 IMM_3
+   Net busW_result_3 BUSW_RESULT_3
+   Net result_2 RESULT_2
+   Net imm_2 IMM_2
+   Net input_select INPUT_SELECT
+   Net busW_result_2 BUSW_RESULT_2
+   Net result_1 RESULT_1
+   Net imm_1 IMM_1
+   Net busW_result_1 BUSW_RESULT_1
+   Net result_0 RESULT_0
+   Net imm_0 IMM_0
+   Net busW_result_0 BUSW_RESULT_0
+   Inst bit0 X_BIT0 MUX21
+   Inst bit1 X_BIT1 MUX21
+   Inst bit2 X_BIT2 MUX21
+   Inst bit3 X_BIT3 MUX21
+End Cell
+

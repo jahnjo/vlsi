@@ -1,0 +1,7 @@
+ERC PATHCHK REPORT for imm_mux
+  PATHCHK GROUND && ! POWER:
+  PATHCHK POWER && ! GROUND:
+  PATHCHK ! POWER && ! GROUND:
+      cell imm_mux: 16 17 18 19 20 21 22 23 24 25 26 27 28 
+  PATHCHK ! LABELED:
+      cell imm_mux: 16 17 18 19 20 21 22 23 24 25 26 27 28 

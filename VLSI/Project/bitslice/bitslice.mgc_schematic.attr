@@ -1,10 +1,13 @@
-A 5 u mgc_schematic 5ca4e642eb16.03.7f.00.00.01.00.01.9b 2 2 1 0
-V v 1 1 5ca4e642eb16.03.7f.00.00.01.01.01.9b
+A 5 u mgc_schematic 5ca4e642eb16.03.7f.00.00.01.00.01.9b 5 2 1 0
+V v 3 1 5cba0a1aead9.03.7f.00.00.01.00.7d.c4
 F o 0 ""
-V v 2 1 5ca4e64742f6.03.7f.00.00.01.00.01.9b
+V v 4 1 5cba0a8217ac.03.7f.00.00.01.00.7d.c4
 F o 0 ""
-O 2
-R cspuv 0 "$VLSI/Project/bitslice/bitslice/sheet1" 1 mgc_sheet 5ca4e642ebe9.03.7f.00.00.01.01.01.9b 5ca4e642ebe9.03.7f.00.00.01.00.01.9b
-O 1
-R cspuv 0 "$VLSI/Project/bitslice/bitslice/sheet1" 1 mgc_sheet 5ca4e642ebe9.03.7f.00.00.01.01.01.9b 5ca4e642ebe9.03.7f.00.00.01.00.01.9b
-P "eddm__refer_state" "eddm__refer_floating"
+V v 5 1 5cba0a84673b.03.7f.00.00.01.00.7d.c4
+F o 0 ""
+O 5
+R cspuv 0 "$VLSI/Project/bitslice/bitslice/sheet1" 4 mgc_sheet 5cba0a846711.03.7f.00.00.01.00.7d.c4 5ca4e642ebe9.03.7f.00.00.01.00.01.9b
+O 4
+R cspuv 0 "$VLSI/Project/bitslice/bitslice/sheet1" 3 mgc_sheet 5cba0a821793.03.7f.00.00.01.00.7d.c4 5ca4e642ebe9.03.7f.00.00.01.00.01.9b
+O 3
+R cspuv 0 "$VLSI/Project/bitslice/bitslice/sheet1" 2 mgc_sheet 5cba0a1aeab0.03.7f.00.00.01.00.7d.c4 5ca4e642ebe9.03.7f.00.00.01.00.01.9b

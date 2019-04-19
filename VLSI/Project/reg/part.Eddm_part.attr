@@ -1,8 +1,14 @@
-A 5 u Eddm_part 5ca4e62e316a.03.7f.00.00.01.00.7e.3b 2 2 2 0
+A 5 u Eddm_part 5ca4e62e316a.03.7f.00.00.01.00.7e.3b 3 2 2 0
 V v 1 1 5ca4e62e316a.03.7f.00.00.01.01.7e.3b
 F f 1 "part.part_1"
 V v 2 1 5cacf2635ca9.03.7f.00.00.01.00.19.99
 F f 2 "part.part_2"
+V v 3 1 5cba07117f23.03.7f.00.00.01.00.7b.86
+F f 3 "part.part_3"
+O 3
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R csduv 0 "$VLSI/Project/reg/reg" 1 mgc_schematic 5ca4e629c961.03.7f.00.00.01.01.7e.3b 5ca4e629c961.03.7f.00.00.01.00.7e.3b
+R csduv 1 "$VLSI/Project/reg/reg" 2 mgc_symbol 5cba07117f11.03.7f.00.00.01.00.7b.86 5cacf25bbff5.03.7f.00.00.01.00.19.99
 O 2
 P "eddm__stream_to_use" "eddm__propl_dstream"
 R csduv 0 "$VLSI/Project/reg/reg" 1 mgc_schematic 5ca4e629c961.03.7f.00.00.01.01.7e.3b 5ca4e629c961.03.7f.00.00.01.00.7e.3b

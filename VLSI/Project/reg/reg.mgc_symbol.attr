@@ -1,6 +1,16 @@
-A 5 u mgc_symbol 5cacf25bbff5.03.7f.00.00.01.00.19.99 1 2 1 0
-V v 1 2 5cacf25bbff5.03.7f.00.00.01.01.19.99
-F f 1 "reg.smbl_1"
-F o 0 
-O 1
-R csduv 0 "$VLSI/Project/reg/part" 2 Eddm_part 5cacf2635ca9.03.7f.00.00.01.00.19.99 5ca4e62e316a.03.7f.00.00.01.00.7e.3b
+A 5 u mgc_symbol 5cacf25bbff5.03.7f.00.00.01.00.19.99 4 2 1 0
+V v 2 2 5cba07117f11.03.7f.00.00.01.00.7b.86
+F f 2 "reg.smbl_2"
+F o 0 ""
+V v 3 2 5cba0711c7a5.03.7f.00.00.01.00.7b.86
+F f 3 "reg.smbl_3"
+F o 0 ""
+V v 4 2 5cba071979ae.03.7f.00.00.01.00.7b.86
+F f 4 "reg.smbl_4"
+F o 0 ""
+O 4
+R csduv 0 "$VLSI/Project/reg/part" 3 Eddm_part 5cba07117f23.03.7f.00.00.01.00.7b.86 5ca4e62e316a.03.7f.00.00.01.00.7e.3b
+O 3
+R csduv 0 "$VLSI/Project/reg/part" 3 Eddm_part 5cba07117f23.03.7f.00.00.01.00.7b.86 5ca4e62e316a.03.7f.00.00.01.00.7e.3b
+O 2
+R csduv 0 "$VLSI/Project/reg/part" 3 Eddm_part 5cba07117f23.03.7f.00.00.01.00.7b.86 5ca4e62e316a.03.7f.00.00.01.00.7e.3b

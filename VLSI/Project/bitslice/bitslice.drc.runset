@@ -1,0 +1,7 @@
+*drcRulesFile: /home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/rule_deck/DRC
+*drcRunDir: /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/bitslice/bitslice.cal
+*drcLayoutPaths: bitslice.calibre.gds
+*drcLayoutPrimary: bitslice
+*drcLayoutGetFromViewer: 1
+*drcResultsFile: bitslice.drc.results
+*drcSummaryFile: bitslice.drc.summary

@@ -1,6 +1,12 @@
-A 5 u Eddm_part 5ca4e6474113.03.7f.00.00.01.00.01.9b 1 2 1 0
+A 5 u Eddm_part 5ca4e6474113.03.7f.00.00.01.00.01.9b 2 2 2 0
 V v 1 1 5ca4e6474113.03.7f.00.00.01.01.01.9b
 F f 1 "part.part_1"
+V v 2 1 5cbdffcc70f1.03.7f.00.00.01.00.60.21
+F f 2 "part.part_2"
+O 2
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R csduv 0 "$VLSI/Project/bitslice/bitslice" 1 mgc_schematic 5ca4e642eb16.03.7f.00.00.01.01.01.9b 5ca4e642eb16.03.7f.00.00.01.00.01.9b
+R csduv 1 "$VLSI/Project/bitslice/bitslice" 1 mgc_symbol 5cbdffb6e17e.03.7f.00.00.01.01.60.21 5cbdffb6e17e.03.7f.00.00.01.00.60.21
 O 1
 P "eddm__stream_to_use" "eddm__propl_dstream"
 R csduv 0 "$VLSI/Project/bitslice/bitslice" 1 mgc_schematic 5ca4e642eb16.03.7f.00.00.01.01.01.9b 5ca4e642eb16.03.7f.00.00.01.00.01.9b

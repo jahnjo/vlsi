@@ -1,13 +1,13 @@
-A 5 u mgc_schematic 5ca4e642eb16.03.7f.00.00.01.00.01.9b 5 2 1 0
-V v 3 1 5cba0a1aead9.03.7f.00.00.01.00.7d.c4
-F o 0 ""
-V v 4 1 5cba0a8217ac.03.7f.00.00.01.00.7d.c4
-F o 0 ""
+A 5 u mgc_schematic 5ca4e642eb16.03.7f.00.00.01.00.01.9b 7 2 1 0
 V v 5 1 5cba0a84673b.03.7f.00.00.01.00.7d.c4
 F o 0 ""
+V v 6 1 5cbdf62e173b.03.7f.00.00.01.00.60.21
+F o 0 ""
+V v 7 1 5cbdffd2a780.03.7f.00.00.01.00.60.21
+F o 0 ""
+O 7
+R cspuv 0 "$VLSI/Project/bitslice/bitslice/sheet1" 6 mgc_sheet 5cbdffd2a75a.03.7f.00.00.01.00.60.21 5ca4e642ebe9.03.7f.00.00.01.00.01.9b
+O 6
+R cspuv 0 "$VLSI/Project/bitslice/bitslice/sheet1" 5 mgc_sheet 5cbdf62e1711.03.7f.00.00.01.00.60.21 5ca4e642ebe9.03.7f.00.00.01.00.01.9b
 O 5
 R cspuv 0 "$VLSI/Project/bitslice/bitslice/sheet1" 4 mgc_sheet 5cba0a846711.03.7f.00.00.01.00.7d.c4 5ca4e642ebe9.03.7f.00.00.01.00.01.9b
-O 4
-R cspuv 0 "$VLSI/Project/bitslice/bitslice/sheet1" 3 mgc_sheet 5cba0a821793.03.7f.00.00.01.00.7d.c4 5ca4e642ebe9.03.7f.00.00.01.00.01.9b
-O 3
-R cspuv 0 "$VLSI/Project/bitslice/bitslice/sheet1" 2 mgc_sheet 5cba0a1aeab0.03.7f.00.00.01.00.7d.c4 5ca4e642ebe9.03.7f.00.00.01.00.01.9b

@@ -1,0 +1,419 @@
+# This file provides name mapping information for all objects
+# on the schematic design.  It provides a mapping for each
+# object between its name on the schematic and its name in the netlist.
+version 1.0
+
+Globals
+   VDD vdd
+   ground ground
+End Globals
+
+Cell nmos
+   Pin D d
+   Pin G g
+   Pin S s
+   Pin B b
+End Cell
+
+Cell pmos
+   Pin D d
+   Pin G g
+   Pin S s
+   Pin B b
+End Cell
+
+Cell and
+   Pin Y y
+   Pin A a
+   Pin B b
+   Net N$54 n$54
+   Net N$29 n$29
+   Net Y y
+   Net B b
+   Net A a
+   Global ground ground
+   Global VDD vdd
+   Inst M6 m6 nmos
+   Inst M5 m5 pmos
+   Inst M4 m4 pmos
+   Inst M3 m3 pmos
+   Inst M2 m2 nmos
+   Inst M1 m1 nmos
+End Cell
+
+Cell mux21
+   Pin Y y
+   Pin A a
+   Pin B b
+   Pin S s
+   Net N$46 n$46
+   Net A a
+   Net Y y
+   Net B b
+   Net S s
+   Global ground ground
+   Global VDD vdd
+   Inst M6 m6 nmos
+   Inst M3 m3 pmos
+   Inst M5 m5 nmos
+   Inst M4 m4 pmos
+   Inst M2 m2 pmos
+   Inst M1 m1 nmos
+End Cell
+
+Cell dff
+   Pin Q q
+   Pin CLK clk
+   Pin D d
+   Net N$101 n$101
+   Net N$82 n$82
+   Net N$3 n$3
+   Net N$93 n$93
+   Net N$40 n$40
+   Net N$88 n$88
+   Net N$67 n$67
+   Net N$65 n$65
+   Net N$84 n$84
+   Net N$70 n$70
+   Net Q q
+   Net D d
+   Net CLK clk
+   Global VDD vdd
+   Global ground ground
+   Inst M20 m20 pmos
+   Inst M19 m19 pmos
+   Inst M18 m18 pmos
+   Inst M17 m17 pmos
+   Inst M16 m16 pmos
+   Inst M15 m15 pmos
+   Inst M14 m14 nmos
+   Inst M13 m13 nmos
+   Inst M12 m12 nmos
+   Inst M11 m11 nmos
+   Inst M10 m10 nmos
+   Inst M9 m9 nmos
+   Inst M8 m8 nmos
+   Inst M7 m7 nmos
+   Inst M6 m6 nmos
+   Inst M5 m5 nmos
+   Inst M4 m4 nmos
+   Inst M3 m3 nmos
+   Inst M2 m2 nmos
+   Inst M1 m1 nmos
+End Cell
+
+Cell dffen
+   Pin Q q
+   Pin CLK clk
+   Pin D d
+   Pin En en
+   Net N$5 n$5
+   Net Q q
+   Net En en
+   Net D d
+   Net CLK clk
+   Inst Enable_Mux x_enable_mux mux21
+   Inst DFF x_dff dff
+End Cell
+
+Cell mux81
+   Pin OUT1 out1
+   Pin IN0 in0
+   Pin IN1 in1
+   Pin IN2 in2
+   Pin IN3 in3
+   Pin IN4 in4
+   Pin IN5 in5
+   Pin IN6 in6
+   Pin IN7 in7
+   Pin S0 s0
+   Pin S1 s1
+   Pin S2 s2
+   Net N$25 n$25
+   Net N$21 n$21
+   Net N$17 n$17
+   Net N$13 n$13
+   Net N$9 n$9
+   Net N$5 n$5
+   Net S1 s1
+   Net IN7 in7
+   Net IN6 in6
+   Net S2 s2
+   Net IN5 in5
+   Net IN4 in4
+   Net S0 s0
+   Net IN3 in3
+   Net IN2 in2
+   Net OUT1 out1
+   Net IN1 in1
+   Net IN0 in0
+   Inst MUX217 x_mux217 mux21
+   Inst MUX216 x_mux216 mux21
+   Inst MUX215 x_mux215 mux21
+   Inst MUX214 x_mux214 mux21
+   Inst MUX213 x_mux213 mux21
+   Inst MUX212 x_mux212 mux21
+   Inst MUX211 x_mux211 mux21
+End Cell
+
+Cell reg
+   Pin BusA busa
+   Pin BusB busb
+   Pin BusW busw
+   Pin clk clk
+   Pin dec0 dec0
+   Pin dec1 dec1
+   Pin dec2 dec2
+   Pin dec3 dec3
+   Pin dec4 dec4
+   Pin dec5 dec5
+   Pin dec6 dec6
+   Pin dec7 dec7
+   Pin Reg_W reg_w
+   Pin Rs0 rs0
+   Pin Rs1 rs1
+   Pin Rs2 rs2
+   Pin Rt0 rt0
+   Pin Rt1 rt1
+   Pin Rt2 rt2
+   Net reg8 reg8
+   Net reg7 reg7
+   Net reg6 reg6
+   Net reg5 reg5
+   Net reg3 reg3
+   Net reg2 reg2
+   Net reg1 reg1
+   Net reg0 reg0
+   Net N$78 n$78
+   Net N$76 n$76
+   Net N$74 n$74
+   Net N$72 n$72
+   Net N$70 n$70
+   Net N$68 n$68
+   Net N$66 n$66
+   Net N$64 n$64
+   Net dec7 dec7
+   Net dec6 dec6
+   Net dec5 dec5
+   Net dec4 dec4
+   Net dec3 dec3
+   Net dec2 dec2
+   Net dec1 dec1
+   Net dec0 dec0
+   Net Reg_W reg_w
+   Net clk clk
+   Net BusB busb
+   Net BusA busa
+   Net Rs2 rs2
+   Net Rs1 rs1
+   Net Rt0 rt0
+   Net Rt1 rt1
+   Net Rt2 rt2
+   Net Rs0 rs0
+   Net BusW busw
+   Inst AND8 x_and8 and
+   Inst AND7 x_and7 and
+   Inst AND6 x_and6 and
+   Inst AND5 x_and5 and
+   Inst AND4 x_and4 and
+   Inst AND3 x_and3 and
+   Inst AND2 x_and2 and
+   Inst AND1 x_and1 and
+   Inst DFFEN8 x_dffen8 dffen
+   Inst DFFEN7 x_dffen7 dffen
+   Inst DFFEN6 x_dffen6 dffen
+   Inst DFFEN5 x_dffen5 dffen
+   Inst DFFEN4 x_dffen4 dffen
+   Inst DFFEN3 x_dffen3 dffen
+   Inst DFFEN2 x_dffen2 dffen
+   Inst DFFEN1 x_dffen1 dffen
+   Inst MUX812 x_mux812 mux81
+   Inst MUX811 x_mux811 mux81
+End Cell
+
+Cell inv
+   Pin OUT out
+   Pin IN in
+   Net OUT out
+   Net IN in
+   Global VDD vdd
+   Global ground ground
+   Inst M2 m2 pmos
+   Inst M1 m1 nmos
+End Cell
+
+Cell mux41
+   Pin OUT1 out1
+   Pin IN0 in0
+   Pin IN1 in1
+   Pin IN2 in2
+   Pin IN3 in3
+   Pin S0 s0
+   Pin S1 s1
+   Net N$4 n$4
+   Net N$2 n$2
+   Net OUT1 out1
+   Net S1 s1
+   Net IN3 in3
+   Net IN2 in2
+   Net S0 s0
+   Net IN1 in1
+   Net IN0 in0
+   Inst MUX213 x_mux213 mux21
+   Inst MUX212 x_mux212 mux21
+   Inst MUX211 x_mux211 mux21
+End Cell
+
+Cell or
+   Pin Y y
+   Pin A a
+   Pin B b
+   Net N$22 n$22
+   Net N$13 n$13
+   Net Y y
+   Net B b
+   Net A a
+   Global ground ground
+   Global VDD vdd
+   Inst M6 m6 nmos
+   Inst M5 m5 pmos
+   Inst M4 m4 nmos
+   Inst M3 m3 nmos
+   Inst M2 m2 pmos
+   Inst M1 m1 pmos
+End Cell
+
+Cell adder
+   Pin Cout cout
+   Pin S s
+   Pin A a
+   Pin B b
+   Pin Cin cin
+   Net N$210 n$210
+   Net N$167 n$167
+   Net N$165 n$165
+   Net N$159 n$159
+   Net N$157 n$157
+   Net N$145 n$145
+   Net N$7 n$7
+   Net N$47 n$47
+   Net N$37 n$37
+   Net N$19 n$19
+   Net N$10 n$10
+   Net N$14 n$14
+   Net A a
+   Net B b
+   Net Cin cin
+   Net S s
+   Net Cout cout
+   Global VDD vdd
+   Global ground ground
+   Inst M18 m18 nmos
+   Inst M17 m17 pmos
+   Inst M16 m16 pmos
+   Inst M15 m15 pmos
+   Inst M24 m24 nmos
+   Inst M23 m23 nmos
+   Inst M22 m22 nmos
+   Inst M21 m21 nmos
+   Inst M14 m14 pmos
+   Inst M13 m13 pmos
+   Inst M12 m12 pmos
+   Inst M11 m11 pmos
+   Inst M10 m10 pmos
+   Inst M9 m9 pmos
+   Inst M8 m8 pmos
+   Inst M7 m7 pmos
+   Inst M6 m6 nmos
+   Inst M5 m5 nmos
+   Inst M4 m4 nmos
+   Inst M3 m3 nmos
+   Inst M2 m2 pmos
+   Inst M1 m1 nmos
+   Inst M28 m28 nmos
+   Inst M27 m27 pmos
+   Inst M26 m26 nmos
+   Inst M25 m25 pmos
+   Inst M20 m20 nmos
+   Inst M19 m19 nmos
+End Cell
+
+Cell alu
+   Pin Cout cout
+   Pin result result
+   Pin A a
+   Pin ALUop_0 aluop_0
+   Pin ALUop_1 aluop_1
+   Pin B b
+   Pin Cin cin
+   Net N$30 n$30
+   Net N$32 n$32
+   Net N$41 n$41
+   Net N$44 n$44
+   Net N$31 n$31
+   Net Cin cin
+   Net ALUop_0 aluop_0
+   Net Cout cout
+   Net ALUop_1 aluop_1
+   Net result result
+   Net B b
+   Net A a
+   Inst INV x_inv inv
+   Inst B_MUX x_b_mux mux21
+   Inst MUX411 x_mux411 mux41
+   Inst OR x_or or
+   Inst AND x_and and
+   Inst ADD_SUB x_add_sub adder
+End Cell
+
+Cell #top#
+   Pin Cout cout
+   Pin result result
+   Pin ALUop0 aluop0
+   Pin ALUop1 aluop1
+   Pin BusW busw
+   Pin Cin cin
+   Pin clk clk
+   Pin dec0 dec0
+   Pin dec1 dec1
+   Pin dec2 dec2
+   Pin dec3 dec3
+   Pin dec4 dec4
+   Pin dec5 dec5
+   Pin dec6 dec6
+   Pin dec7 dec7
+   Pin RegW regw
+   Pin Rs0 rs0
+   Pin Rs1 rs1
+   Pin Rs2 rs2
+   Pin Rt0 rt0
+   Pin Rt1 rt1
+   Pin Rt2 rt2
+   Net busB busb
+   Net busA busa
+   Net ALUop0 aluop0
+   Net ALUop1 aluop1
+   Net Cout cout
+   Net result result
+   Net Cin cin
+   Net BusW busw
+   Net Rt0 rt0
+   Net Rt1 rt1
+   Net Rt2 rt2
+   Net Rs0 rs0
+   Net Rs1 rs1
+   Net Rs2 rs2
+   Net clk clk
+   Net RegW regw
+   Net dec0 dec0
+   Net dec1 dec1
+   Net dec2 dec2
+   Net dec3 dec3
+   Net dec4 dec4
+   Net dec5 dec5
+   Net dec6 dec6
+   Net dec7 dec7
+   Inst REG1 x_reg1 reg
+   Inst ALU1 x_alu1 alu
+End Cell
+

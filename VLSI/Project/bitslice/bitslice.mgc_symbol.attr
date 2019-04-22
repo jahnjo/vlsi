@@ -1,0 +1,6 @@
+A 5 u mgc_symbol 5cbdffb6e17e.03.7f.00.00.01.00.60.21 1 2 1 0
+V v 1 2 5cbdffb6e17e.03.7f.00.00.01.01.60.21
+F f 1 "bitslice.smbl_1"
+F o 0 
+O 1
+R csduv 0 "$VLSI/Project/bitslice/part" 2 Eddm_part 5cbdffcc70f1.03.7f.00.00.01.00.60.21 5ca4e6474113.03.7f.00.00.01.00.01.9b

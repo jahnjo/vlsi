@@ -1,0 +1,19 @@
+A 5 u Eddm_design_viewpoint 5cbdffec11cf.03.7f.00.00.01.00.67.ab 1 2 9 0
+V v 1 4 5cbdffec11cf.03.7f.00.00.01.01.67.ab
+F f 1 "bitslice_SDL_HIER.dvpt_1"
+F o 0 
+F o 0 
+F o 0 
+O 1
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R cspuv 0 "$VLSI/Project/bitslice/part" 2 Eddm_part 5cbdffcc70f1.03.7f.00.00.01.00.60.21 5ca4e6474113.03.7f.00.00.01.00.01.9b
+R cspuv 1 "$VLSI/Project/bitslice/bitslice" 7 mgc_schematic 5cbdffd2a780.03.7f.00.00.01.00.60.21 5ca4e642eb16.03.7f.00.00.01.00.01.9b
+R cspuv 2 "$VLSI/Project/bitslice/bitslice" 1 mgc_symbol 5cbdffb6e17e.03.7f.00.00.01.01.60.21 5cbdffb6e17e.03.7f.00.00.01.00.60.21
+R cspuv 3 "$VLSI/Project/alu/part" 8 Eddm_part 5cab89a8a9d7.03.7f.00.00.01.00.1d.91 5ca4e6130482.03.7f.00.00.01.00.7c.12
+R cspuv 4 "$VLSI/Project/reg/part" 3 Eddm_part 5cba07117f23.03.7f.00.00.01.00.7b.86 5ca4e62e316a.03.7f.00.00.01.00.7e.3b
+R cspuv 5 "$VLSI/Project/reg/reg" 1 mgc_schematic 5ca4e629c961.03.7f.00.00.01.01.7e.3b 5ca4e629c961.03.7f.00.00.01.00.7e.3b
+P "eddm__refer_state" "eddm__refer_floating"
+R cspuv 6 "$VLSI/Project/reg/reg" 2 mgc_symbol 5cba07117f11.03.7f.00.00.01.00.7b.86 5cacf25bbff5.03.7f.00.00.01.00.19.99
+R cspuv 7 "$VLSI/Project/alu/alu" 1 mgc_schematic 5ca4e60b9287.03.7f.00.00.01.01.7c.12 5ca4e60b9287.03.7f.00.00.01.00.7c.12
+P "eddm__refer_state" "eddm__refer_floating"
+R cspuv 8 "$VLSI/Project/alu/alu" 1 mgc_symbol 5cab89841350.03.7f.00.00.01.00.1d.91 5cab8984134f.03.7f.00.00.01.00.1d.91

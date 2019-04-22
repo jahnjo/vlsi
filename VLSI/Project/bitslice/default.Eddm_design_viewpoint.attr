@@ -1,0 +1,89 @@
+A 5 u Eddm_design_viewpoint 5cbdf42ec255.03.7f.00.00.01.00.60.21 3 2 60 0
+V v 1 4 5cbdf42ec256.03.7f.00.00.01.00.60.21
+F f 1 "default.dvpt_1"
+F o 0 ""
+F o 0 ""
+F o 0 ""
+V v 2 4 5cbdf42f18b0.03.7f.00.00.01.00.60.21
+F f 2 "default.dvpt_2"
+F o 0 ""
+F o 0 ""
+F o 0 ""
+V v 3 4 5cbdf62e20d5.03.7f.00.00.01.00.60.21
+F f 3 "default.dvpt_3"
+F o 0 ""
+F o 0 ""
+F o 0 ""
+O 3
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R cspuv 0 "$VLSI/Project/bitslice/part" 1 Eddm_part 5ca4e6474113.03.7f.00.00.01.01.01.9b 5ca4e6474113.03.7f.00.00.01.00.01.9b
+R cspuv 1 "$VLSI/Project/bitslice/bitslice" 6 mgc_schematic 5cbdf62e173b.03.7f.00.00.01.00.60.21 5ca4e642eb16.03.7f.00.00.01.00.01.9b
+R cspuv 2 "$VLSI/Project/bitslice/default" 1 Eddm_ba_mgr 5cbdf42ec3f9.03.7f.00.00.01.01.60.21 5cbdf42ec3f9.03.7f.00.00.01.00.60.21
+R cspuv 3 "$VLSI/Project/alu/part" 8 Eddm_part 5cab89a8a9d7.03.7f.00.00.01.00.1d.91 5ca4e6130482.03.7f.00.00.01.00.7c.12
+R cspuv 4 "$VLSI/Project/reg/part" 3 Eddm_part 5cba07117f23.03.7f.00.00.01.00.7b.86 5ca4e62e316a.03.7f.00.00.01.00.7e.3b
+R cspuv 5 "$VLSI/Project/alu/alu" 9 mgc_schematic 5cab897770ce.03.7f.00.00.01.00.1d.91 5ca4e60b9287.03.7f.00.00.01.00.7c.12
+R cspuv 7 "$VLSI/Project/reg/reg" 4 mgc_schematic 5cab85914c69.03.7f.00.00.01.00.0e.e0 5ca4e629c961.03.7f.00.00.01.00.7e.3b
+R cspuv 13 "$VLSI/Project/Mux81/part" 2 Eddm_part 5ca3bb4e71f0.03.7f.00.00.01.00.10.df 5c9bae189a3e.03.7f.00.00.01.00.52.a1
+R cspuv 14 "$VLSI/Project/DFFen/part" 2 Eddm_part 5c9d2381092c.03.7f.00.00.01.00.28.34 5c9badbb8aae.03.7f.00.00.01.00.4e.07
+R cspuv 15 "$VLSI/Project/and/part" 2 Eddm_part 5ca2677180e1.03.7f.00.00.01.00.6b.10 5c9bb0259227.03.7f.00.00.01.00.57.f5
+R cspuv 16 "$VLSI/Project/Mux81/Mux81" 4 mgc_schematic 5ca3b789ce0e.03.7f.00.00.01.00.10.df 5c9badfaf392.03.7f.00.00.01.00.52.a1
+R cspuv 18 "$VLSI/Project/and/and" 6 mgc_schematic 5ca25215d72a.03.7f.00.00.01.00.2b.f9 5c9bb0213d9b.03.7f.00.00.01.00.57.f5
+R cspuv 20 "$VLSI/Project/DFFen/DFFen" 5 mgc_schematic 5c9bd7f99122.03.7f.00.00.01.00.0d.4e 5c9bada97d8e.03.7f.00.00.01.00.4e.07
+R cspuv 22 "$GENERIC13/symbols/nmos/part" 33 Eddm_part 4f3c52ec7414.03.93.22.28.e1.00.55.af 488e22b57232.03.93.22.28.e1.0a.11.a3
+R cspuv 23 "$GENERIC13/symbols/pmos/part" 24 Eddm_part 4f3c5315ac7a.03.93.22.28.e1.00.55.af 488e22b57236.03.93.22.28.e1.03.11.a3
+R cspuv 26 "$VLSI/Project/DFF/part" 6 Eddm_part 5c915bea2a1b.03.7f.00.00.01.00.35.03 5c9142ab6087.03.7f.00.00.01.00.10.17
+R cspuv 27 "$VLSI/Project/Mux21/part" 2 Eddm_part 5c9bb6d87a8a.03.7f.00.00.01.00.67.7e 5c9a8336c0c3.03.7f.00.00.01.00.1d.00
+R cspuv 28 "$VLSI/Project/DFF/DFF" 10 mgc_schematic 5c915bdca6c9.03.7f.00.00.01.00.35.03 5c913ab17a68.03.7f.00.00.01.00.10.17
+R cspuv 30 "$VLSI/Project/Mux21/mux21" 13 mgc_schematic 5c9bb5b92434.03.7f.00.00.01.00.5d.5e 5c9a8329642d.03.7f.00.00.01.00.1d.00
+R cspuv 32 "$VLSI/Project/Adder/part" 3 Eddm_part 5ca6529fef47.03.7f.00.00.01.00.16.da 5c9a8c88d9cf.03.7f.00.00.01.00.16.c8
+R cspuv 33 "$VLSI/Project/or/part" 2 Eddm_part 5ca25ff1e676.03.7f.00.00.01.00.5f.b9 5c9bb03ee604.03.7f.00.00.01.00.5a.1e
+R cspuv 34 "$VLSI/Project/Mux41/part" 5 Eddm_part 5ca6569eb0a8.03.7f.00.00.01.00.1c.b5 5c9bade1b1fe.03.7f.00.00.01.00.50.6b
+R cspuv 35 "$VLSI/Project/inv/part" 2 Eddm_part 5ca2460c53dc.03.7f.00.00.01.00.13.3f 5ca243a6c6cb.03.7f.00.00.01.00.10.8e
+R cspuv 36 "$VLSI/Project/or/or" 4 mgc_schematic 5ca254b7f37e.03.7f.00.00.01.00.42.fc 5c9bb0379e21.03.7f.00.00.01.00.5a.1e
+R cspuv 38 "$VLSI/Project/Adder/mirror" 5 mgc_schematic 5c9d21d39803.03.7f.00.00.01.00.25.6e 5c9a800a2e74.03.7f.00.00.01.00.16.c8
+R cspuv 40 "$VLSI/Project/Mux41/Mux41" 2 mgc_schematic 5ca3d7664808.03.7f.00.00.01.00.7d.55 5ca3d6c6b80b.03.7f.00.00.01.00.7d.55
+R cspuv 42 "$VLSI/Project/inv/schematic" 3 mgc_schematic 5ca244c80d57.03.7f.00.00.01.00.13.3f 5ca2439d6167.03.7f.00.00.01.00.10.8e
+O 2
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R cspuv 0 "$VLSI/Project/bitslice/part" 1 Eddm_part 5ca4e6474113.03.7f.00.00.01.01.01.9b 5ca4e6474113.03.7f.00.00.01.00.01.9b
+R cspuv 1 "$VLSI/Project/bitslice/bitslice" 5 mgc_schematic 5cba0a84673b.03.7f.00.00.01.00.7d.c4 5ca4e642eb16.03.7f.00.00.01.00.01.9b
+R cspuv 2 "$VLSI/Project/bitslice/default" 1 Eddm_ba_mgr 5cbdf42ec3f9.03.7f.00.00.01.01.60.21 5cbdf42ec3f9.03.7f.00.00.01.00.60.21
+R cspuv 3 "$VLSI/Project/alu/part" 8 Eddm_part 5cab89a8a9d7.03.7f.00.00.01.00.1d.91 5ca4e6130482.03.7f.00.00.01.00.7c.12
+R cspuv 4 "$VLSI/Project/reg/part" 3 Eddm_part 5cba07117f23.03.7f.00.00.01.00.7b.86 5ca4e62e316a.03.7f.00.00.01.00.7e.3b
+R cspuv 5 "$VLSI/Project/alu/alu" 9 mgc_schematic 5cab897770ce.03.7f.00.00.01.00.1d.91 5ca4e60b9287.03.7f.00.00.01.00.7c.12
+R cspuv 7 "$VLSI/Project/reg/reg" 4 mgc_schematic 5cab85914c69.03.7f.00.00.01.00.0e.e0 5ca4e629c961.03.7f.00.00.01.00.7e.3b
+R cspuv 13 "$VLSI/Project/Mux81/part" 2 Eddm_part 5ca3bb4e71f0.03.7f.00.00.01.00.10.df 5c9bae189a3e.03.7f.00.00.01.00.52.a1
+R cspuv 14 "$VLSI/Project/DFFen/part" 2 Eddm_part 5c9d2381092c.03.7f.00.00.01.00.28.34 5c9badbb8aae.03.7f.00.00.01.00.4e.07
+R cspuv 15 "$VLSI/Project/and/part" 2 Eddm_part 5ca2677180e1.03.7f.00.00.01.00.6b.10 5c9bb0259227.03.7f.00.00.01.00.57.f5
+R cspuv 16 "$VLSI/Project/Mux81/Mux81" 4 mgc_schematic 5ca3b789ce0e.03.7f.00.00.01.00.10.df 5c9badfaf392.03.7f.00.00.01.00.52.a1
+R cspuv 17 "$VLSI/Project/Mux81/Mux81" 1 mgc_symbol 5ca3bafb99a5.03.7f.00.00.01.01.10.df 5ca3bafb99a5.03.7f.00.00.01.00.10.df
+R cspuv 18 "$VLSI/Project/and/and" 6 mgc_schematic 5ca25215d72a.03.7f.00.00.01.00.2b.f9 5c9bb0213d9b.03.7f.00.00.01.00.57.f5
+R cspuv 19 "$VLSI/Project/and/and" 1 mgc_symbol 5ca26764d86b.03.7f.00.00.01.01.6b.10 5ca26764d86b.03.7f.00.00.01.00.6b.10
+R cspuv 20 "$VLSI/Project/DFFen/DFFen" 5 mgc_schematic 5c9bd7f99122.03.7f.00.00.01.00.0d.4e 5c9bada97d8e.03.7f.00.00.01.00.4e.07
+R cspuv 21 "$VLSI/Project/DFFen/DFFen" 1 mgc_symbol 5c9d229c1b27.03.7f.00.00.01.00.28.34 5c9d229c1b26.03.7f.00.00.01.00.28.34
+R cspuv 22 "$GENERIC13/symbols/nmos/part" 33 Eddm_part 4f3c52ec7414.03.93.22.28.e1.00.55.af 488e22b57232.03.93.22.28.e1.0a.11.a3
+R cspuv 23 "$GENERIC13/symbols/pmos/part" 24 Eddm_part 4f3c5315ac7a.03.93.22.28.e1.00.55.af 488e22b57236.03.93.22.28.e1.03.11.a3
+R cspuv 24 "$GENERIC13/symbols/nmos/nmos" 41 mgc_symbol 4f3c52ec7400.03.93.22.28.e1.00.55.af 488e22b57232.03.93.22.28.e1.0b.11.a3
+R cspuv 25 "$GENERIC13/symbols/pmos/pmos" 27 mgc_symbol 4f3c5315ac6d.03.93.22.28.e1.00.55.af 488e22b57236.03.93.22.28.e1.02.11.a3
+R cspuv 26 "$VLSI/Project/DFF/part" 6 Eddm_part 5c915bea2a1b.03.7f.00.00.01.00.35.03 5c9142ab6087.03.7f.00.00.01.00.10.17
+R cspuv 27 "$VLSI/Project/Mux21/part" 2 Eddm_part 5c9bb6d87a8a.03.7f.00.00.01.00.67.7e 5c9a8336c0c3.03.7f.00.00.01.00.1d.00
+R cspuv 28 "$VLSI/Project/DFF/DFF" 10 mgc_schematic 5c915bdca6c9.03.7f.00.00.01.00.35.03 5c913ab17a68.03.7f.00.00.01.00.10.17
+R cspuv 30 "$VLSI/Project/Mux21/mux21" 13 mgc_schematic 5c9bb5b92434.03.7f.00.00.01.00.5d.5e 5c9a8329642d.03.7f.00.00.01.00.1d.00
+R cspuv 32 "$VLSI/Project/Adder/part" 3 Eddm_part 5ca6529fef47.03.7f.00.00.01.00.16.da 5c9a8c88d9cf.03.7f.00.00.01.00.16.c8
+R cspuv 33 "$VLSI/Project/or/part" 2 Eddm_part 5ca25ff1e676.03.7f.00.00.01.00.5f.b9 5c9bb03ee604.03.7f.00.00.01.00.5a.1e
+R cspuv 34 "$VLSI/Project/Mux41/part" 5 Eddm_part 5ca6569eb0a8.03.7f.00.00.01.00.1c.b5 5c9bade1b1fe.03.7f.00.00.01.00.50.6b
+R cspuv 35 "$VLSI/Project/inv/part" 2 Eddm_part 5ca2460c53dc.03.7f.00.00.01.00.13.3f 5ca243a6c6cb.03.7f.00.00.01.00.10.8e
+R cspuv 36 "$VLSI/Project/or/or" 4 mgc_schematic 5ca254b7f37e.03.7f.00.00.01.00.42.fc 5c9bb0379e21.03.7f.00.00.01.00.5a.1e
+R cspuv 38 "$VLSI/Project/Adder/mirror" 5 mgc_schematic 5c9d21d39803.03.7f.00.00.01.00.25.6e 5c9a800a2e74.03.7f.00.00.01.00.16.c8
+R cspuv 40 "$VLSI/Project/Mux41/Mux41" 2 mgc_schematic 5ca3d7664808.03.7f.00.00.01.00.7d.55 5ca3d6c6b80b.03.7f.00.00.01.00.7d.55
+R cspuv 42 "$VLSI/Project/inv/schematic" 3 mgc_schematic 5ca244c80d57.03.7f.00.00.01.00.13.3f 5ca2439d6167.03.7f.00.00.01.00.10.8e
+R cspuv 44 "$MGC_IC_GENERIC_LIB/vdd/part" 1 Eddm_part 3db48b399318.03.93.22.29.75.00.28.94 3db48b399317.03.93.22.29.75.00.28.94
+R cspuv 45 "$MGC_IC_GENERIC_LIB/ground/part" 1 Eddm_part 3db4867e4bc8.03.93.22.29.75.00.27.f6 3db4867e4bc7.03.93.22.29.75.00.27.f6
+R cspuv 46 "$MGC_IC_GENERIC_LIB/vdd/vdd" 1 mgc_symbol 3db48b399bae.03.93.22.29.75.00.28.94 3db48b399bac.03.93.22.29.75.00.28.94
+R cspuv 47 "$MGC_IC_GENERIC_LIB/ground/ground" 1 mgc_symbol 3db4867e5447.03.93.22.29.75.00.27.f6 3db4867e5446.03.93.22.29.75.00.27.f6
+O 1
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R cspuv 0 "$VLSI/Project/bitslice/part" 1 Eddm_part 5ca4e6474113.03.7f.00.00.01.01.01.9b 5ca4e6474113.03.7f.00.00.01.00.01.9b
+R cspuv 1 "$VLSI/Project/bitslice/bitslice" 1 mgc_schematic 5ca4e642eb16.03.7f.00.00.01.01.01.9b 5ca4e642eb16.03.7f.00.00.01.00.01.9b
+P "eddm__refer_state" "eddm__refer_floating"
+R cspuv 2 "$VLSI/Project/bitslice/default" 1 Eddm_ba_mgr 5cbdf42ec3f9.03.7f.00.00.01.01.60.21 5cbdf42ec3f9.03.7f.00.00.01.00.60.21

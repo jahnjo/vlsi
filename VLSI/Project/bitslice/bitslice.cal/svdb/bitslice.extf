@@ -1,0 +1,11 @@
+# Automagically generated file: Please do not edit!
+lvs_ExtfVersion 3
+lvs_ExtRunTimes 1555961313 1555961314
+lvs_ExtOutFile RUNDIR /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/bitslice/bitslice.cal
+lvs_ExtOutFile RULES_FILE /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/bitslice/bitslice.cal/_PEX_
+lvs_ExtInfoExtSummary {0 0 0 0 0 0 0 0 0 0 0}
+lvs_ExtInfoErcSummary {0 0 0 0 0 0 0 0 0 0 0}
+lvs_ExtInfoDfmSummary {0}
+lvs_ExtOutFile LAYOUT_NETLIST svdb/bitslice.sp
+lvs_ExtOutFile EXTRACTION_REPORT bitslice.lvs.report.ext
+lvs_ExtOutFile SOFTCHK_DATABASE svdb/bitslice.softchk

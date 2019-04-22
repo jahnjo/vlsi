@@ -1,0 +1,11 @@
+*lvsRulesFile: /home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/rule_deck/LVS
+*lvsRunDir: /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/bitslice/bitslice.cal
+*lvsLayoutPaths: bitslice.calibre.gds
+*lvsLayoutPrimary: bitslice
+*lvsLayoutGetFromViewer: 1
+*lvsResultsFile: bitslice.lvs.results
+*lvsSummaryFile: bitslice.lvs.summary
+*cmnApplyTemplates: 0
+*lvsSourceGetFromViewer: 1
+*lvsSourcePath: bitslice.calibre.src.net
+*lvsSourcePrimary: bitslice

@@ -1,0 +1,8 @@
+//OK 
+//NUMBER_OF_HEADER_LINES: 6
+//VERSION: 1
+//TOKEN_DELIMITER: "
+//TOKEN_SEPARATOR: " "
+//FORMAT: "time" "calibre version" "command line"
+"Mon Apr 22 15:28:34 2019 " "v2012.2_36.25" "-xrc -pdb -rcc -turbo 1 /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/bitslice/bitslice.cal/_PEX_"
+"Mon Apr 22 15:28:35 2019 " "v2012.2_36.25" "-xrc -fmt -all /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/bitslice/bitslice.cal/_PEX_"

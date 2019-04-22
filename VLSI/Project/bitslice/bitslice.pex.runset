@@ -1,0 +1,7 @@
+*pexRulesFile: /home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/rule_deck/PEX
+*pexRunDir: /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/bitslice/bitslice.cal
+*pexLayoutPaths: bitslice.calibre.gds
+*pexLayoutPrimary: bitslice
+*pexLayoutGetFromViewer: 1
+*pexResultsFile: bitslice.pex.results
+*pexSummaryFile: bitslice.pex.summary

@@ -10,8 +10,6 @@ return
 tcl::HistClear 
 tcl::HistAdd {vasim -cmd /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/bitslice/bitslice.cal/bitslice.cir -lib /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/bitslice/work -ms -multisource_delay max}
 tcl::HistAdd {do bitslice.do}
-tcl::HistAdd restart
-tcl::HistAdd {do bitslice.do}
 ## Last actions : ## 
 
 set _prefReuse(ChoiseDone) 1 

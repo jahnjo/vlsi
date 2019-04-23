@@ -31,13 +31,464 @@ do bitslice.do
 # +   .TRAN: TSTART > TSTOP: TSTART set to 0
 # ** Warning: (eldo - 107)   NODE "VSS": Less than two connections.
 # ** Warning: (eldo - 107)   NODE "DEC0": Less than two connections.
-# ** Warning: (eldo - 107)   NODE "RT0": Less than two connections.
+# ** Warning: (eldo - 107)   NODE "RS0": Less than two connections.
 # ** Warning: (eldo - 29)  Such messages will not be displayed in future. Set .option MSGNODE = 0 to receive all such warnings.
 # Analog data pre-processing done
 # -----------| Summary on Analog Data |-----------
 # Analog kernel and ELDO devices memory space allocated (MB):    534
-# 12052 devices
-# 10872 nodes
+# 12043 devices
+# 10863 nodes
+# 2 input signals
+# ** Note: Extra devices and nodes might be created during simulation (access resistors, internal nodes...).
+# ** Note: Extra Memory might be allocated during simulation.
+# ----------- Summary done -----------
+# ** Warning: (eldo - 117)   NODE "VSS": Not connected to any power supply.
+# ** Warning: (eldo - 108)   NODE "N_CIN_X0_M4_G": This node is a floating gate.
+# +   List of MOS devices connected to that node follows:
+# +   --> MX0_M4
+# ** Warning: (eldo - 108)   NODE "N_CIN_X0_M9_G": This node is a floating gate.
+# +   List of MOS devices connected to that node follows:
+# +   --> MX0_M9
+# ** Warning: (eldo - 108)   NODE "N_CIN_X0_M14_G": This node is a floating gate.
+# +   List of MOS devices connected to that node follows:
+# +   --> MX0_M14
+# ** Warning: (eldo - 29)   Such messages will not be displayed in future. Set .option MSGNODE = 0 to receive all such warnings.
+#  -----------------------------
+# | Quiescent Point computation |
+#  -----------------------------
+# Analog DC computation starting
+# Analog DC computation done
+# Digital computation at time 0 ps starting
+# Digital computation at time 0 ps done
+# Quiescent point done
+#  -----------------------------
+# | Transient analysis starting |
+#  -----------------------------
+# Eldo analog kernel simulation effective options:
+#   VNTOL  = 1.000000e-06
+#   RELTOL = 7.500000e-04
+#   HMIN   = 1.000000e-03 ns
+#   HMAX will be set later during simulation and may vary
+#   EPS    = 1.000000e-03
+# Starting analog time is 0.000000 ns
+# Simulation time for "run -all" is 1.000000 ns
+restart
+# Transient analysis done
+#    Global cpu Time 0h 0mn 58s 070ms 
+#    Global Elapsed Time 0h 19mn 2s 
+# -----------| Simulation Information |-----------
+# Analog kernel and ELDO devices memory size allocated (MB):  562.1
+# 12855 devices
+# 11675 nodes
+# 1000516 MOS or BIP model calls
+# 8803 steps computed
+# ----------- Simulation Information done -----------
+# --- Simulation stopped at time 8 us
+# Newton iteration            :  2.579234
+# Total of transactions       :  1
+# Total of events             :  1
+# ** Note: (vasim - 3800) Running Questa ADMS 12.1 patch1 Fri Sep  7 07:23:32 GMT 2012
+# +   on egr-vlsi-25 Linux x86_64(3.10.0-514.26.2.el7.x86_64) #1 SMP Tue Jul 4 15:04:05 UTC 2017
+# ELDO 12.1 patch1 (64 bits) Thu Sep  6 14:32:26 GMT 2012
+# EZwave 12.1 patch1 Wed Jun 20 13:28:31 GMT 2012
+# Copyright 1988 Mentor Graphics Corporation
+# All Rights Reserved
+# THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY
+# INFORMATION WHICH ARE THE PROPERTY OF MENTOR
+# GRAPHICS CORPORATION OR ITS LICENSORS AND IS
+# SUBJECT TO LICENSE TERMS.
+#  ---------------
+# | Load starting |
+#  ---------------
+# Loading "/opt/mentor/ams_12_1/libs/std.standard"
+# ModelSim for Questa-64 Version 10.1c 2012.07
+# Reading /opt/mentor/ams_12_1/questasim/v10.1c/tcl/vsim/pref.tcl 
+# Loading /opt/mentor/ams_12_1/libs/MS/OS/aol/libVLA2D_64.so
+# Loading "/opt/mentor/ams_12_1/libs/ieee.math_real"
+# Loading "/opt/mentor/ams_12_1/libs/DISCIPLINES.physical_constants"
+# Loading "/opt/mentor/ams_12_1/libs/DISCIPLINES.electromagnetic_system"
+# Load done
+# Executing file '/home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/bitslice/bitslice.cal/bitslice.ez.do'
+# bitslice
+do bitslice.do
+#  ----------------------------
+# | Analog Data pre-processing |
+#  ----------------------------
+# ** Warning: (eldo - 1615)  In file "./bitslice.cal/bitslice.cir" line 3:
+# +   COMMAND ".TRAN": TPRINT can not be <= 0.0.
+# +   It is set to TSTOP/20.0 = 5.000e-11 s.
+# ** Warning: (eldo - 400)  In file "./bitslice.cal/bitslice.cir" line 3:
+# +   .TRAN: TSTART > TSTOP: TSTART set to 0
+# ** Warning: (eldo - 107)   NODE "VSS": Less than two connections.
+# ** Warning: (eldo - 107)   NODE "DEC0": Less than two connections.
+# ** Warning: (eldo - 107)   NODE "RS0": Less than two connections.
+# ** Warning: (eldo - 29)  Such messages will not be displayed in future. Set .option MSGNODE = 0 to receive all such warnings.
+# Analog data pre-processing done
+# -----------| Summary on Analog Data |-----------
+# Analog kernel and ELDO devices memory space allocated (MB):    535
+# 12043 devices
+# 10863 nodes
+# 2 input signals
+# ** Note: Extra devices and nodes might be created during simulation (access resistors, internal nodes...).
+# ** Note: Extra Memory might be allocated during simulation.
+# ----------- Summary done -----------
+# ** Warning: (eldo - 117)   NODE "VSS": Not connected to any power supply.
+# ** Warning: (eldo - 108)   NODE "N_CIN_X0_M4_G": This node is a floating gate.
+# +   List of MOS devices connected to that node follows:
+# +   --> MX0_M4
+# ** Warning: (eldo - 108)   NODE "N_CIN_X0_M9_G": This node is a floating gate.
+# +   List of MOS devices connected to that node follows:
+# +   --> MX0_M9
+# ** Warning: (eldo - 108)   NODE "N_CIN_X0_M14_G": This node is a floating gate.
+# +   List of MOS devices connected to that node follows:
+# +   --> MX0_M14
+# ** Warning: (eldo - 29)   Such messages will not be displayed in future. Set .option MSGNODE = 0 to receive all such warnings.
+#  -----------------------------
+# | Quiescent Point computation |
+#  -----------------------------
+# Analog DC computation starting
+# Analog DC computation done
+# Digital computation at time 0 ps starting
+# Digital computation at time 0 ps done
+# Quiescent point done
+#  -----------------------------
+# | Transient analysis starting |
+#  -----------------------------
+# Eldo analog kernel simulation effective options:
+#   VNTOL  = 1.000000e-06
+#   RELTOL = 7.500000e-04
+#   HMIN   = 1.000000e-03 ns
+#   HMAX will be set later during simulation and may vary
+#   EPS    = 1.000000e-03
+# Starting analog time is 0.000000 ns
+# Simulation time for "run -all" is 1.000000 ns
+restart
+# Transient analysis done
+#    Global cpu Time 0h 0mn 22s 430ms 
+#    Global Elapsed Time 0h 7mn 0s 
+# -----------| Simulation Information |-----------
+# Analog kernel and ELDO devices memory size allocated (MB):  562.3
+# 12855 devices
+# 11675 nodes
+# 913744 MOS or BIP model calls
+# 2393 steps computed
+# ----------- Simulation Information done -----------
+# --- Simulation stopped at time 1,600 ns
+# Newton iteration            :  3.217300
+# Total of transactions       :  1
+# Total of events             :  1
+# ** Note: (vasim - 3800) Running Questa ADMS 12.1 patch1 Fri Sep  7 07:23:32 GMT 2012
+# +   on egr-vlsi-25 Linux x86_64(3.10.0-514.26.2.el7.x86_64) #1 SMP Tue Jul 4 15:04:05 UTC 2017
+# ELDO 12.1 patch1 (64 bits) Thu Sep  6 14:32:26 GMT 2012
+# EZwave 12.1 patch1 Wed Jun 20 13:28:31 GMT 2012
+# Copyright 1988 Mentor Graphics Corporation
+# All Rights Reserved
+# THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY
+# INFORMATION WHICH ARE THE PROPERTY OF MENTOR
+# GRAPHICS CORPORATION OR ITS LICENSORS AND IS
+# SUBJECT TO LICENSE TERMS.
+#  ---------------
+# | Load starting |
+#  ---------------
+# Loading "/opt/mentor/ams_12_1/libs/std.standard"
+# ModelSim for Questa-64 Version 10.1c 2012.07
+# Reading /opt/mentor/ams_12_1/questasim/v10.1c/tcl/vsim/pref.tcl 
+# Loading /opt/mentor/ams_12_1/libs/MS/OS/aol/libVLA2D_64.so
+# Loading "/opt/mentor/ams_12_1/libs/ieee.math_real"
+# Loading "/opt/mentor/ams_12_1/libs/DISCIPLINES.physical_constants"
+# Loading "/opt/mentor/ams_12_1/libs/DISCIPLINES.electromagnetic_system"
+# Load done
+# Executing file '/home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/bitslice/bitslice.cal/bitslice.ez.do'
+# bitslice
+do bitslice.do
+#  ----------------------------
+# | Analog Data pre-processing |
+#  ----------------------------
+# ** Warning: (eldo - 1615)  In file "./bitslice.cal/bitslice.cir" line 3:
+# +   COMMAND ".TRAN": TPRINT can not be <= 0.0.
+# +   It is set to TSTOP/20.0 = 5.000e-11 s.
+# ** Warning: (eldo - 400)  In file "./bitslice.cal/bitslice.cir" line 3:
+# +   .TRAN: TSTART > TSTOP: TSTART set to 0
+# ** Warning: (eldo - 107)   NODE "VSS": Less than two connections.
+# ** Warning: (eldo - 107)   NODE "DEC0": Less than two connections.
+# ** Warning: (eldo - 107)   NODE "RS0": Less than two connections.
+# ** Warning: (eldo - 29)  Such messages will not be displayed in future. Set .option MSGNODE = 0 to receive all such warnings.
+# Analog data pre-processing done
+# -----------| Summary on Analog Data |-----------
+# Analog kernel and ELDO devices memory space allocated (MB):    535
+# 12043 devices
+# 10863 nodes
+# 2 input signals
+# ** Note: Extra devices and nodes might be created during simulation (access resistors, internal nodes...).
+# ** Note: Extra Memory might be allocated during simulation.
+# ----------- Summary done -----------
+# ** Warning: (eldo - 117)   NODE "VSS": Not connected to any power supply.
+# ** Warning: (eldo - 108)   NODE "N_CIN_X0_M4_G": This node is a floating gate.
+# +   List of MOS devices connected to that node follows:
+# +   --> MX0_M4
+# ** Warning: (eldo - 108)   NODE "N_CIN_X0_M9_G": This node is a floating gate.
+# +   List of MOS devices connected to that node follows:
+# +   --> MX0_M9
+# ** Warning: (eldo - 108)   NODE "N_CIN_X0_M14_G": This node is a floating gate.
+# +   List of MOS devices connected to that node follows:
+# +   --> MX0_M14
+# ** Warning: (eldo - 29)   Such messages will not be displayed in future. Set .option MSGNODE = 0 to receive all such warnings.
+#  -----------------------------
+# | Quiescent Point computation |
+#  -----------------------------
+# Analog DC computation starting
+# Analog DC computation done
+# Digital computation at time 0 ps starting
+# Digital computation at time 0 ps done
+# Quiescent point done
+#  -----------------------------
+# | Transient analysis starting |
+#  -----------------------------
+# Eldo analog kernel simulation effective options:
+#   VNTOL  = 1.000000e-06
+#   RELTOL = 7.500000e-04
+#   HMIN   = 1.000000e-03 ns
+#   HMAX will be set later during simulation and may vary
+#   EPS    = 1.000000e-03
+# Starting analog time is 0.000000 ns
+# Simulation time for "run -all" is 1.000000 ns
+run -continue
+restart
+# Transient analysis done
+#    Global cpu Time 0h 0mn 22s 780ms 
+#    Global Elapsed Time 0h 3mn 17s 
+# -----------| Simulation Information |-----------
+# Analog kernel and ELDO devices memory size allocated (MB):  562.4
+# 12855 devices
+# 11675 nodes
+# 933636 MOS or BIP model calls
+# 2636 steps computed
+# ----------- Simulation Information done -----------
+# --- Simulation stopped at time 1,801 ns
+# Newton iteration            :  3.136191
+# Total of transactions       :  1
+# Total of events             :  1
+# ** Note: (vasim - 3800) Running Questa ADMS 12.1 patch1 Fri Sep  7 07:23:32 GMT 2012
+# +   on egr-vlsi-25 Linux x86_64(3.10.0-514.26.2.el7.x86_64) #1 SMP Tue Jul 4 15:04:05 UTC 2017
+# ELDO 12.1 patch1 (64 bits) Thu Sep  6 14:32:26 GMT 2012
+# EZwave 12.1 patch1 Wed Jun 20 13:28:31 GMT 2012
+# Copyright 1988 Mentor Graphics Corporation
+# All Rights Reserved
+# THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY
+# INFORMATION WHICH ARE THE PROPERTY OF MENTOR
+# GRAPHICS CORPORATION OR ITS LICENSORS AND IS
+# SUBJECT TO LICENSE TERMS.
+#  ---------------
+# | Load starting |
+#  ---------------
+# Loading "/opt/mentor/ams_12_1/libs/std.standard"
+# ModelSim for Questa-64 Version 10.1c 2012.07
+# Reading /opt/mentor/ams_12_1/questasim/v10.1c/tcl/vsim/pref.tcl 
+# Loading /opt/mentor/ams_12_1/libs/MS/OS/aol/libVLA2D_64.so
+# Loading "/opt/mentor/ams_12_1/libs/ieee.math_real"
+# Loading "/opt/mentor/ams_12_1/libs/DISCIPLINES.physical_constants"
+# Loading "/opt/mentor/ams_12_1/libs/DISCIPLINES.electromagnetic_system"
+# Load done
+# Executing file '/home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/bitslice/bitslice.cal/bitslice.ez.do'
+# bitslice
+do bitslice.do
+#  ----------------------------
+# | Analog Data pre-processing |
+#  ----------------------------
+# ** Warning: (eldo - 1615)  In file "./bitslice.cal/bitslice.cir" line 3:
+# +   COMMAND ".TRAN": TPRINT can not be <= 0.0.
+# +   It is set to TSTOP/20.0 = 5.000e-11 s.
+# ** Warning: (eldo - 400)  In file "./bitslice.cal/bitslice.cir" line 3:
+# +   .TRAN: TSTART > TSTOP: TSTART set to 0
+# ** Warning: (eldo - 107)   NODE "VSS": Less than two connections.
+# ** Warning: (eldo - 107)   NODE "DEC0": Less than two connections.
+# ** Warning: (eldo - 107)   NODE "RS0": Less than two connections.
+# ** Warning: (eldo - 29)  Such messages will not be displayed in future. Set .option MSGNODE = 0 to receive all such warnings.
+# Analog data pre-processing done
+# -----------| Summary on Analog Data |-----------
+# Analog kernel and ELDO devices memory space allocated (MB):    535
+# 12043 devices
+# 10863 nodes
+# 2 input signals
+# ** Note: Extra devices and nodes might be created during simulation (access resistors, internal nodes...).
+# ** Note: Extra Memory might be allocated during simulation.
+# ----------- Summary done -----------
+# ** Warning: (eldo - 117)   NODE "VSS": Not connected to any power supply.
+# ** Warning: (eldo - 108)   NODE "N_CIN_X0_M4_G": This node is a floating gate.
+# +   List of MOS devices connected to that node follows:
+# +   --> MX0_M4
+# ** Warning: (eldo - 108)   NODE "N_CIN_X0_M9_G": This node is a floating gate.
+# +   List of MOS devices connected to that node follows:
+# +   --> MX0_M9
+# ** Warning: (eldo - 108)   NODE "N_CIN_X0_M14_G": This node is a floating gate.
+# +   List of MOS devices connected to that node follows:
+# +   --> MX0_M14
+# ** Warning: (eldo - 29)   Such messages will not be displayed in future. Set .option MSGNODE = 0 to receive all such warnings.
+#  -----------------------------
+# | Quiescent Point computation |
+#  -----------------------------
+# Analog DC computation starting
+# Analog DC computation done
+# Digital computation at time 0 ps starting
+# Digital computation at time 0 ps done
+# Quiescent point done
+#  -----------------------------
+# | Transient analysis starting |
+#  -----------------------------
+# Eldo analog kernel simulation effective options:
+#   VNTOL  = 1.000000e-06
+#   RELTOL = 7.500000e-04
+#   HMIN   = 1.000000e-03 ns
+#   HMAX will be set later during simulation and may vary
+#   EPS    = 1.000000e-03
+# Starting analog time is 0.000000 ns
+# Simulation time for "run -all" is 1.000000 ns
+restart
+# Transient analysis done
+#    Global cpu Time 0h 0mn 24s 830ms 
+#    Global Elapsed Time 0h 3mn 32s 
+# -----------| Simulation Information |-----------
+# Analog kernel and ELDO devices memory size allocated (MB):  562.4
+# 12855 devices
+# 11675 nodes
+# 947218 MOS or BIP model calls
+# 2872 steps computed
+# ----------- Simulation Information done -----------
+# --- Simulation stopped at time 2 us
+# Newton iteration            :  3.064415
+# Total of transactions       :  1
+# Total of events             :  1
+# ** Note: (vasim - 3800) Running Questa ADMS 12.1 patch1 Fri Sep  7 07:23:32 GMT 2012
+# +   on egr-vlsi-25 Linux x86_64(3.10.0-514.26.2.el7.x86_64) #1 SMP Tue Jul 4 15:04:05 UTC 2017
+# ELDO 12.1 patch1 (64 bits) Thu Sep  6 14:32:26 GMT 2012
+# EZwave 12.1 patch1 Wed Jun 20 13:28:31 GMT 2012
+# Copyright 1988 Mentor Graphics Corporation
+# All Rights Reserved
+# THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY
+# INFORMATION WHICH ARE THE PROPERTY OF MENTOR
+# GRAPHICS CORPORATION OR ITS LICENSORS AND IS
+# SUBJECT TO LICENSE TERMS.
+#  ---------------
+# | Load starting |
+#  ---------------
+# Loading "/opt/mentor/ams_12_1/libs/std.standard"
+# ModelSim for Questa-64 Version 10.1c 2012.07
+# Reading /opt/mentor/ams_12_1/questasim/v10.1c/tcl/vsim/pref.tcl 
+# Loading /opt/mentor/ams_12_1/libs/MS/OS/aol/libVLA2D_64.so
+# Loading "/opt/mentor/ams_12_1/libs/ieee.math_real"
+# Loading "/opt/mentor/ams_12_1/libs/DISCIPLINES.physical_constants"
+# Loading "/opt/mentor/ams_12_1/libs/DISCIPLINES.electromagnetic_system"
+# Load done
+# Executing file '/home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/bitslice/bitslice.cal/bitslice.ez.do'
+# bitslice
+do bitslice.do
+#  ----------------------------
+# | Analog Data pre-processing |
+#  ----------------------------
+# ** Warning: (eldo - 1615)  In file "./bitslice.cal/bitslice.cir" line 3:
+# +   COMMAND ".TRAN": TPRINT can not be <= 0.0.
+# +   It is set to TSTOP/20.0 = 5.000e-11 s.
+# ** Warning: (eldo - 400)  In file "./bitslice.cal/bitslice.cir" line 3:
+# +   .TRAN: TSTART > TSTOP: TSTART set to 0
+# ** Warning: (eldo - 107)   NODE "VSS": Less than two connections.
+# ** Warning: (eldo - 107)   NODE "DEC0": Less than two connections.
+# ** Warning: (eldo - 107)   NODE "RS0": Less than two connections.
+# ** Warning: (eldo - 29)  Such messages will not be displayed in future. Set .option MSGNODE = 0 to receive all such warnings.
+# Analog data pre-processing done
+# -----------| Summary on Analog Data |-----------
+# Analog kernel and ELDO devices memory space allocated (MB):    535
+# 12043 devices
+# 10863 nodes
+# 2 input signals
+# ** Note: Extra devices and nodes might be created during simulation (access resistors, internal nodes...).
+# ** Note: Extra Memory might be allocated during simulation.
+# ----------- Summary done -----------
+# ** Warning: (eldo - 117)   NODE "VSS": Not connected to any power supply.
+# ** Warning: (eldo - 108)   NODE "N_CIN_X0_M4_G": This node is a floating gate.
+# +   List of MOS devices connected to that node follows:
+# +   --> MX0_M4
+# ** Warning: (eldo - 108)   NODE "N_CIN_X0_M9_G": This node is a floating gate.
+# +   List of MOS devices connected to that node follows:
+# +   --> MX0_M9
+# ** Warning: (eldo - 108)   NODE "N_CIN_X0_M14_G": This node is a floating gate.
+# +   List of MOS devices connected to that node follows:
+# +   --> MX0_M14
+# ** Warning: (eldo - 29)   Such messages will not be displayed in future. Set .option MSGNODE = 0 to receive all such warnings.
+#  -----------------------------
+# | Quiescent Point computation |
+#  -----------------------------
+# Analog DC computation starting
+# Analog DC computation done
+# Digital computation at time 0 ps starting
+# Digital computation at time 0 ps done
+# Quiescent point done
+#  -----------------------------
+# | Transient analysis starting |
+#  -----------------------------
+# Eldo analog kernel simulation effective options:
+#   VNTOL  = 1.000000e-06
+#   RELTOL = 7.500000e-04
+#   HMIN   = 1.000000e-03 ns
+#   HMAX will be set later during simulation and may vary
+#   EPS    = 1.000000e-03
+# Starting analog time is 0.000000 ns
+# Simulation time for "run -all" is 1.000000 ns
+restart
+# Transient analysis done
+#    Global cpu Time 0h 0mn 26s 350ms 
+#    Global Elapsed Time 0h 2mn 40s 
+# -----------| Simulation Information |-----------
+# Analog kernel and ELDO devices memory size allocated (MB):  562.4
+# 12855 devices
+# 11675 nodes
+# 960238 MOS or BIP model calls
+# 3109 steps computed
+# ----------- Simulation Information done -----------
+# --- Simulation stopped at time 2,200 ns
+# Newton iteration            :  3.001930
+# Total of transactions       :  1
+# Total of events             :  1
+# ** Note: (vasim - 3800) Running Questa ADMS 12.1 patch1 Fri Sep  7 07:23:32 GMT 2012
+# +   on egr-vlsi-25 Linux x86_64(3.10.0-514.26.2.el7.x86_64) #1 SMP Tue Jul 4 15:04:05 UTC 2017
+# ELDO 12.1 patch1 (64 bits) Thu Sep  6 14:32:26 GMT 2012
+# EZwave 12.1 patch1 Wed Jun 20 13:28:31 GMT 2012
+# Copyright 1988 Mentor Graphics Corporation
+# All Rights Reserved
+# THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY
+# INFORMATION WHICH ARE THE PROPERTY OF MENTOR
+# GRAPHICS CORPORATION OR ITS LICENSORS AND IS
+# SUBJECT TO LICENSE TERMS.
+#  ---------------
+# | Load starting |
+#  ---------------
+# Loading "/opt/mentor/ams_12_1/libs/std.standard"
+# ModelSim for Questa-64 Version 10.1c 2012.07
+# Reading /opt/mentor/ams_12_1/questasim/v10.1c/tcl/vsim/pref.tcl 
+# Loading /opt/mentor/ams_12_1/libs/MS/OS/aol/libVLA2D_64.so
+# Loading "/opt/mentor/ams_12_1/libs/ieee.math_real"
+# Loading "/opt/mentor/ams_12_1/libs/DISCIPLINES.physical_constants"
+# Loading "/opt/mentor/ams_12_1/libs/DISCIPLINES.electromagnetic_system"
+# Load done
+# Executing file '/home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/bitslice/bitslice.cal/bitslice.ez.do'
+# bitslice
+do bitslice.do
+#  ----------------------------
+# | Analog Data pre-processing |
+#  ----------------------------
+# ** Warning: (eldo - 1615)  In file "./bitslice.cal/bitslice.cir" line 3:
+# +   COMMAND ".TRAN": TPRINT can not be <= 0.0.
+# +   It is set to TSTOP/20.0 = 5.000e-11 s.
+# ** Warning: (eldo - 400)  In file "./bitslice.cal/bitslice.cir" line 3:
+# +   .TRAN: TSTART > TSTOP: TSTART set to 0
+# ** Warning: (eldo - 107)   NODE "VSS": Less than two connections.
+# ** Warning: (eldo - 107)   NODE "DEC0": Less than two connections.
+# ** Warning: (eldo - 107)   NODE "RS0": Less than two connections.
+# ** Warning: (eldo - 29)  Such messages will not be displayed in future. Set .option MSGNODE = 0 to receive all such warnings.
+# Analog data pre-processing done
+# -----------| Summary on Analog Data |-----------
+# Analog kernel and ELDO devices memory space allocated (MB):    535
+# 12043 devices
+# 10863 nodes
 # 2 input signals
 # ** Note: Extra devices and nodes might be created during simulation (access resistors, internal nodes...).
 # ** Note: Extra Memory might be allocated during simulation.
@@ -73,16 +524,16 @@ do bitslice.do
 # Starting analog time is 0.000000 ns
 # Simulation time for "run -all" is 1.000000 ns
 # Transient analysis done
-#    Global cpu Time 0h 0mn 56s 330ms 
-#    Global Elapsed Time 0h 12mn 6s 
+#    Global cpu Time 0h 0mn 27s 890ms 
+#    Global Elapsed Time 0h 5mn 25s 
 # -----------| Simulation Information |-----------
-# Analog kernel and ELDO devices memory size allocated (MB):  562.6
-# 12864 devices
-# 11684 nodes
-# 661668 MOS or BIP model calls
-# 8805 steps computed
+# Analog kernel and ELDO devices memory size allocated (MB):  562.4
+# 12855 devices
+# 11675 nodes
+# 978743 MOS or BIP model calls
+# 3355 steps computed
 # ----------- Simulation Information done -----------
-# --- Simulation stopped at time 8 us
-# Newton iteration            :  2.580125
+# --- Simulation stopped at time 2,400 ns
+# Newton iteration            :  2.953800
 # Total of transactions       :  1
 # Total of events             :  1

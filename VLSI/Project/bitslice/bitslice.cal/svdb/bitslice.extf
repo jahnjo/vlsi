@@ -1,6 +1,6 @@
 # Automagically generated file: Please do not edit!
 lvs_ExtfVersion 3
-lvs_ExtRunTimes 1556026775 1556026776
+lvs_ExtRunTimes 1556033725 1556033725
 lvs_ExtOutFile RUNDIR /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/bitslice/bitslice.cal
 lvs_ExtOutFile RULES_FILE /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/bitslice/bitslice.cal/_PEX_
 lvs_ExtInfoExtSummary {0 0 0 0 0 0 0 0 0 0 0}

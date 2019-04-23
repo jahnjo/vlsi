@@ -15,7 +15,7 @@ REPORT FILE NAME:         lvs.report
 LAYOUT NAME:              /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/bitslice/bitslice.cal/lay.net ('bitslice')
 SOURCE NAME:              /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/bitslice/bitslice.cal/bitslice.calibre.src.net ('bitslice')
 RULE FILE:                /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/bitslice/bitslice.cal/_LVS_
-CREATION TIME:            Mon Apr 22 15:22:20 2019
+CREATION TIME:            Tue Apr 23 11:33:25 2019
 CURRENT DIRECTORY:        /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/bitslice/bitslice.cal
 USER NAME:                egrvlsi07
 CALIBRE VERSION:          v2012.2_36.25    Mon Jul 2 12:15:31 PDT 2012
@@ -287,8 +287,8 @@ NUMBERS OF OBJECTS AFTER TRANSFORMATION
 
 o Initial Correspondence Points:
 
-   Ports:        VDD ground DEC0 RT0 DEC1 DEC2 RT1 DEC3 REGW CLK BUSW DEC4 RT2 DEC5 DEC6 DEC7
-                 RS0 RS1 RS2 COUT RESULT CIN ALUOP1 ALUOP0
+   Ports:        VDD ground DEC0 RS0 DEC1 RS1 DEC2 DEC3 REGW CLK BUSW DEC4 RS2 DEC5 DEC6 DEC7
+                 RT0 RT1 RT2 COUT CIN RESULT ALUOP0 ALUOP1
 
 
 **************************************************************************************************************

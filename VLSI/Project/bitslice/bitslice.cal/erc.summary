@@ -3,7 +3,7 @@
 ==================================================================================
 === CALIBRE::ERC-H SUMMARY REPORT
 ===
-Execution Date/Time:          Mon Apr 22 15:22:20 2019
+Execution Date/Time:          Tue Apr 23 11:33:24 2019
 Calibre Version:              v2012.2_36.25    Mon Jul 2 12:15:31 PDT 2012
 Rule File Pathname:           /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/bitslice/bitslice.cal/_LVS_
 Rule File Title:              
@@ -80,7 +80,7 @@ LAYER DUM3 ...... TOTAL Original Geometry Count = 0    (0)
 LAYER M3 ........ TOTAL Original Geometry Count = 191  (587)
 LAYER M3SLOT .... TOTAL Original Geometry Count = 0    (0)
 LAYER DUM4 ...... TOTAL Original Geometry Count = 0    (0)
-LAYER M4 ........ TOTAL Original Geometry Count = 233  (319)
+LAYER M4 ........ TOTAL Original Geometry Count = 232  (318)
 LAYER M4SLOT .... TOTAL Original Geometry Count = 0    (0)
 LAYER DUM5 ...... TOTAL Original Geometry Count = 0    (0)
 LAYER M5 ........ TOTAL Original Geometry Count = 102  (102)
@@ -133,7 +133,7 @@ LAYER VIA6 ...... TOTAL Original Geometry Count = 22   (22)
 ---
 TOTAL CPU Time:                              0
 TOTAL REAL Time:                             0
-TOTAL Original Layer Geometries:             3149 (15838)
+TOTAL Original Layer Geometries:             3148 (15837)
 TOTAL ERC PATHCHK Operations Executed:       4
 TOTAL ERC PATHCHK POLYGON Results Generated: 44 (44)
 TOTAL ERC PATHCHK NET Results Generated:     44

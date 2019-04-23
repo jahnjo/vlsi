@@ -3,7 +3,7 @@
 ==================================================================================
 === CALIBRE::DRC-H SUMMARY REPORT
 ===
-Execution Date/Time:       Mon Apr 22 15:23:20 2019
+Execution Date/Time:       Tue Apr 23 11:32:46 2019
 Calibre Version:           v2012.2_36.25    Mon Jul 2 12:15:31 PDT 2012
 Rule File Pathname:        /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/bitslice/bitslice.cal/_DRC_
 Rule File Title:           
@@ -60,7 +60,7 @@ LAYER DUM3 ....... TOTAL Original Geometry Count = 0    (0)
 LAYER METAL3i .... TOTAL Original Geometry Count = 119  (587)
 LAYER M4SLOTi .... TOTAL Original Geometry Count = 0    (0)
 LAYER DUM4 ....... TOTAL Original Geometry Count = 0    (0)
-LAYER METAL4i .... TOTAL Original Geometry Count = 123  (319)
+LAYER METAL4i .... TOTAL Original Geometry Count = 122  (318)
 LAYER M5SLOTi .... TOTAL Original Geometry Count = 0    (0)
 LAYER DUM5 ....... TOTAL Original Geometry Count = 0    (0)
 LAYER METAL5i .... TOTAL Original Geometry Count = 19   (102)
@@ -526,6 +526,6 @@ CELL bitslice ............ TOTAL Result Count = 1 (1)
 ---
 TOTAL CPU Time:                  0
 TOTAL REAL Time:                 0
-TOTAL Original Layer Geometries: 2126 (15838)
+TOTAL Original Layer Geometries: 2125 (15837)
 TOTAL DRC RuleChecks Executed:   386
 TOTAL DRC Results Generated:     5 (51)

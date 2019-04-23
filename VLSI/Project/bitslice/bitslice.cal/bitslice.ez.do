@@ -1,6 +1,6 @@
 ############################################################
 ## EZwave - Saved Window File
-## Tuesday, April 23, 2019 at 9:54:04 AM EDT
+## Tuesday, April 23, 2019 at 12:17:45 PM EDT
 ##
 ## Note: This is an auto-generated file.
 ##
@@ -30,43 +30,48 @@ wfc {Dig_V_bitslice_dec2_=atod(wf("bitslice/:bitslice:dec2", " -show TRAN.V   -t
 wfc {Dig_V_bitslice_dec1_=atod(wf("bitslice/:bitslice:dec1", " -show TRAN.V   -terminals  "),1.25)}
 wfc {Dig_V_bitslice_dec0_=atod(wf("bitslice/:bitslice:dec0", " -show TRAN.V   -terminals  "),1.25)}
 wave createbus decoder -show calc.V -separator / -signals calc/Dig_V_bitslice_dec7_ -show calc.V -separator / -signals calc/Dig_V_bitslice_dec6_ -show calc.V -separator / -signals calc/Dig_V_bitslice_dec5_ -show calc.V -separator / -signals calc/Dig_V_bitslice_dec4_ -show calc.V -separator / -signals calc/Dig_V_bitslice_dec3_ -show calc.V -separator / -signals calc/Dig_V_bitslice_dec2_ -show calc.V -separator / -signals calc/Dig_V_bitslice_dec1_ -show calc.V -separator / -signals calc/Dig_V_bitslice_dec0_
+wfc {Dig_V_bitslice_aluop1_=atod(wf("bitslice/:bitslice:aluop1", " -show TRAN.V   -terminals  "),1.25)}
+wfc {Dig_V_bitslice_aluop0_=atod(wf("bitslice/:bitslice:aluop0", " -show TRAN.V   -terminals  "),1.25)}
+wave createbus ALUop -show calc.V -separator / -signals calc/Dig_V_bitslice_aluop1_ -show calc.V -separator / -signals calc/Dig_V_bitslice_aluop0_
 
 
 # ===== Open the window =====
-wave addwindow -x 0  -y 0 -width 1725  -height 822 -divider 0.91
+wave addwindow -x 0  -y 0 -width 1650  -height 794 -divider 0.89
 
 # ===== Create row #1 =====
 add wave  -show TRAN.v -color -16711936 -separator : -terminals  :bitslice:clk
 
+
 # ===== Create row #2 =====
-add wave  -show TRAN.v -color -2968436 -separator : -terminals  :bitslice:aluop0
-
-# ===== Create row #3 =====
-add wave  -show TRAN.v -color -16711936 -separator : -terminals  :bitslice:aluop1
-
-# ===== Create row #4 =====
 add wave  -show TRAN.v -color -256 -separator : -terminals  :bitslice:busw
 
+
+# ===== Create row #3 =====
+add wave  -show TRAN.v -color -16744193 -separator : -terminals  :bitslice:regw
+
+
+# ===== Create row #4 =====
+add wave  -show TRAN.v -color -32768 -separator : -terminals  :bitslice:cin
+
+
 # ===== Create row #5 =====
-add wave  -show TRAN.v -height 84 -color -16744193 -separator : -terminals  :bitslice:regw
+add wave  -show TRAN.v -color -65281 -separator : -terminals  :bitslice:result
 
 
 # ===== Create row #6 =====
-add wave  -show TRAN.v -color -32768 -separator : -terminals  :bitslice:cin
-
-# ===== Create row #7 =====
-add wave  -show TRAN.v -color -65281 -separator : -terminals  :bitslice:result
-
-# ===== Create row #8 =====
 add wave  -show TRAN.v -color -16711681 -separator : -terminals  :bitslice:cout
 
-# ===== Create row #9 =====
+
+# ===== Create row #7 =====
 add wave  -show none.v -binary  -signals  rt
 
-# ===== Create row #10 =====
+# ===== Create row #8 =====
 add wave  -show none.v -binary  -signals  rs
 
-# ===== Create row #11 =====
+# ===== Create row #9 =====
 add wave  -show none.v -binary  -signals  decoder
+
+# ===== Create row #10 =====
+add wave  -show none.v -binary  -signals  ALUop
 
 # ====== Create the cursors, markers and measurements =====

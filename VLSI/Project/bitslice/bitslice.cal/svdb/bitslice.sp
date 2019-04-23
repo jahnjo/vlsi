@@ -160,7 +160,7 @@ X5 VDD 17 20 18 ground S1 Mux21 $T=23380 165780 0 0 $X=20775 $Y=258945
 X6 VDD 19 OUT1 20 ground S2 Mux21 $T=27880 165780 0 0 $X=25275 $Y=258945
 .ENDS
 ***************************************
-.SUBCKT reg VDD ground dec0 dec1 dec2 dec3 dec4 dec5 dec6 dec7 Reg_W Rt0 Rt1 BusA Rt2 BusW Rs0 Rs1 BusB Rs2
+.SUBCKT reg VDD ground dec0 dec1 dec2 dec3 dec4 dec5 dec6 dec7 Reg_W Rs0 Rs1 BusA Rs2 BusW Rt0 Rt1 BusB Rt2
 + clk
 ** N=37 EP=21 IP=88 FDC=340
 * PORT VDD VDD -62575 343750 metal1
@@ -174,15 +174,15 @@ X6 VDD 19 OUT1 20 ground S2 Mux21 $T=27880 165780 0 0 $X=25275 $Y=258945
 * PORT dec6 dec6 -58905 364830 metal6
 * PORT dec7 dec7 -54895 364780 metal6
 * PORT Reg_W Reg_W -70195 371600 metal6
-* PORT Rt0 Rt0 -81365 305640 metal6
-* PORT Rt1 Rt1 -74815 295070 metal6
-* PORT BusA BusA -68440 304690 metal6
-* PORT Rt2 Rt2 -66425 296105 metal6
+* PORT Rs0 Rs0 -81545 305990 metal6
+* PORT Rs1 Rs1 -75070 295070 metal6
+* PORT BusA BusA -68440 304405 metal6
+* PORT Rs2 Rs2 -66415 296750 metal6
 * PORT BusW BusW -68800 334745 metal6
-* PORT Rs0 Rs0 -49930 305955 metal6
-* PORT Rs1 Rs1 -42810 295070 metal6
-* PORT BusB BusB -36925 304290 metal6
-* PORT Rs2 Rs2 -34900 296015 metal6
+* PORT Rt0 Rt0 -50040 306255 metal6
+* PORT Rt1 Rt1 -43760 295070 metal6
+* PORT BusB BusB -36940 304615 metal6
+* PORT Rt2 Rt2 -34915 297140 metal6
 * PORT clk clk -69070 340780 metal6
 X0 VDD ground BusW 22 30 clk 23 31 ICV_1 $T=-125110 273965 0 0 $X=-126835 $Y=325700
 X1 VDD ground BusW 24 32 clk 25 33 ICV_1 $T=-93110 273965 0 0 $X=-94835 $Y=325700
@@ -192,40 +192,40 @@ X4 VDD ground dec0 Reg_W 22 dec1 23 ICV_2 $T=-107910 261050 0 0 $X=-84850 $Y=355
 X5 VDD ground dec2 Reg_W 24 dec3 25 ICV_2 $T=-99910 261050 0 0 $X=-76850 $Y=355660
 X6 VDD ground dec4 Reg_W 26 dec5 27 ICV_2 $T=-91910 261050 0 0 $X=-68850 $Y=355660
 X7 VDD ground dec6 Reg_W 28 dec7 29 ICV_2 $T=-83910 261050 0 0 $X=-60850 $Y=355660
-X8 VDD ground 30 31 32 33 34 35 Rt0 36 37 Rt1 BusA Rt2 Mux81 $T=-95220 32745 0 0 $X=-96945 $Y=291690
-X9 VDD ground 30 31 32 33 34 35 Rs0 36 37 Rs1 BusB Rs2 Mux81 $T=-63720 32745 0 0 $X=-65445 $Y=291690
+X8 VDD ground 30 31 32 33 34 35 Rs0 36 37 Rs1 BusA Rs2 Mux81 $T=-95220 32745 0 0 $X=-96945 $Y=291690
+X9 VDD ground 30 31 32 33 34 35 Rt0 36 37 Rt1 BusB Rt2 Mux81 $T=-63720 32745 0 0 $X=-65445 $Y=291690
 .ENDS
 ***************************************
-.SUBCKT bitslice ground VDD dec0 Rt0 dec1 dec2 Rt1 dec3 RegW clk BusW dec4 Rt2 dec5 dec6 dec7 Rs0 Rs1 Rs2 Cout
-+ result Cin ALUop1 ALUop0
+.SUBCKT bitslice ground VDD dec0 Rs0 dec1 Rs1 dec2 dec3 RegW clk BusW dec4 Rs2 dec5 dec6 dec7 Rt0 Rt1 Rt2 Cout
++ Cin result ALUop0 ALUop1
 ** N=48 EP=24 IP=30 FDC=406
-* PORT ground ground 63845 108825 metal1
-* PORT VDD VDD 63845 126045 metal1
-* PORT dec0 dec0 43525 146275 metal7
-* PORT Rt0 Rt0 45055 86210 metal7
-* PORT dec1 dec1 47515 146185 metal7
-* PORT dec2 dec2 51510 146145 metal7
-* PORT Rt1 Rt1 51605 79120 metal7
-* PORT dec3 dec3 55525 145960 metal7
-* PORT RegW RegW 56225 152895 metal7
-* PORT clk clk 58950 123075 metal7
-* PORT BusW BusW 56020 117040 metal7
-* PORT dec4 dec4 59530 146025 metal7
-* PORT Rt2 Rt2 59995 79780 metal7
-* PORT dec5 dec5 63520 145835 metal7
-* PORT dec6 dec6 67515 145390 metal7
-* PORT dec7 dec7 71535 144655 metal7
-* PORT Rs0 Rs0 76490 86610 metal7
-* PORT Rs1 Rs1 83610 78405 metal7
-* PORT Rs2 Rs2 91525 76820 metal7
-* PORT Cout Cout -15670 95860 metal7
-* PORT result result -13435 119245 metal7
-* PORT Cin Cin -13095 97200 metal7
-* PORT ALUop1 ALUop1 -9565 122255 metal7
-* PORT ALUop0 ALUop0 -7700 111960 metal7
-X0 VDD ground Cout 20 12 Cin ALUop0 result ALUop1 alu $T=-16170 43005 0 0 $X=-27150 $Y=88085
-X1 VDD ground dec0 dec1 dec2 dec3 dec4 dec5 dec6 dec7 RegW Rt0 Rt1 12 Rt2 BusW Rs0 Rs1 20 Rs2
+* PORT ground ground 65795 108825 metal1
+* PORT VDD VDD 65795 126045 metal1
+* PORT dec0 dec0 45475 143320 metal7
+* PORT Rs0 Rs0 46825 86810 metal7
+* PORT dec1 dec1 49465 143630 metal7
+* PORT Rs1 Rs1 51645 77360 metal7
+* PORT dec2 dec2 53465 144040 metal7
+* PORT dec3 dec3 57465 144690 metal7
+* PORT RegW RegW 60810 153895 metal7
+* PORT clk clk 57510 123075 metal7
+* PORT BusW BusW 59570 118465 metal7
+* PORT dec4 dec4 61485 145100 metal7
+* PORT Rs2 Rs2 63345 79040 metal7
+* PORT dec5 dec5 65475 145565 metal7
+* PORT dec6 dec6 69450 145935 metal7
+* PORT dec7 dec7 73475 146305 metal7
+* PORT Rt0 Rt0 78330 87040 metal7
+* PORT Rt1 Rt1 82960 77365 metal7
+* PORT Rt2 Rt2 93455 78170 metal7
+* PORT Cout Cout -13160 95825 metal7
+* PORT Cin Cin -8960 98685 metal7
+* PORT result result -8585 119460 metal7
+* PORT ALUop0 ALUop0 -5410 112170 metal7
+* PORT ALUop1 ALUop1 -5460 121055 metal7
+X0 VDD ground Cout 20 12 Cin ALUop0 result ALUop1 alu $T=-13660 43215 0 0 $X=-24640 $Y=88295
+X1 VDD ground dec0 dec1 dec2 dec3 dec4 dec5 dec6 dec7 RegW Rs0 Rs1 12 Rs2 BusW Rt0 Rt1 20 Rt2
 + clk
-+ reg $T=126420 -217705 0 0 $X=-1725 $Y=73985
++ reg $T=128370 -217705 0 0 $X=-1725 $Y=73985
 .ENDS
 ***************************************

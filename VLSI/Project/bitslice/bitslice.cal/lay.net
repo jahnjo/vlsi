@@ -120,7 +120,7 @@ X5 VDD 17 20 18 ground S1 Mux21 $T=23380 165780 0 0 $X=20775 $Y=258945
 X6 VDD 19 OUT1 20 ground S2 Mux21 $T=27880 165780 0 0 $X=25275 $Y=258945
 .ENDS
 ***************************************
-.SUBCKT reg ground VDD dec0 dec1 dec2 dec3 dec4 dec5 dec6 dec7 Reg_W Rt0 Rt1 BusA Rt2 BusW Rs0 Rs1 BusB Rs2
+.SUBCKT reg ground VDD dec0 dec1 dec2 dec3 dec4 dec5 dec6 dec7 Reg_W Rs0 Rs1 BusA Rs2 BusW Rt0 Rt1 BusB Rt2
 + clk
 ** N=37 EP=21 IP=88 FDC=340
 X0 ground VDD BusW 22 30 clk 23 31 ICV_1 $T=-125110 273965 0 0 $X=-126835 $Y=325700
@@ -131,16 +131,16 @@ X4 ground VDD dec0 Reg_W 22 dec1 23 ICV_2 $T=-107910 261050 0 0 $X=-84850 $Y=355
 X5 ground VDD dec2 Reg_W 24 dec3 25 ICV_2 $T=-99910 261050 0 0 $X=-76850 $Y=355660
 X6 ground VDD dec4 Reg_W 26 dec5 27 ICV_2 $T=-91910 261050 0 0 $X=-68850 $Y=355660
 X7 ground VDD dec6 Reg_W 28 dec7 29 ICV_2 $T=-83910 261050 0 0 $X=-60850 $Y=355660
-X8 ground VDD 30 31 32 33 34 35 Rt0 36 37 Rt1 BusA Rt2 Mux81 $T=-95220 32745 0 0 $X=-96945 $Y=291690
-X9 ground VDD 30 31 32 33 34 35 Rs0 36 37 Rs1 BusB Rs2 Mux81 $T=-63720 32745 0 0 $X=-65445 $Y=291690
+X8 ground VDD 30 31 32 33 34 35 Rs0 36 37 Rs1 BusA Rs2 Mux81 $T=-95220 32745 0 0 $X=-96945 $Y=291690
+X9 ground VDD 30 31 32 33 34 35 Rt0 36 37 Rt1 BusB Rt2 Mux81 $T=-63720 32745 0 0 $X=-65445 $Y=291690
 .ENDS
 ***************************************
-.SUBCKT bitslice ground VDD dec0 Rt0 dec1 dec2 Rt1 dec3 RegW clk BusW dec4 Rt2 dec5 dec6 dec7 Rs0 Rs1 Rs2 Cout
-+ result Cin ALUop1 ALUop0
+.SUBCKT bitslice ground VDD dec0 Rs0 dec1 Rs1 dec2 dec3 RegW clk BusW dec4 Rs2 dec5 dec6 dec7 Rt0 Rt1 Rt2 Cout
++ Cin result ALUop0 ALUop1
 ** N=48 EP=24 IP=30 FDC=406
-X0 VDD ground Cout 20 12 Cin ALUop0 result ALUop1 alu $T=-16170 43005 0 0 $X=-27150 $Y=88085
-X1 ground VDD dec0 dec1 dec2 dec3 dec4 dec5 dec6 dec7 RegW Rt0 Rt1 12 Rt2 BusW Rs0 Rs1 20 Rs2
+X0 VDD ground Cout 20 12 Cin ALUop0 result ALUop1 alu $T=-13660 43215 0 0 $X=-24640 $Y=88295
+X1 ground VDD dec0 dec1 dec2 dec3 dec4 dec5 dec6 dec7 RegW Rs0 Rs1 12 Rs2 BusW Rt0 Rt1 20 Rt2
 + clk
-+ reg $T=126420 -217705 0 0 $X=-1725 $Y=73985
++ reg $T=128370 -217705 0 0 $X=-1725 $Y=73985
 .ENDS
 ***************************************

@@ -1,10 +1,23 @@
-A 5 u Ic_cell_template 5cb75db790e0.03.7f.00.00.01.00.59.a1 2 4 13 0
+A 5 u Ic_cell_template 5cb75db790e0.03.7f.00.00.01.00.59.a1 3 4 14 0
 V v 1 2 5cb76829036f.03.7f.00.00.01.00.59.a1
 F f 1 "reg.iccel_1"
 F o 0 ""
 V v 2 2 5cb8cc79215f.03.7f.00.00.01.00.0c.bf
 F f 2 "reg.iccel_2"
 F o 0 ""
+V v 3 2 5cbf27ce451f.03.7f.00.00.01.00.7e.55
+F f 3 "reg.iccel_3"
+F o 0 ""
+O 3
+R csduv 1 "$GENERIC13/process/generic13" 75 Ic_persist_process 51bf7c9f2c7e.03.93.22.28.46.00.31.23 4aef38f1eeca.03.93.22.28.e1.00.3f.b3
+R csduv 2 "$VLSI/Project/reg/viewpoints/reg_SDL_HIER1" 1 Eddm_design_viewpoint 5cb75db78e1e.03.7f.00.00.01.01.59.a1 5cb75db78e1e.03.7f.00.00.01.00.59.a1
+R csduv 6 "$VLSI/Project/and/and" 3 Ic_cell_template 5cab934ad8b4.03.7f.00.00.01.00.25.4a 5ca3b1c7aa85.03.7f.00.00.01.00.11.3a
+R csduv 7 "$VLSI/Project/DFFen/DFFen" 1 Ic_cell_template 5cb4b6ef206d.03.7f.00.00.01.00.12.73 5cb4b5799eef.03.7f.00.00.01.00.12.73
+R csduv 9 "$GENERIC13/process/vias/M3M4" 15 Ic_cell_template 4a60aad6d285.03.93.22.28.e1.00.3a.ee 4a561bb13417.03.93.22.28.e1.00.25.b6
+R csduv 10 "$GENERIC13/process/vias/M4M5" 15 Ic_cell_template 4a561c1a8648.03.93.22.28.e1.00.26.11 4a561bdc32ae.03.93.22.28.e1.00.25.b6
+R csduv 11 "$GENERIC13/process/vias/M5M6" 11 Ic_cell_template 4a561e0a8c79.03.93.22.28.e1.00.29.be 4a561db49214.03.93.22.28.e1.00.29.6f
+R csdni 12 "$GENERIC13/process/sdl_process_rules" 1 Mgc_file
+R csduv 13 "$VLSI/Project/Mux81/Mux81" 1 Ic_cell_template 5ca4f0a7e9bc.03.7f.00.00.01.00.0a.2c 5ca4e96752a8.03.7f.00.00.01.00.0a.2c
 O 2
 R csduv 1 "$GENERIC13/process/generic13" 75 Ic_persist_process 51bf7c9f2c7e.03.93.22.28.46.00.31.23 4aef38f1eeca.03.93.22.28.e1.00.3f.b3
 R csduv 2 "$VLSI/Project/reg/viewpoints/reg_SDL_HIER1" 1 Eddm_design_viewpoint 5cb75db78e1e.03.7f.00.00.01.01.59.a1 5cb75db78e1e.03.7f.00.00.01.00.59.a1

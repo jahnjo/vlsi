@@ -42,7 +42,10 @@ force -source :bitslice:dec4 0V
 force -source :bitslice:dec5 0V
 force -source :bitslice:dec6 0V
 force -source :bitslice:dec7 0V
-run 1500 ns
+run 500 ns
+
+force -source :bitslice:clk 2.5V
+run 500 ns
 
 force -source :bitslice:Rt0 2.5V
 force -source :bitslice:Rt1 0V
@@ -53,7 +56,7 @@ force -source :bitslice:Rs0 2.5V
 force -source :bitslice:Rs1 0V
 force -source :bitslice:Rs2 0V
 force -source :bitslice:RegW 2.5V
-force -source :bitslice:clk 2.5V
+force -source :bitslice:clk 0V
 force -source :bitslice:BusW 2.5V
 force -source :bitslice:Cin 0V
 force -source :bitslice:dec0 0V
@@ -64,7 +67,10 @@ force -source :bitslice:dec4 0V
 force -source :bitslice:dec5 0V
 force -source :bitslice:dec6 0V
 force -source :bitslice:dec7 0V
-run 1500 ns
+run 500 ns
+
+force -source :bitslice:clk 2.5V
+run 500 ns
 
 force -source :bitslice:Rt0 0V
 force -source :bitslice:Rt1 2.5V
@@ -86,7 +92,10 @@ force -source :bitslice:dec4 0V
 force -source :bitslice:dec5 0V
 force -source :bitslice:dec6 0V
 force -source :bitslice:dec7 0V
-run 1500 ns
+run 500 ns
+
+force -source :bitslice:clk 2.5V
+run 500 ns
 
 force -source :bitslice:Rt0 2.5V
 force -source :bitslice:Rt1 2.5V
@@ -97,7 +106,7 @@ force -source :bitslice:Rs0 2.5V
 force -source :bitslice:Rs1 2.5V
 force -source :bitslice:Rs2 0V
 force -source :bitslice:RegW 2.5V
-force -source :bitslice:clk 2.5V
+force -source :bitslice:clk 0V
 force -source :bitslice:BusW 2.5V
 force -source :bitslice:Cin 0V
 force -source :bitslice:dec0 0V
@@ -108,7 +117,10 @@ force -source :bitslice:dec4 0V
 force -source :bitslice:dec5 0V
 force -source :bitslice:dec6 0V
 force -source :bitslice:dec7 0V
-run 1500 ns
+run 500 ns
+
+force -source :bitslice:clk 2.5V
+run 500 ns
 
 force -source :bitslice:Rt0 0V
 force -source :bitslice:Rt1 0V
@@ -130,7 +142,10 @@ force -source :bitslice:dec4 2.5V
 force -source :bitslice:dec5 0V
 force -source :bitslice:dec6 0V
 force -source :bitslice:dec7 0V
-run 1500 ns
+run 500 ns
+
+force -source :bitslice:clk 2.5V
+run 500 ns
 
 force -source :bitslice:Rt0 2.5V
 force -source :bitslice:Rt1 0V
@@ -141,7 +156,7 @@ force -source :bitslice:Rs0 2.5V
 force -source :bitslice:Rs1 0V
 force -source :bitslice:Rs2 2.5V
 force -source :bitslice:RegW 2.5V
-force -source :bitslice:clk 2.5V
+force -source :bitslice:clk 0V
 force -source :bitslice:BusW 2.5V
 force -source :bitslice:Cin 0V
 force -source :bitslice:dec0 0V
@@ -152,7 +167,10 @@ force -source :bitslice:dec4 0V
 force -source :bitslice:dec5 2.5V
 force -source :bitslice:dec6 0V
 force -source :bitslice:dec7 0V
-run 1500 ns
+run 500 ns
+
+force -source :bitslice:clk 2.5V
+run 500 ns
 
 force -source :bitslice:Rt0 0V
 force -source :bitslice:Rt1 2.5V
@@ -174,7 +192,10 @@ force -source :bitslice:dec4 0V
 force -source :bitslice:dec5 0V
 force -source :bitslice:dec6 2.5V
 force -source :bitslice:dec7 0V
-run 1500 ns
+run 500 ns
+
+force -source :bitslice:clk 2.5V
+run 500 ns
 
 force -source :bitslice:Rt0 2.5V
 force -source :bitslice:Rt1 2.5V
@@ -185,7 +206,7 @@ force -source :bitslice:Rs0 2.5V
 force -source :bitslice:Rs1 2.5V
 force -source :bitslice:Rs2 2.5V
 force -source :bitslice:RegW 2.5V
-force -source :bitslice:clk 2.5V
+force -source :bitslice:clk 0V
 force -source :bitslice:BusW 2.5V
 force -source :bitslice:Cin 0V
 force -source :bitslice:dec0 0V
@@ -196,5 +217,8 @@ force -source :bitslice:dec4 0V
 force -source :bitslice:dec5 0V
 force -source :bitslice:dec6 0V
 force -source :bitslice:dec7 2.5V
-run 1500 ns
+run 500 ns
+
+force -source :bitslice:clk 2.5V
+run 500 ns
 

@@ -1,4 +1,4 @@
-* LVS netlist generated with ICnet by 'egrvlsi07' on Thu Apr 18 2019 at 14:05:44
+* LVS netlist generated with ICnet by 'egrvlsi07' on Tue Apr 23 2019 at 10:57:51
 
 *
 * Globals.
@@ -103,7 +103,7 @@
         X_DFFEN3 reg2 clk BusW N$68 DFFen
         X_DFFEN2 reg1 clk BusW N$66 DFFen
         X_DFFEN1 reg0 clk BusW N$64 DFFen
-        X_MUX812 BusB reg0 reg1 reg2 reg3 reg5 reg6 reg7 reg8 Rs0 Rs1 Rs2 Mux81
-        X_MUX811 BusA reg0 reg1 reg2 reg3 reg5 reg6 reg7 reg8 Rt0 Rt1 Rt2 Mux81
+        X_MUX812 BusB reg0 reg1 reg2 reg3 reg5 reg6 reg7 reg8 Rt0 Rt1 Rt2 Mux81
+        X_MUX811 BusA reg0 reg1 reg2 reg3 reg5 reg6 reg7 reg8 Rs0 Rs1 Rs2 Mux81
 .ends reg
 

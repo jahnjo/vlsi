@@ -75,7 +75,7 @@ X5 VDD 17 20 18 ground S1 Mux21 $T=23380 165780 0 0 $X=20775 $Y=258945
 X6 VDD 19 OUT1 20 ground S2 Mux21 $T=27880 165780 0 0 $X=25275 $Y=258945
 .ENDS
 ***************************************
-.SUBCKT reg ground VDD dec0 dec1 dec2 dec3 dec4 dec5 dec6 dec7 Reg_W Rt0 Rt1 BusA Rt2 BusW Rs0 Rs1 BusB Rs2
+.SUBCKT reg ground VDD dec0 dec1 dec2 dec3 dec4 dec5 dec6 dec7 Reg_W Rs0 Rs1 BusA Rs2 BusW Rt0 Rt1 BusB Rt2
 + clk
 ** N=37 EP=21 IP=88 FDC=340
 X0 ground VDD BusW 4 20 clk 6 21 ICV_1 $T=-125110 273965 0 0 $X=-126835 $Y=325700
@@ -86,7 +86,7 @@ X4 ground VDD dec0 Reg_W 4 dec1 6 ICV_2 $T=-107910 261050 0 0 $X=-84850 $Y=35566
 X5 ground VDD dec2 Reg_W 8 dec3 10 ICV_2 $T=-99910 261050 0 0 $X=-76850 $Y=355660
 X6 ground VDD dec4 Reg_W 12 dec5 14 ICV_2 $T=-91910 261050 0 0 $X=-68850 $Y=355660
 X7 ground VDD dec6 Reg_W 16 dec7 19 ICV_2 $T=-83910 261050 0 0 $X=-60850 $Y=355660
-X8 ground VDD 20 21 22 23 24 26 Rt0 27 28 Rt1 BusA Rt2 Mux81 $T=-95220 32745 0 0 $X=-96945 $Y=291690
-X9 ground VDD 20 21 22 23 24 26 Rs0 27 28 Rs1 BusB Rs2 Mux81 $T=-63720 32745 0 0 $X=-65445 $Y=291690
+X8 ground VDD 20 21 22 23 24 26 Rs0 27 28 Rs1 BusA Rs2 Mux81 $T=-95220 32745 0 0 $X=-96945 $Y=291690
+X9 ground VDD 20 21 22 23 24 26 Rt0 27 28 Rt1 BusB Rt2 Mux81 $T=-63720 32745 0 0 $X=-65445 $Y=291690
 .ENDS
 ***************************************

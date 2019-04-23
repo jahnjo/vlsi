@@ -3,7 +3,7 @@
 ==================================================================================
 === CALIBRE::DRC-H SUMMARY REPORT
 ===
-Execution Date/Time:       Thu Apr 18 14:04:38 2019
+Execution Date/Time:       Tue Apr 23 10:56:23 2019
 Calibre Version:           v2012.2_36.25    Mon Jul 2 12:15:31 PDT 2012
 Rule File Pathname:        /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/reg/reg.cal/_DRC_
 Rule File Title:           
@@ -49,16 +49,16 @@ LAYER PDIFFi ..... TOTAL Original Geometry Count = 0   (0)
 LAYER DIFFi ...... TOTAL Original Geometry Count = 18  (228)
 LAYER M1SLOTi .... TOTAL Original Geometry Count = 0   (0)
 LAYER DUM1 ....... TOTAL Original Geometry Count = 0   (0)
-LAYER METAL1i .... TOTAL Original Geometry Count = 147 (2252)
+LAYER METAL1i .... TOTAL Original Geometry Count = 149 (2254)
 LAYER M2SLOTi .... TOTAL Original Geometry Count = 0   (0)
 LAYER DUM2 ....... TOTAL Original Geometry Count = 0   (0)
 LAYER METAL2i .... TOTAL Original Geometry Count = 27  (788)
 LAYER M3SLOTi .... TOTAL Original Geometry Count = 0   (0)
 LAYER DUM3 ....... TOTAL Original Geometry Count = 0   (0)
-LAYER METAL3i .... TOTAL Original Geometry Count = 83  (486)
+LAYER METAL3i .... TOTAL Original Geometry Count = 82  (485)
 LAYER M4SLOTi .... TOTAL Original Geometry Count = 0   (0)
 LAYER DUM4 ....... TOTAL Original Geometry Count = 0   (0)
-LAYER METAL4i .... TOTAL Original Geometry Count = 103 (275)
+LAYER METAL4i .... TOTAL Original Geometry Count = 102 (274)
 LAYER M5SLOTi .... TOTAL Original Geometry Count = 0   (0)
 LAYER DUM5 ....... TOTAL Original Geometry Count = 0   (0)
 LAYER METAL5i .... TOTAL Original Geometry Count = 18  (86)

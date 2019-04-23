@@ -9,7 +9,7 @@ Vgnd ground 0 0
 *  Here begins the original spice file
 
 * File: bitslice.pex.netlist
-* Created: Mon Apr 22 15:28:35 2019
+* Created: Tue Apr 23 09:39:37 2019
 * Program "Calibre xRC"
 * Version "v2012.2_36.25"
 * 

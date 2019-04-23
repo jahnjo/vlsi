@@ -1,13 +1,13 @@
-A 5 u mgc_schematic 5ca4e629c961.03.7f.00.00.01.00.7e.3b 4 2 1 0
-V v 2 1 5ca4e62e3335.03.7f.00.00.01.00.7e.3b
-F o 0 ""
-V v 3 1 5ca65eaa7faf.03.7f.00.00.01.00.10.6a
-F o 0 ""
+A 5 u mgc_schematic 5ca4e629c961.03.7f.00.00.01.00.7e.3b 6 2 1 0
 V v 4 1 5cab85914c69.03.7f.00.00.01.00.0e.e0
 F o 0 ""
+V v 5 1 5cbf1a8b9332.03.7f.00.00.01.00.7d.17
+F o 0 ""
+V v 6 1 5cbf1a90ee8c.03.7f.00.00.01.00.7d.17
+F o 0 ""
+O 6
+R cspuv 0 "$VLSI/Project/reg/reg/sheet1" 5 mgc_sheet 5cbf1a90ee7b.03.7f.00.00.01.00.7d.17 5ca4e629ca34.03.7f.00.00.01.00.7e.3b
+O 5
+R cspuv 0 "$VLSI/Project/reg/reg/sheet1" 4 mgc_sheet 5cbf1a8b92f2.03.7f.00.00.01.00.7d.17 5ca4e629ca34.03.7f.00.00.01.00.7e.3b
 O 4
 R cspuv 0 "$VLSI/Project/reg/reg/sheet1" 3 mgc_sheet 5cab85914c3c.03.7f.00.00.01.00.0e.e0 5ca4e629ca34.03.7f.00.00.01.00.7e.3b
-O 3
-R cspuv 0 "$VLSI/Project/reg/reg/sheet1" 2 mgc_sheet 5ca65eaa7f8b.03.7f.00.00.01.00.10.6a 5ca4e629ca34.03.7f.00.00.01.00.7e.3b
-O 2
-R cspuv 0 "$VLSI/Project/reg/reg/sheet1" 1 mgc_sheet 5ca4e629ca34.03.7f.00.00.01.01.7e.3b 5ca4e629ca34.03.7f.00.00.01.00.7e.3b

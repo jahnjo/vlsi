@@ -1,0 +1,13 @@
+A 5 u mgc_schematic 5cbf3b38328d.03.7f.00.00.01.00.22.8c 8 2 1 0
+V v 6 1 5cbf4f20f269.03.7f.00.00.01.00.37.9c
+F o 0 ""
+V v 7 1 5cbf4f3ac9ee.03.7f.00.00.01.00.3a.3a
+F o 0 ""
+V v 8 1 5cbf5047bdbb.03.7f.00.00.01.00.3c.a1
+F o 0 ""
+O 8
+R cspuv 0 "$VLSI/Project/top/top/sheet1" 7 mgc_sheet 5cbf5047bda6.03.7f.00.00.01.00.3c.a1 5cbf3b383329.03.7f.00.00.01.00.22.8c
+O 7
+R cspuv 0 "$VLSI/Project/top/top/sheet1" 6 mgc_sheet 5cbf4f3ac9cb.03.7f.00.00.01.00.3a.3a 5cbf3b383329.03.7f.00.00.01.00.22.8c
+O 6
+R cspuv 0 "$VLSI/Project/top/top/sheet1" 5 mgc_sheet 5cbf4f20f241.03.7f.00.00.01.00.37.9c 5cbf3b383329.03.7f.00.00.01.00.22.8c

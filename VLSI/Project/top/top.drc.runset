@@ -1,0 +1,7 @@
+*drcRulesFile: /home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/rule_deck/DRC
+*drcRunDir: /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/top/top.cal
+*drcLayoutPaths: top.calibre.gds
+*drcLayoutPrimary: top
+*drcLayoutGetFromViewer: 1
+*drcResultsFile: top.drc.results
+*drcSummaryFile: top.drc.summary

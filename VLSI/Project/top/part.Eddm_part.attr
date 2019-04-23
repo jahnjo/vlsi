@@ -1,0 +1,18 @@
+A 5 u Eddm_part 5cbf45df72de.03.7f.00.00.01.00.22.8c 4 2 3 0
+V v 2 1 5cbf46035471.03.7f.00.00.01.00.22.8c
+F f 2 "part.part_2"
+V v 3 1 5cbf4f27241b.03.7f.00.00.01.00.38.17
+F f 3 "part.part_3"
+V v 4 1 5cbf4f483393.03.7f.00.00.01.00.3a.3a
+F f 4 "part.part_4"
+O 4
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R csduv 0 "$VLSI/Project/top/top" 1 mgc_schematic 5cbf3b38328d.03.7f.00.00.01.01.22.8c 5cbf3b38328d.03.7f.00.00.01.00.22.8c
+R csduv 2 "$VLSI/Project/top/top" 1 mgc_symbol 5cbf4f42452d.03.7f.00.00.01.01.3a.3a 5cbf4f42452d.03.7f.00.00.01.00.3a.3a
+O 3
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R csduv 0 "$VLSI/Project/top/top" 1 mgc_schematic 5cbf3b38328d.03.7f.00.00.01.01.22.8c 5cbf3b38328d.03.7f.00.00.01.00.22.8c
+O 2
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R csduv 0 "$VLSI/Project/top/top" 1 mgc_schematic 5cbf3b38328d.03.7f.00.00.01.01.22.8c 5cbf3b38328d.03.7f.00.00.01.00.22.8c
+R csduv 1 "$VLSI/Project/top/top" 1 mgc_symbol 5cbf45f7c1c9.03.7f.00.00.01.00.22.8c 5cbf45f7c1c8.03.7f.00.00.01.00.22.8c

@@ -1,0 +1,27 @@
+A 5 u Eddm_design_viewpoint 5cbf50727aed.03.7f.00.00.01.00.3d.0e 1 2 15 0
+V v 1 4 5cbf50727aed.03.7f.00.00.01.01.3d.0e
+F f 1 "top_SDL_HIER1.dvpt_1"
+F o 0 
+F o 0 
+F o 0 
+O 1
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R cspuv 0 "$VLSI/Project/top/part" 4 Eddm_part 5cbf4f483393.03.7f.00.00.01.00.3a.3a 5cbf45df72de.03.7f.00.00.01.00.22.8c
+R cspuv 1 "$VLSI/Project/top/top" 8 mgc_schematic 5cbf5047bdbb.03.7f.00.00.01.00.3c.a1 5cbf3b38328d.03.7f.00.00.01.00.22.8c
+R cspuv 2 "$VLSI/Project/top/top" 1 mgc_symbol 5cbf4f42452d.03.7f.00.00.01.01.3a.3a 5cbf4f42452d.03.7f.00.00.01.00.3a.3a
+R cspuv 3 "$VLSI/Project/decoder/part" 2 Eddm_part 5cacefcab2b3.03.7f.00.00.01.00.47.8c 5caba533c211.03.7f.00.00.01.00.41.ad
+R cspuv 4 "$VLSI/Project/imm_mux/part" 2 Eddm_part 5cb8b47cd00e.03.7f.00.00.01.00.23.0c 5cb8b0fa3885.03.7f.00.00.01.00.20.c4
+R cspuv 5 "$VLSI/Project/control/part" 2 Eddm_part 5cb762dc30e0.03.7f.00.00.01.00.0f.4b 5ca4e66412cf.03.7f.00.00.01.00.03.fd
+R cspuv 6 "$VLSI/Project/bitslice/part" 2 Eddm_part 5cbdffcc70f1.03.7f.00.00.01.00.60.21 5ca4e6474113.03.7f.00.00.01.00.01.9b
+R cspuv 7 "$VLSI/Project/bitslice/bitslice" 1 mgc_schematic 5ca4e642eb16.03.7f.00.00.01.01.01.9b 5ca4e642eb16.03.7f.00.00.01.00.01.9b
+P "eddm__refer_state" "eddm__refer_floating"
+R cspuv 8 "$VLSI/Project/bitslice/bitslice" 1 mgc_symbol 5cbdffb6e17e.03.7f.00.00.01.01.60.21 5cbdffb6e17e.03.7f.00.00.01.00.60.21
+R cspuv 9 "$VLSI/Project/control/control" 1 mgc_schematic 5ca4e6604c4a.03.7f.00.00.01.01.03.fd 5ca4e6604c4a.03.7f.00.00.01.00.03.fd
+P "eddm__refer_state" "eddm__refer_floating"
+R cspuv 10 "$VLSI/Project/control/control" 1 mgc_symbol 5cb7627f0f2d.03.7f.00.00.01.01.0f.4b 5cb7627f0f2d.03.7f.00.00.01.00.0f.4b
+R cspuv 11 "$VLSI/Project/imm_mux/imm_mux" 1 mgc_schematic 5cb8b0f633bd.03.7f.00.00.01.01.20.c4 5cb8b0f633bd.03.7f.00.00.01.00.20.c4
+P "eddm__refer_state" "eddm__refer_floating"
+R cspuv 12 "$VLSI/Project/imm_mux/imm_mux" 1 mgc_symbol 5cb8b432054c.03.7f.00.00.01.01.23.0c 5cb8b432054c.03.7f.00.00.01.00.23.0c
+R cspuv 13 "$VLSI/Project/decoder/decoder" 1 mgc_schematic 5caba53067a2.03.7f.00.00.01.01.41.ad 5caba53067a2.03.7f.00.00.01.00.41.ad
+P "eddm__refer_state" "eddm__refer_floating"
+R cspuv 14 "$VLSI/Project/decoder/decoder" 1 mgc_symbol 5cacef9820e4.03.7f.00.00.01.01.47.8c 5cacef9820e4.03.7f.00.00.01.00.47.8c

@@ -1,0 +1,61 @@
+A 5 u mgc_sheet 5cbf3b383329.03.7f.00.00.01.00.22.8c 7 2 13 0
+V v 5 4 5cbf4f20f241.03.7f.00.00.01.00.37.9c
+F f 5 "sheet1.ssht_5"
+F f 5 "sheet1.sgfx_5"
+F o 0 ""
+F o 0 ""
+V v 6 4 5cbf4f3ac9cb.03.7f.00.00.01.00.3a.3a
+F f 6 "sheet1.ssht_6"
+F f 6 "sheet1.sgfx_6"
+F o 0 ""
+F o 0 ""
+V v 7 4 5cbf5047bda6.03.7f.00.00.01.00.3c.a1
+F f 7 "sheet1.ssht_7"
+F f 7 "sheet1.sgfx_7"
+F o 0 ""
+F o 0 ""
+O 7
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R csduv 0 "$VLSI/Project/top/top" 1 mgc_schematic 5cbf3b38328d.03.7f.00.00.01.01.22.8c 5cbf3b38328d.03.7f.00.00.01.00.22.8c
+R csduv 1 "$VLSI/Project/decoder/part" 2 Eddm_part 5cacefcab2b3.03.7f.00.00.01.00.47.8c 5caba533c211.03.7f.00.00.01.00.41.ad
+R csduv 2 "$VLSI/Project/decoder/decoder" 1 mgc_symbol 5cacef9820e4.03.7f.00.00.01.01.47.8c 5cacef9820e4.03.7f.00.00.01.00.47.8c
+R csduv 3 "$VLSI/Project/imm_mux/part" 2 Eddm_part 5cb8b47cd00e.03.7f.00.00.01.00.23.0c 5cb8b0fa3885.03.7f.00.00.01.00.20.c4
+R csduv 4 "$VLSI/Project/imm_mux/imm_mux" 1 mgc_symbol 5cb8b432054c.03.7f.00.00.01.01.23.0c 5cb8b432054c.03.7f.00.00.01.00.23.0c
+R csduv 5 "$VLSI/Project/control/part" 2 Eddm_part 5cb762dc30e0.03.7f.00.00.01.00.0f.4b 5ca4e66412cf.03.7f.00.00.01.00.03.fd
+R csduv 6 "$VLSI/Project/control/control" 1 mgc_symbol 5cb7627f0f2d.03.7f.00.00.01.01.0f.4b 5cb7627f0f2d.03.7f.00.00.01.00.0f.4b
+R csduv 7 "$VLSI/Project/bitslice/part" 2 Eddm_part 5cbdffcc70f1.03.7f.00.00.01.00.60.21 5ca4e6474113.03.7f.00.00.01.00.01.9b
+R csduv 8 "$VLSI/Project/bitslice/bitslice" 1 mgc_symbol 5cbdffb6e17e.03.7f.00.00.01.01.60.21 5cbdffb6e17e.03.7f.00.00.01.00.60.21
+R csduv 9 "$MGC_IC_GENERIC_LIB/portin/part" 1 Eddm_part 35773eaadc18.03.86.56.31.87.00.0e.9f 3890e8888efb.03.86.56.31.70.00.3a.eb
+R csduv 10 "$MGC_IC_GENERIC_LIB/portin/portin" 1 mgc_symbol 35773d18855d.03.86.56.31.87.00.0e.9f 3890e8888efa.03.86.56.31.70.04.3a.eb
+R csduv 11 "$MGC_IC_GENERIC_LIB/portout/part" 1 Eddm_part 35785fdc394b.03.86.56.31.87.00.12.30 3890e8888efa.03.86.56.31.70.03.3a.eb
+R csduv 12 "$MGC_IC_GENERIC_LIB/portout/portout" 1 mgc_symbol 357ed6243e32.03.86.56.31.87.00.28.94 3890e8888efa.03.86.56.31.70.02.3a.eb
+O 6
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R csduv 0 "$VLSI/Project/top/top" 1 mgc_schematic 5cbf3b38328d.03.7f.00.00.01.01.22.8c 5cbf3b38328d.03.7f.00.00.01.00.22.8c
+R csduv 1 "$VLSI/Project/decoder/part" 2 Eddm_part 5cacefcab2b3.03.7f.00.00.01.00.47.8c 5caba533c211.03.7f.00.00.01.00.41.ad
+R csduv 2 "$VLSI/Project/decoder/decoder" 1 mgc_symbol 5cacef9820e4.03.7f.00.00.01.01.47.8c 5cacef9820e4.03.7f.00.00.01.00.47.8c
+R csduv 3 "$VLSI/Project/imm_mux/part" 2 Eddm_part 5cb8b47cd00e.03.7f.00.00.01.00.23.0c 5cb8b0fa3885.03.7f.00.00.01.00.20.c4
+R csduv 4 "$VLSI/Project/imm_mux/imm_mux" 1 mgc_symbol 5cb8b432054c.03.7f.00.00.01.01.23.0c 5cb8b432054c.03.7f.00.00.01.00.23.0c
+R csduv 5 "$VLSI/Project/control/part" 2 Eddm_part 5cb762dc30e0.03.7f.00.00.01.00.0f.4b 5ca4e66412cf.03.7f.00.00.01.00.03.fd
+R csduv 6 "$VLSI/Project/control/control" 1 mgc_symbol 5cb7627f0f2d.03.7f.00.00.01.01.0f.4b 5cb7627f0f2d.03.7f.00.00.01.00.0f.4b
+R csduv 7 "$VLSI/Project/bitslice/part" 2 Eddm_part 5cbdffcc70f1.03.7f.00.00.01.00.60.21 5ca4e6474113.03.7f.00.00.01.00.01.9b
+R csduv 8 "$VLSI/Project/bitslice/bitslice" 1 mgc_symbol 5cbdffb6e17e.03.7f.00.00.01.01.60.21 5cbdffb6e17e.03.7f.00.00.01.00.60.21
+R csduv 9 "$MGC_IC_GENERIC_LIB/portin/part" 1 Eddm_part 35773eaadc18.03.86.56.31.87.00.0e.9f 3890e8888efb.03.86.56.31.70.00.3a.eb
+R csduv 10 "$MGC_IC_GENERIC_LIB/portin/portin" 1 mgc_symbol 35773d18855d.03.86.56.31.87.00.0e.9f 3890e8888efa.03.86.56.31.70.04.3a.eb
+R csduv 11 "$MGC_IC_GENERIC_LIB/portout/part" 1 Eddm_part 35785fdc394b.03.86.56.31.87.00.12.30 3890e8888efa.03.86.56.31.70.03.3a.eb
+R csduv 12 "$MGC_IC_GENERIC_LIB/portout/portout" 1 mgc_symbol 357ed6243e32.03.86.56.31.87.00.28.94 3890e8888efa.03.86.56.31.70.02.3a.eb
+O 5
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R csduv 0 "$VLSI/Project/top/top" 1 mgc_schematic 5cbf3b38328d.03.7f.00.00.01.01.22.8c 5cbf3b38328d.03.7f.00.00.01.00.22.8c
+R csduv 1 "$VLSI/Project/decoder/part" 2 Eddm_part 5cacefcab2b3.03.7f.00.00.01.00.47.8c 5caba533c211.03.7f.00.00.01.00.41.ad
+R csduv 2 "$VLSI/Project/decoder/decoder" 1 mgc_symbol 5cacef9820e4.03.7f.00.00.01.01.47.8c 5cacef9820e4.03.7f.00.00.01.00.47.8c
+R csduv 3 "$VLSI/Project/imm_mux/part" 2 Eddm_part 5cb8b47cd00e.03.7f.00.00.01.00.23.0c 5cb8b0fa3885.03.7f.00.00.01.00.20.c4
+R csduv 4 "$VLSI/Project/imm_mux/imm_mux" 1 mgc_symbol 5cb8b432054c.03.7f.00.00.01.01.23.0c 5cb8b432054c.03.7f.00.00.01.00.23.0c
+R csduv 5 "$VLSI/Project/control/part" 2 Eddm_part 5cb762dc30e0.03.7f.00.00.01.00.0f.4b 5ca4e66412cf.03.7f.00.00.01.00.03.fd
+R csduv 6 "$VLSI/Project/control/control" 1 mgc_symbol 5cb7627f0f2d.03.7f.00.00.01.01.0f.4b 5cb7627f0f2d.03.7f.00.00.01.00.0f.4b
+R csduv 7 "$VLSI/Project/bitslice/part" 2 Eddm_part 5cbdffcc70f1.03.7f.00.00.01.00.60.21 5ca4e6474113.03.7f.00.00.01.00.01.9b
+R csduv 8 "$VLSI/Project/bitslice/bitslice" 1 mgc_symbol 5cbdffb6e17e.03.7f.00.00.01.01.60.21 5cbdffb6e17e.03.7f.00.00.01.00.60.21
+R csduv 9 "$MGC_IC_GENERIC_LIB/portin/part" 1 Eddm_part 35773eaadc18.03.86.56.31.87.00.0e.9f 3890e8888efb.03.86.56.31.70.00.3a.eb
+R csduv 10 "$MGC_IC_GENERIC_LIB/portin/portin" 1 mgc_symbol 35773d18855d.03.86.56.31.87.00.0e.9f 3890e8888efa.03.86.56.31.70.04.3a.eb
+R csduv 11 "$MGC_IC_GENERIC_LIB/portout/part" 1 Eddm_part 35785fdc394b.03.86.56.31.87.00.12.30 3890e8888efa.03.86.56.31.70.03.3a.eb
+R csduv 12 "$MGC_IC_GENERIC_LIB/portout/portout" 1 mgc_symbol 357ed6243e32.03.86.56.31.87.00.28.94 3890e8888efa.03.86.56.31.70.02.3a.eb

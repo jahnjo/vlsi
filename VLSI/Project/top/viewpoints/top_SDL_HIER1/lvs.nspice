@@ -1,0 +1,293 @@
+* LVS netlist generated with ICnet by 'egrvlsi07' on Mon Apr 29 2019 at 13:24:28
+
+*
+* Globals.
+*
+.global VDD ground
+
+*
+* Component pathname : $VLSI/Project/and
+*
+.subckt and  Y A B
+
+        M6 Y N$54 ground ground nmos l=0.13u w=0.6u m=1
+        M5 Y N$54 VDD VDD pmos l=0.13u w=1.35u m=1
+        M4 N$54 B VDD VDD pmos l=0.13u w=1.35u m=1
+        M3 N$54 A VDD VDD pmos l=0.13u w=1.35u m=1
+        M2 N$29 B ground ground nmos l=0.13u w=1.2u m=1
+        M1 N$54 A N$29 ground nmos l=0.13u w=1.2u m=1
+.ends and
+
+*
+* Component pathname : $VLSI/Project/Mux21
+*
+.subckt Mux21  Y A B S
+
+        M6 Y N$46 A ground nmos l=0.13u w=0.6u m=1
+        M3 Y S A VDD pmos l=0.13u w=1.35u m=1
+        M5 Y S B ground nmos l=0.13u w=0.6u m=1
+        M4 Y N$46 B VDD pmos l=0.13u w=1.35u m=1
+        M2 N$46 S VDD VDD pmos l=0.13u w=1.35u m=1
+        M1 N$46 S ground ground nmos l=0.13u w=0.6u m=1
+.ends Mux21
+
+*
+* Component pathname : $VLSI/Project/DFF
+*
+.subckt DFF  Q CLK D
+
+        M20 N$101 Q VDD VDD pmos l=0.13u w=0.6u m=1
+        M19 Q N$101 VDD VDD pmos l=0.13u w=0.6u m=1
+        M18 N$84 N$82 VDD VDD pmos l=0.13u w=0.6u m=1
+        M17 N$82 N$84 VDD VDD pmos l=0.13u w=0.6u m=1
+        M16 N$70 D VDD VDD pmos l=0.13u w=0.6u m=1
+        M15 N$65 CLK VDD VDD pmos l=0.13u w=0.6u m=1
+        M14 Q CLK N$93 ground nmos l=0.13u w=0.6u m=1
+        M13 N$101 CLK N$40 ground nmos l=0.13u w=0.6u m=1
+        M12 N$82 N$65 N$88 ground nmos l=0.13u w=0.6u m=1
+        M11 N$84 N$65 N$67 ground nmos l=0.13u w=0.6u m=1
+        M10 N$40 N$84 ground ground nmos l=0.13u w=0.6u m=1
+        M9 Q N$101 ground ground nmos l=0.13u w=0.6u m=1
+        M8 N$101 Q ground ground nmos l=0.13u w=0.6u m=1
+        M7 N$93 N$82 ground ground nmos l=0.13u w=0.6u m=1
+        M6 N$88 D ground ground nmos l=0.13u w=0.6u m=1
+        M5 N$84 N$82 ground ground nmos l=0.13u w=0.6u m=1
+        M4 N$82 N$84 ground ground nmos l=0.13u w=0.6u m=1
+        M3 N$67 N$70 ground ground nmos l=0.13u w=0.6u m=1
+        M2 N$70 D ground ground nmos l=0.13u w=0.6u m=1
+        M1 N$65 CLK ground ground nmos l=0.13u w=0.6u m=1
+.ends DFF
+
+*
+* Component pathname : $VLSI/Project/DFFen
+*
+.subckt DFFen  Q CLK D En
+
+        X_Enable_Mux N$5 Q D En Mux21
+        X_DFF Q CLK N$5 DFF
+.ends DFFen
+
+*
+* Component pathname : $VLSI/Project/Mux81
+*
+.subckt Mux81  OUT1 IN0 IN1 IN2 IN3 IN4 IN5 IN6 IN7 S0 S1 S2
+
+        X_MUX217 OUT1 N$13 N$25 S2 Mux21
+        X_MUX216 N$25 N$17 N$21 S1 Mux21
+        X_MUX215 N$21 IN6 IN7 S0 Mux21
+        X_MUX214 N$17 IN4 IN5 S0 Mux21
+        X_MUX213 N$13 N$5 N$9 S1 Mux21
+        X_MUX212 N$9 IN2 IN3 S0 Mux21
+        X_MUX211 N$5 IN0 IN1 S0 Mux21
+.ends Mux81
+
+*
+* Component pathname : $VLSI/Project/reg
+*
+.subckt reg  BusA BusB BusW clk dec0 dec1 dec2 dec3 dec4 dec5 dec6 dec7
++ Reg_W Rs0 Rs1 Rs2 Rt0 Rt1 Rt2
+
+        X_AND8 N$78 dec7 Reg_W and
+        X_AND7 N$76 dec6 Reg_W and
+        X_AND6 N$74 dec5 Reg_W and
+        X_AND5 N$72 dec4 Reg_W and
+        X_AND4 N$70 dec3 Reg_W and
+        X_AND3 N$68 dec2 Reg_W and
+        X_AND2 N$66 dec1 Reg_W and
+        X_AND1 N$64 dec0 Reg_W and
+        X_DFFEN8 reg8 clk BusW N$78 DFFen
+        X_DFFEN7 reg7 clk BusW N$76 DFFen
+        X_DFFEN6 reg6 clk BusW N$74 DFFen
+        X_DFFEN5 reg5 clk BusW N$72 DFFen
+        X_DFFEN4 reg3 clk BusW N$70 DFFen
+        X_DFFEN3 reg2 clk BusW N$68 DFFen
+        X_DFFEN2 reg1 clk BusW N$66 DFFen
+        X_DFFEN1 reg0 clk BusW N$64 DFFen
+        X_MUX812 BusB reg0 reg1 reg2 reg3 reg5 reg6 reg7 reg8 Rt0 Rt1 Rt2 Mux81
+        X_MUX811 BusA reg0 reg1 reg2 reg3 reg5 reg6 reg7 reg8 Rs0 Rs1 Rs2 Mux81
+.ends reg
+
+*
+* Component pathname : $VLSI/Project/inv
+*
+.subckt inv  OUT IN
+
+        M2 OUT IN VDD VDD pmos l=0.13u w=1.35u m=1
+        M1 OUT IN ground ground nmos l=0.13u w=0.6u m=1
+.ends inv
+
+*
+* Component pathname : $VLSI/Project/Mux41
+*
+.subckt Mux41  OUT1 IN0 IN1 IN2 IN3 S0 S1
+
+        X_MUX213 OUT1 N$2 N$4 S1 Mux21
+        X_MUX212 N$4 IN2 IN3 S0 Mux21
+        X_MUX211 N$2 IN0 IN1 S0 Mux21
+.ends Mux41
+
+*
+* Component pathname : $VLSI/Project/or
+*
+.subckt or  Y A B
+
+        M6 Y N$22 ground ground nmos l=0.13u w=0.6u m=1
+        M5 Y N$22 VDD VDD pmos l=0.13u w=1.35u m=1
+        M4 N$22 A ground ground nmos l=0.13u w=0.6u m=1
+        M3 N$22 B ground ground nmos l=0.13u w=0.6u m=1
+        M2 N$22 B N$13 VDD pmos l=0.13u w=2.7u m=1
+        M1 N$13 A VDD VDD pmos l=0.13u w=2.7u m=1
+.ends or
+
+*
+* Component pathname : $VLSI/Project/Adder
+*
+.subckt Adder  Cout S A B Cin
+
+        M18 N$145 Cin N$165 ground nmos l=0.13u w=2u m=1
+        M17 N$145 Cin N$159 VDD pmos l=0.13u w=2u m=1
+        M16 N$159 B N$157 VDD pmos l=0.13u w=2u m=1
+        M15 N$157 A VDD VDD pmos l=0.13u w=2u m=1
+        M24 N$47 Cin ground ground nmos l=0.13u w=2u m=1
+        M23 N$47 B ground ground nmos l=0.13u w=2u m=1
+        M22 N$47 A ground ground nmos l=0.13u w=2u m=1
+        M21 N$145 N$210 N$47 ground nmos l=0.13u w=2u m=1
+        M14 N$145 N$210 N$37 VDD pmos l=0.13u w=2u m=1
+        M13 N$37 Cin VDD VDD pmos l=0.13u w=2u m=1
+        M12 N$37 B VDD VDD pmos l=0.13u w=2u m=1
+        M11 N$37 A VDD VDD pmos l=0.13u w=2u m=1
+        M10 N$7 B VDD VDD pmos l=0.13u w=2u m=1
+        M9 N$10 B VDD VDD pmos l=0.13u w=2u m=1
+        M8 N$10 A VDD VDD pmos l=0.13u w=2u m=1
+        M7 N$210 A N$7 VDD pmos l=0.13u w=2u m=1
+        M6 N$210 A N$19 ground nmos l=0.13u w=2u m=1
+        M5 N$210 Cin N$14 ground nmos l=0.13u w=2u m=1
+        M4 N$19 B ground ground nmos l=0.13u w=2u m=1
+        M3 N$14 B ground ground nmos l=0.13u w=2u m=1
+        M2 N$210 Cin N$10 VDD pmos l=0.13u w=2u m=1
+        M1 N$14 A ground ground nmos l=0.13u w=2u m=1
+        M28 S N$145 ground ground nmos l=0.13u w=2u m=1
+        M27 S N$145 VDD VDD pmos l=0.13u w=2u m=1
+        M26 Cout N$210 ground ground nmos l=0.13u w=2u m=1
+        M25 Cout N$210 VDD VDD pmos l=0.13u w=2u m=1
+        M20 N$167 A ground ground nmos l=0.13u w=2u m=1
+        M19 N$165 B N$167 ground nmos l=0.13u w=2u m=1
+.ends Adder
+
+*
+* Component pathname : $VLSI/Project/alu
+*
+.subckt alu  Cout result A ALUop_0 ALUop_1 B Cin
+
+        X_INV N$41 B inv
+        X_B_MUX N$44 B N$41 ALUop_0 Mux21
+        X_MUX411 result N$32 N$32 N$31 N$30 ALUop_0 ALUop_1 Mux41
+        X_OR N$30 A B or
+        X_AND N$31 A B and
+        X_ADD_SUB Cout N$32 A N$44 Cin Adder
+.ends alu
+
+*
+* Component pathname : $VLSI/Project/bitslice
+*
+.subckt bitslice  Cout result ALUop0 ALUop1 BusW Cin clk dec0 dec1 dec2
++ dec3 dec4 dec5 dec6 dec7 RegW Rs0 Rs1 Rs2 Rt0 Rt1 Rt2
+
+        X_REG1 busA busB BusW clk dec0 dec1 dec2 dec3 dec4 dec5 dec6 dec7
++ RegW Rs0 Rs1 Rs2 Rt0 Rt1 Rt2 reg
+        X_ALU1 Cout result busA ALUop0 ALUop1 busB Cin alu
+.ends bitslice
+
+*
+* Component pathname : $VLSI/Project/or3
+*
+.subckt or3  Y A B C
+
+        X_OR2 Y N$5 C or
+        X_OR1 N$5 A B or
+.ends or3
+
+*
+* Component pathname : $VLSI/Project/and3
+*
+.subckt and3  Y A B C
+
+        X_AND2 Y N$10 C and
+        X_AND1 N$10 A B and
+.ends and3
+
+*
+* Component pathname : $VLSI/Project/control
+*
+.subckt control  ALU_OP_0 ALU_OP_1 ALU_SRC PC_SRC REG_WRITE op_0 op_1 op_2
+
+        X_OR35 ALU_SRC N$41 N$48 PC_SRC or3
+        X_OR3 ALU_OP_0 N$59 PC_SRC or
+        X_OR34 N$59 N$35 N$56 N$48 or3
+        X_OR2 ALU_OP_1 N$53 N$48 or
+        X_OR33 N$53 N$37 N$41 N$56 or3
+        X_OR1 REG_WRITE N$46 N$48 or
+        X_OR32 N$46 N$39 N$41 N$56 or3
+        X_OR31 N$39 N$33 N$35 N$37 or3
+        X_BEQ PC_SRC N$30 op_1 op_2 and3
+        X_ORI N$48 op_0 N$27 op_2 and3
+        X_OR N$56 N$30 N$27 op_2 and3
+        X_ANDI N$41 op_0 op_1 N$20 and3
+        X_AND N$37 N$30 op_1 N$20 and3
+        X_SUB N$35 op_0 N$27 N$20 and3
+        X_ADD N$33 N$30 N$27 N$20 and3
+        X_INV3 N$30 op_0 inv
+        X_INV2 N$27 op_1 inv
+        X_INV1 N$20 op_2 inv
+.ends control
+
+*
+* Component pathname : $VLSI/Project/imm_mux
+*
+.subckt imm_mux  busW_result_0 busW_result_1 busW_result_2 busW_result_3
++ imm_0 imm_1 imm_2 imm_3 input_select result_0 result_1 result_2 result_3
+
+        X_bit0 busW_result_0 result_0 imm_0 input_select Mux21
+        X_bit1 busW_result_1 result_1 imm_1 input_select Mux21
+        X_bit2 busW_result_2 result_2 imm_2 input_select Mux21
+        X_bit3 busW_result_3 result_3 imm_3 input_select Mux21
+.ends imm_mux
+
+*
+* Component pathname : $VLSI/Project/decoder
+*
+.subckt decoder  reg0 reg1 reg2 reg3 reg4 reg5 reg6 reg7 Rd_0 Rd_1 Rd_2
+
+        X_AND38 reg7 Rd_0 Rd_1 Rd_2 and3
+        X_AND37 reg6 N$31 Rd_1 Rd_2 and3
+        X_AND36 reg5 Rd_0 N$53 Rd_2 and3
+        X_AND35 reg4 N$31 N$53 Rd_2 and3
+        X_AND34 reg3 Rd_0 Rd_1 N$54 and3
+        X_AND33 reg2 N$31 Rd_1 N$54 and3
+        X_AND32 reg1 Rd_0 N$53 N$54 and3
+        X_AND31 reg0 N$31 N$53 N$54 and3
+        X_INV3 N$31 Rd_0 inv
+        X_INV2 N$53 Rd_1 inv
+        X_INV1 N$54 Rd_2 inv
+.ends decoder
+
+*
+* Component pathname : $VLSI/Project/top
+*
+.subckt top  ALUsrc PCsrc result0 result1 result2 result3 clk imm0 imm1
++ imm2 imm3 input_select op0 op1 op2 Rd0 Rd1 Rd2 Rs0 Rs1 Rs2 Rt0 Rt1 Rt2
+
+        X_BIT_3 N$142 result3 N$11 N$8 N$28 N$79 clk N$144 N$67 N$68 N$69
++ N$70 N$71 N$72 N$73 N$16 Rs0 Rs1 Rs2 Rt0 Rt1 Rt2 bitslice
+        X_BIT_2 N$79 result2 N$11 N$8 N$30 N$77 clk N$144 N$67 N$68 N$69
++ N$70 N$71 N$72 N$73 N$16 Rs0 Rs1 Rs2 Rt0 Rt1 Rt2 bitslice
+        X_BIT_1 N$77 result1 N$11 N$8 N$20 N$75 clk N$144 N$67 N$68 N$69
++ N$70 N$71 N$72 N$73 N$16 Rs0 Rs1 Rs2 Rt0 Rt1 Rt2 bitslice
+        X_BIT_0 N$75 result0 N$11 N$8 N$91 N$11 clk N$144 N$67 N$68 N$69
++ N$70 N$71 N$72 N$73 N$16 Rs0 Rs1 Rs2 Rt0 Rt1 Rt2 bitslice
+        X_CONTROL1 N$11 N$8 ALUsrc PCsrc N$16 op0 op1 op2 control
+        X_IMM_MUX1 N$91 N$20 N$30 N$28 imm0 imm1 imm2 imm3 input_select
++ result3 result2 result1 result0 imm_mux
+        X_DECODER1 N$144 N$67 N$68 N$69 N$70 N$71 N$72 N$73 Rd0 Rd1 Rd2 decoder
+.ends top
+

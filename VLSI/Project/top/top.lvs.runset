@@ -1,0 +1,11 @@
+*lvsRulesFile: /home/local/RAMS/egrvlsi07/GDK/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/rule_deck/LVS
+*lvsRunDir: /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/top/top.cal
+*lvsLayoutPaths: top.calibre.gds
+*lvsLayoutPrimary: top
+*lvsLayoutGetFromViewer: 1
+*lvsResultsFile: top.lvs.results
+*lvsSummaryFile: top.lvs.summary
+*cmnApplyTemplates: 0
+*lvsSourceGetFromViewer: 1
+*lvsSourcePath: top.calibre.src.net
+*lvsSourcePrimary: top

@@ -1,0 +1,1 @@
+# cosim -cosim -l transcript_ms -lib /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/top/work -msgmode tran -multisource_delay max -pli {/opt/mentor/ams_12_1/libs/MS/OS/$AMS_VCO/libVLA2D$AMS_SLIB_EXT} -suppress 3122 -warning 3584,10000 ADMS:spice:top 

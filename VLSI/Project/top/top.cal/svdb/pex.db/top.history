@@ -4,5 +4,5 @@
 //TOKEN_DELIMITER: "
 //TOKEN_SEPARATOR: " "
 //FORMAT: "time" "calibre version" "command line"
-"Mon Apr 29 13:37:21 2019 " "v2012.2_36.25" "-xrc -pdb -r -turbo 1 /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/top/top.cal/_PEX_"
-"Mon Apr 29 13:37:22 2019 " "v2012.2_36.25" "-xrc -fmt -all /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/top/top.cal/_PEX_"
+"Tue Apr 30 13:15:59 2019 " "v2012.2_36.25" "-xrc -pdb -r -turbo 1 /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/top/top.cal/_PEX_"
+"Tue Apr 30 13:16:00 2019 " "v2012.2_36.25" "-xrc -fmt -all /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/top/top.cal/_PEX_"

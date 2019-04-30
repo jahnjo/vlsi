@@ -330,19 +330,19 @@ X16 VDD ground 24 27 ALU_SRC PC_SRC or3 $T=9725 -20005 0 0 $X=8000 $Y=66265
 X17 VDD ground 29 23 30 24 or3 $T=17725 -20005 0 0 $X=16000 $Y=66265
 .ENDS
 ***************************************
-.SUBCKT top VDD ground result0 imm3 result1 imm2 result3 input_select imm0 result2 imm1 Rd1 Rd2 Rd0 Rs0 Rs1 clk Rs2 Rt0 Rt1
+.SUBCKT top VDD ground result3 imm3 result2 imm2 result0 input_select imm0 result1 imm1 Rd1 Rd2 Rd0 Rs0 Rs1 clk Rs2 Rt0 Rt1
 + Rt2 op1 op0 ALUsrc PCsrc op2
-** N=156 EP=26 IP=239 FDC=1918
+** N=157 EP=26 IP=239 FDC=1918
 * PORT VDD VDD 212645 388725 metal1
 * PORT ground ground 212645 371505 metal1
-* PORT result0 result0 466555 575035 metal8
+* PORT result3 result3 454440 584405 metal8
 * PORT imm3 imm3 416695 586645 metal8
-* PORT result1 result1 462700 575000 metal8
+* PORT result2 result2 461940 586450 metal8
 * PORT imm2 imm2 421195 586720 metal8
-* PORT result3 result3 455610 574925 metal8
+* PORT result0 result0 468600 588430 metal8
 * PORT input_select input_select 422610 590440 metal8
 * PORT imm0 imm0 425690 589730 metal8
-* PORT result2 result2 459220 574935 metal8
+* PORT result1 result1 445790 581440 metal8
 * PORT imm1 imm1 430200 586670 metal8
 * PORT Rd1 Rd1 214540 583335 metal8
 * PORT Rd2 Rd2 214690 569220 metal8
@@ -359,10 +359,10 @@ X17 VDD ground 29 23 30 24 or3 $T=17725 -20005 0 0 $X=16000 $Y=66265
 * PORT ALUsrc ALUsrc 354885 598055 metal8
 * PORT PCsrc PCsrc 361845 598115 metal8
 * PORT op2 op2 360925 573550 metal8
-X0 VDD result0 4 imm3 ground input_select Mux21 $T=416425 487520 0 0 $X=413820 $Y=580685
-X1 VDD result1 7 imm2 ground input_select Mux21 $T=420925 487520 0 0 $X=418320 $Y=580685
-X2 VDD result3 11 imm0 ground input_select Mux21 $T=425425 487520 0 0 $X=422820 $Y=580685
-X3 VDD result2 14 imm1 ground input_select Mux21 $T=429925 487520 0 0 $X=427320 $Y=580685
+X0 VDD result3 4 imm3 ground input_select Mux21 $T=416425 487520 0 0 $X=413820 $Y=580685
+X1 VDD result2 7 imm2 ground input_select Mux21 $T=420925 487520 0 0 $X=418320 $Y=580685
+X2 VDD result0 11 imm0 ground input_select Mux21 $T=425425 487520 0 0 $X=422820 $Y=580685
+X3 VDD result1 14 imm1 ground input_select Mux21 $T=429925 487520 0 0 $X=427320 $Y=580685
 X4 ground VDD 19 Rs0 20 Rs1 21 22 34 clk 4 23 Rs2 24 25 26 Rt0 Rt1 Rt2 27
 + 28 result3 29 30
 + bitslice $T=210770 263350 0 0 $X=186130 $Y=337335

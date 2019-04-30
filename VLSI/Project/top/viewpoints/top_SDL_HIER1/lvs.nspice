@@ -1,4 +1,4 @@
-* LVS netlist generated with ICnet by 'egrvlsi07' on Mon Apr 29 2019 at 13:24:28
+* LVS netlist generated with ICnet by 'egrvlsi07' on Tue Apr 30 2019 at 13:14:37
 
 *
 * Globals.
@@ -287,7 +287,7 @@
 + N$70 N$71 N$72 N$73 N$16 Rs0 Rs1 Rs2 Rt0 Rt1 Rt2 bitslice
         X_CONTROL1 N$11 N$8 ALUsrc PCsrc N$16 op0 op1 op2 control
         X_IMM_MUX1 N$91 N$20 N$30 N$28 imm0 imm1 imm2 imm3 input_select
-+ result3 result2 result1 result0 imm_mux
++ result0 result1 result2 result3 imm_mux
         X_DECODER1 N$144 N$67 N$68 N$69 N$70 N$71 N$72 N$73 Rd0 Rd1 Rd2 decoder
 .ends top
 

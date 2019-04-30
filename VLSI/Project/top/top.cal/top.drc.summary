@@ -3,7 +3,7 @@
 ==================================================================================
 === CALIBRE::DRC-H SUMMARY REPORT
 ===
-Execution Date/Time:       Mon Apr 29 13:03:27 2019
+Execution Date/Time:       Tue Apr 30 13:13:40 2019
 Calibre Version:           v2012.2_36.25    Mon Jul 2 12:15:31 PDT 2012
 Rule File Pathname:        /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/top/top.cal/_DRC_
 Rule File Title:           
@@ -53,7 +53,7 @@ LAYER PDIFFi ..... TOTAL Original Geometry Count = 0    (0)
 LAYER DIFFi ...... TOTAL Original Geometry Count = 34   (1308)
 LAYER M1SLOTi .... TOTAL Original Geometry Count = 0    (0)
 LAYER DUM1 ....... TOTAL Original Geometry Count = 0    (0)
-LAYER METAL1i .... TOTAL Original Geometry Count = 319  (12498)
+LAYER METAL1i .... TOTAL Original Geometry Count = 320  (12499)
 LAYER M2SLOTi .... TOTAL Original Geometry Count = 0    (0)
 LAYER DUM2 ....... TOTAL Original Geometry Count = 0    (0)
 LAYER METAL2i .... TOTAL Original Geometry Count = 59   (4589)
@@ -71,10 +71,10 @@ LAYER DUM6 ....... TOTAL Original Geometry Count = 0    (0)
 LAYER METAL6i .... TOTAL Original Geometry Count = 78   (488)
 LAYER M7SLOTi .... TOTAL Original Geometry Count = 0    (0)
 LAYER DUM7 ....... TOTAL Original Geometry Count = 0    (0)
-LAYER METAL7i .... TOTAL Original Geometry Count = 134  (462)
+LAYER METAL7i .... TOTAL Original Geometry Count = 138  (468)
 LAYER M8SLOTi .... TOTAL Original Geometry Count = 0    (0)
 LAYER DUM8 ....... TOTAL Original Geometry Count = 0    (0)
-LAYER METAL8i .... TOTAL Original Geometry Count = 89   (232)
+LAYER METAL8i .... TOTAL Original Geometry Count = 90   (235)
 LAYER MDSLOTi .... TOTAL Original Geometry Count = 0    (0)
 LAYER DUMMD ...... TOTAL Original Geometry Count = 0    (0)
 LAYER MDi ........ TOTAL Original Geometry Count = 0    (0)
@@ -98,7 +98,7 @@ LAYER VIA34i ..... TOTAL Original Geometry Count = 1    (502)
 LAYER VIA45i ..... TOTAL Original Geometry Count = 1    (318)
 LAYER VIA56i ..... TOTAL Original Geometry Count = 1    (142)
 LAYER VIA67i ..... TOTAL Original Geometry Count = 1    (120)
-LAYER VIA78i ..... TOTAL Original Geometry Count = 1    (144)
+LAYER VIA78i ..... TOTAL Original Geometry Count = 1    (146)
 LAYER PADi ....... TOTAL Original Geometry Count = 0    (0)
 LAYER CBDi ....... TOTAL Original Geometry Count = 0    (0)
 LAYER UBMi ....... TOTAL Original Geometry Count = 0    (0)
@@ -529,6 +529,6 @@ CELL top ................. TOTAL Result Count = 1 (1)
 ---
 TOTAL CPU Time:                  0
 TOTAL REAL Time:                 0
-TOTAL Original Layer Geometries: 2610 (76375)
+TOTAL Original Layer Geometries: 2616 (76387)
 TOTAL DRC RuleChecks Executed:   386
 TOTAL DRC Results Generated:     5 (284)

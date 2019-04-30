@@ -15,7 +15,7 @@ REPORT FILE NAME:         lvs.report
 LAYOUT NAME:              /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/top/top.cal/lay.net ('top')
 SOURCE NAME:              /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/top/top.cal/top.calibre.src.net ('top')
 RULE FILE:                /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/top/top.cal/_LVS_
-CREATION TIME:            Mon Apr 29 13:24:30 2019
+CREATION TIME:            Tue Apr 30 13:14:39 2019
 CURRENT DIRECTORY:        /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/top/top.cal
 USER NAME:                egrvlsi07
 CALIBRE VERSION:          v2012.2_36.25    Mon Jul 2 12:15:31 PDT 2012
@@ -291,7 +291,7 @@ NUMBERS OF OBJECTS AFTER TRANSFORMATION
 
 o Initial Correspondence Points:
 
-   Ports:        VDD ground RESULT0 IMM3 RESULT1 IMM2 RESULT3 INPUT_SELECT IMM0 RESULT2 IMM1 RD1
+   Ports:        VDD ground RESULT3 IMM3 RESULT2 IMM2 RESULT0 INPUT_SELECT IMM0 RESULT1 IMM1 RD1
                  RD2 RD0 RS0 RS1 CLK RS2 RT0 RT1 RT2 OP1 OP0 ALUSRC PCSRC OP2
 
 

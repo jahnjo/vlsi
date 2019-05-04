@@ -43,16 +43,12 @@ force -source :control:op_0 0v
 run 50 ns
 
 force -source :control:op_2 2.5v
-force -source :control:op_1 0v
-force -source :control:op_0 2.5v
-run 50 ns
-
-force -source :control:op_2 2.5v
 force -source :control:op_1 2.5v
 force -source :control:op_0 0v
 run 50 ns
 
 force -source :control:op_2 2.5v
-force -source :control:op_1 2.5v
+force -source :control:op_1 0v
 force -source :control:op_0 2.5v
 run 50 ns
+

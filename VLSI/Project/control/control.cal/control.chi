@@ -1,11 +1,11 @@
-  Run on egr-vlsi-24 (Linux 3.10.0-514.26.2.el7.x86_64)
+  Run on egr-vlsi-25 (Linux 3.10.0-514.26.2.el7.x86_64)
 
-/opt/mentor/ams_12_1/aol/bin/vams_ms_64 -i /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/control/control.cal/control.cir -noconf -nogwl -cou46 -gwl wdl -nocou -wdb_folder -wdb_incremental -jwdb_design -hdla /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/control/work  -hdlav3opt -jwdbport 37432 -jwdbhost egr-vlsi-24 -folder -mainpane -mach -ezwave -kernelplotmechanism -jwdb_checkpoint 1 -viewer_config 2 -msl transcript_ms -ms -multisource_delay max 
+/opt/mentor/ams_12_1/aol/bin/vams_ms_64 -i /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/control/control.cal/control.cir -noconf -nogwl -cou46 -gwl wdl -nocou -wdb_folder -wdb_incremental -jwdb_design -hdla /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/control/work  -hdlav3opt -jwdbport 39852 -jwdbhost egr-vlsi-25 -folder -mainpane -mach -ezwave -kernelplotmechanism -jwdb_checkpoint 1 -viewer_config 2 -msl transcript_ms -ms -multisource_delay max 
 
 
 ***** PRE-PROCESSING ...
 
-1*******18-Apr-19 *******  ELDO 12.1 patch1 (64 bits)  (v7.7_1.1)  *******12:59:51******
+1******* 4-May-19 *******  ELDO 12.1 patch1 (64 bits)  (v7.7_1.1)  *******10:26:37******
 
 0*  Top-Level Spice netlist control.pex.netlist for AMS-Sim
 
@@ -7323,13 +7323,13 @@ Warning  29:   Such messages will not be displayed in future. Set .option MSGNOD
 
 EldoHDL VERSION : ELDO 12.1 patch1 (64 bits) Thu Sep  6 14:32:26 GMT 2012
 
-*** DATE: 18-Apr-2019 13:00:04
+*** DATE:  4-May-2019 10:27:00
 
 *** TITLE: *  Top-Level Spice netlist control.pex.netlist for AMS-Sim
 
 TEMPERATURE : 27.000000 degrees C
 
-1***************18-Apr-2019 ***********************  ELDO 12.1 patch1 (64 bits)  (v7.7_1.1)  ***********************13:00:04*****************
+1*************** 4-May-2019 ***********************  ELDO 12.1 patch1 (64 bits)  (v7.7_1.1)  ***********************10:27:00*****************
 
 0*  Top-Level Spice netlist control.pex.n
 0****                 MODELS PARAMETERS                                    TEMPERATURE =   27.000 DEG C
@@ -7658,7 +7658,7 @@ unit6 represents 1/degK^2
 
 
 
-1***************18-Apr-2019 ***********************  ELDO 12.1 patch1 (64 bits)  (v7.7_1.1)  ***********************13:00:04*****************
+1*************** 4-May-2019 ***********************  ELDO 12.1 patch1 (64 bits)  (v7.7_1.1)  ***********************10:27:00*****************
 
 0*  Top-Level Spice netlist control.pex.netlist for AMS-Sim
 0****                 OPTION SUMMARY                                        TEMPERATURE =   27.000 DEG C
@@ -7726,13 +7726,13 @@ TIMING         = 0        MODWL          = 1        ULOGIC         = 0
 
 
 
-    DC cpu Time 0s 230ms 
+    DC cpu Time 0s 210ms 
 DC:39 iterations FOR DC analysis
 
 
 
 
-1***************18-Apr-2019 ***********************  ELDO 12.1 patch1 (64 bits)  (v7.7_1.1)  ***********************13:00:04*****************
+1*************** 4-May-2019 ***********************  ELDO 12.1 patch1 (64 bits)  (v7.7_1.1)  ***********************10:27:00*****************
 
 0*  Top-Level Spice netlist control.pex.netlist for AMS-Sim
 0****                 INITIAL TRANSIENT SOLUTION                           TEMPERATURE =   27.000 DEG C
@@ -12441,7 +12441,7 @@ EldoHDL NEWTON: VNTOL=1.000000e-06 RELTOL=7.500000e-04
 
 
 
-1***************18-Apr-2019 ***********************  ELDO 12.1 patch1 (64 bits)  (v7.7_1.1)  ***********************13:00:04*****************
+1*************** 4-May-2019 ***********************  ELDO 12.1 patch1 (64 bits)  (v7.7_1.1)  ***********************10:27:00*****************
 
 0*  Top-Level Spice netlist control.pex.netlist for AMS-Sim
 0****                 ACCOUNTING INFORMATION                                TEMPERATURE =   27.000 DEG C
@@ -12472,13 +12472,13 @@ Total number of elements simulated  5144
 Number of equations                 5010
 Number of non-zero terms            28586
 Percent Zeros                      99.89
-Number of Newton iterations         2162
-Average number of Newton iterations 2.775
-Number of accepted time steps       779
-Number of rejected time steps       19
-      due to LTE                    14
-      due to Newton                 5
-Evaluation of active devices        105259
-Memory size (MB)                    517.2
-   cpu Time 2s 780ms 
-Memory size (MB)                      517
+Number of Newton iterations         2004
+Average number of Newton iterations 2.827
+Number of accepted time steps       709
+Number of rejected time steps       21
+      due to LTE                    17
+      due to Newton                 4
+Evaluation of active devices        99481
+Memory size (MB)                    517.3
+   cpu Time 2s 630ms 
+Memory size (MB)                    517.1

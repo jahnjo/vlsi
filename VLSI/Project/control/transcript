@@ -1,6 +1,6 @@
 vasim -cmd /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/control/control.cal/control.cir -lib /home/local/RAMS/egrvlsi07/vlsi/VLSI/Project/control/work -ms -multisource_delay max
 # ** Note: (vasim - 3800) Running Questa ADMS 12.1 patch1 Fri Sep  7 07:23:32 GMT 2012
-# +   on egr-vlsi-24 Linux x86_64(3.10.0-514.26.2.el7.x86_64) #1 SMP Tue Jul 4 15:04:05 UTC 2017
+# +   on egr-vlsi-25 Linux x86_64(3.10.0-514.26.2.el7.x86_64) #1 SMP Tue Jul 4 15:04:05 UTC 2017
 # ELDO 12.1 patch1 (64 bits) Thu Sep  6 14:32:26 GMT 2012
 # EZwave 12.1 patch1 Wed Jun 20 13:28:31 GMT 2012
 # Copyright 1988 Mentor Graphics Corporation
@@ -73,16 +73,16 @@ do control.do
 # Starting analog time is 0.000000 ns
 # Simulation time for "run -all" is 1.000000 ns
 # Transient analysis done
-#    Global cpu Time 0h 0mn 3s 210ms 
-#    Global Elapsed Time 0h 5mn 9s 
+#    Global cpu Time 0h 0mn 3s 050ms 
+#    Global Elapsed Time 0h 3mn 55s 
 # -----------| Simulation Information |-----------
-# Analog kernel and ELDO devices memory size allocated (MB):  517.2
+# Analog kernel and ELDO devices memory size allocated (MB):  517.3
 # 5480 devices
 # 5016 nodes
-# 105259 MOS or BIP model calls
-# 779 steps computed
+# 99481 MOS or BIP model calls
+# 709 steps computed
 # ----------- Simulation Information done -----------
-# --- Simulation stopped at time 400 ns
-# Newton iteration            :  2.775353
+# --- Simulation stopped at time 350 ns
+# Newton iteration            :  2.826516
 # Total of transactions       :  1
 # Total of events             :  1

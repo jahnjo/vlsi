@@ -73,8 +73,8 @@ do imm_mux.do
 # Starting analog time is 0.000000 ns
 # Simulation time for "run -all" is 1.000000 ns
 # Transient analysis done
-#    Global cpu Time 0h 0mn 0s 360ms 
-#    Global Elapsed Time 0h 1mn 34s 
+#    Global cpu Time 0h 0mn 0s 340ms 
+#    Global Elapsed Time 0h 4mn 51s 
 # -----------| Simulation Information |-----------
 # Analog kernel and ELDO devices memory size allocated (MB):  501.7
 # 830 devices

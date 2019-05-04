@@ -19,11 +19,11 @@ add wave \
 add wave \
         :imm_mux:imm_3
 add wave \
-        :imm_mux:imm_3
+        :imm_mux:imm_2
 add wave \
-        :imm_mux:imm_3
+        :imm_mux:imm_1
 add wave \
-        :imm_mux:imm_3
+        :imm_mux:imm_0
 
 
 force -source :imm_mux:imm_3 2.5v
